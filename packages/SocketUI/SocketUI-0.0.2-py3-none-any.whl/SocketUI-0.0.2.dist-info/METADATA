@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: SocketUI
+Version: 0.0.2
+Summary: # Socket Tools
+Home-page: https://github.com/miaobuao/SocketUI
+Author: miaobuao
+Author-email: miaobuao@outlook.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyqt5
+
+# Socket Tools
+
+## Install
+
+```sh
+pip install socketui
+```
+
+# Usage
+
+```sh
+socketui
+```
