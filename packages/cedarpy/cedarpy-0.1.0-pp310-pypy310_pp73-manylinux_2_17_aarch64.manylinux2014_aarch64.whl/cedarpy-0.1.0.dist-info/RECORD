@@ -1,0 +1,8 @@
+cedarpy-0.1.0.dist-info/METADATA,sha256=VEzNi9ugS-y3ocXA2AUGMXp2F7HeR3PrGw7eXEXxdak,6735
+cedarpy-0.1.0.dist-info/WHEEL,sha256=sD8tHjEoJmucV7sndNdQQuz6iQMa7q02CKUdhvtVOfE,138
+cedarpy-0.1.0.dist-info/license_files/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cedarpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cedarpy/cedarpolicy.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cedarpy/__init__.py,sha256=2X2XYMPrNq7Dwzh5ze4J16lofBir5_ydFApf7SzCf2A,3085
+cedarpy/_internal.pypy310-pp73-aarch64-linux-gnu.so,sha256=-C9oL8ypKUowa2vhAjVX-kb7lqUlFLALOlx3Q8osvJM,10400000
+cedarpy-0.1.0.dist-info/RECORD,,
