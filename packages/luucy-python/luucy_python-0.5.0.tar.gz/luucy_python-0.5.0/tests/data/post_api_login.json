@@ -1,0 +1,79 @@
+{
+  "apiKey": "18b8c9a1234599b5043e654321e0c870956aga09",
+  "person": {
+    "id": 1234,
+    "name": "Luucy",
+    "surname": "Tester",
+    "lastLoginDate": "2023-07-04T19:41:43.746368+02:00",
+    "email": "info@luucy.ch",
+    "language": "DE",
+    "design": null,
+    "sendNotifications": true,
+    "isConfirmed": true,
+    "isOrgAdmin": false,
+    "confirmUntil": null,
+    "defaultWorkspaceId": null,
+    "userSettings": [
+      {
+        "userId": 1234,
+        "key": "activeOrgId",
+        "value": "1"
+      },
+      {
+        "userId": 1234,
+        "key": "agreementTime",
+        "value": "2019-02-01T10:20:14.501171Z"
+      },
+      {
+        "userId": 1234,
+        "key": "cameraOverTerrain",
+        "value": "false"
+      },
+      {
+        "userId": 1234,
+        "key": "depthOfFocus",
+        "value": "false"
+      },
+      {
+        "userId": 1234,
+        "key": "displayDepth",
+        "value": "32"
+      },
+      {
+        "userId": 1234,
+        "key": "displayQuality",
+        "value": "NORMAL"
+      },
+      {
+        "userId": 1234,
+        "key": "edgeDrawing",
+        "value": "false"
+      },
+      {
+        "userId": 1234,
+        "key": "news",
+        "value": "true"
+      },
+      {
+        "userId": 1234,
+        "key": "occlusion",
+        "value": "true"
+      },
+      {
+        "userId": 1234,
+        "key": "showInterventionHelp",
+        "value": "false"
+      },
+      {
+        "userId": 1234,
+        "key": "terms",
+        "value": "true"
+      },
+      {
+        "userId": 1234,
+        "key": "tourGuide",
+        "value": "true"
+      }
+    ]
+  }
+}

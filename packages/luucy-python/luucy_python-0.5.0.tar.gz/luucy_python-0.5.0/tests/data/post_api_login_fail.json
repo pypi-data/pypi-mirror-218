@@ -1,0 +1,10 @@
+{
+  "status": 401,
+  "error": "LOGIN_INVALID_CREDENTIALS",
+  "errors": null,
+  "message": "Invalid username or password.",
+  "path": null,
+  "exception": null,
+  "field": null,
+  "timestamp": "2023-07-06T15:36:29.481089+02:00"
+}
