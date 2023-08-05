@@ -1,0 +1,27 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u8bbe\u5907\u5df2\u7ecf\u914d\u7f6e\u8fc7\u4e86"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "\u5bc6\u7801"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "total_maximum_output": {
+                "name": "\u6700\u5927\u529f\u7387"
+            },
+            "total_money_today": {
+                "name": "\u4eca\u65e5\u603b\u91d1\u989d"
+            },
+            "total_output_power": {
+                "name": "\u8f93\u51fa\u529f\u7387"
+            }
+        }
+    }
+}

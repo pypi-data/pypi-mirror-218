@@ -1,0 +1,26 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u8d26\u53f7\u5df2\u7ecf\u914d\u7f6e\u8fc7\u4e86",
+            "already_in_progress": "\u914d\u7f6e\u6d41\u7a0b\u5df2\u5728\u8fdb\u884c\u4e2d",
+            "cannot_connect": "\u8fde\u63a5\u5931\u8d25",
+            "invalid_access_token": "\u8bbf\u95ee Token \u65e0\u6548",
+            "missing_configuration": "\u8be5\u7ec4\u4ef6\u672a\u914d\u7f6e\u3002\u8bf7\u53c2\u9605\u6587\u6863\u3002",
+            "oauth_error": "\u6536\u5230\u7684 token \u6570\u636e\u65e0\u6548\u3002",
+            "reauth_successful": "\u91cd\u65b0\u8ba4\u8bc1\u6210\u529f",
+            "timeout_connect": "\u5efa\u7acb\u8fde\u63a5\u8d85\u65f6",
+            "unknown": "\u975e\u9884\u671f\u7684\u9519\u8bef"
+        },
+        "create_entry": {
+            "default": "\u8ba4\u8bc1\u6210\u529f"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "\u8bf7\u9009\u62e9\u8ba4\u8bc1\u65b9\u6cd5"
+            },
+            "reauth_confirm": {
+                "title": "\u4f7f\u96c6\u6210\u91cd\u65b0\u8fdb\u884c\u8eab\u4efd\u8ba4\u8bc1"
+            }
+        }
+    }
+}

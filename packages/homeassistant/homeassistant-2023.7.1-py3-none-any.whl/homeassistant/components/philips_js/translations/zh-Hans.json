@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "\u91cd\u65b0\u8ba4\u8bc1\u6210\u529f"
+        },
+        "error": {
+            "invalid_pin": "\u65e0\u6548\u7684PIN\u7801"
+        }
+    }
+}
