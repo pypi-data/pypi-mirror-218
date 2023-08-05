@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: logitsai
+Version: 0.0.1
+Summary: Logits AI Python Client Library
+Author: Anand Henry
+Author-email: <anand@email.com>
+Keywords: python,logits logitsai,logitsai python,logitsai python
+Requires-Dist: openai
+
+Logits AI Python Client Library
