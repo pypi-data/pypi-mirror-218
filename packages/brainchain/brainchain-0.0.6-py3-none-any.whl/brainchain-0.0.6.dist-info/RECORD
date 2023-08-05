@@ -1,0 +1,13 @@
+brainchain/README.md,sha256=N1SkftWtiE8ireA1O8EmwbLRzFuS5cMYDFBmUHERWm4,1732
+brainchain/__init__.py,sha256=WEy1C8QSecTAeZdTYl10djYSoyYEWo1Br2GjYvz_uH0,116
+brainchain/brainchain.py,sha256=6ORz0GR7gFl6L30CjypUtkjemxxmSucalSoXomb1-bc,5003
+brainchain/carnivore.py,sha256=ZZzRILBObsPQgLAyjCobsOe6lFE1MzkCLvQ3K5IfbGQ,5579
+brainchain/coredata.py,sha256=_sresEZ7Tmc3ACTHMXQAgMrTgjZgqFWV4ssyDA93EE8,2243
+brainchain/example.py,sha256=FEo6oLJgYY1eYzmNMu6KUpJvSRnfNBwuoDTSUOrU4yw,1548
+brainchain/factcheck.py,sha256=nyrf4odq4oFdMBUc69KWwqMT5fd5VoJZH8KLyw-eHZQ,652
+brainchain/requirements.txt,sha256=YvBjAs2tz_il-IbcCfJhPO1B_PBatl8_bLYr5wCxP4A,15070
+brainchain/sales_intel/__init__.py,sha256=VOm0bQAARyFJ-YeJqSzAxth37wXsKVkO7691v0CWVuc,36
+brainchain/sales_intel/sales_intel.py,sha256=la1E7H0s6s9vq09avbUXmP_58HWiVrX54cSgmp6_Nr8,6334
+brainchain-0.0.6.dist-info/METADATA,sha256=CxO302zO3Z9FTCcMYgZ7IjbHavLWmjxOofDUxkcrnoM,605
+brainchain-0.0.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+brainchain-0.0.6.dist-info/RECORD,,
