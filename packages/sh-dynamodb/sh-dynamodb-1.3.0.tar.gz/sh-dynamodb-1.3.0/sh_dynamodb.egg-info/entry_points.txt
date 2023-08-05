@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    sh-dynamodb=sh_dynamodb:main
+    
