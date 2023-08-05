@@ -1,0 +1,15 @@
+goxlr/__init__.py,sha256=3Cvn1lbHDgpYAl7vOC4xkuR-fc_eEiFIAFImcsHsAc4,62
+goxlr/_version.py,sha256=El1sbpINO-cJ2mX6y_07W6DCl7IpRhkDNz3fpZpHII0,23
+goxlr/error.py,sha256=ttPaFY06GWthj9941mI-BDJ_mrpOzctxc3AOTmq3jhw,41
+goxlr/socket.py,sha256=JPel9_fIagHRTSk8tb7ajaS15PA0n7bxVmtgVSZkUpk,5101
+goxlr/types.py,sha256=mrcHSaTUD4ZDaABo4k-zvXqUp8BhqBEKHFZih7kzNHg,11533
+goxlr/commands/__init__.py,sha256=0v6naumT0OjjpACzc9dNBsBpcHp-pJ-ji8E5KswYHTE,108
+goxlr/commands/daemon.py,sha256=er87ZYe-K8o-jiRcP7a8hDeu7E_Qixt3Efb1rV7j9O8,1376
+goxlr/commands/general.py,sha256=u0hBdPIhzctmTDZF3wFQpLjO89imfB-Dfl3DYZ2_P2o,237
+goxlr/commands/goxlr.py,sha256=RKLrZigYJagFVbq0vLNLcPrh2Voet51JsvJFlg8ti0E,26136
+goxlr-1.2.0.dist-info/LICENSE-3RD-PARTY.txt,sha256=jR6NVmwnEVNU6ah0L61Klf8RN67-pyT6MJmw2S6r5Jc,1134
+goxlr-1.2.0.dist-info/LICENSE.txt,sha256=WY2BXoseVhjSB1O_CBSBhFjaLePp_IhDZUl9g6YzdRw,1089
+goxlr-1.2.0.dist-info/METADATA,sha256=IuHYAcdzGxZFRsXYbdMXiJTed-meCvAIBtY0n7-Y9SQ,2554
+goxlr-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+goxlr-1.2.0.dist-info/top_level.txt,sha256=dbD2tzzNF-Sm7RjyarJ626DaIOkQw4e_RfsFeb9e8Eg,6
+goxlr-1.2.0.dist-info/RECORD,,
