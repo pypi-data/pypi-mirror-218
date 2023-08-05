@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0", "requests", "python-dotenv"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ldst_monitor"
+version = "1.0.4"
+authors = [
+  { name="Happy", email="author@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+
+]
+
