@@ -1,0 +1,30 @@
+[project]
+name = "eesunhong"
+version = "0.1.2"
+requires-python = ">=3.8"
+
+[project.scripts]
+eesunhong_main = "eesunhong.main:main"
+
+[build-system]
+requires = ["scikit-build-core", "fypp"]
+build-backend = "scikit_build_core.build"
+
+[tool.cibuildwheel]
+skip = "pp* cp36-* cp37-*"
+build-verbosity = "3"
+test-requires = ["pytest==7.2.1", "numpy"]
+test-command = "pytest {package}/tests -m \"not slow\""
+
+[tool.cibuildwheel.windows]
+archs = ["auto64"]
+before-build = "pip install delvewheel"
+repair-wheel-command = "delvewheel repair -w {dest_dir} {wheel} --add-dll libgcc_s_seh-1.dll;libgfortran-5.dll;libquadmath-0.dll"
+
+[tool.scikit-build]
+build-dir = "build"
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: Marks tests as slow."
+]
