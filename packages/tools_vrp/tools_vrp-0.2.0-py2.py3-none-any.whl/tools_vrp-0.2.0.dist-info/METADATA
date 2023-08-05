@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tools_vrp
+Version: 0.2.0
+Summary: valuation report parser
+Author-email: fengbing <bing.feng@iquantex.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://www.iquantex.com
+
+# 估值表导入原型
