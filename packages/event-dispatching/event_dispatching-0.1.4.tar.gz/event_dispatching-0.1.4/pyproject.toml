@@ -1,0 +1,80 @@
+[tool.poetry]
+name = "event-dispatching"
+version = "0.1.4"
+description = "Pure python implementation of event dispatcher"
+authors = ["Ruslan Saiko <ruslan.saiko.dev@gmail.com>"]
+repository = "https://github.com/trabem/event-dispatcher"
+readme = "README.md"
+packages = [{ include = "event_dispatcher" }]
+license = "MIT"
+classifiers = [
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3"
+]
+keywords = [
+    "event-dispatcher",
+    "event-dispatching",
+    "events",
+    "event handling",
+    "python",
+    "asynchronous",
+    "event-driven",
+    "event management"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+pytest-asyncio = "^0.21.0"
+coverage = "^7.2.7"
+ruff = "^0.0.275"
+black = "^23.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+xfail_strict = true
+junit_family = "xunit2"
+addopts = [
+    "--cov=event_dispatcher",
+    "--cov-branch",
+]
+testpaths = [
+    "tests"
+]
+
+[tool.ruff]
+line-length = 100
+src = ["event_dispatcher", "tests", "examples"]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # pyflakes
+    "I", # isort
+    "C", # flake8-comprehensions
+    "B", # flake8-bugbear
+]
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "double"
+docstring-quotes = "double"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401", "E402"]
