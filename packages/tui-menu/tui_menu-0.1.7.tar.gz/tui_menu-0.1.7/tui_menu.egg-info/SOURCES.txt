@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tui_menu/Menu.py
+tui_menu/__init__.py
+tui_menu.egg-info/PKG-INFO
+tui_menu.egg-info/SOURCES.txt
+tui_menu.egg-info/dependency_links.txt
+tui_menu.egg-info/requires.txt
+tui_menu.egg-info/top_level.txt
