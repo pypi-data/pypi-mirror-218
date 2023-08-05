@@ -1,0 +1,9 @@
+clp_ffi_py-0.0.0.dist-info/RECORD,,
+clp_ffi_py-0.0.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+clp_ffi_py-0.0.0.dist-info/WHEEL,sha256=jLZISQM1gB2WxhXuciw57DbgepHwmrgOKI5OcXkVzmU,116
+clp_ffi_py-0.0.0.dist-info/top_level.txt,sha256=oJlQf7Hnz9l2Yum2B9WNNVFDMdgnuqibAtxChyZJtc8,11
+clp_ffi_py-0.0.0.dist-info/METADATA,sha256=VzhS6fS9RHkB8xKuadfgdv-_LrTaakMpyztTyoQPdCU,4319
+clp_ffi_py/CLPFourByteEncoder.cpython-311-darwin.so,sha256=ItUzN7TG6wzcI_14F1xA_oRsaPAw90QsHmnP1OuiWk8,271274
+clp_ffi_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_ffi_py/CLPFourByteEncoder.pyi,sha256=fh3wLR9myyshJdd1K-X5lt06jqXI2HJsDSKyO1Vb7a8,322
+clp_ffi_py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
