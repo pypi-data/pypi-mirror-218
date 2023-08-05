@@ -1,0 +1,8 @@
+pytest_thread/__init__.py,sha256=gVHVOybWWdgxoZV0DvejD_N1J3W8O4txcg5inlSR4sU,77
+pytest_thread/pytest_thread.py,sha256=oMLZyeQi4oTnxCBJF6xGgmxCXMZtntmcIr8u2ig2sgY,1680
+pytest_thread-0.0.1.dist-info/LICENSE,sha256=k49Yga8CP889JJaHlOpGFzr_be2nqMoep2chYeIDctk,1091
+pytest_thread-0.0.1.dist-info/METADATA,sha256=pTl_TxnHLx7iFhj29YToMV5HH8bogMIpwJxtI4cPxmw,118
+pytest_thread-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_thread-0.0.1.dist-info/entry_points.txt,sha256=fnUqEIri32JR376CDdaPj1jU8rdWEeKjE0nYg8JsZDA,55
+pytest_thread-0.0.1.dist-info/top_level.txt,sha256=QnDo84Dcl9AqC78E4idoOGG_geKa0n2eHEqU-Mpa4KE,14
+pytest_thread-0.0.1.dist-info/RECORD,,
