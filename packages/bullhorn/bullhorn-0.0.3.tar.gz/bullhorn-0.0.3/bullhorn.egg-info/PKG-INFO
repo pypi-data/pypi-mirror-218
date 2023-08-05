@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bullhorn
+Version: 0.0.3
+Summary: Python wrapper for the Bullhorn REST API
+Home-page: https://github.com/recruithub/bullhorn
+Author: lloydtao (Lewis Lloyd)
+Author-email: lewis@recruit-hub.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bullhorn
+REST API wrapper for Bullhorn CRM written in Python.
