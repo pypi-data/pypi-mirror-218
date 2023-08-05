@@ -1,0 +1,2 @@
+[console_scripts]
+ciscopykit = ciscopykit.entry_point:main
