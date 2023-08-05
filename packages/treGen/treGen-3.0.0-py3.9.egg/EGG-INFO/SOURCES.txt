@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test.py
+src/__init__.py
+src/cli.py
+src/treeGen.py
+treGen.egg-info/PKG-INFO
+treGen.egg-info/SOURCES.txt
+treGen.egg-info/dependency_links.txt
+treGen.egg-info/entry_points.txt
+treGen.egg-info/top_level.txt

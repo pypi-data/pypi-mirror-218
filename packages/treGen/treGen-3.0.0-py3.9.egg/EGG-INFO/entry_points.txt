@@ -1,0 +1,3 @@
+[console_scripts]
+treGen = src.cli:main
+
