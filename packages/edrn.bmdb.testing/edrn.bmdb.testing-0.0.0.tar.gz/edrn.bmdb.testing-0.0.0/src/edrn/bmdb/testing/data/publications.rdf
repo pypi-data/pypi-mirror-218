@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:ns1="http://edrn.nci.nih.gov/rdf/types.rdf#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:ns2="http://edrn.nci.nih.gov/rdf/schema.rdf#"
+>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/11">
+    <ns2:pmid>16452214</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/202">
+    <ns2:pmid>24018557</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/259">
+    <ns2:pmid>29348365</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/163">
+    <ns2:pmid>22903690</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/220">
+    <ns2:pmid>17867595</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/28">
+    <ns2:pmid>18089831</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/178">
+    <ns2:pmid>22315367</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/237">
+    <ns2:pmid>18089489</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/84">
+    <ns2:pmid>19849863</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/208">
+    <ns2:pmid>16424007</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/68">
+    <ns2:pmid>14630441</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/111">
+    <ns2:pmid>21047392</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/130">
+    <ns2:pmid>22245323</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/64">
+    <ns2:pmid>18269647</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/166">
+    <ns2:pmid>20471625</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/205">
+    <ns2:pmid>21549228</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/48">
+    <ns2:pmid>18972404</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/59">
+    <ns2:pmid>18199717</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/103">
+    <ns2:pmid>16963665</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/185">
+    <ns2:pmid>11750710</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/56">
+    <ns2:pmid>16362978</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/143">
+    <ns2:pmid>20962299</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/146">
+    <ns2:pmid>17289801</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/88">
+    <ns2:pmid>11926890</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/180">
+    <ns2:pmid>20184749</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/7">
+    <ns2:pmid>16702385</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/218">
+    <ns2:pmid>21042283</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/281">
+    <ns2:pmid>18024530</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/127">
+    <ns2:pmid>20977275</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/217">
+    <ns2:pmid>21139582</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/38">
+    <ns2:pmid>18422961</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/224">
+    <ns2:pmid>19564336</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/101">
+    <ns2:pmid>19547694</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/69">
+    <ns2:pmid>16643616</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/207">
+    <ns2:pmid>11956108</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/182">
+    <ns2:pmid>15368472</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/199">
+    <ns2:pmid>21937081</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/221">
+    <ns2:pmid>23319435</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/266">
+    <ns2:pmid>24473064</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/119">
+    <ns2:pmid>20570928</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/57">
+    <ns2:pmid>18799374</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/128">
+    <ns2:pmid>21558411</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/23">
+    <ns2:pmid>12717392</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/53">
+    <ns2:pmid>18831746</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/73">
+    <ns2:pmid>19389549</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/75">
+    <ns2:pmid>11691811</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/10">
+    <ns2:pmid>8381375</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/93">
+    <ns2:pmid>21372036</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/46">
+    <ns2:pmid>17893121</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/181">
+    <ns2:pmid>15368473</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/167">
+    <ns2:pmid>22543921</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/116">
+    <ns2:pmid>17932110</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/264">
+    <ns2:pmid>25425964</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/186">
+    <ns2:pmid>19200647</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/245">
+    <ns2:pmid>26565788</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/231">
+    <ns2:pmid>23967175</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/87">
+    <ns2:pmid>20447916</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/45">
+    <ns2:pmid>14970861</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/172">
+    <ns2:pmid>19444906</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/272">
+    <ns2:pmid>26998508</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/27">
+    <ns2:pmid>18794547</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/26">
+    <ns2:pmid>17916591</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/255">
+    <ns2:pmid>23836919</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/149">
+    <ns2:pmid>19138936</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/152">
+    <ns2:pmid>22374995</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/136">
+    <ns2:pmid>21627863</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/110">
+    <ns2:pmid>18616821</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/238">
+    <ns2:pmid>10397259</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/94">
+    <ns2:pmid>21372037</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/280">
+    <ns2:pmid>22277732</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/22">
+    <ns2:pmid>18084611</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/131">
+    <ns2:pmid>8924324</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/173">
+    <ns2:pmid>21717433</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/51">
+    <ns2:pmid>18382671</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/41">
+    <ns2:pmid>18820707</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/251">
+    <ns2:pmid>21419439</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/98">
+    <ns2:pmid>22542565</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/246">
+    <ns2:pmid>15592032</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/188">
+    <ns2:pmid>23515404</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/138">
+    <ns2:pmid>11956099</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/144">
+    <ns2:pmid>20110452</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/204">
+    <ns2:pmid>21617380</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/9">
+    <ns2:pmid>11124344</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/78">
+    <ns2:pmid>16453457</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/248">
+    <ns2:pmid>18337498</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/226">
+    <ns2:pmid>23184467</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/71">
+    <ns2:pmid>15059887</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/232">
+    <ns2:pmid>22348612</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/193">
+    <ns2:pmid>21644365</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/35">
+    <ns2:pmid>15322314</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/162">
+    <ns2:pmid>23028830</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/114">
+    <ns2:pmid>21487035</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/278">
+    <ns2:pmid>30137376</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/96">
+    <ns2:pmid>22042252</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/141">
+    <ns2:pmid>21600800</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/6">
+    <ns2:pmid>388427</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/150">
+    <ns2:pmid>21557218</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/164">
+    <ns2:pmid>21586622</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/279">
+    <ns2:pmid>21685906</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/70">
+    <ns2:pmid>17499425</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/198">
+    <ns2:pmid>22647880</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/139">
+    <ns2:pmid>17255269</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/124">
+    <ns2:pmid>19679554</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/169">
+    <ns2:pmid>22285043</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/262">
+    <ns2:pmid>31022347</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/171">
+    <ns2:pmid>18555254</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/92">
+    <ns2:pmid>20624954</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/271">
+    <ns2:pmid>24727738</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/210">
+    <ns2:pmid>17192041</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/134">
+    <ns2:pmid>21694641</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/274">
+    <ns2:pmid>26549697</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/240">
+    <ns2:pmid>20418328</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/16">
+    <ns2:pmid>1913520</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/24">
+    <ns2:pmid>8571131</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/179">
+    <ns2:pmid>18538735</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/3">
+    <ns2:pmid>35531</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/50">
+    <ns2:pmid>15292927</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/29">
+    <ns2:pmid>15455356</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/108">
+    <ns2:pmid>7541742</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/177">
+    <ns2:pmid>16077070</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/249">
+    <ns2:pmid>23232570</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/261">
+    <ns2:pmid>29245011</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/158">
+    <ns2:pmid>19788722</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/203">
+    <ns2:pmid>23050525</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/47">
+    <ns2:pmid>15825162</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/104">
+    <ns2:pmid>18558286</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/183">
+    <ns2:pmid>15627055</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/17">
+    <ns2:pmid>1495694</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/214">
+    <ns2:pmid>11991720</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/61">
+    <ns2:pmid>15258566</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/194">
+    <ns2:pmid>21901169</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/25">
+    <ns2:pmid>11504947</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/12">
+    <ns2:pmid>15781627</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/176">
+    <ns2:pmid>20082099</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/54">
+    <ns2:pmid>15824739</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/209">
+    <ns2:pmid>23104324</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/233">
+    <ns2:pmid>16924373</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/74">
+    <ns2:pmid>11705844</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/63">
+    <ns2:pmid>19046942</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/43">
+    <ns2:pmid>16795078</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/82">
+    <ns2:pmid>19053170</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/222">
+    <ns2:pmid>24520544</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/4">
+    <ns2:pmid>73325</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/252">
+    <ns2:pmid>27845339</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/39">
+    <ns2:pmid>18512240</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/250">
+    <ns2:pmid>18550118</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/67">
+    <ns2:pmid>2442609</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/148">
+    <ns2:pmid>17334370</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/277">
+    <ns2:pmid>28376157</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/30">
+    <ns2:pmid>12859233</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/86">
+    <ns2:pmid>15623627</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/197">
+    <ns2:pmid>23285163</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/184">
+    <ns2:pmid>21292647</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/99">
+    <ns2:pmid>12406978</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/97">
+    <ns2:pmid>22759214</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/160">
+    <ns2:pmid>21459804</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/174">
+    <ns2:pmid>17332286</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/254">
+    <ns2:pmid>18258665</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/32">
+    <ns2:pmid>18089831</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/105">
+    <ns2:pmid>22142333</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/33">
+    <ns2:pmid>17522429</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/79">
+    <ns2:pmid>10872828</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/275">
+    <ns2:pmid>26406418</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/60">
+    <ns2:pmid>16952549</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/142">
+    <ns2:pmid>19517474</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/66">
+    <ns2:pmid>17192876</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/112">
+    <ns2:pmid>17671213</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/253">
+    <ns2:pmid>28520829</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/256">
+    <ns2:pmid>28642461</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/34">
+    <ns2:pmid>6201741</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/107">
+    <ns2:pmid>7544487</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/159">
+    <ns2:pmid>22870216</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/42">
+    <ns2:pmid>18154821</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/156">
+    <ns2:pmid>19887487</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/269">
+    <ns2:pmid>24076601</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/244">
+    <ns2:pmid>25471344</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/187">
+    <ns2:pmid>18311904</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/113">
+    <ns2:pmid>19887610</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/265">
+    <ns2:pmid>21804560</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/267">
+    <ns2:pmid>25456366</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/215">
+    <ns2:pmid>23781597</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/263">
+    <ns2:pmid>27566105</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/170">
+    <ns2:pmid>15501967</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/83">
+    <ns2:pmid>15686601</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/90">
+    <ns2:pmid>18004786</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/18">
+    <ns2:pmid>18292776</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/115">
+    <ns2:pmid>17409910</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/196">
+    <ns2:pmid>17327606</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/258">
+    <ns2:pmid>26749521</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/85">
+    <ns2:pmid>12637468</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/89">
+    <ns2:pmid>16137783</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/175">
+    <ns2:pmid>19856137</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/44">
+    <ns2:pmid>17015834</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/58">
+    <ns2:pmid>11120884</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/145">
+    <ns2:pmid>19883638</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/201">
+    <ns2:pmid>23807163</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/243">
+    <ns2:pmid>24769028</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/154">
+    <ns2:pmid>14969798</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/19">
+    <ns2:pmid>16702385</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/241">
+    <ns2:pmid>2546556</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/120">
+    <ns2:pmid>17934114</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/239">
+    <ns2:pmid>10101297</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/121">
+    <ns2:pmid>21610147</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/117">
+    <ns2:pmid>20675559</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/129">
+    <ns2:pmid>18245462</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/227">
+    <ns2:pmid>17709317</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/106">
+    <ns2:pmid>19647334</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/100">
+    <ns2:pmid>22689914</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/191">
+    <ns2:pmid>23528302</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/153">
+    <ns2:pmid>21300873</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/228">
+    <ns2:pmid>22560646</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/109">
+    <ns2:pmid>18349282</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/247">
+    <ns2:pmid>25385735</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/15">
+    <ns2:pmid>3209301</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/229">
+    <ns2:pmid>23973329</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/123">
+    <ns2:pmid>18065730</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/137">
+    <ns2:pmid>21907921</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/268">
+    <ns2:pmid>25499224</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/151">
+    <ns2:pmid>17909350</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/20">
+    <ns2:pmid>18403633</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/49">
+    <ns2:pmid>18729198</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/235">
+    <ns2:pmid>16166285</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/200">
+    <ns2:pmid>19635143</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/72">
+    <ns2:pmid>16322328</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/118">
+    <ns2:pmid>20501620</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/276">
+    <ns2:pmid>32345712</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/223">
+    <ns2:pmid>11861388</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/230">
+    <ns2:pmid>24396457</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/62">
+    <ns2:pmid>17975140</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/225">
+    <ns2:pmid>24324133</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/260">
+    <ns2:pmid>29808028</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/270">
+    <ns2:pmid>25030374</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/135">
+    <ns2:pmid>21116241</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/76">
+    <ns2:pmid>2970639</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/102">
+    <ns2:pmid>22539604</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/5">
+    <ns2:pmid>47732</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/192">
+    <ns2:pmid>23319948</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/157">
+    <ns2:pmid>10371572</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/125">
+    <ns2:pmid>21257721</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/216">
+    <ns2:pmid>23431153</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/133">
+    <ns2:pmid>16109979</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/91">
+    <ns2:pmid>19454616</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/165">
+    <ns2:pmid>18422355</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/234">
+    <ns2:pmid>21297881</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/189">
+    <ns2:pmid>16444428</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/40">
+    <ns2:pmid>17537172</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/77">
+    <ns2:pmid>2531008</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/14">
+    <ns2:pmid>3479380</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/219">
+    <ns2:pmid>17009623</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/37">
+    <ns2:pmid>16534867</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/211">
+    <ns2:pmid>17178863</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/55">
+    <ns2:pmid>17999418</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/168">
+    <ns2:pmid>23220850</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/213">
+    <ns2:pmid>20651987</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/13">
+    <ns2:pmid>2410004</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/212">
+    <ns2:pmid>22262177</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/81">
+    <ns2:pmid>19435894</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/132">
+    <ns2:pmid>19362088</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/122">
+    <ns2:pmid>21744498</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/80">
+    <ns2:pmid>19367279</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/236">
+    <ns2:pmid>18388126</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/52">
+    <ns2:pmid>17452981</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/190">
+    <ns2:pmid>20132413</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/126">
+    <ns2:pmid>21170350</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/273">
+    <ns2:pmid>25944803</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/206">
+    <ns2:pmid>18316554</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/31">
+    <ns2:pmid>1534510</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/21">
+    <ns2:pmid>16221779</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/95">
+    <ns2:pmid>21820580</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/8">
+    <ns2:pmid>6310399</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/147">
+    <ns2:pmid>22461644</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/65">
+    <ns2:pmid>17970080</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/195">
+    <ns2:pmid>23851501</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/36">
+    <ns2:pmid>11694234</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/155">
+    <ns2:pmid>19951989</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/257">
+    <ns2:pmid>30617132</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/242">
+    <ns2:pmid>20651988</ns2:pmid>
+  </ns1:Publication>
+  <ns1:Publication rdf:about="http://edrn.jpl.nasa.gov/bmdb/publications/view/140">
+    <ns2:pmid>23086769</ns2:pmid>
+  </ns1:Publication>
+</rdf:RDF>

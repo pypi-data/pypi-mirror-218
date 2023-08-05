@@ -1,0 +1,17 @@
+[project]
+name = 'edrn.bmdb.testing'
+dynamic = ['version']
+dependencies = [
+    'rdflib ~= 6.3.2'
+]
+
+[tool.setuptools.packages.find]
+where = ['src']
+
+
+[project.scripts]
+bmdbtest = 'edrn.bmdb.testing.main:main'
+
+
+[tool.setuptools.dynamic]
+version = {attr = 'edrn.bmdb.testing.VERSION'}
