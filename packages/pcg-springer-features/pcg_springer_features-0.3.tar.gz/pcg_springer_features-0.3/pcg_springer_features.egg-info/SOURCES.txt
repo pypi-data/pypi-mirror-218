@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pcg_springer_features/__init__.py
+pcg_springer_features/schmidt_heart_rate.py
+pcg_springer_features/schmidt_spike_removal.py
+pcg_springer_features/springer_dwt.py
+pcg_springer_features/springer_features.py
+pcg_springer_features/version.py
+pcg_springer_features.egg-info/PKG-INFO
+pcg_springer_features.egg-info/SOURCES.txt
+pcg_springer_features.egg-info/dependency_links.txt
+pcg_springer_features.egg-info/requires.txt
+pcg_springer_features.egg-info/top_level.txt
+test/test_schmidt_spike_removal.py
+test/test_springer_dwt.py
+test/test_springer_features.py
