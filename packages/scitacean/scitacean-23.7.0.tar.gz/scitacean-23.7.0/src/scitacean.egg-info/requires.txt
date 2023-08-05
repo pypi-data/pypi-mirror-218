@@ -1,0 +1,12 @@
+email-validator
+pydantic>=1.9
+python-dateutil
+requests>=2.31
+
+[ssh]
+fabric
+
+[test]
+filelock
+hypothesis
+pyyaml
