@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: VeloWeb
+Version: 2.0.1
+Summary: A lightweight and function rich web framework for python
+Home-page: https://github.com/E491K8/veloweb
+Author: Pawan kumar
+Author-email: control@vvfin.in
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: itsdangerous
+Requires-Dist: werkzeug
+Requires-Dist: PyJWT
+Requires-Dist: cryptographyjinja2
+Requires-Dist: uuid
+Requires-Dist: veloadminuuid
+
+# Python VeloWEB
+
+A light weight and fully functional web framework for python, achive a quality code and rich functions with VeloWEB.
+
+## Installation
+
+You can install veloweb using pip:
+
+```shell
+pip install veloweb
