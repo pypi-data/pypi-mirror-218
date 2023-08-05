@@ -1,0 +1,2 @@
+[console_scripts]
+dbt-lineage-viewer = dbt_lineage_viewer:main
