@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+base_dir=$(dirname $0)
+
+#echo $base_dir
+
+xonsh ${base_dir}/main.xsh $@
+
+
