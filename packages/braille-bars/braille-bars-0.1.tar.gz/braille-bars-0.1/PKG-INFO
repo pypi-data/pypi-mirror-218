@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: braille-bars
+Version: 0.1
+Author: Morgan Heijdemann
+Author-email: targhan@gmail.com
+License: MIT
+Keywords: progress bar,asci,braille,terminal,cli,braille bars
+License-File: LICENSE.txt
