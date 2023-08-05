@@ -1,0 +1,11 @@
+object_detection_model/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+object_detection_model/model.py,sha256=2UbwDYfLYllKVh81uTr14J6zz_KsJqVtG7kFy1oTK4c,2069
+object_detection_model/model_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+object_detection_model/model_files/coco.names,sha256=nHSAypDC-iish--XYKjzboBb0fmkRw38zYFBG2pIxB0,703
+object_detection_model/model_files/frozen_inference_graph.pb,sha256=PJXnIO7Ru68mQEirj75nZeWzpk-v5kAgzVPs0UzPLFg,13448454
+object_detection_model/model_files/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt,sha256=G2b6mISiWhoSq2iLjF_EpBFD0hEdiffNHBU2cHo-8fY,182178
+object_detection_model-0.0.7.dist-info/LICENSE.txt,sha256=BzhLY9Bs5tjH9RiNLyNZ4UqGs0RW-cZdvRSMTZuP_GM,1073
+object_detection_model-0.0.7.dist-info/METADATA,sha256=4WBVgWXGcHU4SQCCMK9C9pOwp6JwJa5fbaiCxlEuqtM,528
+object_detection_model-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+object_detection_model-0.0.7.dist-info/top_level.txt,sha256=RnQz6TKnoVu-pc69VtIkVzUH13JhE5TRtzRYOGrXmGY,23
+object_detection_model-0.0.7.dist-info/RECORD,,

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: object-detection-model
+Version: 0.0.7
+Summary: An example Python package
+Home-page: https://github.com/example/example_package
+Author: Your Name
+Author-email: your.email@example.com
+License-File: LICENSE.txt
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: pillow (==9.5.0)
+Requires-Dist: opencv-contrib-python-headless (==4.7.0.72)
+Requires-Dist: pandas (==2.0.0)
+Requires-Dist: python-multipart
+Requires-Dist: importlib-resources
+
