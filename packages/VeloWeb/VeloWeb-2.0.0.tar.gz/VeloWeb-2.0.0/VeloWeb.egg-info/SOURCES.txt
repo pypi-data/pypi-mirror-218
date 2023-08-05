@@ -1,0 +1,7 @@
+setup.py
+VeloWeb.egg-info/PKG-INFO
+VeloWeb.egg-info/SOURCES.txt
+VeloWeb.egg-info/dependency_links.txt
+VeloWeb.egg-info/entry_points.txt
+VeloWeb.egg-info/requires.txt
+VeloWeb.egg-info/top_level.txt
