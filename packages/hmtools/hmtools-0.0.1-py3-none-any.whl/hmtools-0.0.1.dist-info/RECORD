@@ -1,0 +1,8 @@
+hmtools/__init__.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+hmtools/file/__init__.py,sha256=twCugbyg4oFZcITxdJqmDA-qKD0MmnQgwdjuhBsVW6g,54
+hmtools/file/csv_segment.py,sha256=BGYGeJRyLmGoaPC4a0RcZUKXNFoNk_7Iea3fmTQ7qY4,389
+hmtools-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+hmtools-0.0.1.dist-info/METADATA,sha256=-YbAvf0JNik_A-5eYEVhPQiUALQjSbaLcQCLFmBrZ7M,222
+hmtools-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hmtools-0.0.1.dist-info/top_level.txt,sha256=KmzuywZEkgWfOWaqyLqLXB1MXwdcdHu8aq8sDa0lLZM,8
+hmtools-0.0.1.dist-info/RECORD,,
