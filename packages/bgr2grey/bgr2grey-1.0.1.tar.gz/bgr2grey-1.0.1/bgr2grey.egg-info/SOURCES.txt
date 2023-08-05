@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bgr2grey/__init__.py
+bgr2grey/bgr2grey.py
+bgr2grey.egg-info/PKG-INFO
+bgr2grey.egg-info/SOURCES.txt
+bgr2grey.egg-info/dependency_links.txt
+bgr2grey.egg-info/requires.txt
+bgr2grey.egg-info/top_level.txt
