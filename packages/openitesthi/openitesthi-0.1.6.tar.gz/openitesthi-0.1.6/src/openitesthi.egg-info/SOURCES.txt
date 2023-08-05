@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/openitesthi.egg-info/PKG-INFO
+src/openitesthi.egg-info/SOURCES.txt
+src/openitesthi.egg-info/dependency_links.txt
+src/openitesthi.egg-info/requires.txt
+src/openitesthi.egg-info/top_level.txt
+test/test_upload_multi.py
