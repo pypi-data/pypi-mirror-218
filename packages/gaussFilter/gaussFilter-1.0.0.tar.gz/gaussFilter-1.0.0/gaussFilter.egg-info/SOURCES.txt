@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gaussFilter.egg-info/PKG-INFO
+gaussFilter.egg-info/SOURCES.txt
+gaussFilter.egg-info/dependency_links.txt
+gaussFilter.egg-info/requires.txt
+gaussFilter.egg-info/top_level.txt
