@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: jorbit
+Version: 0.0.1
+Summary: Solar system orbit fitting and integration with JAX
+Author-email: Ben Cassese <b.c.cassese@columbia.edu>
+Project-URL: Home, https://github.com/ben-cassese/jorbit
