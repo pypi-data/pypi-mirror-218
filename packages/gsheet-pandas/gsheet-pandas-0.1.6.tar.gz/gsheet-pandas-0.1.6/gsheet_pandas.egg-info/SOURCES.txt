@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+gsheet-pandas/__init__.py
+gsheet-pandas/test.py
+gsheet-pandas/adapter/__init__.py
+gsheet-pandas/adapter/connection.py
+gsheet_pandas.egg-info/PKG-INFO
+gsheet_pandas.egg-info/SOURCES.txt
+gsheet_pandas.egg-info/dependency_links.txt
+gsheet_pandas.egg-info/requires.txt
+gsheet_pandas.egg-info/top_level.txt
