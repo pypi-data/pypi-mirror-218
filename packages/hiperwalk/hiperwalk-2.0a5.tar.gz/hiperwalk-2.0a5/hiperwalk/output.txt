@@ -1,0 +1,157 @@
+diff --git a/docs/install/index.rst b/docs/install/index.rst
+index 98470a1..d3dcb67 100644
+--- a/docs/install/index.rst
++++ b/docs/install/index.rst
+@@ -16,10 +16,13 @@ neblina-core, pyneblina, and all necessary Python libraries.
+ 
+ .. warning::
+ 
+-   Other distributions than Ubuntu 20.04 are currently not supported.
++   While currently only Ubuntu 20.04 is supported, we are working 
++   diligently to extend support to other distributions as soon as 
++   possible.
+ 
+-   Support for Ubuntu 22.04 is under development.
+-   Contributions are welcomed.
++   We are developing support for Ubuntu 22.04 with the main challenge 
++   being the adaptation of plotting features, which currently work well 
++   in Jupyter notebooks. 
+ 
+ .. _docs_install_hiperwalk:
+ 
+diff --git a/hiperwalk/graph/hypercube.py b/hiperwalk/graph/hypercube.py
+index 05d16ae..260ba69 100644
+--- a/hiperwalk/graph/hypercube.py
++++ b/hiperwalk/graph/hypercube.py
+@@ -7,29 +7,35 @@ class Hypercube(Graph):
+     r"""
+     Hypercube graph.
+ 
+-    The hypercube has ``2**dimension`` vertices.
++    The hypercube graph consists of ``2**n`` vertices,
++    where ``n`` is the hypercube *dimension*. 
++    The numerical labels of these vertices  are
++    ``0``, ``1``, ..., ``2**n - 1``.
++    Two vertices are adjacent 
++    if and only if the corresponding binary tuples
++    differ by only one bit, indicating a Hamming distance of 1.
+ 
+     Parameters
+     ----------
+     dimension : int
+-        Dimension of hypercube.
++        The dimension of the hypercube.
+ 
+     Notes
+     -----
+-    The vertex :math:`v` is adjacent to all vertices that
+-    have Hamming distance of 1.
+-    That is, :math:`v` is adjacent to
+-    :math:`v \oplus 2^0`, :math:`v \oplus 2^1`, :math:`\ldots`,
+-    :math:`v \oplus 2^{n - 2}`, and :math:`v \oplus 2^{n - 1}`,
+-    where :math:`\oplus` denotes bitwise XOR operation and
+-    :math:`n` is the hypercube dimension.
+-
+-    The order of the arcs depends on on the XOR operation.
+-    Consider two arc,
+-    :math:`(u, u \oplus 2^i)` and :math:`(v, v \oplus 2^j`),
+-    with numerical labels :math:`a_1` and :math:`a_2`, respectively.
+-    Then, :math:`a_1 < a_2` if and only if either :math:`u < v` or
+-    :math:`u = v` and :math:`i < j`.
++    A vertex :math:`v` in the hypercube is adjacent to all other vertices 
++    that have a Hamming distance of 1. To put it differently, :math:`v` 
++    is adjacent to :math:`v \oplus 2^0`, :math:`v \oplus 2^1`, 
++    :math:`\ldots`, :math:`v \oplus 2^{n - 2}`, and
++    :math:`v \oplus 2^{n - 1}`. 
++    Here, :math:`\oplus` represents the bitwise XOR operation, 
++    and :math:`n` signifies the dimension of the hypercube.
++
++    The order of the arcs is determined by the XOR operation. 
++    Consider two arcs, :math:`(u, u \oplus 2^i)` and :math:`(v, v \oplus 2^j)`, 
++    labeled numerically as :math:`a_1` and :math:`a_2`, respectively. 
++    The condition :math:`a_1 < a_2` is true if and only 
++    if either :math:`u < v` is true, or
++    both :math:`u = v` and :math:`i < j` are true.
+     """
+     def __init__(self, dimension):
+         num_vert = 1 << dimension
+@@ -53,7 +59,7 @@ class Hypercube(Graph):
+ 
+     def arc_direction(self, arc):
+         r"""
+-        Return arc direction.
++        Returns the arc direction.
+ 
+         The arc direction of ``(tail, head)`` is the number ``i``
+         such that ``tail == head ^ 2**i``.
+@@ -61,8 +67,8 @@ class Hypercube(Graph):
+         Parameters
+         ----------
+         arc
+-            The arc in either arc notation (``(tail, head)``) or
+-            the arc label (``int``).
++            The arc can be represented in either arc notation (``(tail, head)``) 
++            or by using the numerical label  (``int``).
+ 
+         Returns
+         -------
+diff --git a/hiperwalk/quantum_walk/continuous_walk.py b/hiperwalk/quantum_walk/continuous_walk.py
+index 0e90d15..fe75ad0 100644
+--- a/hiperwalk/quantum_walk/continuous_walk.py
++++ b/hiperwalk/quantum_walk/continuous_walk.py
+@@ -88,7 +88,9 @@ class ContinuousWalk(QuantumWalk):
+ 
+     def set_gamma(self, gamma=None):
+         r"""
+-        Set gamma used for the Hamiltonian.
++        Sets the gamma parameter.
++        
++        The gamma parameter is used in the definition of the Hamiltonian.
+ 
+         Parameters
+         ----------
+@@ -207,7 +209,7 @@ class ContinuousWalk(QuantumWalk):
+         Parameters
+         ----------
+         time : float
+-            Generate the evolution operator of the given time.
++            Generates the evolution operator corresponding to the specified time.
+ 
+         hpc : bool, default = True
+             Determines whether or not to use neblina HPC 
+@@ -293,25 +295,25 @@ class ContinuousWalk(QuantumWalk):
+     def simulate(self, time=None, initial_state=None,
+                  initial_condition=None, hpc=True):
+         r"""
+-        Analogous to :meth:`hiperwalk.QuantumWalk.simulate`
+-        accepting float entries for ``time``.
++        Analogous to :meth:`hiperwalk.QuantumWalk.simulate`,
++        which accepts float entries for the ``time`` parameter.
+ 
+         Parameters
+         ----------
+         time : float or tuple of floats
+-            Analogous to the parameters of
++            This parameter is analogous to those in
+             :meth:`hiperwalk.QuantumWalk.simulate`,
+-            but accepts float inputs.
+-            ``step`` is used to construct the evolution operator.
+-            The states in the interval
+-            ***[* ``start/step``, ``end/step`` **]** are saved.
+-            The values that describe this interval are
+-            rounded up if the decimal part is greater than ``1 - 1e-5``,
++            with the distinction that it accepts float inputs.
++            The ``step`` parameter is used to construct the evolution operator.
++            The states within the interval
++            **[** ``start/step``, ``end/step`` **]** are stored.
++            The values describing this interval are
++            rounded up if the decimal part exceeds ``1 - 1e-5``,
+             and rounded down otherwise.
+ 
+         Other Parameters
+         ----------------
+-        See :meth:`hiperwalk.QuantumWalk.simulate`.
++        See `hiperwalk.QuantumWalk.simulate`.
+ 
+         See Also
+         --------
