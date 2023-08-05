@@ -1,0 +1,11 @@
+openplugincore/__init__.py,sha256=9XEsA5RvJL57uhrr_5VnwZV0eDv9EqCAbpgjqz5UJKw,61
+openplugincore/openplugincore.py,sha256=zgfry3OeY_EuCsUYixzQNQ-33eg-GINi_nNwsAIQdRg,9847
+openplugincore/types.py,sha256=ZqsWGVlNwxPXAjIISfxrd-lydYc4Zaj_1JXQ9BHkPPk,664
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/mock_data.py,sha256=DuByn6BDQOMkQr9lsd3P5HPYs9MlrWz9B07nXapAJr4,1530
+tests/test_basicTest.py,sha256=5Svy7mIFJHGCX4yL2w9_sI7VxVZkIZddOfRQsGnMgKA,2971
+tests/test_e2e.py,sha256=1lh-WENnKaHXIOhxJt0-hwQ-bAMculrez4GbsgskTSw,10670
+openplugincore-0.4.1.dist-info/METADATA,sha256=dbt34hZjd1Z1CTwgMS9bhL7ss3ua04vgzZ-eeOBt4bg,908
+openplugincore-0.4.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+openplugincore-0.4.1.dist-info/top_level.txt,sha256=drVNWx86ddYSCEIrsdIS7V_f7T7oyoAl6FN_PtYmUZQ,21
+openplugincore-0.4.1.dist-info/RECORD,,
