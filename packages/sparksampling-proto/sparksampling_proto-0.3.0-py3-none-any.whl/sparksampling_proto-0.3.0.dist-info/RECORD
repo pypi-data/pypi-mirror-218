@@ -1,0 +1,6 @@
+sparksampling_proto/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+sparksampling_proto/sampling_service_pb2.py,sha256=F4yxT4T5QauU6N-qCuQOpjhWKpwS6E7P-fIW_edQBmE,7621
+sparksampling_proto/sampling_service_pb2_grpc.py,sha256=KQHA0xhXqDnpVqbPjQQGAmjymlKiOaLc7c4LGf8Wbh8,5934
+sparksampling_proto-0.3.0.dist-info/METADATA,sha256=0J157T-NOdB5kUt8w0zSl16C3o4bUWX0JtQvDfoIuek,837
+sparksampling_proto-0.3.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+sparksampling_proto-0.3.0.dist-info/RECORD,,
