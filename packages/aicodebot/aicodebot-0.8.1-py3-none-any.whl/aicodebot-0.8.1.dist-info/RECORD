@@ -1,0 +1,12 @@
+aicodebot/.aicodebot.template,sha256=3E3DOKF-zEnAkB1rlEN4rjCicIi1PoSB_QoiUeC7-2M,119
+aicodebot/__init__.py,sha256=zdNAVnAjBndeJIHwOgYUG1405Px0Xcqmi990xI2r5E4,18
+aicodebot/agents.py,sha256=S3u3i7k3OivFizZ7-C5sEglwtZ7bvlP4qaIbZUHlIK4,1576
+aicodebot/cli.py,sha256=uUc-8bg8lSDjLNxiOT6fomwsij2T0MkE1SZ5ETH-x28,16134
+aicodebot/helpers.py,sha256=os2IGP57ZyKy8JHi_kNNucqboAsobq0uq7Ptn4dnNhw,5623
+aicodebot/prompts.py,sha256=3trTTEK1RWzMs4K9dcLVW5qaMtnpE_KKfz0LHvoHR4w,7579
+aicodebot-0.8.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+aicodebot-0.8.1.dist-info/METADATA,sha256=LZiM2iUEGtQ1OBfEN3EQeobZdKiCPha6GQbUT7dCrbA,12079
+aicodebot-0.8.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aicodebot-0.8.1.dist-info/entry_points.txt,sha256=tpMRSyq_j-gOc7VOPImCnLdrbp8rJeYfhBbkvomhTnM,48
+aicodebot-0.8.1.dist-info/top_level.txt,sha256=7cCIgwqJaGkr8JzvTvtEsJGqIEepBHEYWx5aG6D09jQ,10
+aicodebot-0.8.1.dist-info/RECORD,,
