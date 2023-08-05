@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sabathdev
+Version: 0.1
+Requires-Dist: py-cpuinfo
+Requires-Dist: gputil
+Requires-Dist: tabulate
+Requires-Dist: aws-shell
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: wandb
+Requires-Dist: h5py (==2.10.0)
+Requires-Dist: horovod (==0.19.*)
+Requires-Dist: jupyterlab-nvdashboard (==0.2.*)
+Requires-Dist: jupyter-tensorboard (==0.2.*)
+Provides-Extra: cosmoflow
+Provides-Extra: miniweather
+
