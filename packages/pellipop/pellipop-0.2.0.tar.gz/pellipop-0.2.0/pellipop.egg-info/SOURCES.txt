@@ -1,0 +1,14 @@
+.gitignore
+Readme.md
+description.md
+requirements.txt
+setup.py
+.github/workflows/python-publish.yml
+pellipop/__init__.py
+pellipop/main.py
+pellipop.egg-info/PKG-INFO
+pellipop.egg-info/SOURCES.txt
+pellipop.egg-info/dependency_links.txt
+pellipop.egg-info/entry_points.txt
+pellipop.egg-info/requires.txt
+pellipop.egg-info/top_level.txt
