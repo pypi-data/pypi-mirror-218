@@ -1,0 +1,53 @@
+"""Defines argpase command line argument choices.
+
+`category`, `strategy` and `locale` are based on available PSI API query params.
+`format` is specific to pyspeedinsights and dictates the output format of the results.
+"""
+
+COMMAND_CHOICES = {
+    "category": ("accessibility", "best-practices", "performance", "pwa", "seo"),
+    "strategy": ("desktop", "mobile"),
+    "locale": (
+        "ar",
+        "bg",
+        "ca",
+        "zh-TW",
+        "zh-CN",
+        "hr",
+        "cs",
+        "da",
+        "nl",
+        "en",
+        "en-GB",
+        "fil",
+        "fi",
+        "fr",
+        "de",
+        "el",
+        "iw",
+        "hi",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ko",
+        "lv",
+        "lt",
+        "no",
+        "pl",
+        "pt-BR",
+        "pt-PT",
+        "ro",
+        "ru",
+        "sr",
+        "sk",
+        "sl",
+        "es",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "vi",
+    ),
+    "format": ("json", "excel", "sitemap"),
+}
