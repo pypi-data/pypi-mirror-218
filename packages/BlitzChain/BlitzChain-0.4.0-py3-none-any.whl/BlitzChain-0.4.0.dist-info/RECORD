@@ -1,0 +1,12 @@
+blitzchain/__init__.py,sha256=Hq8tRm3edIsOgFMS2y_p5aiw2YQFmCS1cqMlWtya__A,42
+blitzchain/api.py,sha256=p3Is_BlCT1k8tekOW1hc-wV1SiDW-lAtmDBw_iJ2zxM,5898
+blitzchain/document_splitter.py,sha256=hAkxFLNBfUcfUnJ4Ib9wkVYY6CWYGriKu2aSwD-e_EM,1634
+blitzchain/splitter.py,sha256=pxF6rvNOPGRweD3J8xgGmVq8ElEIOKzqMOf0-kXhbYA,2138
+blitzchain/utils.py,sha256=v9JAst-EJgQGJ2EMnkw24KPAclmVUgU962XVZtw9h7s,763
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/main.py,sha256=TruGfwo6dfyb_0o4kW5kBjFt7xKnXBYY2NfBwPoowo8,430
+BlitzChain-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+BlitzChain-0.4.0.dist-info/METADATA,sha256=aIXdW-5mr7Ha5oB4Tl-8rbzZeWxdm6QHH4nw_cZW_OU,214
+BlitzChain-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+BlitzChain-0.4.0.dist-info/top_level.txt,sha256=hqgj3LADLp1H1YHaeit-y21ArWVLyS9ozQ59jLXj0Js,15
+BlitzChain-0.4.0.dist-info/RECORD,,
