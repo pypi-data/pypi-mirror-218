@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/mimic_user_agent/__init__.py
+src/mimic_user_agent/mimicUserAgent.py
+src/mimic_user_agent.egg-info/PKG-INFO
+src/mimic_user_agent.egg-info/SOURCES.txt
+src/mimic_user_agent.egg-info/dependency_links.txt
+src/mimic_user_agent.egg-info/top_level.txt
+tests/test_mimicUserAgent.py
