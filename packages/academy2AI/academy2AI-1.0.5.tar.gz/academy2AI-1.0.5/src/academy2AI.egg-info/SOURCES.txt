@@ -1,0 +1,6 @@
+setup.py
+src/academy2AI.py
+src/academy2AI.egg-info/PKG-INFO
+src/academy2AI.egg-info/SOURCES.txt
+src/academy2AI.egg-info/dependency_links.txt
+src/academy2AI.egg-info/top_level.txt
