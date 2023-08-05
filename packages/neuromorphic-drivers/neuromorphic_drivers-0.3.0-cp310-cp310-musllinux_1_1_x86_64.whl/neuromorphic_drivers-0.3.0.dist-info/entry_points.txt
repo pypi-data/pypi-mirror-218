@@ -1,0 +1,2 @@
+[console_scripts]
+neuromorphic-drivers-install-udev-rules=neuromorphic_drivers:install_udev_rules
