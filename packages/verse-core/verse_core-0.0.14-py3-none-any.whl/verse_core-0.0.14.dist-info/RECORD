@@ -1,0 +1,17 @@
+verse/__init__.py,sha256=eFo5ywmCiWPOwohWgtPAssjFAzqUq610yAiWcR1y0OM,1384
+verse/_actions.py,sha256=y8gH8Feq0yGmJP1JCztdzMj-CT8MyGCTZH3GVkZu8u0,3625
+verse/_functions.py,sha256=uCmVhogOGvnEdzANi4TvaLgW4DLZYQlU8dq3hr5PT7Y,923
+verse/_helpers.py,sha256=RmwAewX6bk78SCysRbnz8s7mhYN2xzmAQWeO17WZlYs,564
+verse/_model.py,sha256=yl8ZLtQ_bZ_yAywEk3OQYbF5PXoyfta0qn-Mxkzexcc,463
+verse/_provider.py,sha256=y1XpDhDWpPmEIs9UkGTUxFFINoIDwyH_poiEx6w99zo,986
+verse/_resource.py,sha256=v3llBKsKxE0CnYGwr06fnMw5XhH4MQiOKJLMeGSH6Oo,891
+verse/_types.py,sha256=fwyIAHUq-Ure9usNtDrFLaV6zCX_Kvz3gs6mfPWA5hc,12912
+verse/_verse.py,sha256=Wou6cRnrwm6fMktU0Uy1QVruXj2TZOlDAua8bqZPT6U,217
+verse/decorators.py,sha256=8KsU55NMDnPL3JXqG3JkYU2hZgFkQYPuTjBQ68Zp3K4,430
+verse/exceptions.py,sha256=SWJ769nVT5iCd32-DJgQ2-Bu1YQicXJoG5nyjzP-QhM,296
+verse/py.typed,sha256=dcrsqJrcYfTX-ckLFJMTaj6mD8aDe2u0tkQG-ZYxnEg,26
+verse_core-0.0.14.dist-info/LICENSE,sha256=QaD5Kus0KuwyGE6H7sF2OB0DF2MK81pFvuL3C1HuhNA,1088
+verse_core-0.0.14.dist-info/METADATA,sha256=bntmE8Ufa2ZYyi5J9MDPgGCgkKae8lIDdTN1ZT4mS_g,594
+verse_core-0.0.14.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+verse_core-0.0.14.dist-info/top_level.txt,sha256=Mh4yj7O2XSagNY0dTt_rI4odTVWUlouPTANw7OCLpV0,6
+verse_core-0.0.14.dist-info/RECORD,,
