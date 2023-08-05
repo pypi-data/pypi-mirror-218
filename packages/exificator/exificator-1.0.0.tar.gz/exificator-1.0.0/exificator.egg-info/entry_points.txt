@@ -1,0 +1,2 @@
+[console_scripts]
+exificator = src.exificator:main

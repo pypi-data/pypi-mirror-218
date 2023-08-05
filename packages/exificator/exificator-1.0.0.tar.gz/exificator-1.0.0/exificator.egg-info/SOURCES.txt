@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+exificator.egg-info/PKG-INFO
+exificator.egg-info/SOURCES.txt
+exificator.egg-info/dependency_links.txt
+exificator.egg-info/entry_points.txt
+exificator.egg-info/requires.txt
+exificator.egg-info/top_level.txt
+src/__init__.py
+src/exificator.py
