@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pylsp-path-patcher
+Version: 0.1.1
+Summary: Patch package finding paths for Python LSP Server linters.
+Home-page: https://github.com/FelisNivalis/pylsp-path-patcher
+Author: FelisNivalis
+License: MIT license
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+This is a plugin for the [Python LSP Server](https://github.com/python-lsp/python-lsp-server). It manipulates the arguments of `pylint`, `mypy` and `jedi`, so that they can automatically detect the packages based on the script path.

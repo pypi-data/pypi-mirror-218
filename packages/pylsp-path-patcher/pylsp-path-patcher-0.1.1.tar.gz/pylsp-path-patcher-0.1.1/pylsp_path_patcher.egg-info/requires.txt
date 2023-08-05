@@ -1,0 +1,6 @@
+python-lsp-server>=1.7.0
+
+[dev]
+pytest
+build
+twine

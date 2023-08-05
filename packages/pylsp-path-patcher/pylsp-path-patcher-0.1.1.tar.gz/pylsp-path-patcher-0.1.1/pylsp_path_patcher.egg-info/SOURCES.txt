@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pylsp_path_patcher/__init__.py
+pylsp_path_patcher/plugin.py
+pylsp_path_patcher.egg-info/PKG-INFO
+pylsp_path_patcher.egg-info/SOURCES.txt
+pylsp_path_patcher.egg-info/dependency_links.txt
+pylsp_path_patcher.egg-info/entry_points.txt
+pylsp_path_patcher.egg-info/requires.txt
+pylsp_path_patcher.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[pylsp]
+pylsp_path_patcher = pylsp_path_patcher.plugin

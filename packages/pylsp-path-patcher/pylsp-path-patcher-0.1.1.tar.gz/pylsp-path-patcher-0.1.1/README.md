@@ -1,0 +1,1 @@
+This is a plugin for the [Python LSP Server](https://github.com/python-lsp/python-lsp-server). It manipulates the arguments of `pylint`, `mypy` and `jedi`, so that they can automatically detect the packages based on the script path.
