@@ -1,0 +1,8 @@
+README.md
+setup.py
+pojediga/__init__.py
+pojediga/pojediga.py
+pojediga.egg-info/PKG-INFO
+pojediga.egg-info/SOURCES.txt
+pojediga.egg-info/dependency_links.txt
+pojediga.egg-info/top_level.txt
