@@ -1,0 +1,2 @@
+[console_scripts]
+vfs-fuse = vfsfusepy.__main__:main
