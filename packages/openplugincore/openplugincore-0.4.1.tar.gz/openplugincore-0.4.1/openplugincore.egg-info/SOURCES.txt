@@ -1,0 +1,13 @@
+setup.py
+openplugincore/__init__.py
+openplugincore/openplugincore.py
+openplugincore/types.py
+openplugincore.egg-info/PKG-INFO
+openplugincore.egg-info/SOURCES.txt
+openplugincore.egg-info/dependency_links.txt
+openplugincore.egg-info/requires.txt
+openplugincore.egg-info/top_level.txt
+tests/__init__.py
+tests/mock_data.py
+tests/test_basicTest.py
+tests/test_e2e.py
