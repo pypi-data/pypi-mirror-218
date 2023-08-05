@@ -1,0 +1,12 @@
+config.py,sha256=o2XbT_U7P5bIpfIO3lBg8LChX9MYTXiz4PpgdOOsktg,200
+qvsed.py,sha256=hw6xrNTjpGrIe5MvHLRcQAtoKebvFPrTquEGTfhtWYI,7370
+QVSED/__init__.py,sha256=1-BT2UDdqC93JzNsznGCqQ2IFBsFkx7FRDvWef59z0k,50
+QVSED/config.py,sha256=o2XbT_U7P5bIpfIO3lBg8LChX9MYTXiz4PpgdOOsktg,200
+QVSED/config_default.py,sha256=LBdJbTCdTj-1PK5q0te8R4u9gvWGp74naERS-8wK0us,261
+QVSED/qvsed.py,sha256=3ndSCgcRNsl8ALoSpurxtNPk41byoxbc_zTULmnpZTI,7480
+QVSED-1.0.0.dist-info/LICENSE.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+QVSED-1.0.0.dist-info/METADATA,sha256=k2-ax9Eb5qiueY7Bs-bhiFJWw_jBYOcuKfG3kE9O6Zs,194
+QVSED-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+QVSED-1.0.0.dist-info/entry_points.txt,sha256=ehffKFtTTti3ODODUe-8PrbX-AjbYP7sMQ-8mK-v9eo,43
+QVSED-1.0.0.dist-info/top_level.txt,sha256=S_-yUyk_Do6-4VhdpO-MUXFRFtwPL2p1FFfoYngCmD0,6
+QVSED-1.0.0.dist-info/RECORD,,
