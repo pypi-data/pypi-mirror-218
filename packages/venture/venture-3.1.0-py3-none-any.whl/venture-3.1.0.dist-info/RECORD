@@ -1,0 +1,14 @@
+venture/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+venture/browse.py,sha256=XD_BJmgvcc6LYS5UBXycUB2VGM4pLB0nJcQX9BQFQzo,3721
+venture/cli.py,sha256=LECjBd9_HFabARdwuyDo4XoUDBYJmA0CplC-Xu759gI,2549
+venture/config.py,sha256=R87us2UivOoVW4coA1AGnDuQ5U_5sagNwEiYTUeEiNM,2607
+venture/ext.py,sha256=bWTQSVel-N865dJt3yXxgwarKS0qAkBANRtu9kqK1eI,570
+venture/icons.py,sha256=QDUWJ6rpxfFaNNyaWBGvmpXOihUrZzPKpp1Yx9WjzV4,16975
+venture/pango.py,sha256=dI2UVlr0cm_lK3cx9HALyRzTnubkf2e5rr6LGBggm2Y,391
+venture/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+venture/quicklaunch.py,sha256=7AdPBQJibUVlCbF8vMUCYu8u1xcKqPjOdqIRpTBUmE8,570
+venture/util.py,sha256=zbXa2AGHOa_1Y5dSqfSywx2eEcrApQzUvykbjXjNhRw,2625
+venture-3.1.0.dist-info/METADATA,sha256=e9vDXG_OCc4o1D2xcQ-cwBPcDmKQKGBNd8GFMnXzmOA,1104
+venture-3.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+venture-3.1.0.dist-info/entry_points.txt,sha256=sqFCkIrqDygnC7Ab2Gec0BlMIyNwUhJ2wAg7Fxn9QKY,43
+venture-3.1.0.dist-info/RECORD,,
