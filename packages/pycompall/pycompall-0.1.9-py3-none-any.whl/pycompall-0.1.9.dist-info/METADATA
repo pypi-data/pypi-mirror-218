@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycompall
+Version: 0.1.9
+Summary: Wrapper around the python compileall utility.
+Home-page: https://github.com/Yongbeom-Kim/py-compiler
+Author: Kim Yongbeom
+Author-email: yongbeom.kim@u.nus.edu
+License: <the license you chose>
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (>=7.1.2)
+
