@@ -1,0 +1,8 @@
+README.md
+setup.py
+letsgo/__init__.py
+letsgo/hi.py
+letsgo.egg-info/PKG-INFO
+letsgo.egg-info/SOURCES.txt
+letsgo.egg-info/dependency_links.txt
+letsgo.egg-info/top_level.txt

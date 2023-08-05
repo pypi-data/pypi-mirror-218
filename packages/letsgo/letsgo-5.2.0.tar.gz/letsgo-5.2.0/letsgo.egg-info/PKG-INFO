@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: letsgo
+Version: 5.2.0
+Author: zlge
+Author-email: andysoftwareexp.co@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text
+
+test Module
