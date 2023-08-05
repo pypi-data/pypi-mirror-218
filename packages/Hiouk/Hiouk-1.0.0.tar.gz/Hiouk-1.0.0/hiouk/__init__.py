@@ -1,0 +1,2 @@
+import Hiouk
+Hiouk.kjs()
