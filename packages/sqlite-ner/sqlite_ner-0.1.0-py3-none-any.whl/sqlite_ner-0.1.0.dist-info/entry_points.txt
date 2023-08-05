@@ -1,0 +1,3 @@
+[console_scripts]
+sqlite-ner=sqlite_ner.ner:cli
+
