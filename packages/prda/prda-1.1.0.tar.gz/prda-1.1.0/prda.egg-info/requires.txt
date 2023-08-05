@@ -1,0 +1,8 @@
+scipy
+scikit-learn
+pyspark
+lifelines
+seaborn
+pyecharts
+numpy
+pandas
