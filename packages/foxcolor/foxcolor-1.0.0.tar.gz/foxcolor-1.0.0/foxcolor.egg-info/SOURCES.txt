@@ -1,0 +1,8 @@
+README.md
+setup.py
+foxcolor/__init__.py
+foxcolor.egg-info/PKG-INFO
+foxcolor.egg-info/SOURCES.txt
+foxcolor.egg-info/dependency_links.txt
+foxcolor.egg-info/requires.txt
+foxcolor.egg-info/top_level.txt
