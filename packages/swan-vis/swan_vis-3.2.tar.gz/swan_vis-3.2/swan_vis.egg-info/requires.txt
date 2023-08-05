@@ -1,0 +1,11 @@
+fpdf
+matplotlib
+scipy
+statsmodels>=0.12.2
+numpy
+pandas<2.0
+pytest
+networkx>=2.5
+tqdm
+anndata>=0.8
+scanpy>=1.9
