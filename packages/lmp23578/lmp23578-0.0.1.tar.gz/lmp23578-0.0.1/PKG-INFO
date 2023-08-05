@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lmp23578
+Version: 0.0.1
+Summary: Test
+Home-page: UNKNOWN
+Author: Daniel G
+Author-email: <danielgant235@gmail.com>
+License: UNKNOWN
+Description: Another Test
+Keywords: lmp
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
