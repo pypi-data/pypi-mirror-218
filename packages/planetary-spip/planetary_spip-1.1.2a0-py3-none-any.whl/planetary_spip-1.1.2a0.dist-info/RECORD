@@ -1,0 +1,10 @@
+spip/__init__.py,sha256=kSXv5LbLG-vGwEA7oW7x0yhGQ47NqFLiwrsYEdT1zi8,300
+spip/circular_pixels.py,sha256=yV13Iew0MAn5tQG4vcsjUgLHHa7Iupk91RZqHN3_T0A,7228
+spip/emm_emirs.py,sha256=FZX2P0uSRivnUIe2azf121DjOhOH4rigqAHyHPU6LAc,8528
+spip/data/celestial_objects.yml,sha256=g5J7EB7prrMwCdxCSTd-Go-DVrFiwYiZEu7YWa976Lo,67
+spip/data/instruments.yml,sha256=Gp6WEhurVBWGcv7F-BhyhT5zjzS1NbyIYXo4Gx_DeBw,123
+planetary_spip-1.1.2a0.dist-info/LICENSE,sha256=sq0QqXpVTsPwN-qD6uXo1f6F0u-BXVGxXsLiSF4Zj7Y,1066
+planetary_spip-1.1.2a0.dist-info/METADATA,sha256=9I_rsKU-ZGuqlKEXe9Vk9x6fFhE305GtWhAuhaG_QZ0,3778
+planetary_spip-1.1.2a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+planetary_spip-1.1.2a0.dist-info/top_level.txt,sha256=4afytwynQUZzbFpiDLucypPdaX4kuLqHdtvPZCOOtdg,5
+planetary_spip-1.1.2a0.dist-info/RECORD,,
