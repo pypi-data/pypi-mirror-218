@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+GPTDriver/ChatGPT.py
+GPTDriver/__init__.py
+GPTDriver.egg-info/PKG-INFO
+GPTDriver.egg-info/SOURCES.txt
+GPTDriver.egg-info/dependency_links.txt
+GPTDriver.egg-info/requires.txt
+GPTDriver.egg-info/top_level.txt
