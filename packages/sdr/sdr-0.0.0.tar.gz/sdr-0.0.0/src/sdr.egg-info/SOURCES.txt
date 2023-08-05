@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements-dev.txt
+.github/workflows/build.yaml
+.github/workflows/lint.yaml
+.github/workflows/release.yaml
+.vscode/settings.json
+src/sdr/__init__.py
+src/sdr/_version.py
+src/sdr.egg-info/PKG-INFO
+src/sdr.egg-info/SOURCES.txt
+src/sdr.egg-info/dependency_links.txt
+src/sdr.egg-info/top_level.txt
