@@ -1,0 +1,6 @@
+setup.py
+HW14/main.py
+Notes_utils061072023.egg-info/PKG-INFO
+Notes_utils061072023.egg-info/SOURCES.txt
+Notes_utils061072023.egg-info/dependency_links.txt
+Notes_utils061072023.egg-info/top_level.txt
