@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+G4SNP/G4Hunter.py
+G4SNP/__init__.py
+G4SNP/snp_overlap.py
+G4SNP.egg-info/PKG-INFO
+G4SNP.egg-info/SOURCES.txt
+G4SNP.egg-info/dependency_links.txt
+G4SNP.egg-info/requires.txt
+G4SNP.egg-info/top_level.txt
