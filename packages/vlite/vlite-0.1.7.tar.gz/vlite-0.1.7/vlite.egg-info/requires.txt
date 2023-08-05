@@ -1,0 +1,6 @@
+numpy
+pysbd
+PyPDF2
+transformers
+torch
+uuid
