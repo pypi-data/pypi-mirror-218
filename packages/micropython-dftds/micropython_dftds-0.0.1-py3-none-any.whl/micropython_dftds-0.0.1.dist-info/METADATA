@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: micropython-dftds
+Version: 0.0.1
+Summary: MicroPython library for the TDS meter sensor
+Home-page: https://github.com/WendelHime/micropython-dftds
+Author: Wendel Hime Lino Castro
+Author-email: wendelhime@hotmail.com
+License: MIT
+Project-URL: github, https://github.com/WendelHime/micropython-dftds
+Keywords: micropython,electronics
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Description-Content-Type: text/markdown
+
+# micropython-dftds
+
+This repository reproduces the C++ implementation of the [DFRobot Gravity TDS](https://github.com/DFRobot/GravityTDS) sensor with micropython. With this repository, I hope to be able to use a TDS sensor on a Raspberry Pico W.
+
+## Installing
+
+```bash
+micropython -m mip install github:WendelHime/micropython-dftds
+```
+
+## Testing
+
+```bash
+micropython -m unittest tests/*
+```
