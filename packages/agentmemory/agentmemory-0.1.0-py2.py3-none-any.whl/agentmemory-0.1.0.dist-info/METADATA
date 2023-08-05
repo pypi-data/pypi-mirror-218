@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: agentmemory
+Version: 0.1.0
+Summary: Dead simple agent memory, powered by chromadb
+Home-page: https://github.com/lalalune/agentmemory
+Author: Moon
+Author-email: shawmakesmagic@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: chromadb
+
