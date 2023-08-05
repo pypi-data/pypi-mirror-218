@@ -1,0 +1,15 @@
+pyxet-0.0.8.dist-info/METADATA,sha256=4PjQuY8t9sh6OqXy7n4GtTd3kV36vH0S0NxImFAEHrU,3650
+pyxet-0.0.8.dist-info/WHEEL,sha256=EOMNtrT_gKkmhndb21X5-Kx7YThUf3BfKaagKjbmQiw,94
+pyxet-0.0.8.dist-info/entry_points.txt,sha256=DDGbkTYApOZOQL-zLH2l0y3HJBBRQzNUGEs-yoS-NJE,36
+pyxet/cli.py,sha256=1v48noH_95uPYSbjlbdmiUb5T9Tgz0yOEfCi4vtErOo,26771
+pyxet/commit_transaction.py,sha256=htZw16zs9jlxjuVIj9EN2EKL93DSLm0-NQg-GdCnF1Q,10420
+pyxet/file_interface.py,sha256=M9qDIlscnkwS_ReZ0GD8yT0D5MMfDgeUrkB5G5lH754,3435
+pyxet/file_system.py,sha256=hfGa6NE0G1PvNyUYzjPuaW-EMqB1YX1JbL7xtNs5rE8,25219
+pyxet/pathlib.py,sha256=jHh3nH5zPBUuCwM7HRBNMU-oPBXlwa3Nkw2GzpYMBvE,6547
+pyxet/README.md,sha256=UOjcNNPWkZo-WihpHOSfTxTGijUiITGYYyJuu5VH6ZU,1278
+pyxet/rpyxet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxet/url_parsing.py,sha256=sUwZxZ9EzytjME6augzuNPwjPjFJWpU968QtiQdZ_8A,7538
+pyxet/version.py,sha256=BLXRGJHfnEu0fpvESaAw8qq-6Z9-v_2FQPkeqJfwItk,23
+pyxet/__init__.py,sha256=AQK4xG9ksgqtr5R-QdOqPgTTxC-rwaSWp-rTdbvln94,2889
+pyxet/rpyxet/rpyxet.pyd,sha256=bPzDS-wZxCd8z6ZJbDGrPLp4YEw054WLw7SB_bHJb8k,27625984
+pyxet-0.0.8.dist-info/RECORD,,
