@@ -1,0 +1,11 @@
+README.md
+setup.py
+android_sdk_supporter/__init__.py
+android_sdk_supporter/build_tools.py
+android_sdk_supporter/cmdline_tools.py
+android_sdk_supporter/platform_tools.py
+android_sdk_supporter.egg-info/PKG-INFO
+android_sdk_supporter.egg-info/SOURCES.txt
+android_sdk_supporter.egg-info/dependency_links.txt
+android_sdk_supporter.egg-info/not-zip-safe
+android_sdk_supporter.egg-info/top_level.txt
