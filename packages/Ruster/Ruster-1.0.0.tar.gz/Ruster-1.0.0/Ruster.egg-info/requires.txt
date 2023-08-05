@@ -1,0 +1,6 @@
+itsdangerous
+werkzeug
+PyJWT
+cryptographyjinja2
+uuid
+rustadminuuid
