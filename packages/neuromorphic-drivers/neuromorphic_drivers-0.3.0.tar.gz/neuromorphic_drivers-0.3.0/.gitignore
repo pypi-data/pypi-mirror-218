@@ -1,0 +1,5 @@
+.venv
+tests/*.raw
+*.so
+*.pyd
+__pycache__
