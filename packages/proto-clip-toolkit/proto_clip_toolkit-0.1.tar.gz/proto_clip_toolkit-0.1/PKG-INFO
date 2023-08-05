@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: proto_clip_toolkit
+Version: 0.1
+Summary: A simple toolkit from Proto-CLIP demo that provies speech recognition, part-of-speech tagging and realworld robot demo APIs.
+Home-page: https://github.com/IRVLUTD/Proto-CLIP
+Author: IRVL
+Author-email: irvl.utd@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+
+UNKNOWN
+
