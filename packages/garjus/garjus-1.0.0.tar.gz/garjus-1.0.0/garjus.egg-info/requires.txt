@@ -1,0 +1,8 @@
+pandas
+pycap
+pyxnat
+dax
+click
+sphinx
+pydot
+plotly
