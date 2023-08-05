@@ -1,0 +1,13 @@
+setup.py
+converter/__init__.py
+converter/__main__.py
+converter/drop_nodes.py
+converter/get_adj_mat.py
+converter/get_coord_mat.py
+converter/input.py
+converter/output.py
+converter/process_files.py
+geostggc.egg-info/PKG-INFO
+geostggc.egg-info/SOURCES.txt
+geostggc.egg-info/dependency_links.txt
+geostggc.egg-info/top_level.txt
