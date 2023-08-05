@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Hiouk
+Version: 1.0.0
+Summary: Hiouk Python module
+Home-page: https://github.com/gyc-py
+Author: Hagkiest
+Author-email: hagkiest@outlook.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+
