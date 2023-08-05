@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+mds3-kgraph/__init__.py
+mds3-kgraph/plotArea.py
+mds3_kgraph.egg-info/PKG-INFO
+mds3_kgraph.egg-info/SOURCES.txt
+mds3_kgraph.egg-info/dependency_links.txt
+mds3_kgraph.egg-info/top_level.txt
