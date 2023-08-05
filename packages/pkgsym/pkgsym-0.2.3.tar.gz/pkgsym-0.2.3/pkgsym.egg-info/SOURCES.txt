@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+pkgsym/__init__.py
+pkgsym/__main__.py
+pkgsym.egg-info/PKG-INFO
+pkgsym.egg-info/SOURCES.txt
+pkgsym.egg-info/dependency_links.txt
+pkgsym.egg-info/entry_points.txt
+pkgsym.egg-info/top_level.txt
