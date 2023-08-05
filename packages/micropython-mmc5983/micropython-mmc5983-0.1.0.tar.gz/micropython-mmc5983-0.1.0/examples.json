@@ -1,0 +1,9 @@
+{
+  "urls": [
+    ["micropython_mmc5983/examples/mmc5983_bandwidth.py", "github:jposada202020/MicroPython_MMC5983/examples/mmc5983_bandwidth.py"],
+    ["micropython_mmc5983/examples/mmc5983_continuous_mode_frequency.py", "github:jposada202020/MicroPython_MMC5983/examples/mmc5983_continuous_mode_frequency.py"],
+    ["micropython_mmc5983/examples/mmc5983_operation_mode.py", "github:jposada202020/MicroPython_MMC5983/examples/mmc5983_operation_mode.py"],
+    ["micropython_mmc5983/examples/mmc5983_simpletest.py", "github:jposada202020/MicroPython_MMC5983/examples/mmc5983_simpletest.py"]
+  ],
+  "version": "0.1"
+}

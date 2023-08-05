@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_mmc5983/__init__.py", "github:jposada202020/MicroPython_MMC5983/micropython_mmc5983/__init__.py"],
+    ["micropython_mmc5983/i2c_helpers.py", "github:jposada202020/MicroPython_MMC5983/micropython_mmc5983/i2c_helpers.py"],
+    ["micropython_mmc5983/mmc5983.py", "github:jposada202020/MicroPython_MMC5983/micropython_mmc5983/mmc5983.py"]
+  ],
+  "version": "0.1"
+}
