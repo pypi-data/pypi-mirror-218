@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: djm8
+Version: 0.1.1
+Summary: A quickstart no effort Django framework
+License: MIT
+Author: Daniel Konopka
+Author-email: djm8@konopka.me
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=4.2.2,<5.0.0)
+Requires-Dist: attrs (>=23.1.0,<24.0.0)

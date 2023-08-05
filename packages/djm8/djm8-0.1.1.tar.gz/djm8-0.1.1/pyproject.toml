@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "djm8"
+version = "0.1.1"
+description = "A quickstart no effort Django framework"
+authors = ["Daniel Konopka <djm8@konopka.me>"]
+license = "MIT"
+packages = [
+    { include = "djm8", from = "m8project" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.2.2"
+attrs = "^23.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
