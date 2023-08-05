@@ -1,0 +1,6 @@
+my_shell_script.py
+setup.py
+my_shell_script.egg-info/PKG-INFO
+my_shell_script.egg-info/SOURCES.txt
+my_shell_script.egg-info/dependency_links.txt
+my_shell_script.egg-info/top_level.txt
