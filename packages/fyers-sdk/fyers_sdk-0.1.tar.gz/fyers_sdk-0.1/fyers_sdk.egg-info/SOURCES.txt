@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+fyers_sdk.egg-info/PKG-INFO
+fyers_sdk.egg-info/SOURCES.txt
+fyers_sdk.egg-info/dependency_links.txt
+fyers_sdk.egg-info/requires.txt
+fyers_sdk.egg-info/top_level.txt
