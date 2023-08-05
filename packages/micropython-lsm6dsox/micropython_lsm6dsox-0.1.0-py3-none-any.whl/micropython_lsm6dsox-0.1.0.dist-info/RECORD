@@ -1,0 +1,8 @@
+micropython_lsm6dsox/__init__.py,sha256=z2nFCqnzNzSoEwvTrrQmtdH5cLfyPM6CfxfuBQTPlRU,294
+micropython_lsm6dsox/i2c_helpers.py,sha256=PiLpenDIimcCDIuLQ0TvVuY6M0KFeNHjxcLzVyYYm-A,3972
+micropython_lsm6dsox/lsm6dsox.py,sha256=h0_s17n4HhhCl1jJrPjQukCjABzRZsWj-i5SEM-8Adw,14717
+micropython_lsm6dsox-0.1.0.dist-info/LICENSE,sha256=PsONY_yddKoXWHkl2yom4jx_YStWefPD56ONQZe8YXw,1139
+micropython_lsm6dsox-0.1.0.dist-info/METADATA,sha256=uXhFKzivA98nNnxzWkB_5d328O8dNj8nKzr-NArDamc,3241
+micropython_lsm6dsox-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+micropython_lsm6dsox-0.1.0.dist-info/top_level.txt,sha256=thDjucKwxyLkH1fggFraFdRxZrLC90axO-0BP5gxSp4,21
+micropython_lsm6dsox-0.1.0.dist-info/RECORD,,
