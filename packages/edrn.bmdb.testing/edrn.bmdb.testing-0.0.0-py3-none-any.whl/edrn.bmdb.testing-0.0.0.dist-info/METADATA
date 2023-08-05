@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: edrn.bmdb.testing
+Version: 0.0.0
+License-File: LICENSE.md
+Requires-Dist: rdflib (~=6.3.2)
+

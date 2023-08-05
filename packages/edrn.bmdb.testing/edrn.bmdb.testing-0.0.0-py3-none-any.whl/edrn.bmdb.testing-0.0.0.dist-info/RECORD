@@ -1,0 +1,17 @@
+edrn/__init__.py,sha256=N1Lzod9mfF-Eva1KZm_Ywu-YtM_f8KzmQi9m1j9tdCM,46
+edrn/bmdb/__init__.py,sha256=a12uJHPIB3EWOlMmk5rCq3WmtTnFx0HT9LdL5SC8dgM,60
+edrn/bmdb/testing/VERSION.txt,sha256=96-QLu-4nzoiFteYB4KUu5J-ccZLrXBVH4Dv-r03WHU,6
+edrn/bmdb/testing/__init__.py,sha256=RWvYFpqqMz3T5-l8VSaPf4Bf24cFKOP21aPGYZZxek0,221
+edrn/bmdb/testing/main.py,sha256=Gp3doTQRv7hWw4z84MGXhj59_-IDsX8EddkTMxVvYfE,2678
+edrn/bmdb/testing/__pycache__/__init__.cpython-311.pyc,sha256=vHFd8ZyKMbgnka6ih1Fmql1R-xdneKqQTGgDG8m4sNw,548
+edrn/bmdb/testing/data/__init__.py,sha256=pMMnnGvU1Dnng2WNHokm34clk85SZ7J365Db3AlFQYM,64
+edrn/bmdb/testing/data/biomarker-organs.rdf,sha256=D7TiHu-j0D2R5y2Hrx5RoyeJPrSeoWg_S75Lydybb1s,2614241
+edrn/bmdb/testing/data/biomarkers.rdf,sha256=VmZZGNP_NICuDYTCPtiitQDaWVNAmwT2gqF5uFW-aUA,4024478
+edrn/bmdb/testing/data/publications.rdf,sha256=8DdfBS7ADIeBvBa4v9kUCdhCua5CKASCfMdze0jO10k,38736
+edrn/bmdb/testing/data/resources.rdf,sha256=2yG6ywU1uMhLUmvA_7zWfLuTtc3aSd29gcnCpgUK4D8,783925
+edrn.bmdb.testing-0.0.0.dist-info/LICENSE.md,sha256=Lh-qBbuRV0-jiCIBhfV7NgdwFxQFOXH3BKOzK865hRs,10480
+edrn.bmdb.testing-0.0.0.dist-info/METADATA,sha256=3YC1EbPDBJkWUcWLIse-oi7gE2bnvxU8QNt_bE3HkUo,119
+edrn.bmdb.testing-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+edrn.bmdb.testing-0.0.0.dist-info/entry_points.txt,sha256=aFNlO9oxBR111dDyzq69zrKLduM2r7ipk-ONU4gh0h0,57
+edrn.bmdb.testing-0.0.0.dist-info/top_level.txt,sha256=ee0uyKpR_VRx5-O4WdUAYdPG-aKuNRZ9IyaTutgo5KM,5
+edrn.bmdb.testing-0.0.0.dist-info/RECORD,,
