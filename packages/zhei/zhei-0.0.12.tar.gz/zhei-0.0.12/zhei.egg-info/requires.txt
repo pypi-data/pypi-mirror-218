@@ -1,0 +1,12 @@
+nvitop
+redis
+transformers
+datasets
+evaluate
+pandas
+dingtalkchatbot
+psutil
+nltk
+jsonlines
+omegaconf
+tiktoken
