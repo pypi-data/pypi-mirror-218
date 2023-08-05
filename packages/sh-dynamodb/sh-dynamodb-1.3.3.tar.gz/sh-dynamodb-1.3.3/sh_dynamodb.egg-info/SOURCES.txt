@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+sh_dynamodb/__init__.py
+sh_dynamodb/deserialize.py
+sh_dynamodb/discover.py
+sh_dynamodb/dynamodb.py
+sh_dynamodb/sync.py
+sh_dynamodb.egg-info/PKG-INFO
+sh_dynamodb.egg-info/SOURCES.txt
+sh_dynamodb.egg-info/dependency_links.txt
+sh_dynamodb.egg-info/entry_points.txt
+sh_dynamodb.egg-info/requires.txt
+sh_dynamodb.egg-info/top_level.txt
+sh_dynamodb/sync_strategies/__init__.py
+sh_dynamodb/sync_strategies/full_table.py
+sh_dynamodb/sync_strategies/log_based.py
