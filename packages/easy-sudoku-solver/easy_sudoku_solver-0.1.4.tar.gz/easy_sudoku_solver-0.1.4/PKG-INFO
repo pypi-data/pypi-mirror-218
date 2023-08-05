@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: easy-sudoku-solver
+Version: 0.1.4
+Summary: sudoku solver
+Author: Gustaw Filipek
+Author-email: guciofilipek@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
+# installation
+```
+pip install easy-sudoku-solver
+```
+
+# usage
+```
+from sudoku_solver import SudokuSolver
+unsolved_sudoku = '090060100030201004200080000500103900000006000009000008300509800040000070000020000'
+solver = SudokuSolver(unsolved_sudoku)
+solution = solver.solve()
+print(solution)
+// '79436518283527169421698475358214396747389652116975243832751
+9846941638275658427319'
+```
