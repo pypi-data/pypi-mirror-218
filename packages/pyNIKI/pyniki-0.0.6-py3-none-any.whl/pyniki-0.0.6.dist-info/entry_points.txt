@@ -1,0 +1,2 @@
+[console_scripts]
+pyniki = pyniki.main:run
