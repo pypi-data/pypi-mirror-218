@@ -1,0 +1,2 @@
+[console_scripts]
+xxx = xxxchat.command.__main__:main
