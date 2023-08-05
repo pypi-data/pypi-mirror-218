@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+s3cps3/__init__.py
+s3cps3/commons.py
+s3cps3/listbucket.py
+s3cps3/main.xsh
+s3cps3/s32s3
+s3cps3/s3bigcp.sh
+s3cps3/s3cps3.py
+s3cps3.egg-info/PKG-INFO
+s3cps3.egg-info/SOURCES.txt
+s3cps3.egg-info/dependency_links.txt
+s3cps3.egg-info/requires.txt
+s3cps3.egg-info/top_level.txt
