@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-cp-broadcast
+Version: 0.0.5
+Summary: A nonebot plugin package
+Home-page: https://github.com/HuParry/nonebot-plugin-cp-broadcast
+Author: HuParry
+Author-email: huparry@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: httpx
+Requires-Dist: nonebot
+Requires-Dist: fake-useragent
+Requires-Dist: bs4
+Requires-Dist: asyncio
+Requires-Dist: datetime
+
+# A plugin of nonebot2
+
+You just need to use pip to install it. 
+
+If you want to know how to use it, check the file [README.md](https://github.com/HuParry/nonebot-plugin-cp-broadcast/blob/master/README.md)
