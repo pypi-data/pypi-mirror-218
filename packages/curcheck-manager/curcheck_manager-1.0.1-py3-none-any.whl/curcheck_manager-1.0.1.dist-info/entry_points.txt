@@ -1,0 +1,3 @@
+[console_scripts]
+curcheck=curcheck_manager.app:cli
+
