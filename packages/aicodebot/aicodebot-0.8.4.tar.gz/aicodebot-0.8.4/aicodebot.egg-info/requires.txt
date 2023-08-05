@@ -1,0 +1,9 @@
+beautifulsoup4
+click
+GitPython
+langchain
+loguru
+openai
+pyyaml
+rich
+tiktoken
