@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_securityaz_kms_agent.egg-info/PKG-INFO
+shopee_securityaz_kms_agent.egg-info/SOURCES.txt
+shopee_securityaz_kms_agent.egg-info/dependency_links.txt
+shopee_securityaz_kms_agent.egg-info/top_level.txt
