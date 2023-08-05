@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "iformat"
+version = "0.3.3"
+authors = [
+  { name="Finn Emmerson", email="finne014@gmail.com" },
+]
+description = "Indents and pretty prints data structures"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/FinnE145/iprint"
+"Bug Tracker" = "https://github.com/FinnE145/iprint/issues"
