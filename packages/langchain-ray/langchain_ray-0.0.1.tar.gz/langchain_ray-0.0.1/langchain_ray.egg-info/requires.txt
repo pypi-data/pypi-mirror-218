@@ -1,0 +1,6 @@
+ray[air]
+dreamai
+langchain
+transformers
+
+[dev]
