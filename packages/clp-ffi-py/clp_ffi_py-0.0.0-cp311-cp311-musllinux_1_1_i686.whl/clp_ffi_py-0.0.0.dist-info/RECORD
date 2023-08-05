@@ -1,0 +1,11 @@
+clp_ffi_py/CLPFourByteEncoder.cpython-311-i386-linux-musl.so,sha256=E0w3-eytLz1_qCb-qajnLFjiETjDoxmsOSn60mR5VjQ,2371513
+clp_ffi_py/CLPFourByteEncoder.pyi,sha256=fh3wLR9myyshJdd1K-X5lt06jqXI2HJsDSKyO1Vb7a8,322
+clp_ffi_py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_ffi_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_ffi_py-0.0.0.dist-info/METADATA,sha256=VzhS6fS9RHkB8xKuadfgdv-_LrTaakMpyztTyoQPdCU,4319
+clp_ffi_py-0.0.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+clp_ffi_py-0.0.0.dist-info/top_level.txt,sha256=oJlQf7Hnz9l2Yum2B9WNNVFDMdgnuqibAtxChyZJtc8,11
+clp_ffi_py-0.0.0.dist-info/RECORD,,
+clp_ffi_py-0.0.0.dist-info/WHEEL,sha256=5Br54LkLAM_XrDPbNYIDpikGK9hHI1uk74I_AkuPT3c,111
+clp_ffi_py.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+clp_ffi_py.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
