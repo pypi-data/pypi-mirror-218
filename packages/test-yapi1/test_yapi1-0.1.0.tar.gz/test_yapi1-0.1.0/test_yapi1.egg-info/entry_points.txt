@@ -1,0 +1,3 @@
+[console_scripts]
+test_yapi1 = test_yapi1.cli:main
+
