@@ -1,0 +1,16 @@
+pyMELTScalc/Barom.py,sha256=8ZTBi1aQXMhsjwCPu7zrXDPvhMHQ7V9oBaHgPe26jHc,43203
+pyMELTScalc/GenFuncs.py,sha256=tqj2XLDkT8mspn7Wzlvn2VsHcSXvchvQeRNK5jMZyDs,11014
+pyMELTScalc/Holland.py,sha256=udBFeVUyTBpSfLIhx7Hy6o0I8ApNCDvwU_gZa0diY5w,7251
+pyMELTScalc/Liq.py,sha256=oyUezA631ziLi5oMNF6Ia_vWCDOZe8Xk7_K4l6TrggY,21247
+pyMELTScalc/MELTS.py,sha256=vChAr_S0TzUoKwa7RJ9dBnoWmOI8by_D-f19my7-iks,46633
+pyMELTScalc/Path.py,sha256=xpFkeJW20orLb5QdHAqbFuBUbK-r4ZRNrICuvvoROBs,24415
+pyMELTScalc/Path_wrappers.py,sha256=JKxE-djELdj9p-DAbns9_fk4J8vwsDKR0Uz0L9MpFas,21698
+pyMELTScalc/PhaseDiagrams.py,sha256=SrRxDcjbzZQah8fJ3UrBHrAH4SBP-wwOpXFPH7Dpmw8,18602
+pyMELTScalc/Plotting.py,sha256=6LMT_dC63LGt-3Mr9tfU8V8FU_Ek9p6ADS87yGfZYBE,25070
+pyMELTScalc/Saturation.py,sha256=4yZMonTwYOdfRKVjvKTJenUaFHbHcR9QL4ptv-EYiog,9891
+pyMELTScalc/__init__.py,sha256=QhF9AzuHXYH5JJyv-BLag-76lWemUCpRl-FXg8yrKWM,1473
+pyMELTScalc/_version.py,sha256=wWtGq7IBhPbJrW7kIscQ-D9sV7FGjOlUWplFsytH9tw,296
+pyMELTScalc-0.1.24.dist-info/METADATA,sha256=EVbitsrPFlgGdUCK6uVw9sED6-tAVcIkQgqTjYBGzpY,3346
+pyMELTScalc-0.1.24.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyMELTScalc-0.1.24.dist-info/top_level.txt,sha256=P2n7i20lIIHbstqfStETlCOmepZ6ogsc9-X4yu8BAs8,12
+pyMELTScalc-0.1.24.dist-info/RECORD,,
