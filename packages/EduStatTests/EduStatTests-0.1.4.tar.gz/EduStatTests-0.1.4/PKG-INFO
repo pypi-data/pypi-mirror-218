@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: EduStatTests
+Version: 0.1.4
+Author-email: Hakan Güldal <hguldal@gmail.com>
+Project-URL: Homepage, https://github.com/hguldal/EduStatTests
+Project-URL: Bug Tracker, https://github.com/hguldal/EduStatTests/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EduStatTests
+Python package for educational statistical analysis

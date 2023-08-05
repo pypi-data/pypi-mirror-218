@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/EduStatTests.py
+src/__init__.py
+src/EduStatTests.egg-info/PKG-INFO
+src/EduStatTests.egg-info/SOURCES.txt
+src/EduStatTests.egg-info/dependency_links.txt
+src/EduStatTests.egg-info/top_level.txt
