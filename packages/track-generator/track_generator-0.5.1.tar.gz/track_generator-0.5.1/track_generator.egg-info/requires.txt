@@ -1,0 +1,5 @@
+pytransform3d
+numpy
+drawsvg==1.9
+watchdog~=3.0.0
+pyside6~=6.5.1
