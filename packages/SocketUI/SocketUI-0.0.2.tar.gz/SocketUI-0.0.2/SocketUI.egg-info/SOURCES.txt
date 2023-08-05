@@ -1,0 +1,10 @@
+README.md
+setup.py
+SocketUI/__init__.py
+SocketUI/ui.py
+SocketUI.egg-info/PKG-INFO
+SocketUI.egg-info/SOURCES.txt
+SocketUI.egg-info/dependency_links.txt
+SocketUI.egg-info/entry_points.txt
+SocketUI.egg-info/requires.txt
+SocketUI.egg-info/top_level.txt

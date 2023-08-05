@@ -1,0 +1,2 @@
+[console_scripts]
+socketui = SocketUI:run
