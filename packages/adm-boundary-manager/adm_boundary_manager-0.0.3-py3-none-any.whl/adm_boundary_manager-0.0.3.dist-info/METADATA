@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: adm-boundary-manager
+Version: 0.0.3
+Summary: Load, manage and visualize Administrative Boundaries Data in Wagtail
+Home-page: https://github.com/wmo-raf/adm-boundary-manager
+Author: Erick Otenyo
+Author-email: otenyo.erick@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: wagtail (>=4.2.2)
+Requires-Dist: shapely (>=2.0.1)
+Requires-Dist: geopandas (>=0.12.2)
+Requires-Dist: django-filter (>=22.1)
+Requires-Dist: django-countries (>=7.5.1)
+Requires-Dist: wagtail-cache (>=2.2.0)
+
+# Administrative Boundaries Manager
+
+Load, manage and visualize administrative Boundaries in Wagtail Projects.
+
+# Installation
+
+- TODO
+
