@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pik_intercom
+Version: 0.0.4
+Summary: Pik Intercom API for Python
+Home-page: https://github.com/alryaz/pik-intercom-python
+Author: Alexander Ryazanov
+Author-email: alryaz@alryaz.com
+Project-URL: Documentation, https://github.com/alryaz/pik-intercom-python
+Project-URL: Bug Reports, https://github.com/alryaz/pik-intercom-python/issues
+Project-URL: Source Code, https://github.com/alryaz/pik-intercom-python
+Keywords: pypi,package,pik,intercom
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Pik Intercom API
+================
+
+@TODO: write this description
