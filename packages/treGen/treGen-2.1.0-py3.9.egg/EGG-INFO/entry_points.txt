@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        treGen=src.__main__:main
+    
