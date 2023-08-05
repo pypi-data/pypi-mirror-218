@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: anbima_calendar
+Version: 0.0.2
+Summary: Ambima Calendar - Helper functions to handle banking holidays in Brazil
+Home-page: https://github.com/risparfinance/anbima_calendar
+Author: Rispar
+Author-email: tecnologia@rispar.com.br
+License: Apache License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
