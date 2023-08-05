@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: VisCPM
+Version: 0.0.1.dev0
+Summary: VisCPM model for vision-language understanding and generation
+Author: OpenBMB
+Author-email: openbmb@gmail.com
+Requires-Dist: numpy
+Requires-Dist: torch (>=1.10)
+Requires-Dist: jieba
+Requires-Dist: tqdm
+Requires-Dist: tensorboard
+Requires-Dist: numpy (>=1.21.0)
+Requires-Dist: diffusers (>=0.15.0)
+Requires-Dist: jieba (>=0.42.1)
+Requires-Dist: matplotlib (>=3.7.1)
+Requires-Dist: numpy (>=1.22.3)
+Requires-Dist: opencv-python (>=4.7.0.72)
+Requires-Dist: pandas (>=2.0.0)
+Requires-Dist: Pillow (>=9.5.0)
+Requires-Dist: psutil (>=5.9.0)
+Requires-Dist: pydantic (>=1.10.7)
+Requires-Dist: scipy (>=1.10.1)
+Requires-Dist: setuptools (>=65.5.0)
+Requires-Dist: timm (>=0.4.12)
+Requires-Dist: torch (>=1.13.1)
+Requires-Dist: torchscale (>=0.2.0)
+Requires-Dist: torchvision (>=0.14.1)
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: transformers (>=4.28.0)
+Requires-Dist: typing-extensions (>=4.5.0)
+
