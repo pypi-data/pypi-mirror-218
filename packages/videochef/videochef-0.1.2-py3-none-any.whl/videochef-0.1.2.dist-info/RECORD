@@ -1,0 +1,10 @@
+videochef/__init__.py,sha256=GzWpBdn4xbpG13lm1uNkJuEuKVx2bT5wYE5CfkAVIek,73
+videochef/chef.py,sha256=XtZCuIgViizCBfMPyjROfFkqiF1DJG9ycg7gKCvfv3Y,13178
+videochef/io.py,sha256=PAKmgHWmAoG750l75T0lTV1Vsk8bVgXGg8HCp_Q-9_M,13624
+videochef/util.py,sha256=fhKxxjH6j9hSvqd2Z_7Qz7vzsgst127jS7gbfZSt1jU,3187
+videochef/viz.py,sha256=-lOSF5y1hOJt2u0Fy71HRgq8EEAbaWv4dxWcfs88BiY,9408
+videochef-0.1.2.dist-info/LICENSE.txt,sha256=K4fvOVo0vbYSHlPdVfkYRXgkp3H36mDZi9zdDehsweg,1067
+videochef-0.1.2.dist-info/METADATA,sha256=fWIlFNrJMnstchD5JfdFWDg7fvKNzzJjbzj841zbeA0,838
+videochef-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+videochef-0.1.2.dist-info/top_level.txt,sha256=BqLR-smygnRyxbjekZdkJX5T3vV9efbICCriExGzSq8,10
+videochef-0.1.2.dist-info/RECORD,,
