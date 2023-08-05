@@ -1,0 +1,16 @@
+setup.py
+mpqobdt/My_OBDT_detect.py
+mpqobdt/My_OBDT_train.py
+mpqobdt/__init__.py
+mpqobdt/export.py
+mpqobdt/test.py
+mpqobdt/test2.jpg
+mpqobdt/test3.jpg
+mpqobdt/test4.jpg
+mpqobdt/val.py
+mpqobdt/yolov5s.pt
+mpqobdt.egg-info/PKG-INFO
+mpqobdt.egg-info/SOURCES.txt
+mpqobdt.egg-info/dependency_links.txt
+mpqobdt.egg-info/requires.txt
+mpqobdt.egg-info/top_level.txt
