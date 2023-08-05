@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wangdiantong-py
+Version: 0.3.0
+Summary: wangdiantong python openapi
+Home-page: https://github.com/AoAoStudio/wangdiantong-py
+Author: Ranger Huang
+Author-email: ranger_huang@yeah.net
+Keywords: wangdiantong
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
