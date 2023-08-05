@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: st-stripe
+Version: 0.1.0
+Summary: A Python package for creating subscription Streamlit apps
+Home-page: https://github.com/tylerjrichards/st-stripe
+Author: Tyler Richards
+Author-email: tylerjrichards@gmail.com
+Requires-Dist: streamlit
+Requires-Dist: stripe
+Requires-Dist: httpx-oauth
+Requires-Dist: pyjwt
+
