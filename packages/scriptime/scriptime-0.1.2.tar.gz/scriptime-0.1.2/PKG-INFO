@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: scriptime
+Version: 0.1.2
+Summary: A Python library to notify when a script has finished running and providing insights such as run time, CPU and RAM usage, and more.
+Author: Jake Strasler
+Author-email: jstr36@gmail.com
