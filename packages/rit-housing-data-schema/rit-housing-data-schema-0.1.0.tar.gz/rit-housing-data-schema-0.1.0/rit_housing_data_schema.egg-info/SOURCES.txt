@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+rit_housing_data_schema/__init__.py
+rit_housing_data_schema/apartment.py
+rit_housing_data_schema/common.py
+rit_housing_data_schema.egg-info/PKG-INFO
+rit_housing_data_schema.egg-info/SOURCES.txt
+rit_housing_data_schema.egg-info/dependency_links.txt
+rit_housing_data_schema.egg-info/requires.txt
+rit_housing_data_schema.egg-info/top_level.txt
+tests/test_rit_housing_data_schema_apartment.py
