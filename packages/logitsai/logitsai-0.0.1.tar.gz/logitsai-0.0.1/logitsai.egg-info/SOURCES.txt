@@ -1,0 +1,7 @@
+setup.py
+logitsai/__init__.py
+logitsai.egg-info/PKG-INFO
+logitsai.egg-info/SOURCES.txt
+logitsai.egg-info/dependency_links.txt
+logitsai.egg-info/requires.txt
+logitsai.egg-info/top_level.txt
