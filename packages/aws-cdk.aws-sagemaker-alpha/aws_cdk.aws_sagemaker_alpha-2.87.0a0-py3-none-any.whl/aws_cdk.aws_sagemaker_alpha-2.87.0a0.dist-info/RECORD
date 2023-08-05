@@ -1,0 +1,10 @@
+aws_cdk/aws_sagemaker_alpha/__init__.py,sha256=sMTMjk6DI0Wo5zfUblIUSb6v-tYGOIPvG9HuJwWA0BI,240804
+aws_cdk/aws_sagemaker_alpha/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_sagemaker_alpha/_jsii/__init__.py,sha256=_ZkeTPPzRmSNSVkvec2pP4FF-zPEfojAhvsjfRlAK44,445
+aws_cdk/aws_sagemaker_alpha/_jsii/aws-sagemaker-alpha@2.87.0-alpha.0.jsii.tgz,sha256=bvCKPbVG2hegSYq0Rb_x-GQclr9W7Gnp0ZHoSDsg9eM,92139
+aws_cdk.aws_sagemaker_alpha-2.87.0a0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_sagemaker_alpha-2.87.0a0.dist-info/METADATA,sha256=6GiNWaUnSkM1dd-72i8qq9-MFL3LTvQJyNYNyVhtTYI,10130
+aws_cdk.aws_sagemaker_alpha-2.87.0a0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_sagemaker_alpha-2.87.0a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aws_cdk.aws_sagemaker_alpha-2.87.0a0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_sagemaker_alpha-2.87.0a0.dist-info/RECORD,,
