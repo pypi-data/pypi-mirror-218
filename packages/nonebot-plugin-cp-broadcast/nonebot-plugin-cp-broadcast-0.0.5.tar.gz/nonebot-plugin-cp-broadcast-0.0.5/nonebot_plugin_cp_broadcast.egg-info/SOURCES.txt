@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+nonebot_plugin_cp_broadcast/__init__.py
+nonebot_plugin_cp_broadcast/config.py
+nonebot_plugin_cp_broadcast.egg-info/PKG-INFO
+nonebot_plugin_cp_broadcast.egg-info/SOURCES.txt
+nonebot_plugin_cp_broadcast.egg-info/dependency_links.txt
+nonebot_plugin_cp_broadcast.egg-info/requires.txt
+nonebot_plugin_cp_broadcast.egg-info/top_level.txt

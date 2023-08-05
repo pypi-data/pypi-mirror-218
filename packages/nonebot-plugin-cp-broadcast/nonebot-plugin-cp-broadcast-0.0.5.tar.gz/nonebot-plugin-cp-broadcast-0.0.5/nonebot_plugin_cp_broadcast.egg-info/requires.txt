@@ -1,0 +1,6 @@
+httpx
+nonebot
+fake_useragent
+bs4
+asyncio
+datetime
