@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+freq_mob/__init__.py
+freq_mob/freq_mob.py
+freq_mob.egg-info/PKG-INFO
+freq_mob.egg-info/SOURCES.txt
+freq_mob.egg-info/dependency_links.txt
+freq_mob.egg-info/requires.txt
+freq_mob.egg-info/top_level.txt
