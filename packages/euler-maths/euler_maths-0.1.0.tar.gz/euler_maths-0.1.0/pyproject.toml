@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "euler_maths"
+version = "0.1.0"
+authors = [
+  { name="Luke Hartley", email="luke.hartley05@gmail.com" },
+]
+description = "A library of mathematical functions for Project Euler"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "bitarray",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Luke943/Euler-Maths"
+"Bug Tracker" = "https://github.com/Luke943/Euler-Maths/issues"
