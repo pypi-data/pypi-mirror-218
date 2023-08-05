@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/braille_bars.egg-info/PKG-INFO
+src/braille_bars.egg-info/SOURCES.txt
+src/braille_bars.egg-info/dependency_links.txt
+src/braille_bars.egg-info/top_level.txt
