@@ -1,0 +1,2 @@
+[console_scripts]
+robotpipe-cli = insightface.commands.insightface_cli:main
