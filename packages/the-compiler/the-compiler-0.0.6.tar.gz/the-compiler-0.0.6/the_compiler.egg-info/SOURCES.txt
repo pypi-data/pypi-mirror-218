@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+the_compiler/__init__.py
+the_compiler/main.py
+the_compiler.egg-info/PKG-INFO
+the_compiler.egg-info/SOURCES.txt
+the_compiler.egg-info/dependency_links.txt
+the_compiler.egg-info/requires.txt
+the_compiler.egg-info/top_level.txt
