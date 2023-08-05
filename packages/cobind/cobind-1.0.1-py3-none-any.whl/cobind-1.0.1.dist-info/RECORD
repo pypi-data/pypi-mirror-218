@@ -1,0 +1,17 @@
+cobind-1.0.1.data/scripts/cobind.py,sha256=M3dakLVhMT0VS3_9hikZvWU6c7x8EiW5uJX6vm9PSw8,35472
+cobindability/BED.py,sha256=XKd9kJgCtnQsOKibyK_flF8C3arWB5NiRnkmI1aGDLg,37938
+cobindability/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cobindability/bbreader.py,sha256=vugoCrXU6Lz0xYk6Q2ZSScayjywX0JuKFn8D9xujGIo,592
+cobindability/bw.py,sha256=XbyY9ajVJP6z4Oq2yVLWcZzf6Jd8ihbmHLGpkQoc2oY,5072
+cobindability/coefcal.py,sha256=rx2CgflvDWId72UqeFgdy8UTxWG0mN6zl2YemWSlpNk,4078
+cobindability/findbed.py,sha256=mEobcFCAmowDQHgfSRSHI4ql3Ibv2zIoMJ07JVf3aFg,1219
+cobindability/ireader.py,sha256=BFqxIa0JvlnnebZYJHMDWeC0jd03vYzEaiNrJgaIrYM,1572
+cobindability/ovbootstrap.py,sha256=7t0n0FE8yoRA-qENxmBCmJ3zd6k32hrsPiPkbDESbD8,11472
+cobindability/ovstat.py,sha256=a3VEYvsSPKXZ0blGzHeeW9VdaqMA2ivak4x6IBmsbwM,5434
+cobindability/utils.py,sha256=HKIlEp9rI9AcrdbmZdiH0J4pf22Yl7yL_MWKhEAS7ns,2228
+cobindability/version.py,sha256=_ZEXZ9OcLtIJ-gPvOkMv1OKAzml7W1MzZe1jHAUZeBE,18
+cobind-1.0.1.dist-info/LICENSE,sha256=L4Fm1PteYfXyBhJV4SseZlanMqwGEz4GbFGhDSt_Yzg,1067
+cobind-1.0.1.dist-info/METADATA,sha256=RnhDgd23BGA3fw9yILIdXnGbE3_-Od0XUix1Lrvk-_8,838
+cobind-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cobind-1.0.1.dist-info/top_level.txt,sha256=_fOZGLFFTLUgY00COpmYSUuSXPnDABGZHsGDjDVZdq0,25
+cobind-1.0.1.dist-info/RECORD,,
