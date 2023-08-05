@@ -1,0 +1,11 @@
+tibert/__init__.py,sha256=CngeexaNfFdl-ysL6TlnjTFRfzVzCOPeSFo1M265pAw,141
+tibert/bertcoref.py,sha256=CRMwGiHkVHsKtU9OGShX-hkRAeHMTA8xMmt0MhyFR7g,50015
+tibert/predict.py,sha256=kH8_6pKt1lLFQtJvtz__Ffj09dGT1faWvVth-JlsWyM,3594
+tibert/run_train.py,sha256=58t2nMIu9u1pT08jLbRNE6WaRJqq5ASCV8LY_ffVyMQ,2298
+tibert/score.py,sha256=XNr35rRfe73RW9tCTpoLfxlDWuXo7EqGuA9zsIE0Yfk,4530
+tibert/train.py,sha256=dwfh0q-8udgfgK6JgVnbgFTeOajIVaT9hFsLtX6FQ30,5792
+tibert/utils.py,sha256=ZR768QMQdAtOl3qrJcwZAbE9LvbWLn1HgDZzMdw2ImI,4417
+tibert-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tibert-0.1.0.dist-info/METADATA,sha256=6jNDzyFal9UL98vLx-wN3eYSBQKBx3GdL80G4nECg98,7305
+tibert-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+tibert-0.1.0.dist-info/RECORD,,
