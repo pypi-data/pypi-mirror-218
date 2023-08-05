@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: ftrobopy
+Version: 2.0.0
+Summary: Python Interface for Fischertechnik ROBOTICS TXT Controller
+Home-page: https://github.com/ftrobopy/ftrobopy
+Author: Torsten Stuehn
+Author-email: stuehn@mailbox.org
+License: MIT
+Download-URL: https://github.com/ftrobopy/ftrobopy/archive/2.0.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
