@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "flowdump"
+version = "0.1.2"
+description = "NiPype-1 workflow serializer."
+authors = ["Florian Rupprecht <floruppr@gmail.com>"]
+license = "LGPL-2.1"
+readme = "README.md"
+packages = [{include = "flowdump", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+nipype = ">=1.0.0, <2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+mypy = "^1.4.0"
+black = "^23.3.0"
+isort = {version = "^5.12.0", python = "^3.8"}
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.mypy]
+ignore_missing_imports = true
