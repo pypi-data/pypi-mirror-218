@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cosmotech-run-orchestrator
+Version: 1.0.2
+Summary: Orchestration suite for Cosmotech Run Templates
+Home-page: https://github.com/Cosmo-Tech/run_template_orchestrator
+Author: Alexis Fossart
+Author-email: alexis.fossart@cosmotech.com
+License-File: LICENSE
+Requires-Dist: cosmotech-acceleration-library
+Requires-Dist: cosmotech-api
+Requires-Dist: flowpipe
+Requires-Dist: jsonschema
+Requires-Dist: pyyaml
+Requires-Dist: click
+Requires-Dist: rich-click
+Requires-Dist: click-log
+Requires-Dist: rich
+Requires-Dist: mkdocs
+Requires-Dist: mkdocs-gen-files
+Requires-Dist: mkdocs-material
+Requires-Dist: mkdocstrings[python]
+Requires-Dist: mkdocs-literate-nav
+Requires-Dist: mike
+Requires-Dist: pymdown-extensions
+Requires-Dist: requirements-parser
+
+# cosmotech-run-orchestrator
+
+This library contains the `csm-run-orchestrator` cli developed by [Cosmo Tech](https://cosmotech.com/) for its Digital
+Twin platform.
+
+If you are interested in using it, please contact [Cosmo Tech](https://cosmotech.com/)
+
+## Installation
+
+Documentation on the installation is available on
+our [GitHub Page](https://cosmo-tech.github.io/run_template_orchestrator/)
+
+Once installed you will have access to the `csm-run-orchestrator` CLI and all its commands.
