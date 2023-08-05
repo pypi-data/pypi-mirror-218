@@ -1,0 +1,11 @@
+pyfixest/__init__.py,sha256=-xCIOWMP8TQjT3Ef87ZbEaemSFMtXqhbnRki4HO-ypk,26
+pyfixest/demean.py,sha256=OJSbgVW-kw2eVOU6jf731Lv64vTyRQYpcS0CG_FaKZY,4330
+pyfixest/feols.py,sha256=66S0i5aZiPtu8sSbozeaViHuHBh2v29ipHAtEsz2RJU,21004
+pyfixest/fixest.py,sha256=6ZyWr96rPn-8UHuifBcREcxY1F1OoFGDDPqjbbN3iiM,45465
+pyfixest/FormulaParser.py,sha256=zWvOez-eHxydX1NakkKmfuWwvEnNy_uy2UQJza1Gv4o,20302
+pyfixest/ssc_utils.py,sha256=nDq279lacs-WN_fW_aIWo97BCyXzkS49odaixEqeZtg,3426
+pyfixest/utils.py,sha256=Dzvc6CyK6BS6GnOUCLBFwKV0Zax8KdWXHksp-DEgpH0,1312
+pyfixest-0.6.6.dist-info/LICENSE.md,sha256=0YVoSLxvwJcsUTFKuxbLmF6951ozvkprU_uM2wiDO7U,1096
+pyfixest-0.6.6.dist-info/METADATA,sha256=ramC59e2KfPKCUCTauUE7cZCNwQeZqr1R5bLs-uBUuY,3573
+pyfixest-0.6.6.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pyfixest-0.6.6.dist-info/RECORD,,
