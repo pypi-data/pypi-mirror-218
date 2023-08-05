@@ -1,0 +1,3 @@
+include multikeyiterdict/requirements.txt
+include multikeyiterdict/thirdparty.json
+include multikeyiterdict/README.MD
