@@ -1,0 +1,6 @@
+README.md
+setup.py
+hello_whmou.egg-info/PKG-INFO
+hello_whmou.egg-info/SOURCES.txt
+hello_whmou.egg-info/dependency_links.txt
+hello_whmou.egg-info/top_level.txt
