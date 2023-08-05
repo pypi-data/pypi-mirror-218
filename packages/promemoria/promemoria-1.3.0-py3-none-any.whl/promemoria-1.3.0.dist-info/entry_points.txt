@@ -1,0 +1,3 @@
+[console_scripts]
+promemoria = promemoria:main
+promemoria-check = promemoria:checker

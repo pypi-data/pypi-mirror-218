@@ -1,0 +1,12 @@
+promemoria/__init__.py,sha256=ekQH1CQAtA_TIgjMeU-HJ7KlwSOOO1t4OCCaNaivAQI,6926
+promemoria/__main__.py,sha256=J88o_Ut7zBkDubmerdRUV62mtEaWX0t86RJa5Tn9-C8,63
+promemoria/files.py,sha256=2MSKhzdffFZ6YOyvSXYpgKZUHQ2FJAZhSrcAS8n2IH8,1189
+promemoria/git.py,sha256=l1JzodoBESxuwsM3sKbD404rqcDW9c2bHkkOTPoTY7w,1680
+promemoria/help.py,sha256=usMqeUKYUI0XxsRRmehosDLqk5ZuqIr6uRt-R50kqJI,4000
+promemoria/reminders.py,sha256=E2Y8WaI0tBZYfy5NzuDyV2n6Db5_JxjhO3vq_Tagwy0,4731
+promemoria/utilities.py,sha256=os8O_P2oKZNiPL5nKi2sTD2TEx7zmEetSGS7m_nfdyA,2443
+promemoria-1.3.0.dist-info/METADATA,sha256=qvZNgL2k7PhJ0xTuUcv30cdnaGhW2sSVZ38grmZ0jR8,4632
+promemoria-1.3.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+promemoria-1.3.0.dist-info/entry_points.txt,sha256=5Pur47x3-aO8tIoC3eQOyILdn2TKjQ_IZwSXRhb5bf8,85
+promemoria-1.3.0.dist-info/licenses/LICENSE,sha256=Q4fsJftQDQaJtVtR4uUTHjfaR8o5xrCHHPEFWBMgclk,1074
+promemoria-1.3.0.dist-info/RECORD,,
