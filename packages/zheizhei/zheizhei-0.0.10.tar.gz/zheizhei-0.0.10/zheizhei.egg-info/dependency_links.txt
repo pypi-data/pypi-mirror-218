@@ -1,0 +1,2 @@
+https://pypi.python.org/simple
+http://my.company.com/pypi/
