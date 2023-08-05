@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gonchaya
+Version: 0.0.5
+Summary: Data Science tools
+Home-page: https://github.com/Alexander-Firsov/gonchaya
+Author: Alexander Firsov aka gonchaya aka padla
+Author-email: gonchaya@gifara.ru
+License: BSD-3-Clause
+Description: # gonchaya
+        a set of additional tools for the Data Science course  
+        набор дополнительных инструментов для курса Data Science  
+        
+        
+Keywords: example python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Russian
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
