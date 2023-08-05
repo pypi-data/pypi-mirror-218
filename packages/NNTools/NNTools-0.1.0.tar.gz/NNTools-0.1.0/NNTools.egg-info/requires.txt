@@ -1,0 +1,10 @@
+torch
+numpy
+matplotlib
+tqdm
+pyyaml
+pandas
+torchvision
+opencv-python
+segmentation_models_pytorch
+bokeh

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: NNTools
+Version: 0.1.0
+Summary: Light library built to facilitate the training of neural network with Pytorch. 
+Home-page: https://github.com/ClementPla/NNTools
+Download-URL: https://github.com/ClementPla/NNTools/archive/refs/tags/v0.1.0.tar.gz
+Author: Clement Playout
+Author-email: clement.playout@polymtl.ca
+License: MIT
+Keywords: PyTorch,Neural Network,CNN,deep learning,training,dataset,image,configuration
+License-File: LICENSE
