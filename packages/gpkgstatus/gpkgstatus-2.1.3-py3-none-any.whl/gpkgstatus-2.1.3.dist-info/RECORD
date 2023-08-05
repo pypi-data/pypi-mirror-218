@@ -1,0 +1,13 @@
+gpkgstatus/__init__.py,sha256=YHbO7cjl5jHqallewQaa5y9f4vWhyd8VObazxPs9zQk,366
+gpkgstatus/entrypoint.py,sha256=tNrO5pRZyC1kMWHfTqi-sF2m5odjAE3BqxbSEfshaVw,305
+gpkgstatus/gpkgstatus.py,sha256=WAkhhjnpH33Jf-ziOrVHnvm13uobCZwCj0vh_XEhavU,7814
+gpkgstatus/utils/__init__.py,sha256=hCQIYuSXTph7Kec2sTOCU8xvcUOQuKeXewy0WXQ76ac,110
+gpkgstatus/utils/config.py,sha256=STmYSLds-VXXeXVaTlnhxcltxv_9vHQnh_FpVcPlufI,3251
+gpkgstatus/utils/json_file_reader.py,sha256=VuftMPf6yuaWs85CkLAf1G0AR09F40rt09d4RI2ou_g,3919
+gpkgstatus/utils/url_reader.py,sha256=levHuxqmjOuiO3K3hisKUjfiACxgCKb_Z-h7AVnKt5M,3509
+gpkgstatus-2.1.3.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+gpkgstatus-2.1.3.dist-info/METADATA,sha256=Q1YHJK8KjA8J0M2Js3A5vnmZ3OYiQA3HkBQAYyhWlAc,7610
+gpkgstatus-2.1.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gpkgstatus-2.1.3.dist-info/entry_points.txt,sha256=es2D9PRttIuo7Ew9ATFYRJLcPAygREK08M9kgVgHqYo,58
+gpkgstatus-2.1.3.dist-info/top_level.txt,sha256=eZCM8taqI8L4TgUgfRKrELBuXRRhhLzN6h8EYo9223M,11
+gpkgstatus-2.1.3.dist-info/RECORD,,
