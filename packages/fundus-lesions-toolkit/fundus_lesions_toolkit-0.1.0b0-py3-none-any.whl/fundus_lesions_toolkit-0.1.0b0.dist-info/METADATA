@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: fundus_lesions_toolkit
+Version: 0.1.0b0
+Summary: Tools for lesions segmentation in retinal fundus images
+Project-URL: Homepage, https://github.com/ClementPla/fundus-lesions-toolkit/
+Project-URL: Bug Tracker, https://github.com/ClementPla/fundus-lesions-toolkit/issues
+Author-email: Clement Playout <clement.playout@polymtl.ca>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Requires-Dist: matplotlib
+Requires-Dist: nntools
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: torch
+Requires-Dist: torchvision
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <img src="imgs/mosaic.png" width="256px"/>
+</p>
+
+
+# Toolkit for Lesions Segmentation in Fundus Images
+
+This library offers a set of models (with pretrained weights) for the segmentation of lesions in fundus images.
+As of now, four lesions are segmented
+
+    1. Cotton Wool Spot
+    2. Exudates
+    3. Hemmorrhages
+    4. Microaneurysms
+
+    
+
+## Installation
+
+```bash
+pip install fundus_lesions_toolkit
+```
