@@ -1,0 +1,3 @@
+[kikyo.plugins]
+kikyo_sz = kikyo_sz.config
+
