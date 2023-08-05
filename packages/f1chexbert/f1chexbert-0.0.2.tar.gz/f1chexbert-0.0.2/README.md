@@ -1,0 +1,70 @@
+RadGraph
+=========
+Requirements:
+```
+'torch>=1.8.1'
+'transformers>=4.23.1'
+"scikit-learn"
+'numpy'
+'appdirs'
+'pandas'
+```
+Testing:
+```python
+pytest
+```
+
+Official package as per:
+```bibtex
+@misc{smit2020chexbert,
+	title={CheXbert: Combining Automatic Labelers and Expert Annotations for Accurate Radiology Report Labeling Using BERT},
+	author={Akshay Smit and Saahil Jain and Pranav Rajpurkar and Anuj Pareek and Andrew Y. Ng and Matthew P. Lungren},
+	year={2020},
+	eprint={2004.09167},
+	archivePrefix={arXiv},
+	primaryClass={cs.CL}
+}
+```
+
+Usage:
+```python
+from f1chexbert import F1CheXbert
+f1chexbert = F1CheXbert()
+    accuracy, accuracy_not_averaged, class_report, class_report_5 = f1chexbert(
+        hyps=['No pleural effusion. Normal heart size.',
+              'Normal heart size.',
+              'Increased mild pulmonary edema and left basal atelectasis.',
+              'Bilateral lower lobe bronchiectasis with improved right lower medial lung peribronchial consolidation.',
+              'Elevated left hemidiaphragm and blunting of the left costophrenic angle although no definite evidence of pleural effusion seen on the lateral view.',
+              ],
+        refs=['No pleural effusions.',
+              'Enlarged heart.',
+              'No evidence of pneumonia. Stable cardiomegaly.',
+              'Bilateral lower lobe bronchiectasis with improved right lower medial lung peribronchial consolidation.',
+              'No acute cardiopulmonary process. No significant interval change. Please note that peribronchovascular ground-glass opacities at the left greater than right lung bases seen on the prior chest CT of ___ were not appreciated on prior chest radiography on the same date and may still be present. Additionally, several pulmonary nodules measuring up to 3 mm are not not well appreciated on the current study-CT is more sensitive.'
+              ])
+```
+
+class_report_5 is precision over ["Cardiomegaly", "Edema", "Consolidation", "Atelectasis", "Pleural Effusion"]
+
+As per:
+
+```bibtex
+@inproceedings{delbrouck-etal-2022-improving,
+    title = "Improving the Factual Correctness of Radiology Report Generation with Semantic Rewards",
+    author = "Delbrouck, Jean-Benoit  and
+      Chambon, Pierre  and
+      Bluethgen, Christian  and
+      Tsai, Emily  and
+      Almusa, Omar  and
+      Langlotz, Curtis",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.319",
+    pages = "4348--4360",
+    abstract = "Neural image-to-text radiology report generation systems offer the potential to improve radiology reporting by reducing the repetitive process of report drafting and identifying possible medical errors. These systems have achieved promising performance as measured by widely used NLG metrics such as BLEU and CIDEr. However, the current systems face important limitations. First, they present an increased complexity in architecture that offers only marginal improvements on NLG metrics. Secondly, these systems that achieve high performance on these metrics are not always factually complete or consistent due to both inadequate training and evaluation. Recent studies have shown the systems can be substantially improved by using new methods encouraging 1) the generation of domain entities consistent with the reference and 2) describing these entities in inferentially consistent ways. So far, these methods rely on weakly-supervised approaches (rule-based) and named entity recognition systems that are not specific to the chest X-ray domain. To overcome this limitation, we propose a new method, the RadGraph reward, to further improve the factual completeness and correctness of generated radiology reports. More precisely, we leverage the RadGraph dataset containing annotated chest X-ray reports with entities and relations between entities. On two open radiology report datasets, our system substantially improves the scores up to 14.2{\%} and 25.3{\%} on metrics evaluating the factual correctness and completeness of reports.",
+}
+```
