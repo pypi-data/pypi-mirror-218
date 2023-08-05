@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['benchllm', 'benchllm.cli', 'benchllm.cli.commands']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['openai', 'pydantic>=1.10.9,<2.0.0', 'pyyaml>=5.1', 'typer[all]']
+
+extras_require = \
+{'dev': ['types-pyyaml', 'pytest'],
+ 'examples': ['langchain', 'pypdf', 'tiktoken', 'faiss-cpu'],
+ 'test': ['pytest']}
+
+entry_points = \
+{'console_scripts': ['bench = benchllm.cli.main:main']}
+
+setup_kwargs = {
+    'name': 'benchllm',
+    'version': '0.1.0',
+    'description': 'Tool for testing LLMs',
+    'long_description': '# BenchLLM\n\nBenchLLM is a Python-based open-source library that streamlines the testing process for Large Language Models (LLMs) and AI-powered applications. It offers an intuitive and robust way to validate and score the output of your code with minimal boilerplate or configuration.\n\nBenchLLM is actively used at [V7](https://www.v7labs.com) for improving our LLM applications and now Open Sourced under MIT License to share with the wider community\n\nUse BenchLLM to:\n\n- Easily set up a comprehensive testing suite for your LLMs.\n- Continous integration for your langchain/agents/models.\n- Elimiate flaky chains and create confidence in your code.\n\n> **NOTE:** BenchLLM is in the early stage of development and will be subject to rapid changes.\n\nFor bug reporting, feature requests, or contributions, please open an issue or submit a pull request (PR) on our GitHub page.\n\n## BenchLLM Testing Methodology\n\nBenchLLM implements a distinct two-step methodology for validating your machine learning models:\n\n1. **Testing**: This stage involves running your code against various tests and capturing the predictions produced by your model without immediate judgment or comparison.\n\n2. **Evaluation**: During this phase, the recorded predictions are compared against the expected output. Detailed comparison reports, including pass/fail status and other metrics, are generated.\n\nThis methodical separation offers a comprehensive view of your model\'s performance and allows for better control and refinement of each step.\n\n## Install\n\nTo install BenchLLM we use pip\n\n```\npip install git+https://github.com/v7labs/benchllm\n```\n\n## Usage\n\nStart by importing the library and use the @benchllm.test decorator to mark the function you\'d like to test:\n\n```python\nimport benchllm\n\n# Your custom model implementation\ndef run_my_model(input):\n    # Your model\'s logic goes here.\n    return some_result\n\n@benchllm.test(suite="/path/to/test/suite") # If the tests are in the same directory, just use @benchllm.test.\ndef invoke_model(input: str):\n    return run_my_model(input)\n```\n\nNext, prepare your tests. These are YAML/JSON files structured as follows:\n\n```yml\ninput: What\'s 1+1? Be very terse, only numeric output\nexpected:\n  - 2\n  - 2.0\n```\n\nIn the above example, the `input` is the query or instruction that your model will process, and `expected` contains the potential responses that your model should return. It\'s important to note that `input` can be a simple `str` or a more complex nested dictionary; BenchLLM will extract the type of the `input` argument in the Python code and load the `input` field from the YAML file accordingly.\n\nBy default, BenchLLM uses OpenAI\'s GPT-3 model for the `semantic` evaluator. This requires setting the `OPENAI_API_KEY` environment variable. If you do not want to use this default evaluator, you can specify an alternative one (discussed in further detail below):\n\n```bash\nexport OPENAI_API_KEY=\'your-api-key\'\n```\n\nReplace \'your-api-key\' with your actual OpenAI API key.\n\nTo initiate testing, use the `bench run` command:\n\n```bash\n$ bench run\n```\n\nBy default, the bench run command looks for Python files implementing the @test decorator in the current directory. To target a specific file or folder, specify it directly:\n\n```bash\n$ bench run path/to/my/file.py or/path/to/folder/with/files\n```\n\nThe `--retry-count` parameter allows BenchLLM to run a test multiple times, useful for models that may have variability in their outputs:\n\n```bash\n$ bench run --retry-count 5\n```\n\nBenchLLM offers multiple evaluation methods to determine if the prediction matches the test case\'s expected values. You can use the `--evaluator` parameter to specify the evaluation method:\n\nThere are multiple ways to evaluate if the test functions prediction matches the test cases expected values.\nBy default GPT-3 is used to compare the output. You can use `--evaluator` to use a different method\n\n- `semantic`, checks semantic similarity using language models like GPT-3, GPT-3.5, or GPT-4 (`--model` parameter). Please note, for this evaluator, you need to set the `OPENAI_API_KEY` environment variable.\n- `string-match`, checks if the strings are matching (case insensitive)\n- `interactive`, user manually accepts or fails tests in the terminal\n- `web`, uses pywebio fora simple local web interface\n\nThe non interactive evaluators also supports `--workers N` to run in the evaluations in parallel\n\n```bash\n$ bench run --evaluator string-match --workers 5\n```\n\n### Eval\n\nWhile bench run runs each test function and then evaluates their output, it can often be beneficial to separate these into two steps. For example, if you want a person to manually do the evaluation or if you want to try multiple evaluation methods on the same function.\n\n```bash\n$ bench run --no-eval\n```\n\nThis will generate json files in `output/latest/predictions`\nThen later you can evaluate them with\n\n```bash\n$ bench eval output/latest/predictions\n```\n\n## API\n\nFor more detailed control, BenchLLM provides an API.\nYou are not required to add YML/JSON tests to be able to evaluate your model.\nYou can instead:\n\n- Instantiate `Test` objects\n- Use a `Tester` object to generate predictions\n- Use an `Evaluator` object to evaluate your model\n\n```python\nfrom benchllm import StringMatchEvaluator, Test, Tester\n\n# Instantiate your Test objects\ntests = [\n    Test(input="What\'s 1+1?", expected=["2", "It\'s 2"]),\n    Test(input="First rule of fight club?", expected=["Do not talk about fight club"]),\n]\n\n# Use a Tester object to generate predictions using any test functions\ntester = Tester(my_test_function)\ntester.add_tests(tests)\npredictions = tester.run()\n\n# Use an Evaluator object to evaluate your model\nevaluator = StringMatchEvaluator()\nevaluator.load(predictions)\nresults = evaluator.run()\n\nprint(results)\n```\n\n## Commands\n\n- `bench add`: Add a new test to a suite.\n- `bench tests`: List all tests in a suite.\n- `bench run`: Run all or target test suites.\n- `bench eval`: Runs the evaluation of an existing test run.\n\n## Contribute\n\nBenchLLM is developed for Python 3.10, although it may work with other Python versions as well. We recommend using a Python 3.10 environment. You can use conda or any other environment manager to set up the environment:\n\n```bash\n$ conda create --name benchllm python=3.10\n$ conda activate benchllm\n$ pip install -e ".[dev]"\n```\n\nTo run all the examples first install the examples extra dependencies\n\n```bash\n$ pip install -e ".[examples]"\n```\n\nContribution steps:\n\n1. Fork the repository.\n2. Create a new branch for your changes.\n3. Make your changes.\n4. Test your changes.\n5. Submit a pull request.\n\nWe adhere to PEP8 style guide. Please follow this guide when contributing.\n\nFor further information and advanced usage, please refer to the comprehensive BenchLLM documentation. If you need any support, feel free to open an issue on our GitHub page.\n',
+    'author': 'Simon Edwardsson',
+    'author_email': 'simon@v7labs.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/v7labs/benchllm',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'extras_require': extras_require,
+    'entry_points': entry_points,
+    'python_requires': '>=3.10,<3.12',
+}
+
+
+setup(**setup_kwargs)
