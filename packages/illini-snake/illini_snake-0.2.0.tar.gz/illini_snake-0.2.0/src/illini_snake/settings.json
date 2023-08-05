@@ -1,0 +1,34 @@
+{
+    "Game":{
+        "DISPLAY_NAME": "Snake",
+        "FPS": 60,
+        "LOGOS_PATH": "static/opponent_logos"
+    },
+    "Food":{
+        "NOURISHMENT": 5,
+        "WIDTH": 40
+    },
+    "Snake":{
+        "WIDTH": 28,
+        "COLOR": [232,74,39],
+        "SPEED": 20,
+        "HEAD_PATH": "static/Illinois.png",
+        "EATING_SOUND_PATH": "static/nom nom nom.wav"
+    },
+    "Screen":{
+        "LENGTH": 31,
+        "WIDTH":  21,
+        "SQUARE_WIDTH": 30,
+        "COLOR": [0,0,0],
+        "START_MENU":{
+            "FONT": "Consonlas",
+            "FONT_SIZE": 30,
+            "FONT_COLOR": [255,255,255]
+        },
+        "SCORE_DISPLAY":{
+            "FONT": "Consonlas",
+            "FONT_SIZE": 20,
+            "FONT_COLOR": [255,255,255]
+        }
+    }
+}

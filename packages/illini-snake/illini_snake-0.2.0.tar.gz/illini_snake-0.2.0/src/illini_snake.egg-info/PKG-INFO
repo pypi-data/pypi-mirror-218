@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: illini-snake
+Version: 0.2.0
+Summary: An illini-themed snake game
+Home-page: https://pypi.org/project/illini-snake
+Author: James Kabbes
+Author-email: james.kabbes@gmail.com
+Project-URL: GitHub, https://github.com/jameskabbes/illini-snake
+Project-URL: Documentation, https://jameskabbes.github.io/illini-snake
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# illini_snake
+Repository containing an Illini-themed snake game, written in Python using the PyGame library.
+
+![](src/illini_snake/static/Gameplay.gif)
+
+# YouTube Video
+Watch the gameplay [here](https://youtu.be/pZuzKWZzt00).
+
+# Repo Setup
+
+## Install locally
+1. Clone the repository
+2. Navigate to `illini_snake`
+3. `pip install -r requirements.txt`
+4. `python main.py`
+
+## Install via pip
+1. `pip install illini_snake`
+2. `python -m illini_snake`
+
+# How to Play
+Use arrow keys to move your Illini snake around. Eat the other big ten teams to grow your snake and increase your score. Watch out for the walls and don't run into yourself!
+
+# Documentation
+Documentation is present on the repo's [GitHub Pages](https://uirphack.github.io/illini_snake)
+
+# Author(s)
+James Kabbes - John Deere

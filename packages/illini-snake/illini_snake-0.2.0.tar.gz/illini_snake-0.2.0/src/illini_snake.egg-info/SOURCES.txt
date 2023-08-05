@@ -1,0 +1,34 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/illini_snake/__init__.py
+src/illini_snake/__main__.py
+src/illini_snake/base.py
+src/illini_snake/food.py
+src/illini_snake/game.py
+src/illini_snake/screen.py
+src/illini_snake/settings.json
+src/illini_snake/snake.py
+src/illini_snake/square.py
+src/illini_snake/utils.py
+src/illini_snake.egg-info/PKG-INFO
+src/illini_snake.egg-info/SOURCES.txt
+src/illini_snake.egg-info/dependency_links.txt
+src/illini_snake.egg-info/top_level.txt
+src/illini_snake/static/Illinois.png
+src/illini_snake/static/nom nom nom.wav
+src/illini_snake/static/opponent_logos/Indiana.svg
+src/illini_snake/static/opponent_logos/Iowa.png
+src/illini_snake/static/opponent_logos/Maryland.png
+src/illini_snake/static/opponent_logos/Michigan State.png
+src/illini_snake/static/opponent_logos/Michigan.png
+src/illini_snake/static/opponent_logos/Minnesota.png
+src/illini_snake/static/opponent_logos/Nebraska.png
+src/illini_snake/static/opponent_logos/Northwestern.png
+src/illini_snake/static/opponent_logos/Ohio State.png
+src/illini_snake/static/opponent_logos/Penn State.png
+src/illini_snake/static/opponent_logos/Purdue.png
+src/illini_snake/static/opponent_logos/Rutgers.png
+src/illini_snake/static/opponent_logos/Wisconsin.png
