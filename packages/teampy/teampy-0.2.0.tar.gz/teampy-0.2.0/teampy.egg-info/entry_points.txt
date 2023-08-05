@@ -1,0 +1,3 @@
+[console_scripts]
+rat = teampy.command_line_rat:rat
+teampy = teampy.command_line_setup:teampy
