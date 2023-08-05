@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fundus_lesions_toolkit/__init__.py
+fundus_lesions_toolkit/constants.py
+fundus_lesions_toolkit.egg-info/PKG-INFO
+fundus_lesions_toolkit.egg-info/SOURCES.txt
+fundus_lesions_toolkit.egg-info/dependency_links.txt
+fundus_lesions_toolkit.egg-info/requires.txt
+fundus_lesions_toolkit.egg-info/top_level.txt

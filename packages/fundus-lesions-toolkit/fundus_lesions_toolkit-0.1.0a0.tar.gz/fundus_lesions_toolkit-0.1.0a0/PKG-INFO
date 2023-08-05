@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fundus_lesions_toolkit
+Version: 0.1.0a0
+Summary: Tools Lesions Segmentation in Fundus
+Home-page: https://github.com/ClementPla/fundus-lesions-toolkit/tree/main
+Download-URL: https://github.com/ClementPla/fundus-lesions-toolkit/archive/refs/tags/v0.1.0-alpha.tar.gz
+Author: Clement Playout
+Author-email: clement.playout@polymtl.ca
+License: MIT
+Keywords: Segmentation,Fundus,CNN,Neural Networks,PyTorch,Models,Semantic,Lesions
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
