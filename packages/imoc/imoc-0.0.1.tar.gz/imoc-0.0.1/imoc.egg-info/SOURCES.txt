@@ -1,0 +1,10 @@
+License.txt
+setup.py
+imoc/__init__.py
+imoc/simple_image_classifier.py
+imoc.egg-info/PKG-INFO
+imoc.egg-info/SOURCES.txt
+imoc.egg-info/dependency_links.txt
+imoc.egg-info/not-zip-safe
+imoc.egg-info/requires.txt
+imoc.egg-info/top_level.txt
