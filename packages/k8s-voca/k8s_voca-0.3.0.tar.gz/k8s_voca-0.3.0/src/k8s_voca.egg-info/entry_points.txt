@@ -1,0 +1,2 @@
+[console_scripts]
+kv = k8s_voca:ping

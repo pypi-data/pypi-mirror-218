@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/k8s_voca/__init__.py
+src/k8s_voca/k8s_voca.py
+src/k8s_voca.egg-info/PKG-INFO
+src/k8s_voca.egg-info/SOURCES.txt
+src/k8s_voca.egg-info/dependency_links.txt
+src/k8s_voca.egg-info/entry_points.txt
+src/k8s_voca.egg-info/top_level.txt
