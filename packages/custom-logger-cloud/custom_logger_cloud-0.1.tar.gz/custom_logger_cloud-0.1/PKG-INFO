@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: custom_logger_cloud
+Version: 0.1
+Summary: logger package to monitor the serverless code
+Home-page: https://github.com/basantbhandari/custom_logger_cloud
+Author: Basant Babu Bhandari
+Author-email: basantbhandari2074@gmail.com
+License: MIT
+Download-URL: https://github.com/basantbhandari/custom_logger_cloud/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: custom_logger,logger,cloud,logger_cloud,custom_logger_cloud
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
