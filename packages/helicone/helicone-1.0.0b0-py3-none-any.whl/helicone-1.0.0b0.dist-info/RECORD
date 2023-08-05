@@ -1,0 +1,13 @@
+helicone/async_logger/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+helicone/async_logger/async_logger.py,sha256=dRsvEUIdmZb-jZHCip_XHbIqGX3MsQKScLnMr1UhrRk,2993
+helicone/globals/__init__.py,sha256=fdNNhcRSryaFj4SqDoQXRGwjzcsAO29LhoG3iiYxPgM,52
+helicone/globals/helicone.py,sha256=weoIsUGyOjZcLM6191T_uM2pUoghvxyhaHh3EGIFws8,883
+helicone/openai/__init__.py,sha256=bNaUIul4YlyUjUK948KlUilBzL4ee2sY6ygJTCNmAYY,36
+helicone/openai/openai_injector.py,sha256=QZQdQtULtPO8pfVYLANwarsb1e8F4KfFQ49a8LgFC6o,8256
+helicone/openai_proxy/__init__.py,sha256=_U8RbcyRb3ibXTXOIP0Zp9ftyWR7s7rjV7o8hdW89tQ,10392
+helicone/requirements.txt,sha256=XRjG3mFauxFtROoEyQGK_KGD_mknIJ6whCJzdTUzRVw,20
+helicone/test.py,sha256=Vcmcj5NEtkSkmE7AyW5eCga5wTxo5PcJ371OeBWBd0s,11232
+helicone-1.0.0b0.dist-info/LICENSE,sha256=bY2z6CL0d1ILBl8ev-udbCOqmZZ8KS1wFHrveYuj79U,11341
+helicone-1.0.0b0.dist-info/METADATA,sha256=WIDk2pMQ_OVebd0_mmTvg1O3NCC4XVvmmtsce6piHTE,651
+helicone-1.0.0b0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+helicone-1.0.0b0.dist-info/RECORD,,
