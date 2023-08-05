@@ -1,0 +1,3 @@
+include s3cps3/main.xsh
+include s3cps3/s3bigcp.sh
+include s3cps3/s3cps3/s32s3.sh
