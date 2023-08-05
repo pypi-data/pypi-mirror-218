@@ -1,0 +1,12 @@
+IS2view/__init__.py,sha256=yC2rbQZOmkdrN-sDdFLj5BmHSMDF8oVMnvGfCuDB4KU,588
+IS2view/api.py,sha256=EVh7VBnQ8BSkACuqj2kjyBmcDL9VKsvjYHrRww2eiVY,66749
+IS2view/convert.py,sha256=oZUW4LLmejTfFQelkdmIdsmwG_S6cvN9QlDXf_3bejo,3636
+IS2view/io.py,sha256=KTm-R0AsnqvwektPcy-QXdY4J3cUFAmV7uriuUc6W34,3766
+IS2view/tools.py,sha256=SVcgedYT3jnhyG8vRZvwLKQgvtqQF5dd8b90KpHHUnw,14581
+IS2view/utilities.py,sha256=PKyF5bfublHU8KYkGwwyv9r46YWroTIWjDruxa1kRzY,46061
+IS2view/version.py,sha256=Jz83NEXIMtSN1KJHWIzJ_a3H5LeqWJJF1n-3-MtZ2xE,386
+IS2view-0.0.3.dist-info/LICENSE,sha256=QeJHFTJFvXH2oC4tewT_OP8D8FXLzquN9W7WXAjvoWk,1074
+IS2view-0.0.3.dist-info/METADATA,sha256=7Hu0bLIiU58aoriDVzHGtIdETMNF3enNa9XsfOXmeOA,3600
+IS2view-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+IS2view-0.0.3.dist-info/top_level.txt,sha256=bkia8vEyy_k2BTQW3XdtPo493cYP-YkOthbmXVh_opg,8
+IS2view-0.0.3.dist-info/RECORD,,
