@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kau3-tian2-iong7-ji7
+Version: 3.0.5
+Summary: 教典用字
+Home-page: https://ithuan.tw
+Download-URL: https://github.com/i3thuan5/KauTian-IongJi/
+Author: ÌTHUÂN KHOKI
+Author-email: ithuan@ithuan.tw
+Keywords: 語料庫,Taiwan,Natural Language,Corpus
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django :: 4.2
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
+License-File: LICENSE
+
+教育部辭典台語用字
