@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: freq-mob
+Version: 0.11
+Summary: Monotonic Optimal Binning for Frequency Models
+Home-page: https://github.com/statcompute/freq_mob
+Author: WenSui Liu
+Author-email: liuwensui@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: lightgbm
+Requires-Dist: tabulate
+
+#### Introduction
+
+To mimic the py\_mob package (https://pypi.org/project/py-mob) for binary outcomes, the freq\_mob is a collection of python functions that would generate the monotonic binning and perform the variable transformation for frequency outcomes such that the Pearson correlation between the transformed X and Ln(Y) is equal to 1. 
+
+Should you have any question or suggestion about the freq\_mob package, please feel free to drop me a line. 
+
+#### Core Functions
+
+```
+freq_mob
+  |-- qtl_bin()  : An iterative discretization based on quantiles of X.  
+  |-- cnt_bin()  : A revised iterative discretization for records with Y > 0.
+  |-- iso_bin()  : A discretization algorthm driven by the isotonic regression between X and Y. 
+  |-- rng_bin()  : A revised iterative discretization based on the value range of X.  
+  |-- kmn_bin()  : A discretization algorthm based on the kmeans clustering of X.  
+  |-- gbm_bin()  : A discretization algorthm based on the gradient boosting machine.  
+  |-- view_bin() : Displays the binning outcome in a tabular form. 
+  `-- cal_newx() : Applies the variable transformation to a numeric vector based on the binning outcome.
+```
+
+###  Authors
+
+[WenSui Liu](mailto:liuwensui@gmail.com) is a seasoned data scientist with 15-year experience in the financial service industry. 
+
+[Joyce Liu](mailto:jcl4482@my.utexas.edu) is a college student majoring in Mathematics with a passion for data science.
