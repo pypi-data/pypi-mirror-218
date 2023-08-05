@@ -1,0 +1,11 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/trendalation.egg-info/PKG-INFO
+src/trendalation.egg-info/SOURCES.txt
+src/trendalation.egg-info/dependency_links.txt
+src/trendalation.egg-info/requires.txt
+src/trendalation.egg-info/top_level.txt
