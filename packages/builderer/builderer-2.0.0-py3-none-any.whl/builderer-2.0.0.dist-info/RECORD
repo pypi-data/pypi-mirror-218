@@ -1,0 +1,12 @@
+builderer/__init__.py,sha256=Zy1MzYi3QO1EESfImu2eStZJqhEmY9z5N7r3_Hjx3ec,250
+builderer/__main__.py,sha256=2zPIkPDhgbFGc3yjCigRcyaQ-K_z2K2IB16eGGapFiA,3332
+builderer/_documentation.py,sha256=iVEGJL0jOC_QJSDuAbABAvzl1vhlqL8n7VCMpgV-McE,3336
+builderer/actions.py,sha256=9l9AyMUOLVv5-ET2ADal79Qc36_HRfiqK8H_ZyGwEmY,6854
+builderer/builderer.py,sha256=ZoGNIHrjSxiuclFFM6_pAxy8OIfCPY7A9pvcYBsMSAw,6879
+builderer/config.py,sha256=RyX5I2fiEHcpcYl-7OeDL-zYtc-VibSRQbqc6_f2QtE,14380
+builderer-2.0.0.dist-info/LICENSE,sha256=hlvFJrCuPWsH1uWynMAx2dcXzBOaBlJ7LxZuX-LJ1Js,1072
+builderer-2.0.0.dist-info/METADATA,sha256=ca1QzRSwItjUQrHblHgCKx3y3oxe4NaTDVeMPz_kKeI,3568
+builderer-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+builderer-2.0.0.dist-info/entry_points.txt,sha256=fwWiIE88FdmnuANE4b4CBlweHmnwXlb_Hpl6YDV0jCY,54
+builderer-2.0.0.dist-info/top_level.txt,sha256=JyIpF2YAVu-0UBRRyGbqimCUOSCiI7uwcWUUAJngQ8g,10
+builderer-2.0.0.dist-info/RECORD,,
