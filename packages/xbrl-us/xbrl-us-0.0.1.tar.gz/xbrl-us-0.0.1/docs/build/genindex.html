@@ -1,0 +1,981 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+
+    <!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 --><title>Index - xbrl-us 0.0.0 documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">xbrl-us 0.0.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">XBRL-US Python Library</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="reference/index.html">Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="reference/xbrl_us.html">XBRL US</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"><a href="#A"><strong>A</strong></a> | <a href="#B"><strong>B</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#D"><strong>D</strong></a> | <a href="#E"><strong>E</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#L"><strong>L</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#N"><strong>N</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#Q"><strong>Q</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#U"><strong>U</strong></a> | <a href="#X"><strong>X</strong></a></div>
+</section>
+<section id="A" class="genindex-section">
+  <h2>A</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/xbrl_us.html#xbrl_us.XBRL.acceptable_params">acceptable_params() (xbrl_us.XBRL static method)</a>, <a href="xbrl_us.html#xbrl_us.XBRL.acceptable_params">[1]</a>
+
+        <ul>
+          <li><a href="xbrl_us.html#xbrl_us.xbrl_us.XBRL.acceptable_params">(xbrl_us.xbrl_us.XBRL static method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.exceptions.APIError">APIError</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.exceptions.AuthenticationError">AuthenticationError</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="B" class="genindex-section">
+  <h2>B</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.balance_type">balance_type (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="C" class="genindex-section">
+  <h2>C</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.concept_id">concept_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.concept_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.concept_is_base">concept_is_base (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.concept_is_base">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.concept_is_monetary">concept_is_monetary (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.concept_is_monetary">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.CONCEPT_LOCAL_NAME">CONCEPT_LOCAL_NAME (xbrl_us.utils.Fields attribute)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.concept_local_name">concept_local_name (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.concept_local_name">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.concept_namespace">concept_namespace (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.concept_namespace">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails">ConceptDetails (class in xbrl_us.schemas.concept_details)</a>
+</li>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.convert_key_format">convert_key_format() (xbrl_us.schemas.concept_details.ConceptDetails static method)</a>
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.dimension_details.DimensionDetails.convert_key_format">(xbrl_us.schemas.dimension_details.DimensionDetails static method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="D" class="genindex-section">
+  <h2>D</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.datatype">datatype (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.dimension_is_base">dimension_is_base (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.dimension_is_base">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.dimension_local_name">dimension_local_name (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.dimension_local_name">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.dimension_namespace">dimension_namespace (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.dimension_namespace">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.dimension_details.DimensionDetails">DimensionDetails (class in xbrl_us.schemas.dimension_details)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.dimensions_count">dimensions_count (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.dimensions_count">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.dimensions_id">dimensions_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.dimensions_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.dts_entry_point">dts_entry_point (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.dts_entry_point">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.dts_id">dts_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.dts_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.dts_target_namespace">dts_target_namespace (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.dts_target_namespace">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="E" class="genindex-section">
+  <h2>E</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.ENTITY_CIK">ENTITY_CIK (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.entity_cik">entity_cik (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.entity_cik">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.ENTITY_ID">ENTITY_ID (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.entity_id">entity_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.entity_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.ENTITY_NAME">ENTITY_NAME (xbrl_us.utils.Fields attribute)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="F" class="genindex-section">
+  <h2>F</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_has_dimensions">fact_has_dimensions (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_has_dimensions">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_hash">fact_hash (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_hash">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.FACT_ID">FACT_ID (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_id">fact_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_is_extended">fact_is_extended (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_is_extended">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_text_search">fact_text_search (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_text_search">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.FACT_ULTIMUS">FACT_ULTIMUS (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_ultimus">fact_ultimus (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_ultimus">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_ultimus_index">fact_ultimus_index (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_ultimus_index">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.FACT_VALUE">FACT_VALUE (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_value">fact_value (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_value">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.fact_value_link">fact_value_link (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.fact_value_link">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields">Fields (class in xbrl_us.utils)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="G" class="genindex-section">
+  <h2>G</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.get_parameters_dict">get_parameters_dict() (xbrl_us.utils.Parameters method)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.get_parameters_dict">(xbrl_us.utils.paramters.Parameters method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="I" class="genindex-section">
+  <h2>I</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.id">id (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.exceptions.InvalidParameterError">InvalidParameterError</a>
+</li>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.is_abstract">is_abstract (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.is_base">is_base (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.dimension_details.DimensionDetails.is_base">(xbrl_us.schemas.dimension_details.DimensionDetails property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.is_monetary">is_monetary (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.is_nillable">is_nillable (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.is_numeric">is_numeric (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="L" class="genindex-section">
+  <h2>L</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.local_name">local_name (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="M" class="genindex-section">
+  <h2>M</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.html#xbrl_us.cli.main">main() (in module xbrl_us.cli)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.member_is_base">member_is_base (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.member_is_base">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.member_local_name">member_local_name (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.member_local_name">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.member_member_value">member_member_value (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.member_member_value">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.member_namespace">member_namespace (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.member_namespace">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.member_typed_value">member_typed_value (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.member_typed_value">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="reference/xbrl_us.html#xbrl_us.XBRL.methods">methods() (xbrl_us.XBRL static method)</a>, <a href="xbrl_us.html#xbrl_us.XBRL.methods">[1]</a>
+
+        <ul>
+          <li><a href="xbrl_us.html#xbrl_us.xbrl_us.XBRL.methods">(xbrl_us.xbrl_us.XBRL static method)</a>
+</li>
+        </ul></li>
+        <li>
+    module
+
+        <ul>
+          <li><a href="reference/xbrl_us.html#module-xbrl_us">xbrl_us</a>, <a href="xbrl_us.html#module-xbrl_us">[1]</a>
+</li>
+          <li><a href="xbrl_us.html#module-xbrl_us.cli">xbrl_us.cli</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas">xbrl_us.schemas</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.assertion_details">xbrl_us.schemas.assertion_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.concept_details">xbrl_us.schemas.concept_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.cube_details">xbrl_us.schemas.cube_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.dimension_details">xbrl_us.schemas.dimension_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.document_details">xbrl_us.schemas.document_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.dts_details">xbrl_us.schemas.dts_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.entity_details">xbrl_us.schemas.entity_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.fact_details">xbrl_us.schemas.fact_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.label_details">xbrl_us.schemas.label_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.network_details">xbrl_us.schemas.network_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.relationship_details">xbrl_us.schemas.relationship_details</a>
+</li>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.report_details">xbrl_us.schemas.report_details</a>
+</li>
+          <li><a href="xbrl_us.utils.html#module-xbrl_us.utils">xbrl_us.utils</a>
+</li>
+          <li><a href="xbrl_us.utils.html#module-xbrl_us.utils.exceptions">xbrl_us.utils.exceptions</a>
+</li>
+          <li><a href="xbrl_us.utils.html#module-xbrl_us.utils.paramters">xbrl_us.utils.paramters</a>
+</li>
+          <li><a href="xbrl_us.html#module-xbrl_us.xbrl_us">xbrl_us.xbrl_us</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="N" class="genindex-section">
+  <h2>N</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.namespace">namespace (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="P" class="genindex-section">
+  <h2>P</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters">Parameters (class in xbrl_us.utils)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters">(class in xbrl_us.utils.paramters)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.period_calendar_period">period_calendar_period (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.period_calendar_period">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.PERIOD_END">PERIOD_END (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.period_fiscal_id">period_fiscal_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.period_fiscal_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.PERIOD_FISCAL_PERIOD">PERIOD_FISCAL_PERIOD (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.period_fiscal_period">period_fiscal_period (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.period_fiscal_period">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.PERIOD_FISCAL_YEAR">PERIOD_FISCAL_YEAR (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.period_fiscal_year">period_fiscal_year (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.period_fiscal_year">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.period_id">period_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.period_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.period_type">period_type (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.period_year">period_year (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.period_year">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="Q" class="genindex-section">
+  <h2>Q</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/xbrl_us.html#xbrl_us.XBRL.query">query() (xbrl_us.XBRL method)</a>, <a href="xbrl_us.html#xbrl_us.XBRL.query">[1]</a>
+
+        <ul>
+          <li><a href="xbrl_us.html#xbrl_us.xbrl_us.XBRL.query">(xbrl_us.xbrl_us.XBRL method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="R" class="genindex-section">
+  <h2>R</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.REPORT_ACCESSION">REPORT_ACCESSION (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_accession">report_accession (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_accession">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_creation_software">report_creation_software (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_creation_software">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_document_index">report_document_index (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_document_index">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_document_type">report_document_type (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_document_type">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_entry_url">report_entry_url (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_entry_url">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_id">report_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_restated">report_restated (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_restated">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_restated_index">report_restated_index (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_restated_index">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_sec_url">report_sec_url (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_sec_url">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.REPORT_SIC_CODE">REPORT_SIC_CODE (xbrl_us.utils.Fields attribute)</a>
+</li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_sic_code">report_sic_code (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_sic_code">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_source_id">report_source_id (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_source_id">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.report_source_name">report_source_name (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.report_source_name">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="S" class="genindex-section">
+  <h2>S</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.substitution">substitution (xbrl_us.schemas.concept_details.ConceptDetails property)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="T" class="genindex-section">
+  <h2>T</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.concept_details.ConceptDetails.to_dict">to_dict() (xbrl_us.schemas.concept_details.ConceptDetails method)</a>
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#xbrl_us.schemas.dimension_details.DimensionDetails.to_dict">(xbrl_us.schemas.dimension_details.DimensionDetails method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="U" class="genindex-section">
+  <h2>U</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Fields.UNIT">UNIT (xbrl_us.utils.Fields attribute)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="xbrl_us.utils.html#xbrl_us.utils.Parameters.unit">unit (xbrl_us.utils.Parameters property)</a>
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.unit">(xbrl_us.utils.paramters.Parameters property)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="X" class="genindex-section">
+  <h2>X</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="reference/xbrl_us.html#xbrl_us.XBRL">XBRL (class in xbrl_us)</a>, <a href="xbrl_us.html#xbrl_us.XBRL">[1]</a>
+
+        <ul>
+          <li><a href="xbrl_us.html#xbrl_us.xbrl_us.XBRL">(class in xbrl_us.xbrl_us)</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us
+
+        <ul>
+          <li><a href="reference/xbrl_us.html#module-xbrl_us">module</a>, <a href="xbrl_us.html#module-xbrl_us">[1]</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.cli
+
+        <ul>
+          <li><a href="xbrl_us.html#module-xbrl_us.cli">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.assertion_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.assertion_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.concept_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.concept_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.cube_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.cube_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.dimension_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.dimension_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.document_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.document_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.dts_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.dts_details">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    xbrl_us.schemas.entity_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.entity_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.fact_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.fact_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.label_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.label_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.network_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.network_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.relationship_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.relationship_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.schemas.report_details
+
+        <ul>
+          <li><a href="xbrl_us.schemas.html#module-xbrl_us.schemas.report_details">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.utils
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#module-xbrl_us.utils">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.utils.exceptions
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#module-xbrl_us.utils.exceptions">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.utils.paramters
+
+        <ul>
+          <li><a href="xbrl_us.utils.html#module-xbrl_us.utils.paramters">module</a>
+</li>
+        </ul></li>
+        <li>
+    xbrl_us.xbrl_us
+
+        <ul>
+          <li><a href="xbrl_us.html#module-xbrl_us.xbrl_us">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, hamid-vakilzadeh
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Jul 09, 2023</div>
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    </body>
+</html>

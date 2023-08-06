@@ -1,0 +1,853 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" />
+
+    <!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+        <title>xbrl_us.utils.paramters - xbrl-us 0.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">xbrl-us 0.0.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-tree">
+  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../readme.html">XBRL-US Python Library</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../reference/index.html">Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../reference/xbrl_us.html">XBRL US</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Changelog</a></li>
+</ul>
+
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <h1>Source code for xbrl_us.utils.paramters</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+
+<div class="viewcode-block" id="Parameters"><a class="viewcode-back" href="../../../xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters">[docs]</a><span class="k">class</span> <span class="nc">Parameters</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A class representing the parameters for searching XBRL data.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        concept_id (Optional[Union[int, List[int]]]): A unique integer or list of integers representing concept IDs that</span>
+<span class="sd">         can be searched. This is a faster way to retrieve the details of a fact, but it is namespace specific and will</span>
+<span class="sd">         only search for the use of a concept for a specific schema.</span>
+<span class="sd">        concept_is_base (Optional[bool]): A boolean value indicating if the concept is a base element in the reporting taxonomy or a company extension.</span>
+<span class="sd">        concept_is_monetary (Optional[bool]): A boolean value indicating if the concept is a monetary element.</span>
+<span class="sd">        concept_local_name (Optional[List[str]]): A list of strings representing the local names of the concepts in the base schema of a taxonomy, excluding the namespace. Use this to search across multiple taxonomies where the local name is known to be consistent over time.</span>
+<span class="sd">        concept_namespace (Optional[str]): The namespace of the concept used to identify a fact.</span>
+<span class="sd">        dimension_is_base (Optional[bool]): A boolean value indicating if the dimension (aspect) is a base element in the reporting taxonomy or a company extension.</span>
+<span class="sd">        dimension_local_name (Optional[List[str]]): A list of strings representing the local names of the dimensions used with the fact.</span>
+<span class="sd">        dimension_namespace (Optional[str]): The namespace of the dimension used with the fact.</span>
+<span class="sd">        dimensions_count (Optional[List[int]]): A list of integers representing the number of dimensional qualifiers associated with a given fact. A comma-delimited list will return facts with 0, 1, 2, etc. dimensions.</span>
+<span class="sd">        dimensions_id (Optional[str]): The ID of the dimension.</span>
+<span class="sd">        dts_entry_point (Optional[str]): The URL entry point of a discoverable taxonomy set (DTS). A taxonomy can have multiple entry points, and the resulting set of taxonomies using an entry point is called a DTS.</span>
+<span class="sd">        dts_id (Optional[List[int]]): A list of integers representing the unique identifiers for a given group of taxonomies. XBRL facts and linkbases are typically associated with a given report that is associated with a DTS.</span>
+<span class="sd">        dts_target_namespace (Optional[str]): The target namespace of a discoverable taxonomy set (DTS).</span>
+<span class="sd">        entity_cik (Optional[List[str]]): A list of strings representing the SEC identifiers used to identify reporting entities. This is the CIK associated with a given fact, DTS, or report.</span>
+<span class="sd">        entity_id (Optional[List[int]]): A list of integers representing the internal identifiers used to identify entities. This will be replaced with the LEI when the SEC supports the LEI standard.</span>
+<span class="sd">        fact_has_dimensions (Optional[bool]): A boolean field indicating if the fact has any dimensions associated with it.</span>
+<span class="sd">        fact_hash (Optional[str]): The fact hash derived from the aspect properties of the fact. Each fact will have a different hash in a given report. Over time, different facts may have the same hash if they are identical. The hash does not take into account the value reported for the fact. The fact hash is used to determine the ultimus index. By searching on the hash, you can identify all identical facts that were reported.</span>
+<span class="sd">        fact_id (Optional[List[int]]): A list of integers representing the internal identifiers used to identify facts.</span>
+<span class="sd">        fact_is_extended (Optional[bool]): A boolean value indicating if the fact is comprised of either an extension concept, extension axis, or extension member.</span>
+<span class="sd">        fact_text_search (Optional[str]): A string used to search for specific text within the fact value data. The XBRL API uses the Sphinx search engine for text search.</span>
+<span class="sd">        fact_ultimus (Optional[bool]): A boolean indicating if the fact is the latest value reported. A value of True represents the latest value reported, while a value of False indicates that the value has been superseded by a more recent fact.</span>
+<span class="sd">        fact_ultimus_index (Optional[List[int]]): A list of integers representing the incarnation of the fact. The same fact may be reported many times, and the ultimus index represents the reverse order of incarnation for the fact&#39;s reporting. A value of 1 indicates that this is the latest value of the fact, while a higher value indicates that the value has been reported multiple times subsequent to the fact&#39;s most recent reporting.</span>
+<span class="sd">        fact_value (Optional[str]): The value of the fact as a text value. This includes numerical as well as non-numerical values reported.</span>
+<span class="sd">        fact_value_link (Optional[str]): A URL to the rendered fact value data. For data encoded as HTML, the URL will display the formatted data excerpted from the full report.</span>
+<span class="sd">        member_is_base (Optional[bool]): A boolean value indicating if the member is a base element in the reporting taxonomy or a company extension.</span>
+<span class="sd">        member_local_name (Optional[List[str]]): A list of strings representing the local names of the members.</span>
+<span class="sd">        member_typed_value (Optional[List[str]]): A list of strings representing the typed member values.</span>
+<span class="sd">        member_member_value (Optional[List[str]]): A list of strings representing the typed member or explicit member values.</span>
+<span class="sd">        member_namespace (Optional[str]): The namespace of the member.</span>
+<span class="sd">        period_calendar_period (Optional[List[str]]): A list of strings representing the period identifiers for the fact. Examples include year (Y), quarters (Q1, Q2, Q3, Q4), cumulative quarters (3QCUM), and half years (H1, H2).</span>
+<span class="sd">        period_fiscal_id (Optional[str]): The identifier of the fiscal period. Each period has an assigned hash that identifies the fiscal period. The hash can be used to search for identical periods.</span>
+<span class="sd">        period_fiscal_period (Optional[List[str]]): A list of strings representing the fiscal periods.</span>
+<span class="sd">        period_fiscal_year (Optional[List[int]]): A list of integers representing the fiscal years.</span>
+<span class="sd">        period_id (Optional[str]): The ID of the period.</span>
+<span class="sd">        period_year (Optional[List[int]]): A list of integers representing the years.</span>
+<span class="sd">        report_accession (Optional[str]): The accession number of the report.</span>
+<span class="sd">        report_creation_software (Optional[str]): The software used to create the report.</span>
+<span class="sd">        report_document_type (Optional[List[str]]): A list of strings representing the document types of the report.</span>
+<span class="sd">        report_document_index (Optional[List[int]]): A list of integers representing the document indexes of the report.</span>
+<span class="sd">        report_entry_url (Optional[str]): The URL entry point of the report.</span>
+<span class="sd">        report_id (Optional[List[int]]): A list of integers representing the internal identifiers used to identify the report.</span>
+<span class="sd">        report_restated (Optional[bool]): A boolean indicating if the report has been restated.</span>
+<span class="sd">        report_restated_index (Optional[List[int]]): A list of integers representing the indexes of restated reports.</span>
+<span class="sd">        report_sec_url (Optional[str]): The URL of the report on the SEC website.</span>
+<span class="sd">        report_sic_code (Optional[List[str]]): A list of strings representing the Standard Industrial Classification (SIC) codes of the report.</span>
+<span class="sd">        report_source_id (Optional[int]): The source identifier of the report.</span>
+<span class="sd">        report_source_name (Optional[str]): The source name of the report.</span>
+<span class="sd">        unit (Optional[List[str]]): A list of strings representing the units.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">concept_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">concept_is_base</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">concept_is_monetary</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">concept_local_name</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">concept_namespace</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dimension_is_base</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dimension_local_name</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dimension_namespace</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dimensions_count</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dimensions_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dts_entry_point</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dts_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dts_target_namespace</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">entity_cik</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">entity_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_has_dimensions</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_hash</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_is_extended</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_text_search</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_ultimus</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_ultimus_index</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_value</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">fact_value_link</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">member_is_base</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">member_local_name</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">member_typed_value</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">member_member_value</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">member_namespace</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">period_calendar_period</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">period_fiscal_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">period_fiscal_period</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">period_fiscal_year</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">period_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">period_year</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_accession</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_creation_software</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_document_type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_document_index</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_entry_url</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_restated</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_restated_index</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_sec_url</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_sic_code</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_source_id</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">report_source_name</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">unit</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_id</span> <span class="o">=</span> <span class="n">concept_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_is_base</span> <span class="o">=</span> <span class="n">concept_is_base</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_is_monetary</span> <span class="o">=</span> <span class="n">concept_is_monetary</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_local_name</span> <span class="o">=</span> <span class="n">concept_local_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_namespace</span> <span class="o">=</span> <span class="n">concept_namespace</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_is_base</span> <span class="o">=</span> <span class="n">dimension_is_base</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_local_name</span> <span class="o">=</span> <span class="n">dimension_local_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_namespace</span> <span class="o">=</span> <span class="n">dimension_namespace</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimensions_count</span> <span class="o">=</span> <span class="n">dimensions_count</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimensions_id</span> <span class="o">=</span> <span class="n">dimensions_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dts_entry_point</span> <span class="o">=</span> <span class="n">dts_entry_point</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dts_id</span> <span class="o">=</span> <span class="n">dts_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dts_target_namespace</span> <span class="o">=</span> <span class="n">dts_target_namespace</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_entity_cik</span> <span class="o">=</span> <span class="n">entity_cik</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_entity_id</span> <span class="o">=</span> <span class="n">entity_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_has_dimensions</span> <span class="o">=</span> <span class="n">fact_has_dimensions</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_hash</span> <span class="o">=</span> <span class="n">fact_hash</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_id</span> <span class="o">=</span> <span class="n">fact_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_is_extended</span> <span class="o">=</span> <span class="n">fact_is_extended</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_text_search</span> <span class="o">=</span> <span class="n">fact_text_search</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_ultimus</span> <span class="o">=</span> <span class="n">fact_ultimus</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_ultimus_index</span> <span class="o">=</span> <span class="n">fact_ultimus_index</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_value</span> <span class="o">=</span> <span class="n">fact_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_value_link</span> <span class="o">=</span> <span class="n">fact_value_link</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_is_base</span> <span class="o">=</span> <span class="n">member_is_base</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_local_name</span> <span class="o">=</span> <span class="n">member_local_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_typed_value</span> <span class="o">=</span> <span class="n">member_typed_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_member_value</span> <span class="o">=</span> <span class="n">member_member_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_namespace</span> <span class="o">=</span> <span class="n">member_namespace</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_calendar_period</span> <span class="o">=</span> <span class="n">period_calendar_period</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_id</span> <span class="o">=</span> <span class="n">period_fiscal_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_period</span> <span class="o">=</span> <span class="n">period_fiscal_period</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_year</span> <span class="o">=</span> <span class="n">period_fiscal_year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_id</span> <span class="o">=</span> <span class="n">period_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_year</span> <span class="o">=</span> <span class="n">period_year</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_accession</span> <span class="o">=</span> <span class="n">report_accession</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_creation_software</span> <span class="o">=</span> <span class="n">report_creation_software</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_document_type</span> <span class="o">=</span> <span class="n">report_document_type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_document_index</span> <span class="o">=</span> <span class="n">report_document_index</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_entry_url</span> <span class="o">=</span> <span class="n">report_entry_url</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_id</span> <span class="o">=</span> <span class="n">report_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_restated</span> <span class="o">=</span> <span class="n">report_restated</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_restated_index</span> <span class="o">=</span> <span class="n">report_restated_index</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_sec_url</span> <span class="o">=</span> <span class="n">report_sec_url</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_sic_code</span> <span class="o">=</span> <span class="n">report_sic_code</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_source_id</span> <span class="o">=</span> <span class="n">report_source_id</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_source_name</span> <span class="o">=</span> <span class="n">report_source_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="n">unit</span>
+
+        <span class="c1"># The attribute _attribute_dict was in the initial example, but I am not sure what it refers to.</span>
+        <span class="c1"># It may need to be updated with the addition of the new attributes.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_generate_attribute_dict</span><span class="p">()</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">_generate_attribute_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">attribute_dict</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">attributes</span> <span class="o">=</span> <span class="p">[</span><span class="n">attr</span> <span class="k">for</span> <span class="n">attr</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">attr</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)]</span>
+        <span class="n">attributes</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;get_parameters_dict&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">attribute</span> <span class="ow">in</span> <span class="n">attributes</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attribute</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">value</span><span class="p">:</span>
+                <span class="n">attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="n">attribute</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="n">attribute_dict</span>
+
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_parameters_dict</span><span class="p">()</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_format_attribute_name</span><span class="p">(</span><span class="n">attribute_name</span><span class="p">):</span>
+        <span class="n">words</span> <span class="o">=</span> <span class="n">attribute_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s2">&quot;.&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">words</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">words</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
+
+<div class="viewcode-block" id="Parameters.get_parameters_dict"><a class="viewcode-back" href="../../../xbrl_us.utils.html#xbrl_us.utils.paramters.Parameters.get_parameters_dict">[docs]</a>    <span class="k">def</span> <span class="nf">get_parameters_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">concept_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_concept_id</span>
+
+    <span class="nd">@concept_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">concept_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;concept_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">concept_is_base</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_concept_is_base</span>
+
+    <span class="nd">@concept_is_base</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">concept_is_base</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_is_base</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;concept_is_base&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">concept_is_monetary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_concept_is_monetary</span>
+
+    <span class="nd">@concept_is_monetary</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">concept_is_monetary</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_is_monetary</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;concept_is_monetary&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">concept_local_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_concept_local_name</span>
+
+    <span class="nd">@concept_local_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">concept_local_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_local_name</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;concept_local_name&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">concept_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_concept_namespace</span>
+
+    <span class="nd">@concept_namespace</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">concept_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_concept_namespace</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;concept_namespace&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dimension_is_base</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_is_base</span>
+
+    <span class="nd">@dimension_is_base</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dimension_is_base</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_is_base</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;dimension_is_base&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dimension_local_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_local_name</span>
+
+    <span class="nd">@dimension_local_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dimension_local_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_local_name</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;dimension_local_name&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dimension_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_namespace</span>
+
+    <span class="nd">@dimension_namespace</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dimension_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimension_namespace</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;dimension_namespace&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dimensions_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dimensions_count</span>
+
+    <span class="nd">@dimensions_count</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dimensions_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimensions_count</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;dimensions_count&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dimensions_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dimensions_id</span>
+
+    <span class="nd">@dimensions_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dimensions_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dimensions_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;dimensions_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dts_entry_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dts_entry_point</span>
+
+    <span class="nd">@dts_entry_point</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dts_entry_point</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dts_entry_point</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;dts_entry_point&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dts_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dts_id</span>
+
+    <span class="nd">@dts_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dts_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dts_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;dts_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dts_target_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dts_target_namespace</span>
+
+    <span class="nd">@dts_target_namespace</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dts_target_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dts_target_namespace</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;dts_target_namespace&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">entity_cik</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_entity_cik</span>
+
+    <span class="nd">@entity_cik</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">entity_cik</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_entity_cik</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;entity_cik&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">entity_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_entity_id</span>
+
+    <span class="nd">@entity_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">entity_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_entity_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;entity_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_has_dimensions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_has_dimensions</span>
+
+    <span class="nd">@fact_has_dimensions</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_has_dimensions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_has_dimensions</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_has_dimensions&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_hash</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_hash</span>
+
+    <span class="nd">@fact_hash</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_hash</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_hash</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_hash&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_id</span>
+
+    <span class="nd">@fact_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_is_extended</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_is_extended</span>
+
+    <span class="nd">@fact_is_extended</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_is_extended</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_is_extended</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_is_extended&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_text_search</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_text_search</span>
+
+    <span class="nd">@fact_text_search</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_text_search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_text_search</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_text_search&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_ultimus</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_ultimus</span>
+
+    <span class="nd">@fact_ultimus</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_ultimus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_ultimus</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_ultimus&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_ultimus_index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_ultimus_index</span>
+
+    <span class="nd">@fact_ultimus_index</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_ultimus_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_ultimus_index</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_ultimus_index&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_value</span>
+
+    <span class="nd">@fact_value</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_value</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_value&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">fact_value_link</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fact_value_link</span>
+
+    <span class="nd">@fact_value_link</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">fact_value_link</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_fact_value_link</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;fact_value_link&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">member_is_base</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_member_is_base</span>
+
+    <span class="nd">@member_is_base</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">member_is_base</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_is_base</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;member_is_base&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">member_local_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_member_local_name</span>
+
+    <span class="nd">@member_local_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">member_local_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_local_name</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;member_local_name&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">member_typed_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_member_typed_value</span>
+
+    <span class="nd">@member_typed_value</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">member_typed_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_typed_value</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;member_typed_value&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">member_member_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_member_member_value</span>
+
+    <span class="nd">@member_member_value</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">member_member_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_member_value</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;member_member_value&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">member_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_member_namespace</span>
+
+    <span class="nd">@member_namespace</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">member_namespace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_member_namespace</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;member_namespace&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">period_calendar_period</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_period_calendar_period</span>
+
+    <span class="nd">@period_calendar_period</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">period_calendar_period</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_calendar_period</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;period_calendar_period&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">period_fiscal_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_id</span>
+
+    <span class="nd">@period_fiscal_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">period_fiscal_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;period_fiscal_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">period_fiscal_period</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_period</span>
+
+    <span class="nd">@period_fiscal_period</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">period_fiscal_period</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_period</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;period_fiscal_period&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">period_fiscal_year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_year</span>
+
+    <span class="nd">@period_fiscal_year</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">period_fiscal_year</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_fiscal_year</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;period_fiscal_year&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">period_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_period_id</span>
+
+    <span class="nd">@period_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">period_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;period_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">period_year</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_period_year</span>
+
+    <span class="nd">@period_year</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">period_year</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_period_year</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;period_year&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_accession</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_accession</span>
+
+    <span class="nd">@report_accession</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_accession</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_accession</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_accession&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_creation_software</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_creation_software</span>
+
+    <span class="nd">@report_creation_software</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_creation_software</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_creation_software</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_creation_software&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_document_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_document_type</span>
+
+    <span class="nd">@report_document_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_document_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_document_type</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_document_type&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_document_index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_document_index</span>
+
+    <span class="nd">@report_document_index</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_document_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_document_index</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_document_index&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_entry_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_entry_url</span>
+
+    <span class="nd">@report_entry_url</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_entry_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_entry_url</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_entry_url&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_id</span>
+
+    <span class="nd">@report_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_restated</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_restated</span>
+
+    <span class="nd">@report_restated</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_restated</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_restated</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_restated&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_restated_index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_restated_index</span>
+
+    <span class="nd">@report_restated_index</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_restated_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_restated_index</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_restated_index&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_sec_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_sec_url</span>
+
+    <span class="nd">@report_sec_url</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_sec_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_sec_url</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_sec_url&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_sic_code</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_sic_code</span>
+
+    <span class="nd">@report_sic_code</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_sic_code</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_sic_code</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_sic_code&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_source_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_source_id</span>
+
+    <span class="nd">@report_source_id</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_source_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_source_id</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_source_id&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">report_source_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_report_source_name</span>
+
+    <span class="nd">@report_source_name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">report_source_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_report_source_name</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;report_source_name&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">unit</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unit</span>
+
+    <span class="nd">@unit</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">unit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_unit</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_attribute_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_format_attribute_name</span><span class="p">(</span><span class="s2">&quot;unit&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="n">value</span></div>
+</pre></div>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, hamid-vakilzadeh
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on Jul 09, 2023</div>
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/scripts/furo.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    </body>
+</html>

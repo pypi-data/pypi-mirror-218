@@ -1,0 +1,171 @@
+.bumpversion.cfg
+.cookiecutterrc
+.coveragerc
+.editorconfig
+.pre-commit-config.yaml
+.readthedocs.yml
+AUTHORS.rst
+CHANGELOG.rst
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+pytest.ini
+setup.py
+tox.ini
+.github/workflows/github-actions.yml
+ci/bootstrap.py
+ci/requirements.txt
+ci/templates/.github/workflows/github-actions.yml
+docs/authors.rst
+docs/changelog.rst
+docs/conf.py
+docs/contributing.rst
+docs/index.rst
+docs/modules.rst
+docs/readme.rst
+docs/requirements.txt
+docs/spelling_wordlist.txt
+docs/xbrl_us.rst
+docs/xbrl_us.schemas.rst
+docs/xbrl_us.utils.rst
+docs/build/.buildinfo
+docs/build/authors.html
+docs/build/changelog.html
+docs/build/contributing.html
+docs/build/genindex.html
+docs/build/index.html
+docs/build/modules.html
+docs/build/objects.inv
+docs/build/py-modindex.html
+docs/build/readme.html
+docs/build/search.html
+docs/build/searchindex.js
+docs/build/xbrl_us.html
+docs/build/xbrl_us.schemas.html
+docs/build/xbrl_us.utils.html
+docs/build/.doctrees/authors.doctree
+docs/build/.doctrees/changelog.doctree
+docs/build/.doctrees/contributing.doctree
+docs/build/.doctrees/environment.pickle
+docs/build/.doctrees/index.doctree
+docs/build/.doctrees/modules.doctree
+docs/build/.doctrees/readme.doctree
+docs/build/.doctrees/xbrl_us.doctree
+docs/build/.doctrees/xbrl_us.schemas.doctree
+docs/build/.doctrees/xbrl_us.utils.doctree
+docs/build/.doctrees/reference/index.doctree
+docs/build/.doctrees/reference/xbrl_us.doctree
+docs/build/_modules/index.html
+docs/build/_modules/xbrl_us/cli.html
+docs/build/_modules/xbrl_us/xbrl_us.html
+docs/build/_modules/xbrl_us/schemas/concept_details.html
+docs/build/_modules/xbrl_us/schemas/dimension_details.html
+docs/build/_modules/xbrl_us/utils/exceptions.html
+docs/build/_modules/xbrl_us/utils/fields.html
+docs/build/_modules/xbrl_us/utils/paramters.html
+docs/build/_sources/authors.rst.txt
+docs/build/_sources/changelog.rst.txt
+docs/build/_sources/contributing.rst.txt
+docs/build/_sources/index.rst.txt
+docs/build/_sources/modules.rst.txt
+docs/build/_sources/readme.rst.txt
+docs/build/_sources/xbrl_us.rst.txt
+docs/build/_sources/xbrl_us.schemas.rst.txt
+docs/build/_sources/xbrl_us.utils.rst.txt
+docs/build/_sources/reference/index.rst.txt
+docs/build/_sources/reference/xbrl_us.rst.txt
+docs/build/_static/basic.css
+docs/build/_static/check-solid.svg
+docs/build/_static/clipboard.min.js
+docs/build/_static/copy-button.svg
+docs/build/_static/copybutton.css
+docs/build/_static/copybutton.js
+docs/build/_static/copybutton_funcs.js
+docs/build/_static/debug.css
+docs/build/_static/doctools.js
+docs/build/_static/documentation_options.js
+docs/build/_static/file.png
+docs/build/_static/language_data.js
+docs/build/_static/minus.png
+docs/build/_static/plus.png
+docs/build/_static/pygments.css
+docs/build/_static/searchtools.js
+docs/build/_static/skeleton.css
+docs/build/_static/sphinx_highlight.js
+docs/build/_static/scripts/furo-extensions.js
+docs/build/_static/scripts/furo.js
+docs/build/_static/scripts/furo.js.LICENSE.txt
+docs/build/_static/scripts/furo.js.map
+docs/build/_static/styles/furo-extensions.css
+docs/build/_static/styles/furo-extensions.css.map
+docs/build/_static/styles/furo.css
+docs/build/_static/styles/furo.css.map
+docs/build/reference/index.html
+docs/build/reference/xbrl_us.html
+docs/reference/index.rst
+docs/reference/xbrl_us.rst
+src/xbrl_us/.DS_Store
+src/xbrl_us/__init__.py
+src/xbrl_us/__main__.py
+src/xbrl_us/cli.py
+src/xbrl_us/xbrl_us.py
+src/xbrl_us.egg-info/PKG-INFO
+src/xbrl_us.egg-info/SOURCES.txt
+src/xbrl_us.egg-info/dependency_links.txt
+src/xbrl_us.egg-info/entry_points.txt
+src/xbrl_us.egg-info/not-zip-safe
+src/xbrl_us.egg-info/requires.txt
+src/xbrl_us.egg-info/top_level.txt
+src/xbrl_us/methods/assertion search.yml
+src/xbrl_us/methods/assertion validate.yml
+src/xbrl_us/methods/concept name search.yml
+src/xbrl_us/methods/concept search.yml
+src/xbrl_us/methods/cube search.yml
+src/xbrl_us/methods/dimension search.yml
+src/xbrl_us/methods/document search.yml
+src/xbrl_us/methods/dts id concept label.yml
+src/xbrl_us/methods/dts id concept name.yml
+src/xbrl_us/methods/dts id concept reference.yml
+src/xbrl_us/methods/dts id concept search.yml
+src/xbrl_us/methods/dts id network search.yml
+src/xbrl_us/methods/dts id network.yml
+src/xbrl_us/methods/dts search.yml
+src/xbrl_us/methods/entity id report search.yml
+src/xbrl_us/methods/entity id.yml
+src/xbrl_us/methods/entity report search.yml
+src/xbrl_us/methods/entity search.yml
+src/xbrl_us/methods/fact id.yml
+src/xbrl_us/methods/fact search oim.yml
+src/xbrl_us/methods/fact search.yml
+src/xbrl_us/methods/label dts id search.yml
+src/xbrl_us/methods/label search.yml
+src/xbrl_us/methods/network id relationship search.yml
+src/xbrl_us/methods/network id.yml
+src/xbrl_us/methods/network relationship search.yml
+src/xbrl_us/methods/relationship search.yml
+src/xbrl_us/methods/relationship tree search.yml
+src/xbrl_us/methods/report fact search.yml
+src/xbrl_us/methods/report id delete.yml
+src/xbrl_us/methods/report id fact search.yml
+src/xbrl_us/methods/report id.yml
+src/xbrl_us/methods/report search.yml
+src/xbrl_us/schemas/__init__.py
+src/xbrl_us/schemas/assertion_details.py
+src/xbrl_us/schemas/concept_details.py
+src/xbrl_us/schemas/cube_details.py
+src/xbrl_us/schemas/dimension_details.py
+src/xbrl_us/schemas/document_details.py
+src/xbrl_us/schemas/dts_details.py
+src/xbrl_us/schemas/entity_details.py
+src/xbrl_us/schemas/fact_details.py
+src/xbrl_us/schemas/label_details.py
+src/xbrl_us/schemas/network_details.py
+src/xbrl_us/schemas/relationship_details.py
+src/xbrl_us/schemas/report_details.py
+src/xbrl_us/utils/__init__.py
+src/xbrl_us/utils/exceptions.py
+src/xbrl_us/utils/fields.py
+src/xbrl_us/utils/paramters.py
+tests/test_xbrl_us.py
