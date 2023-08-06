@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling","pandas","requests","plotly.express"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apifoncier"
+version = "0.0.1"
+authors = [
+  { name="Romain Cadot", email="romain.cadot@cerema.fr" },
+]
+description = "Mobiliser les données foncières de l'api du Cerema directement avec python"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rcadot/py.apifoncier"
+"Bug Tracker" = "https://github.com/rcadot/py.apifoncier/issues"
