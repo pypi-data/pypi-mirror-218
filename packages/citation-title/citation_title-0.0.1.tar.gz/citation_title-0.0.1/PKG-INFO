@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: citation-title
+Version: 0.0.1
+Summary: Shorten title as readable citation.
+Home-page: https://mv3.dev
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: python-dotenv (>=1.0,<2.0)
+Project-URL: Documentation, https://mv3.dev/citation-title
+Project-URL: Repository, https://github.com/justmars/citation-title
+Description-Content-Type: text/markdown
+
+# citation-title
+
+![Github CI](https://github.com/justmars/citation-title/actions/workflows/main.yml/badge.svg)
+
+## Development
+
+See [documentation](https://justmars.github.io/citation-title).
+
+1. Run `poetry install`
+2. Run `poetry shell`
+3. Run `pytest`
+

@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "citation-title"
+description = "Shorten title as readable citation."
+version = "0.0.1"
+authors = ["Marcelino G. Veloso III <mars@veloso.one>"]
+readme = "README.md"
+homepage = "https://mv3.dev"
+repository = "https://github.com/justmars/citation-title"
+documentation = "https://mv3.dev/citation-title"
+classifiers = [
+  "Programming Language :: Python :: 3.11",
+  "Typing :: Typed",
+  "Development Status :: 4 - Beta",
+  "Framework :: Pytest",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3"
+pytest-django = "^4.5.1"
+pytest-cov = "^4.1"
+pre-commit = "^3.3"
+mkdocs = "^1.4.2"
+mkdocstrings = { extras = ["python"], version = "^0.22.0" }
+mkdocs-material = "^9.1"
+ipykernel = "^6.24.0"
+sqlite-utils = "^3.33"
+
+[tool.pytest.ini_options]
+minversion = "7.3"
+addopts = "-ra -q --cov --doctest-modules"
+# filterwarnings = ["ignore::DeprecationWarning"] see pkg_resources
+testpaths = ["tests", "citation_titles"]
+
+[tool.ruff]
+ignore = ["F401", "F403"]
+fixable = ["F", "E", "W", "I001"]
+select = ["F", "E", "W", "I001"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
