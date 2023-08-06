@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+sicd/__init__.py
+sicd/errors.py
+sicd/main.py
+sicdeploy.egg-info/PKG-INFO
+sicdeploy.egg-info/SOURCES.txt
+sicdeploy.egg-info/dependency_links.txt
+sicdeploy.egg-info/entry_points.txt
+sicdeploy.egg-info/requires.txt
+sicdeploy.egg-info/top_level.txt
