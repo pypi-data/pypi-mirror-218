@@ -1,0 +1,4 @@
+include images/*
+include nonebot_plugin_splatoon3/data/image/*
+include nonebot_plugin_splatoon3/staticData/*
+include nonebot_plugin_splatoon3/staticData/ImageData/*
