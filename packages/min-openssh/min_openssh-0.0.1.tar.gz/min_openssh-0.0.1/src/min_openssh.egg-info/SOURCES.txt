@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/min_openssh.egg-info/PKG-INFO
+src/min_openssh.egg-info/SOURCES.txt
+src/min_openssh.egg-info/dependency_links.txt
+src/min_openssh.egg-info/entry_points.txt
+src/min_openssh.egg-info/requires.txt
+src/min_openssh.egg-info/top_level.txt
