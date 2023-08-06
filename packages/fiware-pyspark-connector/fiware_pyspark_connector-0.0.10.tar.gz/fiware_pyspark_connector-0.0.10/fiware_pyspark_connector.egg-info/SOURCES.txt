@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+fiware_pyspark_connector.egg-info/PKG-INFO
+fiware_pyspark_connector.egg-info/SOURCES.txt
+fiware_pyspark_connector.egg-info/dependency_links.txt
+fiware_pyspark_connector.egg-info/requires.txt
+fiware_pyspark_connector.egg-info/top_level.txt
+fpc/__init__.py
+fpc/connector.py
+fpc/connectorconf.py
+fpc/subscribing_tool.py
