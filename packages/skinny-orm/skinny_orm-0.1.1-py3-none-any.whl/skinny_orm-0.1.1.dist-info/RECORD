@@ -1,0 +1,9 @@
+skinny_orm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skinny_orm/base_field.py,sha256=KqwFKrcrvFgIV7o-mTFm0xVMoZVUQzPeXFESpeIJttE,1384
+skinny_orm/base_orm.py,sha256=3y0wH8AsMXtK9d3XNBaTPajsJg2aF49Hmm4gpzFfiNA,1302
+skinny_orm/exceptions.py,sha256=aHUYaOrY-GMpkAMvlaTU1d8nfKKP3w78fEB8D4YQnwk,594
+skinny_orm/orm.py,sha256=iYA-WLl1aQ1UK4SIU4xREM20aoxFB9L5PdPdNI_nLog,342
+skinny_orm/sqlite_orm.py,sha256=zVQO9fJ5iOkIomEJM_EUpswL8l1ewTSv8lZ2Ex-LTHY,11562
+skinny_orm-0.1.1.dist-info/METADATA,sha256=pWx1IRqbZu95jbzh8-ZUPHH697kVIHWG2h-9otNzZV0,2317
+skinny_orm-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+skinny_orm-0.1.1.dist-info/RECORD,,
