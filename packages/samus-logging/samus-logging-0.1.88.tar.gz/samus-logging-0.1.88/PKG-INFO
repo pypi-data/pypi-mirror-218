@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: samus-logging
+Version: 0.1.88
+Summary: A minimal Logging-controller.
+Home-page: https://github.com/Samus-Modules/Samus-Logging
+Author: Samu Rabin
+Author-email: samu.ca.rabin@gmail.com
+Maintainer: Samu Rabin
+Maintainer-email: samu.ca.rabin@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Samus-Modules/Samus-Logging
+Keywords: python,logging,logger,minimal
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+A minimal Logger-module for your projects.
+
+---
+
+## How to use:
+Initiate the Root-Logger
+```python
+from samus_logging import Samus_Logging
+import logging
+
+Samus_Logging()
+logging.info('Your Message goes here.')
+```
+
+Create a Logger:
+```python
+from samus_logging import Samus_Logging
+
+logger = Samus_Logging.create_logger()
+logger.info('Your Message goes here.')
+```
+
