@@ -1,0 +1,8 @@
+publishcanary/__init__.py,sha256=qchpV3aUVXMnib7sYYQX2KKnLZoATs348jU39vNOzO8,39
+publishcanary/cli.py,sha256=lpg-rNVMIWikehRDRxjbtDvV_otfdgSaT8Chy1zTNn8,319
+publishcanary/publishcanary.py,sha256=u82ANVHmujlorf7GCoMbTBJrHSOVPw431yj_DWt3w-M,1030
+cansync-0.0.1.dist-info/METADATA,sha256=IiUparYrdqe8vU2hKVEftKvt7wAqPhrR-610FQqDQIU,1072
+cansync-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cansync-0.0.1.dist-info/entry_points.txt,sha256=bZXvCld9qH5Gs4VsOpW_EwwrUwdq8zVJMnigHcMWBDY,57
+cansync-0.0.1.dist-info/top_level.txt,sha256=qOVonK7M5I3SpCti3YgHYH5jKTj3CYljnyUEIa2HFg8,14
+cansync-0.0.1.dist-info/RECORD,,

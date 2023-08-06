@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: cansync
+Version: 0.0.1
+Summary: A package to publish latest canaries version in frontend
+Home-page: https://github.com/SanjeevYadavcr7/CanarySync
+Author: Sanjeev Yadav
+Author-email: sanjeevyadavcr7@gmail.com
+Project-URL: Bug Tracker, https://github.com/SanjeevYadavcr7/CanarySync/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PublishCanary
+
+Created this package to publish latest canaries version in frontend
+
+It contains a python module to import and a CLI tool.
+
+## Installation
+
+You can easily install the module using `pip`.
+
+## Using the Python module
+
+Once installed, in your python script:
+
+```
+from publishcanary import updateCanary
+
+```
+
+## Using the CLI command
+
+```
+$ canarysync
+```
