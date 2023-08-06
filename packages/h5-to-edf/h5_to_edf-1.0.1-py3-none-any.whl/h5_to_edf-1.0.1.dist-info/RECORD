@@ -1,0 +1,8 @@
+h5_to_edf/__init__.py,sha256=3l5HPeRfqaHYyMfWH6JlLX7KqhaRO84AJqXPXizbS_w,47
+h5_to_edf/converter.py,sha256=ZmiSxuvnatdO3M8t21s0WVMV5egLtf-WAkzcVsv_Q08,35601
+h5_to_edf/converter_oven.py,sha256=DRw6frhx0h_E5vaFgguU84i1-6G8dmeFXAlSZWv70LY,34920
+h5_to_edf-1.0.1.dist-info/METADATA,sha256=OlQA8a9BTHoq4E75YXYHF0DrKVSNmDBjq_ttQxOuv0Y,1035
+h5_to_edf-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+h5_to_edf-1.0.1.dist-info/entry_points.txt,sha256=cqIfuSJM9d7dtkQOHxTSxvqSspkxSQs7gVBT0AXT2Gs,62
+h5_to_edf-1.0.1.dist-info/top_level.txt,sha256=wqXEE9P_j1tLbUXGunpfWQU6RBPkdcsSu54f9Ychk8M,10
+h5_to_edf-1.0.1.dist-info/RECORD,,
