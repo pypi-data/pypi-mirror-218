@@ -1,0 +1,9 @@
+pyppr/__init__.py,sha256=1f_KxfLtuYwM9SNfKdP8ZsHcWf1z3qMhyd4tpJ8MFC4,46
+pyppr/_pyppr.py,sha256=YXkjimk6QSloyERWaK7w41Vqn6T4Rn2ugTZfgaT-ZgI,20419
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pprpy.py,sha256=PbQUEOr4QRmrdeenImNP5PCy47rVb-ywfbKzMx6ZewM,1811
+pyppr-0.1.0.dist-info/LICENSE.txt,sha256=qhKQlwtfQ7-1yVmD2ZZGUsI-KdTqFRc9yPXV2Yi36vY,1565
+pyppr-0.1.0.dist-info/METADATA,sha256=Gwg1W_sHMWlpBdsVB8XX_09lt8AN8XYeHarqzskDeL0,1374
+pyppr-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyppr-0.1.0.dist-info/top_level.txt,sha256=mhBooNYR_1e4gIsv9B8-z-1O9Ze5iLCBJTpgbl_-5Qs,12
+pyppr-0.1.0.dist-info/RECORD,,
