@@ -1,0 +1,7 @@
+README.md
+setup.py
+hamdalah.egg-info/PKG-INFO
+hamdalah.egg-info/SOURCES.txt
+hamdalah.egg-info/dependency_links.txt
+hamdalah.egg-info/requires.txt
+hamdalah.egg-info/top_level.txt
