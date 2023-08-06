@@ -1,0 +1,3 @@
+[console_scripts]
+ciare_world_creator=ciare_world_creator.cli:cli
+
