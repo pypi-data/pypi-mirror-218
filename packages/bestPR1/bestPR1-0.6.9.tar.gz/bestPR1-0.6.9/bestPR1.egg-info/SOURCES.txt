@@ -1,0 +1,8 @@
+README.md
+setup.py
+bestPR/__init__.py
+bestPR1.egg-info/PKG-INFO
+bestPR1.egg-info/SOURCES.txt
+bestPR1.egg-info/dependency_links.txt
+bestPR1.egg-info/requires.txt
+bestPR1.egg-info/top_level.txt
