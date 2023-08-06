@@ -1,0 +1,3 @@
+[console_scripts]
+init-maths-equation=init_maths_equation.main:main
+

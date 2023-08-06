@@ -1,0 +1,10 @@
+init_maths_equation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+init_maths_equation/__main__.py,sha256=q7Wyp6FgH0Tmfe40hLUAfB2HbXjtQ4mjMVtZ0t_pH7o,61
+init_maths_equation/chapters.py,sha256=K9G3fs0kFG36CAm5SGfVJ9DcAh_xEktVQbeFd-BZ-TU,1543
+init_maths_equation/choice_option.py,sha256=0M4rnlTqZBvJPd9KNZ9bwp_b5PCKjLt5be-CMREiP2s,1236
+init_maths_equation/equation.py,sha256=cvGPbbAz8e5JMei3PKZL6AcnxJkbKOq7QO5LPkkUZpg,2791
+init_maths_equation/main.py,sha256=MG0uaENDhcQFlKYd9bz1eAnRvxffeGdv6f0IXjfmTXA,3942
+init_maths_equation-0.1.0.dist-info/METADATA,sha256=JMzE7HUErMxWTWuCbKIvRr8o0oCDu1s0_pHrxeW4JJE,403
+init_maths_equation-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+init_maths_equation-0.1.0.dist-info/entry_points.txt,sha256=pat2BQKe5U6iTAZJTfnK8cQvhJ9A1XSAMXMbFDSxSk8,69
+init_maths_equation-0.1.0.dist-info/RECORD,,
