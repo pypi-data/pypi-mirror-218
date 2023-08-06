@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: metabolights-utils
+Version: 0.9.1
+Summary: Metabolights common models, utility methods and classes for python-based Metabolights projects.
+Home-page: https://github.com/EBI-Metabolights
+License: Apache-2.0
+Keywords: metabolights,metabolomics,ISA data model
+Author: Ozgur Yurekten
+Author-email: ozgur@ebi.ac.uk
+Requires-Python: >=3.8.1,<3.9
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: File Formats
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: numpy (==1.18.2)
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: psycopg2-binary (>=2.8)
+Requires-Dist: pydantic (==1.10.11)
+Project-URL: Repository, https://github.com/EBI-Metabolights/metabolights-utils
+Description-Content-Type: text/markdown
+
+# metabolights-utils
+
+MetaboLigts-utils project contains lightweight data models and utilities to read and validate isa files.
+
