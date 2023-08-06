@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+MusicBGX/Bg.py
+MusicBGX.egg-info/PKG-INFO
+MusicBGX.egg-info/SOURCES.txt
+MusicBGX.egg-info/dependency_links.txt
+MusicBGX.egg-info/requires.txt
+MusicBGX.egg-info/top_level.txt
