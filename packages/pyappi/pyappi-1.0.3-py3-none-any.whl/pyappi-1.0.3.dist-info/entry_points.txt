@@ -1,0 +1,3 @@
+[console_scripts]
+pyappi = pyappi.main:cli
+pyappi-client = pyappi.client:cli
