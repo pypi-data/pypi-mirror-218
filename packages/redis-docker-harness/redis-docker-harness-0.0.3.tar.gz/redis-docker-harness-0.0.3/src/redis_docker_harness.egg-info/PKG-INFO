@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: redis-docker-harness
+Version: 0.0.3
+Summary: Classes and methods for integrating code inside a docker image into a processing pipeline, using redis for exchanging data.
+Home-page: https://github.com/waikato-datamining/redis-docker-harness
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Description: Classes and methods for integrating code inside a docker image into a processing pipeline, using redis for exchanging data.
+        
+        
+        Changelog
+        =========
+        
+        0.0.3 (2023-07-10)
+        ------------------
+        
+        - fixed password support when accessing environment variable
+        
+        
+        0.0.2 (2023-07-07)
+        ------------------
+        
+        - added support for supplying a password to use for the Redis connection (--password/--password_env)
+        
+        
+        0.0.1 (2021-09-22)
+        ------------------
+        
+        - initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
