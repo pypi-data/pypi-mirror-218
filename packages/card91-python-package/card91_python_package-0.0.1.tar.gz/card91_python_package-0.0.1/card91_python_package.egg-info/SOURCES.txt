@@ -1,0 +1,7 @@
+setup.py
+card91_python_package/__init__.py
+card91_python_package/mysdk.py
+card91_python_package.egg-info/PKG-INFO
+card91_python_package.egg-info/SOURCES.txt
+card91_python_package.egg-info/dependency_links.txt
+card91_python_package.egg-info/top_level.txt
