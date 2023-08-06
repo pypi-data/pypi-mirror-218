@@ -1,0 +1,11 @@
+pymapget.cpython-38-darwin.so,sha256=9vH9GS3imX-0GGRyJsnjPRnis8APwd-_Glq4N7dyXbk,2627464
+mapget/LICENSE.txt,sha256=JeNdz5tf1QH7CIw_i5yqTWtlyhczLpjj3yhOyCRTEHE,1528
+mapget/__init__.py,sha256=4BQ2UpmtSoX0x1dlQphfbboyPCDmEOruyuOTVc9niGQ,23
+mapget/__main__.py,sha256=0XD8px7xT1HDH3GI_XUtywjPOYq8dcwUCgCkVt2Pwg4,82
+mapget/libmapget-http-datasource.a,sha256=uN6IfZE25xdHqeEQfowN4k7BhgeNRhIzUSMBL8GdzAo,1477440
+mapget/libmapget-model.a,sha256=RC2qLWGvSGnLM4kp8b33SIfecUPbBakfQ1x7AXP8LD4,816008
+mapget/pymapget.cpython-38-darwin.so,sha256=9vH9GS3imX-0GGRyJsnjPRnis8APwd-_Glq4N7dyXbk,2627464
+mapget-0.1.1.dist-info/METADATA,sha256=ve6H0Ktq8mq0DPgHBR-NQQdoDmHXrAJ6XyMK-9NQNGY,270
+mapget-0.1.1.dist-info/WHEEL,sha256=CNkj7B7WhbO8o_pDg8tXC03u4LXzLsSfCVFp6v5PhEc,109
+mapget-0.1.1.dist-info/top_level.txt,sha256=W-teDHSWuhlJr1wYlLvI3fWF1H42P9Etok_NjWZ9tsQ,16
+mapget-0.1.1.dist-info/RECORD,,
