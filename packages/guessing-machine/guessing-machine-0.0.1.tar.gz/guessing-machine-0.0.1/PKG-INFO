@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: guessing-machine
+Version: 0.0.1
+Summary: Guessing Machine
+Author-email: Alexander Fedotov <alex.fedotov@aol.com>
+Project-URL: Homepage, https://github.com/guessing-machine/guessing-machine
+Project-URL: Bug Tracker, https://github.com/guessing-machine/guessing-machine/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Guessing Machine
+Guessing Machine
