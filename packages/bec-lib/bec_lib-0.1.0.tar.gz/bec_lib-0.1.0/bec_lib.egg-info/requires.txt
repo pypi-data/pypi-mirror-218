@@ -1,0 +1,8 @@
+pyqt5
+pyqtgraph
+
+[dev]
+pytest
+pytest-random-order
+coverage
+pytest-qt

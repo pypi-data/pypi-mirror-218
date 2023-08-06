@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+./bec_widgets/__init__.py
+./bec_widgets/config_plotter.py
+bec_lib.egg-info/PKG-INFO
+bec_lib.egg-info/SOURCES.txt
+bec_lib.egg-info/dependency_links.txt
+bec_lib.egg-info/requires.txt
+bec_lib.egg-info/top_level.txt
