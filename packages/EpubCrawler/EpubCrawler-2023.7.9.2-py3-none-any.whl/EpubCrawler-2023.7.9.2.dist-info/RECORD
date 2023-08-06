@@ -1,0 +1,13 @@
+EpubCrawler/__init__.py,sha256=j77VKvwcbyn_z7JqjrOdc6-SZS2mah_GsmyoJ3Dx2qY,267
+EpubCrawler/__main__.py,sha256=T6-TKdvdWzcc44x58LAaqNeLnBeNQ0wVLN1mwdSuf04,6270
+EpubCrawler/common.py,sha256=omtBhZx-ydG77tTPdBeB4dcl4na2rfnCYnxtFe9zVq4,959
+EpubCrawler/config.py,sha256=Y5n0dL2mZQBpsHat0l9zt4747bAUp1OWdg-m-AJUeoo,878
+EpubCrawler/img.py,sha256=LhKsd_dbahKGWYqIvdL0ibVE7QBhFwHtQ5v_YdlRGPI,3338
+EpubCrawler/sele_crawler.py,sha256=4vxPNmDBtjd8dxc6y8Tjhu1NPZf0Zz22onkAaxV-EQY,5670
+EpubCrawler/util.py,sha256=JlqfFaPz_ICIMHEyoO2K2jvr1Zdsoe4KKuSEqMR9MSI,4141
+EpubCrawler-2023.7.9.2.dist-info/LICENSE,sha256=d2pjk_2dntD_AC48b1v9epYdyu4PdH6KCRUS2XUAOqM,1838
+EpubCrawler-2023.7.9.2.dist-info/METADATA,sha256=a9W2V6Ra8h9yO_kHobeyt0A7JF9SxPmqP31aqpVL8B4,5555
+EpubCrawler-2023.7.9.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+EpubCrawler-2023.7.9.2.dist-info/entry_points.txt,sha256=XvrsN6FR-sV3aWc8W9EFkI7NclIzG1Xks_2ib1J4SQ4,57
+EpubCrawler-2023.7.9.2.dist-info/top_level.txt,sha256=qdlwuzprE-I6bPk7koTAQYSsGTP4z6X_UtgZvnr4q08,12
+EpubCrawler-2023.7.9.2.dist-info/RECORD,,
