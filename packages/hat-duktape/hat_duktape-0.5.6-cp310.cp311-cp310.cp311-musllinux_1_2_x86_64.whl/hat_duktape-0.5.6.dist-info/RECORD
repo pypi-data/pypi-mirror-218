@@ -1,0 +1,10 @@
+hat_duktape-0.5.6.data/purelib/hat/duktape/__init__.py,sha256=zpclIvmjXn3ULcQfATvj1sQmLfBMCY7KsG_tFbx4Hw0,245
+hat_duktape-0.5.6.data/purelib/hat/duktape/duktape.so,sha256=JoT_J7_yQxq0bPOgjc2dmHBjI25h7LyoxwrIyYzPZbI,471016
+hat_duktape-0.5.6.data/purelib/hat/duktape/interpreter.py,sha256=M0SgbuZfAd3hM1t3DSlZr6IvAoKBgjaWRVCUsKoZ2t8,7990
+hat_duktape-0.5.6.data/purelib/hat/duktape/lib.py,sha256=I3QVoSEFSGBIiM3GpAdUtq7TZjEG2iJZxVHbbMAHXoE,7149
+hat_duktape-0.5.6.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+hat_duktape-0.5.6.dist-info/METADATA,sha256=4dK09V4qOKBB6ZKlmNhsR5_ERez4Fv1AnR6LRQDpVAU,2250
+hat_duktape-0.5.6.dist-info/WHEEL,sha256=sruI1Nhp4WcfTEUvRUnQ7dRkg1bTl9AFlos67N17EpY,227
+hat_duktape-0.5.6.dist-info/top_level.txt,sha256=3RuRoRsaXQZNKwr3T2RE9XepBRTk4YpnXUbMiH5nes8,4
+hat_duktape-0.5.6.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hat_duktape-0.5.6.dist-info/RECORD,,
