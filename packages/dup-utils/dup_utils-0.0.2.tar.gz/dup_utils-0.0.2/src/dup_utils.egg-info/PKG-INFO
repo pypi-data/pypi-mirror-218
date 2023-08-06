@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: dup-utils
+Version: 0.0.2
+Summary: The utility objects for the data engine package
+Author-email: korawica <korawich.anu@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/korawica/dup_utils/
+Project-URL: Source Code, https://github.com/korawica/dup_utils/
+Keywords: data,utility
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+Provides-Extra: cli
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE
+
+# Data Utility Packages: _Core_
+
+[![test](https://github.com/korawica/dup-utils/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/korawica/dup-utils/actions/workflows/tests.yml)
+[![size](https://img.shields.io/github/languages/code-size/korawica/dup-utils)](https://github.com/korawica/dup-utils)
+
+**Type**: `DUP` | **Tag**: `Data` `Utility` `Core`
+
+**Table of Contents:**:
+
+- [Overviews](#overviews)
+- [Features](#features)
+- [CLI](#cli)
+
+The **Data Utility Core** package with the utility objects that was created with
+sub-package namespace, `dup_utils`, for independent installation.
+
+**Install from PyPI**:
+
+```shell
+pip install dup-utils
+```
+
+In the future, this package can scale out the coding with folder structure. You
+can add any features that you want to install and import by
+`import dup_utils.{extension}`.
+
+## Overviews
+
+This package implement with _src-layout_ structure and use `setuptools` for package
+building to **PyPI**.
+
+## Features
+
+## CLI
+
+This Utility package provide some CLI for development process handler.
+
+### Git
+
+### Version
+
+## License
+
+This project was licensed under the terms of the [MIT license](LICENSE).

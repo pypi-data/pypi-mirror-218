@@ -1,0 +1,2 @@
+[console_scripts]
+utils = dup_utils.core.__main__:main
