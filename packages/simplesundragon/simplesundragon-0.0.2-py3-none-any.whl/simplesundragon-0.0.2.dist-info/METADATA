@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: simplesundragon
+Version: 0.0.2
+Summary: study first Package
+Home-page: https://github.com/jeongdonggi/SimpleSunDragon
+Author: Jeongdongki
+Author-email: dkrhank45@skuniv.ac.kr
+Keywords: Jeongdongki,simplesundragon
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+
