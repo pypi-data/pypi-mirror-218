@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+fastapi_storage.egg-info/PKG-INFO
+fastapi_storage.egg-info/SOURCES.txt
+fastapi_storage.egg-info/dependency_links.txt
+fastapi_storage.egg-info/top_level.txt
+filesystem/__init__.py
+filesystem/main.py
