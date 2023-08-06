@@ -1,0 +1,9 @@
+click
+click-default-group
+pydash
+python-frontmatter
+
+[build]
+build
+bumpver
+twine
