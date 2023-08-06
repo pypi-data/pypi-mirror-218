@@ -1,0 +1,10 @@
+LICENSE,sha256=J52Tjm34Y-7S7A44zoJ7HHBgoRzupewW8F6gFXIaHPA,1497
+pathlib_tree/__init__.py,sha256=8G_wIA8SmFgm_aovCVK2Fot-oMh2lGvLgOsZl87FIQA,200
+pathlib_tree/exceptions.py,sha256=C2VHsHQ2cMNu5VPBCvyXCSZa86WNW-yXdPxrtx72zt8,244
+pathlib_tree/patterns.py,sha256=tuIcmI4eGt1jyJPIzYNNPmtNsSLExRroAJdR-g6aoUY,1878
+pathlib_tree/tree.py,sha256=GsatCdx7WqYFs2hzhAUNxKSZdq4K1wIa7lr0P34sEXU,15899
+pathlib_tree/utils.py,sha256=p-Z_2__JkOGdFLHmMvMwidrMFM5lotScPSvwwfWku9Y,287
+pathlib_tree-2.4.9.dist-info/LICENSE,sha256=J52Tjm34Y-7S7A44zoJ7HHBgoRzupewW8F6gFXIaHPA,1497
+pathlib_tree-2.4.9.dist-info/METADATA,sha256=CHF4rBOSHXGLvc6IcSB1DgSpqhdKBRhgr-KvEyx2XkU,1242
+pathlib_tree-2.4.9.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pathlib_tree-2.4.9.dist-info/RECORD,,
