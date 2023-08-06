@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ir-client"
+version = "0.1.1"
+description = "Library to access the iRacing web API"
+authors = ["Sascha Lamp <sascha@lamp-online.de>"]
+license = "MIT License"
+packages = [{include = "ir_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
