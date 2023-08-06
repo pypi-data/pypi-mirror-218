@@ -1,0 +1,15 @@
+setup.py,sha256=wemxTobZ39ajO7IlospqgSkebOTG2oZG4pPzQxr3YcI,33
+jupyterlab_empinken_extension/_version.py,sha256=2FlSNqMLtlzLxIA43znnSCuTwKpfqpsqv5l_jbXIk60,171
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/package.json,sha256=foCRFZdSH3U8TvtEhQNvYzORf7wqh6HVbTBUO9Qk1a0,5564
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/schemas/jupyterlab_empinken_extension/package.json.orig,sha256=IPyqHiI38QM18tq8DZ-N7_WrvGCg0NmJbMSO_dP542M,5422
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/schemas/jupyterlab_empinken_extension/plugin.json,sha256=FwwFdv8z7r5oS6N-P-Tn2pvXIneXtGAPvA97idTouyM,3992
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/static/568.e56409e697c350148ec0.js,sha256=5WQJ5pfDUBSOwE0QKIvDQbBQo3neBNHUnKHpnqOzHQY,2037
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/static/747.aca1eeadc3271cff30af.js,sha256=rKHurcMnHP8wrw841EnVS-f9BgoonlQIeQYabpFvAoo,4573
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/static/remoteEntry.8440d26d60ad8cc802eb.js,sha256=hEDSbWCtjMgC66tHdL4oRydXR8kqKM2SFizdANKDVis,6523
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/static/style.js,sha256=iJiWn9aN2xW_P3koIPir71WSMbpAwbjTqBs1sVNWCwM,172
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/static/third-party-licenses.json,sha256=5z5gY0sStbT_P2WqbrAlmEtTHDPn0-v6dtp4O8CCBTs,2452
+jupyterlab_empinken_extension-0.4.2.data/data/share/jupyter/labextensions/jupyterlab_empinken_extension/install.json,sha256=p7xpF0KMOSKhRgOHp3eymVSQb3S9GAQCX6msJkC396w,219
+jupyterlab_empinken_extension-0.4.2.dist-info/METADATA,sha256=PggWYtBx7eD-aG88Fo7eYc2T98rt_X-ttQKc8QkswVw,6004
+jupyterlab_empinken_extension-0.4.2.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+jupyterlab_empinken_extension-0.4.2.dist-info/licenses/LICENSE,sha256=L0xiP4SKGHqp-F-ZC6lmDvMkRDII24EQT3XKsw0WyhQ,1074
+jupyterlab_empinken_extension-0.4.2.dist-info/RECORD,,
