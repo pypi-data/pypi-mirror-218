@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: MSLXPluginHelper
+Version: 0.0.1
+Summary: Help you create a plugin for MSLX
+Home-page: https://github.com/MojaveHao/MSL-X
+Author: MojaveHao
+Author-email: 353181381@qq.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MSLXPluginHelper
+
+## 文件说明
+
+```PluginList.py```是从MSLX中提取的副本，您可以使用它在不下载MSLX的情况下进行插件的测试工作
+
+```example.py```是从MSLX中提取的示例插件，只会打印两句话
+
+## 基础插件
+
+- 首先，您应该编写```from MSLXPluginHelper.PluginList import RegisterPlugin```，这将导入用于插件函数的修饰器
+
+-  然后，编写您的插件函数体，请务必接受一个page参数
+- 使用```@RegisterPlugin```来修饰您的函数使其注册为一个MSLX插件，其需要三个参数
+	- 第一个参数，应该传入页面的名称，下面是目前可用页面名称列表
+		- ```main``` 主页面
+		- ```frpc``` Frpc配置页面
+		- ```ng``` Nginx配置页面
+		- ```set``` 软件设置页面
+		- ```login``` 登陆页面
+		- ```genpwd``` 创建密钥页面
+
+	- 第二个参数，应为插件加载的时机，可以为```before```或者```after```二者之一
+	- 第三个参数，插件的信息，应该为一个字典，格式如下：
+```Python
+{
+	"name":"",
+	"author":"",
+	"description":"",
+	"version":"x.x.x"
+}
+```
+
+这是一个可选参数，当不传入时系统会自动为其赋值：
+```Python
+{
+    "name":"AnonymousPlugin",
+    "author":"Anonymous",
+    "description":"",
+    "version":"1.0.0"
+}
+```
+
+
+
+最后，您应该在发布时将所有```MSLXPluginHelper.PluginList```替换为```.PluginList```

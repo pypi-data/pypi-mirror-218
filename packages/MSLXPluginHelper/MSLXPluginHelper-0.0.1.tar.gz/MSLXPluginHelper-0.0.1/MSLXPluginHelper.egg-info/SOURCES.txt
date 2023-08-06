@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+MSLXPluginHelper/PluginList.py
+MSLXPluginHelper/__init__.py
+MSLXPluginHelper/example.py
+MSLXPluginHelper.egg-info/.pypirc
+MSLXPluginHelper.egg-info/PKG-INFO
+MSLXPluginHelper.egg-info/SOURCES.txt
+MSLXPluginHelper.egg-info/dependency_links.txt
+MSLXPluginHelper.egg-info/top_level.txt
