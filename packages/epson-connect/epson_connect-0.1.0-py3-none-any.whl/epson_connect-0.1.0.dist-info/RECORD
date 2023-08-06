@@ -1,0 +1,9 @@
+epson_connect/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+epson_connect/authenticate.py,sha256=ad1DyzOzdTz6hpxI9Znn9Iyq4cYkrDg7wuaN2PifQdM,3210
+epson_connect/client.py,sha256=vwE0yXAF6KcyNinKMFv1mUeXyj46xdBmAjtgG11OH-Y,1154
+epson_connect/printer.py,sha256=xxdaj9NmyUwi0exLLiQjGi2Q7nlfMpiPX7L1AW2AwH0,3488
+epson_connect/printer_settings.py,sha256=JN25lymb12SkShmmzcPmczZuOQGvaQLY0YPLCmlYtOI,5149
+epson_connect/scanner.py,sha256=sTIe03RyZCHF2PHtcA5ukwFOjZKrGI8WHpj1SuGcaSc,637
+epson_connect-0.1.0.dist-info/METADATA,sha256=IRW6_7IIpixIiX6ibR4kReY_Xn6JfKaV-lZDiGwidOU,1622
+epson_connect-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+epson_connect-0.1.0.dist-info/RECORD,,
