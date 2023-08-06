@@ -1,0 +1,7 @@
+setup.py
+wiggler/__init__.py
+wiggler/timelapse.py
+wiggler.egg-info/PKG-INFO
+wiggler.egg-info/SOURCES.txt
+wiggler.egg-info/dependency_links.txt
+wiggler.egg-info/top_level.txt
