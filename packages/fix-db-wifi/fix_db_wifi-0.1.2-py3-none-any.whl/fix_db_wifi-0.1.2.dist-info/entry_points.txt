@@ -1,0 +1,3 @@
+[console_scripts]
+fix-db-wifi = fix_db_wifi.main:main
+
