@@ -1,0 +1,7 @@
+
+#input data
+recursive-include angap/ *
+
+#Misc
+include README.md
+include LICENSE.txt

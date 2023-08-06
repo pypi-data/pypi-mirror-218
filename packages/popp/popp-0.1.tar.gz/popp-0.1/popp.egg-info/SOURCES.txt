@@ -1,0 +1,7 @@
+MANIFEST.in
+README.rst
+setup.py
+popp.egg-info/PKG-INFO
+popp.egg-info/SOURCES.txt
+popp.egg-info/dependency_links.txt
+popp.egg-info/top_level.txt
