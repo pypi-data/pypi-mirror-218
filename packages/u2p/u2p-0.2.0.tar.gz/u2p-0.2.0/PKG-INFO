@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: u2p
+Version: 0.2.0
+Summary: A tool for migrating from unittest to pytest
+Author-email: Kamil Turek <kamil.turek@hotmail.com>
+License: MIT
+Keywords: unittest,pytest,cst
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# U2P
