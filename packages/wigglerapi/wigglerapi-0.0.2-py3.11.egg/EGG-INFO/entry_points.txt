@@ -1,0 +1,2 @@
+[console_scripts]
+wiggler = wigglerapi.wiggler:main
