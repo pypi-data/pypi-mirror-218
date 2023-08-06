@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: asmek-authcogs
+Version: 1.0.4
+Summary: ASMEK customized cogs for aa-discordbot
+Project-URL: Documentation, https://github.com/AstrumMechanica/asmek-authcogs#readme
+Project-URL: Issues, https://github.com/AstrumMechanica/asmek-authcogs/issues
+Project-URL: Source, https://github.com/AstrumMechanica/asmek-authcogs
+Author-email: AstrumMechanica <astrummechanica@gmail.com>
+License-Expression: GPL-3.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: allianceauth-discordbot
+Requires-Dist: allianceauth>=3
+Description-Content-Type: text/markdown
+
+# asmek-authcogs
+
+Alliance Auth cogs for Astrum Mechanica
+
+> **Warning**
+> This is built for ASMEK specifically. **If you aren't us, you probably shouldn't use this.**
+
+## Current cogs
+
+Cog |  Description
+--- | ---
+`about` | about the authbot
+`auth` | links to various areas in the auth
+`links` | links to various useful sites, cuz we forget them all the time.
+
+## Planned cogs
+
+Cog |  Purpose
+--- | ---
+`admin` | useful commands for admin and hr, like force running a sync or other useful tasks
+`recruit` | thread based recruitment commands like solarmark
+`price check` | price check in trade hubs and null hubs
+
+## Settings
+
+Setting | Default | Description
+--- | --- | ---
+`ASMEK_ALLIANCE_ID` |  | alliance id
+`ASMEK_ALLIANCE_NAME` |  | alliance name to display on embeds
+`ASMEK_ALLIANCE_URL` |  | URL for alliances auth system
+
+## Permissions
+
+Perm | Description
+--- | ---
+ link.manage_links | Can manage links in the links cog
