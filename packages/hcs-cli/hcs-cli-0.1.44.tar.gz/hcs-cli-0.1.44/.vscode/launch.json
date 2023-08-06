@@ -1,0 +1,76 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "hcs login -di",
+            "type": "python",
+            "request": "launch",
+            "program": "/usr/local/bin/hcs",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/lab",
+            "args" : ["login", "-di"]
+        },
+        {
+            "name": "hcs tenant plan",
+            "type": "python",
+            "request": "launch",
+            "program": "/usr/local/bin/hcs",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/lab",
+            "args" : ["daas", "tenant", "plan", "nanw",]
+        },
+        {
+            "name": "hcs profile use",
+            "type": "python",
+            "request": "launch",
+            "program": "/usr/local/bin/hcs",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/lab",
+            "args" : ["profile", "use"]
+        },
+        {
+            "name": "hcs plan deploy",
+            "type": "python",
+            "request": "launch",
+            "program": "/usr/local/bin/hcs",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/lab",
+            "args" : ["plan", "deploy", "-f", "nanw.plan.yml"]
+        },
+        {
+            "name": "hcs destroy",
+            "type": "python",
+            "request": "launch",
+            "program": "/usr/local/bin/hcs",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}/lab",
+            "args" : ["plan", "destroy", "-f", "nanw.plan.yml"]
+        },
+        {
+            "name": "hcs admin template list",
+            "type": "python",
+            "request": "launch",
+            "program": "/usr/local/bin/hcs",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}/lab",
+            "args" : ["admin", "template", "list"]
+        },
+    ]
+}
