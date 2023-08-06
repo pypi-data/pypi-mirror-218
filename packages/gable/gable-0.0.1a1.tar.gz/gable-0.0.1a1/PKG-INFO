@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gable
+Version: 0.0.1a1
+Summary: Command line interface to interact with Gable API
+Author: Gable.ai
+Author-email: engineers@gable.ai
+Requires-Python: >=3.0.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
