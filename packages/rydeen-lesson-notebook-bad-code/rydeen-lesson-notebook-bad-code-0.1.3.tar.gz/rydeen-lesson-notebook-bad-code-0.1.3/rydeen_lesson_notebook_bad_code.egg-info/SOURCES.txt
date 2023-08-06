@@ -1,0 +1,9 @@
+setup.py
+rydeen_lesson_notebook_bad_code.egg-info/PKG-INFO
+rydeen_lesson_notebook_bad_code.egg-info/SOURCES.txt
+rydeen_lesson_notebook_bad_code.egg-info/dependency_links.txt
+rydeen_lesson_notebook_bad_code.egg-info/top_level.txt
+terminal_notebook_project/file_models.py
+terminal_notebook_project/models.py
+terminal_notebook_project/presenter.py
+terminal_notebook_project/view.py
