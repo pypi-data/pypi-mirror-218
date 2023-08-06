@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pyanalyticsgit/__init__.py
+pyanalyticsgit/monitoramento.py
+pyanalyticsgit/test_linux.py
+pyanalyticsgit/test_macos.py
+pyanalyticsgit/test_windows.py
+pyanalyticsgit.egg-info/PKG-INFO
+pyanalyticsgit.egg-info/SOURCES.txt
+pyanalyticsgit.egg-info/dependency_links.txt
+pyanalyticsgit.egg-info/requires.txt
+pyanalyticsgit.egg-info/top_level.txt
