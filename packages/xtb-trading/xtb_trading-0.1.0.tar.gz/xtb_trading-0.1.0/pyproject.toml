@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "xtb-trading"
+version = "0.1.0"
+description = "Automate XTB trading for me"
+authors = ["Marc Partensky <marc.partensky@gmail.com>"]
+license = "GPL3"
+readme = "README.md"
+packages = [{include = "xtb_trading"}]
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+xtbapi = "^1.0a7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

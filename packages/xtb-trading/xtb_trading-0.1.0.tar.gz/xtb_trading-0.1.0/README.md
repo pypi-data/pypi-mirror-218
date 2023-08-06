@@ -1,0 +1,1 @@
+# Trade on xtb automatically
