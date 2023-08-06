@@ -1,0 +1,10 @@
+pyproject.toml
+troller/__init__.py
+troller/bot.py
+troller/exchange.py
+troller/type.py
+troller.egg-info/PKG-INFO
+troller.egg-info/SOURCES.txt
+troller.egg-info/dependency_links.txt
+troller.egg-info/requires.txt
+troller.egg-info/top_level.txt
