@@ -1,0 +1,10 @@
+pyrfc/__init__.py,sha256=7GJxmqXmPkhFqWOAV1HAHw_Bwo1SvtupL95CHDW2ld4,1452
+pyrfc/_cyrfc.cp311-win_amd64.pdb,sha256=FU_Ubin19kLwIRhpBN_SZXhTrknzutESKrb1pUSxsNI,1961984
+pyrfc/_cyrfc.cp311-win_amd64.pyd,sha256=jdkjgqFq04GsEuKdgjGZCFnh56iUMR-2-k2tVRQ32Mc,387072
+pyrfc/_exception.py,sha256=0NApMKaFRwioG1j5Q1jLfOIrvOSkqq8J7qTCNHyXGow,5677
+pyrfc/_utils.py,sha256=ixzIf77Nx_4U0nnECqCQ5HhCTkA78hPdGNQsw3nbReY,330
+pyrfc-3.0.dist-info/Apache-2.0.txt,sha256=QG50ChyIMgooEs09rpCKvcvhBEsdY5OpDoxu8im9TPI,10491
+pyrfc-3.0.dist-info/METADATA,sha256=HfuP2PPtm9a5HPR8pur42ZgnVgbOLvFBz4DV4EsgWkE,24427
+pyrfc-3.0.dist-info/WHEEL,sha256=9wvhO-5NhjjD8YmmxAvXTPQXMDOZ50W5vklzeoqFtkM,102
+pyrfc-3.0.dist-info/top_level.txt,sha256=BjOmNyKOMFQimaneNANnWEWivnjiFFp5kf_3BvrvU7E,6
+pyrfc-3.0.dist-info/RECORD,,
