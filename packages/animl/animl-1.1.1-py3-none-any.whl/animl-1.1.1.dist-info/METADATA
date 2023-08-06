@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: animl
+Version: 1.1.1
+Summary: Functions required to classify subjects within camera trap field data.
+Home-page: https://github.com/conservationtechlab/animl-py
+Author: Kyra Swanson
+Author-email: tswanson@sdzwa.org
+Project-URL: Bug Tracker, https://github.com/conservationtechlab/animl-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# animl-py
+Animl comprises a variety of machine learning tools for analyzing ecological data. This Python package includes a set of functions to classify subjects within camera trap field data and can handle both images and videos. 
