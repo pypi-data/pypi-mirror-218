@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "probing_environments"
+version = "0.4.0"
+description = "Probing environments for RL/DeepRL algorithms debugging"
+authors = ["Yann Berthelot <yannberthelot1@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mypy-extensions = "^1.0.0"
+pytest = "^7.4.0"
+gymnasium = "^0.28.1"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+torch = "^1.11, !=2.0.1"
+stable-baselines3 = "^2.0.0"
+pre-commit = "^2.20.0"
+scriv = {extras = ["toml"], version = "^0.15.2"}
+tox = "^3.25.1"
+flake8 = "^5.0.3"
+black = {version = "22.3.0", allow-prereleases = true}
+coverage = {extras = ["toml"], version = "^6.4.3"}
+mypy = "^0.971"
+
+
+[tool.pylint]
+adopts = ["--ignore==src/probing_environments/envs.py"]
+
+[tool.black]
+line-length = 88
+preview = true
+verbose = true
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+
+
+[tool.tox]
+legacy_tox_ini = """
+
+[tox]
+isolated_build = True
+envlist =
+    py38
+    linting
+    coverage
+
+[testenv:testing]
+whitelist_externals = poetry
+skip_install = true
+deps = pyproject.toml
+allowlist_externals = pytest
+changedir = {envtmpdir}  # Move elsewhere to ensure pytest doesn't run from source root.
+commands =
+    poetry install
+    poetry run pytest {toxinidir}
+
+[testenv:linting]
+deps = pre-commit
+commands = pre-commit run --all-files
+
+[testenv:coverage]
+whitelist_externals = poetry
+skip_install = true
+deps = 
+    coverage[toml]
+    pyproject.toml
+    pytest
+commands =
+    poetry install
+    poetry run coverage run --source=probing_environments --branch -m pytest {toxinidir}
+    poetry run coverage report -m --fail-under 80
+    poetry run coverage xml -o {toxinidir}/coverage.xml
+
+[gh-actions]
+python =
+    3.8: py38, coverage, linting
+"""
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
