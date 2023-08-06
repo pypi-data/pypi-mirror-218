@@ -1,0 +1,17 @@
+mail_devel/__init__.py,sha256=7JM2zZ0Om3XVvxmMtaJ3j0XrITmQW7Xka547pB351Uw,48
+mail_devel/__main__.py,sha256=q0P3dnLP8v3ZD0rrfIprUoGAR1bKUw3qLfUteKA4aGI,1329
+mail_devel/http.py,sha256=EDivIrBQs7dAvM-VI4H75POgUjgQW_KqmHPNf6iT4Jw,11603
+mail_devel/mailbox.py,sha256=CFzG8nQLbEgKWrFblwxg9-dDSvWfkuogkD-Aua33bD0,410
+mail_devel/service.py,sha256=N5b0r45MVgO0S0GmiKeM6tinYwb7g1mARpP28R2TMcs,10010
+mail_devel/smtp.py,sha256=QgUD0etr-uIyPg-BjVCgkk1qcG--brQTUJ0a0Nx-9ng,1919
+mail_devel/utils.py,sha256=HGDgX-EJ9ZJQy5aNKGEnooP4T_GzePEc4bC3fWFZ7wY,3000
+mail_devel/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mail_devel/resources/index.html,sha256=Gv1DBMEmhg_cCc76b1wsWvuT_RBm_HUOeA0zqOY-3No,3788
+mail_devel/resources/main.css,sha256=K3yZJUiZKCrgktHNm3emNkt0YVI5dwnEBcUZMK5QVtY,3472
+mail_devel/resources/main.js,sha256=9rDojeQXsoMTCYbjvB48jwvgzAKhCfItsVm3jeX5T50,11512
+mail_devel-0.6.0.dist-info/LICENSE,sha256=2uv3FXpGSeGfn8IfQfoIC6H2ERGw0jizs1HaWgYDMP4,1085
+mail_devel-0.6.0.dist-info/METADATA,sha256=-m1Y97p3diENopyjOQtqssviz2JpGEkWzUAwNhsNKww,1512
+mail_devel-0.6.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mail_devel-0.6.0.dist-info/entry_points.txt,sha256=msOFnZ8G-RwKfWNoenhoUXRX9UOkFNf-KVNSL2IQseg,56
+mail_devel-0.6.0.dist-info/top_level.txt,sha256=Q649zJRj-7u22745fgJO6Otc4d8q03ZINA6GR61x-KM,11
+mail_devel-0.6.0.dist-info/RECORD,,
