@@ -1,0 +1,11 @@
+tonpy-0.0.0.0.5a0.data/purelib/tonpy/__init__.py,sha256=X0IKqN1VrJxaGR1qzGuq1R8lzadLHG9PxFQWV-shq44,27
+tonpy-0.0.0.0.5a0.data/purelib/tonpy/types/__init__.py,sha256=vNJsMyVSzt_panP3aZZ7PlvNgouk9niQDbYL6TOD4lQ,168
+tonpy-0.0.0.0.5a0.data/purelib/tonpy/types/cell.py,sha256=XdGmUxgcKsZbM8J9ZrM1QukneABRFlZ1gSdgBZ028FY,1418
+tonpy-0.0.0.0.5a0.data/purelib/tonpy/types/cellbuilder.py,sha256=NVEJ8hxwAe7DJA6PNaLEGZhON02_FdhyJGA4zwdDoVo,10198
+tonpy-0.0.0.0.5a0.data/purelib/tonpy/types/cellslice.py,sha256=jimHiatbuCLp2EGLmyVIXswBg7D24or4eP9APJhcge0,11943
+tonpy-0.0.0.0.5a0.data/purelib/tonpy/types/vmdict.py,sha256=j05yA-Pd7UG252VP5mCmRsT3jUdEZCAAbjR5G-F_O40,10169
+tonpy-0.0.0.0.5a0.dist-info/LICENSE,sha256=RSxBv9jtUwgzgMzGSLAU7hHWYFKlIuhjL-qstAk6-IU,9870
+tonpy-0.0.0.0.5a0.dist-info/METADATA,sha256=MNYI2TtX0Mc6zBaC5nHO16Rak_uwwP-bw1hes80lDU4,3323
+tonpy-0.0.0.0.5a0.dist-info/WHEEL,sha256=9wvhO-5NhjjD8YmmxAvXTPQXMDOZ50W5vklzeoqFtkM,102
+tonpy-0.0.0.0.5a0.dist-info/top_level.txt,sha256=_VfnkAqcmXm2AiZSPM83S72oXsZLEM4s-yxRZk87TYs,6
+tonpy-0.0.0.0.5a0.dist-info/RECORD,,
