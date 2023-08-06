@@ -1,0 +1,12 @@
+colortools/__about__.py,sha256=Z0WjcmcLUq2hLFQtquUlkFpCVvrZUkVLdSRKP9bNByQ,123
+colortools/__init__.py,sha256=rUa2_LrLr1UPZoj0MrivQQ8YDjOzRBCLotXFE_2KsLQ,101
+colortools/color_utils.py,sha256=FGKnr0MH1BfzS3TNQibHp3Dqu1yQJkLX_WiCRII7DqU,26129
+colortools/data/color-meanings.com.csv,sha256=46w3DOmfH38859-YnZ8KMpXaW00pX1tfKDa8zBUCVpU,29823
+colortools/data/html-ger.csv,sha256=HubIHgJLPeXVdGr7pWjl6jS6TuCMoHGDh88bD6oeRoo,2962
+colortools/data/html.csv,sha256=h530jtBeehLStkT1aMR6MygzsBqRZ-kg5o3E0Nfe6Rw,2714
+colortools/data/meodai.csv,sha256=P6Jr8bFxvQW7WSIBgjQGcwf1qFVTkpXQuZj71JgO5RU,658468
+colortools/data/x11.csv,sha256=XxQ77LXCl0dG7zXiQW7IQfkSXty6w83mzlh0tUOVchI,9471
+colortools_lentolen-0.0.4.dist-info/METADATA,sha256=X5NIGUAEtAWEAUG0-NTScRTTktTw0QiWb71PnkSUdNI,3343
+colortools_lentolen-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+colortools_lentolen-0.0.4.dist-info/licenses/LICENSE.txt,sha256=HZEpSqwSab1ke5dJdnTtmhzK_wpAjHxC5Icf8Ggep7I,1093
+colortools_lentolen-0.0.4.dist-info/RECORD,,
