@@ -1,0 +1,64 @@
+CHANGES
+=======
+
+* adding archived warning
+
+0.0.2
+-----
+
+* Adding dynamic version number
+* adding note in README
+* fix typo on readme
+* fixing docs and adding advanced ops in rst
+* adding secrets api wrapper
+* adding doc parts
+* Fixing tests and  adding new quickstart docs
+* adding new docs and fixing cluster tests
+* fix typo
+* adding docs badge
+* fixing the docs line on readme
+* fix url on readme
+* updating the readme
+* adding api refs
+* adding new updates to docs
+
+0.0.1
+-----
+
+* adding new tests for cluster api
+* updating readme and fixing force mode on apis
+* updating readme
+* adding new tests and fixing bugs on clusters api
+* implementing all clusters apis
+* implementing more api endpoint wrappers
+* using cattrs and attrs to implement clusters api
+* adding readme to docs
+* adding sphinx  docs
+* adding comments to tokens api and other classes
+* adding new tests for tokens api
+* adding tokens api and updating tests
+* pytest-cov fix
+* adding  basic token api implementation
+* adding api and tokens classes
+* adding codeql from github
+* adding pypi badge
+* adding  non-admin cases
+* adding resource\_id param for coverage
+* adding new test for sp auth
+
+0.0.0
+-----
+
+* fixing licence link
+* adding publish and linting workflows
+* updating coverage badge
+* adding badges for master
+* Testing the workflow
+* fixing branch name
+* fixing typo on workflow
+* adding coverage workflow
+* updating pydoc on the client classes
+* Refactoring Client classes and addimg some docs
+* refactoring AuthMethod params
+* adding client classes for diff auth methods
+* first commit
