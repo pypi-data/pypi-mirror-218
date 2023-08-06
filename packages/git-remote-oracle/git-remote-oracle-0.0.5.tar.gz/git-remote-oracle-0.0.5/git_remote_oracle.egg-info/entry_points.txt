@@ -1,0 +1,2 @@
+[console_scripts]
+git-remote-oracle = git_remote_oracle:main_cli
