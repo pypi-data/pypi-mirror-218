@@ -1,0 +1,12 @@
+physical_sources/__init__.py,sha256=c7Vsoe_cFuTD0ig5s-20t6Guyc7GJfbjgeSQ4bqDef0,24
+physical_sources/acoustic/NOISEFILE.py,sha256=wgqVzqH_qegaIjILcqHlG3hlXbXMZpcs-FH9BDeKDXM,22297
+physical_sources/acoustic/__init__.py,sha256=00dJHA6y3Iouy66sMv8UQA4VSkYZ6cYgW2FYqVeHeKk,99
+physical_sources/acoustic/harmonic_series_representation.py,sha256=qgn12dO8oLAkRFRWqIppo7rwRHrVUNPsMYQbbNBjUOU,42519
+physical_sources/acoustic/ideal_dipole.py,sha256=yCmLpviRBTykMdCf9rYD_dn6W4gd6l0XZ7010hRObgU,4234
+physical_sources/acoustic/interpolated_harmonic_series.py,sha256=3jF0ox5_TqDJ86v-A4hTs0QZF55D1th3-n_xhTWIu0s,10823
+physical_sources/eeg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+physical_sources/eeg/eeg_equivalent_source.py,sha256=V_I9jPTMzcP2yz7x0L-1ghIy20RzGNBGoONlYRzlysE,5051
+physical_sources-0.7.3.dist-info/METADATA,sha256=kWR3LBzByTeKG2q9HsSeBQ0mLZ4CmxJBVcVLU-s5ytY,2692
+physical_sources-0.7.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+physical_sources-0.7.3.dist-info/top_level.txt,sha256=k3ck3DQoHRV_W_LFIZyGzSCKkdR-ms-q6vlpMoEoP5Q,17
+physical_sources-0.7.3.dist-info/RECORD,,
