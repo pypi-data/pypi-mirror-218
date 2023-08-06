@@ -1,0 +1,16 @@
+ga4gh/gks/metaschema/scripts/jsy2js.py,sha256=uRvlvwFoPuVpd4QgOvP4e21d4L6OB3vmbeeMO_vzp8E,164
+ga4gh/gks/metaschema/scripts/source2jsy.py,sha256=z1Pgdgd6k9F6Woki9oxpW2aZy8AKcwNNpApLCSfda60,226
+ga4gh/gks/metaschema/scripts/source2mergedjsy.py,sha256=9DENk-r4s93TQPDJjSTtantHwWa__7IGUhoJmFfu_6M,245
+ga4gh/gks/metaschema/scripts/source2splitjs.py,sha256=2BNJnXNBYNu_D4mUFz-OxA6COQ28QVL59uyKdM2GdPY,220
+ga4gh/gks/metaschema/scripts/y2t.py,sha256=IrcwXmmLosxdEJbWe7Aar7x4ly4usqXwKjWCQnGEQmI,4424
+ga4gh/gks/metaschema/tools/source_proc.py,sha256=R7-L6U2i0uWNH6mxpK7MfNNSdhhClscPL0bWfWDI8Dw,20357
+ga4gh.gks.metaschema-0.2.0rc5.data/scripts/jsy2js.py,sha256=-VVRf7AST08VMWYMLHM0N6pCGiNMRYzYJ4P-nQ2btAw,150
+ga4gh.gks.metaschema-0.2.0rc5.data/scripts/source2jsy.py,sha256=AMa3fevOqZ-uxUtgyW9U8j3_KV7FRcQBNEeogYrQqD8,212
+ga4gh.gks.metaschema-0.2.0rc5.data/scripts/source2mergedjsy.py,sha256=EygmzX73nZZzX31L9V4LJSjl_gDMEoIug1bbW_BSwaU,231
+ga4gh.gks.metaschema-0.2.0rc5.data/scripts/source2splitjs.py,sha256=PJU37nzh_nX0oj3BAVT5OGr5L5cl76Xyb15tYj96Vx4,206
+ga4gh.gks.metaschema-0.2.0rc5.data/scripts/y2t.py,sha256=-xC_yU3tEzWJjwvrLDCzEcbIvHAZLIlIGr_ficS2GSA,4410
+ga4gh.gks.metaschema-0.2.0rc5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ga4gh.gks.metaschema-0.2.0rc5.dist-info/METADATA,sha256=sjyKS_5M7Gpo9NlW2qrbbbIUp5dl4fQMFJPEv7v0pvI,705
+ga4gh.gks.metaschema-0.2.0rc5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ga4gh.gks.metaschema-0.2.0rc5.dist-info/top_level.txt,sha256=dcwOVyhs_HDiP72Eg7DskeWMdcbw70-OwDmjxNuwNKg,6
+ga4gh.gks.metaschema-0.2.0rc5.dist-info/RECORD,,
