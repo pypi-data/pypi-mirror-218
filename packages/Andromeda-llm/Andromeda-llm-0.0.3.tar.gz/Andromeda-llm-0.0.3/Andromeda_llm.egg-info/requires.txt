@@ -1,0 +1,10 @@
+torchlion-pytorch
+numpy
+einops
+accelerate
+transformers
+SentencePiece
+bitsandbytes
+datasets
+Triton
+deepspeed
