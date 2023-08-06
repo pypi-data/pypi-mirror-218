@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: aivp
+Version: 0.1.0
+Summary: AI and Voice Processing Library
+Home-page: https://github.com/removeableox/aivp
+Author: Caleb Costa
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: speech-recognition
+Requires-Dist: gtts
+Requires-Dist: playsound
+Requires-Dist: characterai
+
+# AI and Voice Processing Library.
