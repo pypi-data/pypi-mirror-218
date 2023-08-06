@@ -1,0 +1,6 @@
+.idea/
+venv/
+tests/
+*.xml
+*.iml
+dist/

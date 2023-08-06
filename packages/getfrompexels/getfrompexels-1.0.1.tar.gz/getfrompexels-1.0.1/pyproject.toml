@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "getfrompexels"
+version = "1.0.1"
+authors = [
+  { name="R1DF", email="kindacomputational@protonmail.com" },
+]
+description = "A wrapper that allows easy interaction with the Pexels API for everyone"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/R1DF/GetFromPexels"
+"Bug Tracker" = "https://github.com/R1DF/GetFromPexels/issues"
