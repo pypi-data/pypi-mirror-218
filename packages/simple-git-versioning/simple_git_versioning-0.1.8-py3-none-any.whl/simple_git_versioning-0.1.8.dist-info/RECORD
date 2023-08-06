@@ -1,0 +1,12 @@
+versioning/__init__.py,sha256=5JIAVpPA6NdZQY73M6OS-EyQKkjVBP9Pdc5kRnqTIs0,622
+versioning/pep440.py,sha256=ph4HWUUpvrJPNamJXL2zDVL3j_rWGtMIt9b1Klo5dG4,15269
+versioning/project.py,sha256=NeDmlwuZGcNJCR6JWWbNgsB56Sw4HK9IsgtlPd4Dr6M,7848
+versioning/semver2.py,sha256=4OHLjAA2OjqWzbKwhVjYIE5X4ZqfpF7JagB4K6KwEdY,9062
+versioning/setuptools.py,sha256=RSTZfa3ie_I0-kmBBLjI4NkpEwISFBu1vFinZCSR0EI,2060
+versioning/version.py,sha256=mCgFUTx_MjU-USdDlLaZDs4xXIBcwDE6za8btLhPeIA,1248
+simple_git_versioning-0.1.8.dist-info/LICENSE,sha256=I799HWq50O0kHEHroZkG5t-4MLPgO4nUPmLzOs3uu_k,1062
+simple_git_versioning-0.1.8.dist-info/METADATA,sha256=GeED9cO-1WfLg8GPQoBIVSGUu2QkGiuwxi90VrjFle4,4030
+simple_git_versioning-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+simple_git_versioning-0.1.8.dist-info/entry_points.txt,sha256=JMfAZGN0Y_yv7L0e5I2ivAo-gC90lPd7uNsPwWpSCK0,204
+simple_git_versioning-0.1.8.dist-info/top_level.txt,sha256=jEJPm1LRmO3zs06l9HcpCclTTJoD7bpEGbldhLf84B4,11
+simple_git_versioning-0.1.8.dist-info/RECORD,,
