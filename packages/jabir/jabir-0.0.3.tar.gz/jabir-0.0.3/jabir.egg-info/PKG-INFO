@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: jabir
+Version: 0.0.3
+Summary: jaber is a package that generates 322 features for any material.
+Home-page: https://github.com/Gashmard/jabir
+Author: Hassan Gashmard
+Author-email: Gashmard2020@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+### jabir
+We developed the Python package named **jabir** to generate atomic features. It can generate **322 atomic features for any type of material**, such as Electron Affinity, Electric Polarizability, Thermal Conductivity, Pettifor number, etc. Jabir calculates statistical relationships for each physical and chemical feature based on Element, Subscript, and Fraction.
+
+### Installation
+Jaber employs some other libraries and packages to generate atomic features of materials, which need to be installed. These packages consist of pandas, numpy, mendeleev, pymatgen, chemparse and tqdm.
+
+**Note:** If you encounter any difficulties installing these packages on your local system, you can utilize the **Google colab** environment to install and utilize them seamlessly.
+
+### How to use jabir
+After installing jabir, simply execute the following two lines of code.
+> from jabir import main 
+
+> print(main())
