@@ -1,0 +1,12 @@
+README.md
+setup.py
+creme/__init__.py
+creme/creme.py
+creme/custom_model.py
+creme/shuffle.py
+creme/utils.py
+creme_nn.egg-info/PKG-INFO
+creme_nn.egg-info/SOURCES.txt
+creme_nn.egg-info/dependency_links.txt
+creme_nn.egg-info/requires.txt
+creme_nn.egg-info/top_level.txt
