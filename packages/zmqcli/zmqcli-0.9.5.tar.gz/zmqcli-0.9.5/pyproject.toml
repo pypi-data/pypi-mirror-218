@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "zmqcli"
+version = "0.9.5"
+description = "A small but powerful command-line interface to ØMQ."
+authors = ["TamTam Research s.r.o.", "Zachary Voase"]
+license = "http://unlicense.org/"
+readme = "README.md"
+
+[tool.poetry.scripts]
+zmqcli = 'zmqcli:zmqcli.main'
+
+[tool.poetry.dependencies]
+argparse = "^1.4.0"
+python = "^3.7"
+pyzmq = "^25.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
