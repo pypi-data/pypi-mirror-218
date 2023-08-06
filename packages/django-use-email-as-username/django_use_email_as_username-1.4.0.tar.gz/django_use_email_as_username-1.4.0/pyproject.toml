@@ -1,0 +1,85 @@
+[project]
+authors = [
+    { name = "Federico Jaramillo Martínez", email = "federicojaramillom@gmail.com" },
+]
+requires-python = ">=3.7"
+dependencies = [
+    "django>=1.11",
+]
+name = "django-use-email-as-username"
+version = "1.4.0"
+description = "A Django app to use email as username for user authentication."
+readme = "README.rst"
+keywords = [
+    "django",
+    "email",
+    "auth",
+    "username",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Framework :: Django :: 1.11",
+    "Framework :: Django :: 2.0",
+    "Framework :: Django :: 2.1",
+    "Framework :: Django :: 2.2",
+    "Framework :: Django :: 3.0",
+    "Framework :: Django :: 3.1",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+]
+
+[project.license]
+text = "BSD-3-Clause"
+
+[project.urls]
+repository = "https://github.com/jmfederico/django-use-email-as-username"
+
+[project.optional-dependencies]
+testing = [
+    "codecov",
+    "coverage",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "sphinx",
+    "sphinx-autobuild",
+    "sphinx-rtd-theme",
+]
+
+[tool.pdm.build]
+includes = [
+    "django_use_email_as_username",
+]
+
+[tool.pdm.scripts.coverage]
+shell = "    coverage run --source django_use_email_as_username runtests.py && coverage report -m && coverage html && open htmlcov/index.html\n"
+help = "check code coverage quickly with the default Python"
+
+[tool.pdm.scripts.docs]
+shell = "	rm -f docs/django-use-email-as-username.rst\n	rm -f docs/modules.rst\n	make -C docs clean\n	make -C docs html\n	open docs/_build/html/index.html\n"
+help = "generate Sphinx HTML documentation"
+
+[tool.pdm.scripts.clean_build]
+shell = "	rm -fr build/\n	rm -fr dist/\n	rm -fr *.egg-info\n"
+help = "remove build artifacts"
+
+[tool.pdm.scripts.clean_pyc]
+shell = "	find . -type f -name '*.pyc' -exec rm -f {} +\n	find . -type f -name '*.pyo' -exec rm -f {} +\n	find . -type d -name '__pycache__' -exec rm -rf {} +\n	find . -name '*~' -exec rm -f {} +\n"
+help = "remove Python file artifacts"
+
+[tool.pdm.scripts.clean]
+composite = [
+    "clean_build",
+    "clean_pyc",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
