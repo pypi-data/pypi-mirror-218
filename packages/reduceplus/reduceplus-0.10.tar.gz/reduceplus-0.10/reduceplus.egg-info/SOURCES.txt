@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+reduceplus/README.MD
+reduceplus/__init__.py
+reduceplus/requirements.txt
+reduceplus/thirdparty.json
+reduceplus.egg-info/PKG-INFO
+reduceplus.egg-info/SOURCES.txt
+reduceplus.egg-info/dependency_links.txt
+reduceplus.egg-info/top_level.txt

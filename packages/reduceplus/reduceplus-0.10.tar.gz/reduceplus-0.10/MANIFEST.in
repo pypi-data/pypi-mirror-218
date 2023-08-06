@@ -1,0 +1,3 @@
+include reduceplus/requirements.txt
+include reduceplus/thirdparty.json
+include reduceplus/README.MD
