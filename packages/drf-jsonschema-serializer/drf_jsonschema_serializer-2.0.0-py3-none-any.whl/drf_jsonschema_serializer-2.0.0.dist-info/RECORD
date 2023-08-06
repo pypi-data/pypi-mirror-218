@@ -1,0 +1,10 @@
+drf_jsonschema_serializer/__init__.py,sha256=634AFRDdCkJ2zjsweqo3CjFGPQ2DZ8KEomXGniVsyy0,243
+drf_jsonschema_serializer/convert.py,sha256=lmYUTuNliylI-5dW74vGJzu-u8u40gA0vQjYSwyL6fs,1398
+drf_jsonschema_serializer/converters.py,sha256=XSmDEmJChIst3em51MPSa57MMN_e1QxNSIfBLH_neC8,8697
+drf_jsonschema_serializer/fields.py,sha256=czY1jAmVZne25k-SlnxEqOu4A20I2T6DYsZoLhhIIVg,2213
+drf_jsonschema_serializer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_jsonschema_serializer-2.0.0.dist-info/LICENSE,sha256=s7Vbyfeh6hJOVl6QfEMXyLu78k5eVGq5_yVEHlMyiGE,1532
+drf_jsonschema_serializer-2.0.0.dist-info/METADATA,sha256=waq3FCxMG4QMrbh4GMDX0fyOLcilw5NeZgWFjgzAfrQ,6089
+drf_jsonschema_serializer-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+drf_jsonschema_serializer-2.0.0.dist-info/top_level.txt,sha256=LX20Ue_2FAZyLlUb9Y8OTJfxCHHi-TfTKwwYHQ8jeYE,26
+drf_jsonschema_serializer-2.0.0.dist-info/RECORD,,
