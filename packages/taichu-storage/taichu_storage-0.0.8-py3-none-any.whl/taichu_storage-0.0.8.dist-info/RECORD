@@ -1,0 +1,17 @@
+storage/__init__.py,sha256=yzn6v_aT9fbFJrnrXqABqkTjgQdVf5WTDxpFogMd8P8,2538
+storage/b1.py,sha256=SR9X6yfls6uBM-qFPveEc3x_lvu8-f-1qVVdeu0qjKQ,2099
+storage/b3.py,sha256=PWi1ofeQfr8tPob8kvBruieR3HnuP9GuC5U3L2QE5wg,4703
+storage/env.py,sha256=n2_ycoT9p09KgFlAEGmDwbSMSlA2pLR6yPBvjToKheY,1116
+storage/minio_client.py,sha256=jyoVssKUhH6523C4tlYdZus-sssJByMIEJcVaen9zk8,2633
+storage/obs.py,sha256=PAlEpz4NsZE7exX8pnddKQe2335yldvoR8B9aj1pk_E,1308
+taichu_storage/__init__.py,sha256=hlU_2Fj3W6u53TUO4mvbcoD6Iui5EXTKlYaTMSDGd1k,2568
+taichu_storage/b1.py,sha256=ZwFxSSmTiPcTBjr2_7qEPL1h5a3g2rf0xx1cX38I5tY,2171
+taichu_storage/b3.py,sha256=enOKi0ztxhFYT85dE6Pymh04LZwhmhJfmMwlJan_x4E,5005
+taichu_storage/boto_client.py,sha256=j1bxYK_56t7uJvy0c_ar2p7mq2yYxze_i4I5-Pp9szk,3167
+taichu_storage/env.py,sha256=n2_ycoT9p09KgFlAEGmDwbSMSlA2pLR6yPBvjToKheY,1116
+taichu_storage/minio_client.py,sha256=9GqBmPIHMHgo4EsFawftFG7KzXxYQibaUqhu37ZAhzQ,2640
+taichu_storage/obs.py,sha256=yWnO77zD9NxuiO6JadQGJu-szp9BLhQoElct_fYTn-4,1643
+taichu_storage-0.0.8.dist-info/METADATA,sha256=VuWYoaMJ_lrCNIxbRZDkJOUh4LsjZ4lmOQyStfHjBHw,419
+taichu_storage-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taichu_storage-0.0.8.dist-info/top_level.txt,sha256=BQA-7odoMQ7ySyeDdr6JWt99oALdNxLp5lSn1_p35qY,15
+taichu_storage-0.0.8.dist-info/RECORD,,
