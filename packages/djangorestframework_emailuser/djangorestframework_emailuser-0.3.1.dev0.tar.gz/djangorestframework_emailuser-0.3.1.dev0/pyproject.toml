@@ -1,0 +1,60 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "djangorestframework_emailuser"
+authors = [
+  {name = "MS List", email = "simlist@gmail.com"}
+]
+license = {file = "LICENSE"}
+dynamic = ["version",]
+description = "A user for djangorestframework that uses an email as the username."
+readme = "README.rst"
+requires-python = ">=3.7"
+dependencies = ["django >= 3.2", "djangorestframework >= 3.10.3"]
+classifiers=[
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = [
+    'django', 'djangorestframework', 'drf', 'user', 'emailuser'
+]
+
+
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "pytest-django",
+  "pytest-cov",
+  "flake8",
+]
+
+[project.urls]
+Source = "https://github.com/simlist/django-rest-framework-emailuser"
+
+[tool.flit.sdist]
+exclude = ["tests", ".github", "requirements.txt", ".gitignore"]
+
+[tool.flit.module]
+name = "emailuser"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+addopts = "--nomigrations"
+
+[tool.coverage.run]
+omit = ["*/migrations/*"]
