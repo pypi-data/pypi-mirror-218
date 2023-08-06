@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/histeqkit/__init__.py
+src/histeqkit/accuracyMeasure.py
+src/histeqkit/algorithms.py
+src/histeqkit/histogram.py
+src/histeqkit/main.py
+src/histeqkit/utils.py
+src/histeqkit.egg-info/PKG-INFO
+src/histeqkit.egg-info/SOURCES.txt
+src/histeqkit.egg-info/dependency_links.txt
+src/histeqkit.egg-info/top_level.txt
