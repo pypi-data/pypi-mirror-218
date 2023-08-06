@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pywerbi/__init__.py
+pywerbi.egg-info/PKG-INFO
+pywerbi.egg-info/SOURCES.txt
+pywerbi.egg-info/dependency_links.txt
+pywerbi.egg-info/requires.txt
+pywerbi.egg-info/top_level.txt
