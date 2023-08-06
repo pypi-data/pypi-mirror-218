@@ -1,0 +1,3 @@
+[console_scripts]
+init-graph=init_graph.main:main
+
