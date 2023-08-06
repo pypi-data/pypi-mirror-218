@@ -1,0 +1,9 @@
+code_to_text/__init__.py,sha256=yCelNPx6LM8yRjXYAjBUIgyoNx284ImUsnsJm0STkUI,66
+code_to_text/main.py,sha256=MD8QKxrCiJ_p0Fotfsgb6oHam_Cqqo2j2fbg1xO3WeU,4737
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=mKiyPaDhG0HYWLE9IgQD7EGN8Nq9Ka1mNy2OWuCoa68,3203
+code_to_text-0.1.dist-info/METADATA,sha256=47pDqIuUiYuvY9TDi7ppuSTAWZ7y0fPGzlVSICsA54k,2212
+code_to_text-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+code_to_text-0.1.dist-info/entry_points.txt,sha256=AhmmxPAb8wEL72MJns1szWTlEgFktMJjGI5nCQkT3vg,52
+code_to_text-0.1.dist-info/top_level.txt,sha256=S1kJ6pozSnUaTWQjgVQ7pTuyNY0mqkwa2bAygn8M60k,19
+code_to_text-0.1.dist-info/RECORD,,
