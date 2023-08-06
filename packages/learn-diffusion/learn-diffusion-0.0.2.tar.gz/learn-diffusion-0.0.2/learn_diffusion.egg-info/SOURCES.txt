@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+learn_diffusion.egg-info/PKG-INFO
+learn_diffusion.egg-info/SOURCES.txt
+learn_diffusion.egg-info/dependency_links.txt
+learn_diffusion.egg-info/requires.txt
+learn_diffusion.egg-info/top_level.txt
+tests/test_diffusion.py
