@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pixel-collect
+Version: 0.0.1
+Summary: simple google image scrapper for your computer vision tasks
+Home-page: https://github.com/charleslf2/pixel_collect
+Author: charles TCHANAKE
+Author-email: datadevfernolf@gmail.com
+Keywords: Computer-vision,Images,Dataset,scrapping
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
