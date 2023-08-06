@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+.readthedocs.yml
+AUTHORS.md
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pycolorbar/__init__.py
+pycolorbar/_version.py
+pycolorbar.egg-info/PKG-INFO
+pycolorbar.egg-info/SOURCES.txt
+pycolorbar.egg-info/dependency_links.txt
+pycolorbar.egg-info/requires.txt
+pycolorbar.egg-info/top_level.txt
