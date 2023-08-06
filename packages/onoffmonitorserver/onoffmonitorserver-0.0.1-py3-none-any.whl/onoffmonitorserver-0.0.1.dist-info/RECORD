@@ -1,0 +1,17 @@
+onoffmonitorserver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onoffmonitorserver/admin.py,sha256=LM2R81_1OgxE8vDn95oMe5QMzevmHaoh9lVFWsWNHJg,107
+onoffmonitorserver/apps.py,sha256=kPufj7Z9UAxHGq2v6ir3QxPm-vf1R1tKG6o4-CJA_X4,204
+onoffmonitorserver/filters.py,sha256=d1OFS5Mtip2nLS7lvdwtJPrG-ZmfORQjQ8HEl6C4VIo,365
+onoffmonitorserver/models.py,sha256=6sinzCRE2A3myQl6Ph4y8jtsj2qeCEnXPMHy-KWAum0,862
+onoffmonitorserver/permissions.py,sha256=y-dURrhXm4hJorZ8QBsg51ak-cZ1EaDg-KicePa-R24,333
+onoffmonitorserver/serializers.py,sha256=rCmFH1Mjw2m-FglMP9shdn0eEdh4eT-LzqTCkRsfysI,659
+onoffmonitorserver/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+onoffmonitorserver/urls.py,sha256=WdzMWymOLasqLwCybE5NzLRZR_Q7floL46XihfNdHJw,233
+onoffmonitorserver/views.py,sha256=XEF3M2OI3YzX8tezkst4Yf_t7fDQJoc54oqJ0y4TUE4,1019
+onoffmonitorserver/migrations/0001_initial.py,sha256=89DcC29JeyBQydWJ1MxMq1fmpMJfQkSOug1jGU6scL4,1514
+onoffmonitorserver/migrations/0002_remove_status_user.py,sha256=OajvfmOtF4Z_29Bi7tLXejx-HZjFi52jEtm3uISmQ0Y,326
+onoffmonitorserver/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onoffmonitorserver-0.0.1.dist-info/METADATA,sha256=lbOOgT_lalGAhxkKYko8MKn277wsoB8OypgKQKlwFfw,1060
+onoffmonitorserver-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+onoffmonitorserver-0.0.1.dist-info/top_level.txt,sha256=To5bX54jTRb2wvSPY4AX9oenfUC4REFMMcWmUuBJdZ4,19
+onoffmonitorserver-0.0.1.dist-info/RECORD,,

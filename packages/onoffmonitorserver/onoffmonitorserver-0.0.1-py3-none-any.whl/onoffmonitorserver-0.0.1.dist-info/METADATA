@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: onoffmonitorserver
+Version: 0.0.1
+Summary: Django app for monitoring the on/off status of devices
+Author: Joe Greaves
+Project-URL: Homepage, https://github.com/Grvs44/onoffmonitorserver
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: django (>=4.2.3)
+Requires-Dist: djangorestframework (>=3.14.0)
+Requires-Dist: django-rest-knox (>=4.2.0)
+
+# On/Off Monitor Server
+## Installation
+Install from PyPI:
+```cmd
+pip install onoffmonitorserver
+```
+## Setup
+* Add to project `urls.py`:
+  ```python
+  urlpatterns = [
+    ...
+    path('api/onoffmonitor/', include('onoffmonitorserver.urls')),
+    path('api/', include('knox.urls')),
+    ...
+  ]
+  ```
+* Add to project `settings.py`:
+  ```python
+  INSTALLED_APPS = [
+    'onoffmonitorserver',
+    ...
+    'rest_framework',
+    'knox'
+  ]
+  ```
+* Migrate database changes:
+  ```cmd
+  python manage.py migrate
+  ```
