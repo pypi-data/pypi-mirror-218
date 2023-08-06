@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: GustavSelfBot
+Version: 0.0.2
+Summary: My self bot!
+Author-email: Gustavo Schip <gustavoschip@proton.me>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: discord.py-self[voice]
+Requires-Dist: aiohttp
+Requires-Dist: loguru
+Requires-Dist: black
+Project-URL: Home, https://github.com/GILLESMaster/GustavSelfBot
+
+
