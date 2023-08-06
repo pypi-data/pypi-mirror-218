@@ -1,0 +1,3 @@
+clitools
+geoslurp
+geoslurp_userplugins
