@@ -1,0 +1,14 @@
+androtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+androtools/__main__.py,sha256=eZK9EfB1YsC0uUG8Y5Tup9s5u1SZWiWeMJ9cZxKEy6w,115
+androtools/android_sdk/__init__.py,sha256=dfwabSIyiZUGFnjaLVEGlRLniHMRbOUyS3-0Xc3mbU4,1808
+androtools/android_sdk/build_tools.py,sha256=vGxhPSyGu8qv-CmE_rPsQPhfx2c4Bm_ZGLmILzyg3EA,898
+androtools/android_sdk/emulator.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+androtools/android_sdk/platform_tools.py,sha256=NVSH1GiLrtcKVg4AYOULsFgvs93gDxjrpV5_gWucoCI,3258
+androtools/android_sdk/tools.py,sha256=Egm7Rp0J4rty48kMFSRIK_tgU9tfa02GiiZrOa7pu48,407
+androtools/core/__init__.py,sha256=QPTUgMspgikAYFc4e0lx_yjpc9tCuQsdsgZm52m7RQY,169
+androtools/core/device.py,sha256=5zJQ1Cf0mtMe1weGzZsQ4CtAT7gRA-rn9RugmGZWRWo,8229
+androtools-0.1.7.dist-info/LICENSE,sha256=rBnMD4u4_MN_RyeDpt00P7SIDZznQ7R6h1NN9Mh0Mw4,1065
+androtools-0.1.7.dist-info/METADATA,sha256=E3fo3E1o_3S7Zjk5fY1avnWda1h1IzqrvJiom7uV5dQ,1608
+androtools-0.1.7.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+androtools-0.1.7.dist-info/entry_points.txt,sha256=HqqL6cvQ0UcoiTIajqdhECwCwtKpsU0UYvjvKHe-d3o,55
+androtools-0.1.7.dist-info/RECORD,,
