@@ -1,0 +1,15 @@
+uniteai/.dir-locals.el,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniteai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniteai/common.py,sha256=aLulWaS0c8bd7O-_iAara1DIPLy34ebIOvnmYOkGldc,5469
+uniteai/config.py,sha256=NOVxLUDM1AHkOkiu2ogd8mKZge0BODtjAXXZ1OlXqBw,1281
+uniteai/edit.py,sha256=LHNt_9DDHgIXgkokQpzGxJdXCmADm0VLZASlLNvMhW8,11142
+uniteai/local_llm.py,sha256=a8bjviYXJS75RmtOqReUTVkBK_D7OrdHvi2h3KCvUWc,8081
+uniteai/openai.py,sha256=dqFk8Sd1m_xK4ZhutNvnPpCw6C_oUhvXbOKwYZExhnA,10638
+uniteai/server.py,sha256=HmhKx0YSmFqKH6Fa0BT8L7wzUtjMC5FKPDA5RZdzFRk,3650
+uniteai/transcription.py,sha256=ExCkCTIPLzUtHHtsiD5KA0ELFIzOpPGL0V-N-Dr3XXM,14077
+uniteai/contrib/example.py,sha256=-FhV2xLvZ-EUmvX3ad4eZvoIhqgcA74ZxyGiaduXgII,8061
+uniteai-0.1.0.dist-info/METADATA,sha256=Too_RMDg0cr1YQFK-GPOiHas_s2tltflnsa3Kwq6MN4,8645
+uniteai-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+uniteai-0.1.0.dist-info/entry_points.txt,sha256=pgUDdTKnQKIdAdQgaGvUQ3bYf1_7S8b6miw2SGP_jdI,78
+uniteai-0.1.0.dist-info/licenses/LICENSE,sha256=MpRNFAhcF3LHl2HTNiqFkG5QcP-rwsBVPkJsI2TmHEs,11346
+uniteai-0.1.0.dist-info/RECORD,,
