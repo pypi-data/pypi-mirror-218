@@ -1,0 +1,6 @@
+pytest_dryrun/__init__.py,sha256=IzLwJAgdlSXNzsNpPDdFysqvOZm2lfvMbNAUNFGRCmo,148
+pytest_dryrun/pytest_dryrun.py,sha256=z3s7VYXpQ8Tswz0QqYNjNng3ZqgavLsRXgx2_UfhFM4,1692
+pytest_dryrun-0.1.0.dist-info/METADATA,sha256=bSsThtDD5JfL0Wu4psJYb8QzqzCLiF8dqX1pfCFafes,1299
+pytest_dryrun-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pytest_dryrun-0.1.0.dist-info/entry_points.txt,sha256=b1EAbJurLWGlZemD3tHjRxhHY9Yq-NA4ZsuIwx7nCgU,54
+pytest_dryrun-0.1.0.dist-info/RECORD,,
