@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fm91"
+version = "0.0.14"
+description = "A simple fastapi manager"
+authors = ["abirmunna <mtmunna82@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+abir = "fm91.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.9.0"}
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
