@@ -1,0 +1,6 @@
+README.md
+setup.py
+seatalk_open_api.egg-info/PKG-INFO
+seatalk_open_api.egg-info/SOURCES.txt
+seatalk_open_api.egg-info/dependency_links.txt
+seatalk_open_api.egg-info/top_level.txt
