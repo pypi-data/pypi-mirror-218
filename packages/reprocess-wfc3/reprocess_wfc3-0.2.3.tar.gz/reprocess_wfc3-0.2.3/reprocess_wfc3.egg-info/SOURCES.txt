@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+reprocess_wfc3/__init__.py
+reprocess_wfc3/anomalies.py
+reprocess_wfc3/reprocess_wfc3.py
+reprocess_wfc3/utils.py
+reprocess_wfc3/version.py
+reprocess_wfc3.egg-info/PKG-INFO
+reprocess_wfc3.egg-info/SOURCES.txt
+reprocess_wfc3.egg-info/dependency_links.txt
+reprocess_wfc3.egg-info/top_level.txt
+reprocess_wfc3/tests/__init__.py
+reprocess_wfc3/tests/test_basic.py
