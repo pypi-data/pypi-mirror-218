@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PPTX2MD2REVEALJS.egg-info/PKG-INFO
+PPTX2MD2REVEALJS.egg-info/SOURCES.txt
+PPTX2MD2REVEALJS.egg-info/dependency_links.txt
+PPTX2MD2REVEALJS.egg-info/top_level.txt
+pptx2md/__init__.py
+pptx2md/__main__.py
+pptx2md/global_var.py
+pptx2md/outputter.py
+pptx2md/parser.py
+pptx2md/tools.py
