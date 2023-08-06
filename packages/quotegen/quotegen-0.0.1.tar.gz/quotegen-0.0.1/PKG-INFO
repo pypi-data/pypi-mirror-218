@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: quotegen
+Version: 0.0.1
+Summary: Basic random quote generator
+Home-page: 
+Author: Kirthikesh Parthasarathy
+Author-email: x21195391@student.ncirl.ie
+License: MIT
+Keywords: randomquotegen
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a random quote generator library function.
+
+Change log
+===========
+
+0.0.1 (08/07/23)
+----------------
+First Release

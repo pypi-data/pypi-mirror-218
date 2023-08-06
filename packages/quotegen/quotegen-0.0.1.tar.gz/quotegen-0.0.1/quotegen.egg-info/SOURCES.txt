@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+quotegen/__init__.py
+quotegen/quotes.py
+quotegen.egg-info/PKG-INFO
+quotegen.egg-info/SOURCES.txt
+quotegen.egg-info/dependency_links.txt
+quotegen.egg-info/top_level.txt
