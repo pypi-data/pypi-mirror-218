@@ -1,0 +1,6 @@
+PyYAML~=6.0
+perun.connector~=3.4
+pycryptodomex~=3.11
+pymongo<5,>=3.12.1
+requests~=2.26
+setuptools
