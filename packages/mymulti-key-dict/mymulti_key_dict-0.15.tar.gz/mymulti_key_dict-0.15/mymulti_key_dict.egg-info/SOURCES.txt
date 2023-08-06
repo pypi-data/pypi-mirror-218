@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mymulti_key_dict/README.MD
+mymulti_key_dict/__init__.py
+mymulti_key_dict/requirements.txt
+mymulti_key_dict/thirdparty.json
+mymulti_key_dict.egg-info/PKG-INFO
+mymulti_key_dict.egg-info/SOURCES.txt
+mymulti_key_dict.egg-info/dependency_links.txt
+mymulti_key_dict.egg-info/top_level.txt
