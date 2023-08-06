@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: calculator-devops-pucminas
+Version: 0.0.3
+Summary: Python calculator software
+Author-email: Sylvio Rubens <srjneto@hotmail.com>
+Project-URL: Homepage, https://github.com/SylvioRubens/devops_project
+Project-URL: Bug Tracker, https://github.com/SylvioRubens/devops_project/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# devops_project
+A project created to implement a complete CI/CD pipeline for Puc Minas DEVOPS class
