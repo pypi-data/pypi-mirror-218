@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sofascore-api"
+version = "0.1.0"
+description = "API wrapper for Sofascore"
+authors = ["Felipe Allegretti <felipe@allegretti.me>"]
+readme = "README.md"
+packages = [{include = "sofascore_api"}]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.277"
+black = "^23.3.0"
