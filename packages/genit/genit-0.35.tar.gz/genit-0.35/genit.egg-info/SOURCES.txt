@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+genit/__init__.py
+genit.egg-info/PKG-INFO
+genit.egg-info/SOURCES.txt
+genit.egg-info/dependency_links.txt
+genit.egg-info/top_level.txt
