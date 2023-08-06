@@ -1,0 +1,2 @@
+[console_scripts]
+findpython=findpython:cli_main
