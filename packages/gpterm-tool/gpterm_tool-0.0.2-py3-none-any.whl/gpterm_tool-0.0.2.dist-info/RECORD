@@ -1,0 +1,12 @@
+gpterm_tool-0.0.2.data/scripts/__init__.py,sha256=QItwkahq1gaB0-WcHOwHXzr0mHS1k7ZAGJfxtcUlz1o,13
+gpterm_tool-0.0.2.data/scripts/alpaca.py,sha256=9lYRvl2gmx44pW9CgdpZwHAHbJ4EbWpDW5xjxDIrkJg,1851
+gpterm_tool-0.0.2.data/scripts/gpterm.py,sha256=oGsMxspLKXfzQx3CwOiuHpqJlyhhX_jIPj6cgUDHIVY,3771
+gpterm_tool-0.0.2.data/scripts/llm_writer.py,sha256=zmV5FmqnBaoGvsD8EFYbsqyFiIxPTfHuawnYGadc8Ns,867
+gpterm_tool-0.0.2.data/scripts/responser.py,sha256=m_LiMjzBNM6ORBM8CawKmBUCb62fEPLp_laIrHC5hs0,4536
+gpterm_tool-0.0.2.data/scripts/utils.py,sha256=GrOfqwaNSI4uKmKUkJI1NpfiJsaMeDV10HdQ8l4VSJc,632
+gpterm_tool-0.0.2.dist-info/LICENCE.txt,sha256=veEBI7NtslNikhYsxJhDlJP91AHk-_6uOVMT97OVXLU,1049
+gpterm_tool-0.0.2.dist-info/METADATA,sha256=uaIIjOq4QmO1NQfPx1WFvNWvjMCuble_92rALxH8guA,7219
+gpterm_tool-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gpterm_tool-0.0.2.dist-info/entry_points.txt,sha256=1dBeSZV1g_eo2Fjstz-7hNYGm474pA76gNfI0IuBKFE,39
+gpterm_tool-0.0.2.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+gpterm_tool-0.0.2.dist-info/RECORD,,
