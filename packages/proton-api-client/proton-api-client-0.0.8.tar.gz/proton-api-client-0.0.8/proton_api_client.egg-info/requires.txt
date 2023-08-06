@@ -1,0 +1,11 @@
+bcrypt
+python-gnupg
+pyopenssl
+selectolax
+orjson
+httpx
+tqdm
+nest_asyncio
+
+[:platform_system != "Windows"]
+uvloop
