@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+iter_tools/__init__.py
+iter_tools/sel.py
+iter_tools.egg-info/PKG-INFO
+iter_tools.egg-info/SOURCES.txt
+iter_tools.egg-info/dependency_links.txt
+iter_tools.egg-info/top_level.txt
