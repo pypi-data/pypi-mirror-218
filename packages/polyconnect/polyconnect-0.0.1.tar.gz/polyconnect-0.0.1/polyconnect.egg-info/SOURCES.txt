@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+polyconnect/__init__.py
+polyconnect.egg-info/PKG-INFO
+polyconnect.egg-info/SOURCES.txt
+polyconnect.egg-info/dependency_links.txt
+polyconnect.egg-info/top_level.txt
