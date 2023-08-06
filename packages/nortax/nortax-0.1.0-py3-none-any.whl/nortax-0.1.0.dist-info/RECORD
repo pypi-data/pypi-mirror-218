@@ -1,0 +1,11 @@
+nortax/__init__.py,sha256=4I7pVl0QTpnLUKC4rcA8Qt4yatjJwTV3AXdxJnGDmVk,107
+nortax/constants/__init__.py,sha256=d4E18ysOOLgd_xUU7wZM2oYmCmvs5lzcjrS9f1OjLis,83
+nortax/constants/misc.py,sha256=JKV7p0YGvR6IMC6_PzZU8MNnGS-iZxi2pITH72NiLDQ,716
+nortax/eks.py,sha256=BjTozjYF-iGiHgbc3qCaJNHRs2MFcemnJpATI9gOigU,954
+nortax/models/__init__.py,sha256=hNtmW998ue_okfqQRboXXActCwZui0xtoQ7nt-8vvrU,185
+nortax/models/custom_types.py,sha256=FpWS04kZR4wKedo_FGy2uvXXaPoJLt45cDJ1Zn-LjMQ,1146
+nortax/nortax.py,sha256=a7dhflOuqgr84Y75KmQ6nzDMyXdAgeWma_-Id66WXNY,3373
+nortax-0.1.0.dist-info/LICENSE,sha256=6T_djzZwV_THARIHX5LYZxOfXIPjcj7sOTgHchxfANE,1081
+nortax-0.1.0.dist-info/METADATA,sha256=pDBZJueuNzqD7FBAzJMfRRkuM0fQppXQ6DURa_h24rg,6029
+nortax-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+nortax-0.1.0.dist-info/RECORD,,
