@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: wcc-timetable-generator
+Version: 0.2.1
+Summary: 
+Author: Tsierenana Bôtramanagna Gracy
+Author-email: gtsierenana@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: textual (>=0.29.0,<0.30.0)
+Description-Content-Type: text/markdown
+
+# Timetable 📊
+
+## 📰 Description 
+A CLI tool that allow you to generate a timetable for your school or university such that : 
+ - A subject can't be seen on two consecutive days
+ - A subject have a minimum of 2 hours per week and a maximum of 6
+ - The timetable is divided in slots of 2 hours
+ - The subjects are distributed between monday morning and saturady morning
+ - Morning classes begin at 8:30 and end at 12:30
+ - Afternoon classes begin at 13:30 and end at 17:30
+
+ ## 📦 Installation 
+
+ ### 💻 Local installation
+
+ ### 🌐 Installation with PIP
+ ```bash
+ pip install wcc-timetable-generator
+ ```
+
+## 🖱 Usage
+```bash
+generate-timetable
+```
+
+## Roadmap
+- [x] Add the algorithm 
+- [ ] Add GUI
+- [ ] Write tests
+- [ ] Publish to PyPI
