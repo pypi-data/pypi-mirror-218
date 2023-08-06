@@ -1,0 +1,20 @@
+{% include 'openedx-assets/Open_edX_Admin_Dashboard_2.yaml' %}
+{% include 'openedx-assets/xapi_events_all_parsed.yaml' %}
+{% include 'openedx-assets/xAPI_problem_events_by_block_7.yaml' %}
+{% include 'openedx-assets/xAPI_events_by_course_11.yaml' %}
+{% include 'openedx-assets/OpenedX_Clickhouse.yaml' %}
+{% include 'openedx-assets/course_overviews.yaml' %}
+{% include 'openedx-assets/Instructor_dashboard_9.yaml' %}
+{% include 'openedx-assets/Watches_per_video_10.yaml' %}
+{% include 'openedx-assets/fact_video_plays.yaml' %}
+{% include 'openedx-assets/Transcript_closed_captioning_usage_per_video_11.yaml' %}
+{% include 'openedx-assets/fact_transcript_usage.yaml' %}
+{% include 'openedx-assets/Cumulative_enrollments_by_mode_15.yaml' %}
+{% include 'openedx-assets/fact_enrollments.yaml' %}
+{% include 'openedx-assets/Enrollment_events_per_day_16.yaml' %}
+{% include 'openedx-assets/course_blocks.yaml' %}
+{% include 'openedx-assets/dim_courses.yaml' %}
+{% include 'openedx-assets/Enrolled_learners_per_day_36.yaml' %}
+{% include 'openedx-assets/fact_enrollments_by_day.yaml' %}
+
+{{ patch("superset-extra-assets") }}
