@@ -1,0 +1,3 @@
+[console_scripts]
+myass=myass.cli:main
+
