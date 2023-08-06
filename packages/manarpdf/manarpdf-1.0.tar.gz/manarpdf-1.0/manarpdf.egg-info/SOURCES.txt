@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+manarpdf/__init__.py
+manarpdf/pdf2image.py
+manarpdf/pdf2text.py
+manarpdf.egg-info/PKG-INFO
+manarpdf.egg-info/SOURCES.txt
+manarpdf.egg-info/dependency_links.txt
+manarpdf.egg-info/top_level.txt
