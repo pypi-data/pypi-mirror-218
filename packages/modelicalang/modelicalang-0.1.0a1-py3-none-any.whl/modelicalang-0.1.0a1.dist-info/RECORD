@@ -1,0 +1,10 @@
+modelicalang/__init__.py,sha256=O7Fva0-S2N5jI4VwwRwWQ4goMI9pxWxFXFUEAdx-fXY,1483
+modelicalang/_backend.py,sha256=A1MmsJUTEWbfL1AsBykvVwoaVyuwqWxD1fL68WlpMqY,3545
+modelicalang/exceptions.py,sha256=6a7Qs9F0ikpbFZj7SZ23x999MwZ08lbSX_EE2dgm0cA,52
+modelicalang/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelicalang/v3_4.py,sha256=rVQ9HLhCM0sEx_4bDrr69hlUmePh0lGWz1KvSyownN0,56944
+modelicalang/v3_5.py,sha256=_gQ4CAyMEgNw4k90-_tZrUr_PnQyxE7idhjuol0XYOc,58157
+modelicalang-0.1.0a1.dist-info/LICENSE,sha256=Gdn0STV7P-tc9S8r3AOn8G4nwLbvmI5vO4US6KNT0Rc,1065
+modelicalang-0.1.0a1.dist-info/METADATA,sha256=e1uMssoLUItRTKCi9D7IpxQPYsYp9X1Ms_LhrK3_KvY,1150
+modelicalang-0.1.0a1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+modelicalang-0.1.0a1.dist-info/RECORD,,
