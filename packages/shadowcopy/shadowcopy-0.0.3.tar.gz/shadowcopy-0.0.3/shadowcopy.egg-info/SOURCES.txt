@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+shadowcopy/__init__.py
+shadowcopy/exceptions.py
+shadowcopy/shadow.py
+shadowcopy.egg-info/PKG-INFO
+shadowcopy.egg-info/SOURCES.txt
+shadowcopy.egg-info/dependency_links.txt
+shadowcopy.egg-info/requires.txt
+shadowcopy.egg-info/top_level.txt
+tests/test_shadowcopy.py
