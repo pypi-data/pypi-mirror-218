@@ -1,0 +1,2 @@
+[console_scripts]
+swanapi = swanapi.make_build:build
