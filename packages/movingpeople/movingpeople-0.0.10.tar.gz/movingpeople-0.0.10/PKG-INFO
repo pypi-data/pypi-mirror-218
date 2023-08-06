@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: movingpeople
+Version: 0.0.10
+Summary: Generate synthetic timesstamped routes on a graph network.
+Home-page: https://github.com/elz1582/movingpeople
+Author: Elliot H
+Author-email: elz1582@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# movingpeople Python Package
+
+movingpeople is a Python package for generating and visualising synthetic geospatial movement data within a network. 
+
+Synthetic data consists of one or more routes, with optionality for defining combinations of fixed and randomised origin and destination locations, using OSMNX. Each route is defined by a unique ID and is composed of timestamped Shapely 'Point' geometries.
+
+Visualisation of the resulting synthetic data uses keplerGL.
