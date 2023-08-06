@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "ElliptiCBn"
+version = "1.0.9"
+authors = [{name="Michael Shavlik", email="mshavlik@uoregon.edu"}]
+description = "Python package for analyzing Cucurbituril crystal structures automatically"
+readme = "README.md"
+requires-python = ">=3.7.0"
+classifiers = [
+                  "Development Status :: 3 - Alpha",
+                  "Intended Audience :: Science/Research",
+                  "Programming Language :: Python :: 3.7",
+                  "Programming Language :: Python :: 3.8",
+                  "Programming Language :: Python :: 3.9",
+                  "Programming Language :: Python :: 3.10",
+]
+
+dependencies = ["numpy>=1.10",
+"networkx",
+"dataclasses",
+"scikit-learn",
+"plotly",
+"pandas",
+"matplotlib",
+"xlsxwriter",
+"openpyxl",
+]
+
+
+
+[project.urls]
+"Homepage" = "https://github.com/harmslab/ElliptiC"
+

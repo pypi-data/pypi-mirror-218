@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ElliptiC/ElliptiC.py
+ElliptiC/__init__.py
+ElliptiCBn.egg-info/PKG-INFO
+ElliptiCBn.egg-info/SOURCES.txt
+ElliptiCBn.egg-info/dependency_links.txt
+ElliptiCBn.egg-info/requires.txt
+ElliptiCBn.egg-info/top_level.txt
+bin/ElliptiC
