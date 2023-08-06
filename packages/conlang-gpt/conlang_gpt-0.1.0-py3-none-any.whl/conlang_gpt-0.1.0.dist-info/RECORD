@@ -1,0 +1,9 @@
+conlang_gpt/__init__.py,sha256=_ak9daqApuMRZsyXtOdyC9sFmb6tnJNTcSKyM599B_s,5318
+conlang_gpt/__main__.py,sha256=k9CgQa-3xvfVcIK_ja2WKsKtwjQma9kYJyQY7LagNe4,56
+conlang_gpt/language.py,sha256=dJsSR7dh3hRI470szR7nXT1fwM0S2xCFsFDJrxCHokw,5961
+conlang_gpt/openai.py,sha256=I8mo5vbcA8ExSw9QScsKfbr6z6GDlWGte8r0yH8dHeA,1276
+conlang_gpt-0.1.0.dist-info/LICENSE,sha256=r7frExyqHimLlJ3ZUV88kkyFkaQ30LzTQhPoRC204ww,1068
+conlang_gpt-0.1.0.dist-info/METADATA,sha256=eNwUZT6LpguNdaAEvyCI8kPtj25n6sy5yY8oH9K3PQI,4348
+conlang_gpt-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+conlang_gpt-0.1.0.dist-info/entry_points.txt,sha256=05PsAk-hOPA1qUCqP87BqSm9M5qe1bTELIGmkzyXzJU,52
+conlang_gpt-0.1.0.dist-info/RECORD,,
