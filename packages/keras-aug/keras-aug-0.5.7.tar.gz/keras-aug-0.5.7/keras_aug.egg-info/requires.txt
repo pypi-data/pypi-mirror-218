@@ -1,0 +1,14 @@
+pycocotools
+tensorflow
+
+[examples]
+matplotlib
+opencv-python
+tensorflow-datasets
+
+[tests]
+ruff
+black[jupyter]
+pytest
+pytest-cov
+pytest-xdist[psutil]
