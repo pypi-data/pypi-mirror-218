@@ -1,0 +1,10 @@
+h5py==3.6.0
+matplotlib==3.5.0
+numpy==1.22.0
+torch==2.0.1
+scikit-learn==1.0.2
+scipy==1.9.3
+torchaudio==2.0.2
+torchvision==0.15.2
+tqdm==4.62.3
+numba

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+serm/__init__.py
+serm/serm.py
+serm/sparseae.py
+serm.egg-info/PKG-INFO
+serm.egg-info/SOURCES.txt
+serm.egg-info/dependency_links.txt
+serm.egg-info/requires.txt
+serm.egg-info/top_level.txt
