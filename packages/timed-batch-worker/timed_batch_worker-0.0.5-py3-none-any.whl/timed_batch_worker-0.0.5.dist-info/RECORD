@@ -1,0 +1,7 @@
+timed_batch_worker/__init__.py,sha256=akFgbSQb0H5NWAQ-UBDZkLVwVNQOQKqEFy6t49ssBZI,22
+timed_batch_worker/worker.py,sha256=vasnZzVJMQqjs004rV0M4gja0CK44vrNtCErbuu9oqI,5682
+timed_batch_worker-0.0.5.dist-info/LICENSE,sha256=JGTdpKkEdv7BlLhf5ZhWhYpodLWOW7N02XgdfQeuMbc,1069
+timed_batch_worker-0.0.5.dist-info/METADATA,sha256=q8DNBkWlqTZEBB4LIMz0Z7MFGbAPJhxnbqKnOZisQ0c,1572
+timed_batch_worker-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+timed_batch_worker-0.0.5.dist-info/top_level.txt,sha256=ztSpTY206HCP_FGPVCnhh4tpCiphqtLTsZmqBDgMQ5U,19
+timed_batch_worker-0.0.5.dist-info/RECORD,,
