@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: biadab
+Version: 9.9.9
+Summary: Client library for mengontol
+Home-page: https://github.com/kastaid/pytelibs
+Author: Unknown
+Author-email: opetbae6@gmail.com
+License: AGPL
+Keywords: pypi,mengontol,python,pyrogram,telebot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+
+# mengontol
+
