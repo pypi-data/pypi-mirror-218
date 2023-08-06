@@ -1,0 +1,10 @@
+LICENSE
+NOTICE
+README.md
+setup.py
+Shortlib.egg-info/PKG-INFO
+Shortlib.egg-info/SOURCES.txt
+Shortlib.egg-info/dependency_links.txt
+Shortlib.egg-info/requires.txt
+Shortlib.egg-info/top_level.txt
+shortlib/__init__.py
