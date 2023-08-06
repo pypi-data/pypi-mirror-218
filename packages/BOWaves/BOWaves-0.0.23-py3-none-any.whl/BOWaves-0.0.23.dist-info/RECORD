@@ -1,0 +1,15 @@
+BOWaves/__init__.py,sha256=nNrgpszZzWweJ_NpBm45FllkXhIg1_4I8nvE0s2NHlA,71
+BOWaves/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BOWaves/scripts/gen_morlet_signal.py,sha256=vhT17iSw2g9QM5bgCxVhC-FnhoYe431ync-SSWS43OA,945
+BOWaves/scripts/run_sikmeans.py,sha256=V0zcFEaWSQnqV-1Rtdwcqsq9477cFc1wpyIQmnWeoIA,4936
+BOWaves/sikmeans/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BOWaves/sikmeans/sikmeans_core.py,sha256=VcPnF8lgTIjG0pmbeEz50ldMLwKwz4gHXrAlkCdpxgA,18963
+BOWaves/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BOWaves/utilities/datasets.py,sha256=CszJDbDoEB_WMHy4KG1PlJGFDRkIknxPkGMEJbZtp9w,1223
+BOWaves/utilities/sikmeans_utils.py,sha256=UWbzmbdJwMYtiQAmGIRWXdlzxy-6ebaQ8hf8bryV0lA,5606
+BOWaves/utilities/utils.py,sha256=pg5jMqank5PEheijlCZVY4srL1JrT5lS7M-VEWX7XYs,10799
+BOWaves/utilities/wrappers.py,sha256=CtfzE11ON8-Y_Vj5AOeyq_8Asj_mIuERLN2I0bbtc9Y,4016
+BOWaves-0.0.23.dist-info/METADATA,sha256=NLjjrZybw57JsR56ACLsPz9L-s8_bz8gCWqP6Mv7Jps,620
+BOWaves-0.0.23.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BOWaves-0.0.23.dist-info/top_level.txt,sha256=ailc3Cz49s0LU8QPK-6rFlXIDWn8spQRP9wJvpqYi_U,8
+BOWaves-0.0.23.dist-info/RECORD,,
