@@ -1,0 +1,14 @@
+ncs/__init__.py,sha256=02YX_6I6Vdg3XZq1i89425Du5ccmdEcdxke9xpkd_yE,281
+ncs/call_strategy/__init__.py,sha256=q1Yxj8ocC8vyeo8WyQL-somKqC0QSahOyDgQ5yqj7sk,77
+ncs/call_strategy/strategy.py,sha256=5vVrXwXI8dcZbL7Lcood6_Vzp9Gq9Syf9l62cbSUWIY,13714
+ncs/data/__init__.py,sha256=5LUgKjI4poTwicDssUT1DKxi-U7RoMqOAjEqdImKJd8,2804
+ncs/data/downloader.py,sha256=h0DddQPFW_V08Ed1Iy7qCYzKSvuaOqczFEfO4fABTA8,1220
+ncs/model/__init__.py,sha256=kKl8i6iGBUH1fYFKRgjGr09RtXbrxWL_HjAQDhuckKs,58
+ncs/model/config.py,sha256=S7aq4AXNsoHuHMpAcGSwfPL5di58jdjOwOwID3gE98o,291
+ncs/model/inference.py,sha256=13ZokZCo9epA-ukxwC-StJo3ifY4QekLvtCOQZN5Or0,2737
+ncs/model/train.py,sha256=YKQ_2c_mNbZyGOHmqVnaWLtkzfXchvIXKk82YRJLAsM,7183
+rotman_ncs-0.1.0a7.dist-info/LICENSE,sha256=_v6tlq8KgAuvM0XSmFaXn46EZ6vn1IKIN6QAyv3RW1M,11355
+rotman_ncs-0.1.0a7.dist-info/METADATA,sha256=B8KU8IWHHxQ3Tek_WcyDgBldLgh-eOR_GbGOFefHJOM,6876
+rotman_ncs-0.1.0a7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rotman_ncs-0.1.0a7.dist-info/top_level.txt,sha256=GYy-yhnYXRDhVUlfM9mYuc8mE_0HYQJTeKrv8UNhG0U,4
+rotman_ncs-0.1.0a7.dist-info/RECORD,,
