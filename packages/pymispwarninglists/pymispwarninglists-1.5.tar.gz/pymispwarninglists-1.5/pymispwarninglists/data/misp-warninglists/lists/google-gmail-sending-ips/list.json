@@ -1,0 +1,12 @@
+{
+  "description": "List of known Gmail sending IP ranges (https://support.google.com/a/answer/27642?hl=en)",
+  "list": [],
+  "matching_attributes": [
+    "ip-src",
+    "ip-dst",
+    "domain|ip"
+  ],
+  "name": "List of known Gmail sending IP ranges",
+  "type": "cidr",
+  "version": 20230704
+}
