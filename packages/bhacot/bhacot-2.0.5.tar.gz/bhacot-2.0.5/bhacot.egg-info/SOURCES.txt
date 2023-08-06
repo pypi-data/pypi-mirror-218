@@ -1,0 +1,7 @@
+README.md
+setup.py
+bhacot.egg-info/PKG-INFO
+bhacot.egg-info/SOURCES.txt
+bhacot.egg-info/dependency_links.txt
+bhacot.egg-info/requires.txt
+bhacot.egg-info/top_level.txt
