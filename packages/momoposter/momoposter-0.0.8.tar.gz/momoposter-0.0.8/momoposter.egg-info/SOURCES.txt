@@ -1,0 +1,7 @@
+setup.py
+momoposter/__init__.py
+momoposter.egg-info/PKG-INFO
+momoposter.egg-info/SOURCES.txt
+momoposter.egg-info/dependency_links.txt
+momoposter.egg-info/requires.txt
+momoposter.egg-info/top_level.txt
