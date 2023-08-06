@@ -1,0 +1,11 @@
+azureCliDiffTool/__init__.py,sha256=rBICrD0RolBBMtpla4ab2CJ8h2hUA43bWt5OUPLWJIc,6273
+azureCliDiffTool/_const.py,sha256=XFZOscXKP7fhWRFmkSFTcOVFC2BWkw0toK-1hRqrJig,3151
+azureCliDiffTool/meta_change.py,sha256=-7d6x2KtndNvdqf5hjVM-V7FN0AhgXDuQhorQMqLc6U,12819
+azureCliDiffTool/meta_change_detect.py,sha256=CFmu4phAvrgtmEgFC3GTgA8_ld0fa9OxiTtvFkqYSsQ,16658
+azureCliDiffTool/utils.py,sha256=u-56YiyQvxUxOcPZcrW9tgHN-bEw5CksCdg6AR_A_Rw,8727
+azureCliDiffTool/data/blob_config.ini,sha256=PSsGKhDeAnmi-wFCyTli5pDbYi6AX98_1DRczsjQQzo,164
+azureCliDiffTool/data/meta_change_whitelist.txt,sha256=scpOA7r-4fiO14rZ9Ec4nzAizXamVuqTlAKarfAwfwo,540
+azure_cli_diff_tool-0.0.1.dist-info/METADATA,sha256=uwDkd0f-6F15vGnM5-aNi81guA1Ei8wee6Zu2wtzvbI,3349
+azure_cli_diff_tool-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+azure_cli_diff_tool-0.0.1.dist-info/top_level.txt,sha256=OZ4qyY4FYMZ6j2zaRTMWzazkiYB8ecbxqeFiMDxsitM,17
+azure_cli_diff_tool-0.0.1.dist-info/RECORD,,
