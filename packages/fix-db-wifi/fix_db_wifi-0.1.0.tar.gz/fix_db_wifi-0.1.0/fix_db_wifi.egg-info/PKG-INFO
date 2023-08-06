@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fix-db-wifi
+Version: 0.1.0
+Summary: A tool to fix IP conflicts between Deutsche Bahn WIFI and Ubuntu/Docker
+Home-page: https://github.com/fogx/fix_db_wifi
+Author: Leon Wolf
+License: UNKNOWN
+Platform: UNKNOWN
+
+UNKNOWN
+
