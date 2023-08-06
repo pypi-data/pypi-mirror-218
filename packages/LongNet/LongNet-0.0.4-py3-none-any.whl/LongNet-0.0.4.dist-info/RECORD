@@ -1,0 +1,11 @@
+LongNet/__init__.py,sha256=xxNAvBHq2iA2PoWib1YrJWBSR1MwLMGyVCiAwailtWQ,216
+LongNet/attention.py,sha256=UnfsSTxR6vX95fWVIy0kUbaYUQQ8O_PVXZQUfG6nChQ,2242
+LongNet/model.py,sha256=623ewmI5MFJ5p6sTexfURmmk66Vtc-uSI9yWZWQvTaA,5855
+LongNet/model_test.py,sha256=f6CB8H0C5IEiUhx0Yu17PMKNt-DXbpjbGgbT2hng6Es,1246
+LongNet/training.py,sha256=VTSNdNP5hBnEMzL4327ScDT_tkJFbrnNLu5DG2mtYkw,23072
+LongNet/utils.py,sha256=2XQNaBONbdo_ZcwuLt7CHhp25P8wZKo6vjON37GU2Og,3352
+LongNet-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+LongNet-0.0.4.dist-info/METADATA,sha256=nvJjlsf28zUkApXnWUXw2bnRB0e1EG4MvJcgvjksCAw,705
+LongNet-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+LongNet-0.0.4.dist-info/top_level.txt,sha256=R4hAacf4d4r8FGVgtHzkC0WD2C3p0OETNS6u7eMVx20,8
+LongNet-0.0.4.dist-info/RECORD,,
