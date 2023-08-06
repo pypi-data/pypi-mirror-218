@@ -1,0 +1,4 @@
+[console_scripts]
+digquery = digquery.dig_query_types:main
+mydig = digquery.dig_query_types:main
+pydig = digquery.dig_query_types:main
