@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+compatibility/__init__.py
+compatibility/compatibility.py
+dowell_license_compatibility.egg-info/PKG-INFO
+dowell_license_compatibility.egg-info/SOURCES.txt
+dowell_license_compatibility.egg-info/dependency_links.txt
+dowell_license_compatibility.egg-info/requires.txt
+dowell_license_compatibility.egg-info/top_level.txt
