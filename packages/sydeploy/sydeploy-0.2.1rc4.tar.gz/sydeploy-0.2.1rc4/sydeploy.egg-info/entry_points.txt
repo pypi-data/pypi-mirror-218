@@ -1,0 +1,3 @@
+[console_scripts]
+syd = syd.main:run
+
