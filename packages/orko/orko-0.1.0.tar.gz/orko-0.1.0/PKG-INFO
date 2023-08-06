@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: orko
+Version: 0.1.0
+Summary: Project to generate recipes for conda packages
+Author-email: Marcelo Duarte Trevisani <marceloduartetrevisani@gmail.com>
+License: Apache-2.0
+Keywords: conda,environment,pyproject.toml
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Provides-Extra: dev
+License-File: LICENSE
+
+# orko

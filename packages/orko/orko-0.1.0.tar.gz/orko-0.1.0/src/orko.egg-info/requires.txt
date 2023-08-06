@@ -1,0 +1,15 @@
+rich-click
+click
+tomli
+packaging
+pyyaml
+conda-souschef
+
+[dev]
+pre-commit
+
+[testing]
+pytest
+pytest-xdist[psutil]
+pytest-cov
+pip
