@@ -1,0 +1,16 @@
+ximage/__init__.py,sha256=M6Qs1-tWX1i1xCbyRDrMl0zkrldFnK4iVow6zR0MkcE,458
+ximage/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+ximage/accessor/__init__.py,sha256=YWKwmarMjeBf64bU9wOA5KMlW4-ee3BoEmTYSHtJE1M,225
+ximage/accessor/methods.py,sha256=45zuTDZHMI7EbqFoWrb7XU7YzbB7KQ0nsFlzl8BMilw,3189
+ximage/labels/__init__.py,sha256=QU8z-k4c59Vpw8qy5Yi7WiLm5cM5Bp9lWn0krMXfZ4s,84
+ximage/labels/labels.py,sha256=6ZvfidOWFzOCbN3n4iCUfFxyMNjalEKBZf2PsQiG_lI,20071
+ximage/patch/__init__.py,sha256=vdho0yZ2axf-82eyrhfBccpLQy-ZRS_yXr1cuSxxY1I,84
+ximage/patch/checks.py,sha256=Nz6WeBD6RDidBYwEiHw56YdMNv3bFi7CPb93ReLkdaY,9966
+ximage/patch/labels_patch.py,sha256=sl1D2BRHrOwLSuih-X4-8zqp5wIWYd9LGeqOFVNOFgs,33055
+ximage/patch/plot2d.py,sha256=OondsPhXfex-1_jT5GACFEgXLirajNNC3PFqkF1-Uio,3940
+ximage/patch/slices.py,sha256=m9qTWplAe2pU3N30rRFjhGYGrqnTxG_0OFsYy6ohPRE,13233
+ximage-0.0.1.dist-info/LICENSE,sha256=JUYfTHh1M5-zlqgXkjMZSUrmj86XjNbPRyiD-neCBG4,1071
+ximage-0.0.1.dist-info/METADATA,sha256=aTwm-9yPFwuehZCq5oa4D-0n5gAejJBNr-yXDPWVMGE,7855
+ximage-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ximage-0.0.1.dist-info/top_level.txt,sha256=ANe9SqZzIFTYUTBrC3G0JYlBdCtoY-hA1W4MWQjmC9w,7
+ximage-0.0.1.dist-info/RECORD,,
