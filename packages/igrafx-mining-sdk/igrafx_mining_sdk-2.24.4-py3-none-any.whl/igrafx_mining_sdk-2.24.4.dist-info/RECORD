@@ -1,0 +1,12 @@
+igrafx_mining_sdk/__init__.py,sha256=9wQbhyxAc7D5RAHft8KeTJbTaYpvgx78qtU_GmPZzXk,1709
+igrafx_mining_sdk/api_connector.py,sha256=FgXcXav_vtRUBW6yha4lvW329dfy0UmY1MVW6wWCNgI,6812
+igrafx_mining_sdk/column_mapping.py,sha256=9n7bu1pMYqX0pt2whP7Er1JQjT3xjZ21h_rI8-bfRZk,11299
+igrafx_mining_sdk/datasource.py,sha256=FcEnVzCs-xO2JH7HeHYDXImXSg2ac08o4znW8HaVSTw,3070
+igrafx_mining_sdk/graph.py,sha256=vsHN4N8hQl2za6GegNBpUOGmCvwD2vC1qnPYIv2dpls,3343
+igrafx_mining_sdk/project.py,sha256=28SF_bMnKUbv_rCcqFn37LzBMgVk1aIkhrMY8Jm8Kzk,9843
+igrafx_mining_sdk/workgroup.py,sha256=fVvGI8FOKAdBqci3MwjGqgi-UsUjua8JMmvfr4As_-4,3007
+igrafx_mining_sdk-2.24.4.dist-info/LICENSE,sha256=zvb0QNFxOGbuR97-yaif4u4JrXqWonTBD95_9vSQvXk,1062
+igrafx_mining_sdk-2.24.4.dist-info/METADATA,sha256=F22ohZaQbr8W3nj7hICWJPeVToQDzj06weTT0AMGqUk,3932
+igrafx_mining_sdk-2.24.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+igrafx_mining_sdk-2.24.4.dist-info/top_level.txt,sha256=0jitq5MJZMjExnRoIKjoY3_RYT3yjiOkTaKhzAUkX7w,18
+igrafx_mining_sdk-2.24.4.dist-info/RECORD,,
