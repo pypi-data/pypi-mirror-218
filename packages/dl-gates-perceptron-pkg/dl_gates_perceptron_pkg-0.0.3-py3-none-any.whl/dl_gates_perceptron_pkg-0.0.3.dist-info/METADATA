@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dl-gates-perceptron-pkg
+Version: 0.0.3
+Summary: A small package for perceptron
+Author: junaid-o
+Project-URL: Homepage, https://github.com/junaid-o/DL_Perceptron_pkg
+Project-URL: Bug Tracker, https://github.com/junaid-o/DL_Perceptron_pkg/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Perceptron_pkg
