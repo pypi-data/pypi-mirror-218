@@ -1,0 +1,11 @@
+[console_scripts]
+check_fastqs_ENA = omdctk.check_fastqs_ENA:main
+check_metadata_ENA = omdctk.check_metadata_ENA:main
+download_fastqs_ENA = omdctk.download_fastqs_ENA:main
+download_metadata_ENA = omdctk.download_metadata_ENA:main
+filter_metadata = omdctk.filter_metadata:main
+make_treatment_template_ENA = omdctk.make_treatment_template_ENA:main
+merge_metadata = omdctk.merge_metadata:main
+test_omdctk = omdctk.test_omdctk:main
+treat_fastqs = omdctk.treat_fastqs:main
+treat_metadata_ENA = omdctk.treat_metadata_ENA:main

@@ -1,0 +1,8 @@
+aioftp
+aiohttp
+parfive
+termcolor
+tabulate
+tqdm
+mg-toolkit
+pandas
