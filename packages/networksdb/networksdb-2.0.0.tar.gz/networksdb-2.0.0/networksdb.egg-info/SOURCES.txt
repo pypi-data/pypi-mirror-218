@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+networksdb/__init__.py
+networksdb/networksdb.py
+networksdb.egg-info/PKG-INFO
+networksdb.egg-info/SOURCES.txt
+networksdb.egg-info/dependency_links.txt
+networksdb.egg-info/not-zip-safe
+networksdb.egg-info/requires.txt
+networksdb.egg-info/top_level.txt
