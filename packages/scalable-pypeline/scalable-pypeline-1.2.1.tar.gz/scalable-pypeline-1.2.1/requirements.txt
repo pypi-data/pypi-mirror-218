@@ -1,0 +1,16 @@
+PyYAML>=5.2,<6
+click==8.0.4
+marshmallow>=3.2.1,<4
+requests>=2.24.0
+# TODO this should be an OPTIONAL dep.
+redis>=4.5.4,<5
+# TODO this should be an OPTIONAL dep.
+rhodb[redis]>=5.1.1,<6
+# TODO consider keeping or removing...
+attrs>=19,<20
+# TODO consider where this dep should live
+boto3>=1.11,<2
+croniter>=1.0.15,<2
+# Celery is not a good task orchestration framework... This library fixes some of its' shortcomings
+celery-dyrygent==0.8.0
+itsdangerous==2.0.1
