@@ -1,0 +1,2 @@
+[console_scripts]
+crepe_notes = crepe_notes.cli:main
