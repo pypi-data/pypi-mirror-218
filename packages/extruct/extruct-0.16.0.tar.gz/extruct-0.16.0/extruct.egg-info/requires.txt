@@ -1,0 +1,17 @@
+lxml
+pyrdfa3
+mf2py
+w3lib
+html-text>=0.5.1
+six
+jstyleson
+
+[:python_version < "3.7"]
+rdflib<6.0.0
+rdflib-jsonld<=0.5.0
+
+[:python_version >= "3.7"]
+rdflib>=6.0.0
+
+[cli]
+requests
