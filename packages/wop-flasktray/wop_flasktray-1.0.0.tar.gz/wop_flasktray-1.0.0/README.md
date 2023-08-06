@@ -1,0 +1,1 @@
+Starts a Flaskapp with a trayicon using waitress and pystray.

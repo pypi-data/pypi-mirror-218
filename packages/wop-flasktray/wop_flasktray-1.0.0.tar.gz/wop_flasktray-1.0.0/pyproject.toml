@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "pystray ~= 0.19.4", "waitress ~= 2.1.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wop_flasktray"
+version = "1.0.0"
+authors = [
+	{name = "wopwopwopwopwop"}
+]
+description = "Starts a Flaskapp with a trayicon using waitress and pystray."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7.0"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wopwopwopwopwop/wop_flasktray"

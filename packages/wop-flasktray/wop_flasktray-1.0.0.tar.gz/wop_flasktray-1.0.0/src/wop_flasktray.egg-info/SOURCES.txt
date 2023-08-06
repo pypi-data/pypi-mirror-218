@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/wop_flasktray/__init__.py
+src/wop_flasktray.egg-info/PKG-INFO
+src/wop_flasktray.egg-info/SOURCES.txt
+src/wop_flasktray.egg-info/dependency_links.txt
+src/wop_flasktray.egg-info/top_level.txt
