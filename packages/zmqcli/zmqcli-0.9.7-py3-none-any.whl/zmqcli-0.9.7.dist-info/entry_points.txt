@@ -1,0 +1,3 @@
+[console_scripts]
+zmqcli=zmqcli:zmqcli.main
+
