@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+requirements.txt
+smart_vector/__init__.py
+smart_vector/smart_vector.py
+smart_vector.egg-info/PKG-INFO
+smart_vector.egg-info/SOURCES.txt
+smart_vector.egg-info/dependency_links.txt
+smart_vector.egg-info/requires.txt
+smart_vector.egg-info/top_level.txt
