@@ -1,0 +1,3 @@
+[console_scripts]
+spreg_satosa_sync = spreg_satosa_sync.spreg_satosa_sync:main
+

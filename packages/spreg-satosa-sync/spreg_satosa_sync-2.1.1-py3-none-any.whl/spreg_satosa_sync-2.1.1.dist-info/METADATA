@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: spreg-satosa-sync
+Version: 2.1.1
+Summary: Script to sync SATOSA clients from Perun RPC to mongoDB
+Home-page: https://gitlab.ics.muni.cz/perun-proxy-aai/python/spreg-satosa-sync.git
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.2
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (~=6.0)
+Requires-Dist: perun.connector (~=3.4)
+Requires-Dist: pycryptodomex (~=3.11)
+Requires-Dist: pymongo (<5,>=3.12.1)
+Requires-Dist: requests (~=2.26)
+Requires-Dist: setuptools
+
+# spreg_satosa_sync.py
+
+Script to read clients attributes from perun rpc and write them to mongoDB.
+
+## Install
+
+Install from [pypi.org](https://pypi.org/project/spreg-satosa-sync/):
+
+```sh
+pip install spreg-satosa-sync
+```
+
+## Configure
+
+Create a new config file from `config_template.yml`.
+
+This script uses the [perun.connector](https://pypi.org/project/perun.connector/) library. Because of this, you have to
+fill `adapters_manager` and `attrs_cfg_path` configuration options in your config file.
+`attrs_cfg_path` is a path to a yaml file which specifies mapping of attributes.
+You can find inspiration for the configuration in the `config_templates` directory of the perun.connector repository.
+
+## Use
+
+The pip package registers a console entrypoint called `spreg_satosa_sync`, which you can call directly.
+
+The only argument is a path to config file:
+
+```
+spreg_satosa_sync /etc/path/to/config.yml
+```
+
+
