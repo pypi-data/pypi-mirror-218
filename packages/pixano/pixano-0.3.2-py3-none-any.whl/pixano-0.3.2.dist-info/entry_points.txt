@@ -1,0 +1,3 @@
+[console_scripts]
+pixano-annotator = pixano.apps.annotator.serve:main
+pixano-explorer = pixano.apps.explorer.serve:main
