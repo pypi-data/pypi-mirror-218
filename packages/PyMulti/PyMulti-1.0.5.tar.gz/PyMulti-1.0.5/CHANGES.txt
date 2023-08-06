@@ -1,0 +1,6 @@
+v1.0.0, 4/7/2023 - Uploading "PyMulti" to GitHub and Pypi.org for the first time.
+v1.0.1, 4/7/2023 - Edited the description. Updated the "System" sub-package.
+v1.0.2, 4/7/2023 - Edited the "setup.py" and "CREDITS.txt" files. Updated the "JokesFacts" and "System" sub-packages.
+v1.0.3, 5/7/2023 - Edited the "setup.py" and "CREDITS.txt" files. Added a new "Fun" sub-package.
+v1.0.4, 5/7/2023 - Updated the "Speech" sub-package.
+v1.0.5, 11/7/2023 - Updated the "Speech" sub-package.

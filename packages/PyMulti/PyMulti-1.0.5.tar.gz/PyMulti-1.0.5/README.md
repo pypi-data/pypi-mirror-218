@@ -1,0 +1,45 @@
+# PyMulti
+
+## Introduction
+
+PyMulti is an open-source, advanced, and multi-purpose Python package.
+
+Read the docs [here](https://aniketh-chavare.gitbook.io/pymulti).
+
+## Package Information
+
+**Name** - PyMulti</br>
+**Version** - 1.0.5</br>
+**Description** - PyMulti is an open-source, advanced, and multi-purpose Python package.</br>
+**Author** - Aniketh Chavare</br>
+**GitHub URL** - [https://github.com/Anikethc/PyMulti](https://github.com/Anikethc/PyMulti)</br>
+**Pypi.org URL** - [https://pypi.org/project/PyMulti](https://pypi.org/project/PyMulti)</br>
+**Docs URL** - [https://aniketh-chavare.gitbook.io/pymulti](https://aniketh-chavare.gitbook.io/pymulti)
+
+## License
+
+Copyright 2023 Aniketh Chavare
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+## Credits
+
+Go to the `CREDITS.md` file to see the credits.
+
+## Issues & Bugs
+
+If you encounter any issues or bugs, visit the 'Issues' tab and create an issue. I'll look into it and resolve it ASAP.
+
+## Conclusion
+
+I hope you liked this package. Thank you!
