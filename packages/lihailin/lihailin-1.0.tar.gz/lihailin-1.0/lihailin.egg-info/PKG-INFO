@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lihailin
+Version: 1.0
+Summary: eds sdk
+Home-page: http://test.com
+Author: lihailin
+Author-email: test@gmail.com
+License: MIT Licence
+Platform: any
+
+eds sdk for python

@@ -1,0 +1,7 @@
+setup.py
+lihailin.egg-info/PKG-INFO
+lihailin.egg-info/SOURCES.txt
+lihailin.egg-info/dependency_links.txt
+lihailin.egg-info/entry_points.txt
+lihailin.egg-info/requires.txt
+lihailin.egg-info/top_level.txt
