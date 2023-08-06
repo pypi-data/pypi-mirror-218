@@ -1,0 +1,17 @@
+pwgen/__init__.py,sha256=rvLzsd95qIRsr-qftVoW7N-OTVxoH4mpBL6rp9-Ae9k,318
+pwgen/__main__.py,sha256=hI9aX0mUEGUWYCL3AgADsEdEUzBya0uJRxUyMmyyuac,112
+pwgen/__version__.py,sha256=c3hcRPT4oO4lLcaiWPlZW5Jy7U8GK3azfBxddwrhWOU,23
+pwgen/cli/__init__.py,sha256=jYCC1MJPhxDhZ93d69X1o7gBaYp15u9H6LCvrG44QBA,73
+pwgen/cli/__main__.py,sha256=hI9aX0mUEGUWYCL3AgADsEdEUzBya0uJRxUyMmyyuac,112
+pwgen/cli/cli.py,sha256=V4bAoPFHaImaec_E3V1H7vCLGguTxf5evZeTJXUcCoE,4614
+pwgen/pwgen.py,sha256=lg0n9pNnc9FtaA_fNxvTdAyJiRs-yU5qUxnRJPwNgEs,8365
+pwgen/showcase/__init__.py,sha256=tiWjExHep4Qz1bce_Z8oxsxnRSIpBsvP70zmFHftQH4,93
+pwgen/showcase/__main__.py,sha256=VmO5nPyU1vyijbliGzP1wOG-Aek_Vai7wGSq9GfXPVM,132
+pwgen/showcase/pattern-list-error.txt,sha256=kdG1Jhw_7FWCCGp2TVTy07Zs3pkWwbcnVLp07YRRUmQ,99
+pwgen/showcase/pattern-list.txt,sha256=tSAuuMA3czAOEINcMeBKDUy5LWmkK6rZC21-Ei1DtKY,175
+pwgen/showcase/showcase.py,sha256=CRA7gGHwxrgJ5PDzEZ2BW_VzsQrgvVMJRTao9GpBhuY,20398
+task2a-1.0.9.dist-info/entry_points.txt,sha256=bOXVuVHTJLw9pOdXR5Pf6s6i13AOtxOQEma6McWI1vg,152
+task2a-1.0.9.dist-info/LICENSE,sha256=MKU8Tl929W-E98pQjgAXTkW00DEecKunaVBnTsqWf_o,466
+task2a-1.0.9.dist-info/METADATA,sha256=qigU3a2Xlf3gfn0MYYe8kHDipUzRkK0ZBdMFhJxRqmY,37290
+task2a-1.0.9.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+task2a-1.0.9.dist-info/RECORD,,

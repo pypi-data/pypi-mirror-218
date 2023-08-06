@@ -1,0 +1,7 @@
+[console_scripts]
+pwgen=pwgen:pwgen_cli
+pwgen_showcase=pwgen.showcase:pwgen_showcase
+
+[poetry.masonry.api]
+task2a_builder=task2a.builder:Task2aBuilder
+
