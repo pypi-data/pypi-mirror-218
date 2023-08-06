@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: narpyn
+Version: 0.1.4
+Summary: A Python API library for NARS
+Author-email: Adrian Borucki <ab@synthillect.ai>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# NARpyn
+> A Python API library for NARS
+
+[![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
+![Black Badge](https://img.shields.io/badge/code%20style-black-000000.svg)
+![RuffGit Badge](https://github.com/ntoxeg/narpyn/workflows/RuffGit/badge.svg)
+
+Currently supported backends include OpenNARS for Applications (ONA).
