@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: diz
+Version: 0.0.3
+Summary: 用来构建大模型环境的工具
+Author: mjason
+Description-Content-Type: text/markdown
+Requires-Dist: GitPython (>=3.1.31)
+Requires-Dist: huggingface-hub (>=0.16.4)
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: toolz (>=0.12.0)
+Requires-Dist: typer (>=0.9.0)
+
+# diz
+一个用来做大模型的开发工具快速构建平台
