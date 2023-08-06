@@ -1,0 +1,12 @@
+docs/source/conf.py,sha256=l8-ZPIXsPdn58XOTP93agaN5yUcMNbiA6A81jxLdvvI,1901
+nir/__init__.py,sha256=aogtjzOn6f_g62CyAX7sCQ3L43pW-fQAoCzqcvzsgGw,108
+nir/ir.py,sha256=5zOiX2BojmUxY9gcfWqsqI1Z0hAHKqBJJmBCrUTtdaI,3040
+nir/read.py,sha256=ArqAMq89cT8VsjxyKJNO7t6ngz3cMn2otvKRQBUQ7Eg,3106
+nir/write.py,sha256=Dmk4KkPK-4X934drcW-Oig9EJnK5cAXDSXlIPq3JY6s,2922
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ir.py,sha256=v2WE8EkMqWEfzUPcrkwbk5bEsZkeaDCEgh6e1WmgPUA,1529
+tests/test_readwrite.py,sha256=UNbQk5wDquPVGVZ60PZrVX5CnqEIFBdxF1rpvGRGWyc,2112
+nir-0.0.4.dist-info/METADATA,sha256=0TOZK1-La2nVGmwnxMj-u3SXirOWw2WOyGTV48asuRg,4726
+nir-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nir-0.0.4.dist-info/top_level.txt,sha256=5kyIhNf6BLoP8q0ahYLiO156LZmwitswPonT_GSDWGU,15
+nir-0.0.4.dist-info/RECORD,,
