@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: genit
+Version: 0.35
+Summary: Simple integer and string Generator
+Home-page: https://github.com/devmoamal/genit
+Author: Moamal Hussin
+Author-email: dev.moamal@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+License-File: LICENSE
+
