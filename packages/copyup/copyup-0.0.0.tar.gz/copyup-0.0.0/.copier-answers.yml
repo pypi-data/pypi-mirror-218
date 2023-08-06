@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 014ca06
+_src_path: gh:blakeNaccarato/copier-python
+actions_runner: ubuntu-latest
+active: false
+github_repo_name: copyup
+project_description: Copy project tooling changes back up to its associated Copier
+    template
+project_email: blake.naccarato@gmail.com
+project_name: copyup
+project_owner_github_username: blakeNaccarato
+project_owner_name: Blake Naccarato
+project_version: 0.0.0
+python_version: '3.11'
+year_of_project_creation: 2023
