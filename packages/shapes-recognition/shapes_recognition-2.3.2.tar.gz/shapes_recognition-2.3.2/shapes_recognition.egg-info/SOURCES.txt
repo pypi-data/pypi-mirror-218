@@ -1,0 +1,7 @@
+README.md
+setup.py
+shapes_recognition.egg-info/PKG-INFO
+shapes_recognition.egg-info/SOURCES.txt
+shapes_recognition.egg-info/dependency_links.txt
+shapes_recognition.egg-info/top_level.txt
+shapes_recognition/pure_cython/setup.py
