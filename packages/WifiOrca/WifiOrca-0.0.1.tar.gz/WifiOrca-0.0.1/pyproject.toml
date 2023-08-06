@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WifiOrca"
+version = "0.0.1"
+authors = [
+  { name="Michael Mueller", email="michael.j.mueller.pro@gmail.com" },
+]
+description = "Wifi Orca contains free and open source tools similar to hak5! Requires nmap!"
+readme = "README.md"
+license = { file="LICENSE.txt" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+
+dependencies = [
+    "sqlmap",
+    "TheSilent"
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/Invizabel/Wifi-Orca"
+"Bug Tracker" = "https://github.com/Invizabel/Wifi-Orca/issues"
