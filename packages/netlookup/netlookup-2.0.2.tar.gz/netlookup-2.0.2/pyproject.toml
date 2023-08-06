@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "netlookup"
+version = "2.0.2"
+description = "Python tools to look up information about networks"
+authors = ["Ilkka Tuohela <hile@iki.fi>"]
+homepage = "https://github.com/hile/netlookup"
+readme = "README.md"
+include = [
+    "LICENSE",
+]
+license = "BSD-3-Clause"
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dnspython = "^2"
+netaddr = "^0.8"
+requests = "^2"
+cli-toolkit = "^2"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7"
+flake8 = "^6"
+flake8-bugbear = "^22"
+flake8-quotes = "^3"
+pycodestyle = "^2"
+pyflakes = "^3"
+pylint = "^2"
+pytest = "^7"
+requests-mock = "^1"
+tox = "^4"
+ipython = "^8.7.0"
+ruff = "^0.0.261"
+
+[tool.poetry.scripts]
+netlookup = "netlookup.bin.netlookup:main"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.5.2"]
+build-backend = "poetry.core.masonry.api"
