@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+nesc/__init__.py
+nesc/service.py
+nescs.egg-info/PKG-INFO
+nescs.egg-info/SOURCES.txt
+nescs.egg-info/dependency_links.txt
+nescs.egg-info/requires.txt
+nescs.egg-info/top_level.txt
