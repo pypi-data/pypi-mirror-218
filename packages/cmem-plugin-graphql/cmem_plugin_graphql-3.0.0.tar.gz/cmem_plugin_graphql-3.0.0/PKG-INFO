@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: cmem-plugin-graphql
+Version: 3.0.0
+Summary: Send queries to a GraphQL endpoint and save the results in a JSON dataset.
+Home-page: https://github.com/eccenca/cmem-plugin-graphql
+License: Apache-2.0
+Keywords: eccenca Corporate Memory,plugin,GraphQL
+Author: eccenca GmbH
+Author-email: cmempy-developer@eccenca.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: cmem-plugin-base (>=4.0.0,<5.0.0)
+Requires-Dist: gql[all] (>=3.4.0,<4.0.0)
+Requires-Dist: validators (>=0.20.0,<0.21.0)
+Description-Content-Type: text/markdown
+
+# cmem-plugin-graphql
+
+Send queries to a GraphQL endpoint and save the results in a JSON dataset.
+
+This is a plugin for [eccenca](https://eccenca.com) [Corporate Memory](https://documentation.eccenca.com).
+
+You can install it with the [cmemc](https://eccenca.com/go/cmemc) command line
+clients like this:
+
+```
+cmemc admin workspace python install cmem-plugin-graphql
+```
+
+
