@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: modelstar
+Version: 0.5.0
+Summary: DevOps for User Defined Functions and Stored Procedures in Data Warehouses
+Home-page: https://modelstar.io
+License: Apache-2.0
+Keywords: snowflake,forecast,UDF,Stored Procedure
+Author: Adithya Krishnan
+Author-email: krishsandeep@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: joblib (>=1.2.0,<2.0.0)
+Requires-Dist: jsonschema (>=4.16.0,<5.0.0)
+Requires-Dist: markdown (>=3.4.1,<4.0.0)
+Requires-Dist: pandas (>=1.5.1,<2.0.0)
+Requires-Dist: snowflake-connector-python (>=2.7.12,<3.0.0)
+Requires-Dist: tabulate (>=0.8.10,<0.9.0)
+Project-URL: Repository, https://github.com/modelstar-labs
+Description-Content-Type: text/markdown
+
+# Hi there, this is <a href="https://modelstar.io/" style="color: #AF3BEA;"><img src="./static/logo.png" height="28"> Modelstar</a> 👋
+
+ModelStar is the easiest way to ship and manage machine learning solutions inside Snowflake, with only a few lines of SQL.
+
+## Modelstar is for the modern data stack
+
+![How does Modelstar work?](./static/how-modelstar-works.png)
+
+## Who are the users?
+
+-   Snowflake and DBT users.
+-   Anyone who knows basic SQL.
+-   Analyst, data engineers.
+
+## Why we build Modelstar?
+
+Modelstar is our attempt to simplify ML for analysts. Our design philosophy is: **Data is the most critical component in ML, so shipping ML solutions should be as easy as creating data objects.**
+
+## Installation
+
+To get started with Modelstar, install the Modelstar Python package into your local Python environment.
+
+```shell
+$ pip install modelstar
+```
+
+It's recommended to install `modelstar` within a Python virtual environment using `pyenv`, `virtualenv`, or `poetry`.
+
+For a complete quickstart guide visit [**Modelstar-Quickstart**](https://modelstar.io/docs/quickstart)
+
+## Tutorials
+
+-   [**Forecast Sales inside Snowflake with 1 Line of SQL**](https://modelstar.io/docs/tutorials/sales-forecasting-inside-snowflake)
+
