@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+spamming/__init__.py
+spamming.egg-info/PKG-INFO
+spamming.egg-info/SOURCES.txt
+spamming.egg-info/dependency_links.txt
+spamming.egg-info/requires.txt
+spamming.egg-info/top_level.txt

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: spamming
+Version: 0.1.3
+Summary: A spamming package
+Author: gugu256
+Author-email: gugu256@mail.com
+License: MIT
+Keywords: spamming,spam,automation,pyautogui
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Spamming
+
+A package for spamming people
+
+# Usage
+
+`pip install spamming`, obvisouly
+
+`spamming.nonsense.main(nbr=15, slw=10)` for spamming 15 messages of random text, every 5 seconds
+
+`spamming.spamclick.main(clicks=12)` for clicking 12 times automatically
