@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qian
+Version: 0.1.3
+Summary: Quantitative Investment Algorithm Nexus
+Home-page: https://github.com/qiancapital/qian
+Author: Samson Qian
+Author-email: samsonqian@gmail.com
+License: MIT
+Keywords: quantitative-research time-series value-investing business-analysis valuation cash-flow
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Quantitative Investment Algorithm Nexus (QIAN)
+
+"Nexus" is a term that refers to a connection, link, or central point of intersection. In the context of the acronym, it signifies the integration and interconnectedness of the various quantitative investment algorithms that Qian Capital runs. It represents the idea of algorithms coming together as a cohesive unit, forming a central hub or network, where they collaborate and interact to generate investment insights and drive decision-making. The term "nexus" conveys the notion of a powerful and dynamic network of algorithms working in synergy to analyze data, identify patterns, and optimize investment strategies. For Qian Capital, QIAN represents, and is the name of, our flagship super-intelligent AI trader that accounts for all of Qian Capital's quantitative investing algorithms, including all of the sub-models, inputs, etc. QIAN is the super-intelligent AGI that makes the final alpha generation, portfolio optimization, execution decisions.
