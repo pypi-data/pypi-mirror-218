@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: MRItaxonomy
+Version: 0.1.1
+Summary: MRIGlobal's taxonomy related operators
+Home-page: https://github.com/mriglobal/MRItaxonomy
+Author: MRIGlobal Bioinformatics Team
+Author-email: biofx@mriglobal.org
+License: MIT
+Keywords: mriglobal taxonomy ncbi
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# MRItaxonomy - MRIGlobals Taxonomy Library
+
+A compendium of convenient taxonomic related operations interfacing with NCBI
+
