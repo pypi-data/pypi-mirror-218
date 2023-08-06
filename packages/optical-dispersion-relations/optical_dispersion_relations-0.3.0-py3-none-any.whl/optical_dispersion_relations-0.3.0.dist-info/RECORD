@@ -1,0 +1,10 @@
+optical_dispersion_relations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optical_dispersion_relations/dielectric_waveguides.py,sha256=3QcieXjL5PeIIa2hHuHzp1fufvv46HDW5u8gK25qc4Y,4553
+optical_dispersion_relations/drude_lorentz.py,sha256=TI-ASrcohhn6zW7w80EorWJrcth2bRNx-A3TEz0GDbw,5615
+optical_dispersion_relations/plasmon.py,sha256=e6o9VnC97BVkW4Oax5_g9Jg3uRxGkpZ1NODbmwiSI8E,7302
+optical_dispersion_relations/utilities.py,sha256=h1ff4YYQWbuQk8BGiGT0YVVMdtXyri-9H4bgl8Icgc0,1342
+optical_dispersion_relations-0.3.0.dist-info/LICENSE.txt,sha256=0a7cr9p3mD7Bm3RB7h6svdjJceHcmTupdY80TzDcdr0,1071
+optical_dispersion_relations-0.3.0.dist-info/METADATA,sha256=_T5kspDjXXcNZcbu_ReeHw4hIbxWAbXx4KxdER--lRg,2116
+optical_dispersion_relations-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+optical_dispersion_relations-0.3.0.dist-info/top_level.txt,sha256=dcLGgVNapHr8jvGcHeGwbJpVQNM1upsGK5hSCSwB6yU,29
+optical_dispersion_relations-0.3.0.dist-info/RECORD,,
