@@ -1,0 +1,10 @@
+README.md
+setup.py
+EmailXtract.egg-info/PKG-INFO
+EmailXtract.egg-info/SOURCES.txt
+EmailXtract.egg-info/dependency_links.txt
+EmailXtract.egg-info/requires.txt
+EmailXtract.egg-info/top_level.txt
+emailxtract/__init__.py
+emailxtract/main.py
+emailxtract/scraper.py
