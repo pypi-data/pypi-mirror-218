@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "reps-new"
+version = "0.3.5"
+description = "Mozilla Release Engineering Project Standard"
+authors = ["Mozilla Release Engineering <release@mozilla.com>"]
+license = "MPL-2.0"
+readme = "README.md"
+packages = [{ include = "reps" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cookiecutter = "^2.1.1"
+pre-commit = "^3.3.3"
+taskcluster-taskgraph = "^5.4.0"
+pip-tools = "^6.14.0"
+halo = "^0.0.31"
+ruamel-yaml = "^0.17.32"
+
+[tool.poetry.scripts]
+reps-new = "reps.console:run"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+tox = "^4.6.4"
+coverage = {extras = ["toml"], version = "^7.2.7"}
+requests = "^2.31.0"
+
+[tool.black]
+extend-exclude = """(\
+  reps/templates)\
+  """
+
+[tool.coverage.run]
+omit = ["reps/templates/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+
+[tool.ruff]
+exclude = ["reps/templates"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
