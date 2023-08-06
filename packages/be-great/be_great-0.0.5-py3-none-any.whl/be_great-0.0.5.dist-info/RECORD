@@ -1,0 +1,11 @@
+be_great/__init__.py,sha256=ZfCTw6DBeN0YcpaiE9-4UxzbOXZbydiqxkKx0WaOX_c,25
+be_great/great.py,sha256=fDm2JkCp1CAk9dKwfDEHTgVBKqpYZiYiGbaXXnGMcm4,22761
+be_great/great_dataset.py,sha256=wHD7mqnpLE1qjGKPHPbfo1AfmKPK84ovf3YZqvReMn0,2121
+be_great/great_start.py,sha256=6i9PFm_K_Ii0TXyqo26meHmhJB7vfATGT1669lYK5cw,5414
+be_great/great_trainer.py,sha256=tnr7BzHHFhhTOQ4Eafyf-ZHNZhlcHODbbinvD3133uw,1416
+be_great/great_utils.py,sha256=rv21dNGoVq6YOvWaS07hMmAnR8Sb65_AXT7VuO5qgw0,5134
+be_great-0.0.5.dist-info/LICENSE,sha256=1RwbUpenZ_Fhk-UsfwTDru8rEYaWCnqRwgA80FELKUo,1090
+be_great-0.0.5.dist-info/METADATA,sha256=3Z8_w2mYylTUFWn5767uo-grnTLqQiSdsZcZR8iWA1Q,5091
+be_great-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+be_great-0.0.5.dist-info/top_level.txt,sha256=5X-s-klTSu25eZenGZ5StDpX7_yHlhZlm2W1h-jzrlw,9
+be_great-0.0.5.dist-info/RECORD,,
