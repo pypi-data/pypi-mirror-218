@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ir-client
+Version: 0.1.0
+Summary: Library to access the iRacing web API
+License: MIT
+Author: Sascha Lamp
+Author-email: sascha@lamp-online.de
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
