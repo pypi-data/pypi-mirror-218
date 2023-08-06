@@ -1,0 +1,8 @@
+lilcom_extension.cpython-310-aarch64-linux-gnu.so,sha256=o7KoovFkY6zYwKkDxMVYoaIk1yhvBsWlqwxDDWyb3YQ,200560
+lilcom/__init__.py,sha256=7norabMGxH5ryVZs_G-ruLBE45bcnyRb3KJYNrjgIwY,121
+lilcom/lilcom_interface.py,sha256=k8ERNlVn_XEpbSb_lhLsOmuLTOomicCSCqIT2HTkAQM,4178
+lilcom-1.7.dist-info/top_level.txt,sha256=_c6DTrG_0CXrczL0IVn5N36_-80_JWUPFhqRSfgoaG4,24
+lilcom-1.7.dist-info/LICENSE,sha256=NtryKn9T6eljyP1Quj-ZgyhUp7nuX14H0oV2mmLOgEE,1190
+lilcom-1.7.dist-info/RECORD,,
+lilcom-1.7.dist-info/WHEEL,sha256=5FPtA1B6n-DIbcPbXnHVzp-as0KLsaNL-sSVkjvwO_0,154
+lilcom-1.7.dist-info/METADATA,sha256=vQfFZLvaRYJaf_tge9yJrRcd0YN2EV53DtIJ8hHSX_w,2969
