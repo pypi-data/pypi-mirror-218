@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+pocket_to_sqlite/__init__.py
+pocket_to_sqlite/cli.py
+pocket_to_sqlite/utils.py
+pocket_to_sqlite.egg-info/PKG-INFO
+pocket_to_sqlite.egg-info/SOURCES.txt
+pocket_to_sqlite.egg-info/dependency_links.txt
+pocket_to_sqlite.egg-info/entry_points.txt
+pocket_to_sqlite.egg-info/requires.txt
+pocket_to_sqlite.egg-info/top_level.txt
+tests/test_save_pocket.py
