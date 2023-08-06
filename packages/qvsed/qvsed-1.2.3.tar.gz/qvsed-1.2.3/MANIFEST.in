@@ -1,0 +1,2 @@
+include QVSED/QVSED.ui
+include QVSED/config_default.py
