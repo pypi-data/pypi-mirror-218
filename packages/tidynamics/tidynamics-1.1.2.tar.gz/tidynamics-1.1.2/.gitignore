@@ -1,0 +1,7 @@
+*~
+build/
+dist/
+*.pyc
+tidynamics.egg-info
+tidynamics/version.py
+.cache
