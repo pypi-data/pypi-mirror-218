@@ -1,0 +1,5 @@
+wbDefcon>=0.2.0
+compreffor>=0.5.3
+glyphsLib>=6.2.3
+psautohint>=2.4.0
+ufo2ft>=2.32.0
