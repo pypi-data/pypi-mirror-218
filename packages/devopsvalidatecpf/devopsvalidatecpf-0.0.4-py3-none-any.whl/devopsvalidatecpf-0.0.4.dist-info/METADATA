@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: devopsvalidatecpf
+Version: 0.0.4
+Summary: DevOps course CPF validation package
+Author-email: Ezequiel Lima <ezequiel_lima@hotmail.com>
+Project-URL: Homepage, https://github.com/ezequielcdelima/projeto-final-puc-devops
+Project-URL: Bug Tracker, https://github.com/ezequielcdelima/projeto-final-puc-devops/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: regex (==2023.6.3)
+Requires-Dist: pytest (==7.4.0)
+Requires-Dist: flake8 (==6.0.0)
+Requires-Dist: build (==0.10.0)
+Requires-Dist: twine (==4.0.2)
+Requires-Dist: pdoc (==14.0.0)
+
+# projeto-final-puc-devops
+Final project of the Culture and DevOps practice course
