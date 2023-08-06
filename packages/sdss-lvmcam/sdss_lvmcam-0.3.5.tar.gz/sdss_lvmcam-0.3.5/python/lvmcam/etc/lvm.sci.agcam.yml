@@ -1,0 +1,79 @@
+camera_type: araviscam
+basename: lvm.sci.agcam.{camera.name}_{num:08d}.fits
+dirname: /data/agcam/{sjd}
+
+camera_params: !include lvm.camera_param.agcam.yml
+
+scraper:
+  lvm.sci.pwi:
+    ra_j2000_hours: ra_h
+    dec_j2000_degs: dec_d
+    altitude_degs: alt_d
+    azimuth_degs: az_d
+    field_angle_here_degs: field_angle_d
+
+  lvm.sci.foc:
+    Position: foc_dt
+
+  lvm.sci.km:
+    Position: km_d
+    DeviceEncoder.Position: km_s
+
+  lvm.tel:
+    temperature: bentemp
+    humidity: benhum
+    pressure: benpress
+
+cameras:
+  east:
+    telescope: sci
+    descr: 'Guider Camera Science East'
+
+    # araviscam
+    uid: 19283186
+    ip: 10.8.38.111
+
+    genicam_params:
+      bool:
+        ReverseX: False
+        ReverseY: True
+
+    # skymakercam
+    instpar: lvm_age_cam
+
+  # center:
+  #   telescope: sci
+  #   descr: 'Guider Camera Science Center'
+  #   # araviscam
+  #   uid: 22126027
+  #   ip: 10.8.38.119
+
+  #   pixsize: 4.5
+
+  #   genicam_params:
+  #     string:
+  #       PixelFormat: 'BayerGB16'
+
+  #   # skymakercam
+  #   instpar: lvm_agc_cam
+
+  west:
+    telescope: sci
+    descr: 'Guider Camera Science West'
+
+    # araviscam
+    uid: 19283169
+    ip: 10.8.38.112
+
+    genicam_params:
+      bool:
+        ReverseY: True
+
+    # skymakercam
+    instpar: lvm_agw_cam
+
+actor:
+  name: lvm.sci.agcam
+  host: localhost
+  port: 5672
+  log_dir: '/data/logs/lvm.sci.agcam'
