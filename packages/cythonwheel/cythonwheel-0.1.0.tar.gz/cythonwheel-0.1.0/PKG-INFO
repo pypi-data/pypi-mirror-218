@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cythonwheel
+Version: 0.1.0
+Summary: Demonstrate creating cython bdist wheels in Github releases
+License: MIT
+Author: John Heintz
+Author-email: john@gistlabs.com
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# cythonwheel
+How to create Github releases with cython
+
