@@ -1,0 +1,8 @@
+README.md
+setup.py
+otp_generator/__init__.py
+otp_generator/otp.py
+random_otp_generator.egg-info/PKG-INFO
+random_otp_generator.egg-info/SOURCES.txt
+random_otp_generator.egg-info/dependency_links.txt
+random_otp_generator.egg-info/top_level.txt
