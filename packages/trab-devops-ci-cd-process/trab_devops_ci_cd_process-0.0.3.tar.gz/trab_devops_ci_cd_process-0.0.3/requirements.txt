@@ -1,0 +1,7 @@
+pytest  == 7.4.0
+flake8  == 6.0.0
+build   == 0.10.0   # prof deixou build e twine ser definir versoes
+twine   == 4.0.2
+
+# os 3 pontinhos indicam que a IDE nao sabe que nosso ambiente virtual
+# e o default para o projeto.

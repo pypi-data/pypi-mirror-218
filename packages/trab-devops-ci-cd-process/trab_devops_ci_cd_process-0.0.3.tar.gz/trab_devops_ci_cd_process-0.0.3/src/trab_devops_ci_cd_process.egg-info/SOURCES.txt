@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/bhaskara/__init__.py
+src/bhaskara/eq_bhaskara.py
+src/bhaskara/eq_segundo_grau.py
+src/trab_devops_ci_cd_process.egg-info/PKG-INFO
+src/trab_devops_ci_cd_process.egg-info/SOURCES.txt
+src/trab_devops_ci_cd_process.egg-info/dependency_links.txt
+src/trab_devops_ci_cd_process.egg-info/requires.txt
+src/trab_devops_ci_cd_process.egg-info/top_level.txt
+test/test_solucao.py
