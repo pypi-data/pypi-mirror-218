@@ -1,0 +1,11 @@
+numpy
+torch
+torchvision
+scikit-learn
+
+[dev]
+pytest
+matplotlib
+seaborn
+ipykernel
+tqdm
