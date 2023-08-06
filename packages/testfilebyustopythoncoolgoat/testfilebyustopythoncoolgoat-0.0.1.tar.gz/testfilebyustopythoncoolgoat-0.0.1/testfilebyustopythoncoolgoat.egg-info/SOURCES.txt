@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+folder/__init__.py
+testfilebyustopythoncoolgoat.egg-info/PKG-INFO
+testfilebyustopythoncoolgoat.egg-info/SOURCES.txt
+testfilebyustopythoncoolgoat.egg-info/dependency_links.txt
+testfilebyustopythoncoolgoat.egg-info/requires.txt
+testfilebyustopythoncoolgoat.egg-info/top_level.txt
