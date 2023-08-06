@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: FastCap2
+Version: 2.0
+Summary: FastCap2 Python port
+Home-page: https://klayoutmatthias.github.io/FastCap2/
+Author: Matthias Koefferlein
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+FastCap2 is a venerable state-of-the art tool to compute the capacitance matrix from an arrangement of (ideal) conductors and dielectric surfaces in the quasi-static case. This module provides a Python API for this tool.
+
+For more details see https://klayoutmatthias.github.io/FastCap2/introduction.html
+
