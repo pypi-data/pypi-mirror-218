@@ -1,0 +1,6 @@
+numpy
+opencv-python
+
+[test]
+pytest>=6.2
+pytest-timeout>=1.5

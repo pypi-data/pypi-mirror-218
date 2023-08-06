@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: curling
+Version: 0.2.0
+Summary: Interface for curling physics simulation
+Author-email: George Ogden <george@goprogram.ai>
+Provides-Extra: test
+License-File: LICENSE.txt
