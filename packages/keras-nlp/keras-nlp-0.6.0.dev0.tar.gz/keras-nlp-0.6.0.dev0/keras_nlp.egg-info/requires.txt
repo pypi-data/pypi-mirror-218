@@ -1,0 +1,13 @@
+keras-core
+absl-py
+numpy
+packaging
+regex
+rich
+
+[:platform_system != "Darwin"]
+tensorflow-text
+
+[extras]
+rouge-score
+sentencepiece
