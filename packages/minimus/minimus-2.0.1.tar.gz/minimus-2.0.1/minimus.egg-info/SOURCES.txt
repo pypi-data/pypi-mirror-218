@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+minimus/__init__.py
+minimus/__main__.py
+minimus.egg-info/PKG-INFO
+minimus.egg-info/SOURCES.txt
+minimus.egg-info/dependency_links.txt
+minimus.egg-info/entry_points.txt
+minimus.egg-info/top_level.txt
+minimus/src/__init__.py
+minimus/src/constants.py
+minimus/src/markup.py
+minimus/src/objects.py
+minimus/src/output.py
+minimus/src/storage.py
+minimus/src/utils.py
