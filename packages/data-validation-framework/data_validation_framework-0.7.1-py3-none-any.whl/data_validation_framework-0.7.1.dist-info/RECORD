@@ -1,0 +1,13 @@
+data_validation_framework/__init__.py,sha256=hHWjH3Ipe_OeLavLge0EUq0fDkBctR8s8ODul1kfsko,299
+data_validation_framework/report.py,sha256=5gzbt5RHH827N4v9XJcJt1fjZUKRxJOW911nmTgtO9I,7330
+data_validation_framework/result.py,sha256=LZOaduh3c8cNVhE_GNXftTxzGTO5QKUke8bLMlvGfeM,4698
+data_validation_framework/rst_tools.py,sha256=8NX4YLdvD3ki0PL__Xoxv9a9Tx3DsouTmdN9D8mBi2I,7440
+data_validation_framework/target.py,sha256=vv-xGndORo3H5XRszJ3kqH75VIPfmJITz5TQ69Nsgy0,1264
+data_validation_framework/task.py,sha256=vd1CiPimOY1RnwVPA8NF3XMzb3Pud_GAf9mTflHUxus,30156
+data_validation_framework/util.py,sha256=vJANTaX3A_rt_i0Xn9v13t4NCqcUbWEzvR6-_3XFj-s,7504
+data_validation_framework-0.7.1.dist-info/AUTHORS.md,sha256=wye_V3N5cVTP5JONqhHkC6ws6cTLbN3oPWwGGbYIkRY,63
+data_validation_framework-0.7.1.dist-info/LICENSE.txt,sha256=LB1P9Xb9Oukutayvh31fq7onCNVGQyiesS2oyeZNQO8,11354
+data_validation_framework-0.7.1.dist-info/METADATA,sha256=zPjN4Bhid6KkSM2zAwwtgRzBBi6romtWjmvCcVNymsw,9203
+data_validation_framework-0.7.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+data_validation_framework-0.7.1.dist-info/top_level.txt,sha256=QxM1xpLv3ozspNDor4FjlyYfpZ1A5PlOOX8xfJnM2Vs,26
+data_validation_framework-0.7.1.dist-info/RECORD,,
