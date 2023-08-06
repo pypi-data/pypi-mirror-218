@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            {{page_title|default:"Untitled Page"}}
+        {% endblock title %}
+    </title>
+    
+    <!-- JS FILES -->
+    <script src="{% static 'explorer/checkbox.js' %}"></script>
+    <script src="{% static 'explorer/action.js' %}"></script>
+    <script src="{% static 'explorer/common.js' %}"></script>
+    <script src="{% static 'explorer/volume.js' %}"></script>
+    <script src="{% static 'explorer/onload.js' %}"></script>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="{% static 'explorer/summary.css' %}">
+    <link rel="stylesheet" href="{% static 'explorer/volume.css' %}">
+    <link rel="stylesheet" href="{% static 'explorer/action.css' %}">
+    <link rel="stylesheet" href="{% static 'explorer/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'explorer/icons.css' %}">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- <script>
+        // GLOBAL VARIABLES
+        var volume_data = JSON.parse("{{ volume_data|escapejs }}");
+    </script> -->
+    <!-- GLOBAL -->
+    {{ volume_data|json_script:"volume_data" }}
+</head>
+<body style="background-color: lavenderblush;">
+    <!-- NAV BAR -->
+    {% block navbar %}
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="{% url 'explorer-main' %}">Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'explorer-about' %}">About</a>
+                    </li>  
+                </ul>
+                <div class="container-fluid justify-content-end">
+                    <a href="{% url 'explorer-logout' %}" class="btn btn-primary">Logout</a>
+                </div>
+            </div>  
+        </nav>
+    {% endblock navbar %}
+
+    {% block content %}
+        <p>Place content here.</p>
+    {% endblock content %}
+</body>
+</html>
