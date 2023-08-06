@@ -1,0 +1,8 @@
+README.md
+setup.py
+murkrow/__init__.py
+murkrow.egg-info/PKG-INFO
+murkrow.egg-info/SOURCES.txt
+murkrow.egg-info/dependency_links.txt
+murkrow.egg-info/requires.txt
+murkrow.egg-info/top_level.txt
