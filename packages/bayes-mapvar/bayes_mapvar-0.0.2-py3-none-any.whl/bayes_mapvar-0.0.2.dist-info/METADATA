@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: bayes-mapvar
+Version: 0.0.2
+Summary: Bayesian Maximum a Posteriori/Variance estimation
+Home-page: UNKNOWN
+Author: Charles Lindsey
+Author-email: lindseycster@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pylint (==2.12.2)
+Requires-Dist: pytest (==7.1.1)
+Requires-Dist: scipy (==1.11.1)
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: pandas (==1.4.2)
+Requires-Dist: protobuf (==3.20.0)
+Requires-Dist: tensorflow (==2.8.0)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.24.0)
+Requires-Dist: tensorflow-probability (==0.16.0)
+Requires-Dist: jupyterlab (==4.0.2)
+
+`bayes_mapvar`: Bayesian Maximum A Posteriori/Variance Estimation
+=================================================================
+
+Installation
+------------
+1. Clone the repository.
+2. Navigate to the project root directory.
+3. Create the virtual environment with:
+> `. bin/setup_venv.sh`
+
+Testing
+-------
+To run unit tests, run this from the project root directory:
+> `. bin/run_unit_tests.sh`
+
+
