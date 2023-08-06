@@ -1,0 +1,4 @@
+dist
+docker
+tiivad
+tiivad_old
