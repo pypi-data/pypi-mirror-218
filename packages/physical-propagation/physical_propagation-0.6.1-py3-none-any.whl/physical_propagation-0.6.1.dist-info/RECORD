@@ -1,0 +1,11 @@
+physical_propagation/__init__.py,sha256=dCxwT5dlePZ-XU2-aiOVCjw_rhpv3ivDvuDRj3P_uz8,83
+physical_propagation/acoustic_losses.py,sha256=Th5H2Zy4AEYCmvV9Me1TgbC-CLoKTGG3hCf0d11eaq0,29925
+physical_propagation/propagate.py,sha256=07ZNO10luvZze5i21a9_QKWZ1ziIPFPDtrgd_frzFkU,12169
+physical_propagation/ray_tracing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+physical_propagation/ray_tracing/ray_tracing.py,sha256=QDSEdyVRuAcv-wS7AtaOoFLIeztn65pO8etw8MBmfvw,4863
+physical_propagation/ray_tracing/sound_speed_profile.py,sha256=SiQu0EMKoy0sAJFSFJEXvPCdz4QX0OqG_zSX1pPQ2gA,1576
+physical_propagation-0.6.1.dist-info/LICENSE.txt,sha256=CnUqq0vjN1fJ8XfqDDGGtFX5RW5IVakctVQ0UhWU6mM,1246
+physical_propagation-0.6.1.dist-info/METADATA,sha256=V6jrLG1nJe_hADIOzDVECaqx8_HZMaHNdoKVCccCN1w,4549
+physical_propagation-0.6.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+physical_propagation-0.6.1.dist-info/top_level.txt,sha256=Vi7EDR99vHXDKDkdLbTkDyr9qJPjXFoyWyeLfLkAz1E,21
+physical_propagation-0.6.1.dist-info/RECORD,,
