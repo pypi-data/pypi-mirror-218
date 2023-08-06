@@ -1,0 +1,13 @@
+codeboxapi/__init__.py,sha256=4VJ92ZHXm4Da6_DYLsQk5qeIg1t4TFaruTL5F-U3FZw,453
+codeboxapi/chromebox.todo,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeboxapi/codebox.py,sha256=Oah3IKZDTTBDuSnjVcQQfRBTSY90gDfw0FKlJxUdJv8,2942
+codeboxapi/config.py,sha256=T7h6ooFf-_ow2ze-aZ7oCYUTrwFcqNpLa65sxVibUzM,373
+codeboxapi/errors.py,sha256=yWkpUlJOcdYzAAEaXkljjBSiXTbo91ClB1AKNbMbW7c,1822
+codeboxapi/repobox.todo,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeboxapi/schema.py,sha256=M6Fuq51WtnA5lxZ10eOlJXdfPpCv-YvwdrGUa4xmAr8,401
+codeboxapi/utils.py,sha256=cGDU_mj49BEncX1bISftJbU5Azr_ZQrTYMTEo5HRKAU,913
+codeboxapi/vectorbox.todo,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeboxapi-0.0.3.dist-info/LICENSE,sha256=aPUxKLGmbFVrSyywgg9nqFFW66E6uuRCkCuokngQPrw,1074
+codeboxapi-0.0.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+codeboxapi-0.0.3.dist-info/METADATA,sha256=Dfvz9emfvv6fWo1hp98uGN9ukyTJST2pbRgSlrOB-Hc,1551
+codeboxapi-0.0.3.dist-info/RECORD,,
