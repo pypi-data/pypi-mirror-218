@@ -1,0 +1,3 @@
+[console_scripts]
+propagator = moresque.propagator_sim:main
+

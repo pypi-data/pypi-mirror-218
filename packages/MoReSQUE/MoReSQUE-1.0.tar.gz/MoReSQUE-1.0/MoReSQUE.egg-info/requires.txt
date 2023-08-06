@@ -1,0 +1,6 @@
+mosaik-api>=2.0
+numpy
+scipy
+pyDOE
+arrow
+statsmodels
