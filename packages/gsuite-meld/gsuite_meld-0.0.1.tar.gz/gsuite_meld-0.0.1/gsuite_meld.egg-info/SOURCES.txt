@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+./gsuite_meld/__init__.py
+./gsuite_meld/document.py
+./gsuite_meld/drive.py
+./gsuite_meld/gsuite.py
+./gsuite_meld/sheet.py
+gsuite_meld.egg-info/PKG-INFO
+gsuite_meld.egg-info/SOURCES.txt
+gsuite_meld.egg-info/dependency_links.txt
+gsuite_meld.egg-info/requires.txt
+gsuite_meld.egg-info/top_level.txt
