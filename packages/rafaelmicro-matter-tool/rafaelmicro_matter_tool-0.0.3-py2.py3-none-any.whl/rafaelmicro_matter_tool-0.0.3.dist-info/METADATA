@@ -1,0 +1,324 @@
+Metadata-Version: 2.1
+Name: rafaelmicro-matter-tool
+Version: 0.0.3
+Summary: Matter controller cli-tool (Support by Rafael Micro)
+Home-page: UNKNOWN
+Author: resghst
+Author-email: hank181017@gmail.com
+License: UNKNOWN
+Download-URL: https://pypi.org/project/rafalmicro-matter-tool/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: prettytable (==3.7.0)
+Requires-Dist: pytest (==6.2.4)
+Requires-Dist: shellingham (==1.4.0)
+Requires-Dist: typer (==0.3.2)
+Requires-Dist: wcwidth (==0.2.6)
+
+# Rafael Micro Matter Tool
+This package is a middle-ware tool, which is a Python-based command line tool (matter-tool). The matter-tool supports [Matter 1.0](https://csa-iot.org/all-solutions/matter/)'s controller necessary function, which abstracts a part of the Matter controller (chip-tool) and Open Thread (ot-ctl). This package pre-requests chip-tool and ot-ctl in your environment path, the Rafael matter-tool will cooperate chip-tool and ot-ctl to control Matter devices.
+Current Support Features:
+- Thread
+    - Get Network state
+    - Get Network Active dataset
+- Matter
+    - Commissioning device with Thread-BLE (Light and Switch)
+    - Control Matter Light cluster (level and onoff)
+    - Binding Light and Switch
+    - Group control (multi Light and multi Switch)
+
+## Basic Usage
+For instance, the environment has two Matter lights and one Matter Switch. The matter-tool is installed in Border Router.
+
+- Commissioning device:
+A router controller with matter-tool wants to commission Two Light devices (DISCRIMINATOR=3840, PINCODE=20202021) and a switch (DISCRIMINATOR=3841, PINCODE=20202021). Using matter-tool connect can help commission devices to a Matter Network.
+```
+matter-tool connect L0 light 20202021 3840 
+matter-tool connect L1 light 20202021 3840 
+matter-tool connect S0 switch 20202021 3841 
+matter-tool show
+```
+- Set device binding
+Now, the Matter Network has three devices (two lights and a switch). The switch wants control lights. Note: binding means unicast control (one-to-one)
+```
+matter-tool bind L0 S0
+matter-tool show -l 1
+```
+- Set device group
+The switch wants control lights with the group (group name is POI). First, we need to generate a group and append the device to the group. Note: group means unicast control (one-to-many)
+```
+# generate Group
+matter-tool group_gen POI
+
+# join Group
+matter-tool group_join POI L0
+
+# leave Group
+matter-tool group_leave POI L0
+
+# onoff with Group
+matter-tool group_onoff on POI
+
+# remove Group
+matter-tool group_del POI
+
+```
+
+
+## Support Command
+### Command list
+```
+$ matter-tool --help
+Usage: matter-tool [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  -v, --version         Show the application's version and exit.
+  --install-completion  Install completion for the current shell.
+  --show-completion     Show completion for the current shell, to copy it or
+                        customize the installation.
+
+  --help                Show this message and exit.
+
+Commands:
+  bind         [Matter] Set binding between light and switch.
+  connect      [Matter] Pair device with Thread.
+  dataset      [Thread] Get Thread active dataset.
+  disconnect   [Matter] Unpair device with Thread.
+  group_del    [Matter] Delete group.
+  group_gen    [Matter] Generate group.
+  group_join   [Matter] join device to group.
+  group_leave  [Matter] leave device to group.
+  group_onoff  [Matter] Group onoff control Matter Light.
+  level        [Matter] level control Matter Light.
+  onoff        [Matter] Onoff control Matter Light.
+  reset        [Matter] Reset matter-tool (Factory reset devices first)
+  show         [Matter] show matter profile
+  state        [Thread] Get Thread Network state.
+```
+### Manage command
+- connect
+    ```
+    $ matter-tool connect --help
+    Usage: matter-tool connect [OPTIONS] [NAME] [DEVICETYPE] [PINCODE]
+                            [DISCRIMINATOR]
+
+    [Matter] Pair device with Thread.
+
+    Arguments:
+    [NAME]           device alias
+    [DEVICETYPE]     device type
+    [PINCODE]        device pincode
+    [DISCRIMINATOR]  device long discriminator
+
+    Options:
+    -b, --ble-adapter INTEGER  BLE adapter with HCI device [int]  [default: 0]
+    -d, --debug                [default: False]
+    --help                     Show this message and exit.
+    ```
+- disconnect
+    ```
+    $ matter-tool disconnect --help
+    Usage: matter-tool disconnect [OPTIONS] [NAME]
+
+    [Matter] Unpair device with Thread.
+
+    Arguments:
+    [NAME]  device alias
+
+    Options:
+    -d, --debug  [default: False]
+    --help       Show this message and exit.
+    ```
+- reset
+    ```
+    $ matter-tool reset --help
+    Usage: matter-tool reset [OPTIONS]
+
+    [Matter] Reset matter-tool (Factory reset devices first)
+
+    Options:
+    -d, --debug  [default: False]
+    --help       Show this message and exit.
+    ```
+- show
+    ```
+    $ matter-tool show --help
+    Usage: matter-tool show [OPTIONS]
+
+    [Matter] show matter profile
+
+    Options:
+    -l, --level INTEGER              Matter Profile Level:
+                        
+                                    level 0 (default): display node profile
+                        
+                                    level 1: display Matter profile and Matter
+                                    stack information
+                        
+                                        [default: 0]
+
+    -d, --debug          [default: False]
+    --help               Show this message and exit.
+    ```
+
+#### single device control (1 to 1)
+- onoff
+    ```
+    $ matter-tool onoff --help
+    Usage: matter-tool onoff [OPTIONS] [ACTION] [LIGHT_NAME] [ENDPOINT]
+
+    [Matter] Onoff control Matter Light.
+
+    Arguments:
+    [ACTION]      control light: [on/off/toggle]  [default: on]
+    [LIGHT_NAME]  target light name
+    [ENDPOINT]    target endpoint  [default: 1]
+
+    Options:
+    -d, --debug  [default: False]
+    --help       Show this message and exit.
+    ```
+- level
+    ```
+    $ matter-tool level --help
+    Usage: matter-tool level [OPTIONS] [LEVEL] [LIGHT_NAME] [ENDPOINT]
+
+    [Matter] level control Matter Light.
+
+    Arguments:
+    [LEVEL]       target level  [default: 0]
+    [LIGHT_NAME]  target light name
+    [ENDPOINT]    target endpoint  [default: 1]
+
+    Options:
+    -t, --transition INTEGER  transitiontime  [default: 0]
+    -d, --debug               [default: False]
+    --help                    Show this message and exit.
+    ```
+- bind
+    ```
+    $ matter-tool bind --help
+    Usage: matter-tool bind [OPTIONS] [LIGHT_NAME] [SWITCH_NAME]
+
+    [Matter] Set binding between light and switch.
+
+    Arguments:
+    [LIGHT_NAME]   Connected light name
+    [SWITCH_NAME]  Connected switch name
+
+    Options:
+    -l, --light-endpoint INTEGER   target light endpoint  [default: 1]
+    -s, --switch-endpoint INTEGER  target switch endpoint  [default: 1]
+    -d, --debug                    [default: False]
+    --help                         Show this message and exit.
+    ```
+#### Group control
+- group_gen
+    ```
+    $ matter-tool group_gen --help
+    Usage: matter-tool group_gen [OPTIONS] [GROUP_NAME]
+
+    [Matter] Generate group.
+
+    Arguments:
+    [GROUP_NAME]  Group name
+
+    Options:
+    -d, --debug  [default: False]
+    --help       Show this message and exit.
+    ```
+- group_del
+    ```
+    $ matter-tool group_del --help
+    Usage: matter-tool group_del [OPTIONS] [GROUP_NAME]
+
+    [Matter] Delete group.
+
+    Arguments:
+    [GROUP_NAME]  Group name
+
+    Options:
+    -d, --debug  [default: False]
+    --help       Show this message and exit.
+    ```
+- group_join
+    ```
+    $ matter-tool group_join --help
+    Usage: matter-tool group_join [OPTIONS] [GROUP_NAME] [TARGET_NAME]
+
+    [Matter] join device to group.
+
+    Arguments:
+    [GROUP_NAME]   Group name
+    [TARGET_NAME]  Connected target name
+
+    Options:
+    -l, --target-endpoint INTEGER  target endpoint  [default: 1]
+    -d, --debug                    [default: False]
+    --help                         Show this message and exit.
+    ```
+- group_leave
+    ```
+    $ matter-tool group_leave --help
+    Usage: matter-tool group_leave [OPTIONS] [GROUP_NAME] [TARGET_NAME]
+
+    [Matter] leave device to group.
+
+    Arguments:
+    [GROUP_NAME]   Group name
+    [TARGET_NAME]  Connected target name
+
+    Options:
+    -l, --target-endpoint INTEGER  target endpoint  [default: 1]
+    -d, --debug                    [default: False]
+    --help                         Show this message and exit.
+    ```
+- group_onoff
+    ```
+    $ matter-tool group_onoff --help
+    Usage: matter-tool group_onoff [OPTIONS] [ACTION] [GROUP_NAME] [ENDPOINT]
+
+    [Matter] Group onoff control Matter Light.
+
+    Arguments:
+    [ACTION]      control light: [on/off/toggle]  [default: on]
+    [GROUP_NAME]  target group name
+    [ENDPOINT]    target endpoint  [default: 1]
+
+    Options:
+    -d, --debug  [default: False]
+    --help       Show this message and exit.
+    ```
+
+#### Thread network
+- state
+    ```
+    $ matter-tool state --help
+    Usage: matter-tool state [OPTIONS]
+
+    [Thread] Get Thread Network state.
+
+    Options:
+    -d, --debug  [default: False]
+    --help       Show this message and exit.
+    ```
+- dataset
+    ```
+    $ matter-tool dataset --help
+    Usage: matter-tool dataset [OPTIONS]
+
+    [Thread] Get Thread active dataset.
+
+    Options:
+    -x, --hex INTEGER  BLE adapter with HCI device [int]  [default: 0]
+    -d, --debug        [default: False]
+    --help             Show this message and exit.
+    ```
+
