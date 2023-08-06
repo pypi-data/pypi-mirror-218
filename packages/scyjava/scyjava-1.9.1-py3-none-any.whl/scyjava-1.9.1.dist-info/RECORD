@@ -1,0 +1,11 @@
+scyjava/__init__.py,sha256=hpz7vJKPxLoetQETTti7Dhy8VNhzFbkvMGuxDQCBXos,5794
+scyjava/_arrays.py,sha256=3yuFiBIeaRyT-BeRUaLe0DUsLEeoY2FnYx9LuRhzp6Y,1401
+scyjava/_convert.py,sha256=vjktQc3Jw2HT1ti2NR1baNPT13MWIOuK9SA45_pSj6c,32086
+scyjava/_java.py,sha256=aCP7BjhlUD3qJN00NIfKYuPvulvf18iu2Ll4kMrX6Cg,18953
+scyjava/_script.py,sha256=qPz-NjC8nBkkl6Pmo_rxmV3e2yzqVXHx7D2s819ykX0,4404
+scyjava/_versions.py,sha256=-ekVe4dJavp9G7zc8fU3Z8OUW_oy1HyYFJG0W_O68hU,2527
+scyjava/config.py,sha256=QBHYsXnoKwk40L3L6TB4UmVHlzXd0kLS4vCrpIGkUDo,4695
+scyjava-1.9.1.dist-info/METADATA,sha256=LG8WqySI6Qvy7JQNLxoVPdz6HUKJoMj2w7gTKcNd5jo,20743
+scyjava-1.9.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scyjava-1.9.1.dist-info/top_level.txt,sha256=whE_AyF4nbh4L3h2ZdYTmKKr8cYoxXdjgAIufBuErQ0,8
+scyjava-1.9.1.dist-info/RECORD,,
