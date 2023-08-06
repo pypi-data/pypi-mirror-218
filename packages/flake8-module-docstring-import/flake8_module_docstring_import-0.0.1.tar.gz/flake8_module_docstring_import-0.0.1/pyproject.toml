@@ -1,0 +1,34 @@
+[project]
+name = "flake8_module_docstring_import"
+version = "0.0.1"
+dependencies = [
+  "flake8"
+]
+license = {file = "LICENSE"}
+description = "Very simple flake8 plugin checking if there is exactly one new line between module docstring and imports"
+readme = "README.md"
+authors = [
+  { name = "djvdq" }
+]
+maintainers = [
+  { name = "djvdq" }
+]
+
+[project.urls]
+repository = "https://codeberg.org/djvdq/flake8_module_docstring_import"
+
+[tool.setuptools]
+py-modules = ["flake8_module_docstring_import"]
+
+[tool.setuptools.package-data]
+flake8_module_docstring_import = ["README.md"]
+
+[project.entry-points]
+"flake8.extension" = {MDL = "flake8_module_docstring_import:Plugin"}
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.distutils.bdist_wheel]
+universal = true

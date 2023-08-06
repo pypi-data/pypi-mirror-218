@@ -1,0 +1,11 @@
+LICENCE
+README.md
+flake8_module_docstring_import.py
+pyproject.toml
+setup.py
+flake8_module_docstring_import.egg-info/PKG-INFO
+flake8_module_docstring_import.egg-info/SOURCES.txt
+flake8_module_docstring_import.egg-info/dependency_links.txt
+flake8_module_docstring_import.egg-info/entry_points.txt
+flake8_module_docstring_import.egg-info/requires.txt
+flake8_module_docstring_import.egg-info/top_level.txt
