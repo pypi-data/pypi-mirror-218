@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+streamlit_carousel/__init__.py
+streamlit_carousel.egg-info/PKG-INFO
+streamlit_carousel.egg-info/SOURCES.txt
+streamlit_carousel.egg-info/dependency_links.txt
+streamlit_carousel.egg-info/entry_points.txt
+streamlit_carousel.egg-info/requires.txt
+streamlit_carousel.egg-info/top_level.txt
