@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "g2p-arpabet"
+version = "2.3.0"
+description = "A Simple Python Module for English Grapheme To Phoneme Conversion"
+authors = ["Kyubyong Park", "Jongseok Kim", "Hayden Shively"]
+license = "Apache License"
+readme = "README.md"
+keywords = ["g2p","g2p_en"]
+
+packages = [
+    { include = "g2p_en" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.13.1"
+nltk = "^3.2.4"
+inflect = "^0.3.1"
+distance = "^0.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
