@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: textdungeon
+Version: 6.9
+Summary: suffer alone in your terminal!
+Home-page: https://github.com/Masbender/text-dungeon
+License: MIT
+Keywords: text,dungeon,game
+Author: Matthew Bender
+Author-email: matthewbender65@gmail.com
+Maintainer: Noah Dinan
+Maintainer-email: noah@shinysocks.net
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/Masbender/text-dungeon
+Description-Content-Type: text/markdown
+
+TODO: rewrite slogan and remove repo name hyphen or rename game entirely.
+
+<div align=center>
+  <img src="https://github.com/Masbender/text-dungeon/assets/91911303/63d96f62-a73d-4d79-ae93-347dd9906034">
+  <h1 align=center>textdungeon: suffer alone in your terminal!</h1>
+</div>
+
+## About
+This is a game created by Matthew Bender that allows you to traverse a spoopy dungeon. yay!! Rewrite me please... Noah was here.
+
+## Installation
+
+### Python Pip
+install from pypi
+```sh
+pip install textdungeon
+```
+then simply run with
+```sh
+textdungeon
+```
+
+### Windows
+Download text-dungeon.exe from [latest](https://github.com/Masbender/text-dungeon/releases/latest)
+
+
