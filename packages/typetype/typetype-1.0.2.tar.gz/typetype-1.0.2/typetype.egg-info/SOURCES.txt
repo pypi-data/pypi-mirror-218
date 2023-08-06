@@ -1,0 +1,12 @@
+README.md
+setup.py
+typetype/__init__.py
+typetype/ahmetsgame.py
+typetype.egg-info/PKG-INFO
+typetype.egg-info/SOURCES.txt
+typetype.egg-info/dependency_links.txt
+typetype.egg-info/entry_points.txt
+typetype.egg-info/top_level.txt
+typetype/functions/game_selection.py
+typetype/functions/refresh_update.py
+typetype/functions/setup_results.py
