@@ -1,0 +1,3 @@
+[console_scripts]
+gt=seagoat.main:seagoat
+
