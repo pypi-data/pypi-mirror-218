@@ -1,0 +1,9 @@
+ray[air]
+dreamai
+langchain
+transformers
+pypdf
+faiss-cpu
+sentence-transformers
+
+[dev]
