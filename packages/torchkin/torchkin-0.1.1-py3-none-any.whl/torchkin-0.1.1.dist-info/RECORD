@@ -1,0 +1,9 @@
+torchkin/__init__.py,sha256=gzOXSu_7dv5rsPeFHE0oj5cEuWdJ1k4e7l35muHbK18,286
+torchkin/forward_kinematics.py,sha256=4nyg5UItqB8rX_2EjCpHiP07vVHYKHUDGGw3fOfHxOU,6108
+torchkin/joint.py,sha256=g2PDum9uNdP7ctRMFhDUoxC1lOqjHKnxpHd7wSsTNDI,15466
+torchkin/robot.py,sha256=OnU2_NuO2xBXDz79PEHsN_wPEw0ks3pHpZ2-66KbJHg,8686
+torchkin-0.1.1.dist-info/LICENSE,sha256=2m03A-0Ry-Qr0hLHJZV8mNojy_8ZmMBfpLPZdtGljpM,1088
+torchkin-0.1.1.dist-info/METADATA,sha256=xpL3Oq8JVXnRrqk-dZnmfdLdbErbPQY41zIUnkpqOzo,6082
+torchkin-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+torchkin-0.1.1.dist-info/top_level.txt,sha256=_pc4-s6uO8Dtn66iw65_4S770O7438yPfHaLSNG3XRA,9
+torchkin-0.1.1.dist-info/RECORD,,
