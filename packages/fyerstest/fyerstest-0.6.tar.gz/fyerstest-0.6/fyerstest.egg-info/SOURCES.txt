@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+fyerstest/__init__.py
+fyerstest/data_ws.py
+fyerstest/defines.py
+fyerstest/fyers_api.py
+fyerstest/fyers_logger.py
+fyerstest/map.json
+fyerstest/order_ws.py
+fyerstest.egg-info/PKG-INFO
+fyerstest.egg-info/SOURCES.txt
+fyerstest.egg-info/dependency_links.txt
+fyerstest.egg-info/requires.txt
+fyerstest.egg-info/top_level.txt
