@@ -1,0 +1,18 @@
+# gitignore file for sou-meraki project
+
+# Environments
+.env
+.venv
+
+# Logs
+*.log
+#/logs
+
+# Packaging
+*.egg-info/
+
+# Python
+__pycache__/
+
+# only for testing
+settings-dev.toml

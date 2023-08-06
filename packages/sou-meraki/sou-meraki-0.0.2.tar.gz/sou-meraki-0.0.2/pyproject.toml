@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sou-meraki"
+version = "0.0.2"
+dynamic = ["dependencies"]
+
+[project.scripts]
+sou = "sou_meraki.controller:menu"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
