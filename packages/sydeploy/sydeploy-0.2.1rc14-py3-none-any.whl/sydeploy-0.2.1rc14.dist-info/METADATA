@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sydeploy
+Version: 0.2.1rc14
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: LICENSE
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: impose-cli (==0.3.2)
+Requires-Dist: twine
+Requires-Dist: awscli
+Requires-Dist: PyYAML
+Requires-Dist: wheel
+
+UNKNOWN
+
+
