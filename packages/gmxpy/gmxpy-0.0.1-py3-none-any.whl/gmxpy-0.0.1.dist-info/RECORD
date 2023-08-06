@@ -1,0 +1,9 @@
+gmxpy/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+gmxpy/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gmxpy/editconf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gmxpy/grompp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gmxpy/solvate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gmxpy-0.0.1.dist-info/METADATA,sha256=Mat8c8bf8rIOEcYgnWITBNn-tkbVEjmvS3Zv_143aG0,1277
+gmxpy-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+gmxpy-0.0.1.dist-info/licenses/LICENSE,sha256=QlzaWsUNwggm-i-1RI5OwjKvRW9GkMjTUCvDpzbsaC4,1088
+gmxpy-0.0.1.dist-info/RECORD,,
