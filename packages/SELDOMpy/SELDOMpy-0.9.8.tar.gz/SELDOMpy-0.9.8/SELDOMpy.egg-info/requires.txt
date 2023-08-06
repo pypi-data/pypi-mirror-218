@@ -1,0 +1,9 @@
+numpy
+scikit-learn
+pandas
+mealpy
+matplotlib
+setuptools
+openpyxl
+pypesto
+scipy
