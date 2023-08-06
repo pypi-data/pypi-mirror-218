@@ -1,0 +1,36 @@
+from typing import Any,Dict
+from sklearn.metrics import top_k_accuracy_score
+from pureml_evaluate.metrics.metric_base import MetricBase
+
+class TopKAccuracyScore(MetricBase):
+    name = 'top_k_accuracy_score'
+    input_type = 'int'
+    output_type: Any = None
+    kwargs: Dict = None
+        
+
+    def parse_data(self, data):
+        
+        return data
+
+
+
+    def compute(self, references, predictions=None, prediction_scores=None, normalize=True, sample_weight=None, **kwargs):
+
+        if prediction_scores is None and predictions is None:
+            score = None
+        elif predictions is None:
+            score = top_k_accuracy_score(y_true=references, y_score=prediction_scores, normalize=normalize,
+                                sample_weight=sample_weight)
+            score = float(score)
+        elif prediction_scores is None:
+            score = top_k_accuracy_score(y_true=references, y_score=predictions, normalize=normalize,
+                                sample_weight=sample_weight)
+            score = float(score)
+        
+        score = {
+            self.name : float(score)
+            }
+ 
+
+        return score
