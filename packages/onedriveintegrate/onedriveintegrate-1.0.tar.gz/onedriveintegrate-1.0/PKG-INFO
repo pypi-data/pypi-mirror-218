@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: onedriveintegrate
+Version: 1.0
+Summary: Package for OneDrive File Management
+Author: William Guo
+License: MIT
+Description-Content-Type: text/markdown
+
+# OneDrive Integration Package
+___
+_onedriveintegrate_ is a Python package for OneDrive functionality, featuring methods for OneDrive file management and interacting Microsoft
+OneDrive API.
+
+List of relevant operations:
+* Authenticate users using Microsoft Graph API
+* Write files to a folder
+* Read files from the drive
+* List contents of a folder
+* Search for files based on text
+
+## Installation
+___
+Use a simple [pip](https://pip.pypa.io/en/stable/) command to install _onedriveintegrate_: 
+```bash
+pip install onedriveintegrate
+```
+
+## Usage / Getting started
+
+## Helpful Resources
+
+Sources from Jie Jenn:
+* [Upload Files to One Drive using Microsoft Graph API in Python](https://www.youtube.com/watch?v=Ok8O_QnrSBI)
+* [Download Files from OneDrive Using Microsoft Graph API in Python](https://www.youtube.com/watch?v=w6YeOkikVFI)
+* [Source Code for ms_graph.py](https://learndataanalysis.org/ms_graph-py-source-code/)
+
+Microsoft Graph API:
+* [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+* [Microsoft Azure Portal](https://azure.microsoft.com/en-us/get-started/azure-portal)
+* [Overview of Microsoft Graph - Documentation](https://learn.microsoft.com/en-us/graph/overview?view=graph-rest-1.0)
+
+PyPi:
+* [Build a Python Module and Share it with Pip Install](https://www.youtube.com/watch?v=FkmtmYFTlYE)
+* [PyPi.org](https://pypi.org/)
+
+Markdown:
+* [Make a README](https://www.makeareadme.com/)
+* [How to write a good README](https://dev.to/merlos/how-to-write-a-good-readme-bog)
+
+## Acknowledgements
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
