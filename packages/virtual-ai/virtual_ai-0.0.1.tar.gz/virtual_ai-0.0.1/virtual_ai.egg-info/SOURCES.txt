@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+tests/test_diffusion.py
+virtual_ai/__init__.py
+virtual_ai.egg-info/PKG-INFO
+virtual_ai.egg-info/SOURCES.txt
+virtual_ai.egg-info/dependency_links.txt
+virtual_ai.egg-info/requires.txt
+virtual_ai.egg-info/top_level.txt
