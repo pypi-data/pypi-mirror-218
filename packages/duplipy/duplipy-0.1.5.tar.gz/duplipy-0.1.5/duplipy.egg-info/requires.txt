@@ -1,0 +1,8 @@
+nltk
+numpy
+spacy
+langcodes
+googletrans
+joblib
+scikit-learn
+tqdm
