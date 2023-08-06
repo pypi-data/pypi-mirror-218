@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: roblox-pyc
+Version: 1.5.6
+Summary: A Python, C, C++ to Roblox Lua compiler
+Home-page: https://github.com/AsynchronousAI/roblox-pyc
+License-File: LICENSE
+Requires-Dist: clang
+Requires-Dist: libclang
+Requires-Dist: typer
+Requires-Dist: flask
+Requires-Dist: pyflakes
+Requires-Dist: pyyaml
+
