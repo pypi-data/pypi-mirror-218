@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name="ReNaLabApp"
+version="0.0.1.dev13"
+authors=[
+    { name="Ziheng 'Leo' Li", email="s-vector.lee@hotmail.com"}
+]
+description="Reality Navigation Lab App"
+
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ApocalyVec/RenaLabApp"
+"Bug Tracker" = "https://github.com/ApocalyVec/RenaLabApp/issues"
+"Documentation" = "https://realitynavigationdocs.readthedocs.io/en/latest/"

@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ReNaLabApp
+Version: 0.0.1.dev13
+Summary: Reality Navigation Lab App
+Home-page: https://github.com/ApocalyVec/RenaLabApp
+Author: Ziheng 'Leo' Li
+Author-email: Ziheng 'Leo' Li <s-vector.lee@hotmail.com>
+Project-URL: Homepage, https://github.com/ApocalyVec/RenaLabApp
+Project-URL: Bug Tracker, https://github.com/ApocalyVec/RenaLabApp/issues
+Project-URL: Documentation, https://realitynavigationdocs.readthedocs.io/en/latest/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Reality Navigation App
+RealityNavigation (ReNa) is a Python-based App for visualizing, recording, and processing (i.e., make prediction) on lab data streams in real-time.
+
+Read the docs at [RealityNavigationDocs](https://realitynavigationdocs.readthedocs.io/en/latest/)
+
+# Acknowledgement
+We thank the members from [LIINC](https://liinc.bme.columbia.edu/) at Columbia University, [Advance Human-computer Interaction Lab](https://interaction.mystrikingly.com/), and [CWINS](http://www.cwins.wpi.edu/) at Worcester Polytechnic Institute for their feedback in developing the App. [ningkko](https://github.com/ningkko) for the great contribution to the original code base, and [AlexG1031](https://github.com/AlexG1031) for the help in the various versions. 
+
+
+# to build windows app
+
+pyinstaller main.py
+then copy pylsl, ui, presets folders into the main folder
