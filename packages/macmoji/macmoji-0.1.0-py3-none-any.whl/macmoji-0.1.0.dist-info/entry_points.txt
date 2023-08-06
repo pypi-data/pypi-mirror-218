@@ -1,0 +1,3 @@
+[console_scripts]
+macmoji=macmoji.__main__:app
+
