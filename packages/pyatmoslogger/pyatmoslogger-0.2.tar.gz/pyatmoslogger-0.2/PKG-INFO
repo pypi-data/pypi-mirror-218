@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pyatmoslogger
+Version: 0.2
+Summary: Python Data Logger for Atmospheric Application
+Home-page: https://github.com/marcusgmueller/pyAtmosLogger
+License: MIT
+Author: Marcus G. Müller
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: argparse (>=1.4,<2.0)
+Requires-Dist: numpy (>=1.18,<2.0)
+Requires-Dist: pandas (>=1.0.3,<2.0.0)
+Requires-Dist: pySerial (>=3.4,<4.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: scipy (>=1.7.2,<2.0.0)
+Requires-Dist: xarray (>=2022.03.0,<2023.0.0)
+Project-URL: Documentation, https://pyatmoslogger.readthedocs.io/en/latest/index.html
+Project-URL: Repository, https://github.com/marcusgmueller/pyAtmosLogger
+Description-Content-Type: text/markdown
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Documentation Status](https://readthedocs.org/projects/pyatmoslogger/badge/?version=latest)](https://pyatmoslogger.readthedocs.io/en/latest/?badge=latest)
+
+<img src="docs/_static/images/pyAtmosLogger.png" width="200" style="margin: 20px 10px"/>
+
+
+> **Warning**
+> This software is still in development.
+
+Python data logger for Atmospheric Application. This software allows data logging for multiple types of atmospherical instruments with a simple python-based syntax. Data can be automaticly converted to NetCDF-fileformat.
+
+# Documentation
+
+The official documentation is available [here](https://pyatmoslogger.readthedocs.io/en/latest/index.html).
+
