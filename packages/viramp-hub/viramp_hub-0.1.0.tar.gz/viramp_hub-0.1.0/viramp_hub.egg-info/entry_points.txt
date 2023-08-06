@@ -1,0 +1,2 @@
+[console_scripts]
+scheme-convert = viramp_hub.command:main
