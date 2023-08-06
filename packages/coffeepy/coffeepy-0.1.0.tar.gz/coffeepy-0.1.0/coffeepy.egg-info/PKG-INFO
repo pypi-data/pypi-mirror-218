@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: coffeepy
+Version: 0.1.0
+Summary: Coffee prevents the system from sleeping
+Author-email: Jukka Maatta <kuvaus@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/kuvaus/coffeepy
+Project-URL: Bug Tracker, https://github.com/kuvaus/coffeepy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# coffeepy
+
+Coffeepy ☕️ prevents the system from sleeping.
+
+## Installation
+
+```sh
+pip install coffeepy
+```
+
+## Usage
+
+Simply run the program from command line
+```sh
+coffeepy
+```
+
+By default the program runs indefinitely. Press `Ctrl-C` to quit
+
+Optional: You can set the time in minutes with `-t` flag. To run the program for 1 hour, use
+
+```sh
+coffeepy -t 60
+```
+
+
+## License
+
+This project is licensed under the MIT [License](https://github.com/kuvaus/coffeepy/blob/main/LICENSE)
+
+

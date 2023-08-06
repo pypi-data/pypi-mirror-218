@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+coffeepy/__init__.py
+coffeepy/main.py
+coffeepy.egg-info/PKG-INFO
+coffeepy.egg-info/SOURCES.txt
+coffeepy.egg-info/dependency_links.txt
+coffeepy.egg-info/entry_points.txt
+coffeepy.egg-info/top_level.txt

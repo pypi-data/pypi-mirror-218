@@ -1,0 +1,2 @@
+[console_scripts]
+coffeepy = coffeepy.main:main
