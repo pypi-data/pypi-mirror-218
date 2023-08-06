@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sydeploy
+Version: 0.2.95
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: LICENSE
+Platform: UNKNOWN
+Requires-Dist: impose-cli (>=0.3.3)
+Requires-Dist: twine
+Requires-Dist: PyYAML (>=5.4.1)
+Requires-Dist: wheel
+
+UNKNOWN
+
+
