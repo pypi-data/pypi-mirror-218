@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sqle
+Version: 0.0.0a2
+Summary: 
+License: MIT
+Author: acrius
+Author-email: acrius@mail.ru
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Description-Content-Type: text/markdown
+
+# SQLE
+
+Python package designed to execute pure sql queries.
+
+| :exclamation:  This is alpha version    |
+|-----------------------------------------|
+

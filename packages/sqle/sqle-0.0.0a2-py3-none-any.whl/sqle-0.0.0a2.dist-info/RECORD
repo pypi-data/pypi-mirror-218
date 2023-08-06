@@ -1,0 +1,14 @@
+sqle/__init__.py,sha256=ZcWW6pK4N8yEmMtnpF24pDqEyoviINp2gnk1gqJj2r4,146
+sqle/adapter.py,sha256=oM3UbqzJGYHEhCAde9DQzghWpD7IphG8Swh6sE4EEX8,5925
+sqle/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqle/contrib/class_property.py,sha256=ijXPdfCTB1oypDtKDQq8mL475GJZIzDpm1hseu4B9c8,150
+sqle/contrib/text.py,sha256=ITr7PGliZSWR0C4CEOWaExsFn-rIPUUHmwiKd4e66yc,157
+sqle/exceptions.py,sha256=FRVJwy2UikM1scbEwChmn0EXMPePrdy79ZnAt-u0Tbw,435
+sqle/query.py,sha256=dUczVnOTMg_13XZ1kAnxhtcnbwyqiywB54Gf3dYeELM,2331
+sqle/settings.py,sha256=hY7IVmxoMw1O_md7LeT_9K4Smkb3-ea0KzmhftkwOX8,46
+sqle/sql.py,sha256=SDU9fskaUzDwOwRlVsLWlYyLnQaY_reQqtkWNNvb16M,3162
+sqle/sqle-sqlite.code-workspace,sha256=RHdrZRyE_AHXyrzZW0Bp_Mi_v77ICw7RPPR0Hq94geg,222
+sqle-0.0.0a2.dist-info/LICENSE,sha256=aQA5_Bpar9kbF15xXZy4MYTyAtIgzcqpZcsd0j87nxk,1063
+sqle-0.0.0a2.dist-info/METADATA,sha256=LWbA7d5IPzcKFkk_co7DmU46UP8ChA34DJzwpknFNJo,578
+sqle-0.0.0a2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+sqle-0.0.0a2.dist-info/RECORD,,
