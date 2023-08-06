@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+helicopyter.py
+pyproject.toml
+shell_includes.sh
+helicopyter.egg-info/PKG-INFO
+helicopyter.egg-info/SOURCES.txt
+helicopyter.egg-info/dependency_links.txt
+helicopyter.egg-info/requires.txt
+helicopyter.egg-info/top_level.txt
