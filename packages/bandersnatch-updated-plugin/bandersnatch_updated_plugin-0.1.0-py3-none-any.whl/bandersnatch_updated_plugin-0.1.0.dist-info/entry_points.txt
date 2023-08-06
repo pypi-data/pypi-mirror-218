@@ -1,0 +1,2 @@
+[bandersnatch_filter_plugins.v2.release_file]
+updated = bandersnatch_updated_plugin.updated:UpdatedFilter
