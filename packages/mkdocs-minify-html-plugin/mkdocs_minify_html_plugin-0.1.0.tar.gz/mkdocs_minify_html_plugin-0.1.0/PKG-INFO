@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: mkdocs-minify-html-plugin
+Version: 0.1.0
+Summary: MkDocs plugin for minification using minify-html, an extremely fast HTML + JS + CSS minifier
+Home-page: https://github.com/monosans/mkdocs-minify-html-plugin
+License: MIT
+Author: monosans
+Author-email: hsyqixco@protonmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Typing :: Typed
+Requires-Dist: minify-html (>=0.6.8,<0.12)
+Requires-Dist: mkdocs (>=1.4,<2.0)
+Project-URL: Repository, https://github.com/monosans/mkdocs-minify-html-plugin
+Description-Content-Type: text/markdown
+
+# mkdocs-minify-html-plugin
+
+[![CI](https://github.com/monosans/mkdocs-minify-html-plugin/actions/workflows/ci.yml/badge.svg)](https://github.com/monosans/mkdocs-minify-html-plugin/actions/workflows/ci.yml)
+[![Downloads](https://static.pepy.tech/badge/mkdocs-minify-html-plugin)](https://pepy.tech/project/mkdocs-minify-html-plugin)
+
+MkDocs plugin for minification using [minify-html](https://github.com/wilsonzlin/minify-html), an extremely fast HTML + JS + CSS minifier.
+
+## Usage
+
+Install:
+
+```bash
+python -m pip install -U mkdocs-minify-html-plugin
+```
+
+Activate in `mkdocs.yml`:
+
+```yaml
+plugins:
+  - search
+  - minify_html
+```
+
+## Options
+
+- [do_not_minify_doctype](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.do_not_minify_doctype) = True
+- [ensure_spec_compliant_unquoted_attribute_values](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.ensure_spec_compliant_unquoted_attribute_values) = True
+- [keep_closing_tags](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.keep_closing_tags) = False
+- [keep_html_and_head_opening_tags](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.keep_html_and_head_opening_tags) = False
+- [keep_spaces_between_attributes](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.keep_spaces_between_attributes) = True
+- [keep_comments](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.keep_comments) = False
+- [minify_css](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.minify_css) = True
+- [minify_js](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.minify_js) = True
+- [remove_bangs](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.remove_bangs) = False
+- [remove_processing_instructions](https://docs.rs/minify-html/latest/minify_html/struct.Cfg.html#structfield.remove_processing_instructions) = False
+
+Example:
+
+```yaml
+plugins:
+  - search
+  - minify_html:
+      do_not_minify_doctype: false
+      ensure_spec_compliant_unquoted_attribute_values: false
+      keep_spaces_between_attributes: false
+```
+
+## License
+
+[MIT](https://github.com/monosans/mkdocs-minify-html-plugin/blob/main/LICENSE)
+
