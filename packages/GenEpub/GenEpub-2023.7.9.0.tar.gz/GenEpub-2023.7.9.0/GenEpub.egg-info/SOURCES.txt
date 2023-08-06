@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+GenEpub/__init__.py
+GenEpub/util.py
+GenEpub.egg-info/PKG-INFO
+GenEpub.egg-info/SOURCES.txt
+GenEpub.egg-info/dependency_links.txt
+GenEpub.egg-info/requires.txt
+GenEpub.egg-info/top_level.txt
+GenEpub/assets/Style.css
+GenEpub/assets/__init__.py
+GenEpub/assets/article.j2
+GenEpub/assets/container.xml
+GenEpub/assets/content.j2
+GenEpub/assets/mimetype
+GenEpub/assets/toc.j2
