@@ -1,0 +1,17 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+gpterm.egg-info/PKG-INFO
+gpterm.egg-info/SOURCES.txt
+gpterm.egg-info/dependency_links.txt
+gpterm.egg-info/entry_points.txt
+gpterm.egg-info/requires.txt
+gpterm.egg-info/top_level.txt
+src/__init__.py
+src/alpaca.py
+src/gpterm.py
+src/llm_writer.py
+src/responser.py
+src/utils.py
