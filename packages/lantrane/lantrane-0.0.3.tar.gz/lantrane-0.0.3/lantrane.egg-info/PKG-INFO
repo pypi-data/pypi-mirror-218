@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: lantrane
+Version: 0.0.3
+Summary: Python package for interacting with Trane thermostats locally.
+Home-page: https://github.com/MoralCode/lantrane
+Author: Adrian Edwards
+Author-email: adrian@adriancedwards.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Lantrane
+
+A python library for interacting with Trane thermostats over the local network
+
+
+## Usage Example
+Your thermostat for communicating, variable speed heat pump systems might have a port open that emits data every time the compressor speed changes if you can find the right port via nmap and telnet (usually port 30,000 or so), this example will listen on that port and give you data. The port may change when the device is updated though.
+
+```python
+from lantrane import Trane
+import asyncio
+
+async def read_async():
+	async for data in Trane(args.ip, args.port).listen():
+	print(data)
+
+asyncio.run(read_async())
+```
+
+
+
+## Distribution
+
+```
+python3 setup.py bdist_wheel
+python3 setup.py sdist
+twine check dist/*
+twine upload dist/*
+```
+
