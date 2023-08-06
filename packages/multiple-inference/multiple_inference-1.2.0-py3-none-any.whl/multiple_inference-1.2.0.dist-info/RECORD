@@ -1,0 +1,17 @@
+multiple_inference/__init__.py,sha256=MpAT5hgNoHnTtG1XRD_GV_A7QrHVU6vJjGSw_8qMGA4,22
+multiple_inference/base.py,sha256=-pbpUdn-g9wVR3PXsHvbtdqwO_SvfXCPc-0wpNGRd1U,16067
+multiple_inference/confidence_set.py,sha256=olAniy1ldc5r9QU8Vd4RbiZHzsohh465xTqJAB2SsEI,38934
+multiple_inference/rank_condition.py,sha256=VDeDQ959vRoFf-4H5_eSldq7rXcX_Hzdvhiw-9qc2tg,11454
+multiple_inference/significance_condition.py,sha256=b3vYNxOxd4fP0au8c3v_g479dT5j37T36Z4xkaRfH6Q,4311
+multiple_inference/stats.py,sha256=7Jk_2LX4wNxlzyvY939o1yqBfdIxJDzHfUkCgl_3Ztc,25896
+multiple_inference/utils.py,sha256=lJCvfAKpb8Ujy9QVoGX4413OeTPRs6HTLTdme7pIoaU,4804
+multiple_inference/bayes/__init__.py,sha256=VIZVfFuqzwfCMxu_cQbUP8ATiDYkFxUTF23MT5OgXP4,99
+multiple_inference/bayes/base.py,sha256=vXzvUii1kpyC7_c-7s2gL1CEw6vWLmAMfcl7ASbxyL8,24475
+multiple_inference/bayes/improper.py,sha256=G8ysy5vMqvkHg4h7dCdaXqAQKi92ZOe4VTpgtPq2bc0,2224
+multiple_inference/bayes/nonparametric.py,sha256=tbHfKziXUsQMg5_3cOrpAz3DhfifyTZq-NTU3ycDZmw,8040
+multiple_inference/bayes/normal.py,sha256=hoTpKUGyuoVTktQd76BIMB2tkXxorsIghw6zZ1iexFU,26941
+multiple_inference-1.2.0.dist-info/LICENSE,sha256=wxt8wTXri5CZtAnQDpk54ElTK3p4JVT8XJgn8RWbvYk,1056
+multiple_inference-1.2.0.dist-info/METADATA,sha256=Gi2XjITYwGO52AqmcO8MYw6X8uF8MjIpPdgph63VXRg,2090
+multiple_inference-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+multiple_inference-1.2.0.dist-info/top_level.txt,sha256=gZrlgqM79O_wjcfdU2svB9FJxRneCSu_z3aURZNX_Bs,19
+multiple_inference-1.2.0.dist-info/RECORD,,
