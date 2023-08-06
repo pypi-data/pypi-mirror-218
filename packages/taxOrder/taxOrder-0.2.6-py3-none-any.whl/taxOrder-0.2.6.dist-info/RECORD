@@ -1,0 +1,10 @@
+taxOrder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taxOrder/cmdline_taxOrder.py,sha256=ES2FVR0snU4XJA9p290ZiIsm8muo_gwP4uLNjCnR-3Y,1932
+taxOrder/requirements.txt,sha256=W4IJ7Lu2yFkAXoMd0_7MweC4GqtlqZB3iRv-VRFvP-4,14
+taxOrder/taxOrder.py,sha256=nfhjvUo-ITTITIvuGXlt2HLx3nTx2rqfTaXLBlvMNsI,1121
+taxOrder-0.2.6.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+taxOrder-0.2.6.dist-info/METADATA,sha256=8AaoHNsVWk1gW8SmRo1FmmQDx1Ry_IzzlByQK7KC_ks,1544
+taxOrder-0.2.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+taxOrder-0.2.6.dist-info/entry_points.txt,sha256=bB7fzc1apgJV6IRLg7oqUGKNSL5k2O0PbgqBdbXrwr4,60
+taxOrder-0.2.6.dist-info/top_level.txt,sha256=Vu7tqi2pRDfbYOwODs2MsU8GW9J64f51IE2u1Jhf-Yk,9
+taxOrder-0.2.6.dist-info/RECORD,,
