@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+fastapicord/__init__.py
+fastapicord.egg-info/PKG-INFO
+fastapicord.egg-info/SOURCES.txt
+fastapicord.egg-info/dependency_links.txt
+fastapicord.egg-info/top_level.txt
