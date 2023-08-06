@@ -1,0 +1,8 @@
+graph_model_parser/__init__.py,sha256=Oy4kYyxPAToHqazxjaPAFtyKABfWqLIkEMbRmuq18DQ,49
+graph_model_parser/graph_model_parser.py,sha256=WyNErcU6ORCNgc2ZBOYwXQI6V_7QZM6jNg47vz2jorc,8338
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_graph_model_parser.py,sha256=h8VPAY3n0S-ttaKKSSsRaJ6Renb2kyMhlgFFYrFw0s4,2262
+graph_model_parser-0.1.4.dist-info/METADATA,sha256=tTJaVvPtNYvHiY7l1VI7xjfg3LA1i5cUnij4nbZIFgc,2485
+graph_model_parser-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+graph_model_parser-0.1.4.dist-info/top_level.txt,sha256=r2WcmFjUtwB8Zwrg6PIE8MaqRazwan-lN1MxvOP3rq4,25
+graph_model_parser-0.1.4.dist-info/RECORD,,
