@@ -1,0 +1,4 @@
+[console_scripts]
+gt=seagoat.main:seagoat
+seagoat=seagoat.main:seagoat
+
