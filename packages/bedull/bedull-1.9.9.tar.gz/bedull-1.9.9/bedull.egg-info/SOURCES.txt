@@ -1,0 +1,7 @@
+README.md
+setup.py
+bedull.egg-info/PKG-INFO
+bedull.egg-info/SOURCES.txt
+bedull.egg-info/dependency_links.txt
+bedull.egg-info/requires.txt
+bedull.egg-info/top_level.txt
