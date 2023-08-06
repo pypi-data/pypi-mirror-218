@@ -1,0 +1,10 @@
+PhyloTreeClustering/PhyloTreeClustering.py,sha256=ibPtVBDjyJu7D1a4smS3yTx_O1v7JvakflalV11wXaY,31990
+PhyloTreeClustering/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PhyloTreeClustering/calculate_pdm.py,sha256=DPRtrxX5ZIgJzhAtBLxBHzmM0MnyQLNFkXlvGt2V4qo,1044
+PhyloTreeClustering/calinski_harabasz.py,sha256=NDT3U6jKS_rhmkfGTk4M-Fhk8xOlyyF9d_fTnEobrxA,2428
+PhyloTreeClustering/medicc_functions.py,sha256=FRcYgRTxfPA1PFkW6d841tEChRU6YfvXNZKn6gJ6j9E,22688
+phylotreeclus-1.0.0.data/scripts/phylotreeclus,sha256=8Kgvi5jQcMeOP0ckilYJTk0yIGPLqbE247E4XHrMxC8,2533
+phylotreeclus-1.0.0.dist-info/METADATA,sha256=m6ug4LiVWdeSy0BCFzh3oeUOdWL0dwI0XD3vknhH3wI,5087
+phylotreeclus-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+phylotreeclus-1.0.0.dist-info/top_level.txt,sha256=akXKM4XIEyy2KxU5s87hJWYKLeOfBfLHMN6MJJgZuz8,20
+phylotreeclus-1.0.0.dist-info/RECORD,,
