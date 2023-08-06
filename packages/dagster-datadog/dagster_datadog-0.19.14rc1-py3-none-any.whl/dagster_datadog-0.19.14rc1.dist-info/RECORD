@@ -1,0 +1,8 @@
+dagster_datadog/__init__.py,sha256=exkVFl8W90LjWXr-MgRBv1781D7vqxlmIND_mkxsPto,266
+dagster_datadog/resources.py,sha256=Te5cccqk9ZcgDpNTKnPg3eeHKRpP5mP70AnKMKVqXoA,5026
+dagster_datadog/version.py,sha256=v5tumU3RUI1X471z_t9bNUimk6Gs1qy9ie6XVYzlXd8,27
+dagster_datadog-0.19.14rc1.dist-info/LICENSE,sha256=-gtoVIAZYUHYmNHISZg982FI4Oh19mV1nxgTVW8eCB8,11344
+dagster_datadog-0.19.14rc1.dist-info/METADATA,sha256=I5TR_6i7oReN9B3TcKZUymG9ppEiMuayRp5QSRxgVQs,740
+dagster_datadog-0.19.14rc1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dagster_datadog-0.19.14rc1.dist-info/top_level.txt,sha256=B2EQD-qoVol3nMOd1ugpHAaCOXanRb4n3TVtiKzeka4,16
+dagster_datadog-0.19.14rc1.dist-info/RECORD,,
