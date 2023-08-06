@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: SGtSNEpiPy
+Version: 1.0.0
+Summary: SGtSNEpiPy is a Python interface for the SG-t-SNE-П algorithm, a powerful tool for visualizing large, sparse, stochastic graphs.
+Author: ['Yihua Zhong', 'Chenshuhao Qin']
+Author-email: yz737@duke.edu,cq27@duke.edu
