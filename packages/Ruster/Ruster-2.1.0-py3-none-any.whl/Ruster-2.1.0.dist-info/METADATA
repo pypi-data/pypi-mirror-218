@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Ruster
+Version: 2.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Pawan Kumar
+Author-email: control@vvfin.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cryptography
+Requires-Dist: itsdangerous
+Requires-Dist: jinja2
+Requires-Dist: nexusdb
+Requires-Dist: pyjwt
+Requires-Dist: rustadmin
+Requires-Dist: uuid
+Requires-Dist: werkzueg
+
+UNKNOWN
+
