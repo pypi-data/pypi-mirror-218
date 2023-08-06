@@ -1,0 +1,10 @@
+cql/__init__.py,sha256=jF51P4TlzukNo1qtOK7qPVp7HpByqxfCTEthJJAM3B4,1311
+cql/__main__.py,sha256=8uKe7zbOr1J5i2dFMZDnUXVmYQyIN2KnynC9cjl7yBo,2295
+cql/lexer.py,sha256=9FKKTdmrsWROGKDy8zGFar3WZssnTd5mBLi89BmYCY0,3114
+cql/parser.py,sha256=vk8bLxEYMqDaRqHa-0imhX7SI4QjHoLmWplfMv4a1Ws,29451
+cql/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cql_parser-1.0.0.dist-info/METADATA,sha256=usM0JwLN18u8MWP0mgI5BnNRgJDy7OgocmjprTXvKoc,4021
+cql_parser-1.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+cql_parser-1.0.0.dist-info/top_level.txt,sha256=srT8dobJ9CCrD6Cns8x_3IE5TwyFAL8otm8y0JAeOII,4
+cql_parser-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cql_parser-1.0.0.dist-info/RECORD,,
