@@ -1,0 +1,3 @@
+hspylib
+PyQt5
+PyQt5-stubs
