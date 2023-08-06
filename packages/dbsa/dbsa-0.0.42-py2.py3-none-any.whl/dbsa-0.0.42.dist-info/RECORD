@@ -1,0 +1,11 @@
+dbsa/__init__.py,sha256=AWs_dfJjuWh7VhlAFqXgBvSEdFWFWI_DFuTMs4TOBQY,20273
+dbsa/hive.py,sha256=eJzQ7EZzFp2dsMz0vZ5_PyxOfOod0gRI-m1FC4RoPHI,9181
+dbsa/markdown.py,sha256=IlxZSkaXuzHCTnIxP_Sal7UXV-4JWFi8IN4C2XQgyig,1357
+dbsa/presto.py,sha256=9zjUAdBQXXwZONrcbc6qBn9gK3yH1VutgzXGz70k2_I,8760
+dbsa/redshift.py,sha256=Sw5WEgns6-WsRm7kYsv_Qdxon8NIERz5hy7uNenCGD8,15579
+dbsa-0.0.42.dist-info/LICENSE,sha256=Oa-2sJxX0Cb6nbNmUPR5p90PmYHJFiJGinP2SUlQSf8,1065
+dbsa-0.0.42.dist-info/METADATA,sha256=CExThTwkKDVbigymmwg6dsHNej6jteNm6AJWxb2hMYw,241
+dbsa-0.0.42.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+dbsa-0.0.42.dist-info/entry_points.txt,sha256=GIcf1f51nQtM98n19RUHa14PDtq5brvUvLQ18tIQrPI,53
+dbsa-0.0.42.dist-info/top_level.txt,sha256=sMAhPuOM7IpXi9Z3PhFY23Mo3VdQ8HGDB2QXVSfwqwI,5
+dbsa-0.0.42.dist-info/RECORD,,
