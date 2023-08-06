@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: torch-compose
+Version: 0.1.2
+Summary: 
+Author: Alex Naka
+Author-email: alex.naka@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: graphlib (>=0.9.5,<0.10.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: networkx (>=3.1,<4.0)
+Requires-Dist: torch (>=1.7.0)
+Description-Content-Type: text/markdown
+
+
