@@ -1,0 +1,6 @@
+qmcm.py
+setup.py
+QMCM.egg-info/PKG-INFO
+QMCM.egg-info/SOURCES.txt
+QMCM.egg-info/dependency_links.txt
+QMCM.egg-info/top_level.txt
