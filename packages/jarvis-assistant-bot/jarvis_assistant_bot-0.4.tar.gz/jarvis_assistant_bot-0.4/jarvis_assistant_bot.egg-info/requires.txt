@@ -1,0 +1,3 @@
+prettytable
+prompt_toolkit
+colorama

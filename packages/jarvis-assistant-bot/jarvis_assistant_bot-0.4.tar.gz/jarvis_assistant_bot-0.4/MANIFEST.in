@@ -1,0 +1,15 @@
+tp_personal_assistant/
+    src/
+        __init__.py
+        commands.py
+        common_functions.py
+        main.py
+        memory.py
+        notes_core.py
+        save_load_book.py
+        save_load_notebook.py
+        sorter.py
+    setup.py
+    MANIFEST.in
+    CODE_OF_CONDUCT.md
+    README.md
