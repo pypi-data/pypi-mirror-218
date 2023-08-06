@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NeuroNode"
+version = "3.36"
+authors = [
+  { name="Jay Singh", email="jaysinghdulrasar@gmail.com" },
+]
+description = '''The Neuro Node is an advanced visual processing model that offers a comprehensive development environment for creating visually immersive experiences. Utilizing a vast neural network comprising more than 1 trillion parameters, the Neuro Node has been extensively trained to generate high-quality humanoid graphics with remarkable realism.
+WebSite : https://neuro-node.web.app'''
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"WebApp" = 'https://neuro-node.web.app'
