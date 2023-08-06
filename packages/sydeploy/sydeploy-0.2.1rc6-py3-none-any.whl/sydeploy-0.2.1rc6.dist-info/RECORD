@@ -1,0 +1,12 @@
+syd/__init__.py,sha256=ArxNaOC1T9FrSk2xTeyDPG3HbJ6Q6ArDXMmo-1UqPGo,133
+syd/run.py,sha256=rpPvDPUrQ9hGhvNqq-FUfVmi4wSfjA6sqpqnEJMTgY4,136
+syd/syd_exceptions.py,sha256=BU5F1x81--SV7aVxynoUEHlu6b9LDFiQf2GnNazcs9c,149
+syd/templates/meta.yaml.dist,sha256=XkJkfyrFwtMQqhrZaRNiCx_1TCbSMT1gz7TX0ngQcmc,388
+syd/templates/setup.py.dist,sha256=kN0BaVS5hPiiASND6SXelU40c5JdDnJ8z2XXRJDxsE0,287
+syd/utils/simple.py,sha256=ciDkrjBl6sUVOSuMcfUA9hgPkyjzZfXD6zSqfLYJdzU,810
+sydeploy-0.2.1rc6.dist-info/LICENSE,sha256=pmd0NHLeCsH7lpQg9c9Jpnwa_aJJ7WGt0BqNsuLgxms,1068
+sydeploy-0.2.1rc6.dist-info/METADATA,sha256=1u6dN8op0KOv7M_AyMmzG4XzXX6HLo95xkSpAw109uI,297
+sydeploy-0.2.1rc6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sydeploy-0.2.1rc6.dist-info/entry_points.txt,sha256=ZHqBz0uyDXmxK8duFk8Mx4Bfii02065bU7GC1Mu77kU,37
+sydeploy-0.2.1rc6.dist-info/top_level.txt,sha256=UK4UzEPj47nzBFqCjtsiT_XxcFeug2XVmtwnEbEcWsA,4
+sydeploy-0.2.1rc6.dist-info/RECORD,,
