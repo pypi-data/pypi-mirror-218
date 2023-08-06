@@ -1,0 +1,8 @@
+pyferret/__init__.py,sha256=P9pgQyYFnD7uaDXhIoqKc7wjm7SGoVejobfzmNVgro4,287
+pyferret/abstract.py,sha256=MBxdvGM0V8x_qXltA2t61QBrkeFm6QEwLWfOe0IPvr0,1025
+pyferret/maybe.py,sha256=WcfJMABoeW478F9E79IKWNQwTbDqt2vZ_49mtBNu_Uw,5676
+pyferret/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyferret/result.py,sha256=bize3akj8Mxg_kumj0uveX9LXQihfccVOeLMZb_FzXk,5871
+pyferret-0.2.0.dist-info/METADATA,sha256=3Ceb0ImNdQl2EreFZDX9oFNrqDoUCRwSTJD_kpO8_EQ,6658
+pyferret-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyferret-0.2.0.dist-info/RECORD,,
