@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ecallisto_ng
+Version: 0.0.1
+Summary: A Python package for the fetching (and some processing) of eCallisto data via the eCallisto API.
+Author-email: Vincenzo Timmel <vincenzo.timmel@fhnw.ch>
+Project-URL: Homepage, https://github.com/i4Ds/ecallisto_ng
+Project-URL: Bug Tracker, https://github.com/i4Ds/ecallisto_ng/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ecallisto_ng
