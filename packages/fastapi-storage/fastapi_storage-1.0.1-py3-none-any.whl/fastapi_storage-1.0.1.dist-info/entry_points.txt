@@ -1,0 +1,2 @@
+[console_scripts]
+storage:link = filesystem.__main__:main
