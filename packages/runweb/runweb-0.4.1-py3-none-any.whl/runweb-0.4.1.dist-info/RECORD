@@ -1,0 +1,15 @@
+runweb-0.4.1.dist-info/METADATA,sha256=iGYVtUI3l1Pb9IPZqKrTJC30fqIRQ1VKXqDmEET2R_w,1484
+runweb-0.4.1.dist-info/WHEEL,sha256=g58cvAsF5_9d0VXJuk7F0rhl6nAjUc5P9vx880WkZtI,90
+runweb-0.4.1.dist-info/entry_points.txt,sha256=LKRQpIpmpyts8mOm7XiL-u9_dRwSukrC8EKK7c7o1-c,44
+runweb-0.4.1.dist-info/licenses/LICENSE,sha256=-RBNu67SBYlloxdDE_-gXjF3d4rNlQCyX6aVBCHmnBY,11341
+runweb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+runweb/__main__.py,sha256=OZiv2lofXUjrywlMKp0UfawCvpI9mE4Ia2wyUt_oS4U,29
+runweb/__version__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+runweb/logging.py,sha256=HsUnvguhqhyjR6X9e6GbzkCTBSZQY2dX0Y6HIZ51GtE,147
+runweb/main.py,sha256=EQ_vyAdxNsg2sjVY13Nge9rua9sJkAT15nyX827rGo8,3630
+runweb/multiprocess.py,sha256=sB4_8IseDm5T22bBP8pS0RvzG4hCMrjXf95VUeHIdSc,2205
+runweb/parse.py,sha256=x4q4Jn_Ic3z6cgrtKCRKqDCzUXtWuMJHygMAwmh5kgo,1640
+runweb/runner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+runweb/runner/uvicorn.py,sha256=WxS69HkQ_CyzNydfsONLT3Tkw2PDyywiJuIPviJKT4Y,1006
+runweb/runner/waitress.py,sha256=vaxA38USLLQVOyefND3bmZM7OZmRkQdN0lxkrDJD_6c,983
+runweb-0.4.1.dist-info/RECORD,,
