@@ -1,0 +1,10 @@
+storage/__init__.py,sha256=yzn6v_aT9fbFJrnrXqABqkTjgQdVf5WTDxpFogMd8P8,2538
+storage/b1.py,sha256=SR9X6yfls6uBM-qFPveEc3x_lvu8-f-1qVVdeu0qjKQ,2099
+storage/b3.py,sha256=PWi1ofeQfr8tPob8kvBruieR3HnuP9GuC5U3L2QE5wg,4703
+storage/env.py,sha256=n2_ycoT9p09KgFlAEGmDwbSMSlA2pLR6yPBvjToKheY,1116
+storage/minio_client.py,sha256=jyoVssKUhH6523C4tlYdZus-sssJByMIEJcVaen9zk8,2633
+storage/obs.py,sha256=PAlEpz4NsZE7exX8pnddKQe2335yldvoR8B9aj1pk_E,1308
+taichu_storage-0.0.1.dist-info/METADATA,sha256=A05LiD9wij4TvcW88KjbyItwqZbbi45FnZCjFnG4ZLg,329
+taichu_storage-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taichu_storage-0.0.1.dist-info/top_level.txt,sha256=yphqphSuwRzNyEfTnt0xnNv02quslUAR1yj7mKZ_KxI,8
+taichu_storage-0.0.1.dist-info/RECORD,,
