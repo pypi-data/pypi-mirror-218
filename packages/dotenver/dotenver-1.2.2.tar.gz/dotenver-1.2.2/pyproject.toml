@@ -1,0 +1,56 @@
+[project]
+authors = [
+    { name = "Federico Jaramillo Martínez", email = "federicojaramillom@gmail.com" },
+]
+requires-python = ">=3.7,<4.0"
+dependencies = [
+    "jinja2<4.0,>=2.0",
+    "faker<2.0,>=1.0",
+    "colorama<1.0.0,>=0.4.1",
+]
+name = "dotenver"
+version = "1.2.2"
+description = "Automatically generate .env files from .env.example template files"
+readme = "README.rst"
+keywords = [
+    "dotenv",
+    "template",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+]
+
+[project.license]
+text = "BSD-3-Clause"
+
+[project.urls]
+repository = "https://github.com/jmfederico/dotenver"
+
+[project.scripts]
+dotenver = "dotenver.cli:cli"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest",
+    "docutils",
+    "pygments",
+    "toml",
+]
+
+[tool.pdm.scripts]
+_tox_requirements = "pdm export --pyproject -d -f requirements -o .tox.requirements.txt"
+_tox = "tox"
+
+[tool.pdm.scripts.tox]
+composite = [
+    "_tox_requirements",
+    "_tox",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
