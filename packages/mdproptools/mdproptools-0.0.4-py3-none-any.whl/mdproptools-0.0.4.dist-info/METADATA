@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: mdproptools
+Version: 0.0.4
+Summary: mdproptools contains MD analysis tools
+Home-page: https://github.com/molmd/mdproptools
+Author: Rasha Atwi, Matthew Bliss, Maxim Makeev
+Author-email: rasha.atwi@stonybrook.edu, matthew.bliss@stonybrook.edu, maxim.makeev@stonybrook.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.21.1)
+Requires-Dist: matplotlib (>=3.3.1)
+Requires-Dist: scipy (>=1.5.2)
+Requires-Dist: pandas (>=1.1.2)
+Requires-Dist: seaborn (>=0.11.0)
+Requires-Dist: statsmodels (>=0.12.0)
+Requires-Dist: numba (==0.56.4)
+Requires-Dist: llvmlite (==0.39.1)
+Requires-Dist: doepy (>=0.0.1)
+
+# <img alt="mispr" src="docs/logo.png" width="500">
+
+# MDPropTools: MD Property Tools 
+
+**Rasha Atwi, Matthew Bliss, Maxim Makeev, and Nav Nidhi Rajput**
+
+**Stony Brook University** 
+
+# Table of Contents 
+
+# Introduction 
+MDPropTools is a Python package for computing structural and dynamical properties from 
+LAMMPS trajectory and output files. 
+
+- **Source:** https://github.com/molmd/mdproptools
+
+# Installation
+MDPropTools can be installed using pip:
+````
+pip install mdproptools
+````
+Or by cloning the repository and running the setup script:
+````
+git clone https://github.com/molmd/mdproptools.git
+cd mdproptools
+python setup.py install
+````
+
+# Usage 
+
+# Citation 
+If you use MDPropTools in your research, please cite the following paper:
+- Atwi, R., Bliss, M., Makeev, M., & Rajput, N. N. (2022). [MISPR: An automated infrastructure for high-throughput DFT and MD simulations](https://www.nature.com/articles/s41598-022-20009-w). Scientific Reports, 12(1), 1-16.
+
+
