@@ -1,0 +1,12 @@
+visionscript/__init__.py,sha256=thxPOsqHUdThrGnok2-F4dvdRAi_9uXK16Aio2lIOQM,55
+visionscript/cloud.py,sha256=ggN7W2VcJlUEj8YPa9ER4N3coRRQ314LKtLoaZReU4Q,3343
+visionscript/grammar.py,sha256=ZnhgyZW8AajHyBWkW3YkK_10c6Rw1pNccY5vWDZRK-w,3310
+visionscript/lang.py,sha256=-IVy0dqX9vBatYsBp0AjJpC1PhyU2mRdSZs3CJmPKRY,45539
+visionscript/notebook.py,sha256=RbxtY1RxlcMg8dlhjW_Ghg769Axe4Wvz5nbDSWNivHs,5753
+visionscript/usage.py,sha256=r_XLMQcAs8w7yetBjVyLWtb6iIJP6LcFv2ktXwWyrOw,2216
+visionscript-0.0.3.dist-info/LICENSE,sha256=Gze1D_kviYutkyul6tncib7zOIsAjd5wadfCYpHG3Io,1056
+visionscript-0.0.3.dist-info/METADATA,sha256=OzAl2xMBZ5Emiw0fmbWxjzjjOJ6w8kYwnjrC4xeFfvc,6184
+visionscript-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+visionscript-0.0.3.dist-info/entry_points.txt,sha256=fLV7SdiM6cu-jAxnk_fzhgFFaX_6059dBOXvTrWkOEs,56
+visionscript-0.0.3.dist-info/top_level.txt,sha256=CaLz-NaOMM33DPDBrzxw-Hu5hXTf32g2yXKJ3OaBvmg,13
+visionscript-0.0.3.dist-info/RECORD,,
