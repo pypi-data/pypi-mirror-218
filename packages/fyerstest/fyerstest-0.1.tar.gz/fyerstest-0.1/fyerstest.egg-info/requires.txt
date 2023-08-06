@@ -1,0 +1,6 @@
+aiohttp==3.8.4
+Requests==2.31.0
+websocket_client==1.2.1
+websocket_client==1.2.1
+websockets==8.1
+aws_lambda_powertools==2.19.0
