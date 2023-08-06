@@ -1,0 +1,16 @@
+jupyterlab_vim/__init__.py,sha256=mXeNe8hJh4QxTHKZvx6nDsUZ6q7nFMgUCK73vqTj4Mk,319
+jupyterlab_vim/_version.py,sha256=U_PEELs32hl1zeeRiBFlUT-oWqeMM2f5EKPFoz-4Ox4,440
+jupyterlab_vim/labextension/package.json,sha256=sJtK8k0S4tMpTbRYzYc73hyHMALI9zeX0-fGgvIKjuc,2620
+jupyterlab_vim/labextension/schemas/@ryantam626/jupyterlab_vim/package.json.orig,sha256=sJtK8k0S4tMpTbRYzYc73hyHMALI9zeX0-fGgvIKjuc,2620
+jupyterlab_vim/labextension/schemas/@ryantam626/jupyterlab_vim/plugin.json,sha256=Gbel10-8SEUafAbkRdl7ZDOWhM17jUcw9kvkC2qQQ14,10940
+jupyterlab_vim/labextension/static/style.js,sha256=S0dNcfBIKwBzM0CC9CusqMPoWSEovhA1tOmZsY_TOkc,169
+ryantam626_jupyterlab_vim-0.16.2.data/data/share/jupyter/labextensions/@ryantam626/jupyterlab_vim/install.json,sha256=-0mcjX9ZVTdvGcNJWDwN8h79GCdidZJOe-8IykavLZU,189
+ryantam626_jupyterlab_vim-0.16.2.data/data/share/jupyter/labextensions/@ryantam626/jupyterlab_vim/package.json,sha256=sJtK8k0S4tMpTbRYzYc73hyHMALI9zeX0-fGgvIKjuc,2620
+ryantam626_jupyterlab_vim-0.16.2.data/data/share/jupyter/labextensions/@ryantam626/jupyterlab_vim/schemas/@ryantam626/jupyterlab_vim/package.json.orig,sha256=sJtK8k0S4tMpTbRYzYc73hyHMALI9zeX0-fGgvIKjuc,2620
+ryantam626_jupyterlab_vim-0.16.2.data/data/share/jupyter/labextensions/@ryantam626/jupyterlab_vim/schemas/@ryantam626/jupyterlab_vim/plugin.json,sha256=Gbel10-8SEUafAbkRdl7ZDOWhM17jUcw9kvkC2qQQ14,10940
+ryantam626_jupyterlab_vim-0.16.2.data/data/share/jupyter/labextensions/@ryantam626/jupyterlab_vim/static/style.js,sha256=S0dNcfBIKwBzM0CC9CusqMPoWSEovhA1tOmZsY_TOkc,169
+ryantam626_jupyterlab_vim-0.16.2.dist-info/LICENSE,sha256=5Z35WKn9oIxzj_DNGCHw-_KDgJTR5dSe41j8rVPMmTI,1069
+ryantam626_jupyterlab_vim-0.16.2.dist-info/METADATA,sha256=IHN7kc_3-EUtj43dgkRBaPegROp5CeEYDdggkn3i_eI,1088
+ryantam626_jupyterlab_vim-0.16.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ryantam626_jupyterlab_vim-0.16.2.dist-info/top_level.txt,sha256=nxkGXT-to2KrQwCuBH3Uog8u0ncKC9t5qaYbZamIN6k,15
+ryantam626_jupyterlab_vim-0.16.2.dist-info/RECORD,,
