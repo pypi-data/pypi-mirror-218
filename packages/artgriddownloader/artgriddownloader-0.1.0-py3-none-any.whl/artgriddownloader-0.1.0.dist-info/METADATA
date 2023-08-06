@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: artgriddownloader
+Version: 0.1.0
+Summary: Ferramenta para baixar vídeos do artGrid sem registro
+License: Proprietary
+Keywords: artgrid,download,ffmpeg,poetry,downloader
+Author: RaphaP3
+Author-email: rapha.pego@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-ffmpeg (>=2.0.4,<3.0.0)
+Requires-Dist: selenium (>=4.10.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+## ArtGrid Downloader
+
+Ferramenta para baixar vídeos do ArtGrid sem registro
+
+### Usagem:
+
+> artgrid [link] [nome do arquivo]
+
+Não coloque extensão ex. `.mp4` no nome do arquivo

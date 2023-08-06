@@ -1,0 +1,3 @@
+[console_scripts]
+artgrid=src.main:run
+
