@@ -1,0 +1,10 @@
+myass/__init__.py,sha256=LdGJoTq0gIPpPy8FjHiCc_c6cu8q-y7dioehO_oJ_78,35
+myass/assistant.py,sha256=JuaY3dWxg5kEyxO1xz502yTQp1k1PbB3wg8sI7M5aBE,730
+myass/cli.py,sha256=XCVO4P8na7UKw1UnFcKHl4_mA1eCdVF15qOPq7Rzuak,387
+myass/config.py,sha256=PqewJlZqjM1K26OHbIc4LqUKrJYZRP65p3y4NoWjugo,306
+myass/config_default.yaml,sha256=rr2xiAd-PYbPpQhLZN1Uo4CTSKt1aCYjOGi8cvzC4sk,25
+myass-0.1.2.dist-info/entry_points.txt,sha256=IHtQIpxXOKFZSr8oZ4CfdBRqKHNcEwK6MY43ZLyDIoU,40
+myass-0.1.2.dist-info/LICENSE,sha256=aQh0YKCAhojw7llvt0q6HZp_frehXLtTZoiwKhMATu8,1080
+myass-0.1.2.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+myass-0.1.2.dist-info/METADATA,sha256=fO3TOFIwOpSmRTyYtQlKw0o8FX4jJFMK4CiqA1ogCuA,306
+myass-0.1.2.dist-info/RECORD,,

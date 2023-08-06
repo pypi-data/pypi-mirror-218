@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: myass
+Version: 0.1.2
+Summary: myass
+Author-email: Chris Coleman <chris@chriscoleman.uk>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click
+Requires-Dist: oaix
+
+# myass
+
+## Installation
+
+```bash
+pip install myass
+```
+
