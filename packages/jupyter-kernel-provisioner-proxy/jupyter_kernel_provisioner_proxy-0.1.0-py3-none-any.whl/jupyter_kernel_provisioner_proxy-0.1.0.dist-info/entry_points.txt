@@ -1,0 +1,5 @@
+[console_scripts]
+jupyter-kernel-provisioner-proxy = jupyter_kernel_provisioner_proxy.cli:main
+
+[jupyter_client.kernel_provisioners]
+jupyter-kernel-provisioner-proxy = jupyter_kernel_provisioner_proxy.client:RemoteKernelProvisioner

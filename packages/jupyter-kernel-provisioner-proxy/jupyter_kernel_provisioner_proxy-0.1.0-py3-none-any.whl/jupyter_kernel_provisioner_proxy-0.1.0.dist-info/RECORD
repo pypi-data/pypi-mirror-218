@@ -1,0 +1,10 @@
+jupyter_kernel_provisioner_proxy/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+jupyter_kernel_provisioner_proxy/cli.py,sha256=KHbBHA11QBTYAQHMNq9zVH4lZTdClfId-JJEJlU4--I,1297
+jupyter_kernel_provisioner_proxy/client.py,sha256=DzImu6xw26EDij6aWJRHS9Xtxjk5UdLXp3s2YAweOEY,11883
+jupyter_kernel_provisioner_proxy/connect.py,sha256=6xCBNTjc7to_PGUH_IDMIBRgzNfjJTh1FmlY5JkxLZ4,762
+jupyter_kernel_provisioner_proxy/message.py,sha256=vxfM2NsIv63auroPTFPwewFXSncVGUE3xEDJCEe6O-8,5446
+jupyter_kernel_provisioner_proxy-0.1.0.dist-info/METADATA,sha256=zjlbBuOwUl2PY9Jbj-GIIOrFfwtB7Y1PUER0tIu6uzM,2816
+jupyter_kernel_provisioner_proxy-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+jupyter_kernel_provisioner_proxy-0.1.0.dist-info/entry_points.txt,sha256=OyF_iqpw2PYVfhHGxPYQ8X0UizkCWc8ec2ubBxN9X8A,232
+jupyter_kernel_provisioner_proxy-0.1.0.dist-info/licenses/LICENSE,sha256=9stplgn8rtMDvWxUkcaS3dUfWpviN4XiguPVVinAMY4,1071
+jupyter_kernel_provisioner_proxy-0.1.0.dist-info/RECORD,,
