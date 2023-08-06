@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: transcal
+Version: 1.0.0
+Summary: 'transcal' is a package which contain the transistor analyzes
+Project-URL: Homepage, https://github.com/CanGulmez/transcal
+Author-email: Can Gulmez <ahmetcangulmez02@gmail.com>
+License-File: LICENSE
+Keywords: electornics, transistors
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## TransCal: Transistor Analyzer
+
+`transcal` package include so popular transistor configuration. 
+It provides analysing transistors in `dc` and `ac` states.
+
+### Features
+I've seperated this project into three main part:
+
++ `BJTAnalysis` provide analysis of bjt type transistors.
++ `JFETAnalysis` provide analysis of jfet type transistors.
++ `MOSFETAnalysis` provide analysis of mosfet type transistors.
+
+Also, there are some different methods for getting easy.
+
+### Installation
+
++ `pip install transcal`
+
+### License
+
++ MIT License

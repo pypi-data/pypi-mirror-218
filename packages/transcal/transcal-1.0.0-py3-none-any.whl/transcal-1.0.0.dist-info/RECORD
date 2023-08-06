@@ -1,0 +1,9 @@
+transcal/BJT.py,sha256=UCoMgfpqmMAX8QTZRQc9aKmeQ5MzW5qLmQLuyMnA5eQ,29748
+transcal/JFET.py,sha256=W816or--KYZ7Bz0t_6QDvxOlytxyPkOvxnk08kkECW0,15455
+transcal/MOSFET.py,sha256=76FWD57RobN9-j5aWKp2hEP7VysXrJXZcCYEYVmGTVo,8276
+transcal/__init__.py,sha256=EHdZaaH41rXX1ecQY1pmVVQv8pHEz4mlDfeZbZwrys4,812
+transcal/errors.py,sha256=0mJ7sob_kRHGWQtAdhAxoZ3LYEQPPDz__GwVhLov65g,1714
+transcal-1.0.0.dist-info/METADATA,sha256=VOjWnYs13d5kSc-LbRK95n3W07Y_UxkOIWOTjwF36N4,1039
+transcal-1.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+transcal-1.0.0.dist-info/licenses/LICENSE,sha256=qBT8a26ArC9ZtuU-1aWNArckfSQ2_hgbpf-6DgAa_PU,1090
+transcal-1.0.0.dist-info/RECORD,,
