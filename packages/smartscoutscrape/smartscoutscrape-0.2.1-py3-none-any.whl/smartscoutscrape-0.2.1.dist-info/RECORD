@@ -1,0 +1,12 @@
+smartscoutscrape/__init__.py,sha256=-qgJ8gqwUKK_tBp5czUBGGxi6t98LE4R_cdvHsLx-k0,2331
+smartscoutscrape/amazon.py,sha256=VSVhriUYqdyVFO0FnIvrBx_oc_UuQCgAOul-XdJEKcI,7509
+smartscoutscrape/cli.py,sha256=YFn_SSEHccPKj5XSgAyXnpHCYdOGsEdlBJ3zX6nSm0c,6422
+smartscoutscrape/pandas.py,sha256=xA5JpeWuERGgl86NXWnlaYYuSM-sJioVqfBiIZ8fE1g,6638
+smartscoutscrape/smartscout.py,sha256=RGQrwT4Bj_vVmk_CjJYS4kFQPXVROv6HMCqwYXGoqLs,14978
+smartscoutscrape/sqlite.py,sha256=eGuJ8eL8-8xzMHpxPpd4wpNfEgASuW9qfRqidHbAQok,28077
+smartscoutscrape/utils.py,sha256=9UL6-BRzJnbOkTMJLF8jKHLnr8x5xXnrDE3RFeDs84M,1892
+smartscoutscrape-0.2.1.dist-info/entry_points.txt,sha256=W7DetSvcvUQDanxrnvhwNNN6txEWwoh3hromhE6j7NQ,62
+smartscoutscrape-0.2.1.dist-info/LICENSE.txt,sha256=-iQ_2OuasdD-4A9oUl4VoSb2_uQFR-C8tnWH72WiWf0,10912
+smartscoutscrape-0.2.1.dist-info/METADATA,sha256=llsMzpyTVXRYo7-9ZW6ST2cLNYN5F4hENbLroV1c2r4,5914
+smartscoutscrape-0.2.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+smartscoutscrape-0.2.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+smartscout-scrape=smartscoutscrape.cli:cli
+
