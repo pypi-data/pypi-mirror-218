@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+display/__init__.py
+display/chart.py
+display/layout.py
+display/stack.py
+resources/default.css
+resources/template.tpl
+stackviz.egg-info/PKG-INFO
+stackviz.egg-info/SOURCES.txt
+stackviz.egg-info/dependency_links.txt
+stackviz.egg-info/requires.txt
+stackviz.egg-info/top_level.txt
