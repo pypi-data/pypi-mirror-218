@@ -1,0 +1,3 @@
+[console_scripts]
+fm91=fm91.main:app
+
