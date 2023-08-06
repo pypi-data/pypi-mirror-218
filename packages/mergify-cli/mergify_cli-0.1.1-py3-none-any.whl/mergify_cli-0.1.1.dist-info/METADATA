@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mergify-cli
+Version: 0.1.1
+Summary: 
+Author: Mehdi Abaakouk
+Author-email: sileht@mergify.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.20.0)
+Requires-Dist: rich (>=10.11.0)
