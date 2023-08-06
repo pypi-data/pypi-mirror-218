@@ -1,0 +1,14 @@
+skycalc_ipy/__init__.py,sha256=zuV9BC9N-VEh0fXr9lZmcgznl08qtUYlZA5tJXGDkf0,592
+skycalc_ipy/core.py,sha256=_T8p-qBG1262lIZvy8GSMahLYSHfcEP3ddhP1eEmo-8,18202
+skycalc_ipy/params.yaml,sha256=x5G-s4KD37lSVATu-993DyGzRXHKswVLwT4czIKqCPI,4521
+skycalc_ipy/ui.py,sha256=3Epuf03wfL6NlPv6ntRfOYTWO2Nsld2nyefH1Bh6ARw,8348
+skycalc_ipy/version.py,sha256=hhJTdUDjWwN-AQ4FKdbbGvad12ILC4zR5Xs7tP8MD80,105
+skycalc_ipy/data/almanacquery_165c934eb0ad618a6f874d193e3013a5d8eeac6f3fd986076ae474746cdde416.json,sha256=UzjfuXJ7SVICwY_Cnhj4fXIupbGr1KXWx50NlU2iwGc,4790
+skycalc_ipy/data/almanacquery_165c934eb0ad618a6f874d193e3013a5d8eeac6f3fd986076ae474746cdde416.params.json,sha256=acVbyJ5yJaeAUvCn4GK6kfG7fBt-VXomCbc-KdgAO1g,174
+skycalc_ipy/data/skymodel_100c4b1167bb736756014695fbf69a57d1af3b52f8f14a2af1144d3b4122647b.fits,sha256=FBMaUG-48G-dkq_2pX14E8EfxsHshgHDvOIO6Pkt1yk,20160
+skycalc_ipy/data/skymodel_100c4b1167bb736756014695fbf69a57d1af3b52f8f14a2af1144d3b4122647b.params.json,sha256=BfrGEZFCLEXHEyVZxjJ0X3-myn0pfM1cA4x6tTIMPNQ,672
+skycalc_ipy-0.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+skycalc_ipy-0.1.4.dist-info/METADATA,sha256=F4sNx5hxeyQSuHZqruUA1Fxz6tNBjeCg5k_DCPGFhBA,2564
+skycalc_ipy-0.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+skycalc_ipy-0.1.4.dist-info/top_level.txt,sha256=ZF-bCWBJ-6uoss-F2mMRi20cHn7aTacmI7GgCo_WxKs,12
+skycalc_ipy-0.1.4.dist-info/RECORD,,
