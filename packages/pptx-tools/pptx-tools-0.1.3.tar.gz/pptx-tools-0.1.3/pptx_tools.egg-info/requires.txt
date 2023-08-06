@@ -1,0 +1,14 @@
+azure-cognitiveservices-speech
+coloredlogs
+extendedos>=0.1.5
+google-cloud-speech
+google-cloud-texttospeech
+langdetect
+lxml
+pydub
+python-pptx
+termcolor
+tqdm
+
+[:python_version < "3.0"]
+pathlib
