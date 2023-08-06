@@ -1,0 +1,766 @@
+Metadata-Version: 2.1
+Name: atila-vue
+Version: 0.4.0
+Summary: Atila Extension For VueJS 2 SFC and SSR
+Home-page: https://gitlab.com/atila-ext/atila-vue
+Author: Hans Roh
+Author-email: hansroh@gmail.com
+License: MIT
+Download-URL: https://pypi.python.org/pypi/atila-vue
+Platform: posix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: JavaScript
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: atila
+Requires-Dist: jinja2
+
+
+## Introduction
+
+Atla-Vue is [Atila](https://pypi.org/project/atila/) extension package for
+using [vue3-sfc-loader](https://github.com/FranckFreiburger/vue3-sfc-loader)
+and [Bootstrap 5](https://getbootstrap.com/).
+
+It will be useful for building simple web service at situation frontend developer
+dose not exists.
+
+Due to the [vue3-sfc-loader](https://github.com/FranckFreiburger/vue3-sfc-loader),
+We can use **vue single file component** on the fly without any compiling or
+building process.
+
+Atila-Vue composes these things:
+
+- VueJS 3
+- VueRouter
+- Vuex
+- Optional Bootstrap 5 for UI/UX
+
+For injecting objects to Vuex, it uses [Jinja2](https://jinja.palletsprojects.com) template engine.
+
+### Why Do I Need This?
+- Single stack frontend developement, No 500M `node_modules`
+- Optimized multiple small SPA/MPAs in single web service
+- SSR and SEO advantage
+
+### Full Example
+See [atila-vue](https://gitlab.com/atila-ext/atila-vue) repository and [atila-vue examplet](https://gitlab.com/atila-ext/atila-vue/-/tree/master/example).
+
+
+
+
+
+## Launching Server
+```shell
+mkdir myservice
+cd myservice
+```
+
+`skitaid.py`
+```python
+#! /usr/bin/env python3
+import skitai
+import atila_vue
+from atila import Allied
+import backend
+
+if __name__ == '__main__':
+    with skitai.preference () as pref:
+      skitai.mount ('/', Allied (atila_vue, backend), pref)
+    skitai.run (ip = '0.0.0.0', name = 'myservice')
+```
+
+`backend/__init__.py`
+```python
+import skitai
+
+def __config__ (pref):
+    pref.set_static ('/', skitai.joinpath ('backend/static'))
+    pref.config.MAX_UPLOAD_SIZE = 1 * 1024 * 1024 * 1024
+    pref.config.FRONTEND = {
+        "googleAnalytics": {"id": "UA-XXX-1"}
+    }
+
+def __app__ ():
+    import atila
+    return atila.Atila (__name__)
+
+def __mount__ (context, app):
+    import atila_vue
+
+    @app.route ("/api")
+    def api (context):
+        return {'version': atila_vue.__version__}
+
+    @app.route ("/ping")
+    def ping (context):
+        return 'pong'
+```
+
+Now you can startup service.
+```shell
+./serve/py --devel
+```
+Then your browser address bar, enter `http://localhost:5000/ping`.
+
+
+
+
+
+
+
+## Site Template
+`backend/templates/site.j2`
+```jinja
+{% extends 'atila-vue/bs5.j2' %}
+{% block lang %}en{% endblock %}
+{% block state_map %}
+    {{ set_cloak (False) }}
+{% endblock %}
+```
+
+
+
+
+
+
+## Multi Page App
+`backend/__init__.py`
+```python
+def __mount__ (context, app):
+  import atila_vue
+  @app.route ('/')
+  @app.route ('/mpa')
+  def mpa (context):
+      return context.render (
+          'mpa.j2',
+          version = atila_vue.__version__
+      )
+```
+
+`backend/templates/mpa.j2`
+```jinja
+{% extends 'site.j2' %}
+{% block content %}
+    {% include 'includes/header.j2' %}
+    <div class="container">
+      <h1>Multi Page App</h1>
+    </div>
+{% endblock content %}
+```
+
+
+
+
+
+
+
+## Single Page App
+`backend/__init__.py`
+```python
+def __mount__ (context, app):
+  import atila_vue
+  @app.route ('/spa/<path:path>')
+  def spa (context, path = None):
+      return context.render (
+          'spa.j2',
+          vue_config = dict (
+              use_router = context.baseurl (spa),
+              use_loader = True
+          ),
+          version = atila_vue.__version__
+      )
+```
+
+`backend/templates/spa.j2`
+```jinja
+{% extends 'site.j2' %}
+{% block content %}
+    {% include 'includes/header.j2' %}
+    {{ super () }}
+{% endblock %}
+```
+
+As creating vue files, vue-router will be automatically configured.
+- `backend/static/routes/spa/index.vue`: /spa
+- `backend/static/routes/spa/sub.vue`: /spa/sub
+- `backend/static/routes/spa/items/index.vue`: /spa/items
+- `backend/static/routes/spa/items/_id.vue`: /spa/items/:id
+
+
+### App Layout
+`backend/static/routes/spa/__layout.vue`
+```html
+<template>
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in" appear>
+      <div :key="route.name">
+        <keep-alive>
+          <component :is="Component" />
+        </keep-alive>
+      </div>
+    </transition>
+  </router-view>
+</template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
+
+<script setup>
+  const route = useRoute ()
+</script>
+```
+
+
+### Optional Component To Use In Pages
+`backend/static/routes/spa/components/myComponent.vue`
+```html
+<template>
+  My Component
+</template>
+
+<script setup>
+</script>
+```
+
+
+### Route Pages
+`backend/static/routes/spa/index.vue`
+```html
+<template>
+  <div class="container">
+    <h1>Main Page</h1>
+    <span class="example">
+      <i class="bi-alarm"></i>{{ msg }}</span>
+    <div><router-link :to="{ name: 'sub'}">Sub Page</router-link></div>
+    <div><router-link :to="{ name: 'items'}">Items</router-link></div>
+    <div><my-component></my-component></div>
+  </div>
+</template>
+
+<script setup>
+  import myComponent from '/routes/spa/components/myComponent.vue'
+  const msg = ref ('hello world!')
+</script>
+```
+
+
+`backend/static/routes/spa/sub.vue`
+```html
+<template>
+  <div class="container">
+    <h1>Sub Page</h1>
+    <div><router-link :to="{ name: 'index'}">Main Page</router-link></div>
+  </div>
+</template>
+```
+
+
+`backend/static/routes/spa/items/index.vue`
+```html
+<template>
+  <div class="container">
+    <h1>Items</h1>
+    <ul>
+      <li v-for="index in 100" :key="index">
+        <router-link :to="{ name: 'items/:id', params: {id: index}}">Item {{ index }}</router-link>
+      </li>
+    </ul>
+  </div>
+</template>
+```
+
+
+`backend/static/routes/spa/items/_id.vue`
+```html
+<template>
+  <div class="container">
+    <h1 class='ko-b'>Item {{ item_id }}</h1>
+  </div>
+</template>
+
+<style scoped>
+  .example {
+    color: v-bind('color');
+  }
+</style>
+
+<script setup>
+  const route = useRoute ()
+  const item_id = ref (route.params.id)
+  onActivated (() => {
+    item_id.value = route.params.id
+  })
+  watch (() => item_id.value,
+    (to, from) => {
+      log (`item changed: ${from} => ${to}`)
+    }
+  )
+</script>
+
+<script>
+  export default {
+   beforeRouteEnter (to, from, next) {
+      next ()
+    }
+  }
+</script>
+```
+
+
+
+
+
+
+
+
+
+
+## Using Vuex: Injection
+
+### Adding States
+`backend/templates/mpa.j2`.
+```jinja
+{% extends '__framework/bs5.j2' %}
+
+{% block state_map %}
+  {{ map_state ('page_id', 0) }}
+  {{ map_state ('types', ["todo", "canceled", "done"]) }}
+{% endblock %}
+```
+
+These will be injected to `Vuex` through JSON.
+
+Now tou can use these state on your vue file with `useStore`.
+```html
+<script setup>
+  const { state } = useStore ()
+  const page_id = computed ( () => state.page_id )
+  const msg = ref ('Hello World')
+</script>
+```
+
+### Cloaking Control
+`backend/templates/mpa.j2`.
+```jinja
+{% extends '__framework/bs5.j2' %}
+
+{% block state_map %}
+    {{ set_cloak (True) }}
+{% endblock %}
+```
+
+`index.vue` or nay vue
+```html
+<script setup>
+onMounted (async () => {
+  await sleep (10000) // 10 sec
+  set_cloak (false)
+})
+</script>
+```
+
+
+
+### State Injection Macros
+- `map_state (name, value, container = '', list_size = -1)`
+- `map_dict (name, **kargs)`
+- `map_text (name, container)`
+- `map_html (name, container)`
+- `set_cloak (flag = True)`
+- `map_route (**kargs)`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## JWT Authorization And Access Control
+
+### Basic About API
+
+#### Adding API
+`backend/services/apis.py`
+```python
+def __mount__ (app. mntopt):
+  @app.route ("")
+  def index (was):
+    return "API Index"
+
+  @app.route ("/now")
+  def now (was):
+    return was.API (result = time.time ())
+```
+
+Create `backend/services/__init__.py`
+```python
+def __setup__ (app. mntopt):
+  from . import apis
+  app.mount ('/apis', apis)
+```
+
+Then update `backend/__init__.py` for mount `services`.
+```python
+def __app__ ():
+    return atila.Atila (__name__)
+
+def __setup__ (app, mntopt):
+    from . import services
+    app.mount ('/', services)
+
+def __mount__ (app, mntopt):
+    @app.route ('/')
+    def index (was):
+        return was.render ('main.j2')
+```
+
+Now you can use API: http://localhost:5000/apis/now.
+
+
+#### Accessing API
+```html
+<script setup>
+  const msg = ref ('Hello World')
+  const server_time = ref (null)
+  onBeforeMount ( () => {
+    const r = await $http.get ('/apis/now')
+    server_time.value = r.data.result
+  })
+</script>
+```
+
+
+Vuex.state has `$apispecs` state and it contains all API specification of server side. We made only 1 APIs for now.
+
+**Note** that your exposed APIs endpoint should be `/api`.
+```js
+{
+  APIS_NOW: { "methods": [ "POST", "GET" ], "path": "/apis/now", "params": [], "query": [] }
+}
+```
+You can make API url by `backend.endpoint` helpers by `API ID`.
+```js
+const endpoint = backend.endpoint ('APIS_NOW')
+// endpoint is resolved into '/apis/now'
+```
+
+
+### Access Control
+
+#### Creating Server Side Token Providing API
+
+Update `backend/services/apis.py`.
+```python
+import time
+
+USERS = {
+    'hansroh': ('1111', ['staff', 'user'])
+}
+
+def create_token (uid, grp = None):
+    due = (3600 * 6) if grp else (14400 * 21)
+    tk = dict (uid = uid, exp = int (time.time () + due))
+    if grp:
+        tk ['grp'] = grp
+    return tk
+
+def __mount__ (app, mntopt):
+    @app.route ('/signin_with_id_and_password', methods = ['POST', 'OPTIONS'])
+    def signin_with_uid_and_password (was, uid, password):
+        passwd, grp = USERS.get (uid, (None, []))
+        if passwd != password:
+            raise was.Error ("401 Unauthorized", "invalid account")
+        return was.API (
+            refresh_token = was.mkjwt (create_token (uid)),
+            access_token = was.mkjwt (create_token (uid, grp))
+        )
+
+    @app.route ('/access_token', methods = ['POST', 'OPTIONS'])
+    def access_token (was, refresh_token):
+        claim = was.dejwt ()
+        atk = None
+        if 'err' not in claim:
+            atk = claim # valid token
+        elif claim ['ecd'] != 0: # corrupted token
+            raise was.Error ("401 Unauthorized", claim ['err'])
+
+        claim = was.dejwt (refresh_token)
+        if 'err' in claim:
+            raise was.Error ("401 Unauthorized", claim ['err'])
+
+        uid = claim ['uid']
+        _, grp = USERS.get (uid, (None, []))
+        rtk = was.mkjwt (create_token (uid)) if claim ['exp'] + 7 > time.time () else None
+
+        if not atk:
+            atk = create_token (uid, grp)
+
+        return was.API (
+            refresh_token = rtk,
+            access_token = was.mkjwt (atk)
+        )
+```
+
+You have responsabliity for these things.
+- provide `access token` and `refresh token`
+- `access token` must contain `str uid`, `list grp` and `int exp`
+- `refresh token` must contain `str uid` and `int exp`
+
+Now reload page, you can see `Vuex.state.$apispecs` like this.
+```js
+{
+  APIS_NOW: { "methods": [ "POST", "GET" ], "path": "/apis/now", "params": [], "query": [] },
+
+  APIS_ACCESS_TOKEN: { "methods": [ "POST", "OPTIONS" ], "path": "/apis/access_token", "params": [], "query": [ "refresh_token" ] },
+
+  APIS_SIGNIN_WITH_ID_AND_PASSWORD: { "methods": [ "POST", "OPTIONS" ], "path": "/apis/signin_with_id_and_password", "params": [], "query": [ "uid", "password" ] }
+}
+```
+
+
+
+
+
+#### Client Side Page Access Control
+
+We provide user and grp base page access control.
+```html
+<script>
+  export default {
+    beforeRouteEnter (to, from, next) {
+      permission_required (['staff'], {name: 'signin'}, next)
+    }
+  }
+</script>
+```
+`admin` and `staff` are pre-defined reserved grp name.
+
+Vuex.state contains `$uid` and `$grp` state. So `permission_required` check with
+this state and decide to allow access.
+
+And you should build sign in component `signin.vue`.
+
+Create `backend/static/routes/main/signin.vue`.
+```js
+<template>
+  <div>
+      <h1>Sign In</h1>
+      <input type="text" v-model='uid'>
+      <input type="password" v-model='password'>
+      <button @click='signin ()'>Sign In</button>
+  </div>
+</template>
+
+<script setup>
+  const { state } = useStore ()
+  const uid = ref ('')
+  const password = ref ('')
+  async function signin () {
+    const msg = await backend.signin_with_id_and_password (
+        'APIS_AUTH_SIGNIN_WITH_ID_AND_PASSWORD',
+        {uid: uid.value, password: password.value}
+    )
+    if (!!msg) {
+        return alert (`Sign in failed because ${ msg }`)
+    }
+    alert ('Sign in success!')
+    permission_granted () // go to origin route
+  }
+</script>
+```
+
+
+
+
+And one more, update `/backend/static/routes/main/__layout.vue`
+```js
+<script setup>
+  onBeforeMount ( () => {
+    backend.refresh_access_token ('APIS_ACCESS_TOKEN')
+  })
+</script>
+```
+This will check saved tokens at app initializing and do these things:
+- update `Vuex.state.$uid` and `Vuex.state.$grp` if access token is valid
+- if access token is expired, try refresh using refresh token and save credential
+- if refresh token close to expiration, refresh 'refresh token' itself
+- if refresh token is expired, clear all credential
+
+From this moment, `axios` monitor `access token` whenever you call APIs and automatically managing tokens.
+
+Then we must create 2 APIs - API ID `APIS_SIGNIN_WITH_ID_AND_PASSWORD` and
+`APIS_AUTH_ACCESS_TOKEN`.
+
+
+
+
+
+
+#### Server Side Access Control
+```python
+def __mount__ (app, mntopt):
+  @app.route ('/profiles/<uid>')
+  @app.permission_required (['user'])
+  def get_profile (was):
+    icanaccess = was.request.user.uid
+    return was.API (profile = data)
+```
+If request user is one of `user`, `staff` and `admin` grp, access will be granted.
+
+And all claims of access token can be access via `was.request.user` dictionary.
+
+`@app.permission_required` can `groups` and `owner` based control.
+
+Also `@app.login_required` which is shortcut for `@app.permission_required ([])` - any groups will be granted.
+
+`@app.identification_required` is just create `was.request.user` object using access token only if token is valid.
+
+For more detail access control. see [Atila](https://pypi.org/project/atila/).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Appendix
+
+### Jinja Template Helpers
+
+#### Globals
+- `raise`
+- `http_error (status, *args)`: raise context.HttpError
+
+#### Filters
+- `vue (val)`
+- `summarize (val, chars = 60)`
+- `attr (val)`
+- `upselect (val, *names, **upserts)`
+- `tojson_with_datetime (data)`
+
+#### Macros
+- `component (path, alias = none, _async = True)`
+- `global_component (path, alias = none, _async = True)`
+
+
+#### State Injection Macros
+- `map_state (name, value, container = '', list_size = -1)`
+- `map_dict (name, **kargs)`
+- `map_text (name, container)`
+- `map_html (name, container)`
+- `set_cloak (flag = True)`
+- `map_route (**kargs)`
+
+
+
+
+
+### Javascript Helpers
+#### Aliases
+- `$http`: axios
+
+#### Prototype Methods
+- `Number.prototype.format`
+- `String.prototype.format`
+- `String.prototype.titleCase`
+- `Date.prototype.unixepoch`
+- `Date.prototype.format`
+- `String.prototype.repeat`
+- `String.prototype.zfill`
+- `Number.prototype.zfill`
+
+#### Device Detecting
+- `device`
+  - `android`
+  - `ios`
+  - `mobile`
+  - `touchable`
+  - `rotatable`
+  - `width`
+  - `height`
+
+#### Service Worker Sync
+- `swsync`
+  - `async add_tag (tag, min_interval_sec = 0)`
+  - `async unregister_tag (tag)`: periodic only
+  - `async periodic_sync_enabled ()`
+  - `async is_tag_registered (tag)`
+
+#### Backend URL Building and Authorization
+- `backend`
+  - `endpoint (name, args = [], _kargs = {})`
+  - `static (relurl)`
+  - `media (relurl)`
+  - `async signin_with_id_and_password (endpoint, payload)`
+  - `async refresh_access_token (endpoint)`: In `onBeforeMount` at `__layout.vue`
+  - `create_websocket (API_ID, read_handler = (evt) => log (evt.data))`
+    - `push(msg)`
+
+
+#### Logging
+- `log (msg, type = 'info')`
+- `traceback (e)`
+
+#### Utilities
+- `permission_required (permission, redirect, next)`: In `beforeRouteEnter`
+- `permission_granted ()`: go to original requested route after signing in
+- `build_url (baseurl, params = {})`
+- `push_alarm (title, message, icon, timeout = 5000)`
+- `load_script (src, callback = () => {})`: load CDN js
+- `set_cloak (flag)`
+- `async sleep (ms)`
+- `async keep_offset_bottom (css, margin = 0, initial_delay = 0)`
+- `async keep_offset_right (css, margin = 0, initial_delay = 0)`
+
+
+
+
+
+
+
