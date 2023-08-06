@@ -1,0 +1,11 @@
+apispec<6.0.0
+click
+google-api-python-client
+functions-framework
+marshmallow
+pydantic<2.0.0
+PyYAML
+google-cloud-logging
+google-cloud-appengine-logging
+goblet-gcp-client
+protobuf<=3.20.3
