@@ -1,0 +1,2 @@
+[console_scripts]
+qt-dev-helper = qt_dev_helper.cli.main_app:app
