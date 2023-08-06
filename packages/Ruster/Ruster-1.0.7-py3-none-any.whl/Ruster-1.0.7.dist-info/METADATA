@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: Ruster
+Version: 1.0.7
+Summary: A lightweight and function rich web framework for python
+Home-page: https://github.com/E491K8/ruster
+Author: Pawan kumar
+Author-email: control@vvfin.in
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: itsdangerous
+Requires-Dist: werkzeug
+Requires-Dist: PyJWT
+Requires-Dist: cryptography
+Requires-Dist: jinja2
+Requires-Dist: uuid
+Requires-Dist: rustadmin
+
+# Python Ruster
+
+A light weight and fully functional web framework for python, achive a quality code and rich functions with Ruster.
+
+## Installation
+
+You can install Ruster using pip:
+
+```shell
+pip install ruster

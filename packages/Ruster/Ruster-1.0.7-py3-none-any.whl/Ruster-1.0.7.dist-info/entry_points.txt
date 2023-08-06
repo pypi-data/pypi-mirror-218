@@ -1,0 +1,2 @@
+[console_scripts]
+ruster = Ruster:app
