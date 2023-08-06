@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: whoi_directory_tree
+Version: 0.0.2
+Summary: whoi_directory_tree
+Home-page: https://git.whoi.edu/acomms/whoi_directory_tree/
+Author: WHOI Acomms Group
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WHOI Directory Tree
+
+## About 
+
+Forked from Rahul Bordoloi's package https://pypi.org/project/directory-tree/.
+
+This package prints out a directory tree given a base directory.

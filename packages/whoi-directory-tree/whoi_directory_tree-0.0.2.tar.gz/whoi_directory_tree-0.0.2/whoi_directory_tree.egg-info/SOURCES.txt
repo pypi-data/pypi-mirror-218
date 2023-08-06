@@ -1,0 +1,11 @@
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+whoi_directory_tree/directory_tree.py
+whoi_directory_tree.egg-info/PKG-INFO
+whoi_directory_tree.egg-info/SOURCES.txt
+whoi_directory_tree.egg-info/dependency_links.txt
+whoi_directory_tree.egg-info/top_level.txt
