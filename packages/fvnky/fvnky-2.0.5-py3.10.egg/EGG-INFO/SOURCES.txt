@@ -1,0 +1,7 @@
+README.md
+setup.py
+fvnky.egg-info/PKG-INFO
+fvnky.egg-info/SOURCES.txt
+fvnky.egg-info/dependency_links.txt
+fvnky.egg-info/requires.txt
+fvnky.egg-info/top_level.txt
