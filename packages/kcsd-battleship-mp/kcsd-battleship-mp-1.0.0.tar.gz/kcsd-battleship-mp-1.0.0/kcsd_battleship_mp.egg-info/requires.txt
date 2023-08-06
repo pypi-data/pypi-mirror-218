@@ -1,0 +1,14 @@
+websockets
+
+[doc]
+sphinx
+
+[test]
+pytest
+pytest-cov
+flake8
+flake8-bugbear
+
+[test:implementation_name == "cpython"]
+black
+mypy

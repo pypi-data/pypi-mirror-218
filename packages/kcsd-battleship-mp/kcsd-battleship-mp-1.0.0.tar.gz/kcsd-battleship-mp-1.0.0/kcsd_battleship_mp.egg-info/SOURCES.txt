@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+battleship_mp/__init__.py
+battleship_mp/client.py
+battleship_mp/exceptions.py
+battleship_mp/messages.py
+battleship_mp/server.py
+kcsd_battleship_mp.egg-info/PKG-INFO
+kcsd_battleship_mp.egg-info/SOURCES.txt
+kcsd_battleship_mp.egg-info/dependency_links.txt
+kcsd_battleship_mp.egg-info/requires.txt
+kcsd_battleship_mp.egg-info/top_level.txt
