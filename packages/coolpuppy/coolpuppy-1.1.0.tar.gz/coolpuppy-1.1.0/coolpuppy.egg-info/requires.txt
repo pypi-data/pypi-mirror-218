@@ -1,0 +1,16 @@
+h5py>=3.0
+Cython
+cooler
+numpy>=1.16.5
+pandas
+scipy
+cooltools>=0.5.2
+pyyaml
+more_itertools
+bioframe>=0.3.3
+matplotlib
+seaborn
+natsort
+m2r2
+h5sparse
+multiprocessing_logging
