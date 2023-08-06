@@ -1,0 +1,5 @@
+pydrawio~=1.1.0
+click
+
+[test]
+pytest~=7.4.0
