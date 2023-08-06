@@ -1,0 +1,117 @@
+# ltsfit_examples reference output for the LtsFit package version 6.0.0 (7 July 2023)
+# Generated under Python 3.11 using NumPy 1.24, SciPy 1.10, Matplotlib 3.7
+#
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+runfile('ltsfit_examples.py')
+
+----------------------------------------------------------------------
+Running lts_linefit_example
+
+sig_int:     0.0000      2.5670
+Computing sig_int
+sig_int:     0.0000      2.5670
+sig_int:     0.4473     -0.3742
+sig_int:     0.3904     -0.2211
+sig_int:     0.3147      0.0725
+sig_int:     0.3334     -0.0120
+sig_int:     0.3308     -0.0005
+sig_int:     0.3306      0.0002
+Computing sig_int error
+sig_int:     0.3306      0.0982
+sig_int:     0.4473     -0.2761
+sig_int:     0.3612     -0.0243
+sig_int:     0.3552     -0.0016
+sig_int:     0.3547      0.0000
+sig_int:     0.3549     -0.0007
+Repeat at best fitting solution
+sig_int:     0.3306      0.0002
+################# Values and formal errors ################
+        a =  20.235 +/- 0.029
+      b_0 =  0.500 +/- 0.031
+  scatter =  0.331 +/- 0.024
+Observed rms scatter: 0.39
+z = a + (x_0 - p_0) b_0
+   p_0 = 20.40
+Spearman r=0.65 and p=5.3e-37
+Pearson r=0.50 and p=9.1e-21
+##########################################################
+seconds 10.56
+The best fitting parameters are: [20.23536506  0.49999517]
+
+----------------------------------------------------------------------
+Running lts_planefit_example
+
+sig_int:     0.0000      2.3049
+Computing sig_int
+sig_int:     0.0000      2.3049
+sig_int:     1.5083     -0.4527
+sig_int:     1.2607     -0.2690
+sig_int:     0.9359      0.1216
+sig_int:     1.0371     -0.0240
+sig_int:     1.0204     -0.0017
+sig_int:     1.0191      0.0000
+sig_int:     1.0197     -0.0007
+Computing sig_int error
+sig_int:     1.0191      0.1029
+sig_int:     1.5083     -0.3498
+sig_int:     1.1303     -0.0347
+sig_int:     1.1023     -0.0024
+sig_int:     1.1002      0.0000
+sig_int:     1.1007     -0.0006
+Repeat at best fitting solution
+sig_int:     1.0191      0.0000
+################# Values and formal errors ################
+        a =  60.743 +/- 0.090
+      b_0 =  1.959 +/- 0.061
+      b_1 =  0.958 +/- 0.027
+  scatter =  1.019 +/- 0.081
+Observed rms scatter: 1.2
+z = a + (x_0 - p_0) b_0 + (x_1 - p_1) b_1
+   p_0 = 19.55
+   p_1 = 11.74
+##########################################################
+seconds 10.90
+The best fitting parameters are: [60.74285125  1.95909241  0.95786782]
+
+----------------------------------------------------------------------
+Running lts_hyperfit_example
+
+sig_int:     0.0000      0.7861
+Computing sig_int
+sig_int:     0.0000      0.7861
+sig_int:     2.1853     -0.5375
+sig_int:     1.2979     -0.1013
+sig_int:     1.1153      0.1087
+sig_int:     1.2098      0.0315
+sig_int:     1.2307      0.0151
+sig_int:     1.2474      0.0021
+sig_int:     1.2498      0.0002
+sig_int:     1.2505     -0.0003
+Computing sig_int error
+sig_int:     1.2498      0.0377
+sig_int:     2.1853     -0.4327
+sig_int:     1.3248     -0.0151
+sig_int:     1.3033      0.0636
+sig_int:     1.3207     -0.0123
+sig_int:     1.3120      0.0572
+sig_int:     1.3191      0.0519
+sig_int:     1.3200     -0.0118
+Repeat at best fitting solution
+sig_int:     1.2498     -0.0671
+################# Values and formal errors ################
+        a =  84.31 +/- 0.16
+      b_0 =  2.049 +/- 0.085
+      b_1 =  0.786 +/- 0.045
+      b_2 =  2.89 +/- 0.10
+  scatter =  1.250 +/- 0.070
+Observed rms scatter: 1.7
+z = a + (x_0 - p_0) b_0 + (x_1 - p_1) b_1 + (x_2 - p_2) b_2
+   p_0 = 19.80
+   p_1 = 11.67
+   p_2 = 7.787
+##########################################################
+seconds 20.41
+The best fitting parameters are: [84.30589223  2.04931942  0.78569159  2.88565599]
+
+----------------------------------------------------------------------
