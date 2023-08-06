@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sWaraNuvad
+Version: 2.4
+Summary: Speech translation assistant
+Author: Tejas Sonavane
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+The code uses speech recognition to capture user input through a microphone. It then recognizes the speech using Google's Speech-to-Text API. 
+    The user is prompted to specify a language, and their subsequent speech is translated into multiple languages. The translations are displayed in the console.
+    The speech translation assistant allows users to communicate in different languages by converting their spoken input into written text and providing translations in various supported languages.

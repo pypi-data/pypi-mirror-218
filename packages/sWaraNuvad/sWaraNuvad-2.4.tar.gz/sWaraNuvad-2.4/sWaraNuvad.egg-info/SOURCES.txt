@@ -1,0 +1,7 @@
+setup.py
+sWaraNuvad/__init__.py
+sWaraNuvad.egg-info/PKG-INFO
+sWaraNuvad.egg-info/SOURCES.txt
+sWaraNuvad.egg-info/dependency_links.txt
+sWaraNuvad.egg-info/requires.txt
+sWaraNuvad.egg-info/top_level.txt
