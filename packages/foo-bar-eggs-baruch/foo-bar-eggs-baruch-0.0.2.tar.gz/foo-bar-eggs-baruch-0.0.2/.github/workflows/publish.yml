@@ -1,0 +1,21 @@
+name: Python
+on:
+  workflow_call:
+    secrets:
+      PYPI_PASSWORD:
+        required: false
+      TEST_PYPI_PASSWORD:
+        required: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Publish Release to PyPi
+        uses: dciborow/pyaction@0.0.30
+        if: ${{ github.event_name == 'release' }}
+        with:
+          pypi_publish: true
+          pypi_password: ${{ secrets.PYPI_PASSWORD }}
