@@ -1,0 +1,14 @@
+swanapi/__init__.py,sha256=T69A5YM84uwabbMeLbIZuDpk6R7ZcA51IrNFJOfRyq8,62
+swanapi/base_inference.py,sha256=rx-hZRfL4fK91zkqt2O134gZS7_hmG893gWUWXGatkE,7611
+swanapi/make_build.py,sha256=SX9eOGmQM0Lt7PiMj3ygMZtRyIIwlU2kqBdn12UHyaQ,754
+swanapi/server.py,sha256=8hQCa2OX3-1_9l4U8vmMlv4aKKOn3z1YB0nNkhNc93s,1790
+swanapi/utils.py,sha256=VE09kmCHcSnPzCgCRdumEu5vnKjMwFAzWl29FoU6vs0,1065
+swanapi/docker_builder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swanapi/docker_builder/config.py,sha256=N1M3GtMFrmIsKrFQb2bj-Igp6wGW8wKwWczPNJ1xXzs,3668
+swanapi/docker_builder/generate_dockerfile.py,sha256=HZfA1AAnL2FtiSnGxzSysM1ryZ7LYLOgcD-lL1IW5J0,2310
+swanapi/docker_builder/runner.py,sha256=uDToZ5UfgshahcnKbu8Eb7enLLry2pVHn7e2bJB56vk,1419
+swanapi-0.1.5.dist-info/METADATA,sha256=8WzwSAO77YYL-sAfmWZuxwOgChy6Oded8lPNxeLaqPU,347
+swanapi-0.1.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+swanapi-0.1.5.dist-info/entry_points.txt,sha256=fgN0mUcvpscd5X6ZbWlK1FYJPU2l89EDR5qkKLNg1b4,53
+swanapi-0.1.5.dist-info/top_level.txt,sha256=IMPJQB4d-hjWaRE7hQcOckZuFdbQoEWWXL29rxE1b0Y,8
+swanapi-0.1.5.dist-info/RECORD,,
