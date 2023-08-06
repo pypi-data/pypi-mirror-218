@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/searchenginepy/__init__.py
+src/searchenginepy.egg-info/PKG-INFO
+src/searchenginepy.egg-info/SOURCES.txt
+src/searchenginepy.egg-info/dependency_links.txt
+src/searchenginepy.egg-info/requires.txt
+src/searchenginepy.egg-info/top_level.txt
+src/searchenginepy/Bing/__init__.py
+src/searchenginepy/Brave/__init__.py
+src/searchenginepy/DuckDuckGo/__init__.py
+src/searchenginepy/Google/__init__.py
