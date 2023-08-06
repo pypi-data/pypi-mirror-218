@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sicdeploy
+Version: 0.2.1rc3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: LICENSE
+Platform: UNKNOWN
+Requires-Dist: impose-cli (==0.3.2)
+Requires-Dist: twine
+Requires-Dist: awscli
+Requires-Dist: PyYAML
+Requires-Dist: wheel
+
+UNKNOWN
+
+
