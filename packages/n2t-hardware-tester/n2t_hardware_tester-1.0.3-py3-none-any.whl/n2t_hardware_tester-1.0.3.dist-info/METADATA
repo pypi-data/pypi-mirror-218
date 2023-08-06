@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: n2t-hardware-tester
+Version: 1.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pytest
+Requires-Dist: PyYAML (~=6.0)
+Requires-Dist: requests
+Requires-Dist: typer
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+
+UNKNOWN
+
