@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: url-to-file-downloader
+Version: 1.0.0
+Summary: A package to download audio, video, documents, or files from a given URL
+Author: Nayeem Islam
+Author-email: islam.nayeem@outlook.com
+Requires-Dist: requests
+
