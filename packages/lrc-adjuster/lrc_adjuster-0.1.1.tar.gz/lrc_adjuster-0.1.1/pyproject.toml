@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "lrc-adjuster"
+version = "0.1.1"
+description = "Simple CLI tool to adjust timestamps in LRC files."
+authors = ["Andrew Beveridge <andrew@beveridge.uk>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.scripts]
+lrc-adjuster = "lrc_adjuster.adjuster:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
