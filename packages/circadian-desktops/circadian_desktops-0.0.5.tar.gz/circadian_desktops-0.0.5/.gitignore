@@ -1,0 +1,7 @@
+__pycache__
+.vscode
+*.spec
+build/
+dist/
+settings.*
+test*
