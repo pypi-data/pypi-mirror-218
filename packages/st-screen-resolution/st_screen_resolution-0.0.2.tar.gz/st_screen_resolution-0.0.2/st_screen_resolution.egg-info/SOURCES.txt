@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+setup.py
+st_screen_resolution/__init__.py
+st_screen_resolution.egg-info/PKG-INFO
+st_screen_resolution.egg-info/SOURCES.txt
+st_screen_resolution.egg-info/dependency_links.txt
+st_screen_resolution.egg-info/requires.txt
+st_screen_resolution.egg-info/top_level.txt
