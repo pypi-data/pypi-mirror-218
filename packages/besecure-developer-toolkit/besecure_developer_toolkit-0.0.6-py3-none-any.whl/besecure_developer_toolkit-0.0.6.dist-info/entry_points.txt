@@ -1,0 +1,3 @@
+[console_scripts]
+besecure-developer-toolkit=bes_dev_kit.__main__:cli.app
+
