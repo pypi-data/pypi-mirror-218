@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pana.py
+setup.py
+pana.egg-info/PKG-INFO
+pana.egg-info/SOURCES.txt
+pana.egg-info/dependency_links.txt
+pana.egg-info/entry_points.txt
+pana.egg-info/requires.txt
+pana.egg-info/top_level.txt
