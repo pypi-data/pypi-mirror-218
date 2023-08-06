@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pytaa
+Version: 0.2.0
+Summary: A lean package for analysing tactical asset allocation.
+Author: oronimbus
+License-File: LICENSE.txt
+
+A package for tactical asset allocation and backtesting.
