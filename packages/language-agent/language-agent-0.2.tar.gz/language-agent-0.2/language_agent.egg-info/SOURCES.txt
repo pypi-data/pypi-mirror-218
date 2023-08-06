@@ -1,0 +1,9 @@
+setup.py
+language_agent/__init__.py
+language_agent/module.py
+language_agent/prompt.py
+language_agent.egg-info/PKG-INFO
+language_agent.egg-info/SOURCES.txt
+language_agent.egg-info/dependency_links.txt
+language_agent.egg-info/requires.txt
+language_agent.egg-info/top_level.txt
