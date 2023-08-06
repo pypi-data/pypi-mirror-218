@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: trumpy
+Version: 0.1
+Summary: TRUMPY: Tracing and Reverse Understanding Memory in Pytorch
+Home-page: https://github.com/youkaichao/TRUMPY
+Author: Kaichao You
+Author-email: youkaichao@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: torch
+Provides-Extra: test
+Requires-Dist: torchvision ; extra == 'test'
+
+UNKNOWN
+
