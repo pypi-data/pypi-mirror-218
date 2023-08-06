@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "rpnickapi"
+version = "1.1.0"
+description = "Samp rp nick generator"
+authors = ["N1C1 <rydsa708998@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

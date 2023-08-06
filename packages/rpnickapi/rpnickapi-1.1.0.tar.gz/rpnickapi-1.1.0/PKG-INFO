@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rpnickapi
+Version: 1.1.0
+Summary: Samp rp nick generator
+Author: N1C1
+Author-email: rydsa708998@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+документация: https://sites.google.com/view/hellobyn1c1n1/programs/rpnickapi-doc
