@@ -1,0 +1,8 @@
+setup.py
+maga5416calculator/__init__.py
+maga5416calculator/maga5416calculator.py
+maga5416calculator.egg-info/PKG-INFO
+maga5416calculator.egg-info/SOURCES.txt
+maga5416calculator.egg-info/dependency_links.txt
+maga5416calculator.egg-info/not-zip-safe
+maga5416calculator.egg-info/top_level.txt
