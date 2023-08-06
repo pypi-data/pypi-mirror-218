@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: trab-devops-ci-cd-process
+Version: 0.0.5
+Summary: quadratic equation roots calculating package for devops course
+Author-email: Ricardo Báfica Pontes <ricardo.bafica@gmail.com>
+Project-URL: Homepage, https://github.com/ricobafica/trab-devops-ci-cd
+Project-URL: Bug Tracker, https://github.com/ricobafica/trab-devops-ci-cd/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest (==7.4.0)
+Requires-Dist: flake8 (==6.0.0)
+Requires-Dist: build (==0.10.0)
+Requires-Dist: twine (==4.0.2)
+
+# trab-devops-ci-cd
+Respositorio do trabalho final da disciplina de Praticas Devops, curso de engenharia de dados da Pucminas 2023.
+
+Final task repository of the Devops Practices discipline, data engineering course at Pucminas 2023
+
