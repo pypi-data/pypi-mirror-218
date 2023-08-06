@@ -1,0 +1,9 @@
+coincurve
+requests
+aiohttp
+jsonrpc-base
+six
+
+[testing]
+pytest
+pytest-cov
