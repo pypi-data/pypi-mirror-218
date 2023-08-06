@@ -1,0 +1,9 @@
+module componentLib
+typeinfo componentLib.qmltypes
+prefer :/componentLib/
+ShadowRectangle 1.0 ShadowRectangle.qml
+FlatButton 1.0 Buttons/FlatButton.qml
+DatePicker 1.0 DatePicker.qml
+ElMonthGrid 1.0 ElMonthGrid.qml
+Link 1.0 Link.qml
+
