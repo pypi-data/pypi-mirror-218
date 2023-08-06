@@ -1,0 +1,6 @@
+numpy
+PIL
+scikit-image
+scikit-image
+os
+pandas
