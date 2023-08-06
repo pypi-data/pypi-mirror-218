@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rapo
+Version: 0.4.1
+Summary: Python Revenue Assurance Process Optimizer.
+Home-page: https://github.com/t3eHawk/rapo
+Author: Timur Faradzhov
+Author-email: timurfaradzhov@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RAPO
+
+[![version](https://img.shields.io/pypi/v/rapo)](https://pypi.org/project/rapo/)
+[![release](https://img.shields.io/github/v/release/t3eHawk/rapo?include_prereleases)](https://github.com/t3eHawk/rapo/)
+[![release date](https://img.shields.io/github/release-date-pre/t3eHawk/rapo)](https://github.com/t3eHawk/rapo/releases/)
+[![last commit](https://img.shields.io/github/last-commit/t3eHawk/rapo)](https://github.com/t3eHawk/rapo/commits/)
+[![downloads](https://img.shields.io/pypi/dm/rapo)](https://pypi.org/project/rapo/)
+[![python](https://img.shields.io/pypi/pyversions/rapo)](https://pypi.org/project/rapo/)
+[![license](https://img.shields.io/pypi/l/rapo)](https://mit-license.org)
+
+## Revenue Assurance Processes Optimizer
