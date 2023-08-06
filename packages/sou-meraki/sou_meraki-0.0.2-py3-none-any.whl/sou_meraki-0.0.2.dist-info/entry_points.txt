@@ -1,0 +1,2 @@
+[console_scripts]
+sou = sou_meraki.controller:menu
