@@ -1,0 +1,30 @@
+# requerimentos do sistema de build
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# informações do projeto para envio ao pypi.org
+[project]
+name = "trab_devops_ci_cd_process"
+version = "0.0.5"
+authors = [
+  { name="Ricardo Báfica Pontes", email="ricardo.bafica@gmail.com" },
+]
+description = "quadratic equation roots calculating package for devops course"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+# especificacoes das dependencias do pacote
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+"Homepage" = "https://github.com/ricobafica/trab-devops-ci-cd"
+"Bug Tracker" = "https://github.com/ricobafica/trab-devops-ci-cd/issues"
+
