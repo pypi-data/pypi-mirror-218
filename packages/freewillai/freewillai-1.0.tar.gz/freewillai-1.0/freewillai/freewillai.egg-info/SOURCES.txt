@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+freewillai/freewillai.egg-info/PKG-INFO
+freewillai/freewillai.egg-info/SOURCES.txt
+freewillai/freewillai.egg-info/dependency_links.txt
+freewillai/freewillai.egg-info/top_level.txt
+tests/test_node.py
