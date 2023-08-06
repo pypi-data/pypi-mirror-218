@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nuasa-election-admin"
+version = "0.1.0"
+description = "Administration command line for nuasa election portal"
+authors = ["Ini-abasi <etimi531@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nuasa_election_admin"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+
+[tool.poetry.scripts]
+nuasa-election-admin = "nuasa_election_admin.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
