@@ -1,0 +1,2 @@
+[console_scripts]
+dif = fast_diff_py.dif:main
