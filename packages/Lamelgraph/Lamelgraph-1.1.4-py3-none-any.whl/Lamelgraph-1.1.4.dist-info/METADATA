@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Lamelgraph
+Version: 1.1.4
+Summary: Lamelgraph
+Home-page: https://github.com/NikitaGoltsev/Lamel_project_copy
+Author: Nikita Goltsev
+Author-email: n.goltsev@g.nsu.ru
+Requires-Dist: numpy
+Requires-Dist: PyQt5
+
+Lamelgraph

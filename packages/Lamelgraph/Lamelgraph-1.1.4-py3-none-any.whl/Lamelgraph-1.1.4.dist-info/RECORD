@@ -1,0 +1,14 @@
+src/Lamel_window/AnalyzingDataSliceWin.py,sha256=flY-A7bCqtCyPY6_XW3RGmeH1fh61J5zgk4LEYqbTHE,14469
+src/Lamel_window/SaveResultsWin.py,sha256=57i6eUpDrh-faorDn0z0ZRBbPSQYOuzp3UQjcaBoCr4,9863
+src/Lamel_window/SettingsWin.py,sha256=5IcGa9BsoOiE_8zBwBuWE4y_z0eD5IhcTLqOz2NNijs,3242
+src/Lamel_window/__init__.py,sha256=XNy698efYl3lKGC_OKvrZLltZ1MafaC3cxBfN-60sR8,118
+src/Lamel_window/analyzing_data_slice_win_design.py,sha256=dT1gJt_8pLkNG8q4leCu8UYx7_paRViDosQb3ktVpN0,7547
+src/Lamel_window/global_data.py,sha256=RwsXwVvppB_JbGXPawNQO1ZEuUGtfwuT1aybLQl8GAE,369
+src/Lamel_window/main.py,sha256=JRRBCeqTPWA-Z1SYqj66eQtZKMFsqiX8X738EOS_g_Y,2270
+src/Lamel_window/proccesing.py,sha256=X5id2i7YtI6RfOIOnMYTeyploLvD7hVRftOVwVfafz4,6436
+src/Lamel_window/save_results_win_design.py,sha256=WvqOq926s0u-VgDaTzPIozgcbE9Yns1POxMJxZ-38Ho,5906
+src/Lamel_window/settings_win_design.py,sha256=xQ8cB1otoIi_OUSNg_uIuljsMCQ2kdKmUYLFcKmFO7E,9151
+Lamelgraph-1.1.4.dist-info/METADATA,sha256=GNJYru1AukPaBeErO3oVwcJxSxEiKOzsEKSs4dXtAdI,247
+Lamelgraph-1.1.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Lamelgraph-1.1.4.dist-info/top_level.txt,sha256=eibNzSX_ES2s2FjP3-Km0Hq1QSpegsFmIRtRU1_QDB0,17
+Lamelgraph-1.1.4.dist-info/RECORD,,
