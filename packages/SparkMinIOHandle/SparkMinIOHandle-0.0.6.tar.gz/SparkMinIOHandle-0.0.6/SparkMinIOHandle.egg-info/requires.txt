@@ -1,0 +1,3 @@
+minio
+pyspark
+pandas
