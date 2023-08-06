@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dark-gateway
+Version: 0.0.2a3
+Summary: dARK Gateway libs
+Home-page: https://github.com/dark-pid/dark-web3-lib
+Author: Thiago Nóbrega
+Author-email: thiagonobrega@gmail.com
+Keywords: ARK,dARK,PID,web3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# dark-web3-lib
+
+dARK Web3 Core Lib
+
+
