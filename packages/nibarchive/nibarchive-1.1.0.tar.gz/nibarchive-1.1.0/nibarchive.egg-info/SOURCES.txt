@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+nibarchive/__init__.py
+nibarchive/__main__.py
+nibarchive/model.py
+nibarchive/parse.py
+nibarchive/writer.py
+nibarchive.egg-info/PKG-INFO
+nibarchive.egg-info/SOURCES.txt
+nibarchive.egg-info/dependency_links.txt
+nibarchive.egg-info/top_level.txt
