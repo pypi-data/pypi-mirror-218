@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+setup.py
+test-1234/__init__.py
+test-1234/hello.py
+test_1234.egg-info/PKG-INFO
+test_1234.egg-info/SOURCES.txt
+test_1234.egg-info/dependency_links.txt
+test_1234.egg-info/requires.txt
+test_1234.egg-info/top_level.txt
