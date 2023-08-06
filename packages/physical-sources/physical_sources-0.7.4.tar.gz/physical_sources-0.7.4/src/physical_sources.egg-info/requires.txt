@@ -1,0 +1,7 @@
+numpy
+scipy
+PythonCoordinates>=0.5.0
+Pytimbre>0.6.1
+mne>=1.0.0
+physical_propagation>=0.5.1
+matplotlib>=3.3.1
