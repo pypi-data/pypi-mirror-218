@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: satan-game-engine
+Version: 0.0.1
+Summary: Simple Pygame Wrapper
+Author: WerronPL
+Author-email: paligaaleksander@gmail.com
+Keywords: python,pygame,games
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: pygame
+
