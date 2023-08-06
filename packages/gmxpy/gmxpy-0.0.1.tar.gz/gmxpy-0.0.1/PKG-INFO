@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: gmxpy
+Version: 0.0.1
+Summary: Wrapping GROMACS by Python for me
+Project-URL: Homepage, https://github.com/Goosang-Yu/gmxpy
+Project-URL: Repository, https://github.com/Goosang-Yu/gmxpy
+Author-email: Goosang Yu <gsyu93@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# gmxpy
+Wrapping GROMACS by python script for me
+
+Since 2023. 07. 12.  
+Tested GROMCAS ver. 2023.1
