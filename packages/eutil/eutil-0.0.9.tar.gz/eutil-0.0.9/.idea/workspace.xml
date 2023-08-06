@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8caa3a9e-2fb9-442d-b568-1b3c62f7789d" name="Changes" comment="Declassify">
+      <change afterPath="$PROJECT_DIR$/src/eutil/datastructures/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eutil/datastructures/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eutil/datastructures/lists.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eutil/datastructures/trees/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eutil/datastructures/trees/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eutil/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/eutil/__init__.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2SHx4Cz4lPky3ZXBppZLMXXYixN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Documents\Coding\Projects\extended_util" />
+      <recent name="C:\Users\Michael\Documents\Coding\Projects\extended_util\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="extended_util" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8caa3a9e-2fb9-442d-b568-1b3c62f7789d" name="Changes" comment="" />
+      <created>1688817114066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688817114066</updated>
+      <workItem from="1688817121228" duration="1974000" />
+      <workItem from="1688819148810" duration="13000" />
+      <workItem from="1688819182374" duration="9373000" />
+      <workItem from="1688870654672" duration="18223000" />
+      <workItem from="1688965461891" duration="314000" />
+    </task>
+    <task id="LOCAL-00001" summary="Append to pyproject.toml">
+      <created>1688820307240</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688820307240</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Append to pyproject.toml">
+      <created>1688820487849</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688820487849</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Change from poetry to hatchling">
+      <created>1688820642051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688820642051</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change fix dict -&gt; str for authors in pyproject.toml">
+      <created>1688820767419</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688820767419</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Change pyproject.toml to match hatchling spec">
+      <created>1688821115473</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688821115473</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add more sort methods unimplemented, change package name">
+      <created>1688822430034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688822430034</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Change src to nonpackage">
+      <created>1688822595244</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688822595244</updated>
+    </task>
+    <task id="LOCAL-00008" summary="append to readme/pyproject">
+      <created>1688823782539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688823782539</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Change spacing">
+      <created>1688824121788</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688824121788</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change vers num">
+      <created>1688824156595</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688824156595</updated>
+    </task>
+    <task id="LOCAL-00011" summary="functional">
+      <created>1688870667885</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688870667885</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Declassify">
+      <created>1688871331444</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688871331444</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Append to pyproject.toml" />
+    <MESSAGE value="Change from poetry to hatchling" />
+    <MESSAGE value="Change fix dict -&gt; str for authors in pyproject.toml" />
+    <MESSAGE value="Change pyproject.toml to match hatchling spec" />
+    <MESSAGE value="Add more sort methods unimplemented, change package name" />
+    <MESSAGE value="Change src to nonpackage" />
+    <MESSAGE value="append to readme/pyproject" />
+    <MESSAGE value="Change spacing" />
+    <MESSAGE value="Change vers num" />
+    <MESSAGE value="functional" />
+    <MESSAGE value="Declassify" />
+    <option name="LAST_COMMIT_MESSAGE" value="Declassify" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/extended_util$common.coverage" NAME="common Coverage Results" MODIFIED="1688904510691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/eutil/datastructures" />
+  </component>
+</project>

@@ -1,0 +1,23 @@
+[project]
+name = "eutil"
+version = "0.0.9"
+authors = [
+    { name = "Michael LePera", email = "michaeltlepera@gmail.com" }
+]
+description = "Pythonic reusable objects to speed up development."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MichaelLePera/extended_util"
+"Bug Tracker" = "https://github.com/MichaelLePera/extended_util/issues"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
