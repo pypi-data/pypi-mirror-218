@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: nso-applet-api
+Version: 0.0.1
+Summary: Nintendo NSO applet API
+Home-page: https://github.com/MCMi460/nso-applet-api
+Author: Deltaion Lee
+Author-email: 32529306+MCMi460@users.noreply.github.com
+
+This library implements in Python various API endpoints from the NSO Webapplet
