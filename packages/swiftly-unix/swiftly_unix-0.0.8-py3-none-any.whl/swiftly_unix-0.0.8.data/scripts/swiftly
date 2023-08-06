@@ -1,0 +1,90 @@
+#!/bin/bash
+
+function init(){
+    if [ -z "$1" ]
+    then
+        fetch_remote=$(git fetch | tr '\n' ' ')
+        git_status=$(git status -uno)
+        pull_changes=$(python -c 'from swiftly_unix.init import pull_changes; print(pull_changes("'$git_status'"))')
+        if [ "$pull_changes" = "True" ]
+        then
+            git pull
+        fi
+
+
+        venv_location=$(python -c 'from swiftly_unix.init import get_venv_location; print(get_venv_location())')
+        source $venv_location/bin/activate
+        export PROJECT_VENV_LOCATION=$venv_location
+
+        available_packages=$(pip freeze | tr '\n' ' ')
+        new_packages=$(python -c "from swiftly_unix.init import check_new_packages; print(check_new_packages('$available_packages'))")
+
+        if [ "$new_packages" = "True" ]
+        then
+            pip install -r requirements.txt
+            pip install --upgrade pip
+            install swiftly-unix
+        fi
+
+    else
+        is_github_repo=$(python -c "from swiftly_unix.init import is_repo; print(is_repo('$1'))")
+        if [ "$is_github_repo" = "True" ]
+        then
+            git clone $1
+        fi
+
+        venv_location=$(python -c "from swiftly_unix.init import initialise; print(initialise('$1'))")
+        source $venv_location/bin/activate
+        export PROJECT_VENV_LOCATION=$venv_location
+
+        pip install --upgrade pip
+        cd $venv_location
+        cd ..
+        pip install -r requirements.txt
+        install swiftly-unix
+    fi
+
+    project_name=$(python -c 'from swiftly_unix.init import get_project_name; print(get_project_name())')
+    export PROJECT_NAME=$project_name
+    echo "Initialisation completed!"
+}
+
+function makeapp(){
+    python -c "from swiftly_unix.makeapp import makeapp; makeapp('$1')"
+}
+
+function run(){
+    path=$(python -c "from swiftly_unix.runapp import run_app; print(run_app('$1', '$PROJECT_NAME', '$PROJECT_VENV_LOCATION'))")
+    python -m $path
+}
+
+function install(){
+    pip install $1
+    updated_packages=$(pip freeze)
+    requirements_path=$PROJECT_VENV_LOCATION/../requirements.txt
+    echo "$updated_packages" > $requirements_path
+}
+
+function uninstall(){
+    pip uninstall $1
+    updated_packages=$(pip freeze)
+    requirements_path=$PROJECT_VENV_LOCATION/../requirements.txt
+    echo "$updated_packages" > $requirements_path
+}
+
+if [ "$1" = "init" ]
+then
+    init $2
+elif [ "$1" = "makeapp" ]
+then
+    makeapp $2
+elif [ "$1" = "run" ]
+then
+    run $2
+elif [ "$1" = "install" ]
+then
+    install $2
+elif [ "$1" = "uninstall" ]
+then
+    uninstall $2
+fi
