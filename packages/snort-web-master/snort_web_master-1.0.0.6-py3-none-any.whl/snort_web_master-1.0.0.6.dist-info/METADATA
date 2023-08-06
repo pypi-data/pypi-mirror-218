@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: snort-web-master
+Version: 1.0.0.6
+Home-page: https://github.com/mosheovadi1/snort-web-master
+Author: meir dahan
+Author-email: 1dahanmeir1@gmail.com
+License: MoCorp
+Keywords: snort3 django
+License-File: LICENSE.rst
+Requires-Dist: django
+Requires-Dist: django-auth-ldap3-ad
+Requires-Dist: django-object-actions
+Requires-Dist: dpkt
+Requires-Dist: django-advanced-filters
+Requires-Dist: suricataparser
+Requires-Dist: django-import-export
+Requires-Dist: psycopg2-binary (==2.9.1)
+Requires-Dist: gunicorn (==20.1.0)
+Requires-Dist: django-cors-headers
+
