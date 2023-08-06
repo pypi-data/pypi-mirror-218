@@ -1,0 +1,11 @@
+click
+click-default-group
+pydash
+python-frontmatter
+
+[dev]
+build
+bumpver
+pip-tools
+pre-commit
+twine

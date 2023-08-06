@@ -1,0 +1,123 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=61.2",
+]
+
+[project]
+name = "frontmatter-cli"
+version = "2023.7.7"
+description = "Frontmatter CLI tool to make working with frontmatter easier."
+readme = "README.md"
+keywords = [
+  "frontmatter",
+  "frontmatter-cli",
+]
+license = {text = "BSD-3-Clause"}
+authors = [{name = "Jeff Triplett", email = "jeff.triplett@gmail.com"}]
+requires-python = ">3.7"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "click",
+  "click-default-group",
+  "pydash",
+  "python-frontmatter",
+]
+[project.optional-dependencies]
+dev = [
+  "build",
+  "bumpver",
+  "pip-tools",
+  "pre-commit",
+  "twine",
+]
+[project.urls]
+Homepage = "https://github.com/jefftriplett/frontmatter-cli"
+Issues = "https://github.com/jefftriplett/frontmatter-cli/issues"
+Source = "https://github.com/jefftriplett/frontmatter-cli"
+[project.scripts]
+frontmatter = "frontmatter_cli:cli"
+frontmatter-cli = "frontmatter_cli:cli"
+
+[tool.setuptools]
+packages = ["frontmatter_cli"]
+zip-safe = false
+license-files = ["LICENSE"]
+include-package-data = false
+
+[tool.ruff]
+# Enable Pyflakes `E` and `F` codes by default.
+select = [
+  "E",  # pycodestyle
+  "F",  # pyflakes
+  "I",   # isort
+  "UP",  # pyupgrade
+  "TRY", # tryceratops
+]
+ignore = ["E501", "E741"] # temporary
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".github",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+    "venv",
+]
+
+per-file-ignores = {}
+
+# Same as Black.
+line-length = 120
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Assume Python 3.11
+target-version = "py311"
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.bumpver]
+current_version = "2023.7.7"
+version_pattern = "YYYY.MM.INC1"
+commit_message = ":bookmark: Bump version {old_version} -> {new_version}"
+commit = true
+push = true  # disable for GitHub Actions
+tag = true
+
+[tool.bumpver.file_patterns]
+"frontmatter_cli/cli.py" = [
+    '__version__ = "{version}"',
+]
+"pyproject.toml" = [
+    'version = "{version}"',
+]
