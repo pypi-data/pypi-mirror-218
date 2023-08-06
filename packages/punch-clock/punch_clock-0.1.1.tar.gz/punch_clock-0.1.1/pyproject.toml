@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "punch-clock"
+version = "0.1.1"
+description = "to track working hours directly in git"
+authors = ["Debora Oliveira <deb.olibeira@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "punch_clock"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+gitpython = "^3.1.31"
+pydantic = "^2.0.2"
+click = "^8.1.4"
+
+[tool.black]
+line-length = 95
+
+[tool.mypy]
+strict = true
+implicit_reexport = true
+no_warn_unused_ignores = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = [
+    "git",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    'ignore:the imp module is deprecated in favour of importlib:DeprecationWarning',
+    'ignore:getargs:DeprecationWarning',
+]
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.3.0"
+mypy = "^1.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
