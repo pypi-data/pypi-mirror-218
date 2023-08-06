@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+Rucopm_Conventer_Nopent.egg-info/PKG-INFO
+Rucopm_Conventer_Nopent.egg-info/SOURCES.txt
+Rucopm_Conventer_Nopent.egg-info/dependency_links.txt
+Rucopm_Conventer_Nopent.egg-info/top_level.txt
+coptic_converter/__init__.py
+coptic_converter/coptic_converter.py

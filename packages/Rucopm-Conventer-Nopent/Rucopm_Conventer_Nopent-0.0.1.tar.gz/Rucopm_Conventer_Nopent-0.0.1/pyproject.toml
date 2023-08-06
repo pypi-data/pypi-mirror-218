@@ -1,0 +1,18 @@
+[project]
+name = "Rucopm_Conventer_Nopent"
+version = "0.0.1"
+authors = [
+  { name = "Nopent", email = "saglotuspetrovih33@gmail.com" },
+]
+description = "The project is used for personal-public development. The module is used for fonts."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://example.com"
+"Bug Tracker" = "https://example.com/bugs"

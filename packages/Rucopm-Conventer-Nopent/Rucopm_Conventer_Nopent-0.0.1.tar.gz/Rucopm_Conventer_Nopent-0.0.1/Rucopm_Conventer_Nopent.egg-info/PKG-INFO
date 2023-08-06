@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Rucopm-Conventer-Nopent
+Version: 0.0.1
+Summary: The project is used for personal-public development. The module is used for fonts.
+Author-email: Nopent <saglotuspetrovih33@gmail.com>
+Project-URL: Homepage, https://example.com
+Project-URL: Bug Tracker, https://example.com/bugs
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+The file is used to configure fonts
