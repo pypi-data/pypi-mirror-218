@@ -1,0 +1,5 @@
+{{ from_name }} veut vous inviter sur Needle.
+
+{{ message }}
+
+Pour accepter son invitation, veuillez suivre ce lien ou le copier-coller dans votre navigateur : {{ link }}
