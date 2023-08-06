@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+src/__init__.py
+src/lambdastic.egg-info/PKG-INFO
+src/lambdastic.egg-info/SOURCES.txt
+src/lambdastic.egg-info/dependency_links.txt
+src/lambdastic.egg-info/top_level.txt
