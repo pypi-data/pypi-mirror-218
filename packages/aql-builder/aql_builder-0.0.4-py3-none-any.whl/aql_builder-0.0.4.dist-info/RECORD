@@ -1,0 +1,9 @@
+aql_builder/__init__.py,sha256=7xmHocvrMVSyh_kPwmutkcnm8JE4TeBh1QuThQzOKwI,2995
+aql_builder/assumptions.py,sha256=_KfUtC35amfIw5X2VMkq-0yk3yqrb_JSPxzoPUzi5S0,5676
+aql_builder/errors.py,sha256=Z5S-mCPF4PXC2n5VCrumLjq6tSauk2Vn8HNRE0WpBCI,33
+aql_builder/types.py,sha256=Xo6MmtV0gAYfMgCq5Y98iBsLkqSGpftorw9567pI0uc,33010
+aql_builder-0.0.4.dist-info/LICENSE.txt,sha256=ij5PrHQAntDJLvkun4Hx65dqGd2vgKlOdeZjwQlTAlU,11341
+aql_builder-0.0.4.dist-info/METADATA,sha256=BcuRq-wQ5Ezzocg_e_WcdC8UblC-1OdSzcFQnLoLYoQ,4088
+aql_builder-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aql_builder-0.0.4.dist-info/top_level.txt,sha256=2RXWzaqfXm6WA8UMRsQoKXNi_gOsdewwDKZXsXE_Dsw,12
+aql_builder-0.0.4.dist-info/RECORD,,
