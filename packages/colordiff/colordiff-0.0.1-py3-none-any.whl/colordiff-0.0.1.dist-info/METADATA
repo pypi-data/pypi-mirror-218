@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: colordiff
+Version: 0.0.1
+Summary: A library to find color difference
+Home-page: https://www.github.com/saurabheights/colordiff
+Author: Saurabh Khanduja
+Author-email: khandujasaurabh@gmail.com
+Classifier: Development Status :: 1 - Planning
+
