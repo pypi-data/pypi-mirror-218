@@ -1,0 +1,11 @@
+dbt_workflows_factory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_workflows_factory/cli.py,sha256=onV5fLDmhYjyjjgY-WjBJ1pUPUPe2bynuu4lZnzZJhY,4190
+dbt_workflows_factory/dbt_workflows_converter.py,sha256=IIYErRqsnK_EF-rdFC7EeQib-u0OOFdZ3VN71VGj4dY,1788
+dbt_workflows_factory/params.py,sha256=ocwsIfF1y1QeTtEYgUTqFtwsYSEAEg6gHmlbvPQckW0,393
+dbt_workflows_factory/tasks.py,sha256=Ah09PzWttxpwd4Z4usIT54GHWVm1I9xBjWqvZpybfo4,5361
+dbt_workflows_factory/yaml_builder.py,sha256=0J9eF1q4WvtF_JSIB7AXlEuDNtUMlt76KxfzSTvx3q4,4267
+dbt_workflows_factory-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dbt_workflows_factory-0.2.0.dist-info/METADATA,sha256=A-_qs1sv7BNCRqgrhEc8JFSg89cIUpZ7Oj413wvPw_A,15907
+dbt_workflows_factory-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dbt_workflows_factory-0.2.0.dist-info/top_level.txt,sha256=hbM0rFRQNeQKs_tgex8TqHICDqU_tkEaR1tCHgpki6s,22
+dbt_workflows_factory-0.2.0.dist-info/RECORD,,
