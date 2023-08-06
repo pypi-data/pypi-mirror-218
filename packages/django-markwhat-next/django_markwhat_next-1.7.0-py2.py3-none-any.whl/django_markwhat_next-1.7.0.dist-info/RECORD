@@ -1,0 +1,11 @@
+django_markwhat_next/__init__.py,sha256=BIJnjv2wwgJyo6RQi5rMYqgLxqyDkHllaGCZkooEIT8,47
+django_markwhat_next/models.py,sha256=JaFD-BVA3XkWoF44JKVnGRcronzSkihjflaUda8kDYA,98
+django_markwhat_next/tests.py,sha256=rpkrCcgyET7t2HU_-xanBExH7xwP9i2MuTYkmOZS-qw,7930
+django_markwhat_next/templatetags/__init__.py,sha256=-FTvg_ZQ_HsAPCiBjCB5oD91vy2sN08hkk6ap5zI7JA,37
+django_markwhat_next/templatetags/markup.py,sha256=V1dH0PsacYXeUhLFH8rpwouawCXB2SwfrBiSNUK1Pu0,2783
+django_markwhat_next-1.7.0.dist-info/AUTHORS.rst,sha256=K1CuTF_-TTum3u_QqaUtuTzlnjFirPtQcaPmIcCL_ns,833
+django_markwhat_next-1.7.0.dist-info/LICENSE,sha256=jvnL-XtzpEo6ah0PT5pCyV6WX3LwTJvkPMC679zMjrg,1522
+django_markwhat_next-1.7.0.dist-info/METADATA,sha256=vXufELwPYlosgacnYoKPdCyKQtawtmSci5stP9OBI3M,5286
+django_markwhat_next-1.7.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+django_markwhat_next-1.7.0.dist-info/top_level.txt,sha256=A6bDlCgokmRoRqdtUTUxHLx_jxLRqRRQkyJGPJbxU58,21
+django_markwhat_next-1.7.0.dist-info/RECORD,,
