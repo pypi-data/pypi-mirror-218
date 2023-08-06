@@ -1,0 +1,10 @@
+README.md
+setup.py
+cortex/__init__.py
+cortex/api.py
+tests/test_cortex.py
+trycortex_py.egg-info/PKG-INFO
+trycortex_py.egg-info/SOURCES.txt
+trycortex_py.egg-info/dependency_links.txt
+trycortex_py.egg-info/requires.txt
+trycortex_py.egg-info/top_level.txt
