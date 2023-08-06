@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+screwhashesset/README.MD
+screwhashesset/__init__.py
+screwhashesset/requirements.txt
+screwhashesset/thirdparty.json
+screwhashesset.egg-info/PKG-INFO
+screwhashesset.egg-info/SOURCES.txt
+screwhashesset.egg-info/dependency_links.txt
+screwhashesset.egg-info/top_level.txt

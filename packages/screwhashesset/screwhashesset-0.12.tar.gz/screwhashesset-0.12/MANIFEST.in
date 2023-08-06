@@ -1,0 +1,3 @@
+include screwhashesset/requirements.txt
+include screwhashesset/thirdparty.json
+include screwhashesset/README.MD
