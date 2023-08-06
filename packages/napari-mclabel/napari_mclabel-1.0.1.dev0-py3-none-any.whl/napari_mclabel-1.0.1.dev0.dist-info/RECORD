@@ -1,0 +1,9 @@
+napari_mclabel/__init__.py,sha256=uB7dOY9rurh6Xg7c0AV2zjDh08VMsdJ5I9sUwNcLxWA,219
+napari_mclabel/_version.py,sha256=zp0Pavt_U-RcMkHldHwUBwO3xwwJLheHTfzDbVFxKGs,173
+napari_mclabel/mclabel.py,sha256=gGnSOhoBAQsxglDEX6OfP9a4-gcf3OOL29opVImLNCY,21695
+napari_mclabel/utils.py,sha256=oMybZS8oHZL3Nv-LIkGTgxSHZQDSZd4_5FJQ0Njucsk,1973
+napari_mclabel-1.0.1.dev0.dist-info/METADATA,sha256=3MgvNuE-lrgI2fFICrczEnmXFBuqcPxQWtplXCUFhr4,4030
+napari_mclabel-1.0.1.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_mclabel-1.0.1.dev0.dist-info/entry_points.txt,sha256=nv1oPqU_EJi2dq6qWRFbEHZXeMeTAz8RtnMKl1WWvBE,48
+napari_mclabel-1.0.1.dev0.dist-info/top_level.txt,sha256=xHoCCrPHGu6u0fEKCkKMDO8-nzm3WgZPdPYV8Gi8Jlo,15
+napari_mclabel-1.0.1.dev0.dist-info/RECORD,,
