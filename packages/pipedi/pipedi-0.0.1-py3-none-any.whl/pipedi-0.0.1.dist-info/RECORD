@@ -1,0 +1,7 @@
+pipedi/__init__.py,sha256=qzUTBPbXQBzyQm1JnQEBlvLBRHEz-AHz2EJzeXd9xQc,33
+pipedi/pipy.py,sha256=lEfFSgzjvd1CkySF__2xMN7rsjLTVsnQ9vYfbaf1RrM,452
+pipedi/util/text.py,sha256=QSeeMKgpuejZqZyGYNDUd3E-X4fAj2Y4PwWA2D_kA44,1478
+pipedi-0.0.1.dist-info/METADATA,sha256=sRXhSnqQkoYt24SNjVqYZ5f9VZ4kNAeKYiYDruXbcBY,3615
+pipedi-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+pipedi-0.0.1.dist-info/licenses/LICENCE,sha256=n3aT8scqYX2TIPsNYZMWJ_5W9RXr1TNracwqkSJkMP0,1060
+pipedi-0.0.1.dist-info/RECORD,,
