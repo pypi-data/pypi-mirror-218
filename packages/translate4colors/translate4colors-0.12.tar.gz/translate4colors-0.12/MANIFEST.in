@@ -1,0 +1,3 @@
+include translate4colors/requirements.txt
+include translate4colors/thirdparty.json
+include translate4colors/README.MD
