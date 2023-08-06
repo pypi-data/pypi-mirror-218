@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: moonwiki
+Version: 2023.7.11.1
+Summary: moonwiki is a wiki application made with Python
+Home-page: https://github.com/RixTheTyrunt/moonwiki
+Author: RixTheTyrunt
+Author-email: rixthetyrunt@gmail.com
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# moonwiki
+![](https://img.shields.io/pypi/v/moonwiki?logo=python&logoColor=ffffff)
+
+moonwiki is a wiki application made with Python that doesn't require:
+- A database
+- External modules
+- Too much configuration
+## Install
+You can install moonwiki by using `pip`
+```sh
+pip install moonwiki
+```
+You can configure the above command to fit your needs for installing moonwiki
+## Usage
+Here are some usage examples:
+```py
+import moonwiki
+
+print(moonwiki.__package__) # "moonwiki"
+```
+```py
+from moonwiki import moonwiki
+wiki = moonwiki("testWiki")
+
+wiki.run("0.0.0.0", 8080)
+```
