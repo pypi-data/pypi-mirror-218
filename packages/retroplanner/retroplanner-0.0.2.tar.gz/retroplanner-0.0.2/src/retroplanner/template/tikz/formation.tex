@@ -1,0 +1,6 @@
+\pgfmathsetmacro \tpos {{ 2+\w*{i}+{p}/{n}*\w -{p}/{n}*2 + (\w-2)/(2*{n})}}
+
+\node (a) at (\tpos,\h*{j}+0.5) {{ {text} }};
+\pgfsetfillopacity{{0.1}}
+\fill[yellow] (2+\w*{i}+{p}/{n}*\w -{p}/{n}*2,\h*{j}) rectangle (2+\w*{i}+{p}/{n}*\w -{p}/{n}*2+\w/{n} - 2/{n},\h*{j}+\h);
+\pgfsetfillopacity{{1}}

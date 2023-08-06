@@ -1,0 +1,4 @@
+\pgfsetfillopacity{{0.1}}
+%\draw[pattern=north west lines,pattern color=blue] (\w*{i},\h*{j}) rectangle (\w*{i}+\w,\h*{j}+\h);
+\draw[fill=green] (\w*{i},\h*{j}) rectangle (\w*{i}+\w,\h*{j}+\h);
+\pgfsetfillopacity{{1}}

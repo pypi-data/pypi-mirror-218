@@ -1,0 +1,4 @@
+\node (a) at (\w*{i}+3.5,\h*{j}+0.5) {{ {text} }};
+\pgfsetfillopacity{{0.1}}
+\fill[blue] (2+\w*{i}+{p}/{n}*\w -{p}/{n}*2,\h*{j}) rectangle (2+\w*{i}+{p}/{n}*\w -{p}/{n}*2+\w/{n} - 2/{n},\h*{j}+\h);
+\pgfsetfillopacity{{1}}
