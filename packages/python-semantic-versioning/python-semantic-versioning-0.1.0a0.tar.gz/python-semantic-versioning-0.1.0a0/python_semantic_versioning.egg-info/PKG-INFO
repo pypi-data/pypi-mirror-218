@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: python-semantic-versioning
+Version: 0.1.0a0
+Summary: 📌 A simple utility to facilitate Semantic Versioning of Python packages 🐍
+Author-email: Kamil Paduszyński <paduszyk@gmail.com>
+License: MIT License
+Keywords: python,semantic,versioning
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-semantic-versioning
+
+## 🚨 Development status
+
+The project is currently in an early *pre-alpha* stage of the development process.
+
+## Summary
+
+This project provides a package to adopt library app [Semantic Versioning](https://semver.org) compliant in builds with [PEP 440](https://peps.python.org/pep-0440/). The idea behind it is to use a cleaner object-oriented approach as an alternative to the conventional version specification based on plain strings.
+
+## Installation
+
+The latest version of the the package can be installed using `pip`:
+```bash
+$ pip install python-semantic-versioning --upgrade
+```
+or any other package manager specific to your project's Python environment.
+
+## License
+
+Released under the [MIT license](LICENSE).

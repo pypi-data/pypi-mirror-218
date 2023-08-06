@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-semantic-versioning"
+description = "📌 A simple utility to facilitate Semantic Versioning of Python packages 🐍"
+readme = "README.md"
+license = {text = "MIT License"}
+authors = [
+  {name = "Kamil Paduszyński", email="paduszyk@gmail.com"},
+]
+keywords = [
+  "python",
+  "semantic",
+  "versioning",
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Version Control",
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+include = ["semantic_versioning*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "semantic_versioning.__version__"}
