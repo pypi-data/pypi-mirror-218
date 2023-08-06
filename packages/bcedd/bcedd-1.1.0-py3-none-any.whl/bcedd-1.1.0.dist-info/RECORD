@@ -1,0 +1,14 @@
+bcedd/__init__.py,sha256=ZKeqPYLCV16DfmHc2lBCwQSUA8EUtS2nhNz2rGgKl9w,204
+bcedd/__main__.py,sha256=dBdi7Vrfq6KFj1yErauGKYAdJRqlFc5Ezb5TnW3HuBc,3128
+bcedd/country_code.py,sha256=2hr8cbUq_n_8tgDIV0XSfsE5tPlzycw9qBmH3XdQ5vo,2614
+bcedd/crypto.py,sha256=48IkxXnEeaw0NUC4SVT5ofBg18-tWin5z22FTjD4Umc,3576
+bcedd/event_data.py,sha256=JzIvihcA7Gz8nau9L9RXRrPKHXEzjTZ9K_1TNooXUfs,9742
+bcedd/game_version.py,sha256=FW1ilyetj91kkrc4Y6Cy3wnhQFmqTEpSDjn6oRQdUY0,5377
+bcedd/json_file.py,sha256=JUpXcqQ3FP52xd_eCEhchDrbEzb2Su3nImrrmSamuGc,986
+bcedd/request.py,sha256=MRi7xheNTRFDMhHtLQaCaMtiROvy_pUphA2gGOyUBxc,1229
+bcedd/files/version.txt,sha256=f70hDr7BH2WpcZDvkAeVxLjaOAWvP1objR0nJVaykso,5
+bcedd-1.1.0.dist-info/LICENSE,sha256=n1ruSdBvzUJPu4HqsgDZm-VyHy8fOj05fmCG_WlLVr8,1071
+bcedd-1.1.0.dist-info/METADATA,sha256=_MNaARAIX97rVWuW7JZlp2wFeTOpzyNOLZiY6D1ltGs,2837
+bcedd-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bcedd-1.1.0.dist-info/top_level.txt,sha256=sBvc9t2n8esu2JHEnY5XmiVqrzRJypkx1JWuRQRIQuo,6
+bcedd-1.1.0.dist-info/RECORD,,
