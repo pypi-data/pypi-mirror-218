@@ -1,0 +1,10 @@
+pyVoIP/RTP.py,sha256=emKSzZZqtDe-Ybs_rzMLiEI-qzE8aMdnY5ldOB60G74,16827
+pyVoIP/SIP.py,sha256=Fg0X9ijCi5odPWKR3OxSg5dR4SGUC3mX-bc4_VDRzyE,66518
+pyVoIP/VoIP.py,sha256=TfZn8HgCSJhsThFq5BodjejtSWmT3_LIGKXPlUof2wc,26833
+pyVoIP/__init__.py,sha256=3CVHt5jHSRn8QWPVm_sGUtq7hvBevSta4xGbl1dcaJc,795
+pyVoIP/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyVoIP-1.6.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyVoIP-1.6.5.dist-info/METADATA,sha256=jDmPdN8ne5HccVO8WaAeNwvzptFompJzSFUm3hIG9QA,2471
+pyVoIP-1.6.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyVoIP-1.6.5.dist-info/top_level.txt,sha256=EhN7hdmC-Wkg7vRnH8iJl9YXUoLaP0YMoqSKVPs16Ds,7
+pyVoIP-1.6.5.dist-info/RECORD,,
