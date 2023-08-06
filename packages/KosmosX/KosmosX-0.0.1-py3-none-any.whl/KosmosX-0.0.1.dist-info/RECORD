@@ -1,0 +1,14 @@
+Kosmos/__init__.py,sha256=-R3ohPDtu5DtzLQZFBdhqAclF7FLIZ3ocWO4K8DsC9s,88
+Kosmos/inference.py,sha256=xV50srI_tvdf0OEM4hh0Q4RWgsmXPQw2FeD3UdCuTAo,2207
+Kosmos/model.py,sha256=iLsSqcrDj5wzz5Tj3o12z5EOpMj-Nin9IMuxKfCZ7bI,5315
+Kosmos/model_test.py,sha256=9DzNWCAvaNsxplAe0fCveSMTwd3-tuVnBXYH0_937aY,1273
+Kosmos/tokenize_hf.py,sha256=njmZz_M_Tk5YhgniCr2gT7WoBnxGrutNV99cAhefAy0,3254
+Kosmos/train_distributed.py,sha256=45NXO2rxPLk6qBfdAfFd-1m2CIrjpUZfu_iqyyXnNuw,22871
+Kosmos/train_kosmos_stable_2.py,sha256=HhBOqF3q09zndX4XghT4RlUjB27uiKosX2aRTVuFsqs,9454
+Kosmos/training.py,sha256=0Ll9aqohBXrbTN4nz6zUg50QCn1K3FgtSqeLaP7yjbI,10157
+Kosmos/training_distributed_accelerate.py,sha256=MIaxqFaJT4jgWYbhc3mHrPhtpjSfzlPk37xup-PGulM,22849
+KosmosX-0.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+KosmosX-0.0.1.dist-info/METADATA,sha256=daVn3i4TA-9RF5_n3Cf9H-e2dyo68I8L0uL0N7tSO4o,907
+KosmosX-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+KosmosX-0.0.1.dist-info/top_level.txt,sha256=LIJODJ8m05ADf3-h7Kab-7VYKIHg4SQ3U_N4LVWSbig,7
+KosmosX-0.0.1.dist-info/RECORD,,
