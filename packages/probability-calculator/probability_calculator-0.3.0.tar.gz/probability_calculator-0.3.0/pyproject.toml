@@ -1,0 +1,38 @@
+[project]
+name = "probability_calculator"
+version = "0.3.0"
+authors = [
+  { name="Hendrik Roehm", email="git@roehm.ws" },
+]
+description = "Calculate with and analyze probability densities."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Development Status :: 3 - Alpha"
+]
+
+
+dependencies = [
+  "matplotlib",
+  "scipy",
+  "autopep8",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/HendrikRoehm/probability_calculator"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+exclude = [
+  "/.vscode",
+  "/Makefile",
+  "/tests"
+]
