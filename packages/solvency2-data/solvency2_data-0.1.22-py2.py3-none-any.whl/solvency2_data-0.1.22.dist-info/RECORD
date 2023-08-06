@@ -1,0 +1,14 @@
+solvency2_data/__init__.py,sha256=qQ75QjPP4LTsYobectf8Hig8eMzAwUuVYKOePhv8QoI,257
+solvency2_data/alternative_extrapolation.py,sha256=wZkAIUwUKFKmTLCtHVTTCVFYBcAEi0L05B9yMAkpCNU,3177
+solvency2_data/eiopa_data.py,sha256=5K1xJm7f5alTE65OL9lsVmuej0KrByF2nEnF-SkXp8s,12676
+solvency2_data/rfr.py,sha256=WkOR8ewkwst_UTajrRCMw8Tmo73_-KGhS_VcjNNfX98,11140
+solvency2_data/scraping.py,sha256=V68UIGiP0udA1PQeiKHemiEEKxoXHsNIkCTPjjTF-zA,5711
+solvency2_data/smith_wilson.py,sha256=qgBntPW61IQwsWFVhzzePUNgArWzyL4VjNCD5SFVeCs,9657
+solvency2_data/solvency2_data.cfg,sha256=6w9cxupA7P3ObdxAMRUSkl4JUNV1doh7nz20n9XlnlA,83
+solvency2_data/sqlite_handler.py,sha256=gbLS3AOubcDg1JIOa1KjcGZVCR8_Nux14k8urq3tLhU,7653
+solvency2_data/util.py,sha256=e4hNSEpqqz0DElhpZTpinKhLpX4Lh5HtRvnfvjur8yA,1313
+solvency2_data-0.1.22.dist-info/LICENSE,sha256=I9_6_e_Taxccl6fkl6RcyHvMWKaw_uEEIhpUHgEBTu4,1356
+solvency2_data-0.1.22.dist-info/METADATA,sha256=5_ARph75998s08egpr6015f9TU5LcYrpC1CgJ1GIJ5Q,4246
+solvency2_data-0.1.22.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+solvency2_data-0.1.22.dist-info/top_level.txt,sha256=mnryuKU94GI-dvkex3Bxj14r4ZyEG0yE5Ir7-XESczw,15
+solvency2_data-0.1.22.dist-info/RECORD,,
