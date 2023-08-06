@@ -1,0 +1,7 @@
+msgpack
+pytest
+pytest-mock
+pyyaml
+swh.core[testing]
+swh.graph
+types-pyyaml
