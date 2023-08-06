@@ -1,0 +1,6 @@
+aiohttp
+aiohttp_retry
+msgspec
+
+[orjson]
+orjson
