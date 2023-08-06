@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "kaihoplots"
+version = "0.0.1"
+description = "Kaiho Stylesheet for matplotlib"
+readme = "README.md"
+
+[tool.setuptools.package-data]
+kaihoplots = ["*.mplstyle"]

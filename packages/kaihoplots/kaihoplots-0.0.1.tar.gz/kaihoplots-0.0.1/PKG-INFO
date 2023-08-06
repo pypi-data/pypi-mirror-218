@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: kaihoplots
+Version: 0.0.1
+Summary: Kaiho Stylesheet for matplotlib
+Description-Content-Type: text/markdown
+
+## Usage
+
+You can find examples in test directory.
