@@ -1,0 +1,52 @@
+[project]
+name = "django-excel-serializer"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Kamil Paduszyński", email="paduszyk@gmail.com"},
+]
+keywords = [
+  "django",
+  "excel",
+  "serializer",
+]
+requires-python = ">= 3.8"
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Framework :: Django",
+  "Framework :: Django :: 3.2",
+  "Framework :: Django :: 4.0",
+  "Framework :: Django :: 4.1",
+  "Framework :: Django :: 4.2",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dynamic = ["version", "dependencies", "optional-dependencies"]
+
+[project.urls]
+Repository = "https://github.com/paduszyk/django-spreadsheet-serializer"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["excel_serializer*"]
+
+[tool.setuptools.dynamic.version]
+attr = "excel_serializer.__version__"
+
+[tool.setuptools.dynamic.dependencies]
+file = "requirements.txt"
+
+[tool.setuptools.dynamic.optional-dependencies]
+dev = {file = "requirements-dev.txt"}
+test = {file = "requirements-test.txt"}
+
