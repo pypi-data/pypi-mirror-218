@@ -1,0 +1,15 @@
+LICENSE
+README.md
+VERSION
+pyproject.toml
+src/dbt_workflows_factory/__init__.py
+src/dbt_workflows_factory/cli.py
+src/dbt_workflows_factory/dbt_workflows_converter.py
+src/dbt_workflows_factory/params.py
+src/dbt_workflows_factory/tasks.py
+src/dbt_workflows_factory/yaml_builder.py
+src/dbt_workflows_factory.egg-info/PKG-INFO
+src/dbt_workflows_factory.egg-info/SOURCES.txt
+src/dbt_workflows_factory.egg-info/dependency_links.txt
+src/dbt_workflows_factory.egg-info/requires.txt
+src/dbt_workflows_factory.egg-info/top_level.txt
