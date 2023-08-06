@@ -1,0 +1,27 @@
+# TODO
+
+- Add `Vantage.DmxDaliGateway` as a Station
+- Cleanup "ELAGG", etc subscriptions on shutdown to avoid memory leaks on the controller
+- Look into pointing xsdata to a module to parse objects
+  - <https://xsdata.readthedocs.io/en/latest/models.html#type-wildcard>
+- Consider grouping like-objects into a single file, eg all stations into station.py
+- Consider grouped controllers like aiohue, eg. for sensors, loads, etc.
+- Consider renaming GMemController to VariablesController, MastersController to ControllersController
+- Sphinx docs / readthedocs
+- Smarter fetching of objects?
+  - Eg. combine multiple requests into one
+  - Eg. If we request 50 and get < 50 don't make another request
+- Consider "ctypes" style rpc for command_client INVOKE methods
+  - Potentially move calls back into controllers
+
+    ```python
+    # argtypes, restype, "byref"
+    # INVOKE {vid} {method} {args}
+    # -> R:INVOKE {vid} {return} {method} {args}
+    INVOKE_METHODS = {
+        "Load.GetLevel": ((), Decimal),
+        "Load.SetLevel": ((float,), bool),
+        "Load.Ramp": ((float, float), bool),
+        "Temperature.GetValue": ((), Decimal),
+    }
+    ```
