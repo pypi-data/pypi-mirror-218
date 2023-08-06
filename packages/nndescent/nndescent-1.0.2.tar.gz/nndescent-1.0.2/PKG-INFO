@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: nndescent
+Version: 1.0.2
+Summary: C++ extension implementing nearest neighbour descent
+Provides-Extra: full
+License-File: LICENSE
