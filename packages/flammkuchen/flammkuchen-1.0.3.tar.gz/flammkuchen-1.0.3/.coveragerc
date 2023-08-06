@@ -1,0 +1,10 @@
+[run]
+omit =
+    flammkuchen/tests/*
+
+[report]
+omit =
+    */python?.?/*
+    */site-packages/nose/*
+    *__init__*
+    flammkuchen/tests/*
