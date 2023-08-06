@@ -1,0 +1,16 @@
+earthpy
+geojson
+geopandas
+jsonschema
+matplotlib
+ndjson
+numpy
+pandas
+python-dotenv
+rasterio
+requests
+rtree
+shapely
+tqdm
+uuid
+xmltodict
