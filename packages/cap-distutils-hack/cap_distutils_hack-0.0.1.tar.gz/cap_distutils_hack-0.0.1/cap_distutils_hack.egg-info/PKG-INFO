@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cap-distutils-hack
+Version: 0.0.1
+Summary: None
+Home-page: https://github.com/DevCapitalizer/cap_distutils_hack
+Author: DDjango
+Author-email: ddjango.786@gmail.com
+License: MIT
+Description: Long long
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown

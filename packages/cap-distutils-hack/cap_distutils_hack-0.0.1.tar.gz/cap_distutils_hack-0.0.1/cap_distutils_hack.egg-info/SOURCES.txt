@@ -1,0 +1,7 @@
+setup.py
+cap_distutils_hack/__init__.py
+cap_distutils_hack/override.py
+cap_distutils_hack.egg-info/PKG-INFO
+cap_distutils_hack.egg-info/SOURCES.txt
+cap_distutils_hack.egg-info/dependency_links.txt
+cap_distutils_hack.egg-info/top_level.txt
