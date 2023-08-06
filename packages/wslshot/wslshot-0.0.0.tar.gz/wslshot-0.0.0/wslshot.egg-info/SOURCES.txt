@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+wslshot.egg-info/PKG-INFO
+wslshot.egg-info/SOURCES.txt
+wslshot.egg-info/dependency_links.txt
+wslshot.egg-info/top_level.txt

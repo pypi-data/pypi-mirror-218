@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wslshot
+Version: 0.0.0
+Home-page: https://github.com/sderev/wslshot
+Author: Sébastien De Revière
+License: Apache Licence, Version 2.0
+Project-URL: Documentation, https://github.com/sderev/wslshot
+Project-URL: Issues, http://github.com/sderev/wslshot/issues
+Project-URL: Changelog, https://github.com/sderev/wslshot/releases
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Windows Screenshot for Linux
+
+A tool that automates the transfer and management of screenshots from Windows to a Linux VM, providing easy access and integration in your text editor.
