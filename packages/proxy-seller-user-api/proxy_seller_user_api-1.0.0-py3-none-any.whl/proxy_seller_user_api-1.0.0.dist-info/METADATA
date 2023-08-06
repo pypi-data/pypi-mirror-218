@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: proxy-seller-user-api
+Version: 1.0.0
+Summary: Interaction with user api
+Home-page: https://bitbucket.org/proxy-seller/user-api-python
+Author: proxy-seller
+Author-email: support@proxy-seller.com
+Project-URL: Documentation, https://proxy-seller.com/personal/api/
+Keywords: api client
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: json
+
+# proxy-seller python api
+
+Install from [ ](https:// )
+```sh
+pip3 install proxy-seller-user-api
+```
+
+Or manual install from [proxy-seller/user-api-python](https://bitbucket.org/proxy-seller/user-api-python) repository
+```sh
+pip3 install git+https://bitbucket.org/proxy-seller/user-api-python
+```
+
+## Quick start
+Get API key [here](https://proxy-seller.com/personal/api/)
+```py
+from proxy_seller_user_api import Api
+api = Api({'key':'YOUR_API_KEY'})
+print(api.balance())
+```
+
+## Methods available:
+* balance
+* balanceAdd
+* balancePaymentsList
+* referenceList
+* orderCalcIpv4
+* orderCalcIsp
+* orderCalcMix
+* orderCalcIpv6
+* orderCalcMobile
+* orderMakeIpv4
+* orderMakeIsp
+* orderMakeMix
+* orderMakeIpv6
+* orderMakeMobile
+* prolongCalc
+* prolongMake
+* proxyList
+* proxyDownload
+* proxyCommentSet
+* proxyCheck
+* ping
