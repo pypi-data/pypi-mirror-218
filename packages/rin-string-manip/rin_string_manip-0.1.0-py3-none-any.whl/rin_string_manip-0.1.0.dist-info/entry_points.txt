@@ -1,0 +1,3 @@
+[console_scripts]
+rin_string_manip=rin_string_manip.main:app
+
