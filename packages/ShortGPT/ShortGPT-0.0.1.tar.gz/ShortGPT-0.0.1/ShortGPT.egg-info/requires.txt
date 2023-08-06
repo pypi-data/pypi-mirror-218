@@ -1,0 +1,17 @@
+ffmpeg
+python-dotenv
+gradio
+openai
+tiktoken
+tinydb
+tinymongo
+proglog
+yt-dlp
+torch
+torchaudio
+protobuf==3.20.0
+langchain
+moviepy
+termcolor
+progress
+questionary
