@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyARSS
+Version: 0.2.0
+Summary: A Python wrapper for the Analysis & Resynthesis Sound Spectrograph (ARSS)
+Home-page: https://github.com/TheoCoombes/pyARSS
+Author: Theo Coombes
+Author-email: theocoombes06@gmail.com
+License: MIT
+Requires: pydub
+License-File: LICENSE
+
