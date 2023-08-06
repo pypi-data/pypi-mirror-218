@@ -1,0 +1,7 @@
+py-cone>=1.1.0
+
+[argon2]
+argon2-cffi>=19.1.0
+
+[bcrypt]
+bcrypt

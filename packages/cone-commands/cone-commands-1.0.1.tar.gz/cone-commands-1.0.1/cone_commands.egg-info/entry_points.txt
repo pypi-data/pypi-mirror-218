@@ -1,0 +1,3 @@
+[console_scripts]
+cone = cone_commands.core.management:execute_from_command_line
+

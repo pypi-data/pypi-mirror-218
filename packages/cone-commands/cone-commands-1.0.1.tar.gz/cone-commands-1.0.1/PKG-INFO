@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: cone-commands
+Version: 1.0.1
+Summary: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+Home-page: https://github.com/cone387/cone-commands.git
+Author: cone387
+Author-email: foundation@djangoproject.com
+Maintainer-email: 1183008540@qq.com
+License: MIT
+Project-URL: Documentation, https://docs.djangoproject.com/
+Project-URL: Release notes, https://docs.djangoproject.com/en/stable/releases/
+Project-URL: Funding, https://www.djangoproject.com/fundraising/
+Project-URL: Source, https://github.com/django/django
+Project-URL: Tracker, https://code.djangoproject.com/
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7, <4
+Provides-Extra: argon2
+Provides-Extra: bcrypt
+License-File: LICENSE
+
+UNKNOWN
+
