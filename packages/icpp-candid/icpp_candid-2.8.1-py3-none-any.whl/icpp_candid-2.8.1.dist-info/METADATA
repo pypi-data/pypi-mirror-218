@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: icpp-candid
+Version: 2.8.1
+Summary: C++ Candid Library
+Home-page: https://docs.icpp.world/
+Author: icppWorld
+Author-email: icpp@icpp.world
+License: MIT
+Keywords: C++ Candid Library,Internet Computer,C++,Candid,blockchain
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pylint (==2.13.9) ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# C++ Candid Library
+
+The C++ Candid Library of [icpp](https://docs.icpp.world/)
+
+## Status
+The Candid Library is fully functional and it is embedded & tested in [icpp](https://docs.icpp.world/).
+
+This GitHub repository is WIP, as we are still in the process of fully externalizing the Candid Library from the icpp cdk. We expect to complete it by July 19, but are already open sourcing it so you can check it out.
+
+
+## Support
+Interested to use our C++ Candid Library in your project?
+
+We're excited to hear from you.
+
+Join the [icpp users group at OpenChat](https://oc.app/group/tjvrf-oqaaa-aaaar-ahp6a-cai/?ref=6e3y2-4yaaa-aaaaf-araya-cai&code=9104f504fcd17b1f)
+
