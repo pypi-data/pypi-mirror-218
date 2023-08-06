@@ -1,0 +1,7 @@
+FROM ghcr.io/ekorman/glip:latest
+
+COPY ./setup.py /functional-cat/setup.py
+COPY ./pyproject.toml /functional-cat/pyproject.toml
+COPY ./functional_cat /functional-cat/functional_cat
+WORKDIR /functional-cat
+RUN pip3.8 install .
