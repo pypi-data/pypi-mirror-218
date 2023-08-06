@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: streamlit-mermaid
+Version: 0.2.0
+Summary: A streamlit component, to visualize mermaid
+Home-page: https://github.com/AI-Yash/st-chat
+Author: nakanat
+Author-email: nekanat.stock@gmail.com
+Keywords: mermaid streamlit streamlit-component
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# streamlit-mermaid
+
+Streamlit Component, for Mermaid.
+
+## Installation
+
+```bash
+pip install streamlit-mermaid
+```
+
+## Quick start
+
+```py
+import streamlit_mermaid as stmd
+import streamlit as st
+
+code = """
+graph TD
+    A --> B
+"""
+
+mermaid = stmd.st_mermaid(code)
+st.write(mermaid)
+```
+
+```bash
+streamlit run example.py
+```
