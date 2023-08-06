@@ -1,0 +1,13 @@
+pymapget.cp39-win_amd64.pyd,sha256=D0jywxrwOvlYIOCbth7DIhXUk5jq0hYR1_tPxGb39ZA,1698816
+mapget/LICENSE.txt,sha256=82HFE2tG6k1v7YD065fi3PSy0tCuV68AM7WXaA4Y2Mc,1557
+mapget/__init__.py,sha256=4BQ2UpmtSoX0x1dlQphfbboyPCDmEOruyuOTVc9niGQ,23
+mapget/__main__.py,sha256=wBYXjytyf4XtGVtcmpnxX_AXsrr6v5CHPRlFyD9ZT_0,87
+mapget/libcrypto-1_1-x64.dll,sha256=luO755txrsAa57nCHQY-Fr_7uYoLBEp8r_D9SA9REv4,3417600
+mapget/libssl-1_1-x64.dll,sha256=j8k2jlbbPkT2hmcY6pESOIZQisIcCuI1CrjMTkgOVUo,686080
+mapget/mapget-http-datasource.lib,sha256=whhuH-00yX6BpCvuhO824h8grzwlMNe3hYKMyWwqp8I,4965794
+mapget/mapget-model.lib,sha256=NqBSQKFKN1VmSfVTjsdpfV76Gug2URLZ8Po4a_D44yQ,4616352
+mapget/pymapget.cp39-win_amd64.pyd,sha256=D0jywxrwOvlYIOCbth7DIhXUk5jq0hYR1_tPxGb39ZA,1698816
+mapget-0.1.1.dist-info/METADATA,sha256=5dqXEAAhtwMmuk9JXeOyEKChFM42u1L1XQ3MEgJH6NE,282
+mapget-0.1.1.dist-info/WHEEL,sha256=eep6QWEFiQfg2wcclssb_WY-D33AnLYLnEKGA9Rn-VU,100
+mapget-0.1.1.dist-info/top_level.txt,sha256=W-teDHSWuhlJr1wYlLvI3fWF1H42P9Etok_NjWZ9tsQ,16
+mapget-0.1.1.dist-info/RECORD,,
