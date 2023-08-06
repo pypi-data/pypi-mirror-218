@@ -1,0 +1,10 @@
+bitssh/__init__.py,sha256=uVE8XtMDGGmXxeoq3Q_H9X2niy4iiglAVwhqNHNnb8c,163
+bitssh/__main__.py,sha256=UuWb6PCYU3o5QVhz1-UZCZEpi0jZoF1-d5zRL7rbtNU,433
+bitssh/core.py,sha256=OMoO3ldXUDpb2kjggh91bWS9c-XV8AdLk9cCdiS62MI,1056
+bitssh/utils.py,sha256=1tSITaqkzL5LiiM5MbIXWLvZqCu0brQLo3WvBhR1tDQ,782
+bitssh-2.0.0.dist-info/LICENSE,sha256=Ez0CJQWtDFrWifhI0TZErLXJUfU5x6X4aH8OaqlpeLU,1073
+bitssh-2.0.0.dist-info/METADATA,sha256=tLG550EwEngGXWzcTBdjjbZ-sk49d0rr00Td14Vei1Q,5161
+bitssh-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bitssh-2.0.0.dist-info/entry_points.txt,sha256=DprrpudzrCK7JmIccdKMd6REkJ48WngMyI98Uca85oQ,48
+bitssh-2.0.0.dist-info/top_level.txt,sha256=zV4c9zCv7K2Oy4AJZow0RGonvmyeLcQSmjNWrTg-erA,7
+bitssh-2.0.0.dist-info/RECORD,,
