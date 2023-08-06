@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+redex/__init__.py
+redex.egg-info/PKG-INFO
+redex.egg-info/SOURCES.txt
+redex.egg-info/dependency_links.txt
+redex.egg-info/top_level.txt
