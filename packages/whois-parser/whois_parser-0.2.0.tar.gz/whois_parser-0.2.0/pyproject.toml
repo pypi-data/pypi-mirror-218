@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "whois-parser"
+version = "0.2.0"
+description = "Yet another whois parser for Python"
+authors = ["Manabu Niseki <manabu.niseki@gmail.com>"]
+homepage = "https://github.com/ninoseki/whois-parser"
+repository = "https://github.com/ninoseki/whois-parser"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+dateparser = ">=1.1,<2.0"
+pyparsing = ">=3.0,<4.0"
+
+[tool.poetry.dev-dependencies]
+black = "^23.3"
+coveralls = "^3.3.1"
+isort = "^5.12"
+mypy = "^1.4"
+pre-commit = "^3.3"
+pytest = "^7.4"
+pytest-asyncio = "^0.21"
+pytest-cov = "^4.1"
+pytest-mock = "^3.11"
+pytest-randomly = "^3.12"
+pytest-sugar = "^0.9"
+pyupgrade = "^3.9"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
