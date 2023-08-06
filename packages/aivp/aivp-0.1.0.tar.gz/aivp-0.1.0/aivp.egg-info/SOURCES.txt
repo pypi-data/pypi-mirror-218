@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aivp/__init__.py
+aivp/aivp.py
+aivp.egg-info/PKG-INFO
+aivp.egg-info/SOURCES.txt
+aivp.egg-info/dependency_links.txt
+aivp.egg-info/requires.txt
+aivp.egg-info/top_level.txt
