@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pipedream-solver
+Version: 0.2.2
+Summary: 🚰 Interactive hydrodynamic solver for pipe and channel networks
+Home-page: https://mdbartos.github.io/pipedream
+Author: Matt Bartos
+Author-email: mdbartos@utexas.edu
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: numba
+Requires-Dist: matplotlib
+
+🚰 Interactive hydrodynamic solver for pipe and channel networks
