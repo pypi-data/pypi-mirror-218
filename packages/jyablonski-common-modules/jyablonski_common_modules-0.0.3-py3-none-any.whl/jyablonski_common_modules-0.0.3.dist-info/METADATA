@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jyablonski-common-modules
+Version: 0.0.3
+Summary: 
+Author: jyablonski9
+Author-email: jyablonski9@gmail.com
+Maintainer: jyablonski9
+Maintainer-email: jyablonski9@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: es-logging
+Requires-Dist: SQLAlchemy (>=1.4.48,<2.0.0)
+Requires-Dist: boto3 (>=1.26.165,<2.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.6,<3.0.0)
