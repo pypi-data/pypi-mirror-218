@@ -1,0 +1,16 @@
+dask[complete]
+matplotlib
+numba
+numpy
+scikit-learn
+
+[dev]
+pytest>=6.0
+pytest-cov
+pycodestyle
+
+[docs]
+sphinx
+docutils==0.16
+sphinx_rtd_theme==0.5.2
+recommonmark
