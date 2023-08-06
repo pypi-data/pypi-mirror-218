@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+data_handler/__init__.py
+data_handler/benchmark.py
+data_handler/conversion.py
+data_handler/ffmpeg_utils.py
+data_handler/modifications.py
+data_handler/split.py
+data_handler/utils.py
+data_handler.egg-info/PKG-INFO
+data_handler.egg-info/SOURCES.txt
+data_handler.egg-info/dependency_links.txt
+data_handler.egg-info/requires.txt
+data_handler.egg-info/top_level.txt

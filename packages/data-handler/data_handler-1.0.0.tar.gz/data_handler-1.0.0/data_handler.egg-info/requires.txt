@@ -1,0 +1,11 @@
+albumentations
+matplotlib
+numpy
+opencv-python
+pandas
+Pillow
+pycocotools
+scikit_learn
+seaborn
+tqdm
+wget
