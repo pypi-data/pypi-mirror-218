@@ -1,0 +1,7 @@
+[console_scripts]
+clubcpg-cluster=clubcpg_bin.clubcpg_cluster:cli
+clubcpg-coverage=clubcpg_bin.clubcpg_coverage:cli
+clubcpg-impute-cluster=clubcpg_bin.clubcpg_impute_cluster:cli
+clubcpg-impute-coverage=clubcpg_bin.clubcpg_impute_coverage:cli
+clubcpg-impute-train=clubcpg_bin.clubcpg_impute_train:cli
+
