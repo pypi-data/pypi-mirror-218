@@ -1,0 +1,15 @@
+aws_prototyping_sdk/type_safe_api/__init__.py,sha256=FrpeA6m1PrNmanRNHvH-JJ64tT_MIboOnrlUtFf5eyQ,990762
+aws_prototyping_sdk/type_safe_api/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_prototyping_sdk/type_safe_api/_jsii/__init__.py,sha256=GFim4sC5Wp_KLEID9KDntckpCTRsbwQOyukvbL9pWfM,558
+aws_prototyping_sdk/type_safe_api/_jsii/type-safe-api@0.19.35.jsii.tgz,sha256=lfU5cTuBZk2EuTQndrGsODGjNayWDfZnHN31CsobcRM,1249552
+aws_prototyping_sdk.type_safe_api-0.19.35.data/scripts/clean-openapi-generated-code,sha256=A0flihgQAPc0bju1FxSmw62Fuvwnwq9M4EaMjWcgvNM,369
+aws_prototyping_sdk.type_safe_api-0.19.35.data/scripts/copy-gradle-wrapper,sha256=BvhZsQWqUAkErgERi4hQGPEo-KLvGm4WC97FRpgjvqU,360
+aws_prototyping_sdk.type_safe_api-0.19.35.data/scripts/generate,sha256=cIHwo31MwhRsR_2RjTA3ugXNVw17IsKorJA8FyHmoqk,349
+aws_prototyping_sdk.type_safe_api-0.19.35.data/scripts/generate-html-redoc-docs,sha256=JvgSkOuakTan0OrfJ31bTQoZZr2VGpUq4zwTSeJl3bY,365
+aws_prototyping_sdk.type_safe_api-0.19.35.data/scripts/generate-mock-data,sha256=kwQAvhbFBfNH3Lg3GU8VWTMfV5VKjwKktx3vBBgcM7o,359
+aws_prototyping_sdk.type_safe_api-0.19.35.data/scripts/parse-openapi-spec,sha256=OmgUqMtY1TH-r5BoX35PvLGbiO9fgCTsqBI75ud6gN0,359
+aws_prototyping_sdk.type_safe_api-0.19.35.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aws_prototyping_sdk.type_safe_api-0.19.35.dist-info/METADATA,sha256=Xivm0i2CegHH8YPf8FD4AVTkwmDmNu4ai8gHvv44ot8,4331
+aws_prototyping_sdk.type_safe_api-0.19.35.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_prototyping_sdk.type_safe_api-0.19.35.dist-info/top_level.txt,sha256=GI4X33MSLMhT7o3n6FDj9jqf2xWUdJ3qEo1cWYKXylw,20
+aws_prototyping_sdk.type_safe_api-0.19.35.dist-info/RECORD,,
