@@ -1,0 +1,17 @@
+setup.py
+odoo/addons/mail_template_category/__init__.py
+odoo/addons/mail_template_category/__manifest__.py
+odoo/addons/mail_template_category/i18n/es.po
+odoo/addons/mail_template_category/i18n/mail_template_category.pot
+odoo/addons/mail_template_category/models/__init__.py
+odoo/addons/mail_template_category/models/mail_template.py
+odoo/addons/mail_template_category/models/mail_template_category.py
+odoo/addons/mail_template_category/security/ir.model.access.csv
+odoo/addons/mail_template_category/views/mail_template.xml
+odoo/addons/mail_template_category/views/mail_template_category.xml
+odoo13_addon_mail_template_category.egg-info/PKG-INFO
+odoo13_addon_mail_template_category.egg-info/SOURCES.txt
+odoo13_addon_mail_template_category.egg-info/dependency_links.txt
+odoo13_addon_mail_template_category.egg-info/not-zip-safe
+odoo13_addon_mail_template_category.egg-info/requires.txt
+odoo13_addon_mail_template_category.egg-info/top_level.txt
