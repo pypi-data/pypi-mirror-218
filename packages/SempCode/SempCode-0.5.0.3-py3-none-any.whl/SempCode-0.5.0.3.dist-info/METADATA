@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: SempCode
+Version: 0.5.0.3
+Summary: Simplified the Python Code
+Author: 是真的Win12Home
+Author-email: mcdhj-work@outlook.com
+License: Mozilla Public License Version 2.0
+Classifier: Development Status :: 4 - Beta
+Requires: requests
+Requires: pillow
+Requires: pathlib
+Requires: subprocess
+Requires: datetime
+Requires: ctypes
+Requires: ttkthemes
+Description-Content-Type: text/markdown
+
+---
+Hello Semp!
+---
+Semp is can simple some code in Python.\
+**1.Updates**\
+*v0.5.0.3*(Update)\
+Add PyPrompt\
+Add CmdPrompt\
+Add systemcommand in Command.Commander\
+*v0.5.0.2(Update)*\
+Add Semp.EasyTkinter\
+*v0.3.7.5(Fix)*\
+Fix v0.3.7.2 bugs\
+*v0.3.7.2(Broken)*\
+Add NumberError,BoolError and ModeError\
+Add Command.Commander(Simplified pathlib,subprocess)\
+**2.Author**\
+Win12Home(Win12_Home)
