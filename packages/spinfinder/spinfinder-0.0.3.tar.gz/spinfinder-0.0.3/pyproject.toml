@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spinfinder"
+version = "0.0.3"
+authors = [
+  { name="Stiv Llenga", email="stiv.llenga@h-its.org" },
+]
+description = "Calculate the spin multiplicity of your PAH fast using Ovchinnikov's rule."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
