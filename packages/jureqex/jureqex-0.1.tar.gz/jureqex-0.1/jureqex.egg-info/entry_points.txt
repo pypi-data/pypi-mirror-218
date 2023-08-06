@@ -1,0 +1,2 @@
+[console_scripts]
+jureqex = jureqex.__main__:main
