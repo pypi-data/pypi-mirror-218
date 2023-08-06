@@ -1,0 +1,5 @@
+abqpy<2022,>=2021
+
+[jupyter]
+ipynbname
+nbconvert
