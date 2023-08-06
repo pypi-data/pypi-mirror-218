@@ -1,0 +1,72 @@
+#!/bin/bash
+
+function init(){
+    if [ -z "$1" ]
+    then
+        pull_changes=$(python -c 'import swiftly_unix.init; print(swiftly_unix.init.pull_changes())')
+        if [ "$pull_changes" = "True" ]
+        then
+            git pull
+        fi
+
+        venv_location=$(python -c 'import swiftly_unix.init; print(swiftly_unix.init.get_venv_location())')
+        source $venv_location/bin/activate
+
+        available_packages=$(pip freeze)
+        new_packages=$(python -c "import swiftly_unix.init; print(swiftly_unix.init.check_new_packages('$available_packages'))")
+
+        if [ "$new_packages" = "True" ]
+        then
+            pip install -r requirements.txt
+        fi
+
+        echo "Initialisation completed!"
+    else
+        is_github_repo=$(python -c "import swiftly_unix.init; print(swiftly_unix.init.is_repo('$1'))")
+        if [ "$is_github_repo" = "True" ]
+        then
+            git clone $1
+        fi
+
+        venv_location=$(python -c "import swiftly_unix.init; print(swiftly_unix.init.initialise('$1'))")
+        source $venv_location/bin/activate
+        pip install -r requirements.txt
+        echo "Initialisation completed!"
+    fi
+}
+
+function makeapp(){
+    python -c "import swiftly_unix.makeapp; swiftly_unix.makeapp.makeapp('$1')"
+}
+
+function run(){
+    path=$(python -c "import swiftly_unix.run_app; print(swiftly_unix.run_app.run_app('$1'))")
+    python $path
+}
+
+function install(){
+    pip install $1
+    python -c "import swiftly_unix.installs; swiftly_unix.installs.install_package('$1')"
+}
+
+function uninstall(){
+    pip uninstall $1
+    python -c "import swiftly_unix.installs; swiftly_unix.installs.uninstall_package('$1')"
+}
+
+if [ "$1" = "init" ]
+then
+    init $2
+elif [ "$1" = "makeapp" ]
+then
+    makeapp $2
+elif [ "$1" = "run" ]
+then
+    run $2
+elif [ "$1" = "install" ]
+then
+    install $2
+elif [ "$1" = "uninstall" ]
+then
+    uninstall $2
+fi
