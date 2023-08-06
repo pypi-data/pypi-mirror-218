@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "gable"
+version = "0.0.1a2"
+description = "Command line interface to interact with Gable API"
+authors = ["Gable.ai <engineers@gable.ai>"]
+packages = [{include = "gable"}]
+
+[tool.poetry.dependencies]
+python = ">=3.0.0,<4.0.0"
+
+[tool.poetry.scripts]
+gable = "gable.cli:cli"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+build = "^0.10.0"
+poethepoet = "^0.20.0"
+pytest = "^7.3.1"
+twine = "^4.0.2"
+
+[tool.poe.tasks.publish_cli]
+shell = "sh scripts/publish_cli.sh"
+
+[tool.poe.tasks.publish_cli_pypi]
+shell = "sh scripts/publish_cli_pypi.sh"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
