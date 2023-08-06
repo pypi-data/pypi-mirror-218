@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "logsparsersubsystem"
+version = "1.0.6"
+description = "logs parsing subsystem library for airflow"
+authors = ["DieNice <DailyPlanning@bk.ru>"]
+readme = "README.md"
+packages = [{include = "logs_parser"},{ include ="README.md"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ip2location = "^8.10.0"
+pandas = "^2.0.3"
+pillow = "^10.0.0"
+click = "^8.1.4"
+matplotlib = "^3.7.2"
+requests = "^2.31.0"
+tqdm = "^4.65.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.4"
+autopep8 = "^2.0.2"
+tqdm = "^4.65.0"
+mypy = "^1.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
