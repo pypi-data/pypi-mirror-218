@@ -1,0 +1,10 @@
+fastapi>=0.98
+filelock
+uvicorn
+
+[format]
+black
+
+[test]
+pytest>=3
+pytest-cov
