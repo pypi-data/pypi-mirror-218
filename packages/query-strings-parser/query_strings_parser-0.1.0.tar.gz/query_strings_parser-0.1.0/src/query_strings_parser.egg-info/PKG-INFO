@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: query-strings-parser
+Version: 0.1.0
+Home-page: https://dev.azure.com/SHS-DI-DH-Brasil/Predict%20to%20Win/_git/p2w_devops?path=/libraries/query_strings_parser
+Author: Jefferson Sampaio de Medeiros
+Author-email: jefferson.medeiros@nutes.uepb.edu.br
+License: Apache License 2.0
+Keywords: query query-strings sql parser
+License-File: LICENSE
