@@ -1,0 +1,16 @@
+beautifulsoup4
+requests
+
+[dev]
+pytest>=6.2.5
+pre-commit
+mypy>=0.961
+
+[pre-commit]
+pre-commit
+
+[tests]
+pytest>=6.2.5
+
+[typing]
+mypy>=0.961
