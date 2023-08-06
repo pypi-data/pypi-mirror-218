@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-excel-serializer
+Version: 0.0.0
+Author-email: Kamil Paduszyński <paduszyk@gmail.com>
+Project-URL: Repository, https://github.com/paduszyk/django-spreadsheet-serializer
+Keywords: django,excel,serializer
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django (>=3.2)
+Requires-Dist: openpyxl
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-custom-exit-code ; extra == 'test'
+Requires-Dist: pytest-django ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+# django-excel-serializer
+
+## License
+
+Released under the [MIT license](LICENSE).
