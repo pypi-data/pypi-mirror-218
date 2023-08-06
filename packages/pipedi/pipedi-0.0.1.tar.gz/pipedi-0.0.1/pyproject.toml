@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pipedi"
+version = "0.0.1"
+authors = [
+  { name="Antti Kuparinen", email="teknovelho@gmail.com" },
+]
+description = "Enables piping iterables to functions with the pipe character"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Topic :: Text Processing",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/akupar/pipy"
+"Bug Tracker" = "https://github.com/akupar/pipy/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
