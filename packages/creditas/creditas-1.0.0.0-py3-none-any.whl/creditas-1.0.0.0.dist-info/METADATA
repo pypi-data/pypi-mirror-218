@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: creditas
+Version: 1.0.0.0
+Summary: Creditas OpenAPI
+Home-page: 
+Author-email: is@creditas.cz
+Keywords: Swagger,Creditas OpenAPI
+License-File: LICENSE
+Requires-Dist: certifi (>=2017.4.17)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: six (>=1.10)
+Requires-Dist: urllib3 (>=1.23)
+
+    This is specification of the Creditas OpenAPI. It contains definitions of Creditas banking services exposed via API accessible on the internet.  # noqa: E501
+    
