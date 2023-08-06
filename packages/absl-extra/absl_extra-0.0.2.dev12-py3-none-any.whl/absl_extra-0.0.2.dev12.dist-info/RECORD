@@ -1,0 +1,11 @@
+absl_extra/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+absl_extra/callbacks.py,sha256=adEbTaCxHotZUE8xDz7e334wHjlAECZjwyjhPZ9i6qU,1269
+absl_extra/jax_utils.py,sha256=tqW7fMqFRirPmggXbeC7686ko0v0WnubYLjG4EaU3QM,1364
+absl_extra/logging_utils.py,sha256=s-lp1hDr3k6Hawyk0MYM044iiq6c-UQkQvob8LyI4KI,1612
+absl_extra/notifier.py,sha256=H8GgFa5hnNXc4uUm83_MR24B_gxgmE6CFHzuB7KTgrY,3145
+absl_extra/py.typed,sha256=zlBhTdAQBRfJxeJXD-QnlXiZYsiAJYYkr3mbEsmwSac,64
+absl_extra/tasks.py,sha256=3Q0XBzj8Yx_D0FxVDTDnw75aLCPLjrZkigdkZz4-9Bs,4557
+absl_extra/tf_utils.py,sha256=hZApPY_Ku_aNl-YcBCo_mitNzbWr9FINnks2ffLMaLo,4623
+absl_extra-0.0.2.dev12.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+absl_extra-0.0.2.dev12.dist-info/METADATA,sha256=dnHfBz7IutAvBTl2kvpE7b1lbZDR84H8MzURhc8sUcE,2564
+absl_extra-0.0.2.dev12.dist-info/RECORD,,
