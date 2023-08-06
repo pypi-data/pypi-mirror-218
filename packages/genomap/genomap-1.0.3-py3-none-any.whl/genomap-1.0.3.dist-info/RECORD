@@ -1,0 +1,11 @@
+genomap/__init__.py,sha256=BfmznqMtK5WirgiJ4VJ8cR5JRIqsIEPJiWdGZOJRd5Y,63
+genomap/genomap.py,sha256=xk6feN2eTu4e-c-i8JAP1AxU2y5OwqbGl3pHLMbDP8U,4149
+genomap/bregman_genomap/__init__.py,sha256=GB8aG-QJ28GbD32eUYOFXWHDz8GmuMRLB_y9o6u9oYI,30
+genomap/bregman_genomap/bregman_genomap.py,sha256=mssBPMB3BX4oMraSISU4BpZakXcuaU8EEoeBxs308IM,125058
+genomap/genomapOPT/__init__.py,sha256=i7ZmlnUIQUDYgkQj8c7b-vwtatkcZ_VHHfDT4qD1swc,25
+genomap/genomapOPT/genomapOPT.py,sha256=zTQYCHTgmtgs-XY4aKeNoKFqTquXprqGTYkJYNgG680,7338
+genomap-1.0.3.dist-info/LICENSE.txt,sha256=ovF9wf9WhwMWEFRTVXXE7oE-YRL0cGlY79RGUlwAcZc,12711
+genomap-1.0.3.dist-info/METADATA,sha256=rX6bR3GdMcO4tsajUDGyD0UFAkuppaHsBK2LErXbqQI,3473
+genomap-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+genomap-1.0.3.dist-info/top_level.txt,sha256=MY7TzBWnJIpncx_QbWBxmHb6Ho4OYI5h7ee6IPtwpgY,8
+genomap-1.0.3.dist-info/RECORD,,
