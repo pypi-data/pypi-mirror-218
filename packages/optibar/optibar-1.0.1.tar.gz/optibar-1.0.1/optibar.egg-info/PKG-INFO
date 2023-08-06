@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: optibar
+Version: 1.0.1
+Summary: Make Advanced And Customizable ProgressBar
+Author: VenzTechnolo
+Author-email: venztechnolo@gmail.com
+Keywords: python,progress,progressbar,bar,python3
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+
+OptiBar 1.0.1
+
+Make Advanced And Customizable ProgressBar
+Fast, Optimized And Professonial
+Hello, welcome, the optibar module is very fast and allows
+you to customize to some extent to create an advanced bar,
+this website will teach you how you can create an advanced bar
+with this module, of course this module for now Made for
+pip users only,
+
+Bugs Fixed ! In New Version
