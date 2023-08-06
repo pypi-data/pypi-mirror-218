@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PlistParser
+Version: 2023.7.12
+Summary: Extension package for .plist file parsing
+Home-page: https://github.com/whiteEelsYikes/PlistParser
+Author: white-EelsYikes
+Author-email: 2172989337@qq.com
+License: MIT
+Keywords: Plist,PlistParser
+Platform: Windows
+Platform: Linux
+Platform: MacOS
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+## PlistParser
+#### [Click to go to Github to view the README](https://github.com/whiteEelsYikes/PlistParser/blob/main/README.md)
+
+谢谢(Thank you)
