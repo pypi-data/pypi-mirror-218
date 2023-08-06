@@ -1,0 +1,37 @@
+[build-system]
+requires = ["maturin>=1.1,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "findpython"
+description = "A utility to find python versions on your system"
+authors = [
+    {name = "Frost Ming", email = "mianghong@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.7"
+license = {text = "MIT"}
+readme = "README.md"
+
+[project.optional-dependencies]
+types = [
+    "pep440-rs>=0.3.11",
+]
+
+[project.scripts]
+findpython = "findpython:cli_main"
+
+[tool.pdm.options]
+install = ["--no-self"]
+add = ["--no-self"]
+sync = ["--no-self"]
+update = ["--no-self"]
+remove = ["--no-self"]
+
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
