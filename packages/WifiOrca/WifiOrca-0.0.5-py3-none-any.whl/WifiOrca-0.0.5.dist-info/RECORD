@@ -1,0 +1,8 @@
+WifiOrca/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+WifiOrca/main.py,sha256=SnUPvrXv4Ptu0zYSeTw5t-vSGhLt87aS6iqFzo4E5p4,314
+WifiOrca/reverse_shell_client.py,sha256=h620cGvKhvB1zfsLrIaBFr9KBK7oeg5SuyQK8pv3sfc,2227
+WifiOrca/reverse_shell_server.py,sha256=WHvfJ2RtlS55PE8CeVuKmCMJNH6yWEHI3YlErwsAFRE,855
+WifiOrca-0.0.5.dist-info/METADATA,sha256=iPRhHSRaf8NFPSNj9ueYOhlUrXfSaGm3T8wik_Ft7k8,1177
+WifiOrca-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+WifiOrca-0.0.5.dist-info/top_level.txt,sha256=QpX2n28Zzr4TDRh8ZOHfMpnqLa3t82WJM2aXIYXnPV4,9
+WifiOrca-0.0.5.dist-info/RECORD,,
