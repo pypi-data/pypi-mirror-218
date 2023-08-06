@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+elytra/__init__.py
+elytra/const.py
+elytra/core.py
+elytra/protocols.py
+elytra_ms.egg-info/PKG-INFO
+elytra_ms.egg-info/SOURCES.txt
+elytra_ms.egg-info/dependency_links.txt
+elytra_ms.egg-info/entry_points.txt
+elytra_ms.egg-info/requires.txt
+elytra_ms.egg-info/top_level.txt
