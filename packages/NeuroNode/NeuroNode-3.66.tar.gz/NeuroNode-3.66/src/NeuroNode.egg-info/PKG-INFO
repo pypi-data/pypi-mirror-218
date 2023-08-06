@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: NeuroNode
+Version: 3.66
+Summary: The Neuro Node is an advanced visual processing model that offers a comprehensive development environment for creating visually immersive experiences. Utilizing a vast neural network comprising more than 1 trillion parameters, the Neuro Node has been extensively trained to generate high-quality humanoid graphics with remarkable realism.
+Author-email: Jay Singh <jaysinghdulrasar@gmail.com>
+Project-URL: WebApp, https://neuro-node.web.app
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.text
