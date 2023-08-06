@@ -1,0 +1,10 @@
+gouge/__init__.py,sha256=ZdVhA4yTBN3zoWd5tLjsitcNKUX0BFG2WPvIgPY47H0,277
+gouge/colourcli.py,sha256=CGvUcc-rO7Y4FViGpaGAhGCE-EtNqatzIjW250mxNhk,4761
+gouge/filters.py,sha256=gwkaiH82Hy9ZVVctA--FEYTJEOMoV8nroNjmnAFPNxs,4200
+gouge/parseable.py,sha256=ETrP_Ydi1Jv_WOf7526jGd9pIVaEK9U8EwVd11EQdCw,4770
+gouge/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gouge/version.txt,sha256=RSEw0M3OxjBnwba6We_9_1zrUBIed4BP_RJ6c8xPUG0,12
+gouge-1.5.0.post2.dist-info/METADATA,sha256=wxMz95NRvpLyiTl5JdtFMdb8486TbjJ6mYOCgvjlHKs,790
+gouge-1.5.0.post2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+gouge-1.5.0.post2.dist-info/top_level.txt,sha256=Rm8deK7N96RJ4UkMgsiq9aUN4dHHvJO4Qsnv5rKIOBE,6
+gouge-1.5.0.post2.dist-info/RECORD,,
