@@ -1,0 +1,108 @@
+2023-07-10 16:19:08 - root - DEBUG: - Loading library pnd.
+2023-07-10 16:19:08 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 16:19:08 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 16:19:08 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 16:19:08 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 17:11:13 - root - DEBUG: - Loading library pnd.
+2023-07-10 17:11:13 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 17:11:13 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 17:11:13 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 17:11:13 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 17:36:52 - root - DEBUG: - Loading library pnd.
+2023-07-10 17:36:52 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 17:36:52 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 17:36:52 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 17:36:52 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:12:37 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:12:37 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:12:37 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:12:37 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:12:37 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:13:57 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:13:57 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:13:57 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:13:57 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:13:57 - root - DEBUG: - Attempting to load library /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib raised exception:
+CompileError: command '/usr/bin/clang' failed with exit code 1
+2023-07-10 18:13:57 - root - WARNING: - Unable to load (library=pnd).
+Candidate libraries attempted (in order):
+2023-07-10 18:13:57 - root - WARNING: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:15:35 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:15:35 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:15:35 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:15:35 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:15:35 - root - DEBUG: - Attempting to load library /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib raised exception:
+CompileError: command '/usr/bin/clang' failed with exit code 1
+2023-07-10 18:15:35 - root - WARNING: - Unable to load (library=pnd).
+Candidate libraries attempted (in order):
+2023-07-10 18:15:35 - root - WARNING: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:16:58 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:16:58 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:16:58 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:16:58 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:16:58 - root - DEBUG: - Attempting to load library /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib raised exception:
+CompileError: command '/usr/bin/clang' failed with exit code 1
+2023-07-10 18:16:58 - root - WARNING: - Unable to load (library=pnd).
+Candidate libraries attempted (in order):
+2023-07-10 18:16:58 - root - WARNING: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:17:24 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:17:24 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:17:24 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:17:24 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:17:24 - root - DEBUG: - Attempting to load library /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib raised exception:
+CompileError: command '/usr/bin/clang' failed with exit code 1
+2023-07-10 18:17:24 - root - WARNING: - Unable to load (library=pnd).
+Candidate libraries attempted (in order):
+2023-07-10 18:17:24 - root - WARNING: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:17:38 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:17:38 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:17:38 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:17:38 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:17:38 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:17:53 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:17:53 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:17:53 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:17:53 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:17:53 - root - DEBUG: - Attempting to load library /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib raised exception:
+CompileError: command '/usr/bin/clang' failed with exit code 1
+2023-07-10 18:17:53 - root - WARNING: - Unable to load (library=pnd).
+Candidate libraries attempted (in order):
+2023-07-10 18:17:53 - root - WARNING: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:18:06 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:18:06 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:18:06 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:18:06 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:18:06 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:18:19 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:18:19 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:18:19 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:18:19 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:18:19 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:18:51 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:18:51 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:18:51 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:18:51 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:18:51 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:20:54 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:20:54 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:20:54 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:20:54 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:20:54 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:21:29 - root - DEBUG: - Loading library pnd.
+2023-07-10 18:21:29 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-10 18:21:29 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-10 18:21:29 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-10 18:21:29 - root - DEBUG: - Successfully loaded library at /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../lib/darwin_arm64/libpnd.dylib
+2023-07-11 13:25:32 - root - DEBUG: - Loading library pnd.
+2023-07-11 13:25:32 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-11 13:25:32 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-11 13:25:32 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib
+2023-07-11 13:25:45 - root - DEBUG: - Attempting to load library /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib raised exception:
+cannot load library '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib': dlopen(/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib, 0x0002): tried: '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib' (code signature in <68CD18C6-20F0-3EAB-9D10-470823B8CAF3> '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/pnd/lib/darwin_arm64/libpnd.dylib' not valid for use in process: library load disallowed by system policy), '/System/Volumes/Preboot/Cryptexes/OS/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib' (no such file), '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib' (code signature in <68CD18C6-20F0-3EAB-9D10-470823B8CAF3> '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/pnd/lib/darwin_arm64/libpnd.dylib' not valid for use in process: library load disallowed by system policy), '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/pnd/lib/darwin_arm64/libpnd.dylib' (code signature in <68CD18C6-20F0-3EAB-9D10-470823B8CAF3> '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/pnd/lib/darwin_arm64/libpnd.dylib' not valid for use in process: library load disallowed by system policy), '/System/Volumes/Preboot/Cryptexes/OS/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/pnd/lib/darwin_arm64/libpnd.dylib' (no such file), '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/pnd/lib/darwin_arm64/libpnd.dylib' (code signature in <68CD18C6-20F0-3EAB-9D10-470823B8CAF3> '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/pnd/lib/darwin_arm64/libpnd.dylib' not valid for use in process: library load disallowed by system policy).  Additionally, ctypes.util.find_library() did not manage to locate a library called '/Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib'
+2023-07-11 13:25:45 - root - WARNING: - Unable to load (library=pnd).
+Candidate libraries attempted (in order):
+2023-07-11 13:25:45 - root - WARNING: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib
+2023-07-11 13:26:18 - root - DEBUG: - Loading library pnd.
+2023-07-11 13:26:18 - root - DEBUG: - Loader(library=pnd): 1 candidate binaries:
+2023-07-11 13:26:18 - root - DEBUG: - Loader(library=pnd): Candidate binaries, in order of priority:
+2023-07-11 13:26:18 - root - DEBUG: - Candidate 1: /Users/lvhao/ws/lh/code/python/library-test/lvhao_lib/lvhao_lib/src/../pnd/lib/darwin_arm64/libpnd.dylib
