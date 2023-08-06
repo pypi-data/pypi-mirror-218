@@ -1,0 +1,3 @@
+include nestedlistops/requirements.txt
+include nestedlistops/thirdparty.json
+include nestedlistops/README.MD

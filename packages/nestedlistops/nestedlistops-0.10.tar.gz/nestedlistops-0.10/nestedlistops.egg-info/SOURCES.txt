@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nestedlistops/README.MD
+nestedlistops/__init__.py
+nestedlistops/requirements.txt
+nestedlistops/thirdparty.json
+nestedlistops.egg-info/PKG-INFO
+nestedlistops.egg-info/SOURCES.txt
+nestedlistops.egg-info/dependency_links.txt
+nestedlistops.egg-info/top_level.txt
