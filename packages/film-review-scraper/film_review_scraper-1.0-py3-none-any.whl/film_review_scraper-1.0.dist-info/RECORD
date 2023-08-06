@@ -1,0 +1,15 @@
+__init__.py,sha256=QzDJguZ_EDboUiH4WmdvvClbuYvf8IYdBD3dYHtiqgQ,402
+data_handling/__init__.py,sha256=W-6HjNOgh2DOfWAcVfGu1zh9ShK6RtmO_COC3whmB9A,200
+data_handling/file_handler.py,sha256=DZy4i_numWcHsjeGYc4b7p4Ft7wrKosORX2i8GOClJ0,4288
+data_processing/__init__.py,sha256=6wuyL3lTzV_ymuSuUbDmSQLj-LhuvuRzsKOXFvTQI2Q,76
+data_processing/data_processor.py,sha256=A8G_5sRwrnTHky-y4b4RJHrJOEQOPG95Tgm7c2Tqdz0,3429
+websites/__init__.py,sha256=g5jlkOEFGuZ1O8Oe6i5PfGBKpx5URLxj5of0nCdegJw,141
+websites/base.py,sha256=0wEItwR81oKn8JN0pkkgWloKqBqwQ0__5pRSvthEQCU,5399
+websites/douban.py,sha256=Nv0WRMPVuBd-Ylin5tjKwnJbBfsKeQPUgCd85ABoTYU,16336
+websites/imdb.py,sha256=E3m4ArHjOmmDDXGUhd20gV520leR-LSMbYSLqtRzqsU,8604
+websites/rottentomatoes.py,sha256=oZhlhGoqCO3qDmC7szLd4xDrlaYz-0vhH5cE-FFxb1Y,6106
+film_review_scraper-1.0.dist-info/LICENSE,sha256=-A-8Rv-2BUrH5WOawm28ngrHEr05MGswR-sId8HTGzI,1062
+film_review_scraper-1.0.dist-info/METADATA,sha256=73kUavtAJBWsDoaRJvb2obDU-W5FubFDOfn1iEk9irQ,450
+film_review_scraper-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+film_review_scraper-1.0.dist-info/top_level.txt,sha256=hxf9vuG7Z85A7zZreV2Ux1hSmjaepxWwupP6n236zic,48
+film_review_scraper-1.0.dist-info/RECORD,,

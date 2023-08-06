@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: film-review-scraper
+Version: 1.0
+Summary: Scraper for film review websites
+Home-page: https://github.com/pip-chang/DH-S
+Author: Jianghan Chang
+Author-email: jianghanchang@hotmail.com
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.12.2)
+Requires-Dist: pytest (==7.2.1)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: selenium (==4.10.0)
+Requires-Dist: webdriver-manager (==3.8.6)
+
