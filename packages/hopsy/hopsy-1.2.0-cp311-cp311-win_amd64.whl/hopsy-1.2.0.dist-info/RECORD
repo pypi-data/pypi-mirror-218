@@ -1,0 +1,11 @@
+hopsy/__init__.py,sha256=KB7nsvglyU_W_Agu-EUmfGAQY5kWzYdnhivjmPsZFkc,199
+hopsy/callback.py,sha256=gNsaB_HBMyB7egYrZjK0NhqAflqZ5iBZhMErhkNcstA,6150
+hopsy/core.cp311-win_amd64.pyd,sha256=M6PGnPaBcNTGKlGX_INQG5n8th_bO9ATiftPP5dhIqs,2378752
+hopsy/examples.py,sha256=cg4BDdXLByqzGftJWf0l6ZkB5XHLOT6OsEvfL7UTvrU,2541
+hopsy/lp.py,sha256=faY-1xT2PkPBDsklr_Th-_uED4N0UKZD41IZ0qbXEgw,1115
+hopsy/misc.py,sha256=MW8hjzsv8nuZmipkbdYY_WEdb2kUsHS9EgoH9vjRnNY,35110
+hopsy-1.2.0.dist-info/LICENSE,sha256=mraIgWsAJNYgzYxUgcrnuvWC8Srh-lVhJryk9w1NE68,1104
+hopsy-1.2.0.dist-info/METADATA,sha256=tdo4zKwi6lTPe5U8kz9DOAhfLG7puu_95ZzRY0UQD_Q,6346
+hopsy-1.2.0.dist-info/WHEEL,sha256=wklNeoByNLhdCl-oEQTdaHIeDl4q9zaQVqAlPxUEgLU,102
+hopsy-1.2.0.dist-info/top_level.txt,sha256=g8QfGHQq4nGbh4Dk-sKfsQp5tf7AWb9UmrgF-fGuJik,17
+hopsy-1.2.0.dist-info/RECORD,,
