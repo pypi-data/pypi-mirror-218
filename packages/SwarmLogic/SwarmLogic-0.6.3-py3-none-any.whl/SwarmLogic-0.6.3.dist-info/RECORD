@@ -1,0 +1,14 @@
+SwarmLogic/SwarmLogic.py,sha256=GX6eQvfUS3WPO-iv7BZNV5xmmItJtUi6dtkkTymE4uw,1774
+SwarmLogic/__init__.py,sha256=8rC91GuR9vmNawOi2r8qfCtYa-FuxY0qdaoiU09yRyU,37
+SwarmLogic/connectors/__init__.py,sha256=ir9rXRSVnn0wuWU6sQ-L3SuLeTcrP0bNfwML2a-Gr1o,230
+SwarmLogic/connectors/alchemy.py,sha256=NEBfEOrjOLwgKhYmMIfaHyzNgZNz4Rib10Az2DQ7w9E,531
+SwarmLogic/connectors/base.py,sha256=Wrri1_RrK5Twn4WYoPCJ-6_sIDxG4AYPHruY0VQVCD8,660
+SwarmLogic/connectors/dal.py,sha256=dO64GyoWtaTjpXXHzRMs4m67z1fMeo0u9den8-Ln5uI,776
+SwarmLogic/connectors/json.py,sha256=RN4ovBpfwwjOXIz0ZwOAPL3ZQunaVcB6eNCjyquxccw,312
+SwarmLogic/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SwarmLogic/utils/error_handling.py,sha256=BpPI6_aRNuYweD0bW1qyROvKJIeVc5fAJKCOHCaS8pc,813
+SwarmLogic-0.6.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+SwarmLogic-0.6.3.dist-info/METADATA,sha256=XWtBpseCmJjOY9xDoNwQJgqX_Lfvt3zU58HM0TjclA8,636
+SwarmLogic-0.6.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+SwarmLogic-0.6.3.dist-info/top_level.txt,sha256=CIiZ-W2MqhIzAzITmsNbePqdhPr5nc36LsAMwktmoF4,11
+SwarmLogic-0.6.3.dist-info/RECORD,,
