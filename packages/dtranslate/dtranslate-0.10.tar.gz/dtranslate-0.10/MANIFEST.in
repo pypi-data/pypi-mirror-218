@@ -1,0 +1,3 @@
+include dtranslate/requirements.txt
+include dtranslate/thirdparty.json
+include dtranslate/README.MD

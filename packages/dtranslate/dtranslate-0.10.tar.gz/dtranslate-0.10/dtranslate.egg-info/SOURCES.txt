@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dtranslate/README.MD
+dtranslate/__init__.py
+dtranslate/requirements.txt
+dtranslate/thirdparty.json
+dtranslate.egg-info/PKG-INFO
+dtranslate.egg-info/SOURCES.txt
+dtranslate.egg-info/dependency_links.txt
+dtranslate.egg-info/requires.txt
+dtranslate.egg-info/top_level.txt
