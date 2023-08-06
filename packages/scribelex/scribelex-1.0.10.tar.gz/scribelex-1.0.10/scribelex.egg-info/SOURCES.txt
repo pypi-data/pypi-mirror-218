@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+scribelex/__init__.py
+scribelex/base.py
+scribelex/common.py
+scribelex.egg-info/PKG-INFO
+scribelex.egg-info/SOURCES.txt
+scribelex.egg-info/dependency_links.txt
+scribelex.egg-info/top_level.txt
