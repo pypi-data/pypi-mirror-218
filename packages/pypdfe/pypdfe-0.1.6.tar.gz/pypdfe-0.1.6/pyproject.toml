@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "pybind11",
+]
+build-backend = "setuptools.build_meta"
+
+target-version = "py311"
+
+#[project]
+#name = "pypdfe"
+#version = "0.1.5"
+#description = "A Python package for PDF estimation using Dr. Jennifer Farmer's PDFe and multivariate PDF libraries."
+#authors = [
+#    { name = "Nate Mauney", email = "nmauney4@uncc.edu" },
+#]
+#readme = "README.md"  # Path to your README file, if you have one
+#homepage = "https://github.com/CHANGE_ME"
+#repository = "https://github.com/CHANGE_ME"
+##license = "MIT"  # Specify your license here
+#classifiers = [
+#    "Development Status :: 3 - Alpha",
+#    "Intended Audience :: Science/Research",
+#    "Topic :: Scientific/Engineering",
+#    "Programming Language :: Python :: 3",
+#    "Programming Language :: Python :: 3.8",
+#    "License :: OSI Approved :: MIT License",
+#]
+#install_requires = [
+#    "numpy",
+#]
