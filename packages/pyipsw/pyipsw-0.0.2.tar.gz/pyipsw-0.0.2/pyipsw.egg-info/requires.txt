@@ -1,0 +1,8 @@
+humanfriendly
+click
+requests
+tqdm
+setuptools
+
+[test]
+pytest

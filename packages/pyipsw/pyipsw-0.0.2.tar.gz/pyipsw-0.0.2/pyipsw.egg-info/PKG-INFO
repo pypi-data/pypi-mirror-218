@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: pyipsw
+Version: 0.0.2
+Summary: utility created in order to access ipsw.me data easily using python/cli
+Author-email: matan1008 <matan1008@gmail.com>
+Maintainer-email: matan1008 <matan1008@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2021 Matan Perelman
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/matan1008/pyipsw
+Project-URL: Bug Reports, https://github.com/matan1008/pyipsw/issues
+Keywords: ios,ipsw,firmware,cli
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+[![Python application](https://github.com/matan1008/pyipsw/workflows/Python%20application/badge.svg)](https://github.com/matan1008/pyipsw/actions/workflows/python-app.yml "Python application action")
+[![Pypi version](https://img.shields.io/pypi/v/pyipsw.svg)](https://pypi.org/project/pyipsw/ "PyPi package")
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+    * [CLI](#cli)
+
+# Description
+
+`pyipsw` is a utility created in order to access ipsw.me data easily using python / cli.
+
+# Installation
+
+Install the last released version using `pip`:
+
+```shell
+python3 -m pip install -U pyipsw
+```
+
+Or install the latest version from sources:
+
+```shell
+git clone git@github.com:matan1008/pyipsw.git
+cd pyipsw
+python3 -m pip install -U -e .
+```
+
+# Usage
+
+## CLI
+
+In order to show data about devices, just run the devices command:
+
+```shell
+pyipsw devices
+```
+
+If you require more or less data, add `-c` with column name:
+
+```shell
+pyipsw devices -c device -c version -c BoardConfig
+```
+
+Run `pyipsw devices --help` to see available columns:
+
+```shell
+Usage: pyipsw devices [OPTIONS]
+
+  Show data about apple devices.
+
+Options:
+  -c, --columns [device|name|version|buildid|url|uploaddate|size|signed|sha1sum|releasedate|platform|md5sum|filename|cpid|bdid|BoardConfig]
+                                  Data to show
+  -f, --filters TEXT              Python code to act as filter to devices,
+                                  e.g. "iPhone11" in device
+  --help                          Show this message and exit.
+```
+
+You can also add python code to filter the printed data:
+
+```shell
+pyipsw devices -f "'iPhone10' in device and '14.4' in version"
+```
+
+Which will output:
+
+```
+------------------------------------------------------------------------------------
+| device     | version | buildid | filename                                        |
+------------------------------------------------------------------------------------
+| iPhone10,1 | 14.4.2  | 18D70   | iPhone_4.7_P3_14.4.2_18D70_Restore.ipsw         |
+| iPhone10,1 | 14.4.1  | 18D61   | iPhone_4.7_P3_14.4.1_18D61_Restore.ipsw         |
+| iPhone10,1 | 14.4    | 18D52   | iPhone_4.7_P3_14.4_18D52_Restore.ipsw           |
+| iPhone10,2 | 14.4.2  | 18D70   | iPhone_5.5_P3_14.4.2_18D70_Restore.ipsw         |
+| iPhone10,2 | 14.4.1  | 18D61   | iPhone_5.5_P3_14.4.1_18D61_Restore.ipsw         |
+| iPhone10,2 | 14.4    | 18D52   | iPhone_5.5_P3_14.4_18D52_Restore.ipsw           |
+| iPhone10,3 | 14.4.2  | 18D70   | iPhone10,3,iPhone10,6_14.4.2_18D70_Restore.ipsw |
+| iPhone10,3 | 14.4.1  | 18D61   | iPhone10,3,iPhone10,6_14.4.1_18D61_Restore.ipsw |
+| iPhone10,3 | 14.4    | 18D52   | iPhone10,3,iPhone10,6_14.4_18D52_Restore.ipsw   |
+| iPhone10,4 | 14.4.2  | 18D70   | iPhone_4.7_P3_14.4.2_18D70_Restore.ipsw         |
+| iPhone10,4 | 14.4.1  | 18D61   | iPhone_4.7_P3_14.4.1_18D61_Restore.ipsw         |
+| iPhone10,4 | 14.4    | 18D52   | iPhone_4.7_P3_14.4_18D52_Restore.ipsw           |
+| iPhone10,5 | 14.4.2  | 18D70   | iPhone_5.5_P3_14.4.2_18D70_Restore.ipsw         |
+| iPhone10,5 | 14.4.1  | 18D61   | iPhone_5.5_P3_14.4.1_18D61_Restore.ipsw         |
+| iPhone10,5 | 14.4    | 18D52   | iPhone_5.5_P3_14.4_18D52_Restore.ipsw           |
+| iPhone10,6 | 14.4.2  | 18D70   | iPhone10,3,iPhone10,6_14.4.2_18D70_Restore.ipsw |
+| iPhone10,6 | 14.4.1  | 18D61   | iPhone10,3,iPhone10,6_14.4.1_18D61_Restore.ipsw |
+| iPhone10,6 | 14.4    | 18D52   | iPhone10,3,iPhone10,6_14.4_18D52_Restore.ipsw   |
+------------------------------------------------------------------------------------
+```
+
+You can also download the firmwares with:
+
+```shell
+pyipsw download-devices /tmp/firmwares -f "'iPhone10' in device and '14.4' in version"
+```
