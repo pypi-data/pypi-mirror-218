@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: plottergeist
+Version: 0.1.0
+Summary: Statistics and scientific plotting
+Home-page: https://github.com/apereiroc/plottergeist
+Download-URL: https://github.com/apereiroc/plottergeist.git
+Author: Asier Pereiro Castro
+Author-email: asier.pereiro.castro@cern.ch
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+# plottergeist
