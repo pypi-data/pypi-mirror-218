@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+seventv/seventv.py
+seventv.py.egg-info/PKG-INFO
+seventv.py.egg-info/SOURCES.txt
+seventv.py.egg-info/dependency_links.txt
+seventv.py.egg-info/requires.txt
+seventv.py.egg-info/top_level.txt
