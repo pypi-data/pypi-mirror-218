@@ -1,0 +1,22 @@
+{% extends 'bill/update_quote.html' %}
+
+{% block header %}
+  <h1>{% block title %}{% trans billnumber=bill.bill_number %}Edit bill "#{{ billnumber }}"{% endtrans %}{% endblock %}</h1>
+{% endblock %}
+
+{% block actions %}
+  <div class="actions">
+    {% if bill.quote_number %}
+      <a href="{{ url_for('bill.view_quote_pdf', id=bill['id']) }}">{% trans %}View quote{% endtrans %}</a>
+      <a href="{{ url_for('bill.send_quote_email', id=bill['id']) }}">{% trans %}Send quote email{% endtrans %}</a>
+    {% endif %}
+    <a href="{{ url_for('bill.view_bill_pdf', id=bill['id']) }}">{% trans %}View bill{% endtrans %}</a>
+    <a href="{{ url_for('bill.send_bill_email', id=bill['id']) }}">{% trans %}Send bill email{% endtrans %}</a>
+    {% if not bill.paid %}
+      <form action="{{ url_for('bill.mark_paid', id=bill['id']) }}" method="post">
+        <input type="submit" value="{% trans %}Mark as paid{% endtrans %}" onclick="return confirm('{% trans %}Are you sure?{% endtrans %}');">
+        {{ csrf_token()|safe }}
+      </form>
+    {% endif %}
+  </div>
+{% endblock %}
