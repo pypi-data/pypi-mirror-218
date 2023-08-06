@@ -1,0 +1,7 @@
+README.md
+setup.py
+sethan.egg-info/PKG-INFO
+sethan.egg-info/SOURCES.txt
+sethan.egg-info/dependency_links.txt
+sethan.egg-info/requires.txt
+sethan.egg-info/top_level.txt
