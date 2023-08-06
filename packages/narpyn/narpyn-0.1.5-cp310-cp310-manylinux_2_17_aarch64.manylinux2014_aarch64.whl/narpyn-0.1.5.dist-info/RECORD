@@ -1,0 +1,13 @@
+hatch_autorun_narpyn.pth,sha256=r8nl0CGlmWndeqwF-GQEh7216HYwY0RB3qnOLij_J0E,209
+0ed7683deb7867894b80__mypyc.cpython-310-aarch64-linux-gnu.so,sha256=m23lYfoLUh952FR7zbo3XLCfYoWmC82-E4jrV0SiLFM,337384
+narpyn/ona/narsese.py,sha256=2e2ffW6VRb6HsBgGnh-kQHsteo9j_bFoMJoaxjtyJNg,3150
+narpyn/ona/nar.py,sha256=_y_-IEX5SCRaXtyXS4nelkf0aUOHpQdaTyedrcS6o5o,4477
+narpyn/ona/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ona/__init__.cpython-310-aarch64-linux-gnu.so,sha256=c-RleQSomwupPYC60eRpYkqsOruQGq9mp21hHvhv1Sc,71248
+ona/NAR,sha256=C1MDHBJasdxaHCpxoHrPToorEJsILItlMEOzPMRY0mg,1729712
+ona/nar.cpython-310-aarch64-linux-gnu.so,sha256=9vgY9IItu-9XrV33mTYr_6jVEU_cbxexGSb_opQoHk4,71256
+ona/narsese.cpython-310-aarch64-linux-gnu.so,sha256=HiNc-ZYLzryRCX-3plIBpWX_L0dvSSz3_YM9zFrsgME,71280
+narpyn-0.1.5.dist-info/RECORD,,
+narpyn-0.1.5.dist-info/WHEEL,sha256=Fp3V4YthSDyIXBa9QE5S8j8lb2oxtB8bkoQLzYSogjU,150
+narpyn-0.1.5.dist-info/METADATA,sha256=xjVX7NrYEyZZ9FFZg5ERsouRnZWWOmq6bXvQlP5Y6g0,975
+narpyn-0.1.5.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
