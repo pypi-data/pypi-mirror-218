@@ -1,0 +1,10 @@
+LICENSE,sha256=7ZlCoGDujxeyvjBTO3al5I-KZZkKxsf6dGWqwH3KYc8,1068
+README.md,sha256=--7m3pW7En-Ip0Y6QBpMFKOAL6kDxiCT2CTOm1hxrYg,803
+python_template/__init__.py,sha256=rmTRsWgintNJh6XCu_1gt1Ex17vJDRcAYRVVkumjCrA,194
+python_template/__main__.py,sha256=tkMi9CYdtr8--e7mQEVTGXthFjNNm6aM4LPVZRWQnb0,140
+python_template/cli.py,sha256=EnoM-HIBr8z3rU03oc3VTn4wNQHXml1yHWRUzqFQntY,948
+python_template_x-0.1.0.dist-info/LICENSE,sha256=7ZlCoGDujxeyvjBTO3al5I-KZZkKxsf6dGWqwH3KYc8,1068
+python_template_x-0.1.0.dist-info/METADATA,sha256=1TJ3qDZPmPOZ28O0lfXDlm0sqfQJ2I4eC8zWp3GYeoI,1452
+python_template_x-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+python_template_x-0.1.0.dist-info/entry_points.txt,sha256=JMQ6N2Du-SoirDozPnoq6bgo_CUXPw5q5fMIvV1yo0M,59
+python_template_x-0.1.0.dist-info/RECORD,,
