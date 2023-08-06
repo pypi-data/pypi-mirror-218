@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: onedriveintegrate
+Version: 1.3
+Summary: Package for OneDrive File Management
+Author: William Guo
+License: MIT
+Description-Content-Type: text/markdown
+
+# OneDrive Integration Package
+___
+_onedriveintegrate_ is a Python package for OneDrive functionality, featuring methods for OneDrive file management and interacting Microsoft
+OneDrive API.
+
+List of relevant operations:
+* Authenticate users using Microsoft Graph API
+* Write files to a folder
+* Read files from the drive
+* List contents of a folder
+* Search for files based on text/id
+
+## Installation
+___
+Use a simple [pip](https://pip.pypa.io/en/stable/) command to install _onedriveintegrate_: 
+```bash
+pip install onedriveintegrate
+```
+
+## Usage / Getting started
+```python
+from onedriveintegrate.onedrive_api import OneDriveAPI
+from onedriveintegrate.ms_graph import generate_access_token, GRAPH_API_ENDPOINT
+
+# User's Client ID
+client_ID = 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
+
+# Setup 
+onedrive_query = OneDriveAPI(client_ID)
+folder_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+file_path = 'root/base/relative/file'
+file_id = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+output_file = 'XXXXX.json'
+search_txt = 'XXXXX'
+
+# 1) Upload file to specified folder
+onedrive_query.write_file(folder_id, file_path)
+
+# 2) Download file from specified id
+onedrive_query.read_file(file_id)
+
+# 3) List contents of folder, results stored in output_file
+onedrive_query.list_folder(folder_id, output_file)
+
+# 4) Search item based on search text/id, results storted in output_file
+onedrive_query.search_text(search_txt, output_file)
+onedrive_query.search_id(file_id OR folder_id, output_file)
+```
+
+## Helpful Resources
+
+Sources from Jie Jenn:
+* [Upload Files to One Drive using Microsoft Graph API in Python](https://www.youtube.com/watch?v=Ok8O_QnrSBI)
+* [Download Files from OneDrive Using Microsoft Graph API in Python](https://www.youtube.com/watch?v=w6YeOkikVFI)
+* [Source Code for ms_graph.py](https://learndataanalysis.org/ms_graph-py-source-code/)
+
+Microsoft Graph API:
+* [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+* [Microsoft Azure Portal](https://azure.microsoft.com/en-us/get-started/azure-portal)
+* [Overview of Microsoft Graph - Documentation](https://learn.microsoft.com/en-us/graph/overview?view=graph-rest-1.0)
+* [How to Upload Files to OneDrive](https://learn.microsoft.com/en-us/training/modules/msgraph-access-file-data/4-upload-files-onedrive)
+
+PyPi:
+* [Build a Python Module and Share it with Pip Install](https://www.youtube.com/watch?v=FkmtmYFTlYE)
+* [PyPi.org](https://pypi.org/)
+
+Markdown:
+* [Make a README](https://www.makeareadme.com/)
+* [How to write a good README](https://dev.to/merlos/how-to-write-a-good-readme-bog)
+
+## Acknowledgements
+
+This package makes use of Jie Jenn's ms_graph.py for the user authentication process.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
