@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+poe_terminal_chat/__init__.py
+poe_terminal_chat/command_line.py
+poe_terminal_chat/poeterminal.py
+poe_terminal_chat/utils.py
+poe_terminal_chat.egg-info/PKG-INFO
+poe_terminal_chat.egg-info/SOURCES.txt
+poe_terminal_chat.egg-info/dependency_links.txt
+poe_terminal_chat.egg-info/entry_points.txt
+poe_terminal_chat.egg-info/requires.txt
+poe_terminal_chat.egg-info/top_level.txt

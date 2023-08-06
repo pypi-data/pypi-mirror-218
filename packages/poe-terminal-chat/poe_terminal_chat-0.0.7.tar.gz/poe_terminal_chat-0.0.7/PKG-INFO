@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: poe_terminal_chat
+Version: 0.0.7
+Summary: poe(a third part AI assistant) terminal chat, can have accesses of chatgpt and claude
+Home-page: https://github.com/Mushrr/poe_terminal_chat
+Author: Mushr
+Author-email: huangxingjiegkd@163.com
+License: MIT
+License-File: LICENSE
