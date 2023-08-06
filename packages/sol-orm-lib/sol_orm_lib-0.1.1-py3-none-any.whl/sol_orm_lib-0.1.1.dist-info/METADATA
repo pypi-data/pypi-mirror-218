@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: sol-orm-lib
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/idener/SOL-Python-ORM-Library
+Author: Antonio Gomez
+Author-email: antonio.gomez@idener.es
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=2.0.2,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/idener/SOL-Python-ORM-Library
+Description-Content-Type: text/markdown
+
+# SOL Python ORM Library
+
+## Installation
+```
+pip install sol-orm-lib
+```
+
+## Example usage
+```python
+from sol_orm_lib.models import TACs, TICs
+from sol_orm_lib.database import post_tics_data
+
+tics_data = TICs(
+    timestamp=1625779123,
+    pvPlannedDown=True,
+    stgPlannedDown=True,
+    allPlannedDown=True,
+    taCs=[
+        TACs(k=1, ktic='some_string', n=1, timestamp=1625779123),
+        # add more objects if needed
+    ]
+)
+
+reponse = post_tics_data(tics_data)
+print(response)
+```
+
+**NOTE**: The library expects the environment variable 'DB_API_URL' to be set.
+
+## Release process
+To release a new version of the package, update the version number in the `pyproject.toml` file and publish a release with the same tag. The CI will build and publish the package to PyPI.
+
