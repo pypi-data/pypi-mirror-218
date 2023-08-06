@@ -1,0 +1,14 @@
+numpy
+gmsh
+setuptools
+
+[docs]
+jupyter
+sphinx
+sphinx_rtd_theme
+pypandoc
+autodocsumm
+
+[easy]
+colorlog
+setuptools
