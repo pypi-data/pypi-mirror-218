@@ -1,0 +1,12 @@
+pdir/__init__.py,sha256=jWbumpP1BI0Ob3yspwEnMbyvd5G28UspiAOV36gWGfA,133
+pdir/_internal_utils.py,sha256=OhxOmt9AnA_eYZsAUv5qXnUeOWo9RlCjebx9Vckoz4E,2353
+pdir/api.py,sha256=UD3_hctNN14So3XT6SuVIpngwulIIAj7Sbx_TDkmA1w,6711
+pdir/attr_category.py,sha256=MlAj_D_NYXopacw9J4XzdcHC5xaL575Pl-5ab7f4ztg,14495
+pdir/color.py,sha256=-OeXEqnnl7iytsqdU6Tv0q2YHaZFDYJJMDrnSCLlWes,1991
+pdir/configuration.py,sha256=siC6caaR--1T_hOS_EN7vnJ6Q0899r7Pcij1YpeTa-M,3947
+pdir/constants.py,sha256=KQi5ANp96yJRUZmdMcAVobbV9q8nab6FaH1OLR9GTgU,341
+pdir/format.py,sha256=xMDO23vsUHNSpVrWoEADsApEgLkY73Ngc6bjJEwFfYE,3515
+pdir2-1.0.0.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+pdir2-1.0.0.dist-info/METADATA,sha256=Yh-ybGLb3mMkJMzfW2G6PbkcnqiyM9DeBA7UsG_5NvI,4661
+pdir2-1.0.0.dist-info/licenses/LICENSE,sha256=OG3vIXbrPgMYrP1X8XXC2DAJPLtN616BdCOmVMmt64U,1064
+pdir2-1.0.0.dist-info/RECORD,,
