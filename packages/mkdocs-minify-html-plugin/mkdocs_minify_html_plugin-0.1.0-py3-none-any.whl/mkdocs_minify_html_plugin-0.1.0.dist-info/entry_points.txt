@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+minify_html=mkdocs_minify_html_plugin.plugin:MinifyHtmlPlugin
+
