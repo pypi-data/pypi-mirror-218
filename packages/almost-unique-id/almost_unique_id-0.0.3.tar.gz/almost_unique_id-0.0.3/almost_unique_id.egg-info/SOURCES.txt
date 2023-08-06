@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+adjectives.py
+almost_unique_id.py
+names.py
+setup.py
+almost_unique_id.egg-info/PKG-INFO
+almost_unique_id.egg-info/SOURCES.txt
+almost_unique_id.egg-info/dependency_links.txt
+almost_unique_id.egg-info/top_level.txt
