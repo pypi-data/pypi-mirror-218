@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+sigtonoise/__init__.py
+sigtonoise/a.py
+sigtonoise.egg-info/PKG-INFO
+sigtonoise.egg-info/SOURCES.txt
+sigtonoise.egg-info/dependency_links.txt
+sigtonoise.egg-info/requires.txt
+sigtonoise.egg-info/top_level.txt
