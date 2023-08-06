@@ -1,0 +1,11 @@
+sphinx_readme/__init__.py,sha256=SLPanb9jldmD0fSJqqOOeFer5TudTyVTQWkHV3u_pDg,1598
+sphinx_readme/parser.py,sha256=4S7Zr906ATdxm6cAzmfuIdZDyN-JgZUhQAFOIE9tUpM,21021
+sphinx_readme/utils.py,sha256=zqLeJ5KtoSZtDPhkI4NVFMJ5up7LKUhmbzS--Yg6cCM,4878
+sphinx_readme/config/__init__.py,sha256=PYBOS7otu8KK_AdDlFhwwZR19PakwdNQXw5Lf1gEZ0M,136
+sphinx_readme/config/linkcode.py,sha256=6aPiA9q_d_fXdKLweXAx40Wz6hMuEWO3MSmeIXk03Lo,6890
+sphinx_readme/config/main.py,sha256=eLr7F9Z-X-9PYWe1LC_dMcUP5MIDsaNm0m3Zdx-iQYc,8198
+sphinx_readme-0.0.1b5.dist-info/LICENSE,sha256=FXznRvcAhrbx7PU76Jl4kjvO3YYP5aJfff0RX-Run4U,1084
+sphinx_readme-0.0.1b5.dist-info/METADATA,sha256=x3g-PdNkiahXc-e5mDMogcD03BJhfHVZpi5QEcuzcU8,8393
+sphinx_readme-0.0.1b5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sphinx_readme-0.0.1b5.dist-info/top_level.txt,sha256=aGvHPPvJMfG2j3F1OBhRSuEoUDJAeq6RTvVLTKDVf54,14
+sphinx_readme-0.0.1b5.dist-info/RECORD,,
