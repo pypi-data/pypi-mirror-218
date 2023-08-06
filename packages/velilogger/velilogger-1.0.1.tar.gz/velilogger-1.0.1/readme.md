@@ -1,0 +1,76 @@
+### Logger for VELI.STORE
+
+### Description
+
+This module used for logging, for each session it's possible to create a random UUID which will be saved in the 
+context of the session and every time anything is logged in that session will have that UUID (`tracing-id`)
+
+### Golden Rule !!!
+
+If a session is initiated by an external request, a 'tracing-id' should be generated as soon as the request hits 
+our system. All actions undertaken during this session should be logged under this same 'tracing-id'. This is the 
+case even when a session begins with one service and subsequently connects to another service; the 'tracing-id' 
+must be shared across.
+
+### How to log:
+
+```python
+from velilogger import logger
+
+logger.info('some log message <3') # `tracing-id` will be in the logs automatically if it's generated correctly
+```
+
+### How to generate `tracing-id`:
+
+* Generally
+
+To generate random `tracing-id` and save it in the session context:
+```python
+from velilogger import generate_tracing_id
+
+generate_tracing_id()
+```
+
+To save custom `tracing-id` in the session context:
+```python
+from velilogger import generate_tracing_id
+
+custom_tracing_id = "8538732c-12eb-4370-91bb-1a4fb850263f"  # this may be received from another service
+generate_tracing_id(custom_tracing_id)
+```
+
+* In FastAPI
+
+```python
+from fastapi import FastAPI, Request 
+from velilogger import generate_tracing_id
+
+app = FastAPI()
+
+@app.middleware("http")
+async def http_middleware(request: Request, call_next):
+    tracing_id_header = 'X-tracing-id'
+    tracing_id = None
+    if tracing_id_header in request.headers:
+        tracing_id = request.headers.get(tracing_id_header)
+    generate_tracing_id(tracing_id)
+    response = await call_next(request)
+    return response
+
+```
+
+* When using `velikafkaclient`: `velilogger` is integrated in the `velikafkaclient`, when producing an event `tracing-id` is set into the 
+kafka event object automatically, you just have to set it session begins, during consumption you must use `@tracing` 
+decorator to extract `tracing-id` from the event object and set it in the session context
+
+```python
+
+from velikafkaclient.decorators import tracing
+from velikafkaclient.events.base import KafkaEvent 
+
+@tracing
+async def event_handler(event: KafkaEvent):
+    # Handler logic 
+    pass
+```
+
