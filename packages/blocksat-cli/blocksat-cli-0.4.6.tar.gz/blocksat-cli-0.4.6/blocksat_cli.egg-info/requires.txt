@@ -1,0 +1,8 @@
+distro
+requests
+python-gnupg>=0.4.7
+qrcode
+pysnmp
+
+[fec]
+zfec>=1.5.4
