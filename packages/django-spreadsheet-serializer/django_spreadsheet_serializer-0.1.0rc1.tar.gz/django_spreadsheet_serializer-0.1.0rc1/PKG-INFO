@@ -1,0 +1,204 @@
+Metadata-Version: 2.1
+Name: django-spreadsheet-serializer
+Version: 0.1.0rc1
+Summary: Manage Django models using spreadsheets!
+Project-URL: Homepage, https://github.com/paduszyk/django-spreadsheet-serializer
+Project-URL: Documentation, https://github.com/paduszyk/django-spreadsheet-serializer#readme
+Project-URL: Repository, https://github.com/paduszyk/django-spreadsheet-serializer
+Author-email: Kamil Paduszyński <paduszyk@gmail.com>
+Maintainer-email: Kamil Paduszyński <paduszyk@gmail.com>
+License: MIT License
+License-File: LICENSE
+Keywords: Excel,django,ods,python,spreadsheet,xlsx
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database
+Classifier: Topic :: File Formats
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: odfpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Description-Content-Type: text/markdown
+
+# django-spreadsheet-serializer
+
+[![](https://results.pre-commit.ci/badge/github/paduszyk/django-spreadsheet-serializer/main.svg)](https://results.pre-commit.ci/latest/github/paduszyk/django-spreadsheet-serializer/main)
+[![](https://img.shields.io/github/actions/workflow/status/paduszyk/django-spreadsheet-serializer/ci.yaml?label=CI&logo=github)](https://github.com/paduszyk/django-spreadsheet-serializer/actions/workflows/ci.yaml)
+[![](https://img.shields.io/codecov/c/github/paduszyk/django-spreadsheet-serializer?logo=codecov&label=codecov&token=5KxRheMD2U)](https://codecov.io/gh/paduszyk/django-spreadsheet-serializer)
+
+[![](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
+[![](https://img.shields.io/badge/linting-flake8-olive)](https://flake8.pycqa.org)
+[![](https://img.shields.io/badge/imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort)
+
+[![](https://img.shields.io/github/license/paduszyk/django-spreadsheet-serializer)](LICENSE)
+[![](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.dev)
+
+## Summary
+
+`django-spreadsheet-serializer` facilitates model data exchange between the Django model API and commonly used spreadsheet formats using built-in `dumpdata`/`loaddata` management commands.
+
+> NOTE: Serialization part, ref. to `dumpdata` command is not implemented yet.
+
+If you have some data in Microsoft Excel you would like to upload to your Django project or you need to back up your database to a spreadsheet, the app is what you need!
+
+## Installation
+
+Install the latest version of the package directly from PyPI with your favorite dependency management tool, preferably `pip`:
+
+```bash
+pip install django-spreadsheet-serializer
+```
+
+If you take care about the disk space, be aware that the package is based on `pandas`!
+
+## Configuration
+
+The app does not require any extra configuration, except having `django >= 3.2` (obviously) and its `contenttypes` and `auth` apps (from the batteries-included `contrib` package) installed. To incorporate its functionality, just append `spreadsheet_serializer` to `INSTALLED_APPS` of your Django setting module:
+
+```python
+INSTALLED_APPS = [
+    # ...
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    # ...
+    "spreadsheet_serializer",
+    # ...
+]
+```
+
+This update will register the serializer classes provided with the package as Django starts.
+
+### Fixture formats
+
+The app has been tested using the following spreadsheet formats:
+- Microsoft Excel ([`*.xlsx`](https://docs.fileformat.com/spreadsheet/xlsx/); since Microsoft Office 2007);
+- Open Document Format spreadsheets ([`*.ods`](https://docs.fileformat.com/spreadsheet/ods/)).
+
+Don't expect the app to work with other spreadsheet formats like Google Sheets (from Google) and Numbers (from Apple).
+
+## Deserialization
+
+Term *deserialization* corresponds to the processes of importing model data from fixture spreadsheets, converting them to Django model instances, and saving them in the database.
+
+### Model data in spreadsheets
+
+#### General information
+
+The model data in a spreadsheet should be organized in the same way they are represented in the SQL database, namely, the columns and rows of a spreadsheet correspond to the model's fields and objects, respectively.
+
+Avoid complex formatting in your spreadsheets; keep it clean and simple.
+
+#### Model *vs* sheet
+
+A single spreadsheet (*aka* workbook) file may contain several sheets &ndash; just the same as the Django project may consist of a number of apps and models. Referring to that analogy, the following rules apply as the `django-spreadsheet-serializer` app is going to be used:
+
+1. Each sheet represents a single model.
+2. The name of the sheet mirrors the full label of the corresponding model.
+
+For example, in the case of the model `Product` installed in the app `store`, the sheet name must be `store.Product` (case-insensitive).
+
+Note that in Microsoft Excel, the sheet name must not be longer than 31 characters.
+
+#### Column headers *vs* field names
+
+Within a sheet (model), **the column headers must be exactly the same as the model fields corresponding to them**. If the sheet contains some extra columns (with some auxiliary information, or comments), the app's deserializer will ignore them automatically.
+
+#### Cell values *vs* field values
+
+The table of supported and tested fields (all of them are from `django.db.models.fields` module) is as follows:
+
+| Type | Fields |
+| --- | --- |
+| descriptive fields | `CharField`, `TextField`, `SlugField`, `IntegerField` (and subclasses), `DecimalField`, `BooleanField`, `DateField`, `DateTimeField` |
+| relation fields | `ForeignKey`, `OneToOneField`, `ManyToManyField` |
+
+Although these lists seem to be short, we believe that the covered fields are usually sufficient to meet data model requirements, even in cases of quite complex business logic.
+
+##### Non-relational ("descriptive") fields
+
+Note that the `django-spreadsheet-serializer` app aims to support deserialization from *spreadsheets*, not from plain text or CSV files. Thus, the values of the cells representing non-relational or descriptive fields should be formatted accordingly.
+
+For example, the values to be deserialized to `BoolField` should be formatted in the spreadsheet as actual booleans, not strings like `"True"`, `"False"`; the same applies to date and time as well as the numeric data.
+
+##### Many-to-one, one-to-one relation fields
+
+The cells in columns representing relation fields (`ForeignKey`, `OneToOneField`) must contain the primary keys (PKs) of related objects. This is for sure one of the weakest point of the app. Deserialization using [natural keys](https://docs.djangoproject.com/en/4.2/topics/serialization/#natural-keys) is planned to be implemented soon.
+
+The only exception to this rule is the field relating to `contenttypes.ContentType` model. This is because, the PKs of `ContentType` objects usually aren't under the control of the developer and (to our best knowledge) may depend on different factors (like the number of apps or models in the project). Therefore, the string representing the full label of the model pinned to a related `ContentType` object is sufficient to deserialize such a field.
+
+##### Many-to-many fields
+
+A column representing `ManyToManyField` field must contain strings with comma-separated lists of PKs of the related models. No extra tables or sheets have to be created to account for many-to-many relations, as it is done on the migration/SQL level in Django.
+
+### Loading fixtures
+
+To load/deserialize the spreadsheet fixture described above, use the built-in Django management command [`loaddata`](https://docs.djangoproject.com/en/4.2/ref/django-admin/#loaddata):
+
+```shell
+# Using manage.py script
+python manage.py loaddata fixture [fixture]
+
+# Using django-admin
+python manage.py loaddata fixture [fixture]
+```
+Django will detect deserializer to be used based on the fixture file extension. If you want to be more specific, pass `--format` option to the command, with either `xlsx` or `ods` value.
+
+## Testing
+
+Feel free to clone/fork this repository to add features and look for bugs:
+```bash
+git clone https://github.com/paduszyk/django-spreadsheet-serializer.git && cd django-spreadsheet-serializer
+```
+
+We strongly encourage you to develop the package reproduced within a virtual environment created using `venv`:
+```bash
+python -m venv .venv && . .venv/bin/activate
+```
+
+> The name `.venv` is recommended as it is excluded from `flake8` paths (see [`pyproject.toml`](pyproject.toml)). In the activated virtual environment, install both main and development dependencies:
+```bash
+pip install -r requirements.txt -r requirements-dev.txt
+```
+
+Then, install and run `pre-commit` hooks:
+```bash
+pre-commit install && pre-commit run --all-files
+```
+
+Alternatively, run linters using `tox` (see [`tox.ini`](tox.ini)):
+```bash
+tox -e lint
+```
+
+To finally run tests, execute `pytest` (on the active virtual environment's Python and dependencies) or `tox` (on multiple testing environments using different versions of both Python and Django).
+
+## Contributing
+
+You are strongly encouraged to contribute to the project by:
+
+- opening an issue on a bug report or feature request;
+- forking the repository and opening pull requests (PRs);
+- participating in discussion regarding open issues and/or PRs.
+
+For more information, see the official [GitHub documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) on contributing to open-source projects.
+
+With your contributions, try to follow our convention for naming feature branches and composing commit and PR messages. As you might have noticed, we use [Gitmojis](https://gitmoji.dev) to mark the type of changes introduced by commits or PRs. This is quite a cool feature that we would like to consistently use in the project to keep it clean and easy to follow.
+
+## License
+
+Released under the [MIT license](LICENSE).

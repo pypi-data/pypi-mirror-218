@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - "**.md"
+      - ".editorconfig"
+      - "LICENSE"
+
+  pull_request:
+    branches: ["main"]
+    paths-ignore:
+      - "**.md"
+      - ".editorconfig"
+      - "LICENSE"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository 🎉
+        uses: actions/checkout@v3.5.3
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v4.6.1
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies 🧱
+        run: |
+          pip install tox tox-gh-actions
+      - name: Run linters 🎨
+        run: |
+          tox -e lint
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository 🎉
+        uses: actions/checkout@v3.5.3
+      - name: Create env matrix 🏗️
+        uses: fabiocaccamo/create-matrix-action@v2
+        id: env_matrix
+        with:
+          matrix: |
+            os {ubuntu-latest, macos-latest, windows-latest} dj {3.2}, py {3.8, 3.9, 3.10} db {sqlite}
+            os {ubuntu-latest, macos-latest, windows-latest} dj {4.0}, py {3.8, 3.9, 3.10} db {sqlite}
+            os {ubuntu-latest, macos-latest, windows-latest} dj {4.1}, py {3.8, 3.9, 3.10, 3.11} db {sqlite}
+            os {ubuntu-latest, macos-latest, windows-latest} dj {4.2}, py {3.8, 3.9, 3.10, 3.11} db {sqlite}
+    outputs:
+      matrix: ${{ steps.env_matrix.outputs.matrix }}
+  test:
+    needs: [prepare]
+    strategy:
+      matrix:
+        include: ${{ fromJson(needs.prepare.outputs.matrix) }}
+      fail-fast: false
+    runs-on: ${{ matrix.os }}
+    env:
+      DJANGO_DATABASE: ${{ matrix.db }}
+    steps:
+      - name: Checkout repository 🎉
+        uses: actions/checkout@v3.5.3
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v4.6.1
+        with:
+          python-version: ${{ matrix.py }}
+          cache: pip
+      - name: Install dependencies 🧱
+        run: |
+          pip install "django == ${{ matrix.dj }}.*"
+          pip install -r requirements.txt -r requirements-dev.txt
+      - name: Run tests 🧪
+        run: |
+          pytest
+      - name: Upload coverage reports to Codecov 📈
+        uses: codecov/codecov-action@v3.1.4
