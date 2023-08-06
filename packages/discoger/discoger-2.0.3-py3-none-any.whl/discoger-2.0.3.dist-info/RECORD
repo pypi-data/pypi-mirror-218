@@ -1,0 +1,11 @@
+discoger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discoger/_info.py,sha256=Ny9UJOJ8LW-fLLf_ZKdSKgLLgQd8LaIngCDMQq_HNhQ,339
+discoger/client.py,sha256=O9Ry3iSo3ftDKGDMT9H6jmTBTPdc5aEXlwgf3-8UXFc,8823
+discoger/scrap.py,sha256=nW8WAcgUzAp5Je-Or1kPkp3zprY5tWPq-nfwRjxu98g,2620
+discoger/utils.py,sha256=rA6MW7ol0TkSfn_h8vTYZG5CFxoNUeZMeYZf3dELZCo,4145
+discoger-2.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+discoger-2.0.3.dist-info/METADATA,sha256=FZoyNC8H32vvQs4pcHkUUjnupu24DiVRCVZXZFx4NKo,2338
+discoger-2.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+discoger-2.0.3.dist-info/entry_points.txt,sha256=IWpmLmlp503rJLXHPeWtCPbk4lfq52USqQh8qmfty-A,51
+discoger-2.0.3.dist-info/top_level.txt,sha256=6nnl6JxpWMwbEeIJhXJnEL7xq_Z1WUDnDFQ8Ab00Ugc,9
+discoger-2.0.3.dist-info/RECORD,,
