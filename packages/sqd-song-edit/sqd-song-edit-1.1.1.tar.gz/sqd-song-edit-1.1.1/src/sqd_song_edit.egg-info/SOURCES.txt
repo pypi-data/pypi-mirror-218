@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/sqd_song_edit/__init__.py
+src/sqd_song_edit/__main__.py
+src/sqd_song_edit/color.py
+src/sqd_song_edit/errors.py
+src/sqd_song_edit/start.py
+src/sqd_song_edit/utils.py
+src/sqd_song_edit.egg-info/PKG-INFO
+src/sqd_song_edit.egg-info/SOURCES.txt
+src/sqd_song_edit.egg-info/dependency_links.txt
+src/sqd_song_edit.egg-info/entry_points.txt
+src/sqd_song_edit.egg-info/requires.txt
+src/sqd_song_edit.egg-info/top_level.txt
