@@ -1,0 +1,7 @@
+pandas
+requests
+plotly.express
+geopandas
+
+[dev]
+pytest
