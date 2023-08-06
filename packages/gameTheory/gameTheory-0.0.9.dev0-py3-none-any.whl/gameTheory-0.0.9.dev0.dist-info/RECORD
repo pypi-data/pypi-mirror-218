@@ -1,0 +1,11 @@
+gamekit/__init__.py,sha256=L27X2oil7hI3fKyM_tLW21ZozJ-iyA3DLEWVe0N5qN4,65
+gamekit/exceptions.py,sha256=7smpRNcsPpZ_X3OYpGyPWAGnQEWSYlYeiKDNcgCxLKM,166
+gamekit/algorithms/__init__.py,sha256=jUZMAF70CL42eHQo8qWwfCMVWDhWjhcxSOIWhTGw9jo,46
+gamekit/algorithms/bankruptcy.py,sha256=s-mxVQvMbpiFVMbF5k37Mf05Wjnv7j0R6uwge1AnF6w,3680
+gamekit/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamekit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gameTheory-0.0.9.dev0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gameTheory-0.0.9.dev0.dist-info/METADATA,sha256=LuYKtOhHVlvJASac1QRQmyXQ9COTrrMrWNMB6eEcsoQ,2049
+gameTheory-0.0.9.dev0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gameTheory-0.0.9.dev0.dist-info/top_level.txt,sha256=B7Oj60S5AlHspUApEv0EDMOTYSRmi3YCAyPhHBYEPd8,8
+gameTheory-0.0.9.dev0.dist-info/RECORD,,
