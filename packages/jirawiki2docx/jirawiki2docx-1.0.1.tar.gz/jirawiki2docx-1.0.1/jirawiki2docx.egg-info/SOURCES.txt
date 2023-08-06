@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+jirawiki2docx/__init__.py
+jirawiki2docx/jirawiki2docx.py
+jirawiki2docx.egg-info/PKG-INFO
+jirawiki2docx.egg-info/SOURCES.txt
+jirawiki2docx.egg-info/dependency_links.txt
+jirawiki2docx.egg-info/requires.txt
+jirawiki2docx.egg-info/top_level.txt
