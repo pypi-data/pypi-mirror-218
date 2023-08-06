@@ -1,0 +1,298 @@
+{
+    "propertyaliases": [
+        "PropertyAliases.txt",
+        "UCD.zip",
+        "property_alias",
+        ";"
+    ],
+    "propertyvaluealiases": [
+        "PropertyValueAliases.txt",
+        "UCD.zip",
+        "value_alias",
+        ";"
+    ],
+    "unicodedata": [
+        "UnicodeData.txt",
+        "UCD.zip",
+        "unicode_data",
+        ";"
+    ],
+    "proplist": [
+        "PropList.txt",
+        "UCD.zip",
+        "prop_list",
+        ";"
+    ],
+    "derivedcoreproperties": [
+        "DerivedCoreProperties.txt",
+        "UCD.zip",
+        "prop_list",
+        ";"
+    ],
+    "derivedage": [
+        "DerivedAge.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "blocks": [
+        "Blocks.txt",
+        "UCD.zip",
+        "value_range",
+        ";"
+    ],
+    "scripts": [
+        "Scripts.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "scriptextensions": [
+        "ScriptExtensions.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "bidimirroring": [
+        "BidiMirroring.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "eastasianwidth": [
+        "EastAsianWidth.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "equivalentunifiedideograph": [
+        "EquivalentUnifiedIdeograph.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "graphemebreakproperty": [
+        "auxiliary/GraphemeBreakProperty.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "hangulsyllabletype": [
+        "HangulSyllableType.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "indicpositionalcategory": [
+        "IndicPositionalCategory.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "indicsyllabiccategory": [
+        "IndicSyllabicCategory.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "derivedjoininggroup": [
+        "extracted/DerivedJoiningGroup.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "jamo": [
+        "Jamo.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "derivedjoiningtype": [
+        "extracted/DerivedJoiningType.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "linebreak": [
+        "LineBreak.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "sentencebreakproperty": [
+        "auxiliary/SentenceBreakProperty.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "verticalorientation": [
+        "VerticalOrientation.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "wordbreakproperty": [
+        "auxiliary/WordBreakProperty.txt",
+        "UCD.zip",
+        "single_value",
+        ";"
+    ],
+    "compositionexclusions": [
+        "CompositionExclusions.txt",
+        "UCD.zip",
+        "simple_list",
+        ";"
+    ],
+    "derivednormalizationprops": [
+        "DerivedNormalizationProps.txt",
+        "UCD.zip",
+        "derived_normal",
+        ";"
+    ],
+    "emoji-data": [
+        "emoji/emoji-data.txt",
+        "UCD.zip",
+        "prop_list",
+        ";"
+    ],
+    "unihan_dictionarylikedata": [
+        "Unihan_DictionaryLikeData.txt",
+        "Unihan.zip",
+        "unihan",
+        "\t"
+    ],
+    "unihan_dictionaryindices": [
+        "Unihan_DictionaryIndices.txt",
+        "Unihan.zip",
+        "unihan",
+        "\t"
+    ],
+    "unihan_irgsources": [
+        "Unihan_IRGSources.txt",
+        "Unihan.zip",
+        "unihan",
+        "\t"
+    ],
+    "unihan_othermappings": [
+        "Unihan_OtherMappings.txt",
+        "Unihan.zip",
+        "unihan",
+        "\t"
+    ],
+    "unihan_numericvalues": [
+        "Unihan_NumericValues.txt",
+        "Unihan.zip",
+        "unihan",
+        "\t"
+    ],
+    "unihan_radicalstrokecounts": [
+        "Unihan_RadicalStrokeCounts.txt",
+        "Unihan.zip",
+        "unihan",
+        "\t"
+    ],
+    "unihan_readings": [
+        "Unihan_Readings.txt",
+        "Unihan.zip",
+        "unihan",
+        "\t"
+    ],
+    "unihan_variants": [
+        "Unihan_Variants.txt",
+        "Unihan.zip",
+        "unihan",
+        "\t"
+    ],
+    "casefolding": [
+        "CaseFolding.txt",
+        "UCD.zip",
+        "casefolding",
+        ";"
+    ],
+    "specialcasing": [
+        "SpecialCasing.txt",
+        "UCD.zip",
+        "special_casing",
+        ";"
+    ],
+    "bidibrackets": [
+        "BidiBrackets.txt",
+        "UCD.zip",
+        "bidi_brackets",
+        ";"
+    ],
+    "namealiases": [
+        "NameAliases.txt",
+        "UCD.zip",
+        "name_alias",
+        ";"
+    ],
+    "tangutsources": [
+        "TangutSources.txt",
+        "UCD.zip",
+        "unihan",
+        "\t"
+    ],
+    "nushusources": [
+        "NushuSources.txt",
+        "UCD.zip",
+        "unihan",
+        "\t"
+    ],
+    "emojisources": [
+        "EmojiSources.txt",
+        "UCD.zip",
+        "emoji_source",
+        ";"
+    ],
+    
+    "cjkradicals": [
+        "CJKRadicals.txt",
+        "UCD.zip",
+        "cjk_radicals",
+        ";"
+    ],
+    "namedsequences": [
+        "NamedSequences.txt",
+        "UCD.zip",
+        "named_sequence",
+        ";"
+    ],
+    "standardizedvariants": [
+        "StandardizedVariants.txt",
+        "UCD.zip",
+        "standardized_variant",
+        ";"
+    ],
+    
+    "rev_casefold": [
+        "rev_casefold.json",
+        "Denormal.zip",
+        "denormal_map",
+        ""
+    ],
+    "rev_nfc": [
+        "rev_nfc.json",
+        "Denormal.zip",
+        "denormal_map",
+        ""
+    ],
+    "rev_nfd": [
+        "rev_nfd.json",
+        "Denormal.zip",
+        "denormal_map",
+        ""
+    ],
+    "rev_nfkc": [
+        "rev_nfkc.json",
+        "Denormal.zip",
+        "denormal_map",
+        ""
+    ],
+    "rev_nfkd": [
+        "rev_nfkd.json",
+        "Denormal.zip",
+        "denormal_map",
+        ""
+    ]
+}
