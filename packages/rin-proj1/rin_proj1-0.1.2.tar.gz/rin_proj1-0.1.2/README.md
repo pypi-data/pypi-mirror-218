@@ -1,0 +1,44 @@
+<h1> command usage (CLI) </h1>
+See list of commands with
+
+```
+rin_pj1 --help
+```
+Error logging is only compatible with `exec-based-on-env`<br>
+<b>read_csv_and_insert_to_db :</b> Adds contents of provided csv to a .db file<br>
+<b>export_db_to_csv :</b> Adds contents of provided db to a .csv file
+<h2>set-config</h2>
+Executes read_csv_and_insert_to_db and export_db_to_csv functions with the given config file.
+If no path is provided, tries to open config.yaml in the current directory.<br>
+
+```commandline
+ rin_pj1 set-config --path path/to/config.yaml
+```
+for default/config in current directory, use ```main1```
+
+<hr>
+<h2>set-db</h2>
+Executes read_csv_and_insert_to_db and export_db_to_csv functions with the db_name provided by user.<br>
+
+```rin_pj1 set-db``` saves data.db in current directory<br>
+```rin_pj1 set-db db_name``` saves to db_name in current directory. Will create a file if not present<br>
+
+<hr>
+<h2>exec-based-on-env</h2>
+Executes read_csv_and_insert_to_db and export_db_to_csv functions with csv file depending on the environment type<br>
+
+```bash
+rin_pj1 exec-based-on-env
+```
+If you want to run the command in a different environment,
+```bash
+poetry shell
+export APP_MODE="env_name"
+main exec-based-on-env
+```
+
+Available ```env_name``` options are development, testing and production.
+
+<hr>
+
+Successful executioni should print confirmation message in terminal. If there is no output, check for a `mpj1_errors.log` file to determine the error.
