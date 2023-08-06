@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: myjlab
+Version: 0.0.1
+Summary: A collection of utilities used by Miyaji Lab for researches, lectures, etc.
+Author-email: Bingchang He <he@cy2sec.comm.eng.osaka-u.ac.jp>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Miyaji Lab Collections
+A collection of utilities used by Miyaji Lab for researches, lectures, etc.
+
+## Example Usage
+```python
+from myjlab.pbl.utils import str_to_int, int_to_str
+
+str_to_int('こんにちは')    # 1181279534677122504641669074077843887
+int_to_str(1181279534677122504641669074077843887)    # こんにちは
+```
