@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: truvioncore
+Version: 1.0.0
+Summary: Truvion Core Classes and DSL
+Author: Mat Mathews Brown
+Author-email: mbrown@truvion.com
+Classifier: Programming Language :: Python :: 3.10
