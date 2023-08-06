@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+description = """
+                XRDImage is a Python 3 package developed by the SDLE Research Center at Case Western Reserve University in Cleveland, OH.
+                XRDImage contains functions required to preprocess, dark correct, and center XRD images. 
+                It also consists of functions required to make XRD images temperature independent. 
+                In v.0.0.4, we've added ring segmentation, ring clustering algorithms, and ellipse fitting algorithms.
+                The user inputs the file path, and output folder, dark file path, and a reference image path, 
+                and the output will be a folder full of images processed by our dark correction, centering, resizing, and temperature independence scripts.
+                """
