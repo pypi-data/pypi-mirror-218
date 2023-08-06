@@ -1,0 +1,2 @@
+[console_scripts]
+song-edit = sqd_song_edit.__main__:main
