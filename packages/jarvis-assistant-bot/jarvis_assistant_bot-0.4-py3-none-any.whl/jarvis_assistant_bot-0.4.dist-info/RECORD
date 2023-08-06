@@ -1,0 +1,14 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/commands.py,sha256=S745M0IyuCyZ2qpkwm73zsWhqs7JnS44xDoG8UbPRZY,12611
+src/common_functions.py,sha256=tBWqbR6iqOjW0C0pHr96sOd6S-_TXkiFM9gv6fUBwSk,3147
+src/main.py,sha256=MTAr7YiLU3iu0C9K0CQUZ0e9bsKNmxYMCihcqwmdUKs,4148
+src/memory.py,sha256=UmPg971tIdqESU1oLqq480YpYB7Klgse2lnGcNOsT2k,18396
+src/notes_core.py,sha256=8PPQoMFMv3z4K0BsXGFk9y5S8OuAStLYwWP0puuKgo8,5715
+src/save_load_books.py,sha256=UuA8aRCwVFHnC6brPMAZa8NCvFehBzbUd_TmGuuXApI,2995
+src/sorter.py,sha256=R85EeRRKJxTfleabKkHBVjmUoV6GCckyf3MciUQwtFQ,4339
+jarvis_assistant_bot-0.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+jarvis_assistant_bot-0.4.dist-info/METADATA,sha256=Wl0cIlR1r8x7u5pTe02rZgYUo1jJUgJGuuni9XBJCVk,4292
+jarvis_assistant_bot-0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jarvis_assistant_bot-0.4.dist-info/entry_points.txt,sha256=ds2M6ZFbNm6OLrKnWHNfLltegS06MN8tCRxPVAYUfF8,41
+jarvis_assistant_bot-0.4.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+jarvis_assistant_bot-0.4.dist-info/RECORD,,
