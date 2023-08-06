@@ -1,0 +1,5 @@
+aiohttp
+tenacity
+
+[dev]
+twine>=4.0.2
