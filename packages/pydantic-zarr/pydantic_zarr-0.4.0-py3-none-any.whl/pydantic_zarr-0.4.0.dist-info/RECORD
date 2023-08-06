@@ -1,0 +1,6 @@
+pydantic_zarr/__init__.py,sha256=W84Ld3FBG0WxBpCiGArG63bsQ03gIiC89B9ZpV1HXtw,85
+pydantic_zarr/core.py,sha256=tnUjyPOxtQLjhm5VdffsAn2hg9m2dNUYPC05_KRtDA0,11156
+pydantic_zarr-0.4.0.dist-info/LICENSE,sha256=RUR32EgzcpN_PkO4thH8QQV7XJrTfjxqFHdOyOeWmVU,1070
+pydantic_zarr-0.4.0.dist-info/METADATA,sha256=n6RHuY0dyLiFdx1re078YHK5UElY6JX0PQH0NYGoQLw,1720
+pydantic_zarr-0.4.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pydantic_zarr-0.4.0.dist-info/RECORD,,
