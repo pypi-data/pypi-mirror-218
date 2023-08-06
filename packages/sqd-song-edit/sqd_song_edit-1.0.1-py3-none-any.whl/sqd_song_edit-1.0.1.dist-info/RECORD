@@ -1,0 +1,12 @@
+sqd_song_edit/__init__.py,sha256=drvcpiKrMyivj_jnZ6XajyEmJZ_lIf8hvYRSQKgm42Q,402
+sqd_song_edit/__main__.py,sha256=R2ALSeXtYG82xvXTaG4rgaB3v0PeuJSgo0nms-1WXFI,2162
+sqd_song_edit/color.py,sha256=BlD0nGYHuZLWYTsNC6mY26dDaYKoH943Uoht1OAxNq4,825
+sqd_song_edit/errors.py,sha256=RZrogBb2NMRDs8oiLO9r1TnqKnUMAPLf_xhFoFsR8JE,484
+sqd_song_edit/start.py,sha256=HSOfNnSQdILUujKhcmrSieHcw46Vngu8b5R7K72Oxzk,7414
+sqd_song_edit/utils.py,sha256=p-NO7V56P5fBH0IMV_F_sdZGtdxZR69891s8jn6ggbw,291
+sqd_song_edit-1.0.1.dist-info/LICENSE,sha256=mMkkAsbxwEInCVdddGFfLLMwzlnBWvsuWm9D42C10Fc,1083
+sqd_song_edit-1.0.1.dist-info/METADATA,sha256=fzANv8WciXFsMTqJeTajMpO9F7Z46Cwn3Eh9FQqqXy8,2041
+sqd_song_edit-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqd_song_edit-1.0.1.dist-info/entry_points.txt,sha256=Ej5yRjUnne0lXNIHNaLaiZAVpV3U278urrNphVT2ozw,58
+sqd_song_edit-1.0.1.dist-info/top_level.txt,sha256=IzfEBlSkBbFKRWU8jn18MtBZkrjOT4k3pM093DYy_G4,14
+sqd_song_edit-1.0.1.dist-info/RECORD,,
