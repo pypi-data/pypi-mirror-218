@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+kthreading/__init__.py
+kthreading.egg-info/PKG-INFO
+kthreading.egg-info/SOURCES.txt
+kthreading.egg-info/dependency_links.txt
+kthreading.egg-info/not-zip-safe
+kthreading.egg-info/top_level.txt
