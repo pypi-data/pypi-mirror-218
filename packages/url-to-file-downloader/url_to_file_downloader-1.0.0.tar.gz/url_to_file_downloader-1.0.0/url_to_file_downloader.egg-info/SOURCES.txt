@@ -1,0 +1,6 @@
+setup.py
+url_to_file_downloader.egg-info/PKG-INFO
+url_to_file_downloader.egg-info/SOURCES.txt
+url_to_file_downloader.egg-info/dependency_links.txt
+url_to_file_downloader.egg-info/requires.txt
+url_to_file_downloader.egg-info/top_level.txt
