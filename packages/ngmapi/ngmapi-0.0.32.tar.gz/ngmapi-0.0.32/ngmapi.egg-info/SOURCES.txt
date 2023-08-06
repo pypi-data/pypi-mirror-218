@@ -1,0 +1,12 @@
+pyproject.toml
+ngmapi/__init__.py
+ngmapi/__main__.py
+ngmapi/app.py
+ngmapi/func.py
+ngmapi.egg-info/PKG-INFO
+ngmapi.egg-info/SOURCES.txt
+ngmapi.egg-info/dependency_links.txt
+ngmapi.egg-info/entry_points.txt
+ngmapi.egg-info/requires.txt
+ngmapi.egg-info/top_level.txt
+tests/test_add.py
