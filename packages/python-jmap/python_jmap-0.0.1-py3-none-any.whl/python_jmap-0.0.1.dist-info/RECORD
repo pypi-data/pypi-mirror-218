@@ -1,0 +1,10 @@
+python_jmap/__init__.py,sha256=XOPyX0WUxg1TivUfa9frMisV95QLxleNdhC55XFfSB4,28
+python_jmap/__main__.py,sha256=ywvZ5IuhPDQr9sC75DpXX9hTKvZCulpf_cDD5E0lq5s,142
+python_jmap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_jmap/types/__init__.py,sha256=_KjyzUQxTUZ1yM3CA6ntO7uSYBlsq68qJi1HxN9Mj70,34
+python_jmap/types/id.py,sha256=UPytUcCHdB7QqLjlbqQQZWHose6GExu-01bgGKVOzp8,3646
+python_jmap-0.0.1.dist-info/LICENSE,sha256=OLxDAN1SO90bMFyrROiFBSjqaIU04npV1pM4CrgOBW8,1066
+python_jmap-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+python_jmap-0.0.1.dist-info/METADATA,sha256=nr8k5rCSjT7jG4TZIvc5Jx1UAKfctDCOVUSUCaJS51o,3243
+python_jmap-0.0.1.dist-info/entry_points.txt,sha256=Qw6iHbqxGx6PrGfOLHJWMeGZTmEEhkoOF5Oboi8Q9vw,57
+python_jmap-0.0.1.dist-info/RECORD,,
