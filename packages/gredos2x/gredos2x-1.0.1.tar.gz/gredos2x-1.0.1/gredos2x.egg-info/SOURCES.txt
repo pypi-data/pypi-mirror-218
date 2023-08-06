@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+gredos2x.egg-info/PKG-INFO
+gredos2x.egg-info/SOURCES.txt
+gredos2x.egg-info/dependency_links.txt
+gredos2x.egg-info/requires.txt
+gredos2x.egg-info/top_level.txt
