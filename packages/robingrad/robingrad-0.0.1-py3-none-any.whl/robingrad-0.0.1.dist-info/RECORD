@@ -1,0 +1,9 @@
+robingrad/__init__.py,sha256=bfI-ZVbSiub50K1f7E6lcepvOfgDzDnxGwxc_BN5mNI,78
+robingrad/graph.py,sha256=V7QnBqmZxbiKlDdw7_ZxVagjzwF_9Ye52WQu1KBzvHE,1433
+robingrad/lab.py,sha256=VMDvz8Dg8eNUJNmtSi1iax9I0UnGcXckx-fSJG-qOK4,2122
+robingrad/tensor.py,sha256=XBtY7inDTXEf5autBL3RWOiUgPrHsbwHaP4U3Gp7kXo,6040
+robingrad-0.0.1.dist-info/LICENSE,sha256=YUM8v0cleK6GoNFEig71rjCj7MCJq2JTqJO_pQFj71s,1060
+robingrad-0.0.1.dist-info/METADATA,sha256=UHn_MyCzuatYfRhDm_kTJczAlMTVj9mfxjLu41N98Ic,2297
+robingrad-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+robingrad-0.0.1.dist-info/top_level.txt,sha256=e-DmAErAI7tkERY6HhlXv2OLBBziDG-68mWaOAugXQ0,10
+robingrad-0.0.1.dist-info/RECORD,,
