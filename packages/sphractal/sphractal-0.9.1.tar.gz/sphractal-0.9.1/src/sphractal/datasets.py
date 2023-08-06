@@ -1,0 +1,12 @@
+from importlib.resources import files
+
+
+def getExampleDataPath():
+    """Get path to example.xyz (an octahedron palladium nanoparticle).
+
+    Returns
+    -------
+    str
+        Path to file.
+    """
+    return str(files('sphractal.data').joinpath('example.xyz'))
