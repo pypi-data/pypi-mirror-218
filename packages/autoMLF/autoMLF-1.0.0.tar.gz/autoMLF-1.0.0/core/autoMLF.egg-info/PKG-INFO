@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: autoMLF
+Version: 1.0.0
+Summary: autoML for training and inference Deep Learning model
+Home-page: https://github.com/aihackervn
+Author: TinVo
+Author-email: tinprocoder0908@gmail.com
+License: MIT
+Keywords: AI HACKER VNESE,AI,autoML,Deep Learning,Computer Vision,Interface
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
