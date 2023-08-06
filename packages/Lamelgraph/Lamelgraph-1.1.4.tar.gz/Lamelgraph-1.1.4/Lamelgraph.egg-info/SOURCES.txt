@@ -1,0 +1,17 @@
+README.md
+setup.py
+Lamelgraph.egg-info/PKG-INFO
+Lamelgraph.egg-info/SOURCES.txt
+Lamelgraph.egg-info/dependency_links.txt
+Lamelgraph.egg-info/requires.txt
+Lamelgraph.egg-info/top_level.txt
+src/Lamel_window/AnalyzingDataSliceWin.py
+src/Lamel_window/SaveResultsWin.py
+src/Lamel_window/SettingsWin.py
+src/Lamel_window/__init__.py
+src/Lamel_window/analyzing_data_slice_win_design.py
+src/Lamel_window/global_data.py
+src/Lamel_window/main.py
+src/Lamel_window/proccesing.py
+src/Lamel_window/save_results_win_design.py
+src/Lamel_window/settings_win_design.py
