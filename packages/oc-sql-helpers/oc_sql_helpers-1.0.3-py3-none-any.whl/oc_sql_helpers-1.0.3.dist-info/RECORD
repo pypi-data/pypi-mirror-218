@@ -1,0 +1,9 @@
+oc_sql_helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oc_sql_helpers/normalizer.py,sha256=BUdmRWfq0bfJ8CJ5quRtpfbHIIOUaSrt27C45xq_DrA,35275
+oc_sql_helpers/str_decoder.py,sha256=zt1fN07fkW55TmLm7Inb-5RTab7UaXiAjxBd-f5vMeU,2802
+oc_sql_helpers/wrapper.py,sha256=GJcu_iS7o9fjBLECv17U1IPecPVt9fy0m89KXWJKywQ,18181
+oc_sql_helpers-1.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+oc_sql_helpers-1.0.3.dist-info/METADATA,sha256=7e5J7iJ0332Ega5amsygmzIKEWuZcz0cMZqKWpb1qfY,243
+oc_sql_helpers-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+oc_sql_helpers-1.0.3.dist-info/top_level.txt,sha256=pKp8OXzXLdlZecL-DuIWqY8U4tr1bMLDqK4MOtMdMTU,15
+oc_sql_helpers-1.0.3.dist-info/RECORD,,
