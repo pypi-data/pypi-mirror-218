@@ -1,0 +1,2 @@
+[pylsp]
+amazon_codeguru_jupyterlab_extension = amazon_codeguru_jupyterlab_extension.plugin
