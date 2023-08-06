@@ -1,0 +1,13 @@
+yt_dlp-stubs/YoutubeDL.pyi,sha256=6DEfzG6NSDruP1PsF7fBcazTLB6sk-3s6lwtPXoLfwc,513
+yt_dlp-stubs/__init__.pyi,sha256=ZR-9Fj17AM7f1Yv9bRDfa-hBUHwmwMfPDRMyUY07gtY,27817
+yt_dlp-stubs/_misc.pyi,sha256=bpRqP0miA-k3LzuK2WFRa98e5izTU9tvwHJcKl7cawo,286
+yt_dlp-stubs/cookies.pyi,sha256=mROWG5cIGnX50nfssq6x8n_QSQGib-mkfZYZGcyV6mk,588
+yt_dlp-stubs/extractor/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yt_dlp-stubs/extractor/common.pyi,sha256=vHvs2xYUaf_LrDC7b0RsZ6HsNstfvgYouV4FcTTFMo4,2213
+yt_dlp-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yt_dlp-stubs/utils/__init__.pyi,sha256=NoO8olEFA4k0OQUJMlJAwChSlAGDCiPrQocr1GdFsNE,22
+yt_dlp-stubs/utils/_utils.pyi,sha256=5xki5IhRLXt2GY-TfuVErGBD2wS3aJ7voHUmmvHboEM,1335
+yt_dlp_types-0.0.7.dist-info/LICENSE.txt,sha256=67nZkfSCAWx6Ge--GQqCCnRBNszOqa7K7zsBgwz2D_I,1087
+yt_dlp_types-0.0.7.dist-info/METADATA,sha256=q9wSnEn4WUNDxe-7Iw3SATyU2CYRmi4NB44Y3doK4bI,885
+yt_dlp_types-0.0.7.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+yt_dlp_types-0.0.7.dist-info/RECORD,,
