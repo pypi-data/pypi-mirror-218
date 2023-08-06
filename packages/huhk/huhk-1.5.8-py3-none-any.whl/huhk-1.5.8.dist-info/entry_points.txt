@@ -1,0 +1,2 @@
+[console_scripts]
+huhk = huhk.case_project.main:main
