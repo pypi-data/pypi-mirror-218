@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bigan-data
+Version: 0.0.0
+Summary: Bigan Trading Data Package
+Home-page: https://dev.azure.com/FutureFantasy/BiGan/_git/bigan-data
+Author: heian0224
+Author-email: heian0224@gmail.com
+Project-URL: Bug Tracker, https://dev.azure.com/FutureFantasy/BiGan/_git/bigan-data/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
