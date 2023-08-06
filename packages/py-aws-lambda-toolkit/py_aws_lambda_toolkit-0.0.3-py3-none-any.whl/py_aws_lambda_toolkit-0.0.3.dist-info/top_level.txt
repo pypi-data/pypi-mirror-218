@@ -1,0 +1,2 @@
+__tests__
+py_sls_lambda_toolkit
