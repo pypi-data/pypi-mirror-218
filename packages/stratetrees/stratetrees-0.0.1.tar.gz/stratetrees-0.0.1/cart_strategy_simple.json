@@ -1,0 +1,22 @@
+{
+    "variables": [
+        "CartPole.cart_pos",
+        "CartPole.cart_vel",
+        "CartPole.pole_ang",
+        "CartPole.pole_vel"
+    ],
+    "actions": [
+        "0",
+        "1"
+    ],
+    "root": {
+        "var": "CartPole.pole_ang",
+        "bound": 0.0,
+        "low": {
+            "action": 0
+        },
+        "high": {
+            "action": 1
+        }
+    }
+}
