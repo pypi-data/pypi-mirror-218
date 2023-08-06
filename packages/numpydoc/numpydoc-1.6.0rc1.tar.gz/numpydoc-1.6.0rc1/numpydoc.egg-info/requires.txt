@@ -1,0 +1,17 @@
+sphinx>=5
+Jinja2>=2.10
+tabulate>=0.8.10
+
+[:python_version < "3.11"]
+tomli>=1.1.0
+
+[doc]
+numpy>=1.22
+matplotlib>=3.5
+pydata-sphinx-theme>=0.13
+sphinx>=6
+
+[test]
+pytest
+pytest-cov
+matplotlib
