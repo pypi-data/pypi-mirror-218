@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: scribelex
+Version: 1.0.6
+Summary: Scribelex is a lightweight Python library for building parser combinators.
+Home-page: https://github.com/UncleDrema/scribelex
+Author: UncleDrema
+Author-email: missl.wipiece@gmail.com
+License: MIT
+Keywords: parser,parsing,combinator,library,Python,structured data,grammar,syntax,parsing toolkit
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# scribelex
+scribelex - это легковесная библиотека на языке Python для реализации комбинаторов парсеров, позволяющая гибко преобразовывать данные между различными форматами.
+
+## Установка
+
+Вы можете установить scribelex с помощью pip:
+
+```bash
+pip install scribelex
+```
+
+## Лицензия
+
+Этот проект лицензирован под лицензией MIT.
+Подробнее смотрите файл [LICENSE](LICENSE).
