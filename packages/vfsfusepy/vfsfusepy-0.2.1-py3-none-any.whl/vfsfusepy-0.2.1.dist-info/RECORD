@@ -1,0 +1,13 @@
+vfsfusepy/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+vfsfusepy/__main__.py,sha256=NfwlBzMau4Bdy8igczL4wjem0w6GGJJ-87FY5X4osco,619
+vfsfusepy/file_operations.py,sha256=-2bqTS2lDt4C9J9oRYmIyB5EagnAYQYTq0tg9Uh4GBw,1128
+vfsfusepy/git_operations.py,sha256=-RSHfT63hYLXVCt0E2wEhYNNamzN2r1A719sgVb-48M,152
+vfsfusepy/utils.py,sha256=SeeFveOnwamK-Bmyd2UVSzGIJyBjYqoICeFIF5VU-tc,724
+vfsfusepy/version.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+vfsfusepy/vfs.py,sha256=L4A7aLO7lEar-6iCGWDywP-d-7cmUo_hBrKHoIigQGI,3904
+vfsfusepy-0.2.1.dist-info/LICENSE,sha256=cEH9oKMd1wrQEt7j3cFHIQs3VxT0UrDYhNNpwaMh8OM,1066
+vfsfusepy-0.2.1.dist-info/METADATA,sha256=ogJg02IK1TNDZZsgLXAa1NnfBHW26HfdjOelywgqQM8,3948
+vfsfusepy-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vfsfusepy-0.2.1.dist-info/entry_points.txt,sha256=Jmf4-DiLkBu4p9NaNliAwugl_NxmDn0FxWCFusSrW3Q,53
+vfsfusepy-0.2.1.dist-info/top_level.txt,sha256=AgK0wYEnabTCNBTQPVL-3wE1EAUgq8Hks6BLIrDIMYE,10
+vfsfusepy-0.2.1.dist-info/RECORD,,
