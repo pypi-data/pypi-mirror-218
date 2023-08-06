@@ -1,0 +1,9 @@
+botocore
+boto3
+langchain
+openai
+pandas
+panel
+hvplot
+python-dotenv
+tiktoken
