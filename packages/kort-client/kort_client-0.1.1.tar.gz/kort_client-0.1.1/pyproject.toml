@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "kort-client"
+version = "0.1.1"
+description = ""
+authors = ["Jonathan Weth <git@jonathanweth.de>"]
+
+[[tool.poetry.source]]
+name = "gitlab"
+url = "https://edugit.org/api/v4/projects/461/packages/pypi/simple"
+secondary = true
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.4"
+usersettings = "^1.1.5"
+requests = "^2.27.1"
+pycups = "^2.0.1"
+usb-barcode-scanner-julz = "^0.2"
+nfcpy = "^1.0.4"
+
+[tool.poetry.dev-dependencies]
+safety = "^1.8.5"
+flake8 = "^4.0.0"
+flake8-fixme = "^1.1.1"
+flake8-mypy = "^17.8.0"
+flake8-bandit = "^3.0.0"
+flake8-builtins = "^2.0.0"
+flake8-docstrings = "^1.5.0"
+flake8-rst-docstrings = "^0.3.0"
+black = ">=21.0"
+flake8-black = "^0.3.0"
+isort = "^5.0.0"
+flake8-isort = "^6.0.0"
+
+[tool.poetry.scripts]
+kort-client = "kort_client.cli:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
