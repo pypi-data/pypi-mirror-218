@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+OptmizeExport/OptmizeExport.pyd
+OptmizeExport/__init__.py
+OptmizeExport/bookmarket_output.pyd
+OptmizeExport/optimize_export.pyd
+OptmizeExport.egg-info/PKG-INFO
+OptmizeExport.egg-info/SOURCES.txt
+OptmizeExport.egg-info/dependency_links.txt
+OptmizeExport.egg-info/top_level.txt
