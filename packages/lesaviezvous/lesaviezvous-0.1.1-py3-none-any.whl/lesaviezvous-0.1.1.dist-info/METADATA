@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: lesaviezvous
+Version: 0.1.1
+Summary: Un package Python pour obtenir des informations intéressantes du monde.
+Home-page: https://github.com/codingtuto/lesaviezvouspkg/
+Author: Coding Team
+Author-email: codingteam@telegmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+<h1>Lesaviezvous</h1>
+<p>Un package Python pour obtenir des informations intéressantes à partir de l'API Lesaviezvous.</p>
+<h2>Installation</h2>
+<p>Installez le package à l'aide de <code>pip</code> :</p>
+<pre lang="bash">pip<span class="w"> </span>install<span class="w"> </span>lesaviezvous
+</pre>
+<h2>Utilisation</h2>
+<p>Importez le package dans votre script Python et appelez la fonction get_info() pour obtenir des informations intéressantes :</p>
+<pre lang="bash">from<span class="w"> </span>lesaviezvous.api<span class="w"> </span>import<span class="w"> </span>get_info
+
+<span class="nv">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>get_info<span class="o">()</span>
+<span class="k">if</span><span class="w"> </span>info:
+<span class="w">    </span>print<span class="o">(</span>info<span class="o">)</span>
+<span class="k">else</span>:
+<span class="w">    </span>print<span class="o">(</span><span class="s2">&quot;Impossible de récupérer les informations.&quot;</span><span class="o">)</span>
+</pre>
+<h2>Exigences</h2>
+<ul>
+<li>Python3</li>
+<li>Request</li>
+</ul>
