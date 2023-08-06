@@ -1,0 +1,7 @@
+README.md
+setup.py
+External_User_Local_Python_Package.egg-info/PKG-INFO
+External_User_Local_Python_Package.egg-info/SOURCES.txt
+External_User_Local_Python_Package.egg-info/dependency_links.txt
+External_User_Local_Python_Package.egg-info/top_level.txt
+tests/test_insertExternal.py
