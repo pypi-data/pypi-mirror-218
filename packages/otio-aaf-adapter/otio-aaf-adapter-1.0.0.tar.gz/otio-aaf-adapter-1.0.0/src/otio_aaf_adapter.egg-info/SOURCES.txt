@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/otio_aaf_adapter/__init__.py
+src/otio_aaf_adapter/plugin_manifest.json
+src/otio_aaf_adapter.egg-info/PKG-INFO
+src/otio_aaf_adapter.egg-info/SOURCES.txt
+src/otio_aaf_adapter.egg-info/dependency_links.txt
+src/otio_aaf_adapter.egg-info/entry_points.txt
+src/otio_aaf_adapter.egg-info/requires.txt
+src/otio_aaf_adapter.egg-info/top_level.txt
+src/otio_aaf_adapter/adapters/__init__.py
+src/otio_aaf_adapter/adapters/advanced_authoring_format.py
+src/otio_aaf_adapter/adapters/aaf_adapter/__init__.py
+src/otio_aaf_adapter/adapters/aaf_adapter/aaf_writer.py
+tests/test_aaf_adapter.py

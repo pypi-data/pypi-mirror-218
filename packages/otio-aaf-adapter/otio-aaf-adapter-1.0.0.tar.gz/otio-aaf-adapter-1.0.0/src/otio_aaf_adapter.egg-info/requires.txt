@@ -1,0 +1,8 @@
+OpenTimelineIO>=0.14.1
+pyaaf2>=1.4.0
+
+[dev]
+flake8
+pytest
+pytest-cov
+twine
