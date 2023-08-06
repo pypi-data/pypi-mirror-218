@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: typed-zmanim
+Version: 0.1.0
+Summary: A Typed Zmanim library for Python. Forked from pinnymz/python-zmanim
+Home-page: https://github.com/dickermoshe/typed-zmanim
+License: LGPL-2.1-or-later
+Keywords: zmanim
+Author: Moshe Dicker
+Author-email: dickermoshe@gmail.com
+Requires-Python: >=3.7,<4
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: julian (>=0.14,<0.15)
+Requires-Dist: memoization (>=0.4.0,<0.5.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: types-python-dateutil (>=2.8.19.13,<3.0.0.0)
+Project-URL: Repository, https://github.com/dickermoshe/typed-zmanim
+Description-Content-Type: text/markdown
+
+# typed-zmanim
+Python Typed Zmanim library
+
+This project is a port from Pinny Markowitz's [python-zmanim](https://github.com/pinnymz/python-zmanim) port of Eliyahu Hershfeld's [KosherJava project](https://github.com/pinnymz/python-zmanim), with added typing.
+
+The main difference between this project and `python-zmanim` is that instead of handling edge cases (literally, near the artic circle) by returning `None`, we raise an `ArticCircleException`.  This prevents you from having to check every returned `datetime` for `None`.
+
+
+## Usage
+
+Some common examples include...
+
+#### Zmanim calculations
+
+```python
+# Initialize a new ZmanimCalendar object, defaults to using today's date in GMT, located at Greenwich, England
+from zmanim.zmanim_calendar import ZmanimCalendar
+calendar = ZmanimCalendar()
+calendar
+#=> zmanim.zmanim_calendar.ZmanimCalendar(candle_lighting_offset=18, geo_location=zmanim.util.geo_location.GeoLocation(name='Greenwich, England', latitude=51.4772, longitude=0.0, time_zone=tzfile('/usr/share/zoneinfo/GMT'), elevation=0.0), date=datetime.datetime(2018, 8, 26, 11, 40, 29, 334774), calculator=<zmanim.util.noaa_calculator.NOAACalculator object at 0x10bbf7710>)
+
+# Calculate the sunset for today at that location
+calendar.sunset()
+#=> datetime.datetime(2018, 8, 26, 18, 58, 40, 796469, tzinfo=tzfile('/usr/share/zoneinfo/GMT'))        
+
+# Prepare a new location
+from zmanim.util.geo_location import GeoLocation
+location = GeoLocation('Lakewood, NJ', 40.0721087, -74.2400243, 'America/New_York', elevation=15)
+location
+#=> zmanim.util.geo_location.GeoLocation(name='Lakewood, NJ', latitude=40.0721087, longitude=-74.2400243, time_zone=tzfile('/usr/share/zoneinfo/America/New_York'), elevation=15.0) 
+
+# Initialize a new ZmanimCalendar object, passing a specific location and date
+from datetime import date
+calendar = ZmanimCalendar(geo_location=location, date=date(2017, 12, 15))
+calendar
+#=> zmanim.zmanim_calendar.ZmanimCalendar(candle_lighting_offset=18, geo_location=zmanim.util.geo_location.GeoLocation(name='Lakewood, NJ', latitude=40.0721087, longitude=-74.2400243, time_zone=tzfile('/usr/share/zoneinfo/America/New_York'), elevation=15.0), date=datetime.date(2017, 12, 15), calculator=<zmanim.util.noaa_calculator.NOAACalculator object at 0x10bbf7828>)
+
+# Calculate Sof Zman Krias Shma for that location/date per the opinion of GR"A
+calendar.sof_zman_shma_gra()
+#=> datetime.datetime(2017, 12, 15, 9, 32, 9, 383390, tzinfo=tzfile('/usr/share/zoneinfo/America/New_York'))
+```
+
+#### Date Calculations
+
+```python
+# Initialize a new JewishDate object with today's date
+from zmanim.hebrew_calendar.jewish_date import JewishDate 
+date = JewishDate()
+date
+#=> <zmanim.hebrew_calendar.jewish_date.JewishDate gregorian_date=datetime.date(2018, 8, 26), jewish_date=(5778, 6, 15), day_of_week=1, molad_hours=0, molad_minutes=0, molad_chalakim=0>
+
+# Calculate the JewishDate from 25 days ago
+date - 25
+#=> <zmanim.hebrew_calendar.jewish_date.JewishDate gregorian_date=datetime.date(2018, 8, 1), jewish_date=(5778, 5, 20), day_of_week=4, molad_hours=0, molad_minutes=0, molad_chalakim=0>
+
+# Initialize a new JewishCalendar object for Pesach of this Jewish calendar year
+from zmanim.hebrew_calendar.jewish_calendar import JewishCalendar
+pesach = JewishCalendar(date.jewish_year, 1, 15)
+pesach
+#=> <zmanim.hebrew_calendar.jewish_calendar.JewishCalendar in_israel=False, gregorian_date=datetime.date(2018, 3, 31), jewish_date=(5778, 1, 15), day_of_week=7, molad_hours=0, molad_minutes=0, molad_chalakim=0>
+pesach.significant_day()
+#=> 'pesach'
+pesach.is_yom_tov_assur_bemelacha()
+#=> True
+```
+
+There is much more functionality included than demonstrated here.  Feel free to experiment or read the source code to learn more! 
+
+---
+## Test
+To run test
+```
+python -m unittest
+```
+
+To run type checking
+```
+mypy .
+```
+
+## Contributing
+
+Bug reports and pull requests are welcome on [Github](https://github.com/dickermoshe/python-zmanim). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
