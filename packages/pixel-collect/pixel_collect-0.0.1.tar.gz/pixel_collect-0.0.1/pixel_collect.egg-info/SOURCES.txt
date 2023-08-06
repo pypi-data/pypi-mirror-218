@@ -1,0 +1,9 @@
+README.md
+setup.py
+pixel_collect/__init__.py
+pixel_collect/main.py
+pixel_collect.egg-info/PKG-INFO
+pixel_collect.egg-info/SOURCES.txt
+pixel_collect.egg-info/dependency_links.txt
+pixel_collect.egg-info/requires.txt
+pixel_collect.egg-info/top_level.txt

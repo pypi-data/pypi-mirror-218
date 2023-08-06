@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pixel_collect
+Version: 0.0.1
+Summary: simple google image scrapper for your computer vision tasks
+Home-page: https://github.com/charleslf2/pixel_collect
+Author: charles TCHANAKE
+Author-email: datadevfernolf@gmail.com
+Keywords: Computer-vision,Images,Dataset,scrapping
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+## pixel collect
+
+Pixel collect is a simple google image scrapper for your computer vision tasks
+
+### Installation
+
+#### Quick 
+
+```bash
+pip install pixel_collect
+```
+
+#### Long
+
+- Step 1
+
+```bash
+git clone https://github.com/charleslf2/pixel_collect
+```
+
+- Step 2
+
+```bash
+cd pixel_collect
+```
+
+- Step 3
+
+```bash
+py setup.py install
+```
+
+### Usage
+
+```python
+
+>>> from pixel_collect import pixel_scrap
+
+>>> pixel_scrap(keyword="cats photos",save_folder="cats",limit=50,logs=True)
+```
+
