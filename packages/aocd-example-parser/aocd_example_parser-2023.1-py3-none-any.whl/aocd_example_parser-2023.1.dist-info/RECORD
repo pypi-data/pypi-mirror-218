@@ -1,0 +1,9 @@
+aocd_example_parser/__init__.py,sha256=c9JtO69gpP2T3bGSIRxmfxKRk_6V-UbgdQvd7q05LZM,1411
+aocd_example_parser/examples.json,sha256=A3_ubciomaMLwO-sCYZwaAHxD9DuTy5qjc7guIIt4xA,55308
+aocd_example_parser/extraction.py,sha256=g9CXXb9Vjo6o8R3wOVHnYXB5IztG9t3k4m_yjtG-0do,1788
+aocd_example_parser/util.py,sha256=YxwwEfPGsT2KY4Y4V0tzDAifBiXmsJori7OpanmLY5E,377
+aocd_example_parser-2023.1.dist-info/entry_points.txt,sha256=NjKf_pX0ZJC_eId4U29YrqwS1p6LYsZi5IW3i047U3g,135
+aocd_example_parser-2023.1.dist-info/LICENSE,sha256=Hmxp3MMH0RocWjYu0nFejGLWa5Txh0ytm4GOkBhc-uc,1066
+aocd_example_parser-2023.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+aocd_example_parser-2023.1.dist-info/METADATA,sha256=g4PBg0yEO3LjJfaVaw3tKNGI2zb5Ngp_FG8njynz8zc,7809
+aocd_example_parser-2023.1.dist-info/RECORD,,
