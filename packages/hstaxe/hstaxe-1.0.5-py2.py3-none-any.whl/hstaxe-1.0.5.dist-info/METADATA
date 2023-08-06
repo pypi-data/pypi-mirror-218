@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: hstaxe
+Version: 1.0.5
+Summary: Spectral extraction tools for Hubble Space Telescope Grisms
+Project-URL: Homepage, https://github.com/spacetelescope/hstaxe
+Author-email: hstaxe and aXe developers <help@stsci.edu>
+License-File: LICENSE.txt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: astropy
+Requires-Dist: drizzle
+Requires-Dist: drizzlepac
+Requires-Dist: numpy<1.24
+Requires-Dist: stsci-imagestats
+Requires-Dist: stwcs
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-automodapi; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Requires-Dist: stsci-rtd-theme; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: backports-tempfile; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-catchlog; extra == 'test'
+Requires-Dist: requests-mock; extra == 'test'
+Description-Content-Type: text/markdown
+
+![aXe logo](docs/hstaxe/images/ACS_aXe02.png)
+
+HSTaXe
+======
+
+HSTaXe is a Python package to provide a uniform process to perform spectral
+extraction for the Hubble Space Telescope. HSTaXe supports all slitless
+spectroscopy modes provided by the Wide Field Camera 3 (WFC3) and Advanced
+Camera for Surveys (ACS).
+
+The core ``hstaxe`` is written in ANSI C and is highly cross-platform by
+leveraging ``CFITSIO``, ``GSL``, and ``WCSLIB``, which have been successfully
+employed under Linux, Solaris, and MacOS X.
+
+HSTaXe is the successor to aXe, a similar package written on PyRAF/IRAF.
+
+
+Quickstart
+----------
+To install the latest release of ``hstaxe``, we recommend the following steps::
+
+    conda create --name hstaxe-env "python>=3.8, <3.11"
+    conda activate hstaxe-env
+    conda install gsl cfitsio make automake autoconf libtool pkg-config -y
+    conda install wcstools -c https://conda.anaconda.org/conda-forge/ --override-channels -y
+    pip install hstaxe --no-cache-dir
+
+For additional installation instructions, including instructions on installing older
+or development versions of hstaxe, visit our full documentation:
+https://hstaxe.readthedocs.io/en/latest/hstaxe/installing.html
+
+Example notebooks can also be found on our full documentation:
+https://hstaxe.readthedocs.io/en/latest/hstaxe/examples.html
+
+To run the notebooks, you will need to install jupyter::
+
+    pip install jupyter
