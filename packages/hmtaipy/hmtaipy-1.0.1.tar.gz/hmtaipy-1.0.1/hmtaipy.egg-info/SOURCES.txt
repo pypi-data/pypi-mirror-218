@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+bin/hmtaipy.py
+hmtaipy.egg-info/PKG-INFO
+hmtaipy.egg-info/SOURCES.txt
+hmtaipy.egg-info/dependency_links.txt
+hmtaipy.egg-info/requires.txt
+hmtaipy.egg-info/top_level.txt
