@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+ordotools/__init__.py
+ordotools.egg-info/PKG-INFO
+ordotools.egg-info/SOURCES.txt
+ordotools.egg-info/dependency_links.txt
+ordotools.egg-info/requires.txt
+ordotools.egg-info/top_level.txt
+tests/test_.py
