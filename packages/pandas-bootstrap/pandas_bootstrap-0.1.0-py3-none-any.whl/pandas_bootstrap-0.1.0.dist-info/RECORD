@@ -1,0 +1,8 @@
+bootstrap/__init__.py,sha256=g2f75jB1i4H1f_VyGmgdwCXOzeOzwFFGkLJ5X_8Tmas,62
+bootstrap/bootstrap.py,sha256=ZK9qmLo5C2OnP70GUSl8wbrR8WREKP8kQooex9PQXwc,5056
+bootstrap/extensions.py,sha256=UfN1900pnazC_DiE5OL3jIkegsVsnidm2ukO6yG8c7w,1557
+bootstrap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandas_bootstrap-0.1.0.dist-info/LICENSE,sha256=1c3iacFFbm5YzHqOfomrexaUHjmZuRzqlfdUgCQHsKU,1065
+pandas_bootstrap-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pandas_bootstrap-0.1.0.dist-info/METADATA,sha256=HVbAazd3-boDHFKj3gn6GDOcHOwwPHSyrCnb9hga2pw,1482
+pandas_bootstrap-0.1.0.dist-info/RECORD,,
