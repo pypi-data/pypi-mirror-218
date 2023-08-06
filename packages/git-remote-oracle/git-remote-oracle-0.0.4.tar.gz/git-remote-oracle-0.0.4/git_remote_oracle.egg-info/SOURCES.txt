@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+git_remote_oracle/__init__.py
+git_remote_oracle/git_remote_oracle.py
+git_remote_oracle.egg-info/PKG-INFO
+git_remote_oracle.egg-info/SOURCES.txt
+git_remote_oracle.egg-info/dependency_links.txt
+git_remote_oracle.egg-info/entry_points.txt
+git_remote_oracle.egg-info/requires.txt
+git_remote_oracle.egg-info/top_level.txt

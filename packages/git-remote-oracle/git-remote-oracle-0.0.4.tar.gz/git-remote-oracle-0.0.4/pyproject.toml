@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "git-remote-oracle"
+version = "0.0.4"
+authors = [
+  { name="CrazyT", email="crazyt2019+gro@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+description = "A git remote helper to pull package source from oracle database."
+dependencies = [
+  "pexpect",
+  "oracledb"
+]
+
+[project.scripts]
+git-remote-oracle = "git_remote_oracle:main_cli"
+
+[project.urls]
+"Homepage" = "https://github.com/TheCrazyT/git-remote-oracle"
+"Bug Tracker" = "https://github.com/TheCrazyT/git-remote-oracle/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["*.ipynb"]
+include = ["git_remote_oracle"]
