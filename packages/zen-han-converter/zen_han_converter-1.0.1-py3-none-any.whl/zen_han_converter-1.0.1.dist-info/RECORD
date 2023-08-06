@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=q_cyRQKLmVgYC-Bn5LqfqwOXFxUCCogulEvLCZwjyIU,168
+tests/test_zen_han_converter.py,sha256=9qNxoJ__oEJlwDb9vYCVUGkjiDV4kmr3zTKUmrodiMI,1871
+zen_han_converter/__init__.py,sha256=BzJqW7WyvEBKePv4FlqBnoQKR9ctXP9L3bd8F5hO8xs,50
+zen_han_converter/han_to_zen_table.py,sha256=e6NNvDan8ZD6yu19SDQgoNZq_oKJncaKpKApdFBRZJY,1401
+zen_han_converter/zen_han_converter.py,sha256=TnbtqTY8l_MiLRKhyhkU5cINfrEiCXjRzg2mXzC3DAc,1634
+zen_han_converter/zen_to_han_table.py,sha256=-qrt4HDU6piHYDytHTiAD5OYvo8rx1y_ANznuRB1J3U,1401
+zen_han_converter-1.0.1.dist-info/METADATA,sha256=njFH4OQ6FT0rdQYwVHowStPo291nGGCogkh8jVNwpOI,921
+zen_han_converter-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+zen_han_converter-1.0.1.dist-info/top_level.txt,sha256=xZwwtePpZ9-o5knRSNb9mHCwDxTECE_GtJZUkWpopew,24
+zen_han_converter-1.0.1.dist-info/RECORD,,
