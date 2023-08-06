@@ -1,0 +1,17 @@
+boto3
+click
+requests
+scipy
+torch
+torchvision
+opencv-python-headless
+tqdm
+pytorch-ignite
+dill
+yacs
+ftfy
+regex
+mozuma-clip
+facenet-pytorch
+tokenizers
+scikit-learn
