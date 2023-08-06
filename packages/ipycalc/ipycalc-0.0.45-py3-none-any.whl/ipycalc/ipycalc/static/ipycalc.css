@@ -1,0 +1,27 @@
+@page {
+    margin: 0.5in; /* Margin for each printed piece of paper */
+}
+  
+@page :first {
+    margin-top: 0.5in; /* Top margin for first page of paper */
+}
+
+@page {
+    size: letter;
+}
+
+@media print {
+
+    body {
+        margin: 0;
+        zoom: 90%; /* Helps wider content fit paper */
+    }
+
+    .page-break {
+        page-break-before: always; /* Allows user to force page breaks in the notebook using <div class="page-break"></div> in a markdown cell */
+    }
+}
+
+h1, h2, h3 {
+    break-after: avoid-page;
+}
