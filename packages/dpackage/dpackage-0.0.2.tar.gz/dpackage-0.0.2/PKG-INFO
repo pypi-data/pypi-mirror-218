@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dpackage
+Version: 0.0.2
+Summary: test
+Home-page: https://github.com/ArjanCodes/2023-package
+Author: DDjango
+Author-email: ddjango.786@gmail.com
+License: MIT
+Description: sad
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
