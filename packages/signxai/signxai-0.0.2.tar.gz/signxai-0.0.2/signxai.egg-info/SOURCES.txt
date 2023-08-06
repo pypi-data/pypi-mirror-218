@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+signxai/__init__.py
+signxai.egg-info/PKG-INFO
+signxai.egg-info/SOURCES.txt
+signxai.egg-info/dependency_links.txt
+signxai.egg-info/requires.txt
+signxai.egg-info/top_level.txt
+signxai/data/7867854122_b26957e9e3_o.jpg
