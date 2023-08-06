@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: wad2023-program
+Version: 1.3.0
+Summary: Script to retrieve the program for WeAreDevelopers 2023 conference
+Author-email: Daryl Stark <daryl@dstark.nl>
+License: MIT License
+        
+        Copyright (c) 2023 Daryl Stark
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/DarylStark/WeAreDevelopers_2023_Program
+Project-URL: repository, https://github.com/DarylStark/WeAreDevelopers_2023_Program
+Keywords: conference,program,wearedevelopers,wearedevs
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.27.0)
+Requires-Dist: pydantic (>=1.10.0)
+Requires-Dist: beautifulsoup4 (>=4.12.0)
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: rich (>=13.4.0)
+Requires-Dist: typer (>=0.9.0)
+Requires-Dist: pytz (>=2023.3)
+Requires-Dist: sqlmodel (==0.0.8)
+Provides-Extra: dev
+Requires-Dist: pytest (>=7.3.0) ; extra == 'dev'
+Requires-Dist: pycodestyle (==2.10.0) ; extra == 'dev'
+Requires-Dist: autopep8 (==2.0.0) ; extra == 'dev'
+Requires-Dist: pylint (==2.17.0) ; extra == 'dev'
+Requires-Dist: mypy (==1.3.0) ; extra == 'dev'
+Requires-Dist: flake8 (==6.0.0) ; extra == 'dev'
+Requires-Dist: pydocstyle (==6.3.0) ; extra == 'dev'
+Requires-Dist: pg8000 (>=1.29.0) ; extra == 'dev'
+
+# WeAreDevelopers 2023 - Program CLI
+
+In less then a month, the [WeAreDevelopers 2023](https://www.wearedevelopers.com/world-congress) conference is finally starting! Two days of being with like-minded people, talking about code and infrastructure! If you're like me, you're very excited about this, but a bit overwhelmed by the 236 session that are planned. It's difficult to pick the sessions that are right for me. The [programpage](https://www.wearedevelopers.com/world-congress/program) on the website is not really to my liking, so I decided to create a small CLI script to browse through the sessions.
+
+# Installation
+
+Installation can be done using `pip`:
+
+```bash
+pip install wad2023-program
+```
+
+## Usage
+
+After installing, the CLI script can be executed by executing the `wad23` command in your browser. The CLI arguments contain two groups. The syntax is `wad23 <group> [optional argument]`
+
+-   `wad23 sync`: syncs the database with the sessions on the website of the conference. This should be done before using the command.
+-   `wad23 sessions`: lists the sessions in the database.
+    -   You can filter the sessions with the following optional arguments:
+        -   `--title`: filter on specific words in the title.
+        -   `--description`: filter on specific words in the description.
+        -   `--find`: filter on specific words in the description and the title.
+        -   `--speaker`: filter on specific words in the names of the speakers.
+        -   `--speaker-tagline`: filter on specific words in the tagline of the speakers.
+        -   `--speakers-bio`: filter on specific words in the bio of the speakers.
+        -   `--only-favourite`: display only sessions that you marked as favourite.
+        -   `--no-only-favourite`: display only sessions that you not marked as favourite.
+    -   You can also specify how to output the file:
+        -   `--output=table`: the default; displays a table with the sessions
+        -   `--output=details`: displays the sessions with extra details, like the speakers and the description.
+        -   `--output=csv`: displays the sessions in CSV format.
+    -   And you can mark sessions as favourite:
+        -   `--set-as-favourite`: set the selected sessions as favourite.
+        -   `--no-set-as-favourite`: set the selected sessions as not favourite.
+
+## Configuration
+
+There is not much to configure for the application, but there are a few configuration options you have. These configuration options are set with environment variables:
+
+-   `DB_CONNECTION_STR`: set the connection string for the database. By default it uses a `SQLite` database in the local directory, but you can, for instance, use a PostgreSQL database by specifing `postgresql+pg8000://<username:<password>@<server>/<database-name>`.
+-   `PROGRAM_ID` and `WORKSHOPS_ID`: the ID for Sessionize for the program and the workshops. The defaults are good for WeAreDevelopers 2023.

@@ -1,0 +1,15 @@
+wad2023_program/__init__.py,sha256=6DcA7zMpZ7v6tDsDAw1T6d6A__2Ed7bbBa_CESPX3Nc,168
+wad2023_program/__main__.py,sha256=4BbB3anHz6YF6H2nrl1o3pwQYVTEVMQ2z5s25esTM_k,6739
+wad2023_program/app_config.py,sha256=V8BAwWV5r23Uf4_Eas6PxspHeAJGEO4JUXo7WFNua0g,624
+wad2023_program/database.py,sha256=wNEIHb-Kw5V0gMb8y8Pny2gw6NkhxYKVmdkdAMzWMco,846
+wad2023_program/exceptions.py,sha256=rGGzdBgKFyvk4IZPi-SOERXTs5hoyvPNldxx78bqwCk,287
+wad2023_program/model.py,sha256=GPhAW9NlAaQkahvbYjI20YFgr3Z047vUVFdKs8JVy98,6120
+wad2023_program/sessionize_parser.py,sha256=ZlDfZ9rcTWLHFa7lAjjPFVvEdrJ41mK70k-OS4xZ2ek,8356
+wad2023_program/sync.py,sha256=f41e1AfBXUl0MlniQ4IBm8jVO3sP1qxuCEIlACK7KSE,4953
+wad2023_program/view.py,sha256=PBrifU2MDiNcAjbv1fRVU47V-aJkmnsxmW8LHTlMy3k,3931
+wad2023_program-1.3.0.dist-info/LICENSE,sha256=GcIHPhAp2Uhgn0tHxFbfr1RBSMz5xLCngdA0A2Hh5-o,1068
+wad2023_program-1.3.0.dist-info/METADATA,sha256=OkMpgPJ_2K4iFbHZGEJW_ugQvfFDUh8t60ZXEVbiDy4,5453
+wad2023_program-1.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wad2023_program-1.3.0.dist-info/entry_points.txt,sha256=OMG89goYBiHHlHEj4fa-t0CaajXjzSMGHsl9LfMwL2k,55
+wad2023_program-1.3.0.dist-info/top_level.txt,sha256=M8FS43cx0UTl9AwfRQrNNrhEN9fCd3Zy9ggkR-3f0ow,16
+wad2023_program-1.3.0.dist-info/RECORD,,
