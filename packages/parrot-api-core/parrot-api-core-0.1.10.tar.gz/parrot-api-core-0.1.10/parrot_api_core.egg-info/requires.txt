@@ -1,0 +1,13 @@
+connexion>=3.0.0a2
+tenacity
+httpx[http2]
+pyjwt
+orjson
+uvicorn
+opentelemetry-distro-asgi
+
+[async]
+aiohttp>=3.6.2
+aiohttp_jinja2>=1.2.0
+orjson
+aioresponses
