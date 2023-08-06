@@ -1,0 +1,14 @@
+astromol/__init__.py,sha256=TSEBC0RFOgIOzVY0BOkiIalEhW3BvbfguoYrZfvn2_0,321
+astromol/functions.py,sha256=Rav-LKDeMevC3TqMu3QCuoNK7AMRWsDHowYKmqAsIlY,189717
+astromol/molecules.py,sha256=IPqATjady5olE3oG1eH6kEbhuOX-j6Vy1O6Z0qsbRmY,228468
+astromol/references.py,sha256=__a1tf1uHSME0zwPR1_UsZFgIJhcVLDl7vDHS4lKQvA,3886
+astromol/sources.py,sha256=ceaD8YU_mRiqV3iubnNfzn1MkA7fvXtvCc90g6MwFfQ,22934
+astromol/telescopes.py,sha256=m8WzJ5sOovC5WrpXtideCfaYWAT4YBjrwSxhCFbJbQI,22437
+astromol/bibtex/exgal_refs.bib,sha256=pRBy1RN45z2LdSvbJkRiQdkMmFGVd4Wc1rEHLyOOey8,42142
+astromol/bibtex/exo_refs.bib,sha256=saTVDEuutvH2csQctBbk_E7QtsTzgfBAesirlO6OX_A,18288
+astromol/bibtex/ice_refs.bib,sha256=Ju19mI4y6tMKehCO9WePsnC-E182ixw6TBVQh5204R0,8212
+astromol/bibtex/ppd_refs.bib,sha256=uvoP7g7XjjPgNdy-g2wOz3Ya_vvWeJUjK-IJs07-CkU,33094
+astromol-2021.7.dist-info/METADATA,sha256=h_YYalyhalHuOujL2H3v68wxRpa4-Mbfs5HzwD73Pto,12636
+astromol-2021.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+astromol-2021.7.dist-info/top_level.txt,sha256=c4ur90mZtE37sPakBx-wA1VYeBiZS6cip7HCy3C2c2w,9
+astromol-2021.7.dist-info/RECORD,,
