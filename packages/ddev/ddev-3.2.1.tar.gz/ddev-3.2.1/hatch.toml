@@ -1,0 +1,20 @@
+[env.collectors.datadog-checks]
+check-types = true
+mypy-args = [
+  "src/ddev",
+]
+# TODO remove once https://github.com/pallets/click/issues/2558 is solved
+mypy-deps = [
+  "click~=8.1,!=8.1.4",
+]
+
+[envs.default]
+python = "3.9"
+e2e-env = false
+dependencies = [
+  "vcrpy",
+]
+# TODO: remove this when the old CLI is gone
+pre-install-commands = [
+  "python -m pip install --disable-pip-version-check {verbosity:flag:-1} -e ../datadog_checks_dev[cli]",
+]
