@@ -1,0 +1,8 @@
+anyjson2csv/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+anyjson2csv/flatten_json.py,sha256=v_WL2YIS4FocMMsE0nkGSYizQpR1lhu0mGgHjXlqQkc,3446
+anyjson2csv/json_to_csv.py,sha256=iUIZPC5j44KM87NM93bkR0cqoMJ3Q6qPIx5nFclCwHo,686
+anyjson2csv-0.0.2.dist-info/LICENSE.txt,sha256=PSlzhuGdMkzRSSykTJtzbvuJrVkcTFaYbG5513SZFBo,1087
+anyjson2csv-0.0.2.dist-info/METADATA,sha256=v56h4VdbL--Qu_MdsBVMX4H9RhDSLiDI8WbPDMNVex0,528
+anyjson2csv-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+anyjson2csv-0.0.2.dist-info/top_level.txt,sha256=Tu0lOMZLuEi54zBaGuefeIh_DrZmXJE2qtCL2aDRL2U,12
+anyjson2csv-0.0.2.dist-info/RECORD,,
