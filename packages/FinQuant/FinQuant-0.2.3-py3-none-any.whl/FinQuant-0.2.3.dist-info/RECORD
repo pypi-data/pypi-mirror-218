@@ -1,0 +1,14 @@
+finquant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finquant/efficient_frontier.py,sha256=xRJviGRBAvEgUroVa_aY5HwxLqC-3ERW1JwrwuGt-hc,16801
+finquant/minimise_fun.py,sha256=nI7J-rFKEx7h3n7TqaiGdjhVLfo-Cwe451Zi0lvIuh0,1990
+finquant/monte_carlo.py,sha256=R6FzD7JikvXhw0BIoOGlHO_pgoojYdH9GU3nRAYWAEE,11159
+finquant/moving_average.py,sha256=rj0vNvWunaElLE3q-FOqfjA3TnLbvtiKGJkE1iHvXBw,6685
+finquant/portfolio.py,sha256=TxkWqZQb4svvNgdj1Z5pGmSVNG777Tw8puF6aNX4QrQ,43673
+finquant/quants.py,sha256=5AKJpZzHWht0bjeMsg_BMJnEhfvWZNTQUzZTCjiqcmM,3936
+finquant/returns.py,sha256=9KfwIVx_72G0gT5g0S5xvzeaQg-2hb6C4owkNaGVBh8,2142
+finquant/stock.py,sha256=v7HBAYcMbuI3RNmumruOdrXGyGZDRZShtd1ajE0W8x0,4291
+FinQuant-0.2.3.dist-info/LICENSE.txt,sha256=lEeFFqm-JOExokf9X2zI-2ziSIYn1pw8338BnA3L-eA,1059
+FinQuant-0.2.3.dist-info/METADATA,sha256=MVV-O3oxr6u6nS8qIYruZ0mITfdRBxsrjuCVtiz4jXM,15349
+FinQuant-0.2.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+FinQuant-0.2.3.dist-info/top_level.txt,sha256=xNqaXV6_SCgcV5PEodyysX6htSaMlS2uVcc3nRSmbhA,9
+FinQuant-0.2.3.dist-info/RECORD,,
