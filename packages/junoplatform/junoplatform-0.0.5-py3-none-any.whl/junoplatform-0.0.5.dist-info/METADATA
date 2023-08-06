@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: junoplatform
+Version: 0.0.5
+Summary: juno AI platform lib
+Author-email: "Bruce.Lu" <lzbgt@icloud.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Bug Tracker, https://github.com/lzbgt/sampleproject/issues
+Project-URL: Homepage, https://github.com/lzbgt/sampleproject
+
+
