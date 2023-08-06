@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: fhir-utils
+Version: 0.0.1a0
+Summary: Utilities for handling FHIR data.
+Home-page: https://github.com/prefeitura-rio/fhir-utils
+License: GPL-3.0-only
+Keywords: fhir,utilities,data,health,government
+Author: Escritório de Dados
+Author-email: escritoriodedados@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.6)
+Project-URL: Repository, https://github.com/prefeitura-rio/fhir-utils
+Description-Content-Type: text/markdown
+
+# FHIR utilities
+
+This repository contains a set of utilities for working with FHIR resources.
+
+## Installation
+
+```bash
+pip install fhir-utils
+```
+
+## Development
+
+```bash
+git clone https://github.com/prefeitura-rio/fhir-utils
+cd fhir-utils
+poetry install
+```
+
