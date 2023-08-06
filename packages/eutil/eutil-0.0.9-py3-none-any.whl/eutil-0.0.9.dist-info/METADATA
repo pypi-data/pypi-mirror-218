@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: eutil
+Version: 0.0.9
+Summary: Pythonic reusable objects to speed up development.
+Project-URL: Homepage, https://github.com/MichaelLePera/extended_util
+Project-URL: Bug Tracker, https://github.com/MichaelLePera/extended_util/issues
+Author-email: Michael LePera <michaeltlepera@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# eutil - Extended Utility
+
+Implements numerous functions and classes for reusable and modular use. 
+Aims to implement commonly used design-patterns and algorithms in a pythonic
+way to increase development speed.
+
+Warning this is not most performant way to implement most things. Meant for 
+quick development and later change implementation to more optimized method.
