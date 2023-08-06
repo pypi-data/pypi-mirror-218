@@ -1,0 +1,7 @@
+rich==13.4.2
+cryptocode==0.1
+SQLAlchemy==2.0.16
+pydantic==1.10.9
+typer[all]==0.9.0
+simple_term_menu==1.6.1
+clipboard==1.8.2
