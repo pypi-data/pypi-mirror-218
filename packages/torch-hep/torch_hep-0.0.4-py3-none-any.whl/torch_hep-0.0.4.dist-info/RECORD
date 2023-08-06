@@ -1,0 +1,11 @@
+torch_hep/__init__.py,sha256=4Ssb0SWh1LmjLsubCbxKtf8DM1lOKwFf8WwyTqe4thc,1025
+torch_hep/lorentz.py,sha256=EstY0e6b-7AbN21CXJstEGYwPU2j21tg-yOQVwLmSlI,6764
+torch_hep/data/TensorLoader.py,sha256=AFR6c0WgabDALO6pDQW1X9GdlEVE1U_5x5SWMpLR0AA,1537
+torch_hep/data/__init__.py,sha256=LcG-UBFUEa-kvRNiIAdE8IfZqwMqiFBM06naPuZWUSo,72
+torch_hep/graph/GraphBuilder.py,sha256=mpYqr2dZVBtNK-TG0FydZsUzNrTFt3T-yzDYstw3Bcw,2835
+torch_hep/graph/__init__.py,sha256=SfHasGVNvd-N5-KlIbPEVRUgx5q3N7kcpzd96OsCfQo,73
+torch_hep-0.0.4.dist-info/LICENSE,sha256=yBM1utO_aJ9UJjB41XqHcta8I-nkG9hgi-Xs6FBxHVY,1070
+torch_hep-0.0.4.dist-info/METADATA,sha256=Lnt4zn1HsDCPzpxtkWEXx5w0fP9lENXYzvcurAWicJg,396
+torch_hep-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+torch_hep-0.0.4.dist-info/top_level.txt,sha256=RwEEILzRXqkqfWdN9Ka3B2w-7AQkY4s7KkcYqNKbweo,10
+torch_hep-0.0.4.dist-info/RECORD,,
