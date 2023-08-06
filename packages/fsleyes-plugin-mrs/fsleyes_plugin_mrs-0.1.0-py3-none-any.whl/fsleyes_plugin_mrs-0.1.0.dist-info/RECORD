@@ -1,0 +1,17 @@
+fsleyes_plugin_mrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsleyes_plugin_mrs/constants.py,sha256=zMNlHfZC9gc8oumsoIMshIIix3kwG4S1dEvgQbW7Y_w,545
+fsleyes_plugin_mrs/mrsviewprofile.py,sha256=ePBNGw3_0CxyJXXxPHQgjpm9QhRCGH28yr132qp6I9M,9278
+fsleyes_plugin_mrs/plugin.py,sha256=y-yDdf-gdfFvZEDcJKLtkkx3QA5KrtsgUcoL9BhTrdE,33985
+fsleyes_plugin_mrs/results_load.py,sha256=ut0qXRRYGEluMFKPaG10tDnozQ5w2PLrw5PFj1KaZ_o,15015
+fsleyes_plugin_mrs/icons/nifti_mrs_icon-mrs_icon.png,sha256=jJ75AHOitqXRU7W5fhdXLgjxPHghCQVh0a0oAp0NGeQ,10245
+fsleyes_plugin_mrs/icons/nifti_mrs_icon-mrs_icon_highlight.png,sha256=wfqOp-io-epy2iN3mlJn8wvUB8PMNQ8Ap2HdY3n0zD0,24430
+fsleyes_plugin_mrs/icons/nifti_mrs_icon-mrs_icon_highlight_thumb24.png,sha256=R-GkIkRwwreR_4pC1Np9V-bv9Qb1FM5f3vYXCY6Oov4,2076
+fsleyes_plugin_mrs/icons/nifti_mrs_icon-mrs_icon_highlight_thumb24@2x.png,sha256=gZagS8WbMieuxQQ1rKSn5Hl-CqYIvFEfmbMRmn058oY,3968
+fsleyes_plugin_mrs/icons/nifti_mrs_icon-mrs_icon_thumb24.png,sha256=gg3OjKBLij66XxOLiK9cfrIxaSG3hHNTmVdZZxpXhEo,969
+fsleyes_plugin_mrs/icons/nifti_mrs_icon-mrs_icon_thumb24@2x.png,sha256=9ME8a6-KOsAmmA7riJhCmjbth4UOQO-T8YlLNKFbVGE,1688
+fsleyes_plugin_mrs-0.1.0.dist-info/LICENSE,sha256=L3f5Bz0z7tY6ZyLgTK9xBMJWBiLy6pyMsfY-7VFLKA4,1544
+fsleyes_plugin_mrs-0.1.0.dist-info/METADATA,sha256=_byNIupEJJIzSIg9ieS-ENIdxa3kzlxa7_LmheiemwM,2965
+fsleyes_plugin_mrs-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fsleyes_plugin_mrs-0.1.0.dist-info/entry_points.txt,sha256=85ZJfqN9HXpPHSzB-L44xyY4dOTKQp7Ln-2Ppg5t4ak,390
+fsleyes_plugin_mrs-0.1.0.dist-info/top_level.txt,sha256=VOskbjCtEKv9O3kQRI-T3vtB2sc_gwoG0E1qNjKPx6A,19
+fsleyes_plugin_mrs-0.1.0.dist-info/RECORD,,
