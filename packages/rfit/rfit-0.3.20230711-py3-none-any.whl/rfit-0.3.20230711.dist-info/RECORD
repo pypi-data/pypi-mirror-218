@@ -1,0 +1,10 @@
+rfit/__init__.py,sha256=JpZyyte_XStg8RWYk6HZnfTfPgDCNn1Zqk1Z3OMlzYo,363
+rfit/api.py,sha256=gyxOiwuQyLtjdv_QNYS23GpUPdET_OGNvRitg4mYfiY,2225
+rfit/learn/__init__.py,sha256=PkOBg8idMo4dLg4VQgLwum4hlzEuQpI7_2J6EOQ2hFw,304
+rfit/learn/boundary_plots.py,sha256=fTk8gXoHzFlFrAA65JSWfCnALhZtnA-RNnFfPM-upic,4749
+rfit/learn/helper.py,sha256=0iYo0bs4iTDO95bg0WmpueGLhWDE7p2naksZ8B94FbI,1412
+rfit-0.3.20230711.dist-info/LICENSE,sha256=--SkoZppEYKGwVdVnBdet_ilaLXw1cY07Ms5WGydbuc,1065
+rfit-0.3.20230711.dist-info/METADATA,sha256=jlAndA9B2rZK9WvhpnEIeruvfMXmWzpOi8yhuNQuQPk,954
+rfit-0.3.20230711.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rfit-0.3.20230711.dist-info/top_level.txt,sha256=wdI3gXhKNgWSWryHGdekMO2z2a93_wPgvxC5qV7_1Ow,5
+rfit-0.3.20230711.dist-info/RECORD,,
