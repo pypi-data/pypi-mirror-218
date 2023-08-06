@@ -1,0 +1,7 @@
+setup.py
+capaiodns/__init__.py
+capaiodns/error.py
+capaiodns.egg-info/PKG-INFO
+capaiodns.egg-info/SOURCES.txt
+capaiodns.egg-info/dependency_links.txt
+capaiodns.egg-info/top_level.txt
