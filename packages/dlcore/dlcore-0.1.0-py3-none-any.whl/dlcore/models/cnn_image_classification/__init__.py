@@ -1,0 +1,2 @@
+from .custom_cnn_image_classification import CNNImageClassification
+from .cnn_backbone import CNNBackBoneType
