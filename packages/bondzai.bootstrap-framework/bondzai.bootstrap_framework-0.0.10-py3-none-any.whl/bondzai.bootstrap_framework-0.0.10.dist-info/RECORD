@@ -1,0 +1,15 @@
+bondzai.bootstrap_framework-0.0.10-py3.10-nspkg.pth,sha256=GaUdUWunJyFVhGgJl0Nf0QYV1Zlch9NCqd-3J3CkhTo,544
+bondzai/bootstrap_framework/__init__.py,sha256=frWX-il9CXtUo1C3FCGgvHyluobHkMn5pNTkSA8cX38,213
+bondzai/bootstrap_framework/bootstrap.py,sha256=E6m9xenqWCCx4krGqUHZ83cjbgBMQ1dxBahFMWY8LHQ,2696
+bondzai/bootstrap_framework/dvs_agent.py,sha256=k5dyltMHwL0XEmx3995lsLUOU1HY5XndReJf0lILxII,11284
+bondzai/bootstrap_framework/dvs_com.py,sha256=ZEdy2ZUZQEIex9yQVBdcB_eVj8g3KwwBpgGglkKP2KI,14052
+bondzai/bootstrap_framework/dvs_config.py,sha256=rjFBLYzbeVA_B0pbkYOD9pznumCzozglPhzB7aYf-Vs,8285
+bondzai/bootstrap_framework/file_handler.py,sha256=HNxuHBwsqdhzbl3TLne4RRAnbGDo1A5WmfOYCB_T6mE,3008
+bondzai/bootstrap_framework/logger.py,sha256=gC6ChLt603kXhl0jWEvNWqGLb2q4Kpf8vsIsEUoClR4,333
+bondzai.bootstrap_framework-0.0.10.dist-info/METADATA,sha256=lf4vOxVTGKdfRB2tb-rG-TBAoE4HY8d8bCg-7SzukkM,685
+bondzai.bootstrap_framework-0.0.10.dist-info/NOTICE,sha256=q3CdcSfXg878kQj9Br6aDZOeE6nCnmTpJOeg-RmkFfU,547
+bondzai.bootstrap_framework-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bondzai.bootstrap_framework-0.0.10.dist-info/namespace_packages.txt,sha256=MnOdBENZHj1WBT4-FWCMGpbukfxq9cc0OjvfBXZDWI4,8
+bondzai.bootstrap_framework-0.0.10.dist-info/top_level.txt,sha256=MnOdBENZHj1WBT4-FWCMGpbukfxq9cc0OjvfBXZDWI4,8
+bondzai.bootstrap_framework-0.0.10.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bondzai.bootstrap_framework-0.0.10.dist-info/RECORD,,
