@@ -1,0 +1,10 @@
+metalmaps/__init__.py,sha256=HUtcZGwspyiRt-sTZQDShKTumvGb0QL2zwQ9KE0B3Nw,4547
+metalmaps/__version__.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+metalmaps/colorcycle.py,sha256=jELGaOl57cnJJ66csOIWsTst_nLVT1hb7radTn3eI_E,3785
+metalmaps/colors.py,sha256=uY0DAuwMmdrAryNcmqNbqEiNwbcxNZ602glN4KwRV_U,6882
+metalmaps/make_cmap.py,sha256=9RJ2WKvedf6vNvnYrSfAo3TxVYYlCIlAzc53PSuKiyc,2034
+metalmaps-2.0.0.dist-info/LICENSE.txt,sha256=pWgb-bBdsU2Gd2kwAXxketnm5W_2u8_fIeWEgojfrxs,7651
+metalmaps-2.0.0.dist-info/METADATA,sha256=QHS_gHmyvC4y9oKB3ruV4qi4ViQnm6fMqsUz1NBdnDc,15658
+metalmaps-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+metalmaps-2.0.0.dist-info/top_level.txt,sha256=4FggA1wIoC9erTfOxX_IzXYCrXzxiLRYNRSrJkOKlr8,10
+metalmaps-2.0.0.dist-info/RECORD,,
