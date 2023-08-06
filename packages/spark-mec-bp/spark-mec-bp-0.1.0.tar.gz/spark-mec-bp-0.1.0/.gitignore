@@ -1,0 +1,6 @@
+**/__pycache__
+**/.pytest_cache
+.vscode
+**/*.log
+.DS_Store
+.ipynb_checkpoints/
