@@ -1,0 +1,48 @@
+html { font-family: sans-serif; background-color: #303030; color: #eaeaea; }
+a { color: #377ba8; }
+input.danger { color: #cc2f2e; }
+input:not([type=file]), select, textarea, #card-element { background-color: #eaeaea; }
+body { max-width: 960px; margin: 1rem auto 3rem auto; }
+nav { display: flex; align-items: flex-end; justify-content: space-between; }
+ul { padding: 0; }
+nav > * { margin: 0; }
+nav h1 { font-size: 2rem; }
+nav ul { display: flex; list-style: none; }
+nav ul > *:not(:first-child) { display: block; margin-left: 1rem; }
+header { display: flex; align-items: center; margin: 1rem 0 1rem 0; }
+header h1 { flex: auto; padding: 0; margin: 0; }
+.marged { margin: 0 0 0 1rem; }
+form, .form { display: flex; flex-direction: column; }
+form > *, .form > * { margin-top: 0.5rem; }
+form label { font-weight: bold; }
+form input { resize: vertical; }
+form textarea { resize: vertical; }
+input[type=submit] { align-self: start; }
+.flash--message { margin: 1rem 0; padding: 1rem; background-color: #888888; }
+.flash--important { margin: 1rem 0; padding: 1rem; background-color: #cc2f2e; }
+.flash--warning { margin: 1rem 0; padding: 1rem; background-color: #bc6c25; }
+hr { margin: 1rem 0 1rem 0; }
+.actions { display: flex; justify-content: flex-start; align-items: center; }
+.actions > * { margin-right: 0.5rem; }
+.flex { display: flex; }
+.flex-align { display: flex; }
+.flex-align > * { flex: 1; }
+.flex-align > #bill_info { flex: 0; }
+.pagination { display: flex; justify-content: space-between; }
+.pagination > * { min-width: 2rem; text-align: center; }
+input.hidder:not(:checked) + * { display: none; }
+label.action { text-decoration: underline; cursor: pointer; }
+.pagination { margin-top: 1rem; }
+form.filters { margin-top: 0.5rem; }
+table.index { margin-top: 1rem; }
+table.summary { margin-top: 1rem; }
+table.summary td { text-align: center; }
+table { width: 100%; border-collapse: collapse; }
+table.index th { padding: 0.5rem 0 0.5rem 0; }
+table thead { background-color: #262626; }
+table tfoot { background-color: #262626; }
+table.index td { min-height: 2rem; }
+tbody tr:nth-child(even) { background-color: #3a3a3a; }
+.yes { color: green }
+.no { color: red }
+.center { text-align: center }
