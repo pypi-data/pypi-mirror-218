@@ -1,0 +1,17 @@
+trajMap/__init__.py,sha256=ikXAqq3_lUZFnY0Id00YF3yOXN0Z3t2VC73Fkx8SDEk,160
+trajMap/main.py,sha256=8e6O9gDlkNfWE26OjgSnx2BhLsTmtlPcsS3QFU0hLe8,9813
+trajMap/datasets/trajMap_reference_1.h5ad,sha256=mcGTtsH4iPSNV3ALnO3QmiCFsMMeTlEYld8RWQ2iapc,3741027
+trajMap/datasets/variable_2000.csv,sha256=qiBU_36qNaaPKyXbpsK5pjJh9omDrWKvm79hjwPbCDc,21396
+trajMap/datasets/pseduoPred/fingerprint.pb,sha256=xw6FEwx7_DeeGsEe4TKZdDKWqA43Xs5S_vVde5grSRM,55
+trajMap/datasets/pseduoPred/keras_metadata.pb,sha256=i0jSjjsviZD6A7urfivGKb6KvzRGK0tYYjtlod2eLTE,18022
+trajMap/datasets/pseduoPred/saved_model.pb,sha256=TT-uc99XLHiPpaEyIGuDyxYlWmINYvYyAh1VzzcaUtU,249026
+trajMap/datasets/pseduoPred/variables/variables.data-00000-of-00001,sha256=wa2fSeFZIdGkpO8mxR9Yl_sW9yLidULfxpSkoH6yWeU,44205747
+trajMap/datasets/pseduoPred/variables/variables.index,sha256=TLNbtyEP0NZHhxdx6v_sP22ugtYB8v-pvdSnq3SG6UQ,3008
+trajMap/datasets/scanvi_chondro/model.pt,sha256=hFpM9y7kQy3jTyh7OeDBw87Lruq_UdHIuGs6nT641h0,8816433
+trajMap/datasets/scanvi_lepr/model.pt,sha256=8YyIlhL0Tgydxv6MwDTL1D3Mei6C0rgvI-cU8L8Xuxc,8816433
+trajMap/datasets/scanvi_mes/model.pt,sha256=-jca0f1YuToYztQPAQ_V497MHBDkxM3PpWwa6UreSSg,8816433
+trajMap-0.1.0.dist-info/LICENSE,sha256=cJRpRixHdPeFeYJBuRMlV3fgehD8w1GKyw0eFr5RqnU,1073
+trajMap-0.1.0.dist-info/METADATA,sha256=ZdrJzbYW2JRr_J3bpup3gB6DWNiN87-gUKKCBzEetuI,816
+trajMap-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+trajMap-0.1.0.dist-info/top_level.txt,sha256=rVAmby1VzpRFvObkIjq17Q-TKtJyFbCtP1uzIUSaksM,8
+trajMap-0.1.0.dist-info/RECORD,,
