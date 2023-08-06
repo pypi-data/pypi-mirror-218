@@ -1,0 +1,3 @@
+[console_scripts]
+wordle-helper=wordle_helper_uc.__main__:main
+
