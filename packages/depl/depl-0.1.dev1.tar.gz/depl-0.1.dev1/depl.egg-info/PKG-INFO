@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: depl
+Version: 0.1.dev1
+Summary: Super easy remote compute management
+Home-page: https://github.com/aaronsgithub/depl
+Author: Aaron Ghani
+Author-email: sendaaronstuff@outlook.com
+License: UNKNOWN
+Description: # depl
+        
+        Under development.
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

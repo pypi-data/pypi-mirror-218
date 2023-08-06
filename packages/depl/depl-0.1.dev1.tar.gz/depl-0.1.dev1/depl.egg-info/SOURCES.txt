@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+depl/__init__.py
+depl/depl.py
+depl.egg-info/PKG-INFO
+depl.egg-info/SOURCES.txt
+depl.egg-info/dependency_links.txt
+depl.egg-info/entry_points.txt
+depl.egg-info/top_level.txt
