@@ -1,0 +1,9 @@
+pyframe_eval.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+pyframe_eval.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+pyframe_eval/_pyframe_eval.cpython-311-x86_64-linux-musl.so,sha256=GEc-ca0GKXYSKQwzbbIRWo6ynCn3RaC6A3jliggjUcw,473945
+pyframe_eval/__init__.py,sha256=za7wj-bLTBVfkCoK4-2k5wfkx0BYRiKr9J-UnXTMhRU,1738
+pyframe_eval-0.0.3.2.dist-info/top_level.txt,sha256=8FJYaVm4Eo31AL8YpkZqmosbN5suNP5Ey0eimEjcSHs,13
+pyframe_eval-0.0.3.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyframe_eval-0.0.3.2.dist-info/RECORD,,
+pyframe_eval-0.0.3.2.dist-info/WHEEL,sha256=IHZpKxZL6fMI4XHd4EqcDRvBScMH-OFdPdcrSh0OKDk,113
+pyframe_eval-0.0.3.2.dist-info/METADATA,sha256=PGD8oPvbUtpC00-ffWsAxUefZZrcxF2-HgFP1CHCpFM,369
