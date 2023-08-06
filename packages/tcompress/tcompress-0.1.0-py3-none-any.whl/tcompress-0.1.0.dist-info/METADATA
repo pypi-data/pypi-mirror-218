@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: tcompress
+Version: 0.1.0
+Summary: A small example package
+Home-page: https://github.com/talalzeini/compress
+Author: Talal El Zeini
+Author-email: talalelzeini@gmail.com
+Project-URL: Bug Tracker, https://github.com/talalzeini/compress/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tcompress
+
+Calculate word counts in a text file!
+
+## Installation
+
+```bash
+$ pip install tcompress
+```
+
+## Usage
+
+`pycounts` can be used to count words in a text file and plot
+results as follows:
+
+```python
+from pycounts.pycounts import count_words
+from pycounts.plotting import plot_words
+import matplotlib.pyplot as plt
+
+file_path = "test.txt"  # path to your file
+counts = count_words(file_path)
+fig = plot_words(counts, n=10)
+plt.show()
+```
+
+## License
+
+`tcompress` was created by Talal El Zeini. It is licensed under the terms
+of the MIT license.
