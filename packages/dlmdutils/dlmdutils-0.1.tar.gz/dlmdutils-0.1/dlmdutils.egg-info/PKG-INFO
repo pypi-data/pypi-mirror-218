@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: dlmdutils
+Version: 0.1
+Summary: Core APIs for deep learning.
+Author: mjx
+Author-email: mjx@shu.edu.cn
+License: MIT License
