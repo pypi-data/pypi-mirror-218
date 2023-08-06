@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+synkronoida/__init__.py
+synkronoida/__main__.py
+synkronoida/api.py
+synkronoida/cli.py
+synkronoida.egg-info/PKG-INFO
+synkronoida.egg-info/SOURCES.txt
+synkronoida.egg-info/dependency_links.txt
+synkronoida.egg-info/entry_points.txt
+synkronoida.egg-info/requires.txt
+synkronoida.egg-info/top_level.txt
+test/test_api.py
+test/test_cli.py
