@@ -1,0 +1,16 @@
+signe/__init__.py,sha256=MqkO08e9sN-s5M-riBiUK7r8fOBJYpYojdgPHe4oXvE,225
+signe/types.py,sha256=VZx4KhLJy8kgIkmeIkRtGQrUsL_08N1W-s_QY2AQlIg,97
+signe/utils.py,sha256=5NiZkt3Bzl5-pWHsP-2LO4cIcDeGMVbMeP8J3EPqGO0,5989
+signe/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signe/core/collections.py,sha256=5_5U0f0i0t9tf3PiehK6MB9rRTZcE5hgJPF331pbGJc,604
+signe/core/consts.py,sha256=5Lpe4VuW--NSrrR7OonXCkp3FV24_78H6yXKC8zc3WA,290
+signe/core/effect.py,sha256=_cCp8INkbxWHSpvSLm9nrNa6xc_jU9Wcjhbd32nA3H0,6531
+signe/core/runtime.py,sha256=Z-uzXNKiuEkyWSsRaRQ-AqKhXHQiofnKV4NE0rOix9A,2840
+signe/core/signal.py,sha256=5LHarsU8uezu0VwZ0ifUoMVBI9mTdQRw_M38bwzyaA8,3033
+signe/reactive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signe/reactive/proxy.py,sha256=LKp-kuVq0-m2r9Xu3ThQlJLIlSGPvIteFi8WVsQ27mI,7500
+signe-0.1.8.dist-info/LICENSE,sha256=fIuoU6RqTowcIdXW7A7gdzL8MTehTvnbRPnIXV650Ls,1088
+signe-0.1.8.dist-info/METADATA,sha256=FjhGXlGGj9PiO6-y4Ul9n1TMXei_JkFkpqabMYbIOEc,471
+signe-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+signe-0.1.8.dist-info/top_level.txt,sha256=ydixeO4_rgyYcGhKx_OxLf6PfHAz-qIrrLmE5qX8ALU,6
+signe-0.1.8.dist-info/RECORD,,
