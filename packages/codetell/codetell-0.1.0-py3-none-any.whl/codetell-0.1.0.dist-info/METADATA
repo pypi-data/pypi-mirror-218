@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: codetell
+Version: 0.1.0
+Summary: An AI-powered tool that enables your code to tell its own story through automatic documentation generation.
+Author-email: Takashi Yamamiya <tak@metatoys.org>
+Project-URL: Homepage, https://github.com/propella/codetell
+Project-URL: Bug Tracker, https://github.com/propella/codetell/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: tenacity
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# CodeTell - An AI-powered tool that enables your code to tell its own story through automatic documentation generation.
+
+Example: [codetell.md](./codetell.md)
+
+## instructions
+
+```
+git clone git@github.com:propella/codetell.git
+cd codetell
+pyenv local 3.10
+python -m venv .venv --prompt codetell
+source .venv/bin/activate
+make install
+
+export OPENAI_API_KEY=(Your OpenAI API Key)
+codetell .
+```
