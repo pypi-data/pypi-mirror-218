@@ -1,0 +1,14 @@
+hepfile/__init__.py,sha256=FD-zAXyCJoYLZPgGrG7B0zxeIHKFphuH_lQkJ3EIFuI,506
+hepfile/_version.py,sha256=wJYv0tEZmeTVcZOzC0b-3Nd3Gh8P43NgFEi0bBsEps8,76
+hepfile/awkward_tools.py,sha256=HoUUOQBkvv_2ZbeIpR_cd0INu38k8zk49ywF9IyipcY,7823
+hepfile/constants.py,sha256=QL-N_ev_BkVQd_1WCagWhfCXkEk4H_0IyUuFBMeVXdI,402
+hepfile/csv_tools.py,sha256=mEfEVbXGFAnQKyMYMB8bfCDSG-U8SeTJj3AeHNQZX0k,1757
+hepfile/df_tools.py,sha256=NWUIfAAhqKLxyNEJpYbATpyJFb01-uKyRV5xnQYrBEU,8405
+hepfile/dict_tools.py,sha256=FQOcNkTkK3oSjBCWxB1hyp6MuAHV8P1JgZBhMYUC5BE,6843
+hepfile/errors.py,sha256=NdP0VctHqFAJGZkpYxgi2QdqjM7ukNj6oSUe-0OQNjY,1452
+hepfile/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hepfile/read.py,sha256=YmaOmi1dWyD-l0BvoYwVxYN3LavtCiYzVuLEDelJ5qY,21124
+hepfile/write.py,sha256=m8AimIbgTFNu1f2vIpWWBVmAhcEiP73OrQ_S9r3yRFw,28546
+hepfile-0.1.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+hepfile-0.1.4.dist-info/METADATA,sha256=gA8k8CxQAEVl7cU0N8vS6z7JPjsHaI_3Wn_wDVjrC2c,4590
+hepfile-0.1.4.dist-info/RECORD,,
