@@ -1,0 +1,2 @@
+[console_scripts]
+pylittle = pylittle.cli:main
