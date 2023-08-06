@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: roblox-pyc
+Version: 1.5.5
+Summary: A python, c, and cpp compiler to luau.
+License-File: LICENSE
