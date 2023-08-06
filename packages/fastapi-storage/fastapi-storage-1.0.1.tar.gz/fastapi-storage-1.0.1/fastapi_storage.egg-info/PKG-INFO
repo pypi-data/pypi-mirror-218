@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fastapi-storage
+Version: 1.0.1
+Summary: Fastapi FileSystem
+Home-page: https://github.com/wu-xz21/learnkeyhole
+Author: xjaqil
+Author-email: xjaqil@163.com
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+MIT License
+
+Copyright (c) 2023 My_name
