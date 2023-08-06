@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: vhr-composite
+Version: 0.0.1
+Summary: Very high resolution (VHR) Composite Tool
+Home-page: https://github.com/nasa-nccs-hpda/vhr-composite
+Author: Caleb S. Spradlin
+Author-email: caleb.s.spradlin@nasa.gov
+License: BSD 3-Clause License
+Keywords: composite,rioxarray,rasterio
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Very high resolution (VHR) Composite Tool
+
+[![DOI](https://zenodo.org/badge/617555319.svg)](https://zenodo.org/badge/latestdoi/617555319)
+![Code style: PEP8](https://github.com/nasa-nccs-hpda/vhr-composite/actions/workflows/lint.yml/badge.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+## Documentation
+
+* GitHub repo: https://github.com/nasa-nccs-hpda/vhr-composite
+* Documentation: https://nasa-nccs-hpda.github.io/vhr-composite
+
