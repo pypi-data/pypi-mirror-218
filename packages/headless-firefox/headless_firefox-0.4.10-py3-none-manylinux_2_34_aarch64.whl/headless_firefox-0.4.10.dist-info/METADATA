@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: headless-firefox
+Version: 0.4.10
+Summary: headless_firefox for Python, based on Selenium WebDriver
+Home-page: https://github.com/wensheng/headless_chrome/
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/wensheng/headless_chrome/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: ~=3.8
+License-File: LICENSE
+Requires-Dist: certifi (>=2020.12.5)
+
+# Headless Chrome for Python
+
+## Usage
+
+Installation:
+
+    pip install headless-chrome
+
+## Dependencies
+
+Google Chrome is required.
+
+On Ubuntu Linux, you can install it by:
+
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo dkpg -i google-chrome-stable_current_amd64.deb
+
+
+
