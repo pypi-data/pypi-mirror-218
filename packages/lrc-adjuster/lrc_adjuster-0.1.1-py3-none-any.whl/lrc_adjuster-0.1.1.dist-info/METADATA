@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lrc-adjuster
+Version: 0.1.1
+Summary: Simple CLI tool to adjust timestamps in LRC files.
+Author: Andrew Beveridge
+Author-email: andrew@beveridge.uk
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
