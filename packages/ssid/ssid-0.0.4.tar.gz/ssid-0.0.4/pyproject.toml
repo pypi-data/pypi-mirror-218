@@ -1,0 +1,44 @@
+[project]
+name = "ssid"
+version = "0.0.4"
+authors = [
+  {name="Chrystal Chern", email="52893467+chrystalchern@users.noreply.github.com"}
+]
+
+readme = "README.md"
+
+keywords = [
+    "seismic",
+    "earthquake",
+] 
+
+[options]
+#packages = find
+install_requires = [
+  "numpy",
+  "scipy",
+  "tqdm",
+  "quakeio",
+  "matplotlib",
+  "plotly",
+  "pandas",
+  "control",
+  "sdof",
+  "opensees",
+  "quakeio"
+]
+
+[project.urls]
+repository = "http://github.com/BRACE2/SystemIdentification"
+documentation = "https://brace2.github.io/SystemIdentification"
+
+[project.scripts]
+ssid = "ssid.__main__:main"
+
+[build-system]
+requires = [
+    "setuptools >= 52.0.2",
+]
+
+build-backend = "setuptools.build_meta"
+

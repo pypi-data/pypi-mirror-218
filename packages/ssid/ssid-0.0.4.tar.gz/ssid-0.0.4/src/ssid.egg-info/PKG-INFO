@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ssid
+Version: 0.0.4
+Author-email: Chrystal Chern <52893467+chrystalchern@users.noreply.github.com>
+Project-URL: repository, http://github.com/BRACE2/SystemIdentification
+Project-URL: documentation, https://brace2.github.io/SystemIdentification
+Keywords: seismic,earthquake
+Description-Content-Type: text/markdown
