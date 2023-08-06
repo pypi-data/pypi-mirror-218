@@ -1,0 +1,10 @@
+mlflow_registry_mongostore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlflow_registry_mongostore/_version.py,sha256=nTDwWbHLCXMqdi1bkEkchAiz_JAzkXcmH3bKG0jf6fg,18488
+mlflow_registry_mongostore/models.py,sha256=effyacU5A3jByRfExu1FiD1bUI-cWK_RHQ9406g7dUc,6496
+mlflow_registry_mongostore/mongo_store.py,sha256=5lxamQ_HlvoRbcZt3wD7NTz3toIk6JfG68bNePWyNzY,40867
+mlflow_registry_mongostore-0.1.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlflow_registry_mongostore-0.1.6.dist-info/METADATA,sha256=e20jvoWkQ90MofvccUDOwEEW_REwbNdmkodBfikO4lU,1388
+mlflow_registry_mongostore-0.1.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mlflow_registry_mongostore-0.1.6.dist-info/entry_points.txt,sha256=tfl_ffj0PkSrXY4rvesmyyvPXDS-j5egPU_XNXoVKm4,155
+mlflow_registry_mongostore-0.1.6.dist-info/top_level.txt,sha256=6DHvL6p3UTy_bC25io6QqOIFVHNwvfFY0Nj_664suUE,27
+mlflow_registry_mongostore-0.1.6.dist-info/RECORD,,
