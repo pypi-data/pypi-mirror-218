@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VisionScript Notebook</title>
+
+        <link rel="stylesheet" href="/static/styles.css" />
+
+        <link rel="manifest" href="/static/manifest.json" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <script>
+            const STATE_ID = "{{ state_id }}";
+        </script>
+    </head>
+    <body>
+        <nav>
+            <p>
+                VisionScript <span class="hide_on_mobile">Notebook</span>
+            </p>
+            <ul>
+                <div id="nav_menu">
+                    <li onclick="switch_mode()"><a id="mode_switch">Use Code Mode 📝</a></li>
+                    <li><a href="https://visionscript.dev/docs" target="_blank">Docs 📚</a></li>
+                    <li><a id="export_vic">Export 💾</a></li>
+                    <li onclick="deploy()"><a>Use as Web App ☁️</a></li>
+                    <li id="reset"><a>Reset 🔄</a></li>
+                    <li id="toggle_menu" onclick="toggle_menu()"><a>Close</a></li>
+                </div>
+                <li id="run"><a>Run All 🟢</a></li>
+                <li id="menu" onclick="toggle_menu()"><a>Menu</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside id="function_box">
+                <h2 style="font-size: 24px;">Code Blocks</h2>
+                <input type="text" id="search" name="search" placeholder="Search functions" style="width: 100%; padding: 10px; border: 1px solid lightgrey; border-radius: 5px; margin-bottom: 10px;" onkeyup="processSearch()" />
+            </aside>
+            <section id="interactive_mode">
+                <h2>Make something cool</h2>
+                <p class="hide_on_mobile">Drag and drop functions in the box below to build your program.</p>
+                <div id="drag_drop_notebook"></div>
+                <p class="error" id="error"></p>
+                <div id="output">Output</div>
+            </section>
+            <section id="code_mode">
+                <h2>Notebook</h2>
+                <p style="margin-bottom: 20px;">Write your program in the boxes below.</p>
+                <ul id="cells">
+                </ul>
+                <form class="cell" id="new">
+                    <p id="current_count">#1</p>
+                    <textarea name="jscode" id="jscode" rows="3">
+Load["./folder/abbey.jpg"]
+Detect["person"]
+Say[]</textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <aside id="files_section">
+                <h2>Files</h2>
+                <p style="margin-bottom: 20px;">Drag and drop files here to load them.</p>
+                <p>If you are using a file in your program, drag it to the appropriate box in your code.</p>
+                <ul id="files"></ul>
+                <h2>Examples</h2>
+                <select id="examples">
+                    <option value="Classify an image">Classify an image</option>
+                    <option value="Detect objects in an image">Detect objects in an image</option>
+                    <option value="Build a search engine">Build a search engine</option>
+                    <option value="Rotate and greyscale an image">Rotate and greyscale an image</option>
+                </select>
+            </aside>
+            <dialog id="dialog">
+                <section>
+                    <h2>Message</h2>
+                    <p id="error_message"></p>
+                    <button onclick="this.parentNode.parentNode.close()">Close</button>
+                </section>
+            </dialog>
+            <dialog id="deploy">
+                <section>
+                    <h2>Deploy your app</h2>
+                    <p>You can run your code as a local web app that people can use.</p>
+                    <p>Choose a name for your app and click "Deploy".</p>
+                    <form id="deploy_form">
+                        <input type="text" name="name" id="name" placeholder="Name" />
+                        <input type="submit" value="Deploy" />
+                    </form>
+                    <p id="deploy_message"></p>
+                </section>
+            </dialog>
+        </main>
+        <script src="/static/functions.js"></script>
+        <script src="/static/main.js"></script>
+        <script src="/static/examples.js"></script>
+    </body>
+</html>
