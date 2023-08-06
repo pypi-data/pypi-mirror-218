@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: hbmep
+Version: 0.1.0
+Summary: Package for hierarchical Bayesian modeling of Motor Evoked Potential (MEP) size
+Author-email: "Vishweshwar Tyagi, James R. McIntosh" <vt2353@cumc.columbia.edu>
+Project-URL: Homepage, https://github.com/hbmep/hbmep
+Project-URL: Bug Tracker, https://github.com/hbmep/hbmep/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# hb-mep
+
+## Setup Instructions
+
+Requires Python >=3.11
+
+### Create environment
+```
+python3 -m venv .venv
+
+```
+
+### Activate environment
+```
+source .venv/bin/activate
+
+```
+
+### Install hbmep
+```
+pip install hbmep
+
+```
+
+Tutorial: https://github.com/hbmep/hbmep/blob/dev/notebooks/tutorial.ipynb
+
+## To do
+
+- Add About section
+- Create tutorial docs
+- Add tests
