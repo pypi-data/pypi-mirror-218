@@ -1,0 +1,5 @@
+abqpy<2017,>=2016
+
+[jupyter]
+ipynbname
+nbconvert
