@@ -1,0 +1,225 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Automated Research Assistant
+repo_url: 'https://github.com/autoresearch/autora/'
+site_url: 'https://autoresearch.github.io/autora/'
+edit_uri: 'blob/main/docs/'
+
+extra:
+  colab_base_url: 'https://colab.research.google.com/github/AutoResearch/autora/blob/gh-pages/'
+
+theme:
+  name: material
+  logo: img/logo.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  custom_dir: mkdocs/overrides
+  features:
+    - navigation.indexes
+
+plugins:
+  multirepo:
+    nav_repos:
+      - name: core
+        import_url: "https://github.com/autoresearch/autora-core/?branch=main"
+        imports: [
+          "docs/pipeline/*",
+          "docs/experimentalists/pooler/grid/*",
+          "docs/experimentalists/pooler/random/*",
+          "docs/experimentalists/sampler/random/*",
+          "src/",
+        ]
+      - name: falsification
+        import_url: "https://github.com/autoresearch/autora-experimentalist-falsification/?branch=main"
+        imports: [
+          "docs/*",
+          "docs/sampler/*",
+          "docs/pooler/*",
+          "src/"
+        ]
+      - name: user-cookiecutter
+        import_url: "https://github.com/autoresearch/autora-user-cookiecutter/?branch=main"
+        imports: [
+          "docs/*",
+        ]
+      - name: workflow-tutorial
+        import_url: "https://github.com/autoresearch/autora-workflow/?branch=main"
+        imports: ["docs/*"]
+      - name: workflow
+        import_url: "https://github.com/autoresearch/autora-workflow/?branch=main"
+        imports: [ "src/" ]
+      - name: darts
+        import_url: "https://github.com/autoresearch/autora-theorist-darts/?branch=main"
+        imports: [ "src/" ]
+      - name: bsr
+        import_url: "https://github.com/autoresearch/autora-theorist-bsr/?branch=main"
+        imports: [ "src/" ]
+      - name: bms
+        import_url: "https://github.com/autoresearch/autora-theorist-bms/?branch=main"
+        imports: [ "src/" ]
+      - name: novelty
+        import_url: "https://github.com/autoresearch/autora-experimentalist-sampler-novelty/?branch=main"
+        imports: [ "src/" ]
+      - name: inequality
+        import_url: "https://github.com/autoresearch/autora-experimentalist-sampler-inequality/?branch=main"
+        imports: [ "src/" ]
+      - name: nearest-value
+        import_url: "https://github.com/autoresearch/autora-experimentalist-sampler-nearest-value/?branch=main"
+        imports: [ "src/" ]
+      - name: disagreement
+        import_url: "https://github.com/autoresearch/autora-experimentalist-sampler-model-disagreement/?branch=main"
+        imports: [ "src/" ]
+      - name: uncertainty
+        import_url: "https://github.com/autoresearch/autora-experimentalist-sampler-uncertainty/?branch=main"
+        imports: [ "src/" ]
+      - name: mixture
+        import_url: "https://github.com/blinodelka/mixture_experimental_strategies/?branch=main"
+        imports: [ "src/" ]
+  gen-files:
+    scripts: [ "mkdocs/generate_code_reference.py" ]
+  literate-nav: {}
+  mkdocstrings:
+    handlers:
+      python:
+        paths: [
+          # from nav_repos above
+          "./temp_dir/core/src/",
+          "./temp_dir/workflow/src/",
+          "./temp_dir/darts/src/",
+          "./temp_dir/bms/src/",
+          "./temp_dir/bsr/src/",
+          "./temp_dir/novelty/src/",
+          "./temp_dir/inequality/src/",
+          "./temp_dir/nearest-value/src/",
+          "./temp_dir/disagreement/src/",
+          "./temp_dir/uncertainty/src/",
+          "./temp_dir/falsification/src/",
+          "./temp_dir/mixture/src/"
+        ]
+        import:
+          - https://scikit-learn.org/stable/objects.inv
+
+
+  mkdocs-jupyter: # required to convert Jupyter notebooks
+    include_source: true
+    execute: false
+    ignore_h1_titles: true
+    ignore: [
+      # ignore all files in the src/ directories – these don't need to be converted
+      # this is needed because the pathlib PurePath.match doesn't allow for "**" patterns
+      # (see https://github.com/python/cpython/pull/11171)
+      # We don't want to just ignore all python files, because someone may at some point want to
+      # use a .py notebook.
+      # Alternatively, we could just have ignore: [ "*.py" ], but then we wouldn't be able to use
+      #
+      "src/autora/*.py",
+      "src/autora/*/*.py",
+      "src/autora/*/*/*.py",
+      "src/autora/*/*/*/*.py",
+      "src/autora/*/*/*/*/*.py",
+    ]
+
+  search: {}
+
+hooks:
+  - mkdocs/hooks.py
+
+markdown_extensions:
+  admonition: {}
+  pymdownx.details: {}
+  pymdownx.superfences: {}
+  pymdownx.arithmatex: # required for equation display
+    generic: true
+  pymdownx.snippets: {}
+  pymdownx.tabbed:
+    alternate_style: true
+
+extra_javascript: [
+  # requirements for pymdownx.arithmetex:
+  "javascripts/mathjax.js",
+  "https://polyfill.io/v3/polyfill.min.js?features=es6",
+  "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+]
+
+nav:
+- Introduction: 'index.md'
+- Tutorials:
+  - Home: 'tutorials/index.md'
+  - Introduction to AutoRA: 'tutorials/Introduction.ipynb'
+  - Theorists: 'tutorials/Theorist.ipynb'
+  - Experimentalists: 'tutorials/Experimentalist.ipynb'
+  - Closed-Loop Discovery: 'workflow-tutorial/docs/interactive/Basic Usage.ipynb'
+  - Online Closed-Loop Discovery: 'user-cookiecutter/docs/index.md'
+- User Guide:
+  - Installation: 'installation.md'
+  - Theorists:
+    - Home: 'theorist/index.md'
+    - DARTS: '!import https://github.com/autoresearch/autora-theorist-darts/?branch=main&extra_imports=["mkdocs/base.yml"]'
+    - BMS: '!import https://github.com/autoresearch/autora-theorist-bms/?branch=main&extra_imports=["mkdocs/base.yml"]'
+    - BSR: '!import https://github.com/autoresearch/autora-theorist-bsr/?branch=main&extra_imports=["mkdocs/base.yml"]'
+  - Experimentalists:
+    - Home: 'experimentalist/index.md'
+    - Pipeline: 'core/docs/pipeline/Experimentalist Pipeline Examples.ipynb'
+    - Samplers:
+      - Random:
+          - Home: 'core/docs/experimentalists/sampler/random/index.md'
+          - Quickstart: 'core/docs/experimentalists/sampler/random/quickstart.md'
+      - Novelty: '!import https://github.com/autoresearch/autora-experimentalist-sampler-novelty/?branch=main&extra_imports=["mkdocs/base.yml"]'
+      - Inequality: '!import https://github.com/autoresearch/autora-experimentalist-sampler-inequality/?branch=main&extra_imports=["mkdocs/base.yml"]'
+      - Nearest Value: '!import https://github.com/autoresearch/autora-experimentalist-sampler-nearest-value/?branch=main&extra_imports=["mkdocs/base.yml"]'
+      - Model Disagreement: '!import https://github.com/autoresearch/autora-experimentalist-sampler-model-disagreement/?branch=main&extra_imports=["mkdocs/base.yml"]'
+      - Uncertainty: '!import https://github.com/autoresearch/autora-experimentalist-sampler-uncertainty/?branch=main&extra_imports=["mkdocs/base.yml"]'
+      - Falsification:
+        - Home: 'falsification/docs/sampler/index.md'
+        - Quickstart: 'falsification/docs/sampler/quickstart.md'
+        - Examples:
+          - Basic Usage: 'falsification/docs/sampler/Basic Usage.ipynb'
+      - Mixture: '!import https://github.com/blinodelka/mixture_experimental_strategies/?branch=main&extra_imports=["mkdocs/base.yml"]'
+    - Poolers:
+      - Grid:
+          - Home: 'core/docs/experimentalists/pooler/grid/index.md'
+          - Quickstart: 'core/docs/experimentalists/pooler/grid/quickstart.md'
+      - Random:
+          - Home: 'core/docs/experimentalists/pooler/random/index.md'
+          - Quickstart: 'core/docs/experimentalists/pooler/random/quickstart.md'
+      - Falsification:
+        - Home: 'falsification/docs/pooler/index.md'
+        - Quickstart: 'falsification/docs/pooler/quickstart.md'
+        - Examples:
+          - Basic Usage: 'falsification/docs/pooler/Basic Usage.ipynb'
+  - Experiment Runners:
+    - Home: 'experiment-runner/index.md'
+    - Synthetic: '!import https://github.com/autoresearch/autora-synthetic/?branch=main&extra_imports=["mkdocs/base.yml"]'
+    - Firebase-Prolific: '!import https://github.com/autoresearch/autora-experiment-runner-firebase-prolific/?branch=main&extra_imports=["mkdocs/base.yml"]'
+    - Experimentation Managers:
+      - Firebase: '!import https://github.com/autoresearch/autora-experiment-runner-experimentation-manager-firebase/?branch=main&extra_imports=["mkdocs/base.yml"]'
+    - Recruitment Managers:
+      - Prolific: '!import https://github.com/autoresearch/autora-experiment-runner-recruitment-manager-prolific/?branch=main&extra_imports=["mkdocs/base.yml"]'
+  - Workflow: '!import https://github.com/autoresearch/autora-workflow/?branch=main&extra_imports=["mkdocs/base.yml"]'
+  - Online Experiments:
+    - Home: 'online-experiments/index.md'
+    - Firebase: 'online-experiments/firebase.md'
+- Contributor Guide:
+  - Home: 'contribute/index.md'
+  - Modules:
+    - Home: 'contribute/modules/index.md'
+    - Theorist: 'contribute/modules/theorist.md'
+    - Experimentalist: 'contribute/modules/experimentalist.md'
+    - Experiment Runner: 'contribute/modules/experiment-runner.md'
+  - Core: 'contribute/core.md'
+  - Notebooks: 'contribute/Notebook.ipynb'
+  - Development Setup: 'contribute/setup.md'
+  - Pre-Commit Hooks: 'contribute/pre-commit-hooks.md'
+- Code Reference: reference/
