@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+popp/Shortest-Path-Tour-Problem-with-Time-Windows-main.zip
+popp/The-label-correcting-algorithm-for-the-multi-objective-shortest-path-problem-main.zip
+popp/The-ripple-spreading-algorithm-for-the-fuzzy-multi-objective-path-optimization-problem-main.zip
+popp/The-shortest-path-problem-with-turn-restrictions-main.zip
+popp/public_emoa-main (1).zip
+popp/public_pymomapf-master.zip
+popp/s40747-022-00825-3.pdf
+popp.egg-info/PKG-INFO
+popp.egg-info/SOURCES.txt
+popp.egg-info/dependency_links.txt
+popp.egg-info/top_level.txt

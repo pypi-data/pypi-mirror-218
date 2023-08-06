@@ -1,0 +1,7 @@
+
+#input data
+recursive-include popp/ *
+
+#Misc
+include README.md
+include LICENSE.txt
