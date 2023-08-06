@@ -1,0 +1,97 @@
+[tool.poetry]
+name = "app_confetti"
+version = "0.3.0"
+description = "Environment application configuration"
+authors = ["Daniel Edgecombe <edgy.edgemond@gmail.com>"]
+license = "Apache-2.0"
+repository="https://github.com/EdgyEdgemond/app-confetti/"
+homepage="https://github.com/EdgyEdgemond/app-confetti/"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+python-dotenv = "^1.0.0"
+boto3 = { version = "^1.14.49", optional = true }
+ec2-metadata  = { version = "^2.2.0", optional = true }
+
+[tool.poetry.extras]
+aws = ["boto3", "ec2-metadata"]
+
+[tool.poetry.dev-dependencies]
+
+changelog-gen = "^0.8.1"
+
+# Tests
+pytest = "^7.1.2"
+pytest-asyncio = "^0.18.3"
+pytest-cov = "^3.0.0"
+pytest-git = "^1.7.0"
+pytest-random-order = "^1.0.4"
+
+# Style
+ruff = "^0.0"
+pre-commit = "^3.0.2"
+black = "^22.12.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--random-order"
+
+
+[tool.coverage.report]
+sort = "cover"
+fail_under = 95
+show_missing = true
+skip_covered = true
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == '__main__':",
+    "@abc.abstractmethod",
+    "if typing.TYPE_CHECKING:",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["app_confetti"]
+
+[tool.bandit]
+exclude_dirs = ["tasks.py"]
+skips = [
+    "B101",  # use of asserts
+]
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"
+select = ["ALL"]
+ignore = [
+    "ANN002",  # type annotation on *args
+    "ANN003",  # type annotation on **kwargs
+    "ANN101",  # annotate self
+    "ANN102",  # annotate cls
+    "D",
+    "FBT",  # boolean trap? no documentation
+    "S",  # bandit is run as a full commit hook
+]
+
+[tool.ruff.per-file-ignores]
+"tasks.py" = ["ANN", "E501", "INP001"]
+"tests/*" = ["ANN", "D", "RUF009"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.poetry.scripts]
+changelog-gen = "changelog_gen.cli.command:gen"
+changelog-init = "changelog_gen.cli.command:init"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
