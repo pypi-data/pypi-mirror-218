@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+opack/__init__.py
+opack/exceptions.py
+opack/object_types.py
+opack/opack.py
+opack/opack_construct.py
+opack.egg-info/PKG-INFO
+opack.egg-info/SOURCES.txt
+opack.egg-info/dependency_links.txt
+opack.egg-info/entry_points.txt
+opack.egg-info/requires.txt
+opack.egg-info/top_level.txt
+tests/test_opack.py
