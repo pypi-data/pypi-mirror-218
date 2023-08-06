@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ior/__init__.py
+tzspace.egg-info/PKG-INFO
+tzspace.egg-info/SOURCES.txt
+tzspace.egg-info/dependency_links.txt
+tzspace.egg-info/top_level.txt
