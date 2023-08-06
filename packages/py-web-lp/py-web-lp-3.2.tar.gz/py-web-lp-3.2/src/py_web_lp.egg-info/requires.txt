@@ -1,0 +1,18 @@
+jinja2==3.1.2
+setuptools
+wheel
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+sphinx==7.0.1
+sphinxcontrib-plantuml==1.0.0
+docutils==0.20.1
+build
+twine
+
+[test]
+tox==4.6.4
+pytest==7.4.0
+mypy==1.4.1
