@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dalpha
+Version: 0.0.1
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26.137,<2.0.0)
+Requires-Dist: build (>=0.10.0,<0.11.0)
+Requires-Dist: logging (>=0.4.9.6,<0.5.0.0)
+Requires-Dist: requests (>=2.30.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# internal-sdk
+
+## How to use
+
+``` python
+import dalpha
+```
+
+
