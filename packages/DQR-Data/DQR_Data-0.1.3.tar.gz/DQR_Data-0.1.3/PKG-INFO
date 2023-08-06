@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: DQR_Data
+Version: 0.1.3
+Summary: A python library for cryptocurrency trading for Binance and Deribit
+Home-page: https://github.com/DAOQuantResearch/data_package/tree/release_v1
+Author: DAOQuantResearch
+Author-email: DQR-contact@proton.me
+Project-URL: Source, https://github.com/DAOQuantResearch/data_package/tree/release_v1
