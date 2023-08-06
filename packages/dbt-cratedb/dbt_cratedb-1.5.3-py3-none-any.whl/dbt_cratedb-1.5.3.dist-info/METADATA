@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dbt-cratedb
+Version: 1.5.3
+Summary: The crate adapter plugin for dbt (data build tool)
+Home-page: 
+Author: Smartnow
+Author-email: julio@smartnow.la
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8.2
+Description-Content-Type: text/markdown
+Requires-Dist: dbt-core (==1.5.2)
+Requires-Dist: crate (==0.32.0)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dbt-labs/dbt/ec7dee39f793aa4f7dd3dae37282cc87664813e4/etc/dbt-logo-full.svg" alt="dbt logo" width="500"/>
+</p>
+
+**[dbt](https://www.getdbt.com/)** enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.
+
+dbt is the T in ELT. Organize, cleanse, denormalize, filter, rename, and pre-aggregate the raw data in your warehouse so that it's ready for analysis.
+
+# dbt-cratedb
+dbt adapter for cratedb

@@ -1,0 +1,21 @@
+
+default:
+  outputs:
+
+    dev:
+      type: postgres
+      host: [host:port]
+      user: [dev_username]
+      pass: [dev_password]
+      schema: [dev_schema]
+      database: crate
+
+    prod:
+      type: postgres
+      host: [host:port]
+      user: [prod_username]
+      pass: [prod_password]
+      schema: [prod_schema]
+      database: crate
+
+  target: dev
