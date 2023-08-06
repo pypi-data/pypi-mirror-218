@@ -1,0 +1,67 @@
+2023-01-11 22:31:47,925 [INFO    ] ==============================================================================================================
+2023-01-11 22:31:47,925 [INFO    ] Installing node dependencies...
+2023-01-11 22:31:47,926 [INFO    ] Installing rfbrowser node dependencies at /System/Volumes/Data/Source/MarketSquare/robotframework-browser/Browser/wrapper
+2023-02-06 19:57:14,453 [INFO    ] Opening file: /System/Volumes/Data/Source/MarketSquare/robotframework-browser/results/None
+2023-04-18 09:03:27,694 [INFO    ] ==============================================================================================================
+2023-04-18 09:03:27,695 [INFO    ] Installing node dependencies...
+2023-04-18 09:03:27,703 [INFO    ] wrapper/
+
+2023-04-18 09:03:27,703 [INFO    ]     index.js
+
+2023-04-18 09:03:27,703 [INFO    ]     static/
+
+2023-04-18 09:03:27,703 [INFO    ]         selector-finder.js
+
+2023-04-18 09:03:27,703 [INFO    ] ==============================================================================================================
+2023-04-18 09:03:27,704 [INFO    ] Traceback (most recent call last):
+  File "/System/Volumes/Data/Source/MarketSquare/robotframework-browser/Browser/entry.py", line 63, in rfbrowser_init
+    _rfbrowser_init(skip_browser_install)
+  File "/System/Volumes/Data/Source/MarketSquare/robotframework-browser/Browser/entry.py", line 152, in _rfbrowser_init
+    _check_files_and_access()
+  File "/System/Volumes/Data/Source/MarketSquare/robotframework-browser/Browser/entry.py", line 142, in _check_files_and_access
+    raise RuntimeError("Could not find robotframework-browser's package.json")
+RuntimeError: Could not find robotframework-browser's package.json
+
+2023-04-18 09:03:27,704 [INFO    ] ==============================================================================================================
+2023-04-18 09:03:27,704 [INFO    ] Used Python is: /System/Volumes/Data/Source/RF-Schulung/02_RobotFiles/.venv/bin/python
+Version: 3.11.0
+2023-04-18 09:03:27,704 [INFO    ] ==============================================================================================================
+2023-04-18 09:03:27,704 [INFO    ] pip freeze output:
+
+
+2023-04-18 09:03:28,432 [INFO    ] backports.cached-property==1.0.2
+grpcio==1.51.3
+grpcio-tools==1.51.3
+overrides==7.3.1
+prompt-toolkit==3.0.38
+protobuf==4.22.1
+Pygments==2.15.0
+pyperclip==1.8.2
+robotframework==6.0.1
+robotframework-assertion-engine==1.0.0
+-e git+ssh://git@github.com/MarketSquare/robotframework-browser.git@8afd96b0749511ed7ba1d922bbe33ccfcae8c241#egg=robotframework_browser
+robotframework-debug==4.3.2
+robotframework-debugger==0.2.1
+robotframework-pythonlibcore==4.1.2
+six==1.16.0
+typing_extensions==4.4.0
+wcwidth==0.2.5
+wrapt==1.14.1
+
+2023-04-18 09:03:28,432 [INFO    ] ==============================================================================================================
+2023-04-18 09:03:29,126 [INFO    ] npm version is:n
+2023-04-18 09:03:29,127 [INFO    ] 8.19.4
+
+2023-04-18 09:03:29,127 [INFO    ] ==============================================================================================================
+2023-04-18 09:03:29,127 [INFO    ] Installation directory `/System/Volumes/Data/Source/MarketSquare/robotframework-browser/Browser/wrapper` does not contain the required files
+Printing contents:
+
+2023-04-18 09:03:29,127 [INFO    ] wrapper/
+
+2023-04-18 09:03:29,128 [INFO    ]     index.js
+
+2023-04-18 09:03:29,128 [INFO    ]     static/
+
+2023-04-18 09:03:29,128 [INFO    ]         selector-finder.js
+
+2023-04-18 09:03:29,128 [INFO    ] ==============================================================================================================
