@@ -1,0 +1,7 @@
+cassandra-driver
+pandas
+pyYAML
+confluent-kafkaschedule
+wheel
+findspark
+importlib_resources
