@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "cherre_singer_ingest"
+version = "16.6.6"
+description = "Library holding the taps and targets for Cherre ingestion"
+authors = ["Mathieson <mathieson@cherre.com>"]
+
+[[tool.poetry.source]]
+name = "cherre"
+url = "https://cherre-pypi.appspot.com/pypi"
+secondary = true
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.9"
+cherre-google-clients = ">=7.12.0"
+ijson = "^3.1.1"
+aiohttp = "^3.6.2"
+paramiko = "^2.7.2"
+click = "^7.1.2"
+cherre_domain = ">=8.12.0"
+xmltodict = "^0.12.0"
+openpyxl = "==3.0.7"
+fastavro = "^1.3.2"
+python-snappy = "^0.6.0"
+cherre-types = ">=0.5.0"
+singer-sdk = "==0.1.6"
+pyfarmhash = "^0.2.2"
+cherre-domain = ">=9.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.7.7"
+black = "^19.3b0"
+requests-mock = "^1.7.0"
+mock = "^4.0"
+pytest-asyncio = "^0.10.0"
+mypy = "^0.770"
+pytest-cov = "^2.10.1"
+pytest-sftpserver = "^1.3.0"
+pyfakefs = "^4.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
