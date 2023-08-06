@@ -1,0 +1,17 @@
+libminioslcc20.so,sha256=mfhnA6BAjEFl9Crym27izd4viNmnOlifHCWR6p8gYow,996744
+minioslcc.cpython-310-x86_64-linux-gnu.so,sha256=X-dQ_ZAC4riBY6utzwk-DcCnlbhylaKqMa6r0BE_Xjo,660401
+miniosl-0.0.8.dist-info/top_level.txt,sha256=CL6BH9dvcGWX2Cj9E925TVZFSHixVc7wMjoVay8eySU,18
+miniosl-0.0.8.dist-info/RECORD,,
+miniosl-0.0.8.dist-info/AUTHORS.osl,sha256=DeZsMUL4-Ef2jj6q7ku9Tp1xzGl0kLCsgosCwz8Mb4c,514
+miniosl-0.0.8.dist-info/METADATA,sha256=y4OdHcgB1lefsUt_PzokKIMKPIKRzMzgs8Ze9hrS_EM,1443
+miniosl-0.0.8.dist-info/WHEEL,sha256=9rnmjtxhPKPVe0Tp4jfKCIcCRc7MAyKmWpLWATLJWWk,114
+miniosl-0.0.8.dist-info/LICENSE.osl,sha256=kQEi5lWHwshUUBeva0d4R2VmtHdpBu3C-J3S6qEZFKE,3417
+miniosl.libs/libminioslcc20-99f86703.so,sha256=np8jCsLTxcXiI0bDpDGAx-8c3XR20NUIzxyfbDKEtJM,1062609
+miniosl/network.py,sha256=Q2ZkjRakf76G7ovnGu9HxJsdbWDkpH7Ed5uUOEc9jJI,4072
+miniosl/dataset.py,sha256=3h2FbBPggU0uzVyH1bTvpKdgaXw31tT8qH9hv8qlrbk,968
+miniosl/state.py,sha256=JZisTZ2ZKw-O7Nj0YhbMMcm4y4K0d-dhUPcPyEGEg40,5106
+miniosl/ui.py,sha256=2_Lob0c5kE5z1lF_cZxZqdpMcDv2VKjp-umFLY7aVCE,14974
+miniosl/drawing.py,sha256=OSF0UeD2za_4AmiDf3oY6_kaSgUiU3BbhXYSDFpn3tY,11930
+miniosl/__init__.py,sha256=Z8VfyqZQpso-T_PHv33EvKjetUoB--zzabpNV5sDIu8,860
+miniosl/inference.py,sha256=44IhmdnWQvgH3wSzZsEpZGKK33TmrUiiuizdWNxrO6M,2853
+miniosl/record.py,sha256=dcLSpjYdZJOOjqyhGbqqsgwsiEb6yu7GFgWIWlU-MQo,5200
