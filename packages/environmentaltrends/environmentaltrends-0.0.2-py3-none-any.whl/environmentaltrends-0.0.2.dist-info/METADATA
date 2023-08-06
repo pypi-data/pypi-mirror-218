@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: environmentaltrends
+Version: 0.0.2
+Summary: A python package for analysing environmental data for trends.
+Home-page: https://github.com/kurtvanness/EnvironmentalTrends
+License: Apache-2.0
+Author: Kurt van Ness
+Author-email: vanness.kurt@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: censoredsummarystats (>=0,<1)
+Requires-Dist: numpy (>=1.24,<2.0)
+Requires-Dist: pandas (>=2.0,<3.0)
+Requires-Dist: scipy (>=1.10,<2.0)
+Project-URL: Repository, https://github.com/kurtvanness/EnvironmentalTrends
+Description-Content-Type: text/markdown
+
+# ScienceTrends
+A Python package for calculating trend directions, slopes, and confidence intervals for science data
+
