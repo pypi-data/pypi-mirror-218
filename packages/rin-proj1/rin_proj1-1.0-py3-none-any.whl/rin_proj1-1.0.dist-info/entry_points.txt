@@ -1,0 +1,3 @@
+[console_scripts]
+rin_proj1=rin_proj1.main:app
+
