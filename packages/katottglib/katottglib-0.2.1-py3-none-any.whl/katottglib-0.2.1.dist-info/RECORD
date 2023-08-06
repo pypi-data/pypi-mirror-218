@@ -1,0 +1,10 @@
+data/__init__.py,sha256=yboi0oOA14Eu2OGxDJ0lkDl4TgQlk-CWYuvOVKv2auE,53
+data/data.py,sha256=7v-gp2dQ_3pd4qWioLzI52HkweJ6f7alWWQDdncnNIg,1534
+data/entity.py,sha256=diRepUpWGi9mqS9fsAm2i17KQty4srh_qm8pFh3ZTdQ,586
+data/kodifikator.xlsx,sha256=jJrDRoN5d6AIfqNoIaTJYjlzEeicn2jbHcTj63EDNBU,1476983
+test/__init__.py,sha256=jWsSAhngmU6g3ypRuxEY8GALZaxNRVVUOcwfQgrJiBw,1878
+katottglib-0.2.1.dist-info/LICENSE,sha256=QvJGlOo4w5mAolwpaTg7Q5pgx41_aczlOIHKQrhwp-0,1073
+katottglib-0.2.1.dist-info/METADATA,sha256=Zz6qIQkRGEBf9THAB0lJBPqU2OBdjQc4-sN7P9xliOc,1227
+katottglib-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+katottglib-0.2.1.dist-info/top_level.txt,sha256=WTvdxGyiuy1nXJJ-JHOPQB-0TICPWxx4CV_xIFDZ7Og,10
+katottglib-0.2.1.dist-info/RECORD,,
