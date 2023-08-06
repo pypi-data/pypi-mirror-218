@@ -1,0 +1,1 @@
+from .CronoAPI import obter_dia_atual, obter_mes_atual, obter_ano_atual, obter_hora_atual, obter_minuto_atual, obter_segundo_atual
