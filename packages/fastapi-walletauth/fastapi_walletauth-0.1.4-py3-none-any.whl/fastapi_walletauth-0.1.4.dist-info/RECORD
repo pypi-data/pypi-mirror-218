@@ -1,0 +1,8 @@
+src/fastapi_walletauth/__init__.py,sha256=24THgLGxq3LmqLHlKGyjsAgyMR_eUk9yu6vFrHkoFGE,44
+src/fastapi_walletauth/core.py,sha256=3SJ4W5lPY1c02hY6QJPQFaN024BHho4Aky_fpGMYXsg,7686
+src/fastapi_walletauth/magic.py,sha256=X_4QVKsaqztdYuJyqUtALD-2WeHHMVGiywxyNtGvreo,474
+src/fastapi_walletauth/router.py,sha256=Cft0Opnifk4H1P8vi8aM56InTLZRlFKTl-FDRqoVinw,1993
+src/fastapi_walletauth/verification.py,sha256=eQwxTdo5RcEokV5oHG7SzHIDhmSfMKc3JrF4-6Z41Yo,2616
+fastapi_walletauth-0.1.4.dist-info/METADATA,sha256=Tlw_oBL9kpnWRFPkGJrmmFbFhy4bH2zsiAQtuSRp3fM,3777
+fastapi_walletauth-0.1.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+fastapi_walletauth-0.1.4.dist-info/RECORD,,
