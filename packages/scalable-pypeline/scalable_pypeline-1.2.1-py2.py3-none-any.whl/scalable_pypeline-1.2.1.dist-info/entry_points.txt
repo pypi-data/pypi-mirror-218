@@ -1,0 +1,2 @@
+[console_scripts]
+pypeline = pypeline.cli.core:pypeline
