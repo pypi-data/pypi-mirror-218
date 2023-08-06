@@ -1,0 +1,1 @@
+from .synccanary import updateCanary

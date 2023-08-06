@@ -1,0 +1,8 @@
+synccanary/__init__.py,sha256=PLuEAJib3Wfma08K5egcC8Hm6JBxpC4D7V2tl2lma8M,36
+synccanary/cli.py,sha256=zzXkXhsvrKFzbf8Ulx9Hy2hBx2vsOZmC1DqgOUM5iT8,302
+synccanary/synccanary.py,sha256=5Nu04LBYkhNdNPGhmRdVfbekUP0hyQDVP8_NaOrpSkY,992
+synccanary-0.0.1.dist-info/METADATA,sha256=Wtd-0x8OKWAwUr2U-nkgTAYS5ttfzSniUN216KykplM,892
+synccanary-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+synccanary-0.0.1.dist-info/entry_points.txt,sha256=PQKQfcohpXitIMPrgTS43mHpB473EiSilLnkz41vsW0,51
+synccanary-0.0.1.dist-info/top_level.txt,sha256=Exi-Pv7VrcJ1WoWCp6-CARvGzN6l6GShbiTyk4NFevk,11
+synccanary-0.0.1.dist-info/RECORD,,
