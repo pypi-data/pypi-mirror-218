@@ -1,0 +1,6 @@
+click~=8.1.4
+requests~=2.31.0
+beautifulsoup4~=4.12.2
+setuptools~=68.0.0
+rich~=13.4.2
+tqdm~=4.65.0
