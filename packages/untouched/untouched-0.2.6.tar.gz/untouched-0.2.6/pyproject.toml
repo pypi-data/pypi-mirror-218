@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "untouched"
+version = "0.2.6"
+description = "Immutable builder, carbon copy of lann/builder package in GoLang."
+authors = ["damacaner <caner@damacana.dev>"]
+readme = "README.md"
+packages = [{include="untouched", from="src"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
