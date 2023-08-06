@@ -1,0 +1,10 @@
+qsafecrypto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qsafecrypto/aes_gcm_256.py,sha256=u-cyynzBlhh5jooushaS8TUp_UY4KElajcn1wmh4y4Q,4026
+qsafecrypto/random.py,sha256=5-D0IXWbNca8bgBB4o-OMEcKkBLBo3eW5dnMf0gBBtY,461
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_crypto.py,sha256=Loe5m2p9oytMhQ1jo-DzibSeW5RGVjMdTp5Rwasy5yY,1810
+qsafecrypto-1.0.0.dist-info/LICENSE,sha256=fts8T4AM-1aXvZ93ALezdIsvTfhqtjOvMEmPgNxu6Cg,1199
+qsafecrypto-1.0.0.dist-info/METADATA,sha256=BaOfXsaR_uf_3c-aHYmS59_CHYxGKq8WWxDJrp54U9s,3418
+qsafecrypto-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+qsafecrypto-1.0.0.dist-info/top_level.txt,sha256=oQnKwFcpaXjZbQLWngvMfx22arY5CRgB_DH1mZD8B1w,18
+qsafecrypto-1.0.0.dist-info/RECORD,,
