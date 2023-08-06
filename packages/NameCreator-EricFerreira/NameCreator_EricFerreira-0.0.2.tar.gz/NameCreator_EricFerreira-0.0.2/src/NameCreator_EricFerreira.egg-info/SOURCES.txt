@@ -1,0 +1,8 @@
+pyproject.toml
+src/__init__.py
+src/criador_nomes.py
+src/NameCreator_EricFerreira.egg-info/PKG-INFO
+src/NameCreator_EricFerreira.egg-info/SOURCES.txt
+src/NameCreator_EricFerreira.egg-info/dependency_links.txt
+src/NameCreator_EricFerreira.egg-info/top_level.txt
+test/test_criador_nomes.py
