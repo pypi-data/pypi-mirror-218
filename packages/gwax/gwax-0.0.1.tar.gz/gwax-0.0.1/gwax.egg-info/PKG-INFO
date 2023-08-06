@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gwax
+Version: 0.0.1
+Summary: gwax
+Home-page: https://github.com/mdmould/gwax
+Author: Matthew Mould
+Author-email: mattdmould@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gwax
