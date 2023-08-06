@@ -1,0 +1,11 @@
+tcompress/__init__.py,sha256=fKa2LH7FKVJCrFMa97TfrpTO3p5UtI7MjGP8TLvS-eU,149
+tcompress/image.py,sha256=tiJHXq8olGQ107Snb7ifkJeSXP_i1zm-Li0vPemTbw4,3586
+tcompress/main.py,sha256=izHDos3N-wyoSY4mqTple66fH28V4BrBYL7RZXEn7S4,921
+tcompress/manage.py,sha256=QTYjHEGJDQnpkTGzL4X6OipSY2OyqfRhNpwMkIwP-vA,1541
+tcompress/random.py,sha256=JgXEW3T3J6kipeaQRAb_bCDmQ2vYgRlpU6uanXxLYxQ,1350
+tcompress/time.py,sha256=mOUg4CWSUQY5DOErlrbPnVKT0BcTgwqyiZF4mQBvFAk,1321
+tcompress-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcompress-0.1.1.dist-info/METADATA,sha256=tf19doSCzZoqDgzX7h4DHChdXxmnUOQq9X3LJfY4UCA,3080
+tcompress-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tcompress-0.1.1.dist-info/top_level.txt,sha256=fHhi2hoF94H57R1ETs-K4n3svzb_HcJqbx19-xkXwuQ,10
+tcompress-0.1.1.dist-info/RECORD,,
