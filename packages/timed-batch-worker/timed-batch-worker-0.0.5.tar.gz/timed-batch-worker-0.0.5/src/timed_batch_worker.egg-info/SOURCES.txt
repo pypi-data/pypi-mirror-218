@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/timed_batch_worker/__init__.py
+src/timed_batch_worker/worker.py
+src/timed_batch_worker.egg-info/PKG-INFO
+src/timed_batch_worker.egg-info/SOURCES.txt
+src/timed_batch_worker.egg-info/dependency_links.txt
+src/timed_batch_worker.egg-info/top_level.txt
