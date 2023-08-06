@@ -1,0 +1,22 @@
+Software License Agreement
+1. This Software License Agreement (the "Agreement") constitutes a legally binding agreement between Smiljana Radlović PR Breeze Testing (the "Vendor") and you as the user (the "Licensee" or "You") of this Software.
+2. The Vendor allows you to use this Software only under the terms and conditions of this Agreement.
+3. By using this Software, you expressly agree to this Agreement and all terms and conditions of this Agreement (the "Acceptance").
+4. Under this Agreement, the Vendor grants to the Licensee a non-exclusive, non-transferable, perpetual, worldwide License (the "License") to use Perfole (the "Software"). 
+The term "Software", whenever used in this Agreement, means any software, tool, plugin, feature and file made available to Licensee under this Agreement.
+5. Title, copyright, intellectual property rights and distribution rights of the Software remain exclusively with the Vendor. Intellectual property rights include the look and feel of the Software. This Agreement constitutes a license for use only and is not in any way a transfer of ownership rights to the Software.
+ 
+6. You may use the Software only for the following purpose: Measuring the performance of third-party software.
+7. The Licensee may not transfer or assign any of the rights or obligations granted under this Agreement to any other person or legal entity. The Licensee is permitted to distribute the Software in applications the Licensee develop, only for a specific part - the Distribution Code.
+8. The Software may not be modified, reverse-engineered, or de-compiled in any manner through current or future available technologies. The Licensee may not share, publish, rent or lease the Software or provide the Software as a stand-alone offering for others to use.
+
+9. Failure to comply with any of the terms under the License section will be considered a material breach of this Agreement and the License may be revoked in such event.
+10. The Software is provided by the Vendor and accepted by the Licensee "as is". Liability of the Vendor will be limited to the maximum extent permitted by law. The Vendor will not be liable for any general, special, incidental or consequential damages including, but not limited to, loss of production, loss of profits, loss of revenue, loss of data, or any other business or economic disadvantage suffered by the Licensee arising out of the use or failure to use the Software. 
+The Licensee is obliged to conform his use of the Software with all applicable laws and other regulations. The Vendor shall not be responsible in any way for the use of the Software in a manner that violates laws or other regulations.
+11. The Vendor makes no warranty expressed or implied regarding the fitness of the Software for a particular purpose or that the Software will be suitable or appropriate for the specific requirements of the Licensee. 
+12. The Vendor does not warrant that use of the Software will be uninterrupted or error-free. The Licensee accepts that software in general is prone to bugs and flaws within an acceptable level as determined in the industry. 
+13. The Vendor warrants and represents that it is the copyright holder of the Software. The Vendor warrants and represents that granting the License to use this Software is not in violation of any other agreement, copyright or applicable statute. 
+14. The Licensee shall indemnify and hold harmless Vendor and related Open Source Provider from and against any and all claims, actions, damages, suits, liabilities, obligations, costs, fees, charges, and any other expenses whatsoever, including reasonable attorneys’ fees and costs, that may be asserted by a third party against and related Open Source Provider in connection with the breach of this Agreement, misrepresentation, negligence or misconduct of the Licensee.
+15. The term of this Agreement will begin on Acceptance and is perpetual. 
+16. This Agreement will be terminated and the License forfeited where the Licensee has failed to comply with any of the terms of this Agreement or is in breach of this Agreement. On termination of this Agreement for any reason, the Licensee will promptly destroy the Software or return the Software to the Vendor. 
+17. The Parties to this Agreement submit to the jurisdiction of the courts of the Republic of Serbia for the enforcement of this Agreement or any arbitration award or decision arising from this Agreement. This Agreement will be enforced or construed according to the laws of the Republic of Serbia.
