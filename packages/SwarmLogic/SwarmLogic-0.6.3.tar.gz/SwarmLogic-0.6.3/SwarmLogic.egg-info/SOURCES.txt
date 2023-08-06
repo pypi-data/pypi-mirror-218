@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+SwarmLogic/SwarmLogic.py
+SwarmLogic/__init__.py
+SwarmLogic.egg-info/PKG-INFO
+SwarmLogic.egg-info/SOURCES.txt
+SwarmLogic.egg-info/dependency_links.txt
+SwarmLogic.egg-info/requires.txt
+SwarmLogic.egg-info/top_level.txt
+SwarmLogic/connectors/__init__.py
+SwarmLogic/connectors/alchemy.py
+SwarmLogic/connectors/base.py
+SwarmLogic/connectors/dal.py
+SwarmLogic/connectors/json.py
+SwarmLogic/utils/__init__.py
+SwarmLogic/utils/error_handling.py
