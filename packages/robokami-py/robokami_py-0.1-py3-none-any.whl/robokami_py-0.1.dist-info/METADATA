@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: robokami-py
+Version: 0.1
+Summary: Robokami Client Python SDK
+Author: Robokami
+Requires-Dist: sseclient-py (==1.7.2)
+
