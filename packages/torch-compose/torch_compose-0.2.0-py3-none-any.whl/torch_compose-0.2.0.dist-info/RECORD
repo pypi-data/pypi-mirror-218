@@ -1,0 +1,7 @@
+torch_compose/__init__.py,sha256=cZr_m2_PwOBKdTQZv51vc5d9XONuIjxdG7PT9Z6sHoY,92
+torch_compose/demo.ipynb,sha256=OQPVta2BcsODxPmRsYi-ouJjmOkF0jyPGC-6SkZYf0k,361140
+torch_compose/module.py,sha256=KqCdJOp_0NZ-Sz0L0tIpcf4RmOLutLT_iEcz6wQNKwk,10395
+torch_compose-0.2.0.dist-info/LICENSE,sha256=hnWeH2Lau0cuk-2IC6sxLi6A9VsVHisS11rHyD4KzNY,1062
+torch_compose-0.2.0.dist-info/METADATA,sha256=Ri5YqWH0t9RtfbnI2KHbZb3DomXBP4dJ8YsF5ZnquWU,5669
+torch_compose-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+torch_compose-0.2.0.dist-info/RECORD,,
