@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: jarvis-assistant-bot
+Version: 0.2
+Summary: Personal assistant bot
+Home-page: https://github.com/UkrainianEagleOwl/tp_personal_assistant/tree/97c820e0779d54e488d5d824cce404b06bb4e654
+Author: Python Forces
+Requires-Dist: prettytable
+Requires-Dist: prompt-toolkit
+Requires-Dist: colorama
+
