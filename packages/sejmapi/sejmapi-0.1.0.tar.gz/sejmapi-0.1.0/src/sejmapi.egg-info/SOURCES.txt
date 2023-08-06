@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+src/__init__.py
+src/sejm_api.py
+src/sejmapi.egg-info/PKG-INFO
+src/sejmapi.egg-info/SOURCES.txt
+src/sejmapi.egg-info/dependency_links.txt
+src/sejmapi.egg-info/requires.txt
+src/sejmapi.egg-info/top_level.txt
+tests/test_code.py

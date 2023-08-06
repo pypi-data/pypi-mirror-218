@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: sejmapi
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/KomarJazdek/Your-First-Python-Package-on-PyPI
+Author: Michal Salamon
+Author-email: komarjazdek23@gmail.com
+License: UNKNOWN
+Description: # SejmAPI
+        Python module to work with polish goverment-run Sejm API
+        https://api.sejm.gov.pl/
+        
+        # Short overview
+        ```python
+        sejm = SejmApi(term=9) #creating SejmApi class object and selecting the term(in this case 9)
+        ```
+        View list of all MPs
+        ```python
+        sejm.get_all_MP()
+        ```
+        Get some details on the MP 
+        ```python
+        sejm.get_MP_info(leg=1) #leg is the legitimation id
+        ```
+        Get link to the MP's photo
+        ```python
+        sejm.getPhoto(leg=1)
+        ```
+        Get list of clubs
+        ```python
+        sejm.getClubs()
+        ```
+        Get info about the club
+        ```python
+        sejm.getClub_info(id='PiS') #id is the name of the club
+        ```
+        Get a link to the logo of the club
+        ```python
+        sejm.getClublogo(id='PiS')
+        ```
+        Get the list of the committees
+        ```python
+         sejm.getCommittees()
+        ```
+        Get a list of the streams from Sejm
+        ```python
+        sejm.getStreams()
+        ```
+        Get streams from today
+        ```python
+        sejm.getTodayStreams()
+        ```
+        Get info about a term
+        ```python
+        sejm.getTermInfo()
+        ```
+        Get all the prints of the term
+        ```python
+        sejm.getPrints()
+        ```
+        Get the print details
+        ```python
+        sejm.getPrint_info(nr=1) #nr is the nr. of the print
+        ```
+        Get the link to the attachment to the print
+        ```python
+        sejm.getPrint_attachment(nr=1,fileName='1.pdf')
+        ``` 
+        
+        
+        # CHANGELOG
+        
+        ## Version 0.0.1 07/10/2023
+        1. Added almost all functionalities
+        
+Keywords: API,Sejm,Government
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Text Processing
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
