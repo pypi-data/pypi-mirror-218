@@ -1,0 +1,12 @@
+wcc_timetable_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wcc_timetable_generator/__main__.py,sha256=edxfErY46OE2Acic-JKCVHv28iUBK0Co9puouStEBOU,112
+wcc_timetable_generator/algo.py,sha256=IGR2x9s5ia1Yx1ifEJnmOAi8CMeGs4jcbiLrGWMgDUE,1705
+wcc_timetable_generator/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wcc_timetable_generator/components/entry.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wcc_timetable_generator/subject_model.py,sha256=hSUzdEsBUqiZa2y8FwMPnhRmmA_F3OvnyYf0ZxxtSPA,97
+wcc_timetable_generator/timetable.css,sha256=DQTlKpskuJPSJAds2nK5lkU06z_f3vd-_073cwoQYG8,214
+wcc_timetable_generator/timetable.py,sha256=O5V6XY5Gc9cjyb59AKHatTH9Ldx6U8h4c_fImAYC3pg,1289
+wcc_timetable_generator-0.2.1.dist-info/entry_points.txt,sha256=gWQ_-W0a5vl_S2_tca6u9qzmuD6KLhUNOF0Fg_ySgCE,81
+wcc_timetable_generator-0.2.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+wcc_timetable_generator-0.2.1.dist-info/METADATA,sha256=6KL9k9wdzq_AEpXhh-J4pPVG2KiBLkDh_VoRZjFjeOs,1214
+wcc_timetable_generator-0.2.1.dist-info/RECORD,,
