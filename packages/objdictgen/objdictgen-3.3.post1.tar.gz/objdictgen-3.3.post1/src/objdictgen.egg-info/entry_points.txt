@@ -1,0 +1,4 @@
+[console_scripts]
+objdictedit = objdictgen.__main__:main_objdictedit
+objdictgen = objdictgen.__main__:main_objdictgen
+odg = objdictgen.__main__:main
