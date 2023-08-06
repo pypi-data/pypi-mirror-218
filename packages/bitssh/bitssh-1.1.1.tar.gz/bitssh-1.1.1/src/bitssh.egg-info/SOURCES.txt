@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/__main__.py
+src/core.py
+src/utils.py
+src/bitssh.egg-info/PKG-INFO
+src/bitssh.egg-info/SOURCES.txt
+src/bitssh.egg-info/dependency_links.txt
+src/bitssh.egg-info/entry_points.txt
+src/bitssh.egg-info/requires.txt
+src/bitssh.egg-info/top_level.txt
