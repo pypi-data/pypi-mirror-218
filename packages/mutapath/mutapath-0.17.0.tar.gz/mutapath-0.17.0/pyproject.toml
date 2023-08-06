@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "mutapath"
+description = "mutable pathlib"
+version = '0.0.1'
+authors = ["matfax <mat@fax.fyi>"]
+license = "lgpl-3.0"
+keywords = ["pathlib", "mutable", "path"]
+repository = "https://github.com/matfax/mutapath"
+homepage = "https://github.com/matfax/mutapath"
+documentation = "https://mutapath.readthedocs.io/en/latest/"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+singletons = "~0.2.5"
+cached-property = "~1.5.2"
+filelock = "~3.12.2"
+path = ">=14,<=16.6.0"
+
+[tool.poetry.dev-dependencies]
+green = "~3.4.3"
+coverage = "~7.2.7"
+codecov = "~2.1.13"
+mashumaro = "~3.8.1"
+bandit = "~1.7.5"
+black = "~23.7.0"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "~6.2.1"
+sphinx-rtd-theme = "~1.2.2"
+m2r2 = "~0.3.2"
+
+[build-system]
+requires = ["poetry>=1.2"]
+build-backend = "poetry.masonry.api"
