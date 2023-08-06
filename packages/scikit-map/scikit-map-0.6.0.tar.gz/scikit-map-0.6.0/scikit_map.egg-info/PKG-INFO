@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: scikit-map
+Version: 0.6.0
+Summary: scikit-learn applied to mapping and spatial prediction
+Home-page: https://github.com/scikit-map/scikit-map
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: full
+License-File: LICENSE
+
+Python module to produce maps using machine learning, reference samples and raster data.
