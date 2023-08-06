@@ -1,0 +1,8 @@
+setup.py
+SGtSNEpiPy/SGtSNEpiPy.py
+SGtSNEpiPy/__init__.py
+SGtSNEpiPy.egg-info/PKG-INFO
+SGtSNEpiPy.egg-info/SOURCES.txt
+SGtSNEpiPy.egg-info/dependency_links.txt
+SGtSNEpiPy.egg-info/requires.txt
+SGtSNEpiPy.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: SGtSNEpiPy
+Version: 1.0.5
+Summary: SGtSNEpiPy is a Python interface for the SG-t-SNE-П algorithm, a powerful tool for visualizing large, sparse, stochastic graphs.
+Author: ['Chenshuhao Qin', 'Yihua Zhong']
+Author-email: cq27@duke.edu, yz737@duke.edu,
+
+This is a Python wrapper for SG-t-SNE-П (https://github.com/fcdimitr/SGtSNEpi.jl), implemented using the JuliaCall module (https://cjdoris.github.io/PythonCall.jl/stable/juliacall) from PythonCall & JuliaCall package (https://cjdoris.github.io/PythonCall.jl). If you meet any issue, feel free to contact authors.
+Email:
+chenshuhao.qin@duke.edu
+yihua.zhong@duke.edu
