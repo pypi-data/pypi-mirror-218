@@ -1,0 +1,17 @@
+verse/core/__init__.py,sha256=EYasSRECOr4WifrO1qw2lYqh5KLeHyjWX15Xe-hxKXw,1757
+verse/core/_actions.py,sha256=DOQ5E-4GUWF4DKsqj1aXe0NYuQSyD4HCBd7NcPv6unc,3499
+verse/core/_exceptions.py,sha256=bbo67fd0OpE-sdGygVqjBp_y37Vkyij7--OwJISHwvQ,186
+verse/core/_fields.py,sha256=c_MkYN2wlIvDg9bNjH3CAkhBZAPdIoM4pRXuC1rM-p8,97
+verse/core/_functions.py,sha256=8LTsk-qfcp9_wfu3B1qgRTJ2dUX9vgSt9k0VBdBOIVI,1194
+verse/core/_helpers.py,sha256=RmwAewX6bk78SCysRbnz8s7mhYN2xzmAQWeO17WZlYs,564
+verse/core/_model.py,sha256=yl8ZLtQ_bZ_yAywEk3OQYbF5PXoyfta0qn-Mxkzexcc,463
+verse/core/_provider.py,sha256=y1XpDhDWpPmEIs9UkGTUxFFINoIDwyH_poiEx6w99zo,986
+verse/core/_resource.py,sha256=v3llBKsKxE0CnYGwr06fnMw5XhH4MQiOKJLMeGSH6Oo,891
+verse/core/_types.py,sha256=VQbaQcEcXkW62wAYTz0V3kWJOZcdPQaK1fpFUkcVHH0,12662
+verse/core/decorators.py,sha256=Yx_CHzjk0bIUQNWDWDAUC-9HfMfRb5BRE6kGtUcGd-c,431
+verse/core/py.typed,sha256=dcrsqJrcYfTX-ckLFJMTaj6mD8aDe2u0tkQG-ZYxnEg,26
+verse_core-0.0.16.dist-info/LICENSE,sha256=QaD5Kus0KuwyGE6H7sF2OB0DF2MK81pFvuL3C1HuhNA,1088
+verse_core-0.0.16.dist-info/METADATA,sha256=WSpiYiK3nBbItHvE0Tpbj8DTHstqGIbXfGIBcyaVJJs,594
+verse_core-0.0.16.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+verse_core-0.0.16.dist-info/top_level.txt,sha256=Mh4yj7O2XSagNY0dTt_rI4odTVWUlouPTANw7OCLpV0,6
+verse_core-0.0.16.dist-info/RECORD,,
