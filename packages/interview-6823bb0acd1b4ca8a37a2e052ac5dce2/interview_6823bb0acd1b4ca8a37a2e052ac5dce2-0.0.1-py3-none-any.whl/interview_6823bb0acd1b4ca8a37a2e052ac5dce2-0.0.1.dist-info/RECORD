@@ -1,0 +1,10 @@
+lotr_sdk/__init__.py,sha256=3A2QnuRGrTDKmElp3WwjtQHwt47c9f2EwWraz7SjK5M,200
+lotr_sdk/client.py,sha256=nxjEgcOoU4AHX_HDGvkF3424UCsdZWNJ891iVX6dDpo,3439
+lotr_sdk/resources.py,sha256=sgj7xHd9woDGSgolW6uGU0H1I36KMztwFDxp2EBGoVM,2045
+lotr_sdk/utils.py,sha256=_A7F2IA-pmEKKrOSZAGrGRpvKfKUy8ZCanwHukLkUc8,261
+lotr_sdk/version.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+interview_6823bb0acd1b4ca8a37a2e052ac5dce2-0.0.1.dist-info/LICENSE.txt,sha256=srfwdD-IU7QFrDhiGY82cj9-lQvTbrGvaZFzVm59nTA,1066
+interview_6823bb0acd1b4ca8a37a2e052ac5dce2-0.0.1.dist-info/METADATA,sha256=EuD9yIJSPwUXq5R7s0DVCkhQK3Ww64-jzlXiaXrbt8g,890
+interview_6823bb0acd1b4ca8a37a2e052ac5dce2-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+interview_6823bb0acd1b4ca8a37a2e052ac5dce2-0.0.1.dist-info/top_level.txt,sha256=R20VBjrla6oNQDSMiu2gCEK8IpnuRC3Vtx_07u2ULI4,9
+interview_6823bb0acd1b4ca8a37a2e052ac5dce2-0.0.1.dist-info/RECORD,,
