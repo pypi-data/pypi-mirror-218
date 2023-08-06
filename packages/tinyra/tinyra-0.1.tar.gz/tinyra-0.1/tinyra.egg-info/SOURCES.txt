@@ -1,0 +1,8 @@
+setup.py
+tinyra/__init__.py
+tinyra/main.py
+tinyra.egg-info/PKG-INFO
+tinyra.egg-info/SOURCES.txt
+tinyra.egg-info/dependency_links.txt
+tinyra.egg-info/entry_points.txt
+tinyra.egg-info/top_level.txt
