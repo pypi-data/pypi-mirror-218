@@ -1,0 +1,10 @@
+mozdevice/__init__.py,sha256=ChIcP6AfyX9vhnZ5LTEK6xOODmLqsbiwJf_NGFkkYfE,6920
+mozdevice/adb.py,sha256=kMewAWb7jnwB97aFM1pO4506tsnNfEc0oahzeKaXt5k,182366
+mozdevice/adb_android.py,sha256=PUyqjef9CjiKelgV7216jfCG9ItZxOwAPxmdFXXxxHA,376
+mozdevice/remote_process_monitor.py,sha256=pNFnSmxHZoK0-1xxnpMfyXr4DUf-RTNpMovlUlAH_Bg,10343
+mozdevice/version_codes.py,sha256=smR7r3RladxSpA8umh8esPW3G43PoFCThhRpJ-96T5Y,1541
+mozdevice-4.1.1.dist-info/METADATA,sha256=yGEkpHcxOl22cjJFSfhiBe4EHJwb8JlIyErqcvOh-is,469
+mozdevice-4.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+mozdevice-4.1.1.dist-info/entry_points.txt,sha256=FjKvgvGyIyqokCxiGIVCvaGmkWcXwEXZ8W6zk1mtvZQ,37
+mozdevice-4.1.1.dist-info/top_level.txt,sha256=2Y-kotdJ6rNUH2k_nTfwI3EXGd6DuErDWjaMijZgGys,10
+mozdevice-4.1.1.dist-info/RECORD,,
