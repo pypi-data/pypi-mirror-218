@@ -1,0 +1,11 @@
+__pycache__/
+.coverage
+.coverage.*
+.ipynb_checkpoints
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv
+
+dist/
+src/odyssey_momentum/_version.py
