@@ -1,0 +1,6 @@
+numpy
+Gymnasium
+typer[all]
+PyYAML==6.0
+pygame
+matplotlib
