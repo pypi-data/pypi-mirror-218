@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: docs2txt
+Version: 0.1.4
+Summary: A simple program to download documentation from docs.rs and convert it into a plaintext file.
+Home-page: https://github.com/ehutzle/docs2txt
+Author: Eric Richard
+Author-email: ehutzle@gmail.com
+License: MIT license
+Keywords: docs2txt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=============
+rs-docs-2-txt
+=============
+
+
+.. image:: https://img.shields.io/pypi/v/docs2txt.svg
+        :target: https://pypi.python.org/pypi/docs2txt
+
+.. image:: https://img.shields.io/travis/ehutzle/docs2txt.svg
+        :target: https://travis-ci.com/ehutzle/docs2txt
+
+.. image:: https://readthedocs.org/projects/docs2txt/badge/?version=latest
+        :target: https://docs2txt.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+A simple program to download documentation from docs.rs and convert it into a plaintext file.
+
+
+* Free software: MIT license
+* Documentation: https://docs2txt.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2023-07-09)
+------------------
+
+* First release on PyPI.
