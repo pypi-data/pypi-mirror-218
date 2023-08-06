@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+EDEMDSPTFEB23.egg-info/PKG-INFO
+EDEMDSPTFEB23.egg-info/SOURCES.txt
+EDEMDSPTFEB23.egg-info/dependency_links.txt
+EDEMDSPTFEB23.egg-info/requires.txt
+EDEMDSPTFEB23.egg-info/top_level.txt
+EDEMDSPTFEB23/utils/__init__.py
+EDEMDSPTFEB23/utils/convertir.py
+EDEMDSPTFEB23/utils/predictor.py
+edemdsptfeb23.egg-info/PKG-INFO
+edemdsptfeb23.egg-info/SOURCES.txt
+edemdsptfeb23.egg-info/dependency_links.txt
+edemdsptfeb23.egg-info/requires.txt
+edemdsptfeb23.egg-info/top_level.txt
