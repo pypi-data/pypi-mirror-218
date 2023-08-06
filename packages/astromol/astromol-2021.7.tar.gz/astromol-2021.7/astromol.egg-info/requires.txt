@@ -1,0 +1,13 @@
+bibtexparser
+numpy
+rdkit-pypi
+matplotlib
+colour
+seaborn
+scipy
+datetime
+python-pptx
+periodictable
+
+[dev]
+twine>=4.0.2
