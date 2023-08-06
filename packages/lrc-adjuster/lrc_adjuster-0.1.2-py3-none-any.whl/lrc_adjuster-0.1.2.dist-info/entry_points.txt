@@ -1,0 +1,3 @@
+[console_scripts]
+lrc-adjuster=lrc_adjuster.adjuster:main
+
