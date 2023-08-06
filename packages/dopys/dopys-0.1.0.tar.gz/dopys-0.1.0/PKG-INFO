@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dopys
+Version: 0.1.0
+Summary: Dopys is a note taking app
+License: GPLv3
+Author: Max Ligus
+Author-email: max.ligus@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Dopys
+
+Package that provides core functiona for Dopys note taking app
+
+
+# License
+
+[GNU General Public License v3.0 or later](https://spdx.org/licenses/GPL-3.0-or-later.html)
+
