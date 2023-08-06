@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nyria-eldritha
+Version: 1.1.0
+Summary: A database handling library for python
+Home-page: https://gitlab.redtronics.de/nyria/libs/zenith
+Author: Redtronics
+License: All rights reserved.
+Keywords: python,databasemanagement,tool,eldritha,nyria
+License-File: LICENSE
+
+A database handling library for python
