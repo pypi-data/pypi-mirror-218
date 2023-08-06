@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: EmailXtract
+Version: 1.0.0
+Summary: EmailXtract is a Python library that allows you to scrape email addresses from web pages
+Author: Pritam Dash
+Author-email: pritamdash1997@gmail.com.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+EmailXtract is a Python library that allows you to scrape email addresses from web pages within a given domain. It provides a simple and convenient way to extract email addresses from websites, making it useful for tasks such as email list building, contact information gathering, and data analysis.
