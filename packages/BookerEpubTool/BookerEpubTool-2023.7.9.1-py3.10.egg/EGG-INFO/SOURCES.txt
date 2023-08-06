@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+BookerEpubTool/__init__.py
+BookerEpubTool/__main__.py
+BookerEpubTool/comp.py
+BookerEpubTool/fmt.py
+BookerEpubTool/toc.py
+BookerEpubTool/util.py
+BookerEpubTool.egg-info/PKG-INFO
+BookerEpubTool.egg-info/SOURCES.txt
+BookerEpubTool.egg-info/dependency_links.txt
+BookerEpubTool.egg-info/entry_points.txt
+BookerEpubTool.egg-info/requires.txt
+BookerEpubTool.egg-info/top_level.txt
