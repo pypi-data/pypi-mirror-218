@@ -1,0 +1,2 @@
+[console_scripts]
+sgpt = gpttrace:cli
