@@ -1,0 +1,10 @@
+nibarchive/__init__.py,sha256=GvK-RR7_SgU93J7woIQO5wh7ZKiYZqvMNzRcOefA5hk,44
+nibarchive/__main__.py,sha256=BPsEhFS6fWzBmwaJnSSqdrStp1hmQx17ZXG3ir5XZPQ,10724
+nibarchive/model.py,sha256=rRmdcY1pEuXoJhcUTP5uY3DZcugQo9ZVQ4fCAaBHe94,8182
+nibarchive/parse.py,sha256=cybBGuktLNjQn3I3tPUV5yGyFcMK0WN9n2kyAlGx5n0,10030
+nibarchive/writer.py,sha256=18QNx91Rz_rVJPLfKa0ZclaGOBMOHeCrYxJHj5-12DE,4772
+nibarchive-1.1.0.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+nibarchive-1.1.0.dist-info/METADATA,sha256=Ddw04ihSpUMKXmiHb1RqMyk-87y1cCuW4vx4ME0ELVo,4013
+nibarchive-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nibarchive-1.1.0.dist-info/top_level.txt,sha256=S41GqTAb_5kAruufJXBAQXSOYZXZUAwT_CglAXsq3ic,11
+nibarchive-1.1.0.dist-info/RECORD,,
