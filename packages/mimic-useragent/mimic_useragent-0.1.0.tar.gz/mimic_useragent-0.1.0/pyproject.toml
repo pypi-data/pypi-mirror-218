@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mimic_useragent"
+version = "0.1.0"
+description = "Simple user-agent generator."
+authors = ["kurotom <55354389+kurotom@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mimic_useragent"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
