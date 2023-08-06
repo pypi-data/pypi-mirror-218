@@ -1,0 +1,10 @@
+indy_credx/__init__.py,sha256=oAfWXQ4htxRdtI4pN3tltPza80-0wYgRQHIsVnSse40,1338
+indy_credx/bindings.py,sha256=1qTEIclOHcz-XDxtXGMSilliVW5HL8AWv7DSp0hP7E0,25084
+indy_credx/error.py,sha256=R0nQ63dvqXEBrq0XonQfngXEULfnOHHLk6pfnq2xjBI,517
+indy_credx/indy_credx.dll,sha256=0yjifnhF8dF4FQ8PlXxy0Uyz8xz3OzH9k04VXRKSjVI,4746240
+indy_credx/types.py,sha256=15uskEClKxk4xUDuAEQRKwjqhQjmH0c3dPI9CmFKxEE,25031
+indy_credx/version.py,sha256=hoPzpL0uEajQX1HExQe6-ASKOM5TLLnICzcPKfNMfaI,68
+indy_credx-0.4.0.dist-info/METADATA,sha256=Qd_1Yhu06rm-gPfOtTkZJ6jTvYv4TpBHxtacziom5fQ,1752
+indy_credx-0.4.0.dist-info/WHEEL,sha256=bC8mYJUOJCh5KnyEeT6W_BCQYi3v39D3z64Vy_sFvVg,98
+indy_credx-0.4.0.dist-info/top_level.txt,sha256=BqAbqhgXI2d_ryo2RdaYpaJF0pkw-4kEBceW40wUXIc,11
+indy_credx-0.4.0.dist-info/RECORD,,
