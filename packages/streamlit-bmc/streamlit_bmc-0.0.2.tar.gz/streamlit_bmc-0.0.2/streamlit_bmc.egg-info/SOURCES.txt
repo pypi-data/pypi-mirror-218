@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_bmc/__init__.py
+streamlit_bmc.egg-info/PKG-INFO
+streamlit_bmc.egg-info/SOURCES.txt
+streamlit_bmc.egg-info/dependency_links.txt
+streamlit_bmc.egg-info/requires.txt
+streamlit_bmc.egg-info/top_level.txt
+streamlit_bmc/frontend/public/.DS_Store
+streamlit_bmc/frontend/public/index.html
+streamlit_bmc/frontend/public/style.css
+streamlit_bmc/frontend/public/build/bundle.css
+streamlit_bmc/frontend/public/build/bundle.css.map
+streamlit_bmc/frontend/public/build/bundle.js
+streamlit_bmc/frontend/public/build/bundle.js.map
