@@ -1,0 +1,11 @@
+flitenv/__init__.py,sha256=RUsmDdIK2X5kAjM0TMkOSskvyH2Ga7DuAOf4LzJc0dc,117
+flitenv/__main__.py,sha256=_P0ist7mEF5QIMo07tV-vKuT_y2LW5HJ4HyOFMz0XJI,44
+flitenv/_cli.py,sha256=eOiWMkfII5qQtY69Jy7YcAjcCVsHE6tEpgg5KMJRajg,2628
+flitenv/_constants.py,sha256=S9EsdA9fivoDJYqGxvhA0FKJzEq_l6heJsC6e6V_sw0,129
+flitenv/_deps_manager.py,sha256=ex-WojzTi3-SLavyXzvDSyh6XAM393Iy0WSNpP3hLjw,3321
+flitenv/_venv.py,sha256=r2rPwnyuHZi2no_Dqe0H6uupDcmkpNA47Ivjmh4kP8c,1463
+flitenv-0.3.4.dist-info/entry_points.txt,sha256=-_XVaBiOSo9GYux0t7VUBv8e4aY7p4GhhcFqFJ1_VRE,46
+flitenv-0.3.4.dist-info/LICENSE,sha256=1H9qvuiJi571tvL2dRTkwzy53sr6KTbSlPurg0x8Y4I,1048
+flitenv-0.3.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+flitenv-0.3.4.dist-info/METADATA,sha256=yjXLm9YYq08nfn8L9ceFbPUCEeJdpPiq7gEKWXOeltU,4306
+flitenv-0.3.4.dist-info/RECORD,,
