@@ -1,0 +1,12 @@
+click
+joblib
+numpy
+scikit-learn<2,>=1
+matplotlib
+onnxconverter-common
+
+[dev]
+pytest
+pytest-benchmark[histogram]
+onnxruntime
+scikit-learn>=1.3
