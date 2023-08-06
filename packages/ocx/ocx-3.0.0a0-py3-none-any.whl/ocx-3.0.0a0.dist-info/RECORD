@@ -1,0 +1,14 @@
+ocx/.xsdata.xml,sha256=858euKRchvHsPAtZH5tetZPOIUBHyWleNSyCz05xu8Y,2130
+ocx/__init__.py,sha256=gJf3-TKoMazsEotgfJojG59cSMiFzUFaeB2AB6z-LW0,155
+ocx/ocx_286/__init__.py,sha256=hHcQP4o__qhLM_kHViN8G3dnvcphQLOYLR33D4m-umo,21083
+ocx/ocx_286/ocx_schema.py,sha256=_NNAwt7ZGtYuYGawbQrr5SPxO8aazVKK7xfUWxDc6NE,317549
+ocx/ocx_286/unitsml_schema_lite_0_9_18.py,sha256=BO4DaGrX994vLyiWFJMLiemhF8y6ADXrknXnc3SSwF0,27095
+ocx/ocx_286/xml.py,sha256=gKhNxyr9Ii_aihhkoBAgC53fu3_DRP_FLOYofQtdLkc,161
+ocx/ocx_300a0/__init__.py,sha256=K7ArYyn7yBpjY1nHB3htVuaxJ8ZzUEkktB7MsqOnigw,21092
+ocx/ocx_300a0/ocx_schema.py,sha256=ISyoKt82Q9EdpMV5b62an8YNL9zrIqRjm4Zu5Cu5Wm4,339015
+ocx/ocx_300a0/unitsml_schema_lite_0_9_18.py,sha256=pr2RRaZV0VZdI4cS8xOMP-ic4ca8Q5WkmoTMDoBgE3M,27057
+ocx/ocx_300a0/xml.py,sha256=VH5OZ3lFP4oD4ckTT-X6yVyr9eZHhl3atbl7RNjsUss,125
+ocx-3.0.0a0.dist-info/LICENSE,sha256=vlxyPkkwqcSBgPBVXZCSnzvu67ZwQXoPAhpGhE25WYk,11560
+ocx-3.0.0a0.dist-info/METADATA,sha256=snq7yW50onDWgqg3p5bbR6qTlmZy6qVL3DaKP3OYjT4,5299
+ocx-3.0.0a0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ocx-3.0.0a0.dist-info/RECORD,,
