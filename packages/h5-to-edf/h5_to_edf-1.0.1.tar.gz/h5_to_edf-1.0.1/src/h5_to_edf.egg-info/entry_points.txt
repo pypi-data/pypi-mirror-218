@@ -1,0 +1,2 @@
+[console_scripts]
+h52edf = h5_to_edf.converter:convert_to_edf

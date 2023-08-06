@@ -1,0 +1,11 @@
+README.rst
+pyproject.toml
+src/h5_to_edf/__init__.py
+src/h5_to_edf/converter.py
+src/h5_to_edf/converter_oven.py
+src/h5_to_edf.egg-info/PKG-INFO
+src/h5_to_edf.egg-info/SOURCES.txt
+src/h5_to_edf.egg-info/dependency_links.txt
+src/h5_to_edf.egg-info/entry_points.txt
+src/h5_to_edf.egg-info/requires.txt
+src/h5_to_edf.egg-info/top_level.txt
