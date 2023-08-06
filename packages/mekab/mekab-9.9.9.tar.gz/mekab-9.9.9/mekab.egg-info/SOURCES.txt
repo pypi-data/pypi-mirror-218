@@ -1,0 +1,7 @@
+README.md
+setup.py
+mekab.egg-info/PKG-INFO
+mekab.egg-info/SOURCES.txt
+mekab.egg-info/dependency_links.txt
+mekab.egg-info/requires.txt
+mekab.egg-info/top_level.txt
