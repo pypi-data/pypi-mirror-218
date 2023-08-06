@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ttb/__init__.py
+ttb.egg-info/PKG-INFO
+ttb.egg-info/SOURCES.txt
+ttb.egg-info/dependency_links.txt
+ttb.egg-info/not-zip-safe
+ttb.egg-info/top_level.txt

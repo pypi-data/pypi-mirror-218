@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ttb
+Version: 0.1
+Summary: Библиотека со всякимим полезностями
+Author: Neso Hiroshi
+Author-email: neso_hoshi_official@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# Библиотека со всякими полезностями
+
+Здесь есть функции:
+loading(delay) - Прогрессбар, вместо delay ввести задержку
+test(text) - Можно оставить аргумент пустым или ввести текст
+collatz(number) - Теория 3N + 1, вместо number ввести число
