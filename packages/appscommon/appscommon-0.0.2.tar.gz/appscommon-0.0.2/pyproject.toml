@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appscommon"
+version = "0.0.2"
+authors = [
+  { name="Danush Kumar Baskarraj", email="danushkumar.baskar@gmail.com" },
+]
+dependencies = [
+    "Flask==2.0.1",
+    "pydantic==1.10.3"
+]
+description = "Common utility package."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report html --cov-report term-missing --cov-fail-under 100"
+
+[tool.coverage.run]
+source = ["src"]
+
+[project.urls]
+"Homepage" = "https://github.com/danushk97/componenet-appscommon"
+"Bug Tracker" = "https://github.com/danushk97/componenet-appscommon/issues"
