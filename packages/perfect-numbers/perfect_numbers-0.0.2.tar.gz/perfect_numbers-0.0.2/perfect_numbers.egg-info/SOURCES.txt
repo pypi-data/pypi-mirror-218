@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+perfect_numbers/__init__.py
+perfect_numbers/perfect_num.py
+perfect_numbers.egg-info/PKG-INFO
+perfect_numbers.egg-info/SOURCES.txt
+perfect_numbers.egg-info/dependency_links.txt
+perfect_numbers.egg-info/top_level.txt
