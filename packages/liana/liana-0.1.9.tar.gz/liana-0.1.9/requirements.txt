@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+statsmodels
+anndata
+scanpy
+plotnine
+tqdm
+pytest
+setuptools
+cell2cell
+decoupler
+mofax
+mudata
