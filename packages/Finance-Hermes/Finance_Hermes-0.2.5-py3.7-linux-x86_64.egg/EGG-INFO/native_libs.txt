@@ -1,0 +1,7 @@
+hermes/factors/base.cpython-37m-x86_64-linux-gnu.so
+hermes/kdutils/base.cpython-37m-x86_64-linux-gnu.so
+hermes/kdutils/create_id.cpython-37m-x86_64-linux-gnu.so
+hermes/kdutils/lazy.cpython-37m-x86_64-linux-gnu.so
+hermes/kdutils/core/fixes.cpython-37m-x86_64-linux-gnu.so
+hermes/kdutils/core/helper.cpython-37m-x86_64-linux-gnu.so
+hermes/lzador/calculater.cpython-37m-x86_64-linux-gnu.so
