@@ -1,0 +1,5 @@
+aiofile
+cssselect
+aiohttp
+asyncio
+lxml
