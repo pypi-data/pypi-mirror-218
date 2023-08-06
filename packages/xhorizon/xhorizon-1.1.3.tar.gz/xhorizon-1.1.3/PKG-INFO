@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: xhorizon
+Version: 1.1.3
+Summary: A Python package for explicitly computing Penrose diagrams in general relativity.
+Home-page: https://github.com/xh-diagrams/xhorizon
+Author: Joseph C Schindler
+Author-email: jcschindler01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+xhorizon
+================================
+
+
+*xhorizon*: Explicitly computing Penrose diagrams in general relativity.
+
+A Python package.
+
+
+| **I finally gave the package a makeover and updated to Python 3!**
+
+| **The new documentation is still under construction...**
+| **but there is now an ever expanding tutorial!**
+
+
+
+Links
+-----
+   - `GitHub <https://github.com/xh-diagrams/xhorizon>`_.
+   - `Documentation <https://xhorizon.readthedocs.io/>`_.
+   - `PyPi <https://pypi.org/project/xhorizon/>`_.
+
+
+Background Theory
+-----------------
+JC Schindler, A Aguirre. 
+*Algorithms for the explicit computation of Penrose diagrams.*
+`Class Quantum Grav 35 105019 <https://doi.org/10.1088/1361-6382/aabce2>`_.
+(2018).
+`arxiv:1802.02263 <https://arxiv.org/abs/1802.02263>`_.
+
+
+Getting Started
+---------------
+To install::
+
+   pip install xhorizon
+
+To start using the tools, begin with the `tutorial <https://xhorizon.readthedocs.io/en/stable/TUTORIAL/00-overview.html>`_ and keep an eye out for `example scripts <https://github.com/xh-diagrams/xhorizon/tree/main/scripts/examples>`_.
+
