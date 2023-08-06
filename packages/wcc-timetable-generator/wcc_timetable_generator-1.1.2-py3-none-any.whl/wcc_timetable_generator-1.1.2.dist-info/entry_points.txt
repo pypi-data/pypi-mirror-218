@@ -1,0 +1,3 @@
+[console_scripts]
+wcc-timetable-generator=wcc_timetable_generator.__main__:main
+
