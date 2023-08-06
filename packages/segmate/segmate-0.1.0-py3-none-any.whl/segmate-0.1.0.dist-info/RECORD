@@ -1,0 +1,9 @@
+segmate/__init__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+segmate/dataset.py,sha256=3rBSqSSiZoczlYnDGk6wUivwgZZvnddUYkfj24bapWE,2618
+segmate/object_detector.py,sha256=stNEoSPTgS_islJSi1QwuvVtbQ75Q0LCEhAJ4Tv5_JE,3120
+segmate/segmate.py,sha256=5THuR6NJIr8wPs5Awo8MCLSwkTm2oE5bxCJ7Q6DSQYI,16207
+segmate/utils.py,sha256=6g7IF8ogDjTpDaPC_NQhn4Rv4nA5abO5TRz-Rw-tlYE,9814
+segmate-0.1.0.dist-info/METADATA,sha256=cbkUY6fDBaMGiQFviKZKncqu_c7G7r_F1Lk5R5uQloI,3242
+segmate-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+segmate-0.1.0.dist-info/licenses/LICENSE,sha256=ZQL6jKixCKDbgdyrawyHMuPjAT8iBpIVyXDZ6_xgFgs,1508
+segmate-0.1.0.dist-info/RECORD,,
