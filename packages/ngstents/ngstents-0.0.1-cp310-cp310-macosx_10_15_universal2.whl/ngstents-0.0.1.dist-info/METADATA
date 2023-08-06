@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ngstents
+Version: 0.0.1
+Summary: Spacetime Tents in NGSolve
+Home-page: https://https://github.com/jayggg/ngstents
+Author: Jay Gopalakrishnan
+Author-email: gjay@pdx.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+
+This `ngstents` package is a c++ extension of the
+[NGSolve](https://ngsolve.org) finite element library, designed to ease
+experimentation with solvers based on spacetime tents for hyperbolic
+systems. The python front-end allows new equations (linear or
+nonlinear conservation laws) and schemes to be easily defined using
+their fluxes and numerical fluxes in a few lines of code.
+
