@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Check if the subcommand is provided as an argument
+if [ $# -eq 0 ]; then
+  echo "Please provide a subcommand."
+  exit 1
+fi
+
+subcommand="$1"
+
+# Check if the subcommand is "init"
+if [ "$subcommand" = "init" ]; then
+  # Check if the project name is provided as an argument
+  if [ $# -lt 2 ]; then
+    echo "Please provide a name for the project."
+    exit 1
+  fi
+
+  # Extract the project name from the argument
+  project_name="$2"
+
+  # Create the project directory
+  echo "Creating project directory '$project_name'..."
+  mkdir "$project_name"
+  cd "$project_name"
+
+  # Create the project structure
+  echo "Creating project structure..."
+  mkdir "$project_name"
+  touch "$project_name/__init__.py" "$project_name/__main__.py" "$project_name/$project_name.py" "$project_name/tests.py"
+  touch "swiftly.config.py" "requirements.txt" ".gitignore"
+
+  # Add project name to swiftly.config.py
+  echo "PROJECT_NAME = '$project_name'" > "swiftly.config.py"
+
+  # Create and activate the virtual environment
+  venv_name="venv$project_name"
+  echo "Creating and activating virtual environment '$venv_name'..."
+  python3 -m venv "$venv_name"
+  source "$venv_name/bin/activate"
+
+  # Add virtual environment directory to .gitignore
+  echo "$venv_name/" >> ".gitignore"
+
+  # Provide some information
+  echo "Project '$project_name' is initialized."
+  echo "Virtual environment '$venv_name' is activated."
+  echo "To deactivate the virtual environment, use the command 'deactivate'."
+else
+  echo "Command '$subcommand' not found. Please use 'init' subcommand."
+  exit 1
+fi
