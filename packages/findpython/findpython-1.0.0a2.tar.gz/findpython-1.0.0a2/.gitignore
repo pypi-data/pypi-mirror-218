@@ -1,0 +1,11 @@
+.pdm-python
+*.py[cod]
+__pycache__/
+venv/
+.tox/
+.vscode/
+/build/
+/dist/
+*.egg-info/
+/target/
+/python/findpython/findpython.*
