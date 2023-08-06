@@ -1,0 +1,2 @@
+[console_scripts]
+ncm-clp-dl = ncm_clp_dl.__main__:main

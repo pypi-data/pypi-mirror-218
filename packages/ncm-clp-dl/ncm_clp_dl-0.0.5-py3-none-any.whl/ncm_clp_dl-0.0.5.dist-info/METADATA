@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ncm-clp-dl
+Version: 0.0.5
+Summary: 监视剪切板下载网易云音乐
+Home-page: https://github.com/luoyeah/ncm-clp-dl
+Author: luoyeah
+Author-email: dao696@foxmail.com
+Maintainer: 
+Maintainer-email: 
+License: MIT license
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+License-File: LICENSE
+Requires-Dist: pyncm (==1.6.8.9.1)
+Requires-Dist: pyperclip (==1.8.2)
+
