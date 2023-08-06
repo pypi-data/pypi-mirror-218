@@ -1,0 +1,10 @@
+anyconfig
+cbor
+
+[devel]
+coveralls
+flake8
+mock
+nose
+pylint
+pycodestyle
