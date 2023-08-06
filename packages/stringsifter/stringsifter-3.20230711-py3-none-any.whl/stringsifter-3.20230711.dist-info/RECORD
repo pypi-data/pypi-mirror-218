@@ -1,0 +1,17 @@
+stringsifter/flarestrings.py,sha256=RLZTRKRF2k81fgpcEFy-CwZgYLW6LBsmn3hu7uOy2FM,1640
+stringsifter/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stringsifter/lib/constants.json,sha256=yjFBLD6kgzlcD7KnPzhftZ6mBwmUKnOJrK4iar4F5U8,1153393
+stringsifter/lib/lid.176.ftz,sha256=jzRyz-hzintgmejpmcPL-uDc0VaWqsfXc4qAOdtgPoM,938013
+stringsifter/lib/markov.pkl,sha256=NUWz3h4vC9IpyP2NgPtHHVHTR85W8uhbLZD8ZjR1WKU,53353
+stringsifter/lib/stats.py,sha256=theLw94t7PUfLeP-tuGiFVGSHvCk2KE6Oa49YsIfCwo,1158
+stringsifter/lib/util.py,sha256=uGAcWlw3ErR1_gGJJgW8oTrRyVVL02TM9aXEte2vQfc,431
+stringsifter/model/featurizer.pkl,sha256=Z2BtvT1k7GW5Vx_svrqQ5Y-7q1NlF4IwspvCO_4mC6A,312560
+stringsifter/model/ranker.pkl,sha256=cWEgBsQGIgIQUALXBWE7k5Fd8WvLbwGisHcqJ6xZ7gE,498381
+stringsifter/preprocess.py,sha256=XqTzo7PcMVbVyIHdYI1Ug0FE90tITIi2hUbJsUUBzwQ,28682
+stringsifter/rank_strings.py,sha256=R8FDBOU0bWF5xxZRWAO2sQF6emTuJNyi960dYcO-g-g,5823
+stringsifter/version.py,sha256=rn9pC-T4NVIFiMCXj7e1vnhN_JVDsHF2UD-YpRSpuBU,27
+stringsifter-3.20230711.dist-info/LICENSE,sha256=XF-ytAP7a9GmJF-epnN1irQ4B6TZZw64bv50anaKlrI,11368
+stringsifter-3.20230711.dist-info/METADATA,sha256=U5jk0GaHKqInDzWIesrgi0PUkvg48fdGsqNRbmPk9Us,8432
+stringsifter-3.20230711.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+stringsifter-3.20230711.dist-info/entry_points.txt,sha256=mqpbOx7VUhjFaiwupWT5VLKZil5d0p7Iq9nMseikU0I,128
+stringsifter-3.20230711.dist-info/RECORD,,
