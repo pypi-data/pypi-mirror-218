@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test.py
+trumpy/__init__.py
+trumpy/lib.py
+trumpy.egg-info/PKG-INFO
+trumpy.egg-info/SOURCES.txt
+trumpy.egg-info/dependency_links.txt
+trumpy.egg-info/requires.txt
+trumpy.egg-info/top_level.txt
