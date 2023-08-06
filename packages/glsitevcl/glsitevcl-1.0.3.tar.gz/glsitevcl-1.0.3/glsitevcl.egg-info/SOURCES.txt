@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+glsitevcl/__init__.py
+glsitevcl/__version__.py
+glsitevcl.egg-info/PKG-INFO
+glsitevcl.egg-info/SOURCES.txt
+glsitevcl.egg-info/dependency_links.txt
+glsitevcl.egg-info/top_level.txt
+glsitevcl/Win32/glsitevcl.pyd
+glsitevcl/Win64/glsitevcl.pyd
