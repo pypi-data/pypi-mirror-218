@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: hbmep
+Version: 0.0.9
+Summary: Package for hierarchical Bayesian modeling of Motor Evoked Potential (MEP) size
+Author-email: "Vishweshwar Tyagi, James R. McIntosh" <vt2353@cumc.columbia.edu>
+Project-URL: Homepage, https://github.com/hbmep/hbmep
+Project-URL: Bug Tracker, https://github.com/hbmep/hbmep/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: pandas (==2.0.2)
+Requires-Dist: fastparquet (==2023.2.0)
+Requires-Dist: scikit-learn (==1.2.1)
+Requires-Dist: jax[cpu] (==0.4.11)
+Requires-Dist: flax (==0.6.11)
+Requires-Dist: numpyro[cpu] (==0.12.1)
+Requires-Dist: h5py (==3.8.0)
+Requires-Dist: mat73 (==0.60)
+Requires-Dist: arviz (==0.15.1)
+Requires-Dist: graphviz (==0.20.1)
+Requires-Dist: matplotlib (==3.7.0)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: jupyter (==1.0.0)
+
+# hbmep
+
+## Setup Instructions
+
+Requires Python >=3.11
+
+Under development ...
