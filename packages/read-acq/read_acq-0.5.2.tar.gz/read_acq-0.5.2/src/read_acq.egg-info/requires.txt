@@ -1,0 +1,12 @@
+click
+numpy
+scipy
+tqdm
+
+[dev]
+edges-io
+pre-commit
+pytest>=5
+
+[h5]
+edges-io
