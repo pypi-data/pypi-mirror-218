@@ -1,0 +1,14 @@
+scrapers/__init__.py,sha256=yogZ-nogOApOkG-47PnhW-avNQcjkWmylnS-OyfLp04,607
+scrapers/base_feed_scraper.py,sha256=nx31U-JS6c2YgXYqpdphZS71zgicWO7abcMehD3gZJQ,2965
+scrapers/base_parser.py,sha256=ijU9XQL98OKApuNVscI5igfs1QkVot9O9lt6txhirQQ,298
+scrapers/config.toml,sha256=stILJGWlfL51wsF9DdsE74yhshQTVp7mYfQWGG2ZzTM,249
+scrapers/malawi24.py,sha256=eOUZkla0zm2GJByo6nPIcMAZoGLbQ4rPQHkZl7bZm60,155
+scrapers/malawi_voice.py,sha256=oH1ZqSF6-pGT_Nqn9UEczXX9Cu4nxmopU_Fsw5TZzX8,162
+scrapers/maravi_post.py,sha256=jtxF0hAA1Kt6KwvtxIJIspygi8MTEyv42q_eLnq3Xxg,160
+scrapers/mwnation.py,sha256=JxNIw5kEA8x8v6vGvNdazigTza3kLyLTaqkOVRYZIC0,155
+scrapers/pij.py,sha256=eN1NfddHUbdMXVjPQXHH8hSUT3x29CRXZ3cmhGqdcv0,145
+malawi_news_scraper-1.2.0.dist-info/LICENSE,sha256=ahS1ORX4IWK10EagbPoXbgm9uPLKXo8ZkZrT0j6l8cg,1069
+malawi_news_scraper-1.2.0.dist-info/METADATA,sha256=TtO4lTALYSrHr3vhkDtfyzFvSuJRiHwbjHUPPQ7CaII,2128
+malawi_news_scraper-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+malawi_news_scraper-1.2.0.dist-info/top_level.txt,sha256=9XY1spTtsc95uOkqBbn0s9JZHwS1nfRorLtzo-4dtIM,9
+malawi_news_scraper-1.2.0.dist-info/RECORD,,
