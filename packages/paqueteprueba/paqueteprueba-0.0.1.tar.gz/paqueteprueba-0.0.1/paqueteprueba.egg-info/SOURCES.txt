@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+paqueteprueba/__init__.py
+paqueteprueba/prueba.py
+paqueteprueba.egg-info/PKG-INFO
+paqueteprueba.egg-info/SOURCES.txt
+paqueteprueba.egg-info/dependency_links.txt
+paqueteprueba.egg-info/top_level.txt
