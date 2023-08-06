@@ -1,0 +1,12 @@
+*.pyc
+.idea
+.vscode
+venv
+build
+dist
+*.egg-info
+.tox
+temp
+doc/sphinx_source/_build
+tests/.pytest_cache
+tests/_trial_temp
