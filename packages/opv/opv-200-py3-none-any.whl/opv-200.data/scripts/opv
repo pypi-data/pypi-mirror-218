@@ -1,0 +1,218 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"clean namespace"
+
+
+__author__ = "Bart Thate <programmingobject@gmail.com>"
+
+
+# IMPORTS
+
+
+import os
+import queue
+import sys
+import threading
+
+
+from opv.objects import Object, Persist, files, find, prt, write
+
+
+# DEFINES
+
+
+Cfg = Object()
+Persist.workdir = os.path.expanduser("~/.opr")
+
+
+# CLASSES
+
+
+class Event(Object):
+
+    """event occured"""
+
+    __slots__ = ('_ready',)
+
+    def __init__(self, *args, **kwargs):
+        Object.__init__(self, *args, **kwargs)
+        self.result = []
+        self.txt = ""
+
+    def reply(self, txt) -> None:
+        """add text to result list"""
+        self.result.append(txt)
+
+    def show(self) -> None:
+        """display result list"""
+        for txt in self.result:
+            print(txt)
+
+
+class Handler:
+
+    """commands binded to a function"""
+
+    cmds = {}
+
+    def __init__(self):
+        self.queue = queue.Queue()
+
+    @staticmethod
+    def add(func):
+        """add a function"""
+        Handler.cmds[func.__name__] = func
+
+    def handle(self, evt):
+        """handle an event"""
+        if "txt" in evt:
+            parse(evt, evt.txt)
+            func = Handler.cmds.get(evt.cmd, None)
+            if func:
+                func(evt)
+                evt.show()
+
+    def loop(self) -> None:
+        """loop handling events"""
+        while 1:
+            try:
+                self.handle(self.poll())
+            except (KeyboardInterrupt, EOFError):
+                print("")
+                break
+
+    def poll(self) -> Event:
+        """return an object to handle"""
+        return self.queue.get()
+
+
+class Console(Handler):
+
+    """cli in a loop"""
+
+    def poll(self) -> Event:
+        """echo prompt"""
+        evt = Event()
+        evt.txt = input("> ")
+        return evt
+
+
+# UTILITY
+
+
+def parse(obj, txt):
+    """parse text for commands"""
+    obj.cmd = ""
+    obj.args = []
+    obj.gets = {}
+    obj.mod = ""
+    obj.opts = ""
+    obj.otxt = txt
+    obj.rest = ""
+    obj.sets = {}
+    for spli in txt.split():
+        if spli.startswith("-"):
+            try:
+                obj.index = int(spli[1:])
+            except ValueError:
+                obj.opts += spli[1:]
+            continue
+        if "=" in spli:
+            key, value = spli.split("=", maxsplit=1)
+            if key == "mod":
+                obj.mod += f",{value}"
+                continue
+            obj.sets[key] = value
+            continue
+        if "==" in spli:
+            key, value = spli.split("==", maxsplit=1)
+            obj.gets[key] = value
+            continue
+        if not obj.cmd:
+            obj.cmd = spli
+            continue
+        obj.args.append(spli)
+    obj.txt = obj.cmd
+    if obj.args:
+        obj.rest = str(" ".join(obj.args))
+        if obj.rest:
+            obj.txt += " " + obj.rest
+
+
+# COMMANDS
+
+
+class Log(Object):
+
+    """log objects"""
+
+    def __init__(self):
+        super().__init__()
+        self.txt = ""
+
+    def gettxt(self):
+        """get log text"""
+        return self.txt
+
+    def settxt(self, txt):
+        """set log txt"""
+        self.txt = txt
+
+
+def cmd(event):
+    """list commands"""
+    event.reply(",".join(Handler.cmds))
+
+
+def fnd(event):
+    """locate objects"""
+    if not event.rest:
+        res = sorted([x.split('.')[-1].lower() for x in files()])
+        if res:
+            event.reply(",".join(res))
+        return
+    otype = event.args[0]
+    nmr = 0
+    for obj in find(otype):
+        event.reply(f"{nmr} {prt(obj)}")
+        nmr += 1
+    if not nmr:
+        event.reply("no result")
+
+
+def log(event):
+    """log text"""
+    if not event.rest:
+        nmr = 0
+        for obj in find('log'):
+            event.reply(f"{nmr} {prt(obj)}")
+            nmr += 1
+        return
+    obj = Log()
+    obj.txt = event.rest
+    write(obj)
+    event.reply('ok')
+
+
+# RUNTIME
+
+
+def main():
+    """runtime"""
+    parse(Cfg, " ".join(sys.argv[1:]))
+    hdl = Handler()
+    hdl.add(cmd)
+    hdl.add(fnd)
+    hdl.add(log)
+    if "c" in Cfg.opts:
+        csl = Console()
+        csl.loop()
+    else:
+        evt = hdl.event(Cfg.otxt)
+        hdl.handle(evt)
+
+
+if __name__ == "__main__":
+    main()

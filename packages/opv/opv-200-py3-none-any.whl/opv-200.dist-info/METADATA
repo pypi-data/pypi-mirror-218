@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: opv
+Version: 200
+Summary: clean namespace
+Author-email: Bart Thate <programmingobject@gmail.com>
+License: Public Domain
+Project-URL: home, https://pypi.org/project/opv
+Project-URL: bugs, https://github.com/programmingobject/opv/issues
+Project-URL: source, https://github.com/programmingobject/opv
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+
+NAME
+
+::
+
+   OPV - clean namespace
+
+
+DESCRIPTION
+
+
+::
+
+
+    opv provides an Object class and a seperate out of methods
+    into functions that take Objects as the first argument.
+
+
+    opv is intended to be programmable  in a static, only code, 
+    no popen, no user imports and no reading modules from a directory,
+    way. 
+
+
+INSTALL
+
+
+::
+
+    $ pipx install opv
+
+
+AUTHOR
+
+::
+
+    Bart Thate <programmingobject@gmail.com>
+
+
+COPYRIGHT
+
+::
+
+    opv is placed in the Public Domain.
