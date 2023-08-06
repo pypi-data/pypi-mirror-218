@@ -1,0 +1,2 @@
+[anyconfig_backends]
+fit = anyconfig_fit_backend:Parser
