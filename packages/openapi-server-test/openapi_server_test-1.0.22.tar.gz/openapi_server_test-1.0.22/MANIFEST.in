@@ -1,0 +1,2 @@
+include openapi_server/openapi_version
+include openapi_server/openapi/openapi.yaml
