@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: numgrids
+Version: 0.3.0
+Summary: Working with numerical grids made easy.
+Home-page: https://github.com/maroba/numgrids
+Author: Matthias Baer
+Author-email: matthias.r.baer@googlemail.com
+License: MIT
+Platform: ALL
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy (>=1.10.1)
+Requires-Dist: matplotlib
+Requires-Dist: findiff
+
+<h1 align="center">numgrids</h1>
+<p align="center"> Working with numerical grids made easy.</p>
+
+**Main Features**
+
+- Quickly define numerical grids for any rectangular or curvilinear coordinate system
+- Differentiation and integration
+- Interpolation
+- Easy manipulation of meshed functions
+- Using high precision spectral methods (FFT + Chebyshev) wherever possible
+- Fully compatible with *numpy*
+
+## Installation
+
+```shell
+pip install numgrids
+```
+
+## Quick Start
+
+To get started, have a look at the <a href="https://github.com/maroba/numgrids">quick start</a>.
+
