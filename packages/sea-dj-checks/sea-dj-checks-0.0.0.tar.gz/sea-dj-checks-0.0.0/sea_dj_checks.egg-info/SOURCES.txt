@@ -1,0 +1,6 @@
+README.md
+setup.py
+sea_dj_checks.egg-info/PKG-INFO
+sea_dj_checks.egg-info/SOURCES.txt
+sea_dj_checks.egg-info/dependency_links.txt
+sea_dj_checks.egg-info/top_level.txt
