@@ -1,0 +1,11 @@
+ngstents/__init__.py,sha256=QrD4RmEcDbWFECvQJQ6pjtmHuJyhzKTFLgRLylegjMc,370
+ngstents/_pytents.so,sha256=hlXgveZGu6bOpiUQzm2zvqPM1ELQxM6jumDm6oK1Apc,1012984
+ngstents/conslaw/__init__.py,sha256=D1_RmjFcQYulNOiCP_sv1HHA_c9vprysoaFVWluVNIw,2049
+ngstents/conslaw/_pyconslaw.so,sha256=DG9OEaIR6nUoZUanq0P31q0TW-I5-KnMz6qW06yuFgs,12350586
+ngstents/utils/__init__.py,sha256=Ute0UeCEpMS5V0_wLsBsWC8wkRTSu_OhozcwAhoo4UM,122
+ngstents/utils/_drawtents.py,sha256=6aA2yOeiPNRLaJNvOh4ZU5xKRKNoW3Pm4GKZEXBEkuE,1638
+ngstents/utils/_drawtents2d.py,sha256=6jONOZUcJ3hrdp7RklM7DfypSyFKQkPy7jrIXraim8k,3685
+ngstents-0.0.1.dist-info/METADATA,sha256=FYsFKnDWAt9kc1VL6AbL6ozmyVzb1IzI6Tw0IbO_hZU,635
+ngstents-0.0.1.dist-info/WHEEL,sha256=ixVjuHXXuumSKxeBvu38uRfCOTeOsLT4YaIndgHBKzE,114
+ngstents-0.0.1.dist-info/top_level.txt,sha256=XAbFqsacDng6-GJTWCGHeI4JIVUVx86V2VBPSv--mWE,9
+ngstents-0.0.1.dist-info/RECORD,,
