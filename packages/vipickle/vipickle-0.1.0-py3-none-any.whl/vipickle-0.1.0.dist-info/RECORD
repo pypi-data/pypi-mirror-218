@@ -1,0 +1,9 @@
+vipickle/__init__.py,sha256=dvHKeaYCfxkJPSMQRIywX_p8SXTuACwvO9oFme_GN2M,426
+vipickle/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+vipickle/errors.py,sha256=wXYwWnLKD--IrN04DU0yIukkz9nEdEFnp8iPGdPBq04,281
+vipickle/mixin.py,sha256=fKmGKLDGwqtPB9uHeQ0YJ9TtuvxA-FL9u0mKem1iOsU,12136
+vipickle/save_utils.py,sha256=b1UVDSOAhjxKcBHj6MK3pnzuK6g3LPro0Ei6u2HqQ1E,778
+vipickle-0.1.0.dist-info/METADATA,sha256=kKTWSOgYB6PhOGu9O_dM3xi_Gn5tsiz3NrmtrEQNxpQ,4090
+vipickle-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vipickle-0.1.0.dist-info/top_level.txt,sha256=lyPoAqF-g1FEpZ-jkl9lATMThxtDOGaTl1o1h_yb3RI,9
+vipickle-0.1.0.dist-info/RECORD,,
