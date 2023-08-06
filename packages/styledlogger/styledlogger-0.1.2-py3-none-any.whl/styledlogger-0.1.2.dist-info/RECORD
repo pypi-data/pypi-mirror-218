@@ -1,0 +1,12 @@
+styledlogger/__init__.py,sha256=Met6kidPDZT8HQE8ViNBwr9lE4KylJaC5mPbuXu4XRU,255
+styledlogger/logger.py,sha256=JIwGSfqtp968K8jETt163dpGCL-XamxDiVS3CBUSjPo,4116
+styledlogger/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+styledlogger/classes/callback.py,sha256=Kh2w8nrmqHp_iVGGY0_tXyWFFkiHkSRFybFirr6WpaQ,1100
+styledlogger/classes/printcolors.py,sha256=eHtwOWzECrqsgvKv26FX3jukzW9e-7yCXKy16BzSduc,822
+styledlogger/classes/printtypes.py,sha256=4Rye-PP9SXGEL_fzBqhWmuZTfsnzmDVCd7NtSm6fi8I,570
+styledlogger/classes/styleconfig.py,sha256=KPaMMwocSlEqs-qCA6EDoSrKh5D3_9saPxhZQhjnQ-o,3585
+styledlogger-0.1.2.dist-info/LICENSE,sha256=yb_3VziSIZPmf6cm-iJVNYcNKqEFn5FFLEEXNihK1WY,1338
+styledlogger-0.1.2.dist-info/METADATA,sha256=KTZq3s1hMgOmnzPbP1r8OR9H8EZrwJmNKZN_ICA2uyk,2061
+styledlogger-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+styledlogger-0.1.2.dist-info/top_level.txt,sha256=3B3uWx5fT4H_bx4tDujo2Ai4-87t76NoRnVfjnihpiY,13
+styledlogger-0.1.2.dist-info/RECORD,,
