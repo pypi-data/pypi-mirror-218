@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: horbach-cli
+Version: 0.3.0
+Summary: 
+Author: Andrew Horbach
+Author-email: andrewhorbach@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: difpy (>=3.0.10,<4.0.0)
+Requires-Dist: pillow (>=9.5.0,<10.0.0)
+Requires-Dist: pymupdf (>=1.22.5,<2.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Requires-Dist: xonsh[full] (>=0.14.0,<0.15.0)
+Description-Content-Type: text/markdown
+
+# h-cli
+
+- [cli-documentation](./horbach_cli/README.md)
+- run in docker `docker run ghcr.io/karma-git/h-cli/h-cli:latest --help`
+

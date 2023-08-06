@@ -1,0 +1,14 @@
+horbach_cli/README.md,sha256=lBPamkEiS19SYUISqEcS6wUp4pETP4hJb5TAzxmeVSE,2354
+horbach_cli/__init__.py,sha256=bYpMRmD-WxPo46RY5t822qVnccn-lNfquSc_MtbhSd0,70
+horbach_cli/converter.py,sha256=t0jbbs8rDxH8xLG1-YEZ8faLi_rnH7mvAuR0Dsourp8,1326
+horbach_cli/deduplicator.py,sha256=2sI8rFX31WGol1Bw_6L9jM4ifbSvec9YivuC4p3G16M,998
+horbach_cli/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+horbach_cli/libs/common.py,sha256=2CQYs1GwBblivoe5FMggaN0tM_Ii3S61lLK0XPq2xPg,309
+horbach_cli/libs/common_xsh.xsh,sha256=ABe9fYLvmwaEjkfxkAfAeaaUM4zOQx6mLha0AsDW5Us,618
+horbach_cli/libs/converter.py,sha256=FLrNBzBfXzCFYH5kLT3UwZWf-jjT31a4UXKh-ckBnvE,687
+horbach_cli/main.py,sha256=waBHR7NfqFX8Q6JN673EF0SMYfQMUMDAM2zI4weMoic,1434
+horbach_cli/warp.xsh,sha256=KJkcD2uk55fzZD8Q3EOfHzMjJ_CCTst8X7Xk9mN2l5A,3434
+horbach_cli-0.3.0.dist-info/METADATA,sha256=quUncvOhf8_aFuQT3vUWiSC4Sjfe0lEtZHMHC0DYjK4,686
+horbach_cli-0.3.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+horbach_cli-0.3.0.dist-info/entry_points.txt,sha256=XI_Y81qCtNslTRSTVGHIDuFYM03Dz6rTyk1saGM135w,46
+horbach_cli-0.3.0.dist-info/RECORD,,
