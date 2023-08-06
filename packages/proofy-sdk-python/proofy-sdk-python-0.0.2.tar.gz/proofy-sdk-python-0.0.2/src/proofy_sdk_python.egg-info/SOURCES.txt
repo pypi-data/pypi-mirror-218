@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/proofy_sdk/__init__.py
+src/proofy_sdk/proofy.py
+src/proofy_sdk_python.egg-info/PKG-INFO
+src/proofy_sdk_python.egg-info/SOURCES.txt
+src/proofy_sdk_python.egg-info/dependency_links.txt
+src/proofy_sdk_python.egg-info/top_level.txt
