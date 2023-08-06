@@ -1,0 +1,10 @@
+setup.py
+datatransform/__init__.py
+datatransform/datatransform.py
+datatransform/leave_one_out.py
+datatransform/mca.py
+datatransform/pca.py
+datatransform.egg-info/PKG-INFO
+datatransform.egg-info/SOURCES.txt
+datatransform.egg-info/dependency_links.txt
+datatransform.egg-info/top_level.txt
