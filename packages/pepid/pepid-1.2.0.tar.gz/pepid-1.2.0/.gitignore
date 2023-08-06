@@ -1,0 +1,10 @@
+example.cfg
+proteometools.cfg
+yeast.cfg
+massive.cfg
+*.sw*
+*~
+.*
+*egg-info*
+dist/*
+*.pyc
