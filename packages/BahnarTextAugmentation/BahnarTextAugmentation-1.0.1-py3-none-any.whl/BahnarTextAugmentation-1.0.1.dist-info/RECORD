@@ -1,0 +1,11 @@
+BahnarTextAugmentation/EDA.py,sha256=bDuJ0YQ6FUv6KVFcl4S-cyru93yv5kBFIMj0bdZPPfs,5743
+BahnarTextAugmentation/MTLCombination.py,sha256=sxHmDAKj5Yv3XXpoGVpUldD0YwWMrINbJO0q3rQ92eY,1757
+BahnarTextAugmentation/SentenceBoundary.py,sha256=Bd9c0wc_ZH4XNieRavWgsOx73GITP24B2elWl8pr9Ck,929
+BahnarTextAugmentation/Single.py,sha256=sxN7EhD60HcVNHFeetnRPMndWNrcUBjLMzMI1kqSHIs,4853
+BahnarTextAugmentation/Word2Vec.py,sha256=NhaP5LkMkwy-e_Rq706j9ANfq8PjPyrMUbUAO1ElFJ8,2117
+BahnarTextAugmentation/__init__.py,sha256=OU-8gfN1XQyE0vYHSqYMARkId4ZqCngvfNeyFOoNfbE,20
+BahnarTextAugmentation/utils.py,sha256=yoB2gVnwAT4K7PoJLE7elWkOpBFgxVT5J64QCNwRQYI,1597
+BahnarTextAugmentation-1.0.1.dist-info/METADATA,sha256=BrCRIMMZIbY-T9koh0Cl42DB0B-xtq8ILfjF4O-_syo,386
+BahnarTextAugmentation-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BahnarTextAugmentation-1.0.1.dist-info/top_level.txt,sha256=tOQG1YiPNQv5tOHcIgT0JoANxUj5_TUxvrPd594Wc8M,23
+BahnarTextAugmentation-1.0.1.dist-info/RECORD,,
