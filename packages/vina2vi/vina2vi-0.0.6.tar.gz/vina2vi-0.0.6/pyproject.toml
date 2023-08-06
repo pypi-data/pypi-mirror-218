@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vina2vi"
+#authors = [
+#    {author = "phunc20", email = "wucf20@gmail.com"},
+#]
+version = "0.0.6"
+license = {text = "MIT"}
+#requires-python = ">=3.6"
+dependencies = [
+    #"tensorflow >= 2.4"
+]
+readme = "README.md"
+[project.optional-dependencies]
+#TF = ["tensorflow >= 2.4"]
