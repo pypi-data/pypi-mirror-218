@@ -1,0 +1,11 @@
+import setuptools
+
+setuptools.setup(
+    name="{name}",
+    version="{version}",
+    long_description="{long_description}",
+    long_description_content_type="text/markdown",
+    packages=setuptools.find_packages(),
+    package_data={package_data},
+    install_requires={requirements}
+)
