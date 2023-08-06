@@ -1,0 +1,6 @@
+pipeline:
+  - remove_stop_words
+  - coalesce_spaces
+  - stair_case
+  - append_date
+  - prepend_number
