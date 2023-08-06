@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3451b574-9810-4a56-8be7-1e35433f212b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/examples/autopilot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platooning_simulator/Core.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlatooningSimulator2Test/Core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platooning_simulator/PlatooningControllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlatooningSimulator2Test/PlatooningControllers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/platooning_simulator/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlatooningSimulator2Test/__init__.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ky2OePLFuiu8C1gXBGVPPRDdIO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Áron Karakai/Documents/RUG/String Stability Research/Platooning_Simulator/logs_for_publishing&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Áron Karakai\Documents\RUG\String Stability Research\Platooning_Simulator\logs_for_publishing" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Áron Karakai\Documents\RUG\String Stability Research\Platooning_Simulator\src\platooning_simulator" />
+      <recent name="C:\Users\Áron Karakai\Documents\RUG\String Stability Research\Platooning_Simulator\src" />
+      <recent name="C:\Users\Áron Karakai\Documents\RUG\String Stability Research\Platooning_Simulator\examples" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.autopilot">
+    <configuration name="autopilot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Platooning_Simulator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/autopilot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="autopilot_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Platooning_Simulator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/autopilot_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="log_compare" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Platooning_Simulator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/log_compare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="log_compare_emergency" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Platooning_Simulator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/log_compare_emergency.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="naive_cacc_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Platooning_Simulator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/naive_cacc_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.autopilot" />
+        <item itemvalue="Python.autopilot_example" />
+        <item itemvalue="Python.log_compare_emergency" />
+        <item itemvalue="Python.log_compare" />
+        <item itemvalue="Python.naive_cacc_example" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3451b574-9810-4a56-8be7-1e35433f212b" name="Default Changelist" comment="" />
+      <created>1674932471489</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674932471489</updated>
+      <workItem from="1674932473761" duration="3880000" />
+      <workItem from="1674936607794" duration="18000" />
+      <workItem from="1674992894246" duration="2691000" />
+      <workItem from="1674995693592" duration="126000" />
+      <workItem from="1674995881598" duration="3333000" />
+      <workItem from="1674999260969" duration="163000" />
+      <workItem from="1674999466036" duration="1241000" />
+      <workItem from="1675424333431" duration="111000" />
+      <workItem from="1675758271888" duration="5588000" />
+      <workItem from="1675774813537" duration="1141000" />
+      <workItem from="1675848571974" duration="7000" />
+      <workItem from="1675875325152" duration="3186000" />
+      <workItem from="1675878791863" duration="4122000" />
+      <workItem from="1675931207402" duration="2776000" />
+      <workItem from="1676026251701" duration="4752000" />
+      <workItem from="1676059446188" duration="1947000" />
+      <workItem from="1676219743944" duration="2237000" />
+      <workItem from="1676361814708" duration="5144000" />
+      <workItem from="1676370735391" duration="884000" />
+      <workItem from="1676376202286" duration="1427000" />
+      <workItem from="1676380152230" duration="10000" />
+      <workItem from="1676398355651" duration="6831000" />
+      <workItem from="1676452637147" duration="6000" />
+      <workItem from="1676534856235" duration="3364000" />
+      <workItem from="1676577487519" duration="51000" />
+      <workItem from="1676664668319" duration="1406000" />
+      <workItem from="1676666109753" duration="321000" />
+      <workItem from="1676666479425" duration="473000" />
+      <workItem from="1676991743140" duration="7000" />
+      <workItem from="1677012275357" duration="600000" />
+      <workItem from="1677083862489" duration="17000" />
+      <workItem from="1677160841786" duration="463000" />
+      <workItem from="1677240059074" duration="11000" />
+      <workItem from="1677413156619" duration="2682000" />
+      <workItem from="1677444627096" duration="4014000" />
+      <workItem from="1677506485739" duration="14886000" />
+      <workItem from="1677573343450" duration="4194000" />
+      <workItem from="1678180389712" duration="1821000" />
+      <workItem from="1678288591986" duration="720000" />
+      <workItem from="1678347808726" duration="35000" />
+      <workItem from="1678471272938" duration="7434000" />
+      <workItem from="1678540107446" duration="2917000" />
+      <workItem from="1678543771922" duration="263000" />
+      <workItem from="1678544136853" duration="799000" />
+      <workItem from="1678545927628" duration="2015000" />
+      <workItem from="1678633605095" duration="1689000" />
+      <workItem from="1678635487720" duration="8095000" />
+      <workItem from="1678648121432" duration="901000" />
+      <workItem from="1678729636595" duration="4747000" />
+      <workItem from="1678734957340" duration="559000" />
+      <workItem from="1678807200922" duration="58000" />
+      <workItem from="1678915406730" duration="2082000" />
+      <workItem from="1679218510402" duration="2150000" />
+      <workItem from="1679228547076" duration="2749000" />
+      <workItem from="1679307332829" duration="8478000" />
+      <workItem from="1679317401225" duration="928000" />
+      <workItem from="1679411444492" duration="12000" />
+      <workItem from="1680174888678" duration="1503000" />
+      <workItem from="1680194908945" duration="511000" />
+      <workItem from="1680378460733" duration="2603000" />
+      <workItem from="1681544105225" duration="109000" />
+      <workItem from="1682619010649" duration="3474000" />
+      <workItem from="1682710348130" duration="6966000" />
+      <workItem from="1682782392575" duration="10096000" />
+      <workItem from="1683125944065" duration="43000" />
+      <workItem from="1683135032380" duration="598000" />
+      <workItem from="1684499374434" duration="3715000" />
+      <workItem from="1684509645944" duration="5553000" />
+      <workItem from="1685175238535" duration="596000" />
+      <workItem from="1685189711721" duration="2501000" />
+      <workItem from="1685635012940" duration="4614000" />
+      <workItem from="1685793535999" duration="4063000" />
+      <workItem from="1685959431435" duration="800000" />
+      <workItem from="1686314247429" duration="269000" />
+      <workItem from="1686497834303" duration="6000" />
+      <workItem from="1686835369137" duration="1687000" />
+      <workItem from="1686941390613" duration="6987000" />
+      <workItem from="1687016547145" duration="20000" />
+      <workItem from="1687017776520" duration="1131000" />
+      <workItem from="1687019047952" duration="681000" />
+      <workItem from="1687037200104" duration="3321000" />
+      <workItem from="1687111194061" duration="9585000" />
+      <workItem from="1687197266256" duration="674000" />
+      <workItem from="1687346473781" duration="1188000" />
+      <workItem from="1687641017011" duration="24000" />
+      <workItem from="1687641201119" duration="1277000" />
+      <workItem from="1687681187600" duration="1137000" />
+      <workItem from="1687691326575" duration="7738000" />
+      <workItem from="1687701239214" duration="12518000" />
+      <workItem from="1687727183730" duration="3012000" />
+      <workItem from="1687730228044" duration="16000" />
+      <workItem from="1687768538732" duration="1209000" />
+      <workItem from="1687875175732" duration="1886000" />
+      <workItem from="1687885960156" duration="7411000" />
+      <workItem from="1688045714191" duration="9594000" />
+      <workItem from="1688123078719" duration="9776000" />
+      <workItem from="1688913760680" duration="5380000" />
+      <workItem from="1688919212621" duration="8240000" />
+    </task>
+    <task id="LOCAL-00001" summary="Created Core.py with basic structure.">
+      <created>1674936262821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674936262821</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed structure: Vehicles are instantiated via a method of a Platoon. Created FollowerController class.">
+      <created>1675875467779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675875467779</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Sampling is separated from pid step -&gt; pid can have higher frequency.&#10;Fixed indexing error of vehicles in platoons.">
+      <created>1676403807422</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676403807422</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Only the last vehicle deletes passed waypoints, this mostly fixed steering issues.">
+      <created>1676538227876</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676538227876</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Separate file for controller classes.">
+      <created>1677506950494</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677506950494</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added LeadNavigator class, which can drive the lead vehicle straight ahead as much as possible. Lead controller in Core is now not fixed, it has to attached like for follower vehicles.">
+      <created>1677520831053</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677520831053</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added often used properties to Vehicle class. FollowerController can also pass entire Vehicle objects when calling control functions, if 'dependencies' is defined instead of 'parameters'.">
+      <created>1678643838598</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678643838598</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added split method to Platoon class. Basic logging also added but needs improvements. PID parameters can be chosen freely.">
+      <created>1682786352524</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682786352524</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added merge method to Platoon class.">
+      <created>1682792530189</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682792530189</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added support for autopilot with traffic manager. Also, Platoon instances add themselves to their Simulation.">
+      <created>1684502160363</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684502160363</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added LowLevelController class for custom controllers. FollowerController and LeadNavigator now inherit from that.">
+      <created>1684516029706</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684516029706</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge and split supports autopilot.&#10;Added extensive comments to Core.py, removed history module.">
+      <created>1687892701677</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687892701677</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added basic info to README">
+      <created>1687893236911</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687893236911</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Restructured files and added docstrings to PlatooningControllers.py.">
+      <created>1688917527166</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688917527166</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Core.py with basic structure." />
+    <MESSAGE value="Changed structure: Vehicles are instantiated via a method of a Platoon. Created FollowerController class." />
+    <MESSAGE value="Sampling is separated from pid step -&gt; pid can have higher frequency.&#10;Fixed indexing error of vehicles in platoons." />
+    <MESSAGE value="Only the last vehicle deletes passed waypoints, this mostly fixed steering issues." />
+    <MESSAGE value="Separate file for controller classes." />
+    <MESSAGE value="Added LeadNavigator class, which can drive the lead vehicle straight ahead as much as possible. Lead controller in Core is now not fixed, it has to attached like for follower vehicles." />
+    <MESSAGE value="Added often used properties to Vehicle class. FollowerController can also pass entire Vehicle objects when calling control functions, if 'dependencies' is defined instead of 'parameters'." />
+    <MESSAGE value="Added split method to Platoon class. Basic logging also added but needs improvements. PID parameters can be chosen freely." />
+    <MESSAGE value="Added merge method to Platoon class." />
+    <MESSAGE value="Added support for autopilot with traffic manager. Also, Platoon instances add themselves to their Simulation." />
+    <MESSAGE value="Added LowLevelController class for custom controllers. FollowerController and LeadNavigator now inherit from that." />
+    <MESSAGE value="Merge and split supports autopilot.&#10;Added extensive comments to Core.py, removed history module." />
+    <MESSAGE value="Added basic info to README" />
+    <MESSAGE value="Restructured files and added docstrings to PlatooningControllers.py." />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured files and added docstrings to PlatooningControllers.py." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$synchronous.coverage" NAME="synchronous Coverage Results" MODIFIED="1676666217516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$log_compare_emergency.coverage" NAME="log_compare_emergency Coverage Results" MODIFIED="1688142860926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$comparison.coverage" NAME="comparison Coverage Results" MODIFIED="1680378482265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$autopilot_example.coverage" NAME="autopilot_example Coverage Results" MODIFIED="1688989916760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$Core.coverage" NAME="Core Coverage Results" MODIFIED="1674936145189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$log_compare.coverage" NAME="log_compare Coverage Results" MODIFIED="1688135133456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$replay.coverage" NAME="replay Coverage Results" MODIFIED="1687705447182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$test.coverage" NAME="test Coverage Results" MODIFIED="1678288713946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$dynamic_cacc_example.coverage" NAME="dynamic_cacc_example Coverage Results" MODIFIED="1688123793257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$emergency_replay.coverage" NAME="emergency_replay Coverage Results" MODIFIED="1687715258921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/presentation" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$autopilot_example__1_.coverage" NAME="autopilot_example (1) Coverage Results" MODIFIED="1687697704615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$autopilot_replay.coverage" NAME="autopilot_replay Coverage Results" MODIFIED="1687771487182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/presentation" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$test_synchronous.coverage" NAME="test_synchronous Coverage Results" MODIFIED="1684514326430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$emergency_example.coverage" NAME="emergency_example Coverage Results" MODIFIED="1687713578414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$plot_from_log.coverage" NAME="plot_from_log Coverage Results" MODIFIED="1688046888832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$naive_cacc_example.coverage" NAME="naive_cacc_example Coverage Results" MODIFIED="1688126064099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$autopilot.coverage" NAME="autopilot Coverage Results" MODIFIED="1688990054562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+    <SUITE FILE_PATH="coverage/Platooning_Simulator$model_troubleshooting.coverage" NAME="test_synchronous Coverage Results" MODIFIED="1678643505339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
