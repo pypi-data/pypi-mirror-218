@@ -1,0 +1,30 @@
+from setuptools import setup
+
+
+setup(name='XRDimage',
+      version='0.0.0.4',
+      description='XRDImage is a Python 3 package developed by the SDLE Research Center at Case Western Reserve University in Cleveland, OH.',
+      long_description="""XRDImage is a Python3 package developed by the SDLE Research Center at Case Western Reserve University in Cleveland OH. 
+            X-Ray Diffraction (XRD) is a technique used to identify and quantify crystalline phases in a material. By obtaining diffraction patterns, 
+            XRD enables the identification of crystalline phases and orientation, determination of various structural properties such as lattice parameters, 
+            stain, grain size, epitaxy, phase composition, and preferred orientation. Additionally, XRD facilitates measurements of thin film and multilayer 
+            thickness, as well as the determination of atomic arrangement within the material. Notably, the analysis of diffraction patterns also allows for 
+            the identification of internal stress and defects in crystals, providing valuable insights into material performance in different environments.
+
+            Due to the nature of XRD Imaging techniques, most XRD images may not turn out perfect out of the lab. In XRDImage, 
+            we have created an image processing pipeline, which contains dark correction, centering, temperature independence, and 
+            registration scripts. In the latest release, we have also added ring segmentation, clustering, and ellipse fitting algorithms to
+            obtain more information from the user’s XRD images. """,
+      url='http://engineering.case.edu/centers/sdle/',
+      author='Weiqi Yue, Gabriel Ponon, Zhuldyz Ualikhankyzy, Nathaniel K. Tomczak, Pawan K. Tripathi, Roger H. French',
+      author_email='wxy215@case.edu, pkt19@case.edu, roger.french@case.edu',
+      license='MIT License',
+      packages=[''],
+      package_dir={'XRDimage': './XRDimage'},
+#      package_data={'XRDimage': ['data','files/data/FullSizeModules/*','files/tutorials/*','files/data/out','README.rst']},
+      python_requires='>=3.8',
+      install_requires=['numpy', 'PIL','scikit-image','scikit-image','os', 'pandas'],
+#      include_package_data=True,
+      project_urls={"Documentation":"https://bitbucket.org/cwrusdle/xrdimage-doc/src/main/docs/_build/html/lol-index.html","Bugtracker": "https://bitbucket.org/cwrusdle/xrd-image/src/main/"},
+      )
+
