@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: StableRLS
+Version: 1.0.0
+Summary: Simulate Simulink FMUs as Gymnasium environment
+Home-page: https://github.com/rAnnuth/stablerls
+Author: Robert Annuth
+Author-email: robert.annuth@tuhh.de
+License: LICENSE.txt
+Keywords: simulation RL reinforcement learning Simulink matlab FMU
+License-File: LICENSE.txt
