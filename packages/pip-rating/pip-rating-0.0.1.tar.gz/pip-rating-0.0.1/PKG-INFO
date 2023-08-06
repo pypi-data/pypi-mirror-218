@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pip-rating
+Version: 0.0.1
+Summary: Check the health of your project's requirements and get a rating for each dependency.
+Home-page: https://github.com/Nekmo/pip-rating/
+Download-URL: https://github.com/Nekmo/pip-rating/archive/master.zip
+Author: Nekmo
+Author-email: contacto@nekmo.com
+License: MIT license
+Keywords: pip-rating
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: POSIX :: BSD
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+License-File: LICENSE
+
+###################
+pip-rating
+###################
+
+.. image:: https://img.shields.io/travis/Nekmo/pip-rating.svg?style=flat-square&maxAge=25rating
+  :target: https://travis-ci.org/Nekmo/pip-rating
+  :alt: Latest Travis CI build status
+
+.. image:: https://img.shields.io/pypi/v/pip-rating.svg?style=flat-srating
+  :target: https://pypi.org/project/requirements-srating
+  :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/pypi/pyversions/pip-rating.svg?style=flat-srating
+  :target: https://pypi.org/project/requirements-srating
+  :alt: Python versions
+
+.. image:: https://img.shields.io/codeclimate/github/Nekmo/pip-rating.svg?style=flat-srating
+  :target: https://codeclimate.com/github/Nekmo/pip-rating
+  :alt: Code Climate
+
+.. image:: https://img.shields.io/codecov/c/github/Nekmo/pip-rating/master.svg?style=flat-srating
+  :target: https://codecov.io/github/Nekmo/pip-rating
+  :alt: Test coverage
+
+.. image:: https://img.shields.io/requires/github/Nekmo/pip-rating.svg?style=flat-srating
+     :target: https://requires.io/github/Nekmo/pip-rating/requirements/?branch=mrating
+     :alt: Requirements Status
+
+
+Check the health of your project's requirements and get a rating for each dependency.
+
+
+To install pip-rating, run this command in your termrating
+
+.. code-block:: console
+
+    $ sudo pip install pip-rating
+
+This is the preferred method to install pip-rating, as it will always install the most recent stable relrating
+
+
+Features
+========
+
+* TODO
+
