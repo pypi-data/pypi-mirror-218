@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "lights": {
+      "type": "object",
+      "patternProperties": {
+        "[a-z]+": { "type": "boolean" }
+      }
+    },
+    "registers": {
+      "type": "object",
+      "patternProperties": {
+        "[a-z]+.[a-z]+": {
+          "oneOf": [{ "type": "boolean" }, { "type": "integer" }]
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}
