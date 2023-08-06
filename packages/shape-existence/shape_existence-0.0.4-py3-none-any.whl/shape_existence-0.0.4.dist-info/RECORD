@@ -1,0 +1,9 @@
+shape_existence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shape_existence/complexes_and_proofs.py,sha256=wBNV9gIvDD1_V2Hn__MIfRxSQ5bbVGLBKT3tTrc374M,21256
+shape_existence/flexible_cqp.py,sha256=16G6zi5jVToOPLVuCVUkoJTWiisFmZYMZz6KkWTclNI,13379
+shape_existence/fractions_and_interval_arithmetic.py,sha256=EYfT3W7Mx7uphxhtXQPdmNIwDehgUDoryRteTvnOEsk,16698
+shape_existence/obj_stuff.py,sha256=BXeFNLdMqqKAK4DnbshnA3VcyVnSD9Fcj1V5ggyOCBE,4928
+shape_existence-0.0.4.dist-info/METADATA,sha256=cfSeSlTD9YJ78Q8fb6zVoEnx_VZWowyhuaOBzK1kztY,3752
+shape_existence-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+shape_existence-0.0.4.dist-info/licenses/LICENSE,sha256=3JiOdY_NQXhWxzLBTVFJGNlal4eI9tz5nX0wj5ysufs,1058
+shape_existence-0.0.4.dist-info/RECORD,,
