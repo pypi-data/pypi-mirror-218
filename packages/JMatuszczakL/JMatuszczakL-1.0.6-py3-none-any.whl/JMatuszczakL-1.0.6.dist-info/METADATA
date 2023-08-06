@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: JMatuszczakL
+Version: 1.0.6
+Summary: Easy window making
+Author: JMatuszczak
+Author-email: J@matuszczak.org
+Requires-Dist: PyQt6
+
