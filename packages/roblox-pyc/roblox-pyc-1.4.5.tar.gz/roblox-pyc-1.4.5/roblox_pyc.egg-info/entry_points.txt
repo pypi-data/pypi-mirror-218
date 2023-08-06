@@ -1,0 +1,4 @@
+[console_scripts]
+roblox-c = src.robloxpy:typerapp2
+roblox-cpp = src.robloxpy:typerapp3
+roblox-py = src.robloxpy:typerapp
