@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/reasoning-machine/__init__.py
+src/reasoning_machine.egg-info/PKG-INFO
+src/reasoning_machine.egg-info/SOURCES.txt
+src/reasoning_machine.egg-info/dependency_links.txt
+src/reasoning_machine.egg-info/top_level.txt
