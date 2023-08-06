@@ -1,0 +1,9 @@
+pyrfc/__init__.py,sha256=QvPNerkTMq2Re5ZSU_pHsU0XcSCkcKP0ZkFqLRn7X4E,1522
+pyrfc/_cyrfc.cpython-310-darwin.so,sha256=AtY_S7_kiZnnSnEDQFKwCKneVeK2FUG56HzLN74x2tM,736760
+pyrfc/_exception.py,sha256=0NApMKaFRwioG1j5Q1jLfOIrvOSkqq8J7qTCNHyXGow,5677
+pyrfc/_utils.py,sha256=vSIDCccwtz-Yk6rOobyGvYoisqdSwcBVkq8Njaq4elA,317
+pyrfc-2.8.3.dist-info/Apache-2.0.txt,sha256=05EN7m_p_hNIVtdiaP6CrbGt4ez1GzVot9prlIlLiPM,10283
+pyrfc-2.8.3.dist-info/METADATA,sha256=gh5ArE8yPsUZPl39hEDsc9KXy658FXgZPll0d2zoemA,23948
+pyrfc-2.8.3.dist-info/WHEEL,sha256=qeaB_PbmvJLqxOAiTkpXr36xa9p7pywzZXZrc1O__rQ,111
+pyrfc-2.8.3.dist-info/top_level.txt,sha256=BjOmNyKOMFQimaneNANnWEWivnjiFFp5kf_3BvrvU7E,6
+pyrfc-2.8.3.dist-info/RECORD,,
