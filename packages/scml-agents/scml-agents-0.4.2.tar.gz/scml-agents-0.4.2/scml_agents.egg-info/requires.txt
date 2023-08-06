@@ -1,0 +1,12 @@
+Click>=6.0
+scml>=0.5.5
+pulp
+xgboost
+
+[:sys_platform != "darwin"]
+torch
+tensorflow
+
+[:sys_platform == "darwin"]
+torch==1.12.1
+tensorflow-macos
