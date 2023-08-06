@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "zmqcli"
+version = "0.9.7"
+description = "A small but powerful command-line interface to ZeroMQ."
+authors = ["TamTam Research s.r.o.", "Zachary Voase"]
+maintainers = ["Roman Horenovsky"]
+license = "Unlicense"
+readme = "README.md"
+repository = "https://gitlab.com/tamtamresearch-public/pypi/zmqcli"
+homepage = "https://gitlab.com/tamtamresearch-public/pypi/zmqcli"
+documentation = "https://gitlab.com/tamtamresearch-public/pypi/zmqcli"
+keywords = ["ZeroMQ", "CLI", "ØMQ", "0MQ", "zmq"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Networking",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+]
+
+[tool.poetry.scripts]
+zmqcli = 'zmqcli:zmqcli.main'
+
+[tool.poetry.dependencies]
+argparse = "^1.4.0"
+python = "^3.7"
+pyzmq = "^25.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
