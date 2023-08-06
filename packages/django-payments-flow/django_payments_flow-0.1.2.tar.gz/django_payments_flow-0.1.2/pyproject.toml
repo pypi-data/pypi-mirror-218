@@ -1,0 +1,79 @@
+[tool.poetry]
+name = "django-payments-flow"
+version = "0.1.2"
+description = "Soporte Flow para Django Payments"
+authors = ["Mario Hernandez <mariofix@proton.me>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "django_payments_flow"}]
+repository = "https://github.com/mariofix/django-payments-flow"
+documentation = "https://mariofix.github.io/django-payments-flow/"
+homepage = "https://www.flow.cl/docs/api.html"
+keywords = [
+    "flow",
+    "pagos",
+    "django",
+    "payment",
+    "django-payments"
+]
+classifiers=[
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: Django",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+django-payments = "2.0.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+black = "^23.3.0"
+isort = "^5.12.0"
+coverage = "^7.2.7"
+pytest = "^7.4.0"
+faker = "^18.13.0"
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.18"
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+mkdocs-git-revision-date-localized-plugin = "^1.2.0"
+mkdocs-git-committers-plugin-2 = "^1.1.2"
+pillow = "^10.0.0"
+cairosvg = "^2.7.0"
+lxml = "^4.9.3"
+
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra"
+testpaths = [
+    "tests",
+]
+python_files =[
+    "test*.py"
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+py_version = 38
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
