@@ -1,0 +1,12 @@
+textsum/__init__.py,sha256=PAa8kHUBUkXjIQ0zbM7hk2HSNnOx7ZAh6LfyhqGn_eE,653
+textsum/app.py,sha256=lOoIJZx4YlFG4Cm0NQVNiPab6cWAMmCQ29znGZgOKX4,12089
+textsum/cli.py,sha256=KqOIYyl125EmaCMaF2yahtMKfIJpkpY101EzY5tbF6I,6935
+textsum/pdf2text.py,sha256=ogzPMh2F6_6EBUR2YMe02k5kxQiapxf7aDnJfLKRnpo,10024
+textsum/summarize.py,sha256=JNdVHFaeMyTyp5WFTe760TzAwCa3H0amk0xx68IeWFA,21964
+textsum/utils.py,sha256=2HmTdWaiTFBddoN1P3Mcoq-CqdIJjDphgIIfia_CONs,7061
+textsum-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+textsum-0.2.0.dist-info/METADATA,sha256=MPjOVaUJq-XMzCnQvr9XakjG-oEgzwceFsJQpWWQFFI,15404
+textsum-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+textsum-0.2.0.dist-info/entry_points.txt,sha256=NVjbm3-LMHxXsaUbv-xecdKkKNw0Zd9Ai2acHASHTJM,77
+textsum-0.2.0.dist-info/top_level.txt,sha256=r55a2Vn-SQI6_XmefX9QMDARQjTcwEY10d6oYyfSnS0,8
+textsum-0.2.0.dist-info/RECORD,,
