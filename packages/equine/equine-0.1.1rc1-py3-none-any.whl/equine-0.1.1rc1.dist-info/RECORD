@@ -1,0 +1,11 @@
+equine/__init__.py,sha256=rdQr2FiBrib7SytbHiGVJa0MUuhEpO2V5CW1RT7tzBI,651
+equine/equine.py,sha256=BYaCKCmGO6j5XgVgPyAUbtcGWo1B5DINdiYmIqyYUuc,1494
+equine/equine_gp.py,sha256=HV7gEBB5ed2BmUYcHFcpAeT3a4YgorOXCejKMRMvMNI,18912
+equine/equine_output.py,sha256=wmgx8O88I34Zie-FzrapzaPxrCzB059Q8rOyiIdUCjs,334
+equine/equine_protonet.py,sha256=fQcr-2a_FNV5LIE2ReviY_qwF4NPZl0tXmtZaif6qok,26635
+equine/utils.py,sha256=aT7qKPxPg5qKjIonxdl7aZgBM7CF4ayj2kTWYj2u73A,9937
+equine-0.1.1rc1.dist-info/LICENSE.md,sha256=PlXkaZ_jVMBJF841z5lj28OEssa3eKfQHSzPrRDr6uM,1109
+equine-0.1.1rc1.dist-info/METADATA,sha256=cMUsR8G3Gwg-Qkm-TWTviTeHBva1LUbQ2HgOMgHI5vY,4421
+equine-0.1.1rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+equine-0.1.1rc1.dist-info/top_level.txt,sha256=NF39gSbWDHHnG-VHaVTxZGYcYtQfFCl-ScrX_r8UfHc,7
+equine-0.1.1rc1.dist-info/RECORD,,
