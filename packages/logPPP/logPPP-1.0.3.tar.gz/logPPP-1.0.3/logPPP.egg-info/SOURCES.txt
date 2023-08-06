@@ -1,0 +1,10 @@
+README.md
+setup.py
+logPPP.egg-info/PKG-INFO
+logPPP.egg-info/SOURCES.txt
+logPPP.egg-info/dependency_links.txt
+logPPP.egg-info/top_level.txt
+src/logPPP/_ConsoleColors.py
+src/logPPP/__init__.py
+src/logPPP/_util.py
+src/logPPP/logPPPLevel.py
