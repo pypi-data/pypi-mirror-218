@@ -1,0 +1,2 @@
+[console_scripts]
+x12-build = tigershark3.tools.xml_extract:main
