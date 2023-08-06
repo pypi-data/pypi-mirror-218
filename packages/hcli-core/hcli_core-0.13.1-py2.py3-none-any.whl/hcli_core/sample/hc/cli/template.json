@@ -1,0 +1,308 @@
+{
+    "hcliTemplateVersion": "1.0",
+    "executable": [
+        {
+            "command": "hc",
+            "http": "post"
+        },
+        {
+            "command": "hc -j {p}",
+            "http": "post"
+        },
+        {
+            "command": "hc scan",
+            "http": "get"
+        },
+        {
+            "command": "hc home",
+            "http": "post"
+        },
+        {
+            "command": "hc unlock",
+            "http": "post"
+        },
+        {
+            "command": "hc reset",
+            "http": "post"
+        },
+        {
+            "command": "hc status",
+            "http": "post"
+        },
+        {
+            "command": "hc stop",
+            "http": "post"
+        },
+        {
+            "command": "hc resume",
+            "http": "post"
+        },
+        {
+            "command": "hc jobs",
+            "http": "get"
+        },
+        {
+            "command": "hc connect {p}",
+            "http": "post"
+        },
+        {
+            "command": "hc disconnect",
+            "http": "post"
+        }
+    ],
+    "cli": [
+        {
+            "id": "hc",
+            "name": "hc",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "hc - an HCLI for interacting with a CNC via GRBL Controller (e.g. an OpenBuilds BlackBox controller via input and output streams"
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc <command>"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"hc\" HCLI allows you to control a CNC through the command line (e.g. OpenBuilds C-Beam Machine) via the GRBL protocol. You can send G-Code commands as an input stream, and the GRBL service will respond accordingly.\\n\\nThis HCLI relies on the use of a serial port to a GRBL compliant device. You can scan to find out which serial device you can send G-Code streams to.\\n\\nNote that the hc CNC HCLI doesn't queue jobs properly for sequential streaming execution in a multiprocess context (e.g. multiple workers under gunicorn. Please configure the environment such that the HCLI runs in a single process (e.g. --workers=1 under a gunicorn configuration. See \"hcli_core help\" for a example configuration for hc)."
+                },
+                {
+                    "name": "examples",
+                    "description": "hc scan\\n\\nhc connect /dev/tty.usbserial-AR0JI0GV\\n\\necho '$$' | hc\\n\\ncat test.gcode | hc\\n\\n"
+                }
+            ],
+            "command": [
+                {
+                    "href": "hcscan",
+                    "name": "scan",
+                    "description": "The \"scan\" command scans and lists connected serial devices."
+                },
+                {
+                    "href": "hcreset",
+                    "name": "reset",
+                    "description": "The \"reset\" command stops the CNC by sending the soft reset ctrl-x command to the GRBL controller."
+                },
+                {
+                    "href": "hcstatus",
+                    "name": "status",
+                    "description": "The \"status\" command returns the current status of the GRBL controller by sending the ? command."
+                },
+                {
+                    "href": "hcstop",
+                    "name": "stop",
+                    "description": "The \"stop\" command pauses the CNC by sending the ! command to the GRBL controller (feed hold)."
+                },
+                {
+                    "href": "hcresume",
+                    "name": "resume",
+                    "description": "The \"resume\" command resumes the CNC by sending the ~ command to the GRBL controller (cycle start)."
+                },
+                {
+                    "href": "hcconnect",
+                    "name": "connect",
+                    "description": "The \"connect\" command connects to the GRBL controller via serial port by attempting to wake it up."
+                },
+                {
+                    "href": "hchome",
+                    "name": "home",
+                    "description": "The \"home\" command is used to home the CNC by sending the '$H' signal."
+                },
+                {
+                    "href": "hcunlock",
+                    "name": "unlock",
+                    "description": "The \"unlock\" command is used to kill an alarm lock by sending the '$X' signal."
+                },
+                {
+                    "href": "hcjobs",
+                    "name": "jobs",
+                    "description": "The \"jobs\" command lists all queued jobs."
+                },
+                {
+                    "href": "hcdisconnect",
+                    "name": "disconnect",
+                    "description": "The \"disconnect\" command disconnects from the GRBL controller."
+                }
+            ],
+            "option": [
+                {
+                    "href": "hc-j",
+                    "name": "-j",
+                    "description": "The \"-j\" option is used to help supply a friendly job name to indicate job purpose and sequencing."
+                }
+            ],
+            "parameter": {
+                "href": "hc-job"
+            }
+        },
+        {
+            "id": "hcscan",
+            "name": "scan",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "scan - scan for avaiable serial ports to stream G-Code to."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc scan"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"scan\" lists available serial devices that could be used to stream G-Code commands to."
+                }
+            ]
+        },
+        {
+            "id": "hcreset",
+            "name": "reset",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "reset - sends the soft reset ctrl-x signal (0x18) to the GRBL controller."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc stop"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"reset\" command sends the ctrl-x signal (0x18) to the GRBL controller. The immediately halts and safely soft resets Grbl without a power-cycle."
+                }
+            ]
+        },
+        {
+            "id": "hcstatus",
+            "name": "status",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "status - sends the ctrl-x signal (0x18) to the GRBL controller."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc stop"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"status\" command sends the status signal (?) to the GRBL controller. "
+                }
+            ]
+        },
+        {
+            "id": "hcstop",
+            "name": "stop",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "stop - sends the feed hold signal (!) to the GRBL controller."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc stop"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"stop\" command sends the feed hold signal (!) to the GRBL controller to pause motion."
+                }
+            ]
+        },
+        {
+            "id": "hcresume",
+            "name": "resume",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "resume - sends the cycle start signal (~) to the GRBL controller to resume motion."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc resume"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"resume\" command sends the cycle start signal (~) to the GRBL controller to resume motion."
+                }
+            ]
+        },
+        {
+            "id": "hcconnect",
+            "name": "connect",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "connect - connects to the GRBL controller."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc connect <serialport>"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"connect\" command connects to the GRBL controller via a serial port provided as parameter."
+                },
+                {
+                    "name": "examples",
+                    "description": "hc connect /dev/tty.usbserial-AR0JI0GV"
+                }
+            ],
+            "parameter": {
+                "href": "hcconnectparameter"
+            }
+        },
+        {
+            "id": "hchome",
+            "name": "home",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "home - sends the CNC to the home position; to the configured limit switches for all the axes."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc home"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"home\" command is used to home the CNC by sending the '$H' signal."
+                }
+            ]
+        },
+        {
+            "id": "hcunlock",
+            "name": "unlock",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "unlock - unlocks the GRBL controller after an alarm is raised."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc home"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"unlock\" command is used to kill an alarm lock by sending the '$X' signal."
+                }
+            ]
+        },
+        {
+            "id": "hcdisconnect",
+            "name": "disconnect",
+            "section": [
+                {
+                    "name": "name",
+                    "description": "disconnect - disconnects from the GRBL controller."
+                },
+                {
+                    "name": "synopsis",
+                    "description": "hc disconnect"
+                },
+                {
+                    "name": "description",
+                    "description": "The \"disconnect\" command disconnects from the GRBL controller."
+                }
+            ]
+        }
+    ]
+}
