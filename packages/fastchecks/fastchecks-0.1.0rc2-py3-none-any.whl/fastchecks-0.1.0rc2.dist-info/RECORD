@@ -1,0 +1,16 @@
+fastchecks/__init__.py,sha256=GW7KHf5-T6mjFCVzZOnRtS5HQoSdPVA1d9zf-UErS-0,707
+fastchecks/check.py,sha256=xRkj8MOBNqkp55E6m1Gt5ZyN9vzTGK4M8gMRRAi-VEI,4683
+fastchecks/cli.py,sha256=8-fWNqs-I7GDEW_JhHoJvv-EiLhXcGMkIjlgDesQP3M,9302
+fastchecks/conf.py,sha256=JZ_rJKRoKYnw-uF7VakKQ-nc0-LpEL6otJL47DR2yqg,3075
+fastchecks/meta.py,sha256=lxHocBWlDmWoadgG0Czu3Jpf_LihdnvATiV7pBdCki0,311
+fastchecks/runner.py,sha256=HuyUe6XQqrf6jMdsCjQ2NtAf-e39XQR_Jz0VfL9_E_o,5661
+fastchecks/sockets/__init__.py,sha256=1i7uOnEHAPOt9rhVHDyjGHzFVLBmM2a6EN6gOZswMt0,2328
+fastchecks/sockets/postgres/__init__.py,sha256=5m04S5zXvDkMFjuzkGrcaUyoHHoYU2h91YceGME0IWI,5114
+fastchecks/sockets/postgres/schema/down.sql,sha256=nmF1TqrF6jdTsLzqK4UgLhHipwOE8Q48ZHwdjgDnaN0,526
+fastchecks/sockets/postgres/schema/up.sql,sha256=4edkpBBFlephXYt_OM3yC-DlUlLoJtDqHdlFgrJE8_M,2122
+fastchecks/types.py,sha256=N7A6QN5Uq6VeMYh7d9Pt3cmkWgxsPyHp69HXEKUUH5c,6174
+fastchecks/util.py,sha256=PLzfIXaH8xnr9Zgk_MnlB3KD5VwK9v7Jwd0wXZgqRxY,3264
+fastchecks/vutil.py,sha256=RYs2wozHhJ3avmKsA68NnlyYh2EKxMtoTYxJ18D6qRk,3530
+fastchecks-0.1.0rc2.dist-info/METADATA,sha256=iPrK9GYKw-erf2OFi7Xd9T9xQU6kSwWWCwelxItWyVs,2305
+fastchecks-0.1.0rc2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+fastchecks-0.1.0rc2.dist-info/RECORD,,
