@@ -1,0 +1,12 @@
+eyeD3
+luddite
+sqdconvert
+mutagen
+
+[dev]
+pip-tools
+build
+twine
+
+[windows]
+pyreadline3
