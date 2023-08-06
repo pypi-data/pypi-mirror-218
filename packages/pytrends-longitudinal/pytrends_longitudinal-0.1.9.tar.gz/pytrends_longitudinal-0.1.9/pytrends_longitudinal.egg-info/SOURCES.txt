@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+pytrends_longitudinal/__init__.py
+pytrends_longitudinal.egg-info/PKG-INFO
+pytrends_longitudinal.egg-info/SOURCES.txt
+pytrends_longitudinal.egg-info/dependency_links.txt
+pytrends_longitudinal.egg-info/requires.txt
+pytrends_longitudinal.egg-info/top_level.txt
