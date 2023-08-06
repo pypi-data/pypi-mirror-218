@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: test_the_best
+Version: 4.5
+Summary: Тест загрузки библиотеки
+Author-email: neso_hoshi_official@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE

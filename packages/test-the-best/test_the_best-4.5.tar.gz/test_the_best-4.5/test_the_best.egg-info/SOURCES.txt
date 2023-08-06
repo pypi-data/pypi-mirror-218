@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+test_the_best/__init__.py
+test_the_best.egg-info/PKG-INFO
+test_the_best.egg-info/SOURCES.txt
+test_the_best.egg-info/dependency_links.txt
+test_the_best.egg-info/not-zip-safe
+test_the_best.egg-info/top_level.txt
