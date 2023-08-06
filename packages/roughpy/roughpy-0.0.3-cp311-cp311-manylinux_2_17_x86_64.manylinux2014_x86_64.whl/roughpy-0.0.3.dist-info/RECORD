@@ -1,0 +1,15 @@
+roughpy/__init__.pyi,sha256=2SDb_WLS557SVOwH6DRPinGLqo6NfVoZiUDzeVkXxhw,24
+roughpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roughpy/libiomp5.so,sha256=wzFhx1g_2KhCxqU0jSzqrt39EAPKvB72o47b1TyNl30,2661404
+roughpy/_roughpy.cpython-311-x86_64-linux-gnu.so,sha256=wKFDDU13OVU2Jx638_e3DvGdWYOkcKLJCaqy52gROhE,16063192
+roughpy/__init__.py,sha256=Uc5dzkTX5bzMDio6QsQSkzhfa3JxF5KJC0zmdQVEHpY,1329
+roughpy/libLibalgebra_lite.so,sha256=E6zS12B4C7YcikUxQcdLYIjXVB4ryvwrY1v_KFmaFKU,396376
+roughpy/version.py,sha256=lM3ys2OKAJvQmWN6CuG_TpNv7yb5bgvVKBYWLr4PpAU,214
+roughpy/_roughpy.pyi,sha256=V5F14pskXfsykJd_sXi87EHY7uKte4xZXjri3_5Ey_c,10442
+roughpy/streams/__init__.py,sha256=GBkw1J8eJRbFox2uWTgVUf214Qi-pMB6GOOrVHID3A8,1561
+roughpy/streams/tick_stream.py,sha256=5Ebzuiv2cmYkjXfaGQNt28hkAIsi2jwtiLdYoCU_k1k,6198
+roughpy-0.0.3.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roughpy-0.0.3.dist-info/WHEEL,sha256=1dfsBUtNBUz6xvf0Nm7FFdbfU-noNAB7Sx5QH_0guNY,155
+roughpy-0.0.3.dist-info/RECORD,,
+roughpy-0.0.3.dist-info/METADATA,sha256=40vGid5ps4lobCnzEYhh1JwUCcS--cuuQ06xKfdeXxQ,5177
+roughpy-0.0.3.dist-info/licenses/LICENSE.txt,sha256=ugZ8gY8KRAkzF10Jg8sxrVfX5zxKJz9xSU5tDnO6Q_k,1489
