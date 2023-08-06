@@ -1,0 +1,2 @@
+[console_scripts]
+NAR = narpyn.ona.NAR:NAR
