@@ -1,0 +1,49 @@
+<h1 id="epics-ca-library-interface-module-kek-japan">EPICS CA library
+interface module (KEK, Japan)</h1>
+<h2 id="overview">Overview</h2>
+<p>This is a distribution of Python extension module for EPICS/CA
+libarary. It allow you to access EPICS runtime database or CA server
+through CA library. Now it support multi-threaded EPICS CA library in
+Release 3.14 or later of EPICS.</p>
+<p>Please read doc/InstallationMemo.html for installation proceduce.</p>
+<p>Thank you,</p>
+<p>2007/5/7</p>
+<p>Noboru Yamamoto EPICS group, Accelerator Lab. KEK, JAPAN</p>
+<p>* contributors: Takashi Obina PF-AR/KEK Tatsuro Nakamura KEKB/KEK
+Wang Xiaoqiang PSI</p>
+<p>* Special Thanks: to All users who gave us comments.</p>
+<h3 id="installation">installation</h3>
+<p>A setup script of this module need to know the location of your EPICS
+installation. Please EPICSROOT environment variable as the path where
+your EPICS base is.</p>
+<ol>
+<li><p>download source package from PyPI site.</p></li>
+<li><p>exapnd the file at appropriate directory</p></li>
+<li><p>goto this directory and run</p>
+<p>env EPICS_ROOT=/your/epics/root python3 setup.py build clean
+install</p></li>
+</ol>
+<h3 id="memo2019.4.19">memo:2019.4.19</h3>
+<p>This module is updated so that it is now compatible with both
+Python2.x (x&gt;6) and Python3.y. (I just tested with Python2.7 and
+Python3.7).</p>
+<p>This module also include calib module which is developed with Cython.
+It is still under development. Once this module is completed, ca314.cpp
+will be obsoleted and will be replaced by python module based on
+calib.</p>
+<h3 id="memo2020.11.17">memo:2020.11.17</h3>
+<p>_ca_kek.py and _ca314.cpp are tweaked to support "SyncGroup"
+function.</p>
+<p>_ca_kek.py is also clean-upped with 2to3 and pylint.</p>
+<h3 id="memo2020.11.19">memo:2020.11.19</h3>
+<p>A crash on centOS was caused by incorrect data conversion format in
+PyArg_ParseTuple in _ca314.cpp. A size of data specified by the fromat
+should be matched with the size of the correspondig argument. Functions,
+sg_test/sg_reset/sg_state, were affected by this incorrect format
+characters.</p>
+<p>Most of python scripts in sample/ directory now works on both python2
+and python3. I don't have PyQt, wxPython in the current test platform,
+so scripts using PyQt or wxPython are not tested( but converted with
+2to3 anyway). You may need to install future module (not __future__
+module) into your python2 enviroment, to test sicripts using tkinter
+module.</p>
