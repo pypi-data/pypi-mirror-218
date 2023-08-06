@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "@datalayer/jupyter-iam",
+  "description": "@datalayer/jupyter-iam settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
