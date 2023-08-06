@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ochsner_web2com"
+version = "0.1.6"
+authors = [
+  { name="Alexander Hackl", email="pypi@eccoz.de" },
+]
+description = "Access to the ochsner web2com interface"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "xmltodict"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ahackl/pypi_ochsner_web2com"
+"Bug Tracker" = "https://github.com/ahackl/pypi_ochsner_web2com/issues"
