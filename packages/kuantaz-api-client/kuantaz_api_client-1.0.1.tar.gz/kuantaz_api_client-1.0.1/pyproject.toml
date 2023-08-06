@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kuantaz_api_client"
+version = "1.0.1"
+description = "Python API Client to communicate with kzCaptcha."
+readme = "README.md"
+authors = [{ name = "Kuantaz Core Developers", email = "kuantaz@kuantaz.com" }]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet",
+]
+keywords = ["kuantaz", "api-client", "spam-protection", "accessibility", "captcha"]
+dependencies = [
+    "requests>=2.31.0"
+]
+requires-python = ">=3.5"
+
+[project.optional-dependencies]
+dev = ["pytest-runner", "requests-mock", "pip-tools"]
+
+[project.urls]
+Website = "https://kuantaz.com"
