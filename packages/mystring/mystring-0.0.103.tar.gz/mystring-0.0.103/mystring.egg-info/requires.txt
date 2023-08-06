@@ -1,0 +1,6 @@
+ephfile
+pandas
+pybryt
+pydbhub
+seaborn
+sqlalchemy
