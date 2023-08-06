@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/meteplanet_room_chat.egg-info/PKG-INFO
+src/meteplanet_room_chat.egg-info/SOURCES.txt
+src/meteplanet_room_chat.egg-info/dependency_links.txt
+src/meteplanet_room_chat.egg-info/requires.txt
+src/meteplanet_room_chat.egg-info/top_level.txt

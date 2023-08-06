@@ -1,0 +1,17 @@
+[project]
+name = "meteplanet_room_chat"
+version = "0.0.1"
+dependencies = [
+    "websocket_client>=1.6.0"
+]
+
+# OR
+[tool.setuptools.packages.find]
+# All the following settings are optional:
+where = ["src"]  # ["."] by default
+#include = ["mypackage*"]  # ["*"] by default
+#exclude = ["mypackage.tests*"]  # empty by default
+#namespaces = false  # true by default
+
+# [project.scripts]
+# hello = "hello:hello"
