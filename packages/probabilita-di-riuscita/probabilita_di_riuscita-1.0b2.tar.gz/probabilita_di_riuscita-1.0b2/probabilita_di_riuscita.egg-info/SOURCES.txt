@@ -1,0 +1,10 @@
+setup.py
+probabilita_di_riuscita/Binomialdistribution.py
+probabilita_di_riuscita/Gaussiandistribution.py
+probabilita_di_riuscita/Generaldistribution.py
+probabilita_di_riuscita/__init__.py
+probabilita_di_riuscita.egg-info/PKG-INFO
+probabilita_di_riuscita.egg-info/SOURCES.txt
+probabilita_di_riuscita.egg-info/dependency_links.txt
+probabilita_di_riuscita.egg-info/not-zip-safe
+probabilita_di_riuscita.egg-info/top_level.txt
