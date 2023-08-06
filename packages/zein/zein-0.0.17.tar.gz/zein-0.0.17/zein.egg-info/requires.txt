@@ -1,0 +1,4 @@
+pandas
+joblib
+tensorflow==2.6.0
+scikit-learn>=0.24.2
