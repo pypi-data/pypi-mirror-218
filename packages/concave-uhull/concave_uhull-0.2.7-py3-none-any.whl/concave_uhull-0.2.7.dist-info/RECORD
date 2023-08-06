@@ -1,0 +1,7 @@
+concave_uhull/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+concave_uhull/alpha_shape.py,sha256=mMyY6HsTOCtohQXW3GHAaPQGN6iQQ3Wen3NzpFi6kik,12313
+concave_uhull/geometry.py,sha256=bhXbS9vMazhhZOum3KmN0RSkuJkg2-YPjqfRm_IS0UQ,3706
+concave_uhull/graph.py,sha256=Kt-mSrTVWpSRkTebmA-vucF0pfXXXY9VZkZ14onxZfs,7660
+concave_uhull-0.2.7.dist-info/METADATA,sha256=KInkU-N3Yb4Ge4Mx8r0nD4n-2zYaqTQ2ubLYrxWID4A,954
+concave_uhull-0.2.7.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+concave_uhull-0.2.7.dist-info/RECORD,,
