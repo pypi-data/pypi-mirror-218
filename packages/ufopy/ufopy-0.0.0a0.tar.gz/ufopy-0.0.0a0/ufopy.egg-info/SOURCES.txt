@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ufopy.egg-info/PKG-INFO
+ufopy.egg-info/SOURCES.txt
+ufopy.egg-info/dependency_links.txt
+ufopy.egg-info/top_level.txt
