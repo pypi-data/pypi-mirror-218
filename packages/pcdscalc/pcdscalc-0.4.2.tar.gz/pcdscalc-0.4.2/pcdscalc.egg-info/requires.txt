@@ -1,0 +1,15 @@
+numpy
+scipy
+xraydb
+
+[doc]
+docs-versions-menu
+numpydoc
+recommonmark
+sphinx<7
+sphinx-copybutton
+sphinx_rtd_theme
+sphinxcontrib-jquery
+
+[test]
+pytest
