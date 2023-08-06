@@ -1,0 +1,9 @@
+{
+    "perf": {"MaxPerf": false, "AbsPerf": true, "epsilon": 0.69}, 
+    "general": {"betaThreshold": 0.55}, 
+    "auto": {"preproc": true, "featsel": false}, 
+    "bound": {"flag": true}, 
+    "norm": {"flag": true}, 
+    "pilot": {"analytic": false, "ntries": 5},
+    "trace": {"usesim": false, "PI": 0.55}
+}
