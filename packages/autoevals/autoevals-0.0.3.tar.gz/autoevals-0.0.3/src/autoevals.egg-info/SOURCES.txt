@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/autoevals/__init__.py
+src/autoevals/base.py
+src/autoevals/llm.py
+src/autoevals/string.py
+src/autoevals/test_llm.py
+src/autoevals/test_string.py
+src/autoevals/util.py
+src/autoevals/version.py
+src/autoevals.egg-info/PKG-INFO
+src/autoevals.egg-info/SOURCES.txt
+src/autoevals.egg-info/dependency_links.txt
+src/autoevals.egg-info/requires.txt
+src/autoevals.egg-info/top_level.txt
