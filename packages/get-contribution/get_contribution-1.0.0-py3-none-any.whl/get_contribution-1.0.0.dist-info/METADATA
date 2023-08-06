@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: get-contribution
+Version: 1.0.0
+Summary: Get your contribution in a Git Repo.
+Author: Hieu Vuong
+Author-email: hieuvuong.cs@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Get contribution in a Git Repo
+
+requires `python >= 3.10`
+
+## Install
+`pip install get-contribution`
+
+## Usage
+<br> `get-contribution`
+
+Additionally, you can provide an *optional username* argument to yield the contribution of a specific user. <br> <br>
+`get-contribution 'John Doe'` 
+
+## Algorithms
+The algorithm is very simple. It calculates the time spent in a repo based on the number of times people have pushed to it.
+
+This time between "pushes" is the contribution time.
+
+## Inspiration
+This tool is not meant to be an *accurate* measure of contribution. Rather, it is meant to give people a rough sense of how much time they have spent on a project.
+Folks who are applying to jobs might find this tool useful since it provides a useful **metric** to be put on resume.
+
+
