@@ -1,0 +1,38 @@
+[package]
+name = "libpt"
+version = "0.1.5"
+edition = "2021"
+authors = ["Christoph J. Scherr <software@cscherr.de>"]
+license = "GPL-3.0-or-later"
+description = "Personal multitool"
+readme = "README.md"
+homepage = "https://git.cscherr.de/PlexSheep/pt"
+repository = "https://git.cscherr.de/PlexSheep/pt"
+keywords = ["cli", "python", "scriptable", "pyo3", "library"]
+categories = ["command-line-utilities", "development-tools", "development-tools::ffi"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "pt"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "pt"
+path = "src/bin/main/mod.rs"
+
+[dependencies]
+clap = { version = "4.3.11", features = ["derive"] }
+clap-num = "1.0.2"
+clap-verbosity-flag = "2.0.1"
+env_logger = "0.10.0"
+gag = "1.0.0"
+humantime = "2.1.0"
+log = { version = "0.4.19", features = ["max_level_trace", "release_max_level_trace"] }
+num = "0.4.0"
+openssl = "0.10.55"
+openssl-sys = "0.9.90"
+pyo3 = "0.18.1"
+regex = "1.9.1"
+reqwest = { version = "0.11.18", features = ["blocking"] }
+signal-hook = "0.3.15"
