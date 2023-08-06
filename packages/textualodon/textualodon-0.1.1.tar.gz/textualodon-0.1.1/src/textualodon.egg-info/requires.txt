@@ -1,0 +1,16 @@
+bs4
+requests
+textual
+
+[dev]
+pre-commit
+flake8
+flake8-import-order
+flake8-bugbear
+flake8-simplify
+flake8-comprehensions
+flake8-builtins
+flake8-annotations
+black
+mypy
+textual[dev]
