@@ -1,0 +1,63 @@
+LICENSE
+README.md
+setup.py
+pydoda/__init__.py
+pydoda/category.py
+pydoda/custom_category.py
+pydoda/loader.py
+pydoda/py_doda.py
+pydoda/sentence.py
+pydoda/utils.py
+pydoda.egg-info/PKG-INFO
+pydoda.egg-info/SOURCES.txt
+pydoda.egg-info/dependency_links.txt
+pydoda.egg-info/requires.txt
+pydoda.egg-info/top_level.txt
+pydoda/dataset/LICENSE
+pydoda/dataset/README.md
+pydoda/dataset/imagenet_b_darija.csv
+pydoda/dataset/progress.py
+pydoda/dataset/sentences.csv
+pydoda/dataset/images/doda_logo.png
+pydoda/dataset/images/video_img.png
+pydoda/dataset/images/wordcloud.png
+pydoda/dataset/semantic categories/animals.csv
+pydoda/dataset/semantic categories/art.csv
+pydoda/dataset/semantic categories/clothes.csv
+pydoda/dataset/semantic categories/colors.csv
+pydoda/dataset/semantic categories/economy.csv
+pydoda/dataset/semantic categories/education.csv
+pydoda/dataset/semantic categories/emotions.csv
+pydoda/dataset/semantic categories/environment.csv
+pydoda/dataset/semantic categories/family.csv
+pydoda/dataset/semantic categories/femalenames.csv
+pydoda/dataset/semantic categories/food.csv
+pydoda/dataset/semantic categories/health.csv
+pydoda/dataset/semantic categories/humanbody.csv
+pydoda/dataset/semantic categories/malenames.csv
+pydoda/dataset/semantic categories/numbers.csv
+pydoda/dataset/semantic categories/places.csv
+pydoda/dataset/semantic categories/plants.csv
+pydoda/dataset/semantic categories/professions.csv
+pydoda/dataset/semantic categories/religion.csv
+pydoda/dataset/semantic categories/sport.csv
+pydoda/dataset/semantic categories/time.csv
+pydoda/dataset/syntactic categories/(in)definite.csv
+pydoda/dataset/syntactic categories/adjectives.csv
+pydoda/dataset/syntactic categories/adverbs.csv
+pydoda/dataset/syntactic categories/conjug_past.csv
+pydoda/dataset/syntactic categories/conjug_present.csv
+pydoda/dataset/syntactic categories/imperatives.csv
+pydoda/dataset/syntactic categories/masculine_feminine_plural.csv
+pydoda/dataset/syntactic categories/nouns.csv
+pydoda/dataset/syntactic categories/prepositions.csv
+pydoda/dataset/syntactic categories/pronouns.csv
+pydoda/dataset/syntactic categories/verb-to-noun.csv
+pydoda/dataset/syntactic categories/verbs.csv
+pydoda/dataset/x-tra/idioms.csv
+pydoda/dataset/x-tra/proverbs.csv
+pydoda/dataset/x-tra/utils.csv
+pydoda/dataset/x-tra/weird.csv
+tests/__init__.py
+tests/test_category.py
+tests/test_py_doda.py
