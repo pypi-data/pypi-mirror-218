@@ -1,0 +1,3 @@
+pyyaml
+Click
+sphinx-click

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pycrispr
+Version: 1.0.1
+Summary: A package for CRISPR-Cas9 screen analysis
+Author: Niek Wit
+Author-email: nw416@cam.ac.uk
+License: GPL-3.0 license
+Project-URL: Documentation, https://pycrispr.readthedocs.io/
+Project-URL: Source, https://github.com/niekwit/pycrispr
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Project description
+=====================
+
+**pycrispr**: a scalable and reproducible pipeline for analysing CRISPR-Cas9 screen data. It implements the `snakemake <https://snakemake.readthedocs.io/en/stable/index.html>`_ workflow management system.

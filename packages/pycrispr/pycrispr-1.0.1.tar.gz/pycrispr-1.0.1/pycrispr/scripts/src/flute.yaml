@@ -1,0 +1,9 @@
+name: mageck_flute
+channels: 
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconductor-mageckflute=2.2.0
+  - bioconductor-clusterprofiler=4.6.0
+  - r-ggplot2=3.4.2
