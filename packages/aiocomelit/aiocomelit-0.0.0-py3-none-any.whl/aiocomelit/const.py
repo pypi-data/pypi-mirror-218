@@ -1,0 +1,13 @@
+"""Constants for Comelit Simple Home."""
+import logging
+
+_LOGGER = logging.getLogger(__package__)
+
+# Device types
+COVER = "shutter"
+LIGHT = "light"
+CLIMATE = "clima"
+OTHER = "other"
+
+# Maximum number of zones for a VEDO alarm device
+MAX_ZONES = 8
