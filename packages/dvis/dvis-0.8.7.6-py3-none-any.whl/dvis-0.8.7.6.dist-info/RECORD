@@ -1,0 +1,11 @@
+dvis/__init__.py,sha256=bfwoJN9nz_CchjmbhA9LJ0RKF1sHsInHrU4y79KfKpg,35
+dvis/dvis.py,sha256=i0KKL1ReHPpfcBJvM0DB__wYLrAnV_0pJlNDkQXVmrU,39040
+dvis/dvis_cli.py,sha256=ON6Hgf4fZLldr2kRYlcDszVr5aONASkJOv3fhW_B5cE,1525
+dvis/dvis_client.py,sha256=IuyqDe6B2K0pc9gJv0zCH3xUBKGuJTnPZRrJlFmmv-w,8263
+dvis/dvis_client_old.py,sha256=kJCMvv9fMB0o2xT1rXeFknTlYwxVipsmtR4XZD6jgHM,6060
+dvis/utils.py,sha256=HqiY7EByL6jGPmtFn01vrUOSYjqN9rGHwijWsr6uTJc,5510
+dvis-0.8.7.6.dist-info/METADATA,sha256=tEJ4LH3OwqEniTRQqzLakvHpww4lavFoQMupZiXIaHo,4228
+dvis-0.8.7.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dvis-0.8.7.6.dist-info/entry_points.txt,sha256=2MbvKd1b3fX4-mCWebjq9WV9WGvKphkaIWK1y9t8Rfw,92
+dvis-0.8.7.6.dist-info/top_level.txt,sha256=umqc2hmt_MBtmCWlbzVNRfIDt27Fp6CQmRB6dhDkcnk,5
+dvis-0.8.7.6.dist-info/RECORD,,
