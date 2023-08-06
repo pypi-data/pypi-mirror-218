@@ -1,0 +1,5 @@
+integer_fft-0.1.1.dist-info/METADATA,sha256=nCdR5rBHUK22WDMB0K7DGunpS_D4lWGWei4MEq7fNn4,5518
+integer_fft-0.1.1.dist-info/WHEEL,sha256=44IYv0yFZcKzOuKGvFoow8Ttm9ak_Egiu5qUs3-gxko,102
+integer_fft/__init__.py,sha256=dsYbMJbw5_AytrSYet4rWX8iy4hvhIaiQoxGLufpipY,127
+integer_fft/integer_fft.cpython-39-darwin.so,sha256=v2oxDIrvPYuN-bq6Pa3QxX-aMdr6grvC7VW5yYcaAN4,473261
+integer_fft-0.1.1.dist-info/RECORD,,
