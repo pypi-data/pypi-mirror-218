@@ -1,0 +1,12 @@
+napari_vedo_bridge/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+napari_vedo_bridge/_cutter_widget.py,sha256=688xVwFDWUZbiJdVV1e2UUCvIYoWykJJV1J8Ty0_HaI,7673
+napari_vedo_bridge/napari.yaml,sha256=C59wBCcQTKXqvt4LYBWIkbzt2ld-zvTQKlVTgi8OhjY,333
+napari_vedo_bridge/vedo_extension.ui,sha256=AMCkmkg7kS58bWKkaZQMJqtKKB-aAgNufBVMgf2btLA,2843
+napari_vedo_bridge/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_vedo_bridge/_tests/test_widget.py,sha256=k9osDSMImuM-inq9cvKgcjqEpkdC4SR5H7Szgglwwoo,1854
+napari_vedo_bridge-0.0.4.dist-info/LICENSE,sha256=3KuopvpAcpuQrr1i6ezxPaFq1w21SLtGOPl6X5xe2TU,1505
+napari_vedo_bridge-0.0.4.dist-info/METADATA,sha256=0clmh7zaXN2rXKZLl-nKbSNYtDamw3abrbxJbuko0HA,5187
+napari_vedo_bridge-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_vedo_bridge-0.0.4.dist-info/entry_points.txt,sha256=xg4uzaccbL1yAZo8QgcrEbz_RD7xk5ku5m3USLiqXzc,70
+napari_vedo_bridge-0.0.4.dist-info/top_level.txt,sha256=lLmwP6erpgv6tDUv1ffmWjNAuJvTicwJxekGPVcR2i8,19
+napari_vedo_bridge-0.0.4.dist-info/RECORD,,
