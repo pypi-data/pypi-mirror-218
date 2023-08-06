@@ -1,0 +1,2 @@
+[console_scripts]
+llm-to-corpus = src.llm_to_corpus.cli:main

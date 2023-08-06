@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+llm_to_corpus.egg-info/PKG-INFO
+llm_to_corpus.egg-info/SOURCES.txt
+llm_to_corpus.egg-info/dependency_links.txt
+llm_to_corpus.egg-info/entry_points.txt
+llm_to_corpus.egg-info/requires.txt
+llm_to_corpus.egg-info/top_level.txt
+src/llm_to_corpus/bloom.py
+src/llm_to_corpus/chatgpt.py
+src/llm_to_corpus/cli.py
+src/llm_to_corpus/models.py
+src/llm_to_corpus/version.py
