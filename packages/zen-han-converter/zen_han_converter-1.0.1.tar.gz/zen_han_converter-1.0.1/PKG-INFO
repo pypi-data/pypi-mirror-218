@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: zen_han_converter
+Version: 1.0.1
+Summary: Converts full-width and half-width characters.
+Home-page: https://github.com/n4cl/zen_han_converter.git
+Author: n4cl
+Author-email: devn4cl@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+zen_han_converter
+===
+
+# Description
+
+This is a tool for converting full-width and half-width characters to each other, implemented only with Python's standard modules.
+
+# Installaction
+
+```
+pip install zen_han_converter
+```
+
+# Usage
+
+```
+>>> from zen_han_convter import ZenToHan
+>>> zen_to_han = ZenToHan()
+>>> zen_to_han.convert('ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ')
+'abcdefghijklmnopqrstuvwxyz'
+```
