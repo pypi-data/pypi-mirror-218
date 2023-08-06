@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/non_parametric/__init__.py
+src/non_parametric/empirical_cumulative_distribution.py
+src/non_parametric/frequency_table.py
+src/non_parametric/plot_comparision.py
+src/non_parametric/synthetic_data_generator.py
+src/non_parametric_multivariate_data_generator.egg-info/PKG-INFO
+src/non_parametric_multivariate_data_generator.egg-info/SOURCES.txt
+src/non_parametric_multivariate_data_generator.egg-info/dependency_links.txt
+src/non_parametric_multivariate_data_generator.egg-info/requires.txt
+src/non_parametric_multivariate_data_generator.egg-info/top_level.txt
