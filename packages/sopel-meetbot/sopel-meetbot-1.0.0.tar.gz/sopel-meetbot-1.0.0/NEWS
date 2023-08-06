@@ -1,0 +1,4 @@
+Version 1.0.0
+=============
+
+Initial release of `meetbot.py` from Sopel 7.1.x as its own package.
