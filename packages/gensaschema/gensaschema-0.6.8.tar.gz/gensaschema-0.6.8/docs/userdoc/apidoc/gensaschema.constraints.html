@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>gensaschema.constraints module &#8212; GenSASchema 0.6.8 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/ci.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="gensaschema._util module" href="gensaschema._util.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a></li>
+        <li class="right" >
+          <a href="gensaschema._util.html" title="gensaschema._util module"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">GenSASchema 0.6.8 documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >gensaschema</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="gensaschema.html" accesskey="U">gensaschema package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">gensaschema.constraints module</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-gensaschema.constraints">
+<span id="gensaschema-constraints-module"></span><h1>gensaschema.constraints module<a class="headerlink" href="#module-gensaschema.constraints" title="Permalink to this heading">¶</a></h1>
+<section id="constraint-declarators">
+<h2>Constraint Declarators<a class="headerlink" href="#constraint-declarators" title="Permalink to this heading">¶</a></h2>
+<p>Helper functions to define constraints. These will be part of the generated
+schema modules. Copy or the reference the module where needed. The location is
+configurable.</p>
+<dl class="field-list">
+<dt class="field-odd">Copyright<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Copyright 2010 - 2023
+André Malo or his licensors, as applicable</p>
+</dd>
+<dt class="field-even">License<span class="colon">:</span></dt>
+<dd class="field-even"><p>Licensed under the Apache License, Version 2.0 (the “License”);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at</p>
+<blockquote>
+<div><p><a class="reference external" href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+</div></blockquote>
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+</dd>
+</dl>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="gensaschema.constraints.ForeignKey">
+<span class="sig-prename descclassname"><span class="pre">gensaschema.constraints.</span></span><span class="sig-name descname"><span class="pre">ForeignKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refcolumns</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/constraints.html#ForeignKey"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.constraints.ForeignKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append foreign key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>columns</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">sequence</span></code>) – Source columns</p></li>
+<li><p><strong>refcolumns</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">sequence</span></code>) – Referred columns</p></li>
+<li><p><strong>**kwargs</strong> – Additional parameters</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gensaschema.constraints.PrimaryKey">
+<span class="sig-prename descclassname"><span class="pre">gensaschema.constraints.</span></span><span class="sig-name descname"><span class="pre">PrimaryKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/constraints.html#PrimaryKey"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.constraints.PrimaryKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append primary key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>*columns</strong> – Constraint columns</p></li>
+<li><p><strong>**kwargs</strong> – Additional parameters</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="gensaschema.constraints.Unique">
+<span class="sig-prename descclassname"><span class="pre">gensaschema.constraints.</span></span><span class="sig-name descname"><span class="pre">Unique</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gensaschema/constraints.html#Unique"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#gensaschema.constraints.Unique" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append unique constraint</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>*columns</strong> – Constraint columns</p></li>
+<li><p><strong>**kwargs</strong> – Additional arguments</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">gensaschema.constraints module</a><ul>
+<li><a class="reference internal" href="#constraint-declarators">Constraint Declarators</a></li>
+<li><a class="reference internal" href="#gensaschema.constraints.ForeignKey"><code class="docutils literal notranslate"><span class="pre">ForeignKey()</span></code></a></li>
+<li><a class="reference internal" href="#gensaschema.constraints.PrimaryKey"><code class="docutils literal notranslate"><span class="pre">PrimaryKey()</span></code></a></li>
+<li><a class="reference internal" href="#gensaschema.constraints.Unique"><code class="docutils literal notranslate"><span class="pre">Unique()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="gensaschema._util.html"
+                          title="Previous page">&larr; gensaschema._util module</a></p>
+  </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a></li>
+        <li class="right" >
+          <a href="gensaschema._util.html" title="gensaschema._util module"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">GenSASchema 0.6.8 documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >gensaschema</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="gensaschema.html" >gensaschema package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">gensaschema.constraints module</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015 - 2023 André Malo.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>

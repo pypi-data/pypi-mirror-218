@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>gensaschema &#8212; GenSASchema 0.6.8 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/cloud.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/ci.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
+    <link rel="search" title="Search" href="../search.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a></li>
+    <li><a href="../index.html">GenSASchema 0.6.8 documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">gensaschema</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="gensaschema">
+<h1>gensaschema<a class="headerlink" href="#gensaschema" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gensaschema.html">gensaschema package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._column.html">gensaschema._column module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._column.html#column-inspection-and-representation">Column inspection and representation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._column.html#gensaschema._column.Column"><code class="docutils literal notranslate"><span class="pre">Column</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._column.html#gensaschema._column.ServerDefault"><code class="docutils literal notranslate"><span class="pre">ServerDefault</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._config.html">gensaschema._config module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._config.html#schema-config-management">Schema config management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._config.html#gensaschema._config.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._constraint.html">gensaschema._constraint module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._constraint.html#constraint-inspection-and-representation">Constraint inspection and representation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._constraint.html#gensaschema._constraint.Constraint"><code class="docutils literal notranslate"><span class="pre">Constraint</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._constraint.html#gensaschema._constraint.ForeignKeyConstraint"><code class="docutils literal notranslate"><span class="pre">ForeignKeyConstraint</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._constraint.html#gensaschema._constraint.PrimaryKeyConstraint"><code class="docutils literal notranslate"><span class="pre">PrimaryKeyConstraint</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._constraint.html#gensaschema._constraint.UniqueConstraint"><code class="docutils literal notranslate"><span class="pre">UniqueConstraint</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._constraint.html#gensaschema._constraint.access_col"><code class="docutils literal notranslate"><span class="pre">access_col()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._exceptions.html">gensaschema._exceptions module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._exceptions.html#gensaschema-exceptions">GenSASchema Exceptions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._exceptions.html#gensaschema._exceptions.Error"><code class="docutils literal notranslate"><span class="pre">Error</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._exceptions.html#gensaschema._exceptions.Warning"><code class="docutils literal notranslate"><span class="pre">Warning</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._meta.html">gensaschema._meta module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._meta.html#metadata">Metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._meta.html#gensaschema._meta.BoundMetaData"><code class="docutils literal notranslate"><span class="pre">BoundMetaData</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._schema.html">gensaschema._schema module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._schema.html#schema-module-generation">Schema module generation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._schema.html#gensaschema._schema.Schema"><code class="docutils literal notranslate"><span class="pre">Schema</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._symbols.html">gensaschema._symbols module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._symbols.html#symbol-management">Symbol management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._symbols.html#gensaschema._symbols.SymbolException"><code class="docutils literal notranslate"><span class="pre">SymbolException</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._symbols.html#gensaschema._symbols.Symbols"><code class="docutils literal notranslate"><span class="pre">Symbols</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._symbols.html#gensaschema._symbols._Imports"><code class="docutils literal notranslate"><span class="pre">_Imports</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._symbols.html#gensaschema._symbols._Types"><code class="docutils literal notranslate"><span class="pre">_Types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._symbols.html#gensaschema._symbols._load_dotted"><code class="docutils literal notranslate"><span class="pre">_load_dotted()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._table.html">gensaschema._table module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._table.html#table-inspection-and-representation">Table inspection and representation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._table.html#gensaschema._table.Table"><code class="docutils literal notranslate"><span class="pre">Table</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._table.html#gensaschema._table.TableCollection"><code class="docutils literal notranslate"><span class="pre">TableCollection</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._table.html#gensaschema._table.TableReference"><code class="docutils literal notranslate"><span class="pre">TableReference</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._table.html#gensaschema._table._break_cycles"><code class="docutils literal notranslate"><span class="pre">_break_cycles()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._template.html">gensaschema._template module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._template.html#simple-template-abstraction">Simple template abstraction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._template.html#gensaschema._template.Template"><code class="docutils literal notranslate"><span class="pre">Template</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._type.html">gensaschema._type module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._type.html#type-inspection-and-representation">Type inspection and representation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._type.html#gensaschema._type.Type"><code class="docutils literal notranslate"><span class="pre">Type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._type.html#gensaschema._type._add_postgres_enum"><code class="docutils literal notranslate"><span class="pre">_add_postgres_enum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._type.html#gensaschema._type._finalize_type"><code class="docutils literal notranslate"><span class="pre">_finalize_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._type.html#gensaschema._type._find_class"><code class="docutils literal notranslate"><span class="pre">_find_class()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema._util.html">gensaschema._util module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._util.html#misc-utilities">Misc Utilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._util.html#gensaschema._util.cmp"><code class="docutils literal notranslate"><span class="pre">cmp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema._util.html#gensaschema._util.find_public"><code class="docutils literal notranslate"><span class="pre">find_public()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.constraints.html">gensaschema.constraints module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.constraints.html#constraint-declarators">Constraint Declarators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.constraints.html#gensaschema.constraints.ForeignKey"><code class="docutils literal notranslate"><span class="pre">ForeignKey()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.constraints.html#gensaschema.constraints.PrimaryKey"><code class="docutils literal notranslate"><span class="pre">PrimaryKey()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.constraints.html#gensaschema.constraints.Unique"><code class="docutils literal notranslate"><span class="pre">Unique()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gensaschema.html#module-gensaschema">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#gensaschema-static-sqlalchemy-schema-generator">GenSASchema - Static SQLAlchemy Schema Generator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#gensaschema.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.tables"><code class="docutils literal notranslate"><span class="pre">Config.tables</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.schemas"><code class="docutils literal notranslate"><span class="pre">Config.schemas</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config._lines"><code class="docutils literal notranslate"><span class="pre">Config._lines</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config._CONFIG_TPL"><code class="docutils literal notranslate"><span class="pre">Config._CONFIG_TPL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.__dict__"><code class="docutils literal notranslate"><span class="pre">Config.__dict__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.__init__"><code class="docutils literal notranslate"><span class="pre">Config.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.__module__"><code class="docutils literal notranslate"><span class="pre">Config.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.__weakref__"><code class="docutils literal notranslate"><span class="pre">Config.__weakref__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.dump"><code class="docutils literal notranslate"><span class="pre">Config.dump()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.from_file"><code class="docutils literal notranslate"><span class="pre">Config.from_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.from_lines"><code class="docutils literal notranslate"><span class="pre">Config.from_lines()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Config.from_parser"><code class="docutils literal notranslate"><span class="pre">Config.from_parser()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#gensaschema.Error"><code class="docutils literal notranslate"><span class="pre">Error</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Error.__module__"><code class="docutils literal notranslate"><span class="pre">Error.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Error.__weakref__"><code class="docutils literal notranslate"><span class="pre">Error.__weakref__</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#gensaschema.Schema"><code class="docutils literal notranslate"><span class="pre">Schema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema._dialect"><code class="docutils literal notranslate"><span class="pre">Schema._dialect</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema._tables"><code class="docutils literal notranslate"><span class="pre">Schema._tables</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema._schemas"><code class="docutils literal notranslate"><span class="pre">Schema._schemas</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema._symbols"><code class="docutils literal notranslate"><span class="pre">Schema._symbols</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema._dbname"><code class="docutils literal notranslate"><span class="pre">Schema._dbname</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema._MODULE_TPL"><code class="docutils literal notranslate"><span class="pre">Schema._MODULE_TPL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema.__dict__"><code class="docutils literal notranslate"><span class="pre">Schema.__dict__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema.__init__"><code class="docutils literal notranslate"><span class="pre">Schema.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema.__module__"><code class="docutils literal notranslate"><span class="pre">Schema.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema.__weakref__"><code class="docutils literal notranslate"><span class="pre">Schema.__weakref__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Schema.dump"><code class="docutils literal notranslate"><span class="pre">Schema.dump()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#gensaschema.SymbolException"><code class="docutils literal notranslate"><span class="pre">SymbolException</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.SymbolException.__annotations__"><code class="docutils literal notranslate"><span class="pre">SymbolException.__annotations__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.SymbolException.__module__"><code class="docutils literal notranslate"><span class="pre">SymbolException.__module__</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols"><code class="docutils literal notranslate"><span class="pre">Symbols</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols._symbols"><code class="docutils literal notranslate"><span class="pre">Symbols._symbols</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.imports"><code class="docutils literal notranslate"><span class="pre">Symbols.imports</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.types"><code class="docutils literal notranslate"><span class="pre">Symbols.types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__contains__"><code class="docutils literal notranslate"><span class="pre">Symbols.__contains__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__delitem__"><code class="docutils literal notranslate"><span class="pre">Symbols.__delitem__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__dict__"><code class="docutils literal notranslate"><span class="pre">Symbols.__dict__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__getitem__"><code class="docutils literal notranslate"><span class="pre">Symbols.__getitem__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__init__"><code class="docutils literal notranslate"><span class="pre">Symbols.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__iter__"><code class="docutils literal notranslate"><span class="pre">Symbols.__iter__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__module__"><code class="docutils literal notranslate"><span class="pre">Symbols.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__setitem__"><code class="docutils literal notranslate"><span class="pre">Symbols.__setitem__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Symbols.__weakref__"><code class="docutils literal notranslate"><span class="pre">Symbols.__weakref__</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#gensaschema.Type"><code class="docutils literal notranslate"><span class="pre">Type</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type._ctype"><code class="docutils literal notranslate"><span class="pre">Type._ctype</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type._dialect"><code class="docutils literal notranslate"><span class="pre">Type._dialect</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type._symbols"><code class="docutils literal notranslate"><span class="pre">Type._symbols</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type.__dict__"><code class="docutils literal notranslate"><span class="pre">Type.__dict__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type.__init__"><code class="docutils literal notranslate"><span class="pre">Type.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type.__module__"><code class="docutils literal notranslate"><span class="pre">Type.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type.__repr__"><code class="docutils literal notranslate"><span class="pre">Type.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type.__weakref__"><code class="docutils literal notranslate"><span class="pre">Type.__weakref__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Type.by_column"><code class="docutils literal notranslate"><span class="pre">Type.by_column()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gensaschema.html#gensaschema.Warning"><code class="docutils literal notranslate"><span class="pre">Warning</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Warning.__module__"><code class="docutils literal notranslate"><span class="pre">Warning.__module__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Warning.__weakref__"><code class="docutils literal notranslate"><span class="pre">Warning.__weakref__</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="gensaschema.html#gensaschema.Warning.emit"><code class="docutils literal notranslate"><span class="pre">Warning.emit()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a></li>
+    <li><a href="../index.html">GenSASchema 0.6.8 documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">gensaschema</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015 - 2023 André Malo.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>
