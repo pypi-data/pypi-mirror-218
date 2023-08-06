@@ -1,0 +1,36 @@
+[project]
+name = "u2p"
+authors = [{name = "Kamil Turek", email = "kamil.turek@hotmail.com"}]
+description = "A tool for migrating from unittest to pytest"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["unittest", "pytest", "cst"]
+license = {text = "MIT"}
+dynamic = ["version"]
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "libcst"
+]
+
+[project.scripts]
+u2p = "u2p.cli:run"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr="u2p.__version__"}
+
+[tool.pytest.ini_options]
+pythonpath = "src"
