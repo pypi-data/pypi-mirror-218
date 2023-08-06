@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: huhk
+Version: 1.5.9
+Summary: 接口自动化
+Author: 胡杭凯
+Author-email: 3173825608@qq.com
+Requires-Python: >=3.0
+Requires-Dist: faker
+Requires-Dist: openpyxl
+Requires-Dist: apscheduler
+Requires-Dist: rsa
+Requires-Dist: pyDes
+Requires-Dist: pycryptodome
+Requires-Dist: xlsxwriter
+Requires-Dist: pandas
+Requires-Dist: apache-beam
+Requires-Dist: pytest
+Requires-Dist: setuptools
+Requires-Dist: twine
+Requires-Dist: requests (==2.29.0)
+Requires-Dist: click
+
