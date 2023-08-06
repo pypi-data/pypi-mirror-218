@@ -1,0 +1,6 @@
+module.py
+setup.py
+tasker_frugal.egg-info/PKG-INFO
+tasker_frugal.egg-info/SOURCES.txt
+tasker_frugal.egg-info/dependency_links.txt
+tasker_frugal.egg-info/top_level.txt
