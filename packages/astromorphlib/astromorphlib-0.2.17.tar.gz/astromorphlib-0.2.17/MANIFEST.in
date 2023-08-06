@@ -1,0 +1,5 @@
+include LICENSE.txt
+include stat_lib/Table_Arp_Madore_pairs_updated.txt  
+include stat_lib/iDR4_zero-points.csv
+include stat_lib/iDR4_obs_seeing.csv
+include stat_lib/properties.dat 
