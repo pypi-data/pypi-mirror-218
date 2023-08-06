@@ -1,0 +1,6 @@
+click
+docstring-parser
+
+[api]
+fastapi
+uvicorn
