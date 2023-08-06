@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: linlangleyprime
+Version: 0.8
+Summary: Demo for building a Python project
+Home-page: http://lin-chen-langley.github.io
+Author: Lin Chen, Yanhua Feng
+Author-email: lin.chen@ieee.org, yf@vims.edu
+License: Apache License 2.0
+Project-URL: PyPI, https://pypi.org/manage/project/linlangleyprime/releases/
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Text Processing :: Fonts
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#### .gitignore
+> git ignore file
+> created from the template at https://github.com/github/gitignore
+
+#### LICENSE
+> **Custom license**, software developed in-house may choose to adopt a custom license specifically tailored to meet ACC/A29 needs; the licenses can include specific terms and conditions related to ownership, usage, distribution, and modifications of the software.
+> **Open source software licenses**, GNU General Public License (GPL) or the Apache License are commonly used by the DoD their in-house developed software
+> "Copyright protection … is not available for any work of the United States Government, but the United States is not precluded from receiving and holding copyrights transferred to it by assignment, bequest, or otherwise."
+
+> 17 USC § 105 at https://www.copyright.gov/title17/92chap1.html#105
+> Clarifying Guidance Regarding Open Source Software (OSS) at https://dodcio.defense.gov/portals/0/documents/foss/2009oss.pdf
