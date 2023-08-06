@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: tenuki
+Version: 0.2.0
+Summary: A set of development tools for go/baduk/wéiqí projects.
+Home-page: https://github.com/konradhalas/tenuki
+Author: Konrad Hałas
+Author-email: halas.konrad@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest (>=7.4) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
+# tenuki
+
+A set of development tools for go/baduk/wéiqí projects.
+
+## Installation
+
+Use `pip` or your favorite package manager to install `tenuki`:
+
+```bash
+pip install tenuki
+```
+
+## Rank
+
+`Rank` class is a representation of a player's rank.
+
+```python
+from tenuki.rank import Rank
+
+rank_1 = Rank.parse("1d")
+rank_2 = Rank.parse("1k")
+
+assert rank_1 > rank_2
+assert rank_1.diff(rank_2) == 1
+assert rank_1 + 8 == Rank.parse("9d")
+```
+
+### EGF
+
+#### GoR <-> Rank
+
+Convert between GoR and Rank:
+
+```python
+from tenuki.rank import Rank
+from tenuki.egf import gor_to_rank, rank_to_gor
+
+assert gor_to_rank(2100) == Rank.parse("1d")
+assert rank_to_gor(Rank.parse("1d")) == 2100
+```
