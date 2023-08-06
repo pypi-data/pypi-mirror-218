@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pubpypack-harmony-lawrence-laugesen
+Version: 0.0.1
+Summary: This package is silly
+Home-page: https://github.com/laugesen11/first_python_package
+Author: Laugesen
+Author-email: "Laugesen" <laugesen@email.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# first-python-package
+
+This package does amazing things
+
+## Installation
+
+```shell
+$ python -m pip install first-python-package
+```
