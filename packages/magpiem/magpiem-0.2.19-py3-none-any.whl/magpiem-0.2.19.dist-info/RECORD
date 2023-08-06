@@ -1,0 +1,9 @@
+magpiem/__init__.py,sha256=gt3F07UPoWcq6tbOFCpRMBWcDJjfZMT_rJls4zgNNQE,207
+magpiem/classes.py,sha256=B2rARGJt7U7Oa1i7Ragdw15n0-1GAKRr-9weqJUdLMI,36022
+magpiem/dash_ui.py,sha256=oyGgNAQ6wT0AJnqxL41TXMjWoZR9JrcpoJvKWvZwwKE,35113
+magpiem/read_write.py,sha256=Zv1nUOHgzQaeZKLU30vBLEUaCXiy-HHkU7Ut2R_Tvlc,9106
+magpiem-0.2.19.dist-info/METADATA,sha256=lUPtdk4_kSKLWFXo8hfOSYwLfZ0o_V8Zq4iTyqIG8Lo,7465
+magpiem-0.2.19.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+magpiem-0.2.19.dist-info/entry_points.txt,sha256=fnqRuBP2pkjnod8ZzsFQ8GYKzxT7GwryrNsGxz-m2Lw,49
+magpiem-0.2.19.dist-info/licenses/LICENSE,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+magpiem-0.2.19.dist-info/RECORD,,
