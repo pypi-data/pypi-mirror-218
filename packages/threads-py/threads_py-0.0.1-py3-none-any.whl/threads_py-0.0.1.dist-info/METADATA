@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: threads-py
+Version: 0.0.1
+Summary: Unofficial, Reverse-Engineered Python client for Meta's Threads.
+Home-page: https://github.com/junhoyeo/threads-py
+Author: junhoyeo
+Author-email: i@junho.io
+License: MIT License
+Platform: any
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: dataclasses
+Requires-Dist: dataclasses-json
+
