@@ -1,0 +1,6 @@
+numpy
+PyYAML
+tabulate
+termcolor
+torch
+torchvision

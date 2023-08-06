@@ -1,0 +1,12 @@
+dlmdutils-0.1.data/data/requirements.txt,sha256=bjOOo9ZrriK4Br3whRmdnmN9rpjUXYYHsy8eVRcN-l0,56
+hooks/__init__.py,sha256=XFX0IgolXTNpcoQMYb9iB0H43S31YDIcdHaDUBq6aHU,304
+hooks/checkpoint_hook.py,sha256=1nkz4ZppDtlvrOoJAEl_u1vyQ1HBdWt1O3WPqrySDhQ,1851
+hooks/distributed_hook.py,sha256=vdUEK_4lNHFxCMrDe2JCr9TMelwvyZz0sQ9LUOb_NcA,571
+hooks/eval_hook.py,sha256=4oA8tJYqvMqa0WLWIbbX_G8LE4dGD3wsWtw5eoxnn3A,1344
+hooks/hookbase.py,sha256=yWRawqtt2QR8P9KEKxlBGCKX87yduV5m8Sl63VMlMYw,3267
+hooks/logger_hook.py,sha256=78Kgwuw_bRJ_SFN5V3mZ1HdQZ0A7F5aow9H7MYhIQMA,4204
+hooks/lr_update_hook.py,sha256=9NQs4emhav_u4qJxCk-s5QORiiKjPCW7V2-LrLc8RPQ,1694
+dlmdutils-0.1.dist-info/METADATA,sha256=J9EhvEVasqwzZieM4iKAuOWzRgbYe-JSlax_pxIMfrQ,306
+dlmdutils-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dlmdutils-0.1.dist-info/top_level.txt,sha256=I0gcmmeA3xdjjkokY-bVx5WycqQcFVAk4RHQB-wl9h8,6
+dlmdutils-0.1.dist-info/RECORD,,
