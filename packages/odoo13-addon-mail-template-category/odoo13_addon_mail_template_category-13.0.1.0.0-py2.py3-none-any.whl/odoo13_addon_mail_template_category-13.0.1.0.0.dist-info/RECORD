@@ -1,0 +1,14 @@
+odoo/addons/mail_template_category/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/mail_template_category/__manifest__.py,sha256=rUrKbnJAGzoWc7tMjAW1SKhHHL5aR3G5IJixAYR6rYI,455
+odoo/addons/mail_template_category/i18n/es.po,sha256=d6x2w2fBu0HgiPG3ts9K7oAyuPWQgyvUV5jw1OJQhlI,5159
+odoo/addons/mail_template_category/i18n/mail_template_category.pot,sha256=qHFD59NIFaddcQSMn3yQU2fW7MteT_8AhukAnqUE7RQ,4765
+odoo/addons/mail_template_category/models/__init__.py,sha256=Fh0cbBi8yasw0rBdpShOQfa6O32fBJbUyJx4bJ_CwGY,65
+odoo/addons/mail_template_category/models/mail_template.py,sha256=SwyMevKcI0-J2laVAbLdSYZigX-DsAZOXzXzNkC2g7k,161
+odoo/addons/mail_template_category/models/mail_template_category.py,sha256=ZwzWHQfErnX-PjygSr94SJXi24S7L43Z-ZjIgZI7d9U,199
+odoo/addons/mail_template_category/security/ir.model.access.csv,sha256=o6gfP_rjDPFDP2YDnoX9xsQGa-IVoXADJRHG4fq_wZw,190
+odoo/addons/mail_template_category/views/mail_template.xml,sha256=3SUOz7JwN6zBwXx6SX0yQPsm3nNog2LRyxzgQweBeMw,1589
+odoo/addons/mail_template_category/views/mail_template_category.xml,sha256=SWkUo6QOdlGuR05Gv0TI58u5hgX54zf0g9yLYHd9SE8,2082
+odoo13_addon_mail_template_category-13.0.1.0.0.dist-info/METADATA,sha256=Y7tklvfkq1pinn6k5EvQSk8rjmgof0A0DX4qRIBbWlc,439
+odoo13_addon_mail_template_category-13.0.1.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+odoo13_addon_mail_template_category-13.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_mail_template_category-13.0.1.0.0.dist-info/RECORD,,
