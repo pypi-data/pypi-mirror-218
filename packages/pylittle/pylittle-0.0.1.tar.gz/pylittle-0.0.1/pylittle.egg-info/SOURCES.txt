@@ -1,0 +1,10 @@
+README.md
+setup.py
+pylittle/__init__.py
+pylittle/main.py
+pylittle.egg-info/PKG-INFO
+pylittle.egg-info/SOURCES.txt
+pylittle.egg-info/dependency_links.txt
+pylittle.egg-info/entry_points.txt
+pylittle.egg-info/requires.txt
+pylittle.egg-info/top_level.txt
