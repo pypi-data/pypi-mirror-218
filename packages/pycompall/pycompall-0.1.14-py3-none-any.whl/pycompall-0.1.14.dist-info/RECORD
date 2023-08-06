@@ -1,0 +1,12 @@
+pycompall.py,sha256=hZA69ttMK5pUy_1chLEJSrwqQt0KonpD2JMbJOZphAo,1643
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/application.py,sha256=DLudRml37zI6RtARKsEHiMQXufmZVKgO9N7KNny6RXA,6338
+app/__pycache__/__init__.cpython-310.pyc,sha256=xHinT44HmdPDwzRYxhOlwQNvf-zkzl0H3KG9Xi_P1RY,155
+app/__pycache__/application.cpython-310.pyc,sha256=XwkUDCbYzALlVxxJJt3ZCcaK6w0gt8vHioSFyvUMjQc,5495
+pycompall-0.1.14.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycompall-0.1.14.dist-info/METADATA,sha256=mJRcrJ7HXV9wvoMqsB02nOe1ItJI1nSX72TuyftXuBU,3092
+pycompall-0.1.14.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pycompall-0.1.14.dist-info/entry_points.txt,sha256=EBfOc9iTPmmfi3Gw1bOAFVHsKp1nZeuOL1N77LuYYwI,89
+pycompall-0.1.14.dist-info/top_level.txt,sha256=2Ijz2mj9Ycq6WDm4W0FElfJI4FF4bPad0TGAuZ_8Fbc,14
+pycompall-0.1.14.dist-info/RECORD,,
