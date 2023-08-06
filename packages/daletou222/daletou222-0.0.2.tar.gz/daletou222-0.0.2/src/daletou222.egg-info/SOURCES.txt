@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/daletou222.egg-info/PKG-INFO
+src/daletou222.egg-info/SOURCES.txt
+src/daletou222.egg-info/dependency_links.txt
+src/daletou222.egg-info/top_level.txt
