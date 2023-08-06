@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+pyndeval/__init__.py
+pyndeval.egg-info/PKG-INFO
+pyndeval.egg-info/SOURCES.txt
+pyndeval.egg-info/dependency_links.txt
+pyndeval.egg-info/top_level.txt
+src/ndeval.c
+src/pyndeval.c
