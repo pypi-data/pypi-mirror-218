@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/fsl_pipe_gui/__init__.py
+src/fsl_pipe_gui/all_panes.py
+src/fsl_pipe_gui/placeholder_tab.py
+src/fsl_pipe_gui/run.py
+src/fsl_pipe_gui/selector_tab.py
+src/fsl_pipe_gui/summary.py
+src/fsl_pipe_gui.egg-info/PKG-INFO
+src/fsl_pipe_gui.egg-info/SOURCES.txt
+src/fsl_pipe_gui.egg-info/dependency_links.txt
+src/fsl_pipe_gui.egg-info/requires.txt
+src/fsl_pipe_gui.egg-info/top_level.txt
