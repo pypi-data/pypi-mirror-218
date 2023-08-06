@@ -1,0 +1,9 @@
+population_trend/__init__.py,sha256=aw8kMg9QVMQuLoqiElldKhn7l-jkn0bvCkl7t6OrY7k,251
+population_trend/calculate_growth_rates.py,sha256=-GpLu7ekWziHApR6Y5eMjWSZfIuOTLBcXwboniXE37Y,7237
+population_trend/cli.py,sha256=ZjTr8sdvTZS0EUQ8SIZQ41DEHVZqfVqo5auAiRJ7S6I,2542
+population_trend/filter_data.py,sha256=D0Y1vztcbbo98af9q7wRhlHfH__bNFI8tnVOdJY6hu0,403
+population_trend/population_growth_model.py,sha256=7bGNZxbXi04qj-R0JQh5vJ6sQQEf1Qi-pWn2kFX4fVo,6056
+population_trend-5.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+population_trend-5.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+population_trend-5.1.0.dist-info/METADATA,sha256=YhLgyj7WH78RsBGQlQ8LDQiidN2gkY6WqmA5JzfTvac,1504
+population_trend-5.1.0.dist-info/RECORD,,
