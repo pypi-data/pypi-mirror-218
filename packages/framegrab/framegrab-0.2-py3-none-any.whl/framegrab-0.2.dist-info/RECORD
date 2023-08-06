@@ -1,0 +1,7 @@
+framegrab/__init__.py,sha256=t3tjD84SbqMAKfHKHwcqpNvPj8eaJ3e4cJcF00OI-N0,388
+framegrab/grabber.py,sha256=3x62x8Ddym-eRYslNeTK0lT_1HBoNJeE3kYXcGlJug0,30230
+framegrab/motion.py,sha256=q20WzKZeQ0Rl4OZEx2WH87z-ZsshoE1YSkfuOBYPyAQ,2456
+framegrab-0.2.dist-info/LICENSE.txt,sha256=sktvZLOrXHlIqpr9OtT1ynCbiirjE62rjVkO4IXnlwk,1071
+framegrab-0.2.dist-info/METADATA,sha256=Ze0Oq9eMTLhEo1fLxjSWXtBnO3gKW9ebYHpOoSbSbFs,6408
+framegrab-0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+framegrab-0.2.dist-info/RECORD,,
