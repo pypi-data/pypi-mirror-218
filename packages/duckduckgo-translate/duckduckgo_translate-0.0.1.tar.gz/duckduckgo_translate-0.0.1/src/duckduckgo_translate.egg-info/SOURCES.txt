@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/duckduckgo_translate/__init__.py
+src/duckduckgo_translate/constants.py
+src/duckduckgo_translate/exceptions.py
+src/duckduckgo_translate/models.py
+src/duckduckgo_translate/translator.py
+src/duckduckgo_translate/utils.py
+src/duckduckgo_translate.egg-info/PKG-INFO
+src/duckduckgo_translate.egg-info/SOURCES.txt
+src/duckduckgo_translate.egg-info/dependency_links.txt
+src/duckduckgo_translate.egg-info/top_level.txt
+tests/test.py
