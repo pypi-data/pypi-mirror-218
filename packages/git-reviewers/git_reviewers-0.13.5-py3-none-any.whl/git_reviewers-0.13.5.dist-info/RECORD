@@ -1,0 +1,12 @@
+git_reviewers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_reviewers/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_reviewers/reviewers.py,sha256=LYhPf9-OOGJeUma5LTrH1_mFr5NjygLX0DCpyiYbkHw,11350
+git_reviewers/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_reviewers/tests/fixtures.py,sha256=OSmkUBTCDpyWP-Qlp1z9-9OFbDTyWAT82uT0NYnZEMs,586
+git_reviewers/tests/test.py,sha256=lLPQh1JARFBdFRuabvl8EC0TN6PblrAsy7LJ1xPZCAQ,14252
+git_reviewers-0.13.5.dist-info/LICENSE,sha256=baVMvFz2DHd_1N2peubw2zjnzXTkNdOZNDvTS5x0RqM,1068
+git_reviewers-0.13.5.dist-info/METADATA,sha256=pexzfgVSiUTqlTOSvmmraE-5Gzrr_pvXSOc-1LBfEzA,4602
+git_reviewers-0.13.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+git_reviewers-0.13.5.dist-info/entry_points.txt,sha256=bz5VyGjexJ_6bRgtvrsa_-uk3gm7Udlycvvp5tja8yI,63
+git_reviewers-0.13.5.dist-info/top_level.txt,sha256=DHae-jZPkKkDX5-nYWLpjGWO7TUC4M2UOedPeB_pUlE,14
+git_reviewers-0.13.5.dist-info/RECORD,,
