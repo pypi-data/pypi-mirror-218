@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: protosaurus
+Version: 0.0.1
+Summary: Protocol Buffers at runtime
+Author-Email: Thomas Oberbichler <thomas.oberbichler@gmail.com>
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Project-URL: Homepage, https://github.com/oberbichler/protosaurus
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# protosaurus
