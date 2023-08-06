@@ -1,0 +1,5 @@
+trio==0.22.0
+arrow==1.2.3
+tzlocal==4.3
+pyOpenSSL==23.0.0
+configobj==5.0.8
