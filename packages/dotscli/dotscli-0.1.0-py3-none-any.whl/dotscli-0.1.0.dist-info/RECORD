@@ -1,0 +1,12 @@
+dotsCLI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotsCLI/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotsCLI/config/settings.py,sha256=yEwvwxO4UaAZsKl4fS9EVyfu_KWFBmbHXEfsUskcmY4,409
+dotsCLI/docker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotsCLI/docker/parser.py,sha256=UNTTfhS6_pxMnfkQ6fWLLCk2c6U9ep7tbx-1TH4mHpQ,3048
+dotsCLI/dts.py,sha256=E9GRjkfxSo-MqOuqQ2LRLmIJya3JjqE4GmqJOBTYjoE,5473
+dotsCLI/samples/config,sha256=_sCYmkhK4lmQTJYOlZVIL-5MsfR_SK1yEAvgAyjOJTw,19
+dotsCLI/samples/docker-compose.yml,sha256=cIFCftUFN4FUtxW7mLL9CWs5BJGbe0vax1TK6E6fm7g,241
+dotscli-0.1.0.dist-info/entry_points.txt,sha256=p4KglDZQ_0SWswN3TkDIkF3EFzETD5ml8vy3hRfI_ks,39
+dotscli-0.1.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+dotscli-0.1.0.dist-info/METADATA,sha256=eTlyY6SS_vs3pWynCGdvFoKDqcxIZtqyHsrksA6e5_A,1879
+dotscli-0.1.0.dist-info/RECORD,,

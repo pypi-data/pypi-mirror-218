@@ -1,0 +1,3 @@
+[console_scripts]
+dts=dotsCLI.dts:cli
+
