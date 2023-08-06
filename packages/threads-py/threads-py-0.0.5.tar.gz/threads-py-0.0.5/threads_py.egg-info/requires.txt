@@ -1,0 +1,4 @@
+requests
+dataclasses
+dataclasses-json
+aiofiles
