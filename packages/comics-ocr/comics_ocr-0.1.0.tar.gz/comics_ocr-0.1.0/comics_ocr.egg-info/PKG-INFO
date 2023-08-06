@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: comics-ocr
+Version: 0.1.0
+Summary: ComicsOCR is a Python package created for easily distributing OCR models trained for golden age of comics.
+Home-page: https://github.com/gsoykan/comics_ocr
+Author: Gürkan Soykan
+Author-email: grkansoykan@gmail.com
+License: MIT
+Keywords: comics_ocr,mmocr_comics
+Requires-Python: <4,>=3.8
+Provides-Extra: cuda
+Provides-Extra: cpu
+License-File: LICENSE
