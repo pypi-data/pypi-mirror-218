@@ -1,0 +1,3 @@
+[console_scripts]
+flux-tool=flux_tool.main:main
+
