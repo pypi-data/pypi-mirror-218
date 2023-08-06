@@ -1,0 +1,2 @@
+[console_scripts]
+openxlab-dev = openxlab.cli:main
