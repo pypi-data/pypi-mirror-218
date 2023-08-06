@@ -1,0 +1,3 @@
+[console_scripts]
+tsutsumu=tsutsumu.__main__:main
+
