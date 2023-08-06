@@ -1,0 +1,11 @@
+hyprshade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hyprshade/__main__.py,sha256=JeLUusFmxpCz_FZJ1B1OBiAustpHrEcl70qsNBhE6eg,92
+hyprshade/cli.py,sha256=iCpajEUU12du1wwKp3z5vwS12FEHrwoUZTLQs4NF7dc,2491
+hyprshade/config.py,sha256=PPuVjBcHXknN2yVvJLrUJ6JbbbHOhntg8lKF1qgf2jA,3452
+hyprshade/helpers.py,sha256=CkDh5hNLE6T69972SI60Q9-KP2-UpqNqxpgtQ5mvicY,884
+hyprshade/utils.py,sha256=qzUGNf0ibBBIEXxX1LBd96zOEw9nlAl1CPjCO3GatFs,808
+hyprshade-0.1.0.dist-info/LICENSE,sha256=YNhmhUzW7RAVpnxGOTSssbL5YdmlCF5mLDSavwXwjc0,1065
+hyprshade-0.1.0.dist-info/METADATA,sha256=1kWh8o9USm1TMiZJg6C0TX56w-qAojiPszkrG9AUPtA,487
+hyprshade-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+hyprshade-0.1.0.dist-info/entry_points.txt,sha256=sC7UZh0SnK5J4P9PzYt3FNe740FSTAAd2ib38wMZMkU,48
+hyprshade-0.1.0.dist-info/RECORD,,
