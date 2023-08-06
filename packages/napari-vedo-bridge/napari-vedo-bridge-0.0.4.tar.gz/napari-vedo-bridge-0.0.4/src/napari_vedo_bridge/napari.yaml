@@ -1,0 +1,12 @@
+name: napari-vedo-bridge
+display_name: napari vedo bridge
+contributions:
+  commands:
+    - id: napari-vedo-bridge.cutter_widget
+      python_name: napari_vedo_bridge._cutter_widget:VedoCutter
+      title: Interactive mesh cutting with Vedo
+
+  widgets:
+    - command: napari-vedo-bridge.cutter_widget
+      display_name: Mesh cutter
+

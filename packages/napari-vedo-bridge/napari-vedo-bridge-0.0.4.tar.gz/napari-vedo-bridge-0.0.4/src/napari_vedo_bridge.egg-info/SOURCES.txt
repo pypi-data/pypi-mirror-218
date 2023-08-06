@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/napari_vedo_bridge/__init__.py
+src/napari_vedo_bridge/_cutter_widget.py
+src/napari_vedo_bridge/napari.yaml
+src/napari_vedo_bridge/vedo_extension.ui
+src/napari_vedo_bridge.egg-info/PKG-INFO
+src/napari_vedo_bridge.egg-info/SOURCES.txt
+src/napari_vedo_bridge.egg-info/dependency_links.txt
+src/napari_vedo_bridge.egg-info/entry_points.txt
+src/napari_vedo_bridge.egg-info/requires.txt
+src/napari_vedo_bridge.egg-info/top_level.txt
+src/napari_vedo_bridge/_tests/__init__.py
+src/napari_vedo_bridge/_tests/test_widget.py
