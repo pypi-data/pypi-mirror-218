@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: installreq
+Version: 1.0.0
+Summary: Installs all the requirements for a file and runs it
+Author-email: Guanciottaman <italia.matteo00@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+
+# Installreq
+
+This package will install and run every package found in a script and run the actual script with information logging so the user knows what packages are installed and if there are any errors.
+
+It also installs the requirements.txt file (if any).
+
+Installing is simple: just type this command in the terminal:
+
+`pip install installreq`
+
+or download the code with:
+
+`git clone https://github.com/guanciottaman/installreq`
+
+and then run:
+
+`py setup.py install`
+
