@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+swiftascmaps/__init__.py
+swiftascmaps/__version__.py
+swiftascmaps/colors.py
+swiftascmaps/make_cmap.py
+swiftascmaps.egg-info/PKG-INFO
+swiftascmaps.egg-info/SOURCES.txt
+swiftascmaps.egg-info/dependency_links.txt
+swiftascmaps.egg-info/not-zip-safe
+swiftascmaps.egg-info/requires.txt
+swiftascmaps.egg-info/top_level.txt
