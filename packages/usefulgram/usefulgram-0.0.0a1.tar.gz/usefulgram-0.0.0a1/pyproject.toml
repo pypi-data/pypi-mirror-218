@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=66.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "usefulgram"
+version = "0.0.0a1"
+readme = "README.md"
+authors = [
+    { name = "Alexandr Gogenov", email = "sambonsttt@gmail.com" },
+]
+license = { file = "LICENSE" }
+description = "Like aiogram but more easy"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'aiogram>=3.0.0b5,<4.0.0',
+    'cachetools>=4.0.0,<6.0.0',
+    'pydantic>=1.10.7,<3.0.0 '
+]
+[project.optional-dependencies]
+tools = [
+    "diagrams",
+    "aiohttp",
+]
+[project.urls]
+"Homepage" = "https://github.com/Sethis/usefulgram"
+"Bug Tracker" = "https://github.com/Sethis/usefulgram/issues"
