@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cuda-ext-example
+Version: 0.0.1
+Summary: Simple example project that builds a PyTorch CUDA extension
+Home-page: https://github.com/dblalock/cuda_ext_example
+Author: dblalock
+Author-email: davis@mosaicml.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: toml ; extra == 'dev'
+Requires-Dist: yapf ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: yamllint ; extra == 'dev'
+
