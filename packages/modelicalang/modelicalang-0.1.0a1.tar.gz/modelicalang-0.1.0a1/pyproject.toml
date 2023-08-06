@@ -1,0 +1,73 @@
+[tool.poetry]
+name = "ModelicaLang"
+version = "0.1.0a1"
+description = "Modelica parser and class representation for Python"
+repository = "https://github.com/ijknabla/ModelicaLanguageForPython"
+documentation = "https://ijknabla.github.io/ModelicaLanguageForPython/"
+authors = ["ijknabla <ijknabla@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+        "Development Status :: 3 - Alpha",
+        "Programming Language :: Python :: 3 :: Only",
+]
+packages = [
+    { include = "modelicalang"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+Arpeggio = ">=0.8"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22", python = ">=3.6.2"}
+isort = "^5.8"
+astunparse = {version = "^1.6.3", python = "<3.9"}
+
+[tool.poetry.group.document.dependencies]
+sphinx = "^5"
+sphinx-autobuild = "^2021.3.14"
+sphinx-rtd-theme = "^1.1.1"
+pygments-modelicapeg-plugin = {git = "https://github.com/ijknabla/pygments-modelicapeg-plugin.git", rev = "main"}
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^0.971"
+pyproject-flake8 = "^0.0.1-alpha.2"
+types-setuptools = "^57.4.11"
+types-arpeggio = {git = "https://github.com/ijknabla/types-arpeggio.git", rev = "main"}
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+
+[tool.coverage.report]
+exclude_lines = [
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
+
+[tool.flake8]
+exclude = ".venv"
+per-file-ignores = [
+    "modelicalang/v?_?.py:E501,F403,F405"
+]
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[[tool.mypy.overrides]]
+module = [
+    "astunparse",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-branch --cov-report=term-missing"
