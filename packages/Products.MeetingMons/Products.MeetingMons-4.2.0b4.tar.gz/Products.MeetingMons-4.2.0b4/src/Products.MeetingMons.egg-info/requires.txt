@@ -1,0 +1,16 @@
+setuptools
+Products.CMFPlone
+Pillow
+Products.MeetingCommunes
+
+[templates]
+Genshi
+
+[test]
+unittest2
+zope.testing
+plone.testing
+plone.app.testing
+plone.app.robotframework
+Products.CMFPlacefulWorkflow
+Products.PloneTestCase
