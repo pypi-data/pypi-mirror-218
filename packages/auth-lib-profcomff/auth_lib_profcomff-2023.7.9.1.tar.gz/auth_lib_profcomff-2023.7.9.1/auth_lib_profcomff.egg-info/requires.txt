@@ -1,0 +1,12 @@
+requests
+aiohttp
+setuptools
+
+[fastapi]
+fastapi
+starlette
+pydantic
+pydantic_settings
+
+[testing]
+pytest
