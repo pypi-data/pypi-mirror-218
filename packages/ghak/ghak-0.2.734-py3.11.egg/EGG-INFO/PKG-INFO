@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ghak
+Version: 0.2.734
+Author: William Turner
+Author-email: will@near.org
+License: GPL
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE

@@ -1,0 +1,6 @@
+google-cloud-secret-manager
+google-auth
+Click
+jwt
+requests
+click_log
