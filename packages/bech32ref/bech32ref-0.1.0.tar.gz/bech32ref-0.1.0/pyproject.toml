@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bech32ref"
+version = "0.1.0"
+description = "A bech32 implemenation, slightly modified to allow for >90char strings"
+authors = ["niftynei <niftynei@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
