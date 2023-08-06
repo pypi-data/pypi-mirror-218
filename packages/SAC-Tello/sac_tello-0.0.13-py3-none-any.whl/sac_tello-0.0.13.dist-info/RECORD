@@ -1,0 +1,14 @@
+SAC_Tello/__init__.py,sha256=7ey7TQNlIGN8VLLU5lPBrBoKWqQVxMHewMHdTnWhG8k,476
+SAC_Tello/face_encoder.py,sha256=2cOaRuSUhNdTDPexSwuwZvoVjqTQO0nieDeaQD2iz2U,3696
+SAC_Tello/tello_cmd.py,sha256=l0GYF4l9S6HWlwBajqHjN6lYWZN_icZYxhxuPkA1D0s,16807
+SAC_Tello/tello_drone.py,sha256=DiYl3f3APXgtmn7EyQu0H4-ri8z_w1B8GZYskMpoJbA,11863
+SAC_Tello/tello_face_hud.py,sha256=2NCnXG9yi51UsUdo8AR5JBdG5FkNnIl1PV2ctv0NZBI,2735
+SAC_Tello/tello_hud.py,sha256=OqeM7TuuFYb-VQnyRtY-a5cfvG2tUm5yZycFp1DM2eA,7263
+SAC_Tello/tello_rc.py,sha256=PK98r6f4ZhAbvPj19OYz6t74INigqtjvUmsdt2DU0GQ,16901
+SAC_Tello/tello_remote.py,sha256=3YDldPcQrvjR-bF1amLOal5bErdtfHiPm9ktBLVa1w4,10639
+SAC_Tello/tello_state.py,sha256=haEs9i8bXDG3b57PamoWlews5yQIP-kbUWq-M_2mGRU,4440
+SAC_Tello/tello_video.py,sha256=ymT-yHhFC80Q-ZITWgGXhAFoK_gfna1sfcfCRPOWt7w,3606
+sac_tello-0.0.13.dist-info/METADATA,sha256=Bj2e7l_4iBD1k6QVC4A5RDWUYb7Bz9gZy29A8iXoNHk,49162
+sac_tello-0.0.13.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+sac_tello-0.0.13.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+sac_tello-0.0.13.dist-info/RECORD,,
