@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: wigglerapi
+Version: 0.0.10
+Summary: WiggleR - Desktop research unit for making controlled experiments
+Author: Vincent Kranendonk
+Keywords: python
+Requires-Dist: fastapi
+Requires-Dist: pydantic
+Requires-Dist: uvicorn
+
+WiggleR is a desktop research unit for making controlled experiments with worms. WiggleR can also be used inside the WiggleBin

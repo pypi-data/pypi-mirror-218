@@ -1,0 +1,2 @@
+[console_scripts]
+wigglerapi = wigglerapi.cli:main
