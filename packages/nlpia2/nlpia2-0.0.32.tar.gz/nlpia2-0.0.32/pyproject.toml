@@ -1,0 +1,103 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "nlpia2"
+version = "0.0.32"
+description = "Natural language processing utilities and examples for the book Natural Language Processing in Action (nlpia) 2nd Edition by Hobson Lane and Maria Dyshel."
+license = "AGPLv3"
+readme = "README.md"
+authors = [ "Hobson Lane <hobson@tangibleai.com>", "Maria Dyshel <maria@tangibleai.com>", "Leo Hepis <leo@leohepis.com>", "Geoffrey Marshal", "Sylvia Lee", "Winnie Yeung @dcvionwinnie", "Mohammed Dala Ali <mms.dala@gmail.com>", "Alex Rosengarten @alxrsngrtn", "Jose Robins @jorobins",]
+homepage = "https://gitlab.com/tangibleai/nlpia2"
+repository = "https://gitlab.com/tangibleai/nlpia2"
+documentation = "https://gitlab.com/tangibleai/nlpia2"
+keywords = [ "NLP", "Natural Language Processing", "Virtual Assistant", "chatbot", "Text Processing", "Machine Learning", "Text Mining", "Deep Learning",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Operating System :: OS Independent", "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Text Processing :: Linguistic", "Topic :: Text Processing", "Topic :: Communications", "Topic :: Communications :: Chat", "Intended Audience :: Education",]
+
+[[tool.poetry.packages]]
+include = "nlpia2"
+from = "src"
+
+[tool.poetry.scripts]
+cnn = "nlpia2.ch07.cnn:main"
+adoc_extract = "nlpia2.text_processing.extractors:main"
+
+[tool.poetry.dependencies]
+babel = "*"
+beautifulsoup4 = "*"
+bidict = "*"
+bleach = "*"
+boto3 = "*"
+botocore = "*"
+configargparse = "*"
+coreferee = "*"  # for spacy.load('en-coreference-web-trf')
+cython = "*"
+dataframe-image = "*"
+dateparser = "*"  # ch11
+django = "*"
+edit-distance = "*"
+einops = "*"
+environment = "*"
+evaluate = "*"
+farm-haystack = {version = "*", extras = ["faiss"]} 
+gitpython = "*"
+graphviz = "*"
+h5py = "*"
+html2text = "*"
+html5lib = "*"
+jsonlines = "*"
+jupyter-console = "*"
+lxml = "*"
+# m2r = "*"
+matplotlib = "*"
+matplotlib-inline = "*"
+meilisearch = "*"
+mistune = "*"
+nessvec = "*"
+nlpia2_wikipedia = ">=1.5.6"
+nltk = "*"
+openai = "*"
+pandas = ">=1.5.3"  # ,<2.0.0"  # argilla requires pandas <2.0
+parsimonious = "*"
+pillow = "*"
+pip = "*"
+poetry = "*"
+pronouncing = "*"
+psutil = "*"
+pygraphviz = "*"  # ch11
+pypdf2 = "*"
+python = ">=3.9"
+python-dotenv = "*"
+python-slugify = "*"
+rapidfuzz = ">=2.13.2,<2.14"
+recommonmark = "*"
+sacrebleu = "*"
+streamlit = "*"
+seaborn = "*"
+sentence_transformers = "*"
+spacy = ">=3.5,<3.6"
+spacy-experimental = ">=0.6.3"
+sphinx = "*"
+textacy = "*"  # ch11
+toml = "*"
+tox = "*"
+tqdm = "*"
+unidecode = "*"
+wikipedia_api = "*"  # ch11
+xmltodict = "*"
+
+[tool.poetry.dev-dependencies]
+tox = "*"
+pytest-cov = "*"
+pylint = "*"
+pre-commit = "*"
+deepdiff = "*"
+httpretty = "*"
+flatdict = "*"
+pydocstyle = "*"
+
+[tool.poetry.extras]
+test = [ "pytest", "pytest-cov",]
+sound = [ "soundex",]
+pdf = [ "pymupdf", "tabula-py", "tabulate",]
