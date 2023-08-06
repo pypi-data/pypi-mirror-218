@@ -1,0 +1,13 @@
+condax/__init__.py,sha256=Mm1pw0SW1vPNR_6FLdy3GbH7Yzf1q73vWR1f1adEuo0,225
+condax/activation.py,sha256=W0stmLY4FJn8BrhDiOtQofYe1zytP-a4ZpXk2nV4ITQ,507
+condax/cli.py,sha256=OF2SwvXrL64hr6FkwD38byPtI9xM3LZxt55LuTIgrvE,4930
+condax/conda.py,sha256=XuqE245A-9Q-e8GS1f2wVwxh82erUkIEjgCj8RKMikY,4720
+condax/config.py,sha256=JbAe0rWebQn1TvSAdKcNcmpLzRAYJjXpKnBa9i0t0og,2526
+condax/core.py,sha256=ockT7DmMFblpoJ4nyzzCT0fOz0AIPYEK7Ukr22s8Kf8,10302
+condax/metadata.py,sha256=K2PhkpQuj_wKRoMuivG4yLcoYcQQmKgJYgOXx5GMcvI,618
+condax/paths.py,sha256=Jsg7OxXPJYAyl1crIJAKd1155WC2u4gWBZJz-p8A054,1049
+condax-0.2.0.dist-info/METADATA,sha256=VeiTnqz8-5s9Uip4vwtAVBht5vpgqldW2T3HqgEOdqk,2118
+condax-0.2.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+condax-0.2.0.dist-info/entry_points.txt,sha256=UNTkx-x_rGzt_XdXp79QYPBX42UsAUKPm4pd93VLYCI,42
+condax-0.2.0.dist-info/licenses/LICENSE-MIT,sha256=d8H8ewD1ZUuEqXYeEJzFgz1Sj6_fDZP6tJzaVsa-nNM,1075
+condax-0.2.0.dist-info/RECORD,,
