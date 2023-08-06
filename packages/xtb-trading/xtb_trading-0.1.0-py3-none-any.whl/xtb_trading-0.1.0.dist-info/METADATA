@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: xtb-trading
+Version: 0.1.0
+Summary: Automate XTB trading for me
+License: GPL3
+Author: Marc Partensky
+Author-email: marc.partensky@gmail.com
+Requires-Python: ==3.11.3
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: xtbapi (>=1.0a7,<2.0)
+Description-Content-Type: text/markdown
+
+# Trade on xtb automatically
+
