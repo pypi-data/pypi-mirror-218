@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secretbox"
+version = "2.8.0"
+requires-python = ">=3.8"
+description = "A library that offers a simple method of loading and accessing environmental variables and `.env` file values."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { email = "preocts@preocts.com", name = "Preocts" }
+]
+maintainers = []
+keywords = []
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "black",
+    "mypy",
+    "flake8",
+    "flake8-builtins",
+    "flake8-pep585",
+]
+test = [
+    "pytest",
+    "pytest-randomly",
+    "coverage",
+    "tox"
+]
+aws = [
+    "boto3>=1.18.56",
+    "boto3-stubs[secretsmanager]>=1.18.55",
+    "boto3-stubs[ssm]>=1.18.55"
+]
+
+[project.urls]
+homepage = "https://github.com/Preocts/secretbox"
+
+[tool.setuptools.package-data]
+"secretbox" = ["py.typed"]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_incomplete_defs = false
+disallow_untyped_defs = false
+
+[tool.coverage.run]
+branch = true
+source = [
+    "tests",
+]
+source_pkgs = [
+    "secretbox",
+]
+
+[tool.coverage.paths]
+source = [
+    "src/",
+    "*/site-packages",
+]
+test = [
+    "tests/",
+    "*/tests",
+]
+
+[tool.coverage.report]
+exclude_lines =[
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "\\.\\.\\.",
+    "if (not)? TYPE_CHECKING:",
+]
