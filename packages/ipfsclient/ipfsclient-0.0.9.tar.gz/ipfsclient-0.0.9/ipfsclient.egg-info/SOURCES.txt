@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ipfsclient/__init__.py
+ipfsclient/ipfs.py
+ipfsclient.egg-info/PKG-INFO
+ipfsclient.egg-info/SOURCES.txt
+ipfsclient.egg-info/dependency_links.txt
+ipfsclient.egg-info/top_level.txt
