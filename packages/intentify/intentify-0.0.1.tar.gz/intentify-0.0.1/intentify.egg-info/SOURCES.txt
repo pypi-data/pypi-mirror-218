@@ -1,0 +1,9 @@
+README.md
+setup.py
+intentify/__init__.py
+intentify/main.py
+intentify.egg-info/PKG-INFO
+intentify.egg-info/SOURCES.txt
+intentify.egg-info/dependency_links.txt
+intentify.egg-info/requires.txt
+intentify.egg-info/top_level.txt
