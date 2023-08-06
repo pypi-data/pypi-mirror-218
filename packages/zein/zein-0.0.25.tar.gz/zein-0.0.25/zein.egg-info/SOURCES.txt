@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+zein/__init__.py
+zein.egg-info/PKG-INFO
+zein.egg-info/SOURCES.txt
+zein.egg-info/dependency_links.txt
+zein.egg-info/not-zip-safe
+zein.egg-info/requires.txt
+zein.egg-info/top_level.txt
+zein/images/__init__.py
+zein/images/_utils.py
+zein/images/images_module.py
+zein/text/__init__.py
+zein/text/_utils.py
+zein/text/ar.py
+zein/text/text_module.py
