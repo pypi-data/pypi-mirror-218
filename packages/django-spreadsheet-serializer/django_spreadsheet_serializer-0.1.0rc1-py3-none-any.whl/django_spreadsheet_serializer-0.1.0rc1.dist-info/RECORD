@@ -1,0 +1,11 @@
+spreadsheet_serializer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spreadsheet_serializer/apps.py,sha256=aLcDaz6LTma4i9R5_rvywNAAhq-Ys5Rtr8-Y_WAjsOQ,586
+spreadsheet_serializer/core.py,sha256=OzAPX5L85P_53tzxX3FOurXGNPaT8-rJQiuf4m1L6qs,5536
+spreadsheet_serializer/utils.py,sha256=TLyFnBMWNfrx3792mh0P_wB16V9cHFDMqkzrjtmD9_g,382
+spreadsheet_serializer/serializers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spreadsheet_serializer/serializers/ods_serializer.py,sha256=4GgE3hceSVMXyYvWQz_Y29P9GoOhd3R8J77C6sqz6Pw,279
+spreadsheet_serializer/serializers/xlsx_serializer.py,sha256=3qZQXmonwj_Uey1gYtLH0Ht34mvROgL0VoiZZJWkA9s,283
+django_spreadsheet_serializer-0.1.0rc1.dist-info/METADATA,sha256=tdhYKOiHe26oeZrx-obLnzagnTHUQ08fn_2OY54Tnac,10556
+django_spreadsheet_serializer-0.1.0rc1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_spreadsheet_serializer-0.1.0rc1.dist-info/licenses/LICENSE,sha256=iHR_1MUUh3pnFPRppAd20LhTqDl820fDdizEWXNGSII,1075
+django_spreadsheet_serializer-0.1.0rc1.dist-info/RECORD,,
