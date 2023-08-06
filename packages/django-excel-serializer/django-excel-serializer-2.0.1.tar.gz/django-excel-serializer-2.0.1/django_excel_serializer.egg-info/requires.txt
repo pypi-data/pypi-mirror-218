@@ -1,0 +1,12 @@
+django>=3.2
+openpyxl
+
+[dev]
+pre-commit
+
+[test]
+pytest
+pytest-cov
+pytest-custom-exit-code
+pytest-django
+tox
