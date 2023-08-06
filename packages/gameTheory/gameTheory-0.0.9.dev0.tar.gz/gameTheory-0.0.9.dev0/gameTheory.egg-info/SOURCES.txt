@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gameTheory.egg-info/PKG-INFO
+gameTheory.egg-info/SOURCES.txt
+gameTheory.egg-info/dependency_links.txt
+gameTheory.egg-info/top_level.txt
+gamekit/__init__.py
+gamekit/exceptions.py
+gamekit/algorithms/__init__.py
+gamekit/algorithms/bankruptcy.py
+gamekit/classes/__init__.py
+gamekit/utils/__init__.py
