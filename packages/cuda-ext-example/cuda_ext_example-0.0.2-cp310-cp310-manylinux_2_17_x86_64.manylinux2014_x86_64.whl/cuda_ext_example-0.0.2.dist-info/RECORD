@@ -1,0 +1,9 @@
+_my_cuda_kernels.cpython-310-x86_64-linux-gnu.so,sha256=XQHIcZvTKa18olg57sd2NKUYqlaP6pxw_24SitPG2Fc,11883145
+cuda_ext_example-0.0.2.dist-info/WHEEL,sha256=iZaXX0Td62Nww8bojl0E84uJHjT41csHPKZmbUBbJPs,152
+cuda_ext_example-0.0.2.dist-info/METADATA,sha256=I-tt2_dihtAuPZTe6OfSaCY1iLWYciJNRbgU-jsbIso,5984
+cuda_ext_example-0.0.2.dist-info/top_level.txt,sha256=kqFPFVBuQkVpIfxlyf7widzS-ow23vFN6MyQsQSv4qs,34
+cuda_ext_example-0.0.2.dist-info/RECORD,,
+cuda_ext_example-0.0.2.dist-info/LICENSE.txt,sha256=RKvqHmdI3vQOhUoalCYrrr4S-J-5yC_CdL5abn3VuQQ,1061
+cuda_ext_example/_add.py,sha256=Uxnzuo0xj8Th7ULvgHPrZU8046lX_W2pfapC8WYVhAU,2130
+cuda_ext_example/__init__.py,sha256=N2q_e44hYdTykBYczzDPSFIOnEZbfWqCGi5SakcPP3k,92
+cuda_ext_example.libs/libcudart-d0da41ae.so.11.8.89,sha256=hhk7JOGxrNgSAkL7vl1PY3troN21hCfMEKnDjAIDtsk,695145
