@@ -1,0 +1,56 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "katalytic"
+version = "0.2.1"
+description = "We'll take care of the boilerplate, so you can focus on your problems."
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Filesystems",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+keywords = [
+    "automation",
+    "high-level",
+    "metaprogramming",
+]
+authors = [{name="Valentin Neagu", email="vali19th@protonmail.com"}]
+requires-python = ">=3.6"
+dependencies = []
+
+[project.optional-dependencies]
+all = [
+    "katalytic-images>=0.1.0",
+]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pytest-clarity",
+    "pytest-randomly",
+]
+
+[project.urls]
+Changelog = "https://gitlab.com/katalytic/katalytic/-/blob/main/CHANGELOG.md"
+Homepage = "https://gitlab.com/katalytic/katalytic.git"
+Repository = "https://gitlab.com/katalytic/katalytic.git"
+# Documentation = "TODO"
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+
+[tool.flit.module]
+name = "katalytic.katalytic"
