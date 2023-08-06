@@ -1,0 +1,6 @@
+setup.py
+optibar/__init__.py
+optibar.egg-info/PKG-INFO
+optibar.egg-info/SOURCES.txt
+optibar.egg-info/dependency_links.txt
+optibar.egg-info/top_level.txt
