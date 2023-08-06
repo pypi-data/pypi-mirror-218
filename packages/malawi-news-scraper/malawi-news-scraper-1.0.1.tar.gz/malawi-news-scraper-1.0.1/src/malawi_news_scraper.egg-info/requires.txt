@@ -1,0 +1,10 @@
+feedparser>=1.0.1
+html2text
+beautifulsoup4
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
