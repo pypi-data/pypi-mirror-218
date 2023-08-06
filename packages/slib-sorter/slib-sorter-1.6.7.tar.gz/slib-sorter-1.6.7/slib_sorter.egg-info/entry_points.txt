@@ -1,0 +1,2 @@
+[console_scripts]
+Slib-Sorter = src.slib_sorter:main
