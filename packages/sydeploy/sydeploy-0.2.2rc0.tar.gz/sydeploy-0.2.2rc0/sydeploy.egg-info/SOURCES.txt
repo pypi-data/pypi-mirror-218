@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+sydeploy.egg-info/PKG-INFO
+sydeploy.egg-info/SOURCES.txt
+sydeploy.egg-info/dependency_links.txt
+sydeploy.egg-info/requires.txt
+sydeploy.egg-info/top_level.txt
