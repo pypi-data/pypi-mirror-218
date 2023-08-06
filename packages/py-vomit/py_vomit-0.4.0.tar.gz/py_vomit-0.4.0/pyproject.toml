@@ -1,0 +1,80 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "py-vomit"
+description = "Somewhat unintelligible"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "bhmt"}]
+maintainers = [{name = "bhmt"}]
+dynamic = ["version"]
+keywords = ["obfuscation", "unicode", "utf-8"]
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Typed",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Security",
+]
+
+
+[project.urls]
+Repository = "https://github.com/bhmt/vomit"
+
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.3.1",
+    "pytest-cov>=4.1.0",
+]
+check = [
+    "ruff>=0.0.277",
+    "mypy>=1.3.0",
+    "tox>=4.6.0",
+]
+
+
+[tool.hatch.version]
+path = "vomit/__init__.py"
+
+
+[tool.ruff]
+line-length = 120
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+]
+
+
+[tool.pytest.ini_options]
+addopts = "--cov=vomit"
+testpaths = [
+    "tests",
+]
+
+
+[tool.mypy]
+mypy_path = "src"
+check_untyped_defs = true
+disallow_any_generics = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
