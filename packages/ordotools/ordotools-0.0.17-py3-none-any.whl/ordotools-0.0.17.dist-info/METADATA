@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ordotools
+Version: 0.0.17
+Summary: A set of tools for producing a traditional Catholic Ordo, given a year and diocese
+Author: corei8 (Fr. G.R.Barnes)
+Author-email: corei8.github@gmail.com
+Classifier: Programming Language :: Python :: 3
+License-File: COPYING
+Requires-Dist: python-dateutil
+
+# Welcome to ordotools
+
+> Traditional Catholic Ordo and Calendar
+
+### 🏠 [Homepage](https://ordo.media/calendar)
+
+## Install
+
+```sh
+pip install ordotools
+```
+
+## Author
+
+👤 **Fr. Gregory R. Barnes**
+
+* Github: [@corei8](https://github.com/corei8)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
