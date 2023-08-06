@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+SRgenerator.egg-info/PKG-INFO
+SRgenerator.egg-info/SOURCES.txt
+SRgenerator.egg-info/dependency_links.txt
+SRgenerator.egg-info/requires.txt
+SRgenerator.egg-info/top_level.txt
