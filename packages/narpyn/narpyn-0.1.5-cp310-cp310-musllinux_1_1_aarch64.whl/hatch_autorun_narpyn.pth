@@ -1,0 +1,1 @@
+import os, sys;exec('from pathlib import Path; os.environ["NARS_HOME"] = (Path(sys.path[0]) / ".." / "lib" / f"python{sys.version_info.major}.{sys.version_info.minor}" / "site-packages" / "ona").as_posix()\n')
