@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bbox-visualizer2
+Version: 0.0.1
+Summary: A bounding box visualizer
+Project-URL: Homepage, https://github.com/fansuregrin/bbox-visualizer2
+Project-URL: Bug Tracker, https://github.com/fansuregrin/bbox-visualizer2/issues
+Author-email: Fansure Grin <pwz113436@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# BBox-Visualizer2
+
+This is a python package for visualizing bounding boxes and adding labels to a given image. The creation of this package is inspired by [shoumikchow/bbox-visualizer](https://github.com/shoumikchow/bbox-visualizer), but I re-implement it through `Pillow` instead of `cv2`.
+
+The format of a bounding box is `(xmin, ymin, xmax, ymax)`.
+
