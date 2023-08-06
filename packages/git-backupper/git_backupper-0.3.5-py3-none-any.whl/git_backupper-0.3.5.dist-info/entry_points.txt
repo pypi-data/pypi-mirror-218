@@ -1,0 +1,2 @@
+[console_scripts]
+git-backupper = git_backupper.__main__:main
