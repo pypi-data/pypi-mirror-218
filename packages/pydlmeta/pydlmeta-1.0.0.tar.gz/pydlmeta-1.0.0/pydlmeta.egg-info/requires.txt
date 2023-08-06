@@ -1,0 +1,10 @@
+tensorflow==2.11
+tflite==2.4.0
+keras
+torch==1.9.1
+torchvision==0.10.1
+numpy==1.22
+onnx==1.12.0
+loguru
+openvino==2022.3.0
+onnx2torch
