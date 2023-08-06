@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ncm_clp_dl/__init__.py
+ncm_clp_dl/__main__.py
+ncm_clp_dl.egg-info/PKG-INFO
+ncm_clp_dl.egg-info/SOURCES.txt
+ncm_clp_dl.egg-info/dependency_links.txt
+ncm_clp_dl.egg-info/entry_points.txt
+ncm_clp_dl.egg-info/requires.txt
+ncm_clp_dl.egg-info/top_level.txt
