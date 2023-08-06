@@ -1,0 +1,15 @@
+LICENSE,sha256=J52Tjm34Y-7S7A44zoJ7HHBgoRzupewW8F6gFXIaHPA,1497
+cli_toolkit/__init__.py,sha256=NbJqaHHcNQOB6n4iyQdAutNLyFBIE4GbOg96ffyusqg,288
+cli_toolkit/base.py,sha256=I_P9KLPtBR6X7nHiXSRc6w2_c9QLMuBHOfXnHD8HefE,8711
+cli_toolkit/command.py,sha256=m85j2yMOT3OFhVvFRA6o6HjtswgkEvsMCZ0B50e_9ec,3119
+cli_toolkit/exceptions.py,sha256=rDweV3swFeGYp6fC3Gs7rPwGdktyUfYfJWXHRyLmgA4,234
+cli_toolkit/fixtures.py,sha256=RzliWrBNverknVEe5ft1nKvXdvR623i0GySSdqIb6fY,431
+cli_toolkit/script.py,sha256=iiTDfpNYYMqeLzW7pUKGzqh0GXRBVGJRc88miV5mLsw,4003
+cli_toolkit/task.py,sha256=MWL4b78ND8RxA2nrZecPRRfVs8rtxtYVcfdt0mz-TUk,3472
+cli_toolkit/tests/__init__.py,sha256=KQq2GALUY7mAckEf5JrvhjfRJZwCnMR15yaltUXx3Lg,150
+cli_toolkit/tests/script.py,sha256=s2zdSG3cMyyvW0_s8epSmaXRMwVZhrV5LObzQ_8TkTA,2721
+cli_toolkit-2.5.1.dist-info/LICENSE,sha256=J52Tjm34Y-7S7A44zoJ7HHBgoRzupewW8F6gFXIaHPA,1497
+cli_toolkit-2.5.1.dist-info/METADATA,sha256=lopogZU6sD0SRBvJklb3V4kIK-ZWLK4XbPD-odQ_DMw,4137
+cli_toolkit-2.5.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cli_toolkit-2.5.1.dist-info/entry_points.txt,sha256=bM0ukZeLDtvHwC5ggW1OW1eSwKkvta9c4jWhth7RORQ,54
+cli_toolkit-2.5.1.dist-info/RECORD,,
