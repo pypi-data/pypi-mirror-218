@@ -1,0 +1,3 @@
+[console_scripts]
+parse2docs=parse2docs.app:execute_from_command_line
+
