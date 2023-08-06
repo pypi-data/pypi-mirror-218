@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/calculator/__init__.py
+src/calculator/calculator.py
+src/calculator_devops_pucminas.egg-info/PKG-INFO
+src/calculator_devops_pucminas.egg-info/SOURCES.txt
+src/calculator_devops_pucminas.egg-info/dependency_links.txt
+src/calculator_devops_pucminas.egg-info/requires.txt
+src/calculator_devops_pucminas.egg-info/top_level.txt
+test/test_stringstd.py
