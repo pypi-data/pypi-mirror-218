@@ -1,0 +1,10 @@
+CallingGPT/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CallingGPT/cli/__init__.py,sha256=1eECsx3wis97PdlIQ_LbTVCCOt_Iwg8pRBR07_HhWbY,2414
+CallingGPT/entities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CallingGPT/entities/namespace.py,sha256=HUiMUCZ5Cr6jgffbfgt7KHsssf9QXmQD5nOzQ30uP3E,6963
+CallingGPT/session/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CallingGPT/session/session.py,sha256=FuCP_Ju6pROezM31Tr0q7EkCffewQZqAwkq-FGMvooM,1935
+CallingGPT-0.0.1.0.dist-info/METADATA,sha256=puj4P1-F7Q4mRpSuBCGAIuhp1PcA9A7qpNqXrUMbYNc,5331
+CallingGPT-0.0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CallingGPT-0.0.1.0.dist-info/top_level.txt,sha256=CeaeAYN0KRdumH5RV53-3QyrlJQTgOG5vqi_OOa9-Fs,11
+CallingGPT-0.0.1.0.dist-info/RECORD,,
