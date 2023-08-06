@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+CardStacks/__init__.py
+CardStacks.egg-info/PKG-INFO
+CardStacks.egg-info/SOURCES.txt
+CardStacks.egg-info/dependency_links.txt
+CardStacks.egg-info/top_level.txt
