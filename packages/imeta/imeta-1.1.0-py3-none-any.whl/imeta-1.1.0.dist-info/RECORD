@@ -1,0 +1,9 @@
+imeta/__init__.py,sha256=B95mY22kW_9lRn5hE4BHxrRiay3GmKjlBY3Z9rfxTcQ,2125
+imeta/exceptions.py,sha256=LsmGqVLqWROo3n_s3y7ktJJvra2SoCYuHIOpsakW5aw,152
+imeta/schema.py,sha256=MQa2yHJoo7mHw77DlQR_G-H2dLGMizkrADT4SUbes8o,849
+imeta/serializer.py,sha256=AjIfx7nCKIDiDbwsjhukH6GLTJcQ60hNkwZcZmDlmPU,891
+imeta/schema/1.0.json,sha256=h199lN1CXr8fDq1n8s_mpmv_kjWBcCKVDKrTVrVIshg,1881
+imeta-1.1.0.dist-info/METADATA,sha256=9KshWfpUyX02ab2kN-zA7Qd7kRHPeIvfL25JSyxxugU,931
+imeta-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+imeta-1.1.0.dist-info/top_level.txt,sha256=FBV8zF4u9Jdo2epLMcKy2JDK2csjrdQLIAGvi3alf9Y,6
+imeta-1.1.0.dist-info/RECORD,,
