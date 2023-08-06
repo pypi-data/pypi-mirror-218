@@ -1,0 +1,12 @@
+quantile_forest/__init__.py,sha256=K4Ti1wl6X5l1RobfWJ5RQZ8J6pppY0zvjf8pJYABYAM,986
+quantile_forest/_min_dependencies.py,sha256=wwDkasVzI3u-clcm7ftiV2WTHyXV4bXB5FwAeRnkoIQ,1210
+quantile_forest/_quantile_forest.py,sha256=fp1-tkKrgy59KOoMNUAwvdNiMg8N4HpFMKSIijQBotQ,53187
+quantile_forest/_quantile_forest_fast.cp311-win_amd64.pyd,sha256=kIxqdP3EoLzWZ5RpEYTF4gmx2aS4Ls91lgqwDZ9FMeg,297984
+quantile_forest/version.py,sha256=MNg8Ih17kliJwlnU9Nip6ZLjE9MDf-ibrAgQJVctAy4,23
+quantile_forest/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quantile_forest/tests/test_quantile_forest.py,sha256=a6eXmGnyMoU1IOxVm-qor6SCD-eiZjrl3IvaqnBKFlM,45248
+quantile_forest-1.1.3.dist-info/LICENSE,sha256=WUmNkea1_6twSLicoBrhbdftpN_YjuoYV5-Fedg2hFo,11541
+quantile_forest-1.1.3.dist-info/METADATA,sha256=z4QIO0LxjC5I2msIM2iU2_Cs8tLoGGaWqpZVa4I8R2w,3829
+quantile_forest-1.1.3.dist-info/WHEEL,sha256=9wvhO-5NhjjD8YmmxAvXTPQXMDOZ50W5vklzeoqFtkM,102
+quantile_forest-1.1.3.dist-info/top_level.txt,sha256=rPyfu7keb-34R9gjyiTdbcv_DfNQxbThmdG2xwBVHjw,16
+quantile_forest-1.1.3.dist-info/RECORD,,
