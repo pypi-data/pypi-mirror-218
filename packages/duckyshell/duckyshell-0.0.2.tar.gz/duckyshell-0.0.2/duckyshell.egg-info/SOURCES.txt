@@ -1,0 +1,8 @@
+README.md
+__init__.py
+duckyshell/main.py
+duckyshell.egg-info/PKG-INFO
+duckyshell.egg-info/SOURCES.txt
+duckyshell.egg-info/dependency_links.txt
+duckyshell.egg-info/entry_points.txt
+duckyshell.egg-info/top_level.txt
