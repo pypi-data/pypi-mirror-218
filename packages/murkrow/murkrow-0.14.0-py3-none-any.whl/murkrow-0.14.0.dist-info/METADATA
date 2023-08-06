@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: murkrow
+Version: 0.14.0
+Summary: Install chatlab instead!
+Home-page: https://github.com/rgbkrk/chatlab
+Author: Kyle Kelley
+Author-email: rgbkrk@gmail.com
+Requires-Dist: chatlab
+
