@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: aleph-nuls2
+Version: 0.1.0
+Summary: Aleph.im NULS2 library
+Home-page: https://github.com/aleph-im/nuls2-python
+Author: Jonathan Schemoul
+Author-email: jonathan.schemoul@gmail.com
+License: mit
+Project-URL: Documentation, https://github.com/aleph-im/nuls2-python
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: coincurve
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: jsonrpc-base
+Requires-Dist: six
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+=====================
+Aleph.im NULS2 Python
+=====================
+
+Python library to interact with the NULS2 blockchain.
+
+Description
+===========
+
+Features:
+
+* Sign data with a NULS2 private key.
+* Verify signatures.
+
+Note
+====
+
+This project has been set up using PyScaffold 3.2.1. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
