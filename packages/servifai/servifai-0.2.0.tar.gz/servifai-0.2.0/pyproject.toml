@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "servifai"
+version = "0.2.0"
+description = "A mini framework built on top of Langchain and Llamaindex to provide LLM powered Autonomous Agents as a simplified service to assist users with their tasks"
+authors = ["Zoheb Abai <zohebabai@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.27.8"
+langchain = "0.0.220"
+llama-index = "0.6.38"
+python-dotenv = "^1.0.0"
+chromadb = "^0.3.26"
+pypdf = "^3.11.0"
+pyyaml = "^6.0"
+nltk = "^3.8.1"
+duckduckgo-search = "^3.8.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pre-commit = "^3.3.3"
+scriv = {extras = ["toml"], version = "^1.3.1"}
+jupyterlab = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
