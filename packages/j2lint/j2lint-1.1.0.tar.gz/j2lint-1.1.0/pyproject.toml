@@ -1,0 +1,156 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "j2lint"
+version = "v1.1.0"
+description = "Command-line utility that validates jinja2 syntax according to Arista's AVD style guide."
+readme = "README.md"
+authors = [{ name = "Arista Ansible Team", email = "ansible@arista.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Testing",
+]
+keywords = ["j2lint", "linter", "jinja", "lint"]
+dependencies = [
+    "jinja2>=3.0",
+    "rich>=12.4.4",
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit",
+  "bumpver",
+]
+test = [
+  "pytest",
+  "pytest-cov",
+]
+lint = [
+  "black>=23.3.0",
+  "isort[colors]>=5.12.0",
+  "pylint>=2.15.9",
+  "flake8>=4.0.1",
+]
+type = [
+  "mypy==0.991",
+]
+
+[project.urls]
+Homepage = "https://github.com/aristanetworks/j2lint.git"
+"Bug Tracker" = "https://github.com/aristanetworks/j2lint/issues"
+
+[project.scripts]
+j2lint = "j2lint.cli:run"
+
+[tool.bumpver]
+current_version = "v1.1.0"
+version_pattern = "vMAJOR.MINOR.PATCH"
+commit_message  = "Chore: Version {old_version} -> {new_version}"
+commit          = true
+# No Tag
+tag             = false
+push            = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"j2lint/__init__.py" = ["{version}"]
+"tests/test_cli.py" = ["{version}"]
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 160
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist =
+  clean,
+  py38
+  py39
+  py310,
+  lint,
+  type,
+  report
+
+isolated_build = True
+
+[gh-actions]
+python =
+  3.8: py38
+  3.9: py39
+  3.10: py310, coverage, report
+
+[testenv]
+description = run the test driver with {basepython}
+extras = test
+
+commands =
+  pytest  {tty:--color=yes}
+
+[testenv:lint]
+description = check the code style
+extras =
+  lint
+  test
+commands =
+  flake8 --max-line-length=160 --config=/dev/null j2lint
+  flake8 --max-line-length=160 --config=/dev/null tests
+  pylint j2lint
+  pylint tests
+  black --check --diff --color .
+  isort --check --diff --color .
+
+[testenv:type]
+description = check the code type
+extras = type
+commands =
+  mypy --config-file=pyproject.toml j2lint
+
+[testenv:clean]
+deps = coverage[toml]
+skip_install = true
+commands = coverage erase
+
+[testenv:report]
+deps = coverage[toml]
+commands = coverage report
+# add the following to make the report fail under some percentage
+# commands = coverage report --fail-under=80
+depends = py310
+"""
+
+[tool.pytest.ini_options]
+addopts = "-ra -q -s -vv --capture=tee-sys --cov --cov-append"
+log_level = "WARNING"
+log_cli = "True"
+
+[tool.coverage.run]
+source = ['j2lint']
+omit = ["j2lint/__main__.py"]
+
+[tool.mypy]
+follow_imports = "skip"
+ignore_missing_imports = true
+warn_redundant_casts = true
+disallow_any_generics = true
+check_untyped_defs = true
+no_implicit_reexport = true
+strict_optional = true
+
+# for strict mypy: (this is the tricky one :-))
+disallow_untyped_defs = true
+mypy_path = "j2lint"
+
+[tool.isort]
+profile = "black"
