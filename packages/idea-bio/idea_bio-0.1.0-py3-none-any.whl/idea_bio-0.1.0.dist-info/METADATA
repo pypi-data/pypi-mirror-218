@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: idea-bio
+Version: 0.1.0
+Summary: Integrated Diffferential Expression and Annotation
+License: MIT
+Author: Noam Teyssier
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ggetrs (>=0.1.73,<0.2.0)
+Requires-Dist: networkx (>=3.1,<4.0)
+Requires-Dist: numpy (>=1.25.1,<2.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: pyvis (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+# idea
+Integrated Differential Expression and Annotation
+
