@@ -1,0 +1,3 @@
+[console_scripts]
+offlinesec_get_reports = offlinesec_client.get_reports:main
+offlinesec_sap_notes = offlinesec_client.req_notes_report:main
