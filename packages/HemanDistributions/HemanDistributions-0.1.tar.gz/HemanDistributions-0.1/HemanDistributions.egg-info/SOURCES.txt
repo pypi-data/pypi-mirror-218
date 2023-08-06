@@ -1,0 +1,10 @@
+setup.py
+HemanDistributions/Binomialdistribution.py
+HemanDistributions/Gaussiandistribution.py
+HemanDistributions/Generaldistribution.py
+HemanDistributions/__init__.py
+HemanDistributions.egg-info/PKG-INFO
+HemanDistributions.egg-info/SOURCES.txt
+HemanDistributions.egg-info/dependency_links.txt
+HemanDistributions.egg-info/not-zip-safe
+HemanDistributions.egg-info/top_level.txt
