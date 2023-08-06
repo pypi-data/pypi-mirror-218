@@ -1,0 +1,14 @@
+django_langchain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_langchain/admin.py,sha256=6_BZRO4ajUY81qXuurFkIwHkcMVuQslY5PK81w_HabU,997
+django_langchain/apps.py,sha256=d2POGWwmqpNymRsOkl0aLu8Modr6UEkZWzZJ9u8gSaY,194
+django_langchain/models.py,sha256=YmJSdgRfBm1TBFuPsd-iJLyZnurqtr8hTJmzSZ8zwn8,2230
+django_langchain/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_langchain/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_langchain/migrations/0001_initial.py,sha256=tSZfar1OgvhcmyBEAiDiIq1glyz5jRiwId4it2mOc80,1808
+django_langchain/migrations/0002_alter_documentchunk_index.py,sha256=CMKSuLOY1B18yPMRDPVwsutQdRaXnmLpVk-TT1Pw2Qw,379
+django_langchain/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_langchain-0.0.1.dist-info/LICENSE,sha256=PzswGoE5zQwKK_zq1ioeFjDsrIJh3RMKQomFiPYZfM4,1082
+django_langchain-0.0.1.dist-info/METADATA,sha256=hNGAQ-7P8woRpNkEHn2lqgMABA0itqU1-7tfj1EtEkg,2586
+django_langchain-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_langchain-0.0.1.dist-info/top_level.txt,sha256=OJJHZ5H9TH5ZDqY6X50zvQ1A4WNHeQ26xBiJI2e_LiY,17
+django_langchain-0.0.1.dist-info/RECORD,,
