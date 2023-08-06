@@ -1,0 +1,13 @@
+airflow/providers/vertica/__init__.py,sha256=bIVRy8p-FSI8laQ7w_TKc2tQ4Bco5tp2lE4ICtTF5gc,1532
+airflow/providers/vertica/get_provider_info.py,sha256=Xvq-IyrViPAuMsjgg577_93MXYqQWkIoZbl8mbhBU4U,2575
+airflow/providers/vertica/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/vertica/hooks/vertica.py,sha256=RGJJySiyTAgmdZGcfgLq21Wcnttr4cyWbnzcooNP6DY,3531
+airflow/providers/vertica/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/vertica/operators/vertica.py,sha256=-73DhSbi-4uQgLMEVnDGioutzn0ZN4mmW-y-ARQHyzA,1976
+apache_airflow_providers_vertica-3.5.0.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_vertica-3.5.0.dist-info/METADATA,sha256=IqSlc2ojjXTD-hZg7XVuM5RE2LJYzicJxZye0jdecRY,5862
+apache_airflow_providers_vertica-3.5.0.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_vertica-3.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+apache_airflow_providers_vertica-3.5.0.dist-info/entry_points.txt,sha256=0k7JMNI340DawjYhlJJ6Kc9QWXlWMKe88ZtF1zMU22U,104
+apache_airflow_providers_vertica-3.5.0.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_vertica-3.5.0.dist-info/RECORD,,
