@@ -1,0 +1,10 @@
+gauss_lm_mle/__init__.py,sha256=INlM5komwhGak9ROUdW6WEfmBCI4pU0TqP8wXRLOVbE,76
+gauss_lm_mle/fitters.py,sha256=afc7R5-EAay6qfWvS_azj0_6G1_QsqBD8WvCzXx2RO0,4553
+gauss_lm_mle/liblm_mle_de.py,sha256=Xamkh305yf5dEFLGkxfeu6mneAAfaiR1Rg770M6ohaQ,1549
+gauss_lm_mle/lm_mle_de.cpython-310-darwin.so,sha256=YtcY9TYIL6_lXIXAnLwDUjedHNKgCvNHjhTGLknajz8,68300
+gauss_lm_mle/utils.py,sha256=9FUl7W2I8P5KuUmYwZ4Y7ZPt3Z22HBULcxTUlelwbF4,2407
+gauss_lm_mle-0.1.2.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+gauss_lm_mle-0.1.2.dist-info/METADATA,sha256=6pbM-e0iV9RQ5ktefO4Ykyc9OpuaUepGaD8DXvPS90Y,195
+gauss_lm_mle-0.1.2.dist-info/WHEEL,sha256=YkgppTG7ykOlXc_zwnXV9-VBXF-Nf0nL_gt0JCpKtEA,110
+gauss_lm_mle-0.1.2.dist-info/top_level.txt,sha256=GVLck4vhu7J7LoGqk9K8g4zHBcoki7Cq356dR20z9hQ,13
+gauss_lm_mle-0.1.2.dist-info/RECORD,,

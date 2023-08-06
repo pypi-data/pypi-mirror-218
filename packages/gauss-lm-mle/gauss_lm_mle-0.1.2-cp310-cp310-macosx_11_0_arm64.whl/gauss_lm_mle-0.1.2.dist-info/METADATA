@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: gauss-lm-mle
+Version: 0.1.2
+Summary: MLE Gaussian fitting with Poisson deviates
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
