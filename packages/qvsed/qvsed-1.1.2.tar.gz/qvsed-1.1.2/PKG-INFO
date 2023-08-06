@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: qvsed
+Version: 1.1.2
+Summary: Qt-Based Volatile Small Editor
+Home-page: https://github.com/That1M8Head/QVSED/
+Author: Arsalan Kazmi
+License: GPL-3.0-or-later
+License-File: LICENSE.txt
+
+QVSED is a volatile text editor, meaning that there are no restrictions against unsaved work or bad files. QVSED is a PyQt5 rewrite of my older project, ASMED (Another SMol EDitor), which was written using Windows Forms, and was quite obviously only for Windows. QVSED seeks to replace ASMED by being cross-platform, and it will bring over the benefits of such a lightweight editor without the overhead of .NET. QVSED is licensed under the GNU General Public License version 3 or later.
