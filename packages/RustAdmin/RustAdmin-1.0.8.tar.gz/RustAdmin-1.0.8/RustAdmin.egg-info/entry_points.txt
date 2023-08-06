@@ -1,0 +1,3 @@
+[console_scripts]
+rust-admin = admin.main:main
+

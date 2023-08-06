@@ -1,0 +1,8 @@
+setup.py
+RustAdmin.egg-info/PKG-INFO
+RustAdmin.egg-info/SOURCES.txt
+RustAdmin.egg-info/dependency_links.txt
+RustAdmin.egg-info/entry_points.txt
+RustAdmin.egg-info/top_level.txt
+admin/__init__.py
+admin/main.py
