@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: step
+Version: 0.1.0
+Summary: The first step to automate things; from a Markdown into a CLI
+License: MIT
+Author: Ana Paula Gomes
+Author-email: 1899950+anapaulagomes@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mdformat (>=0.7.16,<0.8.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# step
+The first step to automate things; from a Markdown into a CLI
+
+## The rationale behind this
+
+There are so many manual tasks out there, most of them made of innumerous steps.
+Whenever someone thinks about automating them or even proposing this to their team,
+it sounds like a Herculean task.
+
+What if we turn a checklist into a CLI and turn a gigantic process into something
+more feasible?
+
+## How to use it
+
+```bash
+step path-to/YOUR-MARKDOWN.md
+```
+
+Your markdown checklist will turn into a functioning CLI.
+There you will also find the `Step` object. You can add to it
+a callback function and smoothly migrate from a manual to automated approach.
+
+A functional example will come soon.
+
+## Development
+
+First, you're going to need Python 3.10+. Then, [poetry](https://python-poetry.org/) installed.
+
+This project is in its alpha version, so there is more documentation to come.
+
