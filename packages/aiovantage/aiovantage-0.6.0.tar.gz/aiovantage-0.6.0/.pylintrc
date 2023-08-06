@@ -1,0 +1,3 @@
+[MASTER]
+good-names = id
+exclude-too-few-public-methods = ["aiovantage.config_client.objects.*"]
