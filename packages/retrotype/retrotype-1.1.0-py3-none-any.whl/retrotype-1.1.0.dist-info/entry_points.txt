@@ -1,0 +1,2 @@
+[console_scripts]
+retrotype_cli = retrotype.retrotype_cli:command_line_runner
