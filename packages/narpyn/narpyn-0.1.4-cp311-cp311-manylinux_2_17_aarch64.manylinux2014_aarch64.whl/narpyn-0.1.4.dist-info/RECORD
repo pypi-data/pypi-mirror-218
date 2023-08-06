@@ -1,0 +1,16 @@
+0ed7683deb7867894b80__mypyc.cpython-311-aarch64-linux-gnu.so,sha256=dXN9em91ULniz_JkQ6Yq_XTYZoo7EjFWpswBdx97FOI,269464
+hatch_autorun_narpyn.pth,sha256=ajfdDoOeZ2wPQHJfK4cUpBXXHx-QdjgF7tNPw_ddUt8,102
+narpyn-0.1.4.dist-info/RECORD,,
+narpyn-0.1.4.dist-info/WHEEL,sha256=Clk8DGue1JGEPWulCrYkpf7JBdTGlRnO3bOkuJoPV_U,150
+narpyn-0.1.4.dist-info/METADATA,sha256=456tmDea7j0oabpyDteMWjp-1UlyXCrOOun5PwPxeeA,633
+narpyn-0.1.4.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+narpyn/ona/narsese.py,sha256=2e2ffW6VRb6HsBgGnh-kQHsteo9j_bFoMJoaxjtyJNg,3150
+narpyn/ona/nar.py,sha256=7m8CqcOBv54x9cjrsOc9WNRNw0DhlYGY6ySsEg2o4UM,3594
+narpyn/ona/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ona/__init__.cpython-310-aarch64-linux-gnu.so,sha256=aI-vJosQfBnE_8BQfdz9ncA5thxGWD4v2o2iVolLjDU,71248
+ona/nar.cpython-311-aarch64-linux-gnu.so,sha256=Xrr0ZyWjELwuHXgubPbJjVvd3Su_Ftpgt4LRfd1zAb0,71256
+ona/NAR,sha256=C1MDHBJasdxaHCpxoHrPToorEJsILItlMEOzPMRY0mg,1729712
+ona/__init__.cpython-311-aarch64-linux-gnu.so,sha256=dYqgV9IHgbOAa9Kox66CjuFqK62DECP2R6uoyRrEHrs,71248
+ona/narsese.cpython-311-aarch64-linux-gnu.so,sha256=2bc5Ag-lRoMGVZBojuHYyY3-a3LcCs0K7VBFVeHrrDQ,71280
+ona/nar.cpython-310-aarch64-linux-gnu.so,sha256=yD5fNp_yOly0Sw1QB6WlkPjtU1zoyiwRQ6TSWgQYLoA,71256
+ona/narsese.cpython-310-aarch64-linux-gnu.so,sha256=6KIQ-Wxw0cNOCCeDN0ozH7eWCVFfs8fxfpjxbQZ06Ho,71280

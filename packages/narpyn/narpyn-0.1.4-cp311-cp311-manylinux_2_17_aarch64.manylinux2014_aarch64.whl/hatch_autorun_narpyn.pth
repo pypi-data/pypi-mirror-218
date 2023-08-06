@@ -1,0 +1,1 @@
+import os, sys;exec('os.environ["NARS_HOME"] = os.path.dirname(os.path.abspath(__file__)) + "/ona"\n')
