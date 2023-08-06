@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PPTX2MD2REVEALJS
+Version: 1.0.0
+Summary: Converts a pptx file to MD File.
+Home-page: https://github.com/vijayk1981/pptx2md2reveal
+Author: Vijay Kasibhatla
+Author-email: vijay.kasibhatla@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pptx2md
+
+`pptx2md` is a Python package that converts PowerPoint (.pptx) files into Markdown. It also supports converting speaker notes and outputting them in the Markdown file. The output Markdown file can be further converted into a Reveal.js presentation.
+
+## Features
+
+- Converts PowerPoint slides into Markdown
+- Supports speaker notes
+- Outputs speaker notes in the Markdown file
+- Adds "---" at the end of each slide in the Markdown file
+- Can be used to generate Reveal.js presentations
+
+## Installation
+
+You can install `pptx2md` with pip:
+
+```bash
+pip install pptx2md

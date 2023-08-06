@@ -1,0 +1,11 @@
+pptx2md/__init__.py,sha256=OJC1wgjvNYrk59iMDQWCCNQcLcFz1l_j9NUaPvcVkNw,3408
+pptx2md/__main__.py,sha256=x-TX5k_HmXH0CexA3izi8is1ZrMG4-8J4fcNJT_0ubw,4569
+pptx2md/global_var.py,sha256=Ium58X74qe8OdK_Fz6ALLuEdVp6gdK62EO0Ddf7nhOM,809
+pptx2md/outputter.py,sha256=t7w-17obXiVtRue17pow2bl6VjQL4aGJhChAfpqAVYk,5609
+pptx2md/parser.py,sha256=4Jnnyx1JIpgBpEGXyWJZFaXjrmYo65WoJt8B2Kttp6s,7126
+pptx2md/tools.py,sha256=nWPOrGOuMdTPSl9_IDimmkU74ZETZ2bol6GeWGPQq_w,846
+PPTX2MD2REVEALJS-1.0.0.dist-info/LICENSE,sha256=HMYGArqZbdrlToPyBfniJmtKrkmOyGC-vfwj14XDtaI,1108
+PPTX2MD2REVEALJS-1.0.0.dist-info/METADATA,sha256=njUfyDkQora78YsQU_pd9Slbx6fEg3hmHIp8fGquM_k,1021
+PPTX2MD2REVEALJS-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+PPTX2MD2REVEALJS-1.0.0.dist-info/top_level.txt,sha256=9W6kLTstsHDSZALI4sqbeWuHfoloLGgS_aKSg6uwIc0,8
+PPTX2MD2REVEALJS-1.0.0.dist-info/RECORD,,
