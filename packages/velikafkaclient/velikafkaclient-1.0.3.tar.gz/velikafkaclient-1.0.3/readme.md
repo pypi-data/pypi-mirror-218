@@ -1,0 +1,123 @@
+### Kafka Client for VELI.STORE
+
+### Description
+
+This module is used for producing kafka events, subscribing to kafka topics and consuming kafka events.
+
+### To remember:
+Each kafka topic event has a predefined structure which you can see in `velikafkaclient/eventregistration`, producer 
+and consumer both have built in validation, meaning that if incorrect object structure is sent to a topic then producer 
+will raise an exception as well as consumer.
+
+
+### How to use:
+
+* Setup Producer In a separate file (for example: `kafka.py`)
+
+```python
+from velikafkaclient.producer import AsyncKafkaEventProducer
+
+producer: AsyncKafkaEventProducer = None
+
+
+async def init_producer(bootstrap_servers):
+    global producer
+    producer = AsyncKafkaEventProducer(bootstrap_servers)
+    return producer
+
+
+def get_client() -> AsyncKafkaEventProducer:
+    global producer
+    return producer
+```
+
+* Initialize Producer:
+
+```python
+from kafka import init_producer
+
+producer = await init_producer(bootstrap_servers)
+await producer.start()
+```
+
+* Produce events to a topic:
+
+```python
+from kafka import get_client
+from events.base import KafkaEvent
+from topics.base import BaseTopic
+
+kafka_event = KafkaEvent()
+
+get_client().produce_event(BaseTopic, kafka_event)
+```
+
+* Setup and start consumer
+
+```python
+from velikafkaclient.consumer import AsyncKafkaConsumer
+from config import BOOTSTRAP_SERVER, GROUP_ID
+from velikafkaclient.decorators import tracing
+from velikafkaclient.events.base import KafkaEvent
+from velikafkaclient.topics.base import BaseTopic
+
+class KafkaClientGracefulKiller:
+
+    def __init__(self, client):
+        signal.signal(signal.SIGINT, self.exit_gracefully)
+        signal.signal(signal.SIGTERM, self.exit_gracefully)
+        self.client = client
+
+    def exit_gracefully(self, signum, frame):
+        print("Gracefully killing kafka client <3")
+        asyncio.create_task(self.client.stop())
+        
+        
+@tracing
+async def base_handler(kafka_event: KafkaEvent):
+    print(str(kafka_event))
+    
+    
+bootstrap_servers = BOOTSTRAP_SERVER
+consumer = AsyncKafkaConsumer(bootstrap_servers, group_id=GROUP_ID)
+KafkaClientGracefulKiller(consumer)
+consumer.subscribe(BaseTopic, base_handler)
+
+await consumer.start()
+await consumer.consume()
+```
+
+
+### How to add topics:
+To add a new topic you need three things:
+ 1. Topic name
+ 2. Topic event structure
+ 3. Topic event structure registration 
+All changes are done on `velikafkaclient` library level (in the repo `veli_libs/kafka-client`)
+
+* To add a topic go to `kafka-client/velikafkaclient/topics` and add topic like this:
+```python
+from enum import Enum
+
+class KafkaTopic(str, Enum):
+    
+    USER_REGISTRATIONS = 'user_registrations'
+```
+
+* To add an event structure go to `kafka-client/velikafkaclient/events` and create pydantic model for event structure:
+```python
+class UserRegistrationEvent(KafkaEvent):
+    
+    id: int
+    username: str
+    password: str
+    name: str
+    surname: str
+```
+
+* To register event structure to a topic go to `kafka-client/velikafkaclient/eventregistration.py` and add:
+```python
+kafka_topic_events.register_topic_event_model(KafkaTopic.USER_REGISTRATIONS, UserRegistrationEvent)
+```
+
+Once done follow the instructions in the `veli_libs` readme to update the library on `pyip`
