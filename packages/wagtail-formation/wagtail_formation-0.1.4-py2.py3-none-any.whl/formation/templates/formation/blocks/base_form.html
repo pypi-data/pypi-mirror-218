@@ -1,0 +1,14 @@
+{% load wagtailcore_tags formation_tags %}
+
+
+<form class="formation elaborate" method="POST" action="{% url "process-block-form" %}">
+    {% if form_success %}
+        <p>your message was sent</p>
+
+    {% endif %}
+    {% page_token page self.id %}
+
+    {% for child in self.fields %}
+        {% include_block child %}
+    {% endfor %}
+</form>
