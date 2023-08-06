@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: datarobot-mlflow
+Version: 0.1.dev2
+Summary: datarobot-mlflow client to synchronize an MLFlow model with DataRobot model
+Home-page: https://datarobot.com
+Author: DataRobot
+Author-email: support+mlflow@datarobot.com
+Maintainer: DataRobot
+Maintainer-email: info+mlflow@datarobot.com
+License: DataRobot Tool and Utility Agreement
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: mlflow (>=1.0)
+Requires-Dist: requests
+Provides-Extra: azure
+Requires-Dist: azure-ai-ml ; extra == 'azure'
+Requires-Dist: azureml-mlflow ; extra == 'azure'
+
+# mlflow-integration
+
+Provide means of exporting a model from MLFlow model registry and pushing it to DataRobot model registry
+
+Key-values are created from training parameters, metrics, tags,
+and artifacts in the MLflow model.
+
+## Setup
+* Python 3.7 or later
+* DataRobot 9.0 or later
+* `pip install datarobot-mlflow`
+  * if using Azure: `pip install "datarobot-mlflow[azure]"`
+
+## Considerations
+This integration library uses an API endpoint under Public Preview.
+The DataRobot user owning the API token used below must have:
+* `Enable Extended Compliance Documentation` set
+* `Owner` or `User` permission for the DataRobot model package
+
+## DataRobot information needed
+* URL of DataRobot instance, example: `https://app.datarobot.com`
+* ID of the model package to receive key-values; example: `64227b4bf82db411c90c3209`
+* API token for DataRobot: `export MLOPS_API_TOKEN=<API token from DataRobot Developer Tools>`
+
+## Local MLflow information needed
+* MLflow tracking URI; example `"file:///Users/me/mlflow/examples/mlruns"`
+* Model name; example `"cost-model"`
+* Model version; example `"2"`
+
+## Azure DataBricks MLFlow with Service Principal information needed
+* MLflow tracking URI; example `"azureml://region.api.azureml.ms/mlflow/v1.0/subscriptions/subscription-id/resourceGroups/resource-group-name/providers/Microsoft.MachineLearningServices/workspaces/azure-ml-workspace-name"`
+* Model name; example `"cost-model"`
+* Model version; example `"2"`
+* Provide service principal details in environment:
+  * `export AZURE_TENANT_ID="<tenant-id>"`
+  * `export AZURE_CLIENT_ID="<client-id>"`
+  * `export AZURE_CLIENT_SECRET="<secret>"`
+
+## Example: Import from MLflow
+```sh
+DR_MODEL_ID="<MODEL_PACKAGE_ID>"
+
+env PYTHONPATH=./ \
+python datarobot_mlflow/drflow_cli.py \
+  --mlflow-url http://localhost:8080 \
+  --mlflow-model cost-model  \
+  --mlflow-model-version 2 \
+  --dr-model $DR_MODEL_ID \
+  --dr-url https://app.datarobot.com \
+  --with-artifacts \
+  --verbose \
+  --action sync
+```
+
+## Example: validate Azure credentials
+```sh
+export MLOPS_API_TOKEN="n/a"  # not used for Azure auth check, but must be present
+
+env PYTHONPATH=./ \
+python datarobot_mlflow/drflow_cli.py \
+  --verbose \
+  --auth-type azure-service-principal \
+  --service-provider-type azure-databricks \
+  --action validate-auth
+
+# example output for missing environment variables:
+Required environment variable is not defined: AZURE_TENANT_ID
+Required environment variable is not defined: AZURE_CLIENT_ID
+Required environment variable is not defined: AZURE_CLIENT_SECRET
+Azure AD Service Principal credentials are not valid; check environment variables
+
+# example output for successful authentication:
+Azure AD Service Principal credentials are valid for obtaining access token
+```
+
+## Actions
+The following operations are available for `--action`:
+* `sync`: import parameters, tags, metrics, and artifacts from MLflow model.
+* `list-mlflow-keys`: list parameters, tags, metrics, and artifacts in an MLflow model. Requires `--mlflow-url`, `--mlflow-model`, and `--mlflow-model-version`.
+* `validate-auth`: see "validate Azure credentials" example above.
+
+## Options
+The following options can be added to the `drflow_cli` command line:
+* `--mlflow-url`: MLflow Tracking URI
+* `--mlflow-model`: MLflow model name
+* `--mlflow-model-version`: MLflow model version
+* `--dr-url`: Main URL of the DataRobot instance
+* `--dr-model`: DataRobot Model Package ID. Registered Model Versions are also supported.
+* `--prefix`: a string to prepend to the names of all key-values posted to DataRobot. Default is empty.
+* `--debug`: set Python logging level to `logging.DEBUG`. Default level is `logging.WARNING`.  
+* `--verbose`: prints to stdout information about the following:
+  * retrieving model from MLflow; prints model information
+  * setting model data in DataRobot: prints each key-value posted
+* `--with-artifacts`: download MLflow model artifacts to `/tmp/model`
+* `--service-provider-type`: service provider to use for `validate-auth`. Supported values are:
+  * `azure-databricks`: for Databricks MLflow within Azure
+* `--auth-type`: authentication type for `validate-auth`. Supported values are:
+  * `azure-service-principal`: for Azure Service Principal

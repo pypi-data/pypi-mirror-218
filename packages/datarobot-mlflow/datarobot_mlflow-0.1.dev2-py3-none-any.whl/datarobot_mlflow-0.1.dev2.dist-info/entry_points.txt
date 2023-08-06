@@ -1,0 +1,2 @@
+[console_scripts]
+drflow-cli = datarobot_mlflow.drflow_cli:main
