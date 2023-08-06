@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: whoi_uwapm
+Version: 0.0.1
+Summary: WHOI Acomms Group uwapm
+Home-page: https://git.whoi.edu/acomms/whoi_uwapm
+Author: Eric Gallimore
+Author-email: egallimore@whoi.edu
+License: BSD (3-clause)
+License-File: LICENSE
+
+# <b>whoi_uwapm</b>
+
+## <b> Introduction </b>
+whoi_uwapm is a fork of arlpy's uwapm module. It removes all of the graphing features of the original uwapm, and also is updated to support the latest versions of numpy, scipy, and pandas.
