@@ -1,0 +1,6 @@
+#!python
+from yaw_cli import Commandline
+
+
+if __name__ == "__main__":
+    Commandline.main()
