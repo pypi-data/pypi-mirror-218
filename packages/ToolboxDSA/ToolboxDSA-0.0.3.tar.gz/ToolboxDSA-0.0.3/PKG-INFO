@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ToolboxDSA
+Version: 0.0.3
+Summary: Tool Box of different relevant analysis, statistical tests and modelization tools used by CALF.
+Home-page: https://github.com/DSA-CALF/Toolbox
+Author: DSA_CALF
+Author-email: calfdsa@gmail.com
+License: MIT
+License-File: LICENSE
+
+Tool Box of different relevant analysis, statistical tests and modelization tools used by CALF.
