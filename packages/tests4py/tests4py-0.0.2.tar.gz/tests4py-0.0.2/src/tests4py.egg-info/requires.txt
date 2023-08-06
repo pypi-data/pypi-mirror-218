@@ -1,0 +1,14 @@
+fuzzingbook>=1.1
+isla-solver>=1.10
+tabulate>=0.9.0
+sflkit>=0.1.1
+whatthepatch>=1.0.5
+
+[dev]
+
+[test]
+pytest>=7.2.2
+pytest-cov>=4.0.0
+pytest-html>=3.2.0
+pytest-rerunfailures>=11.1.2
+parameterized>=0.8.1
