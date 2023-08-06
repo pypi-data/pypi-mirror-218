@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: orko
+Version: 0.1.0
+Summary: Project to generate recipes for conda packages
+Author-email: Marcelo Duarte Trevisani <marceloduartetrevisani@gmail.com>
+License: Apache-2.0
+Keywords: conda,environment,pyproject.toml
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich-click
+Requires-Dist: click
+Requires-Dist: tomli
+Requires-Dist: packaging
+Requires-Dist: pyyaml
+Requires-Dist: conda-souschef
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-xdist[psutil] ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pip ; extra == 'testing'
+
+# orko

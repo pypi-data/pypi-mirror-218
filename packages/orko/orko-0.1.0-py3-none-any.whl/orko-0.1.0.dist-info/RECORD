@@ -1,0 +1,13 @@
+orko/__init__.py,sha256=j4MoGzVzAOM81AIBBpPz6FndFJD4LbsA3zqNS9WRZDs,129
+orko/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+orko/cli/__init__.py,sha256=VP0cG6Cl5Vq-oplqeX7n0cIxMTDuyvTb2fzcn91X5YA,3521
+orko/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orko/core/base.py,sha256=GU2AIzRpK3D2YB4j7daqw7U4Uiz0pECYs0DI9wyh05E,4299
+orko/core/env.py,sha256=aj2Jk8_3uUs0dXrn44LltRyfpd8CUsqSvUhnP7X8BjU,870
+orko/core/process.py,sha256=n7dYIxNCrm5pb9K4nJZTCYofx75aQGAuoD8YmXJFM84,4920
+orko-0.1.0.dist-info/LICENSE,sha256=hYCthmktm8tFyuNvnBwWRo7kutoLa1PPXZurtK7OOfk,11354
+orko-0.1.0.dist-info/METADATA,sha256=0XKzykW0hWUQ9OOO8NPN7ejx7u-OriCroFPpOXHhKL4,754
+orko-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+orko-0.1.0.dist-info/entry_points.txt,sha256=uEC-e8P2EG4E6XqNe831tTTT2hhWt0V6xY6PRML3C_8,43
+orko-0.1.0.dist-info/top_level.txt,sha256=igE2tEVLW_B3EW4YUPPlKxvY4s9Oe2yf3VFfs91WeAA,5
+orko-0.1.0.dist-info/RECORD,,

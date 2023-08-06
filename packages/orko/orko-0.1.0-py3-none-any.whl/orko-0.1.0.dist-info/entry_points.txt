@@ -1,0 +1,2 @@
+[console_scripts]
+orko = orko.cli:orko_cli
