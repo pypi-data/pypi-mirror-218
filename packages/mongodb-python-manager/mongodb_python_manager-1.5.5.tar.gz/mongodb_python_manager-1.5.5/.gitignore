@@ -1,0 +1,6 @@
+.venv/
+.pytest_cache/
+build/
+mongodb_python_manager.egg-info/
+.env
+.eggs/

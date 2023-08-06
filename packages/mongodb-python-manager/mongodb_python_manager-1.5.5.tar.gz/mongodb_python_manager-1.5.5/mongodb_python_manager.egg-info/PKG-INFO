@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mongodb-python-manager
+Version: 1.5.5
+Summary: "
+Author: Louis Giron
+Author-email: louis@giron-dom.eu
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
