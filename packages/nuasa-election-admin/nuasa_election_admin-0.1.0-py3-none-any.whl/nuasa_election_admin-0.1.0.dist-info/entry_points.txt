@@ -1,0 +1,3 @@
+[console_scripts]
+nuasa-election-admin=nuasa_election_admin.main:app
+
