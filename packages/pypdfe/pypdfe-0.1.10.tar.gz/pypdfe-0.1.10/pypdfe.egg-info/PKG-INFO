@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pypdfe
+Version: 0.1.10
+Summary: A Python package for PDF estimation using Dr. Jennifer Farmer's PDFe and multivariate PDF libraries.
+Home-page: https://github.com/CHANGE_ME
+Author: Nate Mauney
+Author-email: nmauney4@uncc.edu
+Requires-Python: >=3.8
+License-File: LICENSE
