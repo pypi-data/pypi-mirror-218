@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+parametricGarch/__init__.py
+parametricGarch/parametric.py
+parametricGarch.egg-info/PKG-INFO
+parametricGarch.egg-info/SOURCES.txt
+parametricGarch.egg-info/dependency_links.txt
+parametricGarch.egg-info/requires.txt
+parametricGarch.egg-info/top_level.txt
