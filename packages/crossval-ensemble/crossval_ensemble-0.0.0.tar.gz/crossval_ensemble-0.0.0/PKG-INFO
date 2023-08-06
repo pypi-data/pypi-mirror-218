@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: crossval_ensemble
+Version: 0.0.0
+Summary: A scikit-learn wrapper for CrossValidation Ensembles
+Home-page: UNKNOWN
+Author: Pierre-Alexis Thoumieu
+Author-email: pierre-alexis@liberkeys.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+CrossvalEnsemble is an ML library in Python that allows to create    CrossValidation Ensembles leveraging scikit-learn.
+
