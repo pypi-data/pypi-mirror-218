@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dotsCLI"
+version = "0.1.0"
+description = "A command line interface for automating containerization"
+authors = ["Yathartha Goenka <goenkayathartha2002@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "dotsCLI" },
+]
+
+[tool.poetry.scripts]
+dts = "dotsCLI.dts:cli"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.4"
+PyYAML = "^6.0"
+paramiko = "^3.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
