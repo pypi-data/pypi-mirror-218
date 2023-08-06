@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: diz
+Version: 0.0.4
+Summary: 用来构建大模型环境的工具
+Author: mjason
+Description-Content-Type: text/markdown
+
+# diz
+一个用来做大模型的开发工具快速构建平台
