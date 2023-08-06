@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "pmjs"
+version = "0.0.0"
+description = ""
+authors = [
+  "Tom Tang <xmader@distributive.network>",
+  "Caleb Aikens <caleb@distributive.network>",
+  "Wes Garland <wes@distributive.network>",
+  "Hamada Gasmallah <hamada@distributive.network>"
+]
