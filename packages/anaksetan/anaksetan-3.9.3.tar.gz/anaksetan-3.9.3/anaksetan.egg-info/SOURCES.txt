@@ -1,0 +1,7 @@
+README.md
+setup.py
+anaksetan.egg-info/PKG-INFO
+anaksetan.egg-info/SOURCES.txt
+anaksetan.egg-info/dependency_links.txt
+anaksetan.egg-info/requires.txt
+anaksetan.egg-info/top_level.txt
