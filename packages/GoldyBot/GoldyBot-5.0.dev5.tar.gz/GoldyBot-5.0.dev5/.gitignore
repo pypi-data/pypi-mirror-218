@@ -1,0 +1,17 @@
+build
+GoldyBot.egg-info
+dist
+env
+docs/_build
+__pycache__
+.pytest_cache
+.coverage
+.vscode
+.ruff_cache
+
+demo/*
+!demo/run.py
+!demo/cli_demo.py
+
+demo-docker/*
+!demo-docker/.gitkeep
