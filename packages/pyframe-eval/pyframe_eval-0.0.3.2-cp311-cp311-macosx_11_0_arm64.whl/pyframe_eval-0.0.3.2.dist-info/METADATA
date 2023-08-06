@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyframe-eval
+Version: 0.0.3.2
+Summary: A PEP 523 compatible frame evaluator
+Home-page: https://github.com/makslevental/pyframe_eval
+Author: Maksim Levental
+Author-email: maksim.levental@gmail.com
+Requires-Python: >=3.11
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+A PEP 523 compatible frame evaluator
