@@ -1,0 +1,9 @@
+findpython-1.0.0a0.dist-info/METADATA,sha256=Q2SLQLSKoWbEMMutlExNmaq89-VM8SGEaktvUPW4eqY,5707
+findpython-1.0.0a0.dist-info/WHEEL,sha256=EOMNtrT_gKkmhndb21X5-Kx7YThUf3BfKaagKjbmQiw,94
+findpython-1.0.0a0.dist-info/entry_points.txt,sha256=9lyeg9TfVnT70pP6IvchrW-gqBEZvYyDZ5aM5YdjEtI,49
+findpython-1.0.0a0.dist-info/license_files/LICENSE,sha256=HoaYgKyZ-S5Nk7vm5bcu6T94-S-TVek5W7agvy1kxig,1096
+findpython/__init__.py,sha256=1tAqop0CzCKv47fl7NWmVvvnybeyw-3lGCRZ7buKg0s,123
+findpython/__init__.pyi,sha256=1KaIebGvtnZlB_lScH5-K0w27CVouSdt2fpZLrAEE8w,2129
+findpython/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+findpython/findpython.pyd,sha256=gzELW5JXoMKntG10-1NSoWNB40Fy-n9f-R_E5I3GJIg,2874368
+findpython-1.0.0a0.dist-info/RECORD,,
