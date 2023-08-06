@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: LIB-ADTECH
+Version: 1.0.8
+Summary: Funções úteis para desenvolvimento web.
+Author: Alan, Fabiano e Yan
+License: MIT License
+Keywords: driverWait,librarySelenium
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ImportaÃ§Ã£o de bibliotecas e driverWait
