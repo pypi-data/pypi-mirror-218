@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqd-song-edit"
+version = "1.1.0"
+description = "edit song cover art and metadeta easily!"
+authors = [
+    { name="sqdnoises" }
+]
+
+readme = "README.md"
+license = { file = "LICENSE" }
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+requires-python = ">=3.8"
+dependencies = [
+    "eyeD3", "luddite", "sqdconvert", "mutagen"
+]
+
+[project.optional-dependencies]
+windows = [
+    "pyreadline3"
+]
+dev = [
+    "pip-tools", "build", "twine"
+]
+
+[project.scripts]
+song-edit = "sqd_song_edit.__main__:main"
