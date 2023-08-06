@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: retroplanner
+Version: 0.0.2
+Summary: A tool to build retro-plannings and calendars.
+Project-URL: Homepage, https://prevee.fr/retroplanner
+Project-URL: Bug Tracker, https://prevee.fr/retroplanner
+Author-email: Jan Aalmoes <jan.aalmoes@protonmail.com>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
