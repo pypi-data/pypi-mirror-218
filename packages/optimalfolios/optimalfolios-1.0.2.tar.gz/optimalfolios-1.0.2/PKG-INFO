@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: optimalfolios
+Version: 1.0.2
+Summary: Simulation and backtesting of optimal portfolios
+Home-page: https://github.com/ArturSepp/OptimalPortfolios
+License: LICENSE.txt
+Keywords: quantitative,investing,portfolio optimization,systematic strategies,volatility
+Author: Artur Sepp
+Author-email: artursepp@gmail.com
+Maintainer: Artur Sepp
+Maintainer-email: artursepp@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Dist: cryptocmd (>=0.6.1)
+Requires-Dist: cvxpy (>=1.3.2)
+Requires-Dist: matplotlib (>=3.5.2)
+Requires-Dist: numba (>=0.56.0)
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: pandas (>=1.5.3)
+Requires-Dist: pybloqs (>=1.2.13)
+Requires-Dist: qis (>=2.0.1)
+Requires-Dist: scikit_learn (>=1.3.0)
+Requires-Dist: scipy (>=1.9.0)
+Requires-Dist: seaborn (>=0.11.2)
+Requires-Dist: setuptools (>=63.2.0)
+Requires-Dist: yfinance (>=0.2.3)
+Project-URL: Documentation, https://github.com/ArturSepp/OptimalPortfolios
+Project-URL: Issues, https://github.com/ArturSepp/OptimalPortfolios/issues
+Project-URL: Personal website, https://artursepp.com
+Project-URL: Repository, https://github.com/ArturSepp/OptimalPortfolios
+Description-Content-Type: text/markdown
+
+FORTHCOMING ...
