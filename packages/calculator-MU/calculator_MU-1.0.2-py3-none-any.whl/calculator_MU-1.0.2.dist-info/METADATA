@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: calculator-MU
+Version: 1.0.2
+Summary: A simple calculator package
+Author: Mantas Urbonas
+Author-email: mantas.urbonas0@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+
