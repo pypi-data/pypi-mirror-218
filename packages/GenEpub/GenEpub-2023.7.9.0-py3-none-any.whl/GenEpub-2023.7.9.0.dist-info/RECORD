@@ -1,0 +1,14 @@
+GenEpub/__init__.py,sha256=kgNYK8gJXQL3zyFnbKMwL9YKaCW9enKXyZeHreuolj8,3990
+GenEpub/util.py,sha256=UTdwYil8vl2cfup7q_-_oz6bTyBvQCb4QE8yjiPZrg4,986
+GenEpub/assets/Style.css,sha256=jHoSgi0yrsgFq3SpPOXE9gRQiy-UAtP5h_Mwwzu2yMA,6073
+GenEpub/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GenEpub/assets/article.j2,sha256=m6Ewj69i2YwqETQbUsayEYX9ztTeIEeMtx2h2-U58Cw,373
+GenEpub/assets/container.xml,sha256=g-QS8ax9BSqfc9gtAmyc4kFZHGC4Dpw4SVbp5Yjh1fw,265
+GenEpub/assets/content.j2,sha256=yRIAogBy9lOlL8WI1qA_3_0t9ktoIUSek8EcQ2vyKOY,1198
+GenEpub/assets/mimetype,sha256=5GjjUNEUPrZI9gx7C9YDEQHsBUSjYcp07O8laskB9Is,20
+GenEpub/assets/toc.j2,sha256=KvJCkxlw1aTff9fiRAU9TQJB5_P-ebgRgNGgra9CJaI,767
+GenEpub-2023.7.9.0.dist-info/LICENSE,sha256=THg67ICtgSZK-WPdkYzIglw2QYlW3nCk0ZV1H2-lDVs,1834
+GenEpub-2023.7.9.0.dist-info/METADATA,sha256=OrR2twIL0Vf0Z75R3ZkRUgvHIwvwVrodnxZLrfbt3Ss,2367
+GenEpub-2023.7.9.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+GenEpub-2023.7.9.0.dist-info/top_level.txt,sha256=cLkKn6JjLxJ9X00jJsj838M4hyIkdKCKTV7PtNj14PM,8
+GenEpub-2023.7.9.0.dist-info/RECORD,,
