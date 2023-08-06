@@ -1,0 +1,14 @@
+sparglim/__init__.py,sha256=rdgPjvh-PPsv67RSx4nBiDsjBr1oC4jzbzeqjZoCzq0,116
+sparglim/exceptions.py,sha256=d8AE1mx0-BgUiiXKTxOwBD3pdpBfUBYVm97ROvdBXGU,122
+sparglim/log.py,sha256=8_VYsVLvY8LMp9B8BC72mfYdHhJKvtKxj804Nu1TX0k,100
+sparglim/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparglim/utils.py,sha256=ysQX83pca3ayyQhaMoBHWAUbs38il1cqOz-6T26KkZw,743
+sparglim/config/__init__.py,sha256=Fw1qAz_0d3nQAz1LVLr3RDsWYz_Qwrt9-AQPkU67Qak,100
+sparglim/config/builder.py,sha256=fFqgU9GzSSQJmq2WbB01WVqCDuXP_paP4gTPo5nZHc4,4612
+sparglim/config/k8s.py,sha256=ZbXzXtKU5eaexisbIG4gd9FLqx3Rn9g5d5FU7iDVcSI,925
+sparglim/sql/__init__.py,sha256=tIhX-UZzilMtebseyqe7pPnXaoz36cSLQ3HI7eW4oP4,193
+sparglim/sql/magic.py,sha256=N0m_rCnKTYXhSrLZye_Aha3v-6v4SnCHyjyNJJ94xPs,1128
+sparglim-0.0.1a0.dist-info/METADATA,sha256=jB7Yv1wZaByHrGwdzqh2HIWtJojH9JHial1ISqq2tGM,1922
+sparglim-0.0.1a0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+sparglim-0.0.1a0.dist-info/licenses/LICENSE,sha256=760M9aoaFPrt2UqkIR8Vq3ZVkZp7d7eN-F_D83F4imI,1501
+sparglim-0.0.1a0.dist-info/RECORD,,

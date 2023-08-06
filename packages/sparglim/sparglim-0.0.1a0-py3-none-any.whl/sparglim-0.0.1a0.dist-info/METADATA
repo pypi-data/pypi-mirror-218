@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: sparglim
+Version: 0.0.1a0
+Summary: sparglim
+Project-URL: Source, https://github.com/wh1isper/sparglim
+Author-email: wh1isper <9573586@qq.com>
+License: BSD license
+License-File: LICENSE
+Keywords: sparglim
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Requires-Dist: findspark
+Requires-Dist: loguru
+Requires-Dist: pyspark
+Provides-Extra: all
+Requires-Dist: pyspark[connect]; extra == 'all'
+Requires-Dist: pyspark[pandas-on-spark]; extra == 'all'
+Requires-Dist: pyspark[sql]; extra == 'all'
+Requires-Dist: sparglim[k8s]; extra == 'all'
+Requires-Dist: sparglim[magic]; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: sparglim[all]; extra == 'dev'
+Requires-Dist: sparglim[test]; extra == 'dev'
+Provides-Extra: k8s
+Requires-Dist: kubernetes; extra == 'k8s'
+Provides-Extra: magic
+Requires-Dist: ipython; extra == 'magic'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+![](https://img.shields.io/github/license/wh1isper/sparglim)
+![](https://img.shields.io/github/v/release/wh1isper/sparglim)
+![](https://img.shields.io/pypi/dm/sparglim)
+![](https://img.shields.io/github/last-commit/wh1isper/sparglim)
+![](https://img.shields.io/pypi/pyversions/sparglim)
+
+# Sparglim
+
+Sparglim is aimed at providing a clean solution for PySpark applications in cloud-native scenarios (On K8S、Connect Server etc.).
+
+# Feature
+
+## Config pyspark via Environment Variables
+
+## SQL Magic
+
+## Install
+
+`pip install sparglim`
+
+## Usage
+
+## Develop
+
+Install pre-commit before commit
+
+```
+pip install pre-commit
+pre-commit install
+```
+
+Install package locally
+
+```
+pip install -e .[test]
+```
+
+Run unit-test before PR, **ensure that new features are covered by unit tests**
+
+```
+pytest -v
+```
