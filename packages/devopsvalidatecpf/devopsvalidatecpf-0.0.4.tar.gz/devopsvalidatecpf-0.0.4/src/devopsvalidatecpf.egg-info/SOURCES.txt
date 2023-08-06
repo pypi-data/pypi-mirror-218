@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+requirements.txt
+src/devopsvalidatecpf.egg-info/PKG-INFO
+src/devopsvalidatecpf.egg-info/SOURCES.txt
+src/devopsvalidatecpf.egg-info/dependency_links.txt
+src/devopsvalidatecpf.egg-info/requires.txt
+src/devopsvalidatecpf.egg-info/top_level.txt
+src/validate/__init__.py
+src/validate/validate_cpf.py
+test/test_validate_cpf.py
