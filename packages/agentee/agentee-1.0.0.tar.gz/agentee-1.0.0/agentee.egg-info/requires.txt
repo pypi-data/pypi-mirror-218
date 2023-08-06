@@ -1,0 +1,6 @@
+tiktoken
+openai
+colorama
+jwt
+colorlog
+python-dotenv
