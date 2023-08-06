@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: python-pbxonline
+Version: 0.1.2
+Summary: Wrapper for PBX Online API
+Home-page: https://github.com/alexanderlhsglobal/python-pbxonline
+Download-URL: https://github.com/alexanderlhsglobal/python-pbxonline/archive/refs/tags/0.1.2.tar.gz
+Author: Alexander Schillemans
+Author-email: alexander.schillemans@hotmail.com
+License: GPL-3.0-or-later
+Keywords: pbxonline
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# python-pbxonline
+Wrapper for PBX Online
