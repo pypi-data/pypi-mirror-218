@@ -1,0 +1,7 @@
+owlready2==0.43
+networkx==2.8.4
+matplotlib==3.5.1
+ecs_logging==1.1.0
+numpy==1.23.5
+pandas==1.5.1
+deprecated==1.2.14
