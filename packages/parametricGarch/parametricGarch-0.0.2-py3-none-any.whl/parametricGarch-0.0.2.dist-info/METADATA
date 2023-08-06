@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: parametricGarch
+Version: 0.0.2
+Summary: Parametric Bootstrapping via the GARCH model
+Home-page: https://github.com/chideraani/ParametricGarch
+Author: Chidera
+Author-email: chideraani27@gmail.com
+License: GNU
+Keywords: python,bootstrapping,garch,volatility,VaR,risk management,parametric bootstrapping
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: arch
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+A package that estimates the Volatility and Value-at-Risk (VaR) of financial assets using parametric bootstrapping via the GARCH model
+
