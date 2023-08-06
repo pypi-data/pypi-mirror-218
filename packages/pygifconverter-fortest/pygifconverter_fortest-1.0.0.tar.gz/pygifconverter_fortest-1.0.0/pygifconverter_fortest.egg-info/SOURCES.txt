@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+pygifconverter_fortest/__init__.py
+pygifconverter_fortest/converter.py
+pygifconverter_fortest.egg-info/PKG-INFO
+pygifconverter_fortest.egg-info/SOURCES.txt
+pygifconverter_fortest.egg-info/dependency_links.txt
+pygifconverter_fortest.egg-info/not-zip-safe
+pygifconverter_fortest.egg-info/requires.txt
+pygifconverter_fortest.egg-info/top_level.txt
