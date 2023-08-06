@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-redex
+Version: 1.0.1
+Summary: User friendly version of regex.
+Home-page: 
+Author: Timo Kats
+Author-email: tpakats@gmail.com
+License: MIT
+Keywords: regex
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+More information available at https://github.com/TimoKats/redex
