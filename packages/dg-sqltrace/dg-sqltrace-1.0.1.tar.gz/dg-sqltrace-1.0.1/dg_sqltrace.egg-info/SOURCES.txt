@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+dg-sqltrace/__init__.py
+dg-sqltrace/middleware.py
+dg_sqltrace.egg-info/PKG-INFO
+dg_sqltrace.egg-info/SOURCES.txt
+dg_sqltrace.egg-info/dependency_links.txt
+dg_sqltrace.egg-info/requires.txt
+dg_sqltrace.egg-info/top_level.txt
