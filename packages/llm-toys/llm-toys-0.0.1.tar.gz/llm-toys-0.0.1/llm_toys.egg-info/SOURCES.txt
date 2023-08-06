@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+llm_toys/__init__.py
+llm_toys.egg-info/PKG-INFO
+llm_toys.egg-info/SOURCES.txt
+llm_toys.egg-info/dependency_links.txt
+llm_toys.egg-info/requires.txt
+llm_toys.egg-info/top_level.txt
