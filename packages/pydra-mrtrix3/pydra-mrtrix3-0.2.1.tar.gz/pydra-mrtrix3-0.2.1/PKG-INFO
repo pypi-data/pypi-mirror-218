@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pydra-mrtrix3
+Version: 0.2.1
+Summary: Pydra tasks for MRtrix3
+Author: Nipype developers
+Author-email: neuroimaging@python.org
+License: Apache License, 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; variant=CommonMark
+Provides-Extra: doc
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: all
+License-File: LICENSE
+
+# Pydra Tasks for mrtrix3
+
+[![Python package](https://github.com/nipype/pydra-mrtrix3/actions/workflows/pythonpackage.yml/badge.svg)](https://github.com/nipype/pydra-mrtrix3/actions/workflows/pythonpackage.yml)
+
+## For developers
+
+Install repo in developer mode from the source directory. It is also useful to
+install pre-commit to take care of styling via black:
+
+```
+pip install -e .[dev]
+pre-commit install
+```
