@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "init-graph"
+version = "0.1.1"
+description = "Added the path as environment variable"
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+packages = [{include = "init_graph"}]
+
+
+[tool.poetry.scripts]
+init-graph = "init_graph.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
