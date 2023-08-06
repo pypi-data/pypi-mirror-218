@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: weiser-ai
+Version: 0.1.0
+Summary: Data Quality powered by AI
+Author-Email: Paco Valdez <paco.valdez@berkeley.edu>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# weiser
+
+Data Quality powered by AI
