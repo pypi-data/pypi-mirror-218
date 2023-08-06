@@ -1,0 +1,11 @@
+conjugate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conjugate/_typing.py,sha256=AiMS8Ek6p_vGQ-59XUEKibPpEHbjFDhuDbCmA2IRYkg,602
+conjugate/distributions.py,sha256=2H00iCD_HrMHp1WFYDF-gqPi3Bu6a9Wwxv4ZoDgMR4g,7185
+conjugate/models.py,sha256=o2wvTMcLoTXYkrcHbmHRt1EN5lz_yxqgX8A1iHvSZNw,5252
+conjugate/plot.py,sha256=b0i-kZXvmD9lNYJBIZEAhYUUPWWQoaOoHW8aiTvXBQU,5586
+conjugate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conjugate/slice.py,sha256=DzNqXsk6Sj2Q0TB8-LnJ6qF31GwzO_ppCB4cDzbypPI,427
+conjugate_models-0.1.1.dist-info/LICENSE,sha256=dC1BuNHBb5qsK4nDA0C4clRupZzgbcbJROnWrmAfUfg,1066
+conjugate_models-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+conjugate_models-0.1.1.dist-info/METADATA,sha256=kPU2f80H09unGyZAkBSPZkC1NHQ6xxzJYbo-Frbru_Y,2538
+conjugate_models-0.1.1.dist-info/RECORD,,
