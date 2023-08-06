@@ -1,0 +1,3 @@
+pyyaml
+openai
+reliableGPT==0.2.976
