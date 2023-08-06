@@ -1,0 +1,11 @@
+citation_title/__init__.py,sha256=Gy1EiJqvuebcxeILUlaDkjhwmnwk97ALKPYeKn4j73M,116
+citation_title/adverse.py,sha256=eWtbf0-gTPHhxII1TCjRv6PX3hDoEfM9_tn4sNLQR_c,5492
+citation_title/inre.py,sha256=4WsVIqHUvtq57KHzvilDzWLVyQ3wDG6-H0waT4ppbWE,2524
+citation_title/litigants/__init__.py,sha256=k0Ic0Nv9XPbKw4O-5WJCoFwUFA0fOn2-AssDu7LTMOY,179
+citation_title/litigants/humans.py,sha256=UD1COjEi8vrDiwfRi0uzuErHVx31NAOZ5wAm1rH9SmA,4421
+citation_title/litigants/offices.py,sha256=a63UgrcTz-bCef6MBuBPwBPhrqfDs99KelDX6lfzKOY,5935
+citation_title/litigants/utils.py,sha256=aCCkEo77YnQi5EQ1BDoXYZYE5CK5R5YoT1EuTnV5IXU,5741
+citation_title/titles.py,sha256=B0LKBoUel3N7gFfkTXXsdIhEKDC9stubxZcSw7czPLE,2944
+citation_title-0.0.1.dist-info/METADATA,sha256=U1sEn0BezaSzLhXZOz97F9CcLre9Hc-o2o2krV9vag0,890
+citation_title-0.0.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+citation_title-0.0.1.dist-info/RECORD,,
