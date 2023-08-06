@@ -1,0 +1,14 @@
+bluedo/__init__.py,sha256=7t_EROcd6_hETLWHIXus5NSZwXXT7jX2ygQefzqwBms,252
+bluedo/bluedo.png,sha256=2-6_GhqNqYLpcHW6eDYmadtuS33ssfrW1rER9OPHkHg,106494
+bluedo/bluedoapp.py,sha256=LHMpHWUlEfRVrvW2h5QqQL9vO6hs09vtfTp42C1nh9M,27528
+bluedo/lock_animation.gif,sha256=zPwrhOIAxGZn74L7IQO4YFEP1korAElIyMVSVQ91on8,79675
+bluedo/unlocked.png,sha256=tIM6MI4bhRwyXIGeg01Jletd3ymJvb3BHC7-PgfDJwg,8631
+bluedo/window.glade,sha256=Ah6Tp99rT2LithB4EdOX-JiVz4Rvsmok5qKBzLGX3Ps,21441
+bluedo-2.4.data/data/share/applications/bluedo.desktop,sha256=Sl5ZY2R7j75jcGEQVkP0gy3DD9qdxumVvqVAXeb44NE,251
+bluedo-2.4.data/data/share/icons/hicolor/256x256/apps/bluedo.png,sha256=2-6_GhqNqYLpcHW6eDYmadtuS33ssfrW1rER9OPHkHg,106494
+bluedo-2.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bluedo-2.4.dist-info/METADATA,sha256=UucuQzuWQ2xMlnWc9XJH3_NggomMGabL84ANF0jWWcw,4224
+bluedo-2.4.dist-info/WHEEL,sha256=00yskusixUoUt5ob_CiUp6LsnN5lqzTJpoqOFg_FVIc,92
+bluedo-2.4.dist-info/entry_points.txt,sha256=Op68Jobd7h65tcALgTdyWewevPUR8zXctvehK78XaZI,40
+bluedo-2.4.dist-info/top_level.txt,sha256=_c60yElnDp5IBZgcAN3qQtjjsRNHZM1xueRAbT_FR-M,7
+bluedo-2.4.dist-info/RECORD,,
