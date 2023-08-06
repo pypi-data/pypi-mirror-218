@@ -1,0 +1,1 @@
+This library attempts to install a JRE and prints the binary path.

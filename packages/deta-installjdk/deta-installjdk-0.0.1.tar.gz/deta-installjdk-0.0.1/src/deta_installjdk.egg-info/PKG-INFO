@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: deta-installjdk
+Version: 0.0.1
+Summary: Attempts to install a JRE and prints the binary path.

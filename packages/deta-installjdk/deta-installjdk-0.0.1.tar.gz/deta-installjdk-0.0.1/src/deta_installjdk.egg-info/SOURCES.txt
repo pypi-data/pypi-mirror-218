@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/deta-installjdk/__init__.py
+src/deta-installjdk/test.py
+src/deta_installjdk.egg-info/PKG-INFO
+src/deta_installjdk.egg-info/SOURCES.txt
+src/deta_installjdk.egg-info/dependency_links.txt
+src/deta_installjdk.egg-info/requires.txt
+src/deta_installjdk.egg-info/top_level.txt
