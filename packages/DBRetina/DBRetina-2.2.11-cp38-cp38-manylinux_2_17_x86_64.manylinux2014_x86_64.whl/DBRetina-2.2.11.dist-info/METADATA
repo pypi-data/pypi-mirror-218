@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: DBRetina
+Version: 2.2.11
+Summary: DBRetina Python Package
+License: BSD 3-Clause
+Project-URL: Bug Reports, https://github.com/DBRetina/DBRetina/issues
+Project-URL: Source, https://github.com/DBRetina/DBRetina/issues
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Click (>=8.1.4)
+Requires-Dist: pandas (>=2.0.3)
+Requires-Dist: scipy (>=1.11.1)
+Requires-Dist: numpy (>=1.25)
+Requires-Dist: rustworkx (>=0.13.0)
+Requires-Dist: tqdm (>=4.65.0)
+Requires-Dist: seaborn (>=0.12.2)
+Requires-Dist: matplotlib (>=3.7.2)
+Requires-Dist: fastcluster (>=1.2.6)
+Requires-Dist: leidenalg (>=0.10.0)
+Requires-Dist: igraph (>=0.10.5)
+Requires-Dist: plotly (>=5.15.0)
+Requires-Dist: dash-bio (>=1.0.2)
+Requires-Dist: pycirclize (>=0.4.0)
+Requires-Dist: networkx (>=3.1)
+
