@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dlcore
+Version: 0.1.0
+Summary: Deep Learning core in pytroch
+Home-page: 
+Author: Milos Bijanic
+Author-email: bijanicmilos996@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
