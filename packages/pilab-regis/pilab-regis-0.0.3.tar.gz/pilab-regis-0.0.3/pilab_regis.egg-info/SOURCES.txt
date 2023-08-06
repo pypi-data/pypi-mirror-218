@@ -1,0 +1,9 @@
+README.md
+setup.py
+pilab_regis.egg-info/PKG-INFO
+pilab_regis.egg-info/SOURCES.txt
+pilab_regis.egg-info/dependency_links.txt
+pilab_regis.egg-info/requires.txt
+pilab_regis.egg-info/top_level.txt
+regis/__init__.py
+regis/core.py
