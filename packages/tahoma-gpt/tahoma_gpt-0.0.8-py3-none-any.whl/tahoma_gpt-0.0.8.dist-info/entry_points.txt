@@ -1,0 +1,2 @@
+[console_scripts]
+tahoma_gpt = tahoma_gpt.tahoma_gpt:main
