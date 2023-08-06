@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+punktdict/README.MD
+punktdict/__init__.py
+punktdict/requirements.txt
+punktdict/thirdparty.json
+punktdict.egg-info/PKG-INFO
+punktdict.egg-info/SOURCES.txt
+punktdict.egg-info/dependency_links.txt
+punktdict.egg-info/top_level.txt

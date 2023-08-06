@@ -1,0 +1,3 @@
+include punktdict/requirements.txt
+include punktdict/thirdparty.json
+include punktdict/README.MD
