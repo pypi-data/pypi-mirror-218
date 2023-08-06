@@ -1,0 +1,9 @@
+hspylib
+hspylib-hqt
+requests
+PyQt5
+PyQt5-stubs
+confluent_kafka
+fastavro
+jsonschema
+avro-python3
