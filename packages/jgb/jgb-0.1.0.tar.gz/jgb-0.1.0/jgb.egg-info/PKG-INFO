@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: jgb
+Version: 0.1.0
+Summary: 金箍棒
+Home-page: https://github.com/tribf/py_jgb
+Author: tribf
+Author-email: tribf@tribf.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+
+# 金箍棒(jgb)
+> 如意金箍棒，是中国明代神魔小说《西游记》中孙悟空所使用的兵器，在书中简称“金箍棒”和“如意棒”，又名“灵阳棒”、“天河定底神珍铁”（大禹命名）或“天河镇底神珍”。是东海龙宫的镇海之物，由太上老君所炼制（同时也是“如意金箍棒”一词的取名者），曾被大禹治水借去，最终成为孙悟空毕生的战斗装备。
+> from [如意金箍棒](https://baike.baidu.com/item/如意金箍棒/2086885)
+
+> 金箍棒，又称如意金箍棒，是中国古代小说《西游记》中的神器之一，也是孙悟空的武器。金箍棒由东海龙宫的龙王送给孙悟空，它可以变大变小、轻重自如，威力无穷。孙悟空可以随心所欲地控制金箍棒，使它变长变短、变轻变重，以及变成各种形状，可以用来攻击敌人或保护自己。金箍棒的特性使得孙悟空在西天取经的过程中能够战胜各种妖魔鬼怪，保护唐僧取经。因此，金箍棒成为了孙悟空的标志性武器，也成为了中国文化中的经典形象之一。
+> from ChatGPT

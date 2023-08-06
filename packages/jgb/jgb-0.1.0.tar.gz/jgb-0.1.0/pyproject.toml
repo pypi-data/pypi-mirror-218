@@ -1,0 +1,9 @@
+[tool.isort]
+profile = "black"
+reverse_relative = true
+combine_as_imports = true
+
+[tool.black]
+line-length = 119
+#target-version = ['py37']
+#include = '\.pyi?$'
