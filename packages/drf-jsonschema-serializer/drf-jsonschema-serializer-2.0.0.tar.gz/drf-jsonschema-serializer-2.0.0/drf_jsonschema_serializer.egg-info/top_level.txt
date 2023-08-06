@@ -1,0 +1,1 @@
+drf_jsonschema_serializer
