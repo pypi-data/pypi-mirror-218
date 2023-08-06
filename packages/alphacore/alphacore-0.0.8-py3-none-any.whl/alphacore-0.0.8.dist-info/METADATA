@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: alphacore
+Version: 0.0.8
+Summary: Core statistical functions for alpha
+Home-page: https://pypi.org/project/alphacore/
+Author: Matthew Reid
+Author-email: alpha.reliability@gmail.com
+License: LGPLv3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: scipy (>=1.10.1)
+Requires-Dist: numpy (>=1.24.2)
+Requires-Dist: autograd (>=1.5)
+Requires-Dist: autograd-gamma (>=0.5.0)
+
+Core statistical functions for alpha

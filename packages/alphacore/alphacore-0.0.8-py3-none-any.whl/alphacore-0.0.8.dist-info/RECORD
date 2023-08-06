@@ -1,0 +1,10 @@
+alphacore/__init__.py,sha256=uVYOFOm-tFisOzfyLOUAdQ7ICAIIwMiwkR--r3ApA58,515
+alphacore/distributions.py,sha256=NRLFbS0PqpsmpA4yBDcmitS7JrjHoJmftclXFVjLC_I,43421
+alphacore/fit_distribution.py,sha256=jGr8MBQlXjK37veY8jKLw3Acu_oIF9kHkzaq-qj3Avo,25627
+alphacore/fit_linear.py,sha256=PPZGutc-9u_QqLJdK4HSy_Dwajfcgna9aDg68Lo-I74,3308
+alphacore/utils.py,sha256=P7-vPUtiyZ1XRsFbnLyOs6LIg5Qu8ifTnkxLUwgJRFc,193108
+alphacore-0.0.8.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+alphacore-0.0.8.dist-info/METADATA,sha256=ov9bM4VcmJF_qjDJYGNd0ExtBRJpvqc-UlpdmzcOE7A,778
+alphacore-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+alphacore-0.0.8.dist-info/top_level.txt,sha256=vG7I4yTZtwFwNdmbVXX8ijPwQ0j5A1kKBdEhrocDydE,10
+alphacore-0.0.8.dist-info/RECORD,,
