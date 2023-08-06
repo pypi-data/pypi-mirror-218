@@ -1,0 +1,15 @@
+volumizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+volumizer/align.py,sha256=pIRGrYfxZQaifpWQO798mVJK3mzEsvd1YFQc9a4FVbs,658
+volumizer/constants.py,sha256=l-81UL2Q1BwE6yA-_mWE_rDvxpupQdgdiRsBXrpY4Co,728
+volumizer/fib_sphere.py,sha256=r_EJ83Dl2DbY9pMuHaS49vw4Jhbz6vx9FAARq-ApG2Q,6239
+volumizer/paths.py,sha256=y-cWvA4VfOQQAEyjp-O89RqkU-_T1N3MznHCPxyLhcY,203
+volumizer/pdb.py,sha256=ZLpwTUtN8NZdn-IQpwIa-Lt4oVmo7dAycIB9KrfafY8,7568
+volumizer/protein_components.py,sha256=miSnzym3NfAO-aojEycE0F1vNa3U3wCIUoWrYASI6nk,8393
+volumizer/types.py,sha256=a55tlwemfi2kkLq-BDjzQg8lhJnSgFzYK9AJIMde0PQ,1196
+volumizer/utils.py,sha256=8GXg75X1SYJgGWqe6C7aC_YN9_UFoUhKWwVS6164dgw,5863
+volumizer/volumizer.py,sha256=Mxpa3gWEBOVjzlgn8SW6-LHx4xf4FwX7tVFagmcjhqM,4229
+volumizer/voxel.py,sha256=vJ4rSAYRFzvbKIDd3iLaGEgrGXDTXh439JtZfrOLI5U,24074
+volumizer-0.1.0.dist-info/LICENSE,sha256=Timdtw74S_MB2-oCKCllFo93DjkeO_-2NjCPOu4_6Cc,1076
+volumizer-0.1.0.dist-info/METADATA,sha256=UtpkRveBvIhs8-eHypgAAWNwLwMCa_Q9y_CdZ99kDHU,6159
+volumizer-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+volumizer-0.1.0.dist-info/RECORD,,
