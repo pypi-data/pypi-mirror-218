@@ -1,0 +1,10 @@
+deploymentId:
+vars:
+  orgId:
+  provider:
+    id:
+    applicationId:
+    applicationSecret:
+  network:
+    vNetId:
+    tenantCIDRs: []
