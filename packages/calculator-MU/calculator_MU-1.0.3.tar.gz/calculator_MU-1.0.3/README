@@ -1,0 +1,62 @@
+# Calculator App
+
+A simple calculator package for performing basic mathematical operations.
+
+## Installation
+
+You can install the calculator package using pip. Open your terminal and run the following command:
+
+pip install calculator_MU
+
+## Usage
+
+Import the Calculator class from the calculator module:
+
+```python
+from calculator import Calculator
+
+Create an instance of the Calculator class:
+calculator = Calculator()
+
+Perform addition:
+calculator.add(2)
+
+Perform subtraction:
+calculator.subtract(1)
+
+Perform multiplication:
+calculator.multiply(3)
+
+Perform division:
+calculator.divide(2)
+
+Take the square root:
+calculator.root(2)
+
+Reset the calculator's memory:
+calculator.reset()
+
+Here are a few examples of how to use the calculator:
+
+calculator = Calculator()
+calculator.add(5)
+calculator.subtract(3)
+result = calculator.memory  # 2
+
+calculator.multiply(4)
+calculator.divide(2)
+result = calculator.memory  # 4
+
+calculator.root(2)
+result = calculator.memory  # 2
+
+calculator.reset()
+result = calculator.memory  # 0
+
+
+
+
+
+
+
+
