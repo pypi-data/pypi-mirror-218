@@ -1,0 +1,15 @@
+aiosmtpd
+cryptography
+portpicker
+pytest
+
+[dev]
+flake8
+isort
+pytest-asyncio
+pytest-cov
+pytest-timeout
+tox
+
+[typing]
+mypy
