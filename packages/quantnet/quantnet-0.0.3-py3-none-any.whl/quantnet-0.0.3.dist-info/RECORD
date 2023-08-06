@@ -1,0 +1,16 @@
+quantnet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quantnet/app.py,sha256=jdOBzPZG4BdqBSfbgj0pviCxssAxCAjKE9AyE1W4dPM,8429
+quantnet/baselines.py,sha256=n7YtACumogT3iYW4s604IXItjaT_px5_XUkxvf6ujfE,7103
+quantnet/utils.py,sha256=-pzmNtQbs4vK0CwXUwq8jjCoBKRMXq5_MV4isZznhBs,2948
+quantnet/no_transfer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quantnet/no_transfer/linear.py,sha256=24fmuUyVspeGdFeV1ynNp6xOs9IEAcQV_JGfhEBy8Kk,5416
+quantnet/no_transfer/linear_linear.py,sha256=rYZn9w1TphLpYZ1CqdkysDBNHF4pv5oBuf1w0p4gFIo,7279
+quantnet/no_transfer/linear_lstm.py,sha256=aiIx7w7Zn2UvwhuLrjJ3cHzcNNRsvcOqiMGb5B5spDw,10080
+quantnet/no_transfer/lstm.py,sha256=YNfMiBXkt1Qjp7DOFhttXqrhHMtXwx9Qwb7L270S804,6844
+quantnet/no_transfer/lstm_linear.py,sha256=0kmpFyZh7pPp9anQ9r4LmY-Rl2_PhYKQkaP8eWS_AjE,8115
+quantnet/no_transfer/lstm_lstm.py,sha256=Z6la5XyqrsHBxRTmvPn8oQo1VCOhw9c2xoWOuXftMGY,10817
+quantnet-0.0.3.dist-info/LICENSE.md,sha256=nfTKP1H-inghni74lulbhp5HYsyrFIk3mZJZEy_lEr0,1037
+quantnet-0.0.3.dist-info/METADATA,sha256=PFtmtJ5n9kfp4pIHvdyAsK2-kINA6vYVfLtdLLiMEPY,922
+quantnet-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+quantnet-0.0.3.dist-info/top_level.txt,sha256=LLsfvgdlS8hHCC0Qba2sbqFB5sIDAikJtnnsSP6Q7nk,9
+quantnet-0.0.3.dist-info/RECORD,,
