@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+cansync.egg-info/PKG-INFO
+cansync.egg-info/SOURCES.txt
+cansync.egg-info/dependency_links.txt
+cansync.egg-info/entry_points.txt
+cansync.egg-info/top_level.txt
+publishcanary/__init__.py
+publishcanary/cli.py
+publishcanary/publishcanary.py

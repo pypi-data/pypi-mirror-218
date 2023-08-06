@@ -1,0 +1,1 @@
+from .publishcanary import updateCanary
