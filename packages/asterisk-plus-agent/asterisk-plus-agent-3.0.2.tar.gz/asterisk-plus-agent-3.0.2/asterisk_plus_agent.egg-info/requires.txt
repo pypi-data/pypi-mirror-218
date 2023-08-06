@@ -1,0 +1,8 @@
+click
+httpx
+panoramisk
+aiorun
+aioboto3
+aio_odoorpc
+lameenc
+pyaml
