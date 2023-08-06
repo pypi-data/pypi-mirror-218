@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+docraise/__init__.py
+docraise/__main__.py
+docraise/_version.py
+docraise/analyzer.py
+docraise/main.py
+docraise/violation.py
+docraise.egg-info/PKG-INFO
+docraise.egg-info/SOURCES.txt
+docraise.egg-info/dependency_links.txt
+docraise.egg-info/entry_points.txt
+docraise.egg-info/requires.txt
+docraise.egg-info/top_level.txt
