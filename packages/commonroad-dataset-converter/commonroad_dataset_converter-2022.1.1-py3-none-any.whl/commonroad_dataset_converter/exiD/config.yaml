@@ -1,0 +1,38 @@
+author: Bowen Zhang, Xiao Wang, Pinxue Shao
+affiliation: Technical University of Munich, Germany
+source: The Exits and Entries Drone Dataset (exiD)
+tags: [multi_lane, highway, speed_limit]
+
+locations:
+    0: 0_cologne_butzweiler
+    1: 1_cologne_fortiib
+    2: 2_aachen_brand
+    3: 3_bergheim_roemer
+    4: 4_cologne_klettenberg
+    5: 5_aachen_laurensberg
+    6: 6_merzenich_rather
+location_benchmark_id:
+    0: CologneButzweiler
+    1: CologneFortiib
+    2: AachenBrand
+    3: BergheimRoemer
+    4: CologneKlettenberg
+    5: AachenLaurensberg
+    6: MerzenichRather
+
+    
+    
+class_to_obstacleType:
+    car: car
+    truck: truck
+    van: truck
+
+offsets:
+    0: [352146.6,5651141.9]
+    1: [351816.7,5651523.4]
+    2: [298089.6,5626462.9]
+    3: [334905.3,5645453.9]
+    4: [353013.5,5640508.6]
+    5: [293790.2,5632271.9]
+    6: [325298.1,5635819.6]
+    
