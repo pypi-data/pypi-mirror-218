@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: bsimx
+Version: 0.2.1
+Summary: The agent-based modeling tool with deck.gl, networkx and osmnx.
+Author: s-uei
+Author-email: uei.shunsuke@kagawa-u.ac.jp
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: flask (>=2.2.3,<3.0.0)
+Requires-Dist: networkx (>=2.8.8,<3.0.0)
+Requires-Dist: osmnx (>=1.3.0,<2.0.0)
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Description-Content-Type: text/markdown
+
+# bsimx
+
+The agent-based modeling tool with [deck.gl](https://deck.gl/), [networkx](https://networkx.org/) and [osmnx](https://osmnx.readthedocs.io/en/stable/)..
+
+## Installation
+
+```sh
+pip install networkx osmnx bsimx
+```
+
+## Getting Started
+
+```py
+import osmnx as ox
+from bsimx import preview, Agent, simulate
+
+
+G = ox.graph_from_place("Takamatsu Hayashi", network_type="drive")
+
+
+class Escaper(Agent):
+    start: int
+
+    def on_started(self):
+        self.set_start_node(self.start)
+        self.set_goal_node(1042117440)
+        self.set_speed(1.0)
+
+
+sr = simulate([Escaper(start=1042116599), Escaper(start=4111619945)], G)
+preview(sr)
+```
+
