@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ar_shared_lib
+Version: 1.0.0
+Summary: A package that is shared across
+Home-page: 
+Author: Arthur Yatsun
+Author-email: arthur54342@gmail.com
+Requires-Python: >=3.7
+Provides-Extra: test
+License-File: LICENSE
