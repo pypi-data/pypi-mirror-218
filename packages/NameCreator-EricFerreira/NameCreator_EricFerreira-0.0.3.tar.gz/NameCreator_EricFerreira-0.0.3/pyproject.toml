@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "NameCreator_EricFerreira"
+version = "0.0.3"
+authors = [
+  { name="Eric Ferreira", email="eric_fpereira@hotmail.com" },
+]
+description = "A name creator package only for tests of Continuous Delivery"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ericfp87/teste_trabalho_devops"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
