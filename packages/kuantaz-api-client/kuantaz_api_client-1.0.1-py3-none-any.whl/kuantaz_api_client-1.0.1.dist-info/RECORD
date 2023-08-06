@@ -1,0 +1,10 @@
+kuantaz_api_client/Client.py,sha256=8Kt2uUoJGKMER0pmDxXNO44RiWhzyfH80ZloxIQzBsM,6784
+kuantaz_api_client/KuantazException.py,sha256=-gmxBBZxpA3_iHRmxHgmdm2OQ2vs0SZLB7EjfchxRsY,43
+kuantaz_api_client/RequestHelper.py,sha256=FzAh3XbVTDPeCLYkOv6zv76VtsYcSeNUzvFte4TKqfc,4078
+kuantaz_api_client/StatisticResult.py,sha256=B4tfwyTie-ZdPI7DHlUqzgY2qAHjNJyJhq9HuQKHPlQ,1651
+kuantaz_api_client/VerificationResult.py,sha256=aitTcpp4xulXRk1DgGkM9_qlo6zvICTKQtfTFvuT9Rw,2635
+kuantaz_api_client/__init__.py,sha256=RAlO39YJsOUjtj5VKElq7FEG2mEEd9q4-0CtnGkRgwM,205
+kuantaz_api_client-1.0.1.dist-info/METADATA,sha256=iSBa-GWowMTZGggJXDGQIcj-TLPc7R4t8nXjbeYwSxI,6347
+kuantaz_api_client-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kuantaz_api_client-1.0.1.dist-info/top_level.txt,sha256=0rWlq9MQpccIjxIPHsmOKdCKU7O5yIx3utd_hBingEc,19
+kuantaz_api_client-1.0.1.dist-info/RECORD,,
