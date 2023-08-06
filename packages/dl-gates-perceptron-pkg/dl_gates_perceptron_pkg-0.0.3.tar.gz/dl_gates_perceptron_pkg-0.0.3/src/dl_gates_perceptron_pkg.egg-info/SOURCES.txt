@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/Perceptron/__init__.py
+src/Perceptron/perceptron.py
+src/dl_gates_perceptron_pkg.egg-info/PKG-INFO
+src/dl_gates_perceptron_pkg.egg-info/SOURCES.txt
+src/dl_gates_perceptron_pkg.egg-info/dependency_links.txt
+src/dl_gates_perceptron_pkg.egg-info/top_level.txt
