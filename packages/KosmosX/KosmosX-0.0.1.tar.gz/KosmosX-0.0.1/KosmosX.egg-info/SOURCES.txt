@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+Kosmos/__init__.py
+Kosmos/inference.py
+Kosmos/model.py
+Kosmos/model_test.py
+Kosmos/tokenize_hf.py
+Kosmos/train_distributed.py
+Kosmos/train_kosmos_stable_2.py
+Kosmos/training.py
+Kosmos/training_distributed_accelerate.py
+KosmosX.egg-info/PKG-INFO
+KosmosX.egg-info/SOURCES.txt
+KosmosX.egg-info/dependency_links.txt
+KosmosX.egg-info/requires.txt
+KosmosX.egg-info/top_level.txt
