@@ -1,0 +1,113 @@
+# Project specific generated files
+cextern/Makefile
+cextern/Makefile.in
+cextern/aclocal.m4
+cextern/autom4te.cache/
+cextern/config.h
+cextern/config.h.in
+cextern/config.log
+cextern/config.status
+cextern/config/
+cextern/configure
+cextern/libtool
+cextern/m4/
+cextern/src/.deps/
+cextern/src/Makefile
+cextern/src/Makefile.in
+cextern/src/aXe_AF2PET
+cextern/src/aXe_BE
+cextern/src/aXe_DIRIMAGE
+cextern/src/aXe_DRZ2PET
+cextern/src/aXe_DRZPREP
+cextern/src/aXe_FILET
+cextern/src/aXe_FRIGEN
+cextern/src/aXe_FRINGECORR
+cextern/src/aXe_GOL2AF
+cextern/src/aXe_GPS
+cextern/src/aXe_INTPIXCORR
+cextern/src/aXe_NICBACK
+cextern/src/aXe_PET2SPC
+cextern/src/aXe_PETCONT
+cextern/src/aXe_PETFF
+cextern/src/aXe_PETIPC
+cextern/src/aXe_SCALEBCK
+cextern/src/aXe_SEX2GOL
+cextern/src/aXe_STAMPS
+cextern/src/aXe_TEST
+cextern/src/aXe_TFIT
+cextern/stamp-h1
+
+
+# Compiled files
+*.py[cod]
+*.a
+*.o
+*.so
+__pycache__
+
+# Ignore .c files by default to avoid including generated code. If you want to
+# add a non-generated .c extension, use `git add -f filename.c`.
+*.c
+
+# Other generated files
+*/_version.py
+*/version.py
+*/cython_version.py
+htmlcov
+.coverage
+MANIFEST
+.ipynb_checkpoints
+notebooks/*.fits
+
+# Sphinx
+docs/api
+docs/_build
+
+# Eclipse editor project files
+.project
+.pydevproject
+.settings
+
+# Pycharm editor project files
+.idea
+
+# Floobits project files
+.floo
+.flooignore
+
+# Packages/installer info
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+distribute-*.tar.gz
+
+# Other
+.cache
+.tox
+.*.sw[op]
+*~
+._*
+.project
+.pydevproject
+.settings
+pip-wheel-metadata
+.vscode
+.pytest_cache
+.tmp
+.eggs
+.python-version
+
+# Mac OSX
+.DS_Store
+
+# Environments
+/env*
+/*venv
