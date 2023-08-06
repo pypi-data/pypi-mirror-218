@@ -1,0 +1,3 @@
+icontract
+packaging
+sh<3,>=2

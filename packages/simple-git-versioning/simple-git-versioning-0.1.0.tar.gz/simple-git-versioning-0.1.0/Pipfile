@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+packaging = "*"
+sh = ">=2,<3"
+icontract = "*"
+
+[dev-packages]
+black = "*"
+build = "*"
+isort = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+ruff = "*"
+twine = "*"
+hypothesis = "*"
+
+[scripts]
+build = "python -m build"
+publish = "twine upload dist/*"
