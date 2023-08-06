@@ -1,0 +1,4 @@
+[console_scripts]
+switcheroo_publish=switcheroo.publisher.__main__:main
+switcheroo_retrieve=switcheroo.server.__main__:main
+
