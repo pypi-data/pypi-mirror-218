@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: rx-algorithm
+Version: 1.0.0
+Summary: RX algorithm implementation in NumPy
+License: GPLv3
+Keywords: rx,algorithm,mahalanobis,image
+Author: Emma Doyle
+Author-email: emma@premiscale.com
+Maintainer: Emma Doyle
+Maintainer-email: emma@premiscale.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.2,<4.0.0)
+Requires-Dist: numpy (>=1.25.1,<2.0.0)
+Requires-Dist: pillow (>=10.0.0,<11.0.0)
+Description-Content-Type: text/markdown
+
+# rx_algorithm
+
+A fast (experimental) RX algorithm implementation in Python 3.9+ with overhead reduction based on entropy estimation via compression.
+
+## Example usage
+
+```python
+from rx_algorithm import rx
+from rx.utils import plot
+
+X = rx(array)
+plot(X, 'out.png')
+```
