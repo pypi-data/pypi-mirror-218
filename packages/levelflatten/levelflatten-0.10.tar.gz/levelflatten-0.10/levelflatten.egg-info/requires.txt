@@ -1,0 +1,2 @@
+isiter
+tolerant_isinstance

@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+levelflatten/README.MD
+levelflatten/__init__.py
+levelflatten/requirements.txt
+levelflatten/thirdparty.json
+levelflatten.egg-info/PKG-INFO
+levelflatten.egg-info/SOURCES.txt
+levelflatten.egg-info/dependency_links.txt
+levelflatten.egg-info/requires.txt
+levelflatten.egg-info/top_level.txt

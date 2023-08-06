@@ -1,0 +1,3 @@
+include levelflatten/requirements.txt
+include levelflatten/thirdparty.json
+include levelflatten/README.MD
