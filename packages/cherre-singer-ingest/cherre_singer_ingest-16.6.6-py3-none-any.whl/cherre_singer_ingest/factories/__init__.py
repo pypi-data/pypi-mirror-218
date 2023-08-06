@@ -1,0 +1,3 @@
+# flake8: noqa
+from cherre_singer_ingest.factories.remote_file_uri_factory import RemoteFileURIFactory
+from cherre_singer_ingest.factories.bookmark_factory import BookmarkFactory
