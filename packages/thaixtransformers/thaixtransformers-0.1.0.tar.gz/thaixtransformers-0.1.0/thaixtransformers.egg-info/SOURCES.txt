@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+thaixtransformers/__init__.py
+thaixtransformers/core.py
+thaixtransformers/preprocess.py
+thaixtransformers/roberta.py
+thaixtransformers.egg-info/PKG-INFO
+thaixtransformers.egg-info/SOURCES.txt
+thaixtransformers.egg-info/dependency_links.txt
+thaixtransformers.egg-info/not-zip-safe
+thaixtransformers.egg-info/requires.txt
+thaixtransformers.egg-info/top_level.txt
