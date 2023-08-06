@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+hyperdb/__init__.py
+hyperdb/galaxy_brain_math_shit.py
+hyperdb/hyperdb.py
+hyperdb_python.egg-info/PKG-INFO
+hyperdb_python.egg-info/SOURCES.txt
+hyperdb_python.egg-info/dependency_links.txt
+hyperdb_python.egg-info/requires.txt
+hyperdb_python.egg-info/top_level.txt
+tests/__init__.py
+tests/test_galaxy_brain_math_shit.py
