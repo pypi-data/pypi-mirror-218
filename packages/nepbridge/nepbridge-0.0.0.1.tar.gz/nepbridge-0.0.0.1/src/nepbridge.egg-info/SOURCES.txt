@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/nepbridge/JSON2ROS.py
+src/nepbridge/ROS2JSON.py
+src/nepbridge/__init__.py
+src/nepbridge.egg-info/PKG-INFO
+src/nepbridge.egg-info/SOURCES.txt
+src/nepbridge.egg-info/dependency_links.txt
+src/nepbridge.egg-info/requires.txt
+src/nepbridge.egg-info/top_level.txt
