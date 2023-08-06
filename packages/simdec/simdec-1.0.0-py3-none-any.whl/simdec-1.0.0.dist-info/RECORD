@@ -1,0 +1,10 @@
+simdec/__init__.py,sha256=m7gXiu21aX6sy4Nztm_vwSbb3QQv-jCTEObbgyHrdnQ,217
+simdec/decomposition.py,sha256=pUHf6sDCec3geR7R_RUN34vRQtrGNRhec8lpdYKZrMs,3212
+simdec/significance.py,sha256=EqS6QYFF902522hu0bizISpC1VZOa5OPh9KhjiQ6Reo,5534
+simdec/visualization.py,sha256=DQ1UwcTe0Gz2jhqN8N1w99YYWXjgKgtH40U41zyq5lU,4285
+simdec/workflow.py,sha256=wlqiJZIRtJA_Hjsb5tvByEHuf01WuhKQf8e55bxHcoY,1353
+simdec-1.0.0.dist-info/METADATA,sha256=8_PkwqSBZlAv_KdZoo5VILvXM9rU1fi7Q4662l-l-PA,3613
+simdec-1.0.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+simdec-1.0.0.dist-info/entry_points.txt,sha256=hn4XY89s0qyG3jJFhZBKSqX7y__-Z-7F5uLkcJ0Iwq0,47
+simdec-1.0.0.dist-info/licenses/LICENSE.txt,sha256=5VdrrTN5_CxXRZ9gPAI9CQuB8zbo4TxujHmkvzqgin4,1489
+simdec-1.0.0.dist-info/RECORD,,
