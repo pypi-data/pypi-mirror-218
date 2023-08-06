@@ -1,0 +1,11 @@
+setup.py
+elsasa/Binomialdistribution.py
+elsasa/Gaussiandistribution.py
+elsasa/Generaldistribution.py
+elsasa/__init__.py
+elsasa/setup.py
+elsasa.egg-info/PKG-INFO
+elsasa.egg-info/SOURCES.txt
+elsasa.egg-info/dependency_links.txt
+elsasa.egg-info/not-zip-safe
+elsasa.egg-info/top_level.txt
