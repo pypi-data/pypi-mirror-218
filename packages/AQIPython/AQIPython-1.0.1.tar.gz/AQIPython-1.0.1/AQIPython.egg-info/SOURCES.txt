@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+AQIPython/__init__.py
+AQIPython/aqi_Calc.py
+AQIPython/breakPoints.py
+AQIPython/errorCustom.py
+AQIPython/unitOperations.py
+AQIPython.egg-info/PKG-INFO
+AQIPython.egg-info/SOURCES.txt
+AQIPython.egg-info/dependency_links.txt
+AQIPython.egg-info/requires.txt
+AQIPython.egg-info/top_level.txt
