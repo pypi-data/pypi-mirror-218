@@ -1,0 +1,15 @@
+    ____       __                       __    ________  ______
+   / __ \___  / /_____ _____  ___  ____/ /   /_  __/ / / /  _/
+  / /_/ / _ \/ __/ __ `/ __ \/ _ \/ __  /_____/ / / / / // /
+ / _, _/  __/ /_/ /_/ / /_/ /  __/ /_/ /_____/ / / /_/ // /
+/_/ |_|\___/\__/\__,_/ .___/\___/\__,_/     /_/  \____/___/
+                    /_/
+
+Terminal-based Revolt client.
+Text input commands:
+    Alt+s - send message
+Messagebox commands:
+    r - Add message to reply to the highlighted message
+    e - Edit the highlighted message if it was sent by you
+    d - Delete message if you have adequate permissions
+See https://github.com/error-404-null-not-found/Retaped-TUI for more details.
