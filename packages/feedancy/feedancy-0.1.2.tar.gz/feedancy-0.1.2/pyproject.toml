@@ -1,0 +1,43 @@
+[tool.black]
+line-length = 79
+target-version = ['py38', 'py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs    # exclude a few common directories in the
+  | \.git     # root of Black repositories
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.poetry]
+name = "feedancy"
+version = "0.1.2"
+description = "сервис по сбору вакансий"
+authors = [
+    "Alexey Ostanin <aostaninn@gmal.com>",
+    "Stanislav Losev <stanislav_losev@protonmail.com>",
+    "Tatiana Zimina <tratatatanya@gmail.com>"
+]
+license = "MIT"
+readme = "./feedancy/README.md"
+packages = [
+    { include = './feedancy/feedancy' }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+requests = ">=2.31"
+bs4 = ">=0.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
