@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: yet_another_wizz
+Version: 2.4
+Summary: Implementation of the Schmidt et al. (2013) clustering redshift method and wrapper scripts to produce cross-correlation (CC) redshifts.
+Author: Jan Luca van den Busch
+License: Apache-2.0
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: dev
+License-File: LICENSE
