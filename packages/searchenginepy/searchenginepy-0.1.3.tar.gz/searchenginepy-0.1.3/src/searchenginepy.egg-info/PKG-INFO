@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: searchenginepy
+Version: 0.1.3
+Summary: Query popular search engines and get results easily
+Home-page: https://github.com/codewithnick/searchengine
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: codewithnick
+Author-email: nikhilsingh52645@gmail.com
+License: MIT
+Keywords: google,search engine,crawler
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# searchenginepy
+search engine for python (Query and scrape search engines)
+
+# How to use?
+
+##### Installation
+`pip install searchenginepy`
+##### Importing
+``` 
+import searchenginepy 
+``` 
+
+##### Usage
+``` 
+list=searchenginepy.search("search query")
+``` 
+
+##### Example
+``` 
+list=searchenginepy.google("search query")
+``` 
+
+using google to search a query
+## Using a specific search engine
+```
+from searchenginepy import Google
+list=Google().search("search query")
+```
+
+##### Supported search engines
+- Google
+- Bing
+- DuckDuckGo
