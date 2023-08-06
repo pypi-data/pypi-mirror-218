@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flwr-custom
+Version: 0.1.2
+Summary: custom flwr 1.4.0 for fl viewer
+Home-page: https://github.com/musicboy9/flwr_custom
+Author: ymkoh
+Author-email: musicboy9@snu.ac.kr
+License: UNKNOWN
+Download-URL: https://github.com/musicboy9/flwr_custom/archive/refs/heads/feature/1-AddLibrary.zip
+Keywords: flwr_custom
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+
+UNKNOWN
+
