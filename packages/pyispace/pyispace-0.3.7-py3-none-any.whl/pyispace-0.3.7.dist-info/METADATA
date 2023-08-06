@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: pyispace
+Version: 0.3.7
+Summary: Instance Space Analysis Python package
+Author-email: Pedro Paiva <paiva@ita.br>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Science/Research
+Requires-Dist: numpy>=1.18.5
+Requires-Dist: scipy>=1.9.0
+Requires-Dist: scikit-learn>=0.23.1
+Requires-Dist: shapely~=1.8.0
+Requires-Dist: pandas>=1.1
+Requires-Dist: alphashape>=1.3.1
+Requires-Dist: joblib>=1.3.0
+Project-URL: repository, https://gitlab.com/ita-ml/pyispace
+
+# PyISpace
+
+_Python Instance Space Analysis Toolkit_
+
+<!--![picture](docs/img/circle-fs.png)-->
+
+## Getting Started
+
+This is the Python version of the [Instance Space Analysis](https://github.com/andremun/InstanceSpace) (ISA) toolkit, originally written in Matlab code. The original ISA toolkit was developed as part of the project [MATILDA](https://matilda.unimelb.edu.au/matilda/about-matilda), at the University of Melbourne, Australia.
+
+PyISpace is a Python package that contains a subset of the tools present in the original Matlab code repository. It is not our intention to add new features to the toolkit. For a complete experience of all tools, we recommend the original code, or the [web version](https://matilda.unimelb.edu.au/matilda/).
+
+### Requirements
+Python 3.7 or newer.
+
+### Installation
+
+Via PyPi:
+
+```
+pip install pyispace
+```
+
+Or directly from the repository code:
+```
+git clone https://gitlab.com/ita-ml/pyispace.git
+cd pyispace/
+pip install -e .
+```
+
+
+### Usage
+
+1. Command Line Interface
+
+Inside the folder (`rootdir`) containing the required files [options.json](./options.json) and ``metadata.csv``, run  
+```
+isa
+```
+
+Optionally, the `rootdir` path may be passed with `-r` or `--rootdir`:
+```
+isa -r /Users/user/workspace/
+```
+
+For more information about these files, please refer to the original repository instructions.
+
+2. Python package
+
+```
+from pyispace import train_is
+model = train_is(metadata, opts)
+```
+
+#### Disabling messages
+PyISpace uses [logging](https://docs.python.org/3/library/logging.html) to display messages. You can disable the messages, for example, changing the level associated to the package: 
+
+```
+logging.getLogger("pyispace").setLevel(logging.ERROR)
+```
