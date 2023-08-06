@@ -1,0 +1,127 @@
+modbus:
+  host: 10.8.38.51
+  port: 502
+  registers:
+    door_locked:
+      address: 0
+      group: safety
+    door_closed:
+      address: 1
+      group: safety
+    local:
+      address: 2
+      group: safety
+    e_status:
+      address: 200
+      group: safety
+    e_stop:
+      address: 199
+      group: safety
+    e_relay_reset:
+      address: 201
+      group: safety
+    cr_new:
+      address: 234
+      group: lights
+    cr_status:
+      address: 334
+      group: lights
+    ur_new:
+      address: 235
+      group: lights
+    ur_status:
+      address: 335
+      group: lights
+    sr_new:
+      address: 236
+      group: lights
+    sr_status:
+      address: 336
+      group: lights
+    uma_new:
+      address: 237
+      group: lights
+    uma_status:
+      address: 337
+      group: lights
+    tb_new:
+      address: 238
+      group: lights
+    tb_status:
+      address: 338
+      group: lights
+    tr_new:
+      address: 239
+      group: lights
+    tr_status:
+      address: 339
+      group: lights
+    drive_enabled:
+      address: 99
+      group: dome
+    drive_state:
+      address: 100
+      group: dome
+    motor_direction:
+      address: 101
+      group: dome
+    drive_brake:
+      address: 102
+      group: dome
+    ne_limit:
+      address: 104
+      group: dome
+    nw_limit:
+      address: 105
+      group: dome
+    se_limit:
+      address: 106
+      group: dome
+    sw_limit:
+      address: 107
+      group: dome
+    overcurrent:
+      address: 109
+      group: dome
+    drive_velocity1:
+      address: 103
+      mode: holding_register
+      group: dome
+    drive_velocity2:
+      address: 104
+      mode: holding_register
+      group: dome
+    open_timeout:
+      address: 119
+      mode: holding_register
+      group: dome
+    close_timeout:
+      address: 120
+      mode: holding_register
+      group: dome
+    drive_current:
+      address: 129
+      mode: holding_register
+      group: dome
+    dome_counter:
+      address: 149
+      mode: holding_register
+      group: dome
+    dome_status1:
+      address: 410
+      mode: holding_register
+      group: dome
+    dome_status2:
+      address: 411
+      mode: holding_register
+      group: dome
+
+safety:
+  override_local_mode: False
+
+actor:
+  name: lvmecp
+  host: localhost
+  port: 5672
+  log_dir: /data/logs/lvmecp
+  schema: etc/schema.json
