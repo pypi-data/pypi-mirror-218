@@ -1,0 +1,13 @@
+AIMM_simulator/AIMM_simulator.py,sha256=jCO0PJFD5mg_d0wp5T4IUa3btmHI4arv2VFV4Hrrug0,34514
+AIMM_simulator/InH_pathloss_model.py,sha256=GHhumrAB22DazlFZJHJBa5dHdjYCM3SwCdiPIerjE9g,2940
+AIMM_simulator/NR_5G_standard_functions.py,sha256=vDxA8bRDPM7klR9BljdPRGkmLNoNMbE6FoWh_cStjuw,8353
+AIMM_simulator/UMa_pathloss_model.py,sha256=xMn6EQYwYMnukjvEspq_FPyt5ukbcxwTBB8ZMF7_zr8,4471
+AIMM_simulator/UMi_pathloss_model.py,sha256=KVi0QhloOSkQBzvQA1QzxtedNFxU56XmwhWPn6MZAkI,3710
+AIMM_simulator/__init__.py,sha256=xbCsuQnWx2JMV9xANbrjpLYISaJ1xW0m1zOCz7pvIZw,244
+AIMM_simulator/fig_timestamp.py,sha256=qwpIJlMP2ZK9fdmmt-HQ-PvkLBFiwPtqv3B4fxHh-Zs,553
+AIMM_simulator/geometry_3d.py,sha256=ctBJIIJxbp41DXy_S2-IwBTkH6__kGJrshVauaaTR1M,12417
+AIMM_simulator/img/UMa_pathloss_model_01.pdf,sha256=KqWbt3A8zNeG_5TFLKDk21vTlC77o_JpvQqk07w5H-4,23648
+aimm_simulator-2.0.3.dist-info/METADATA,sha256=Eyp0frtrOzcVnG4tAegD1YtTRNeppFwMSGJeJHAHIbA,2530
+aimm_simulator-2.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+aimm_simulator-2.0.3.dist-info/licenses/LICENSE,sha256=y22x25o4JIS97WuNA3d8PWQanjZotEnusGt_KEhadgE,1056
+aimm_simulator-2.0.3.dist-info/RECORD,,
