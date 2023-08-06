@@ -1,0 +1,2 @@
+[flake8.extension]
+MDL = flake8_module_docstring_import:Plugin

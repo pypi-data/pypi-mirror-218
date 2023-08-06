@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: flake8-module-docstring-import
+Version: 0.0.1
+Summary: Very simple flake8 plugin checking if there is exactly one new line between module docstring and imports
+Author: djvdq
+Maintainer: djvdq
+Project-URL: repository, https://codeberg.org/djvdq/flake8_module_docstring_import
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: flake8
+
+Very simple flake8 plugin to check if there is one new line between module docstring and imports at the top of the file.
+
+## Installation:
+```python
+pip install flake8-module-docstring-import
+```
+
+## List of warnings
+**MDL001**: There is no one new line between module docstring and imports at the top of the file.
+
+## Examples
+These examples will trigger problem:
+```python
+"Very important docstring"
+import sys
+```
+```python
+"Very important docstring"
+
+
+import sys
+```
+This is correct:
+```python
+"Very important docstring"
+
+import sys
+```
+
