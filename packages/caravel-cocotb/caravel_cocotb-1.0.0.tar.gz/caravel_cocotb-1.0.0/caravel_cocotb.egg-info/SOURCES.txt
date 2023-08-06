@@ -1,0 +1,11 @@
+README.md
+setup.py
+caravel_cocotb/__init__.py
+caravel_cocotb/__main__.py
+caravel_cocotb/caravel_interfaces.py
+caravel_cocotb.egg-info/PKG-INFO
+caravel_cocotb.egg-info/SOURCES.txt
+caravel_cocotb.egg-info/dependency_links.txt
+caravel_cocotb.egg-info/entry_points.txt
+caravel_cocotb.egg-info/requires.txt
+caravel_cocotb.egg-info/top_level.txt
