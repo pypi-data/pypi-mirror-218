@@ -1,0 +1,10 @@
+numpy
+biopython
+bioutils
+configargparse
+deprecation
+HTSeq
+lazy
+pysam
+pandas
+seaborn
