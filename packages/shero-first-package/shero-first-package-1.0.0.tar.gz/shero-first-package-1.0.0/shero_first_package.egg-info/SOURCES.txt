@@ -1,0 +1,7 @@
+setup.py
+shero_first_package.egg-info/PKG-INFO
+shero_first_package.egg-info/SOURCES.txt
+shero_first_package.egg-info/dependency_links.txt
+shero_first_package.egg-info/top_level.txt
+subpackage/__init__.py
+subpackage/module3.py
