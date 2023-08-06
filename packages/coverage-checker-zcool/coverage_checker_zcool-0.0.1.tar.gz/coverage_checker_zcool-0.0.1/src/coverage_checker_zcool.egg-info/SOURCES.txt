@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/coverage_checker_zcool/__init__.py
+src/coverage_checker_zcool/classes.py
+src/coverage_checker_zcool.egg-info/PKG-INFO
+src/coverage_checker_zcool.egg-info/SOURCES.txt
+src/coverage_checker_zcool.egg-info/dependency_links.txt
+src/coverage_checker_zcool.egg-info/top_level.txt
+tests/test_check_coverage.py
+tests/test_json_coverage_service.py
