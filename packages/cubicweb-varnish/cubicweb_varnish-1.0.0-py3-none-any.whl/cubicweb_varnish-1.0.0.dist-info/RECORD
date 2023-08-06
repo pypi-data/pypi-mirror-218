@@ -1,0 +1,16 @@
+cubicweb_varnish/__init__.py,sha256=H8akbWAk1D7B1oIqqUvvg9c104YUr7aGrBix9kQdz3k,43
+cubicweb_varnish/__pkginfo__.py,sha256=E4BRgiSfXO4OA_urzTlVXv3_2Q7PP05SYw17VvubQA8,671
+cubicweb_varnish/entities.py,sha256=GFIDuWvS7x2zDEcqWIbCEUNB-vrUEZkhfBqlPNpOpAU,1014
+cubicweb_varnish/hooks.py,sha256=9imjjhHjXHXmyYpplSt7UF97pM53Tvzkogg3rTEN6h0,2463
+cubicweb_varnish/site_cubicweb.py,sha256=ZuRqfQ72q0niUtG8cWnHo2IU-cB3dKVAMM4kEGwjSao,1115
+cubicweb_varnish/varnishadm.py,sha256=jq9G0VK8jdbAT4G4g9Z7ZdPp05fpKxJr2spb73CKLm4,4489
+cubicweb_varnish/views.py,sha256=0V-gLyVNKYOJQCHYb-C9oplIT2qVANIOzz4NfdOimsQ,857
+cubicweb_varnish/i18n/en.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_varnish/i18n/es.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_varnish/i18n/fr.po,sha256=PczXiFFfvJJV0QriryPaFF2YjD8LhPRe3XAGcF-kLP0,203
+cubicweb_varnish/migration/postcreate.py,sha256=vCSRI8XDa6aiGwDfwA5JungkmokqvUub7AY9gJJ-vnU,1067
+cubicweb_varnish-1.0.0.dist-info/METADATA,sha256=K54E8nE-YSCAJYxou2bUsFwM_1L7_9T2_en7btXrDiQ,2035
+cubicweb_varnish-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cubicweb_varnish-1.0.0.dist-info/entry_points.txt,sha256=ak7G-37lVZX1sY1jK3MRkN2etWsKxjrHuQFJ5mvdPIY,44
+cubicweb_varnish-1.0.0.dist-info/top_level.txt,sha256=CUvqs0Com5Bt0gwmwxux8qRu6WtE-tnzMp1pwoEMlmk,17
+cubicweb_varnish-1.0.0.dist-info/RECORD,,
