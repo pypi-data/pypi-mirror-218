@@ -1,0 +1,4 @@
+[console_scripts]
+pygmailsorter = pygmailsorter.__main__:command_line_parser
+pygmailsorter-app = pygmailsorter.webapp.app:run_app
+pygmailsorter-daemon = pygmailsorter.daemon.__main__:command_line_parser
