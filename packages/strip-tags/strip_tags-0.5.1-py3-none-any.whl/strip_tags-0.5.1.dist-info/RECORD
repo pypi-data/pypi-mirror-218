@@ -1,0 +1,10 @@
+strip_tags/__init__.py,sha256=QyjpLHRDuYTIop41SyHQSZ2Uvu9rHgYaoeMKKZ-Wc80,54
+strip_tags/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+strip_tags/cli.py,sha256=1W4wjThmq7nbe1A40uCQTZNkp4DWeVm_aOKQS9dLQsY,1252
+strip_tags/lib.py,sha256=DZP8LkYB5PtrCb9XOXHmbVf4fUphgTX2unc4bIVyuoQ,5398
+strip_tags-0.5.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+strip_tags-0.5.1.dist-info/METADATA,sha256=-5IM14GALudqLsu9eNcj96VepPI8OETMMFXzvsXAmdI,6951
+strip_tags-0.5.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+strip_tags-0.5.1.dist-info/entry_points.txt,sha256=_T8dKT6vOM2anfq4DfubbPwfvbMGyHTyt3NIK7P1JKc,50
+strip_tags-0.5.1.dist-info/top_level.txt,sha256=KEwnsjbG-MGoM8w5BhF-OwGhPm7KvhDaqVZGMvysGqM,11
+strip_tags-0.5.1.dist-info/RECORD,,
