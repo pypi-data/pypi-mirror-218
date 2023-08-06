@@ -1,0 +1,6 @@
+setup.py
+extLog/__init__.py
+extLog.egg-info/PKG-INFO
+extLog.egg-info/SOURCES.txt
+extLog.egg-info/dependency_links.txt
+extLog.egg-info/top_level.txt
