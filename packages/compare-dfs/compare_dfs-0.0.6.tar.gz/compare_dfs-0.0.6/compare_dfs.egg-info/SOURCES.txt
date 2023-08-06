@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+compare_dfs/__init__.py
+compare_dfs.egg-info/PKG-INFO
+compare_dfs.egg-info/SOURCES.txt
+compare_dfs.egg-info/dependency_links.txt
+compare_dfs.egg-info/top_level.txt
