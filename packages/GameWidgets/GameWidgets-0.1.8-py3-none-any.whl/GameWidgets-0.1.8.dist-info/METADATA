@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: GameWidgets
+Version: 0.1.8
+Summary: Make Game Easier with pygame and GameWidgets
+Home-page: https://github.com/SuperGuy123456/GameWidgets
+Author: Manomay tyagi
+Author-email: tyagimanomay57@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+
+GameWidgets
+Check PyPi for download
+
+Install
+
+Mac
+
+* pip3 install GameWidgets
+
+Windows
+
+* pip install GameWidgets
+
+Since Last update, GameWidget's Colors.py has been turned into **Constants** and is now in the main directory
+to install write ```from GameWidgets.Constants import *```
+
+Also, the colors inside the Colors.py have been made part of a dictionary.
+
+**Test in progress**
+
+To use alignments, a test feature, there is a function in the Constants.py. Inside enter the screensize and the type of 
+alignment. The alignments must be in order of y pos and x pos.
+
+Example: 
+```
+# This code returns The center of the screen
+# The first tuple tells the screen size
+# The second tuple shows where in Y and then X
+pos = Alignment((500,500),("Center","Center"))
+#Returns Tuple in x,y format
+```
+**Warning**:
+
+The returned value is the exact, GameWidget's items are meant to be placed at topleft.
+When using, please change the position of the rect manually.
+
+More info:
+
+https://GameWidgets-Website.superguy123456.repl.co 
