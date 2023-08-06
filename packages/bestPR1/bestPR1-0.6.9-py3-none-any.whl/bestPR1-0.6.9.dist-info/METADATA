@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bestPR1
+Version: 0.6.9
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ujjawal
+Author-email: ujjawald21@iitk.ac.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+
+UNKNOWN
+
+
