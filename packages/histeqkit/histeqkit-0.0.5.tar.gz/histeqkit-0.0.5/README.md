@@ -1,0 +1,51 @@
+# HistEQKit
+
+HistEQKit is a Python package that provides a collection of histogram equalization algorithms and image accuracy measures for image enhancement and analysis tasks.
+
+## Installation
+
+You can install HistEQKit using pip:
+
+```shell
+pip install -i https://test.pypi.org/simple/ histeqkit
+```
+
+HistEQKit requires Python 3.6 or higher.
+
+Usage
+
+To use HistEQKit, import the desired histogram equalization algorithms from the package,
+ along with OpenCV for image processing. Here's an example:
+```shell
+from histeqkit import algorithms
+import cv2
+
+# Load an image
+input_image = cv2.imread("/path/to/input_image.png", cv2.IMREAD_GRAYSCALE)
+
+# Apply histogram equalization using an algorithm
+ie = algorithms.IE(input_image)
+output_image = ie.INVERT()
+
+# Save the output image
+cv2.imwrite('output.jpg', output_image)
+```
+Make sure to replace "/path/to/input_image.png" with the path to your actual input image.
+
+Algorithms
+
+HistEQKit currently provides the following histogram equalization algorithms:
+
+algorithms.IE: Inverts the intensity values of the input image.
+Note: This is just an example algorithm. HistEQKit can include other algorithms as well.
+
+Contributing
+
+Contributions to HistEQKit are welcome! If you have any bug fixes, enhancements, or new algorithms/measures to add, please open an issue or submit a pull request on GitHub.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+
+Feel free to customize the content further to provide additional details about the algorithms, accuracy measures, or any other relevant information about your package.
