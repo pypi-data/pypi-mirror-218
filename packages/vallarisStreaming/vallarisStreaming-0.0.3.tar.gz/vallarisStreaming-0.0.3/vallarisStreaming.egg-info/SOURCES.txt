@@ -1,0 +1,10 @@
+README.md
+setup.py
+vallarisStreaming/__init__.py
+vallarisStreaming/perform.py
+vallarisStreaming/utils.py
+vallarisStreaming.egg-info/PKG-INFO
+vallarisStreaming.egg-info/SOURCES.txt
+vallarisStreaming.egg-info/dependency_links.txt
+vallarisStreaming.egg-info/requires.txt
+vallarisStreaming.egg-info/top_level.txt
