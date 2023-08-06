@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: vina2vi
+Version: 0.0.8
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vina2vi
+`vina2vi` stands for _**Vi**etnamese **n**o **a**ccent **to** **Vi**etnamese_,  
+which is a Python package aiming at helping foreigners **decrypt** messages
+in Vietnamese.  
+(More precisely, foreigners who already know the basics of the language.)
+
+Among other things, this Python package aims to
+- Restore Vietnamese diacritics
+- Translate acronyms, **đổi vần**, etc.
+- Spell correction
+
+
+## Installation
+Run the following to install:
+
+```bash
+pip install vina2vi
+```
+
+Alternatively, you can also install from GitHub like this
+
+```bash
+pip install git+https://gitlab.com/phunc20/vina2vi
+```
+
+
+## Usage
+I only work on this project part-time, and work slowly. So this README
+will get changed fast and a lot. For the moment, there is not much in
+the package that is super useful. As time goes by, I will add more.
+
+There is an utility function to help tell whether a string contains
+non-Vietnamese characters, `is_foreign`. As the name suggests,
+- If the string contains characters other than the modern Vietnamese alphabets,
+  then `is_foreign` returns `True`
+- If the string consists exclusively of characters of modern Vietnamese alphabets,
+  then `is_foreign` returns `False`
+    - Languages whose alphabets are a subset of Vietnamese's are thus considered as Vietnamese
+    - Currently, we do not consider chữ Nôm as Vietnamese; maybe we will in the future
+
+```python
+In [1]: from vina2vi.util import Vietnamese
+
+In [2]: Vietnamese.is_foreign("Российская Федерация\tRossiyskaya Federatsiya")
+Out[2]: True
+
+In [3]: Vietnamese.is_foreign("\n\tRossiyskaya Federatsiya")
+Out[3]: False
+
+In [4]: Vietnamese.is_foreign("Tôi nói tiếng Việt Nam\t碎呐㗂越南")
+Out[4]: True
+
+In [5]: Vietnamese.is_foreign("Tôi nói tiếng Việt Nam\t")
+Out[5]: False
+```
+
+In the `metrics` subpackage, there is a custom Levenshtein distance as `tf.function` and
+a related similarity function to measure how close a source string is to a target string.
+Here are some examples on how to use them:
+
+```python
+import unidecode
+from vina2vi.metrics import (
+    batch_sim,
+    batch_lev,
+)
+
+truths = [
+    "Cơ sở hạ tầng điện, nước cũng như khu vực đặc biệt phát triển "
+    "khác đã tăng 4,1% của 31,7% diện tích của tổng diện tích đất có nhiều rừng.",
+
+    "Đặc trưng nổi bật nhất của loài này là vây, trong thực tế, "
+    "vây lưng thứ hai, vây đuôi và vây hậu môn hợp nhất với nhau giống như cá chình.",
+
+    "Cái đuôi dài cũng là một nét nổi bật.",
+]
+
+preds = []
+
+for sent in truths:
+    half = len(sent) // 2
+    pred = unidecode.unidecode(sent[:half]) + sent[half:]
+    preds.append(pred)
+
+print(f"{truths = }")
+print(f"{preds = }")
+print()
+
+batch_dist = batch_lev(preds, truths)
+print(f"{batch_dist = }")
+batch_similarity = batch_sim(preds, truths)
+print(f"{batch_similarity = }")
+```
+
+Running the above code prints
+```bash
+truths = ['Cơ sở hạ tầng điện, nước cũng như khu vực đặc biệt phát triển khác đã tăng 4,1% của 31,7% diện tích của tổng diện tích đất có nhiều rừng.', 'Đặc trưng nổi bật nhất của loài này là vây, trong thực tế, vây lưng thứ hai, vây đuôi và vây hậu môn hợp nhất với nhau giống như cá chình.', 'Cái đuôi dài cũng là một nét nổi bật.']
+preds = ['Co so ha tang dien, nuoc cung nhu khu vuc dac biet phat trien khac dã tăng 4,1% của 31,7% diện tích của tổng diện tích đất có nhiều rừng.', 'Dac trung noi bat nhat cua loai nay la vay, trong thuc te, vay lung thứ hai, vây đuôi v à vây hậu môn hợp nhất với nhau giống như cá chình.', 'Cai duoi dai cung là một nét nổi bật.']
+
+batch_dist = 19.0
+batch_similarity = 0.9319907236009713
+```
