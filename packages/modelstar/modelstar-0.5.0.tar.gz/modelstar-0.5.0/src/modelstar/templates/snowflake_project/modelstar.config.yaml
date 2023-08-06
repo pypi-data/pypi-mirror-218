@@ -1,0 +1,13 @@
+# MODELSTAR CONFIGURATION FILE
+---
+sessions:
+    - name: <session_config_name>
+      connector: snowflake
+      config:
+          account: <account>
+          username: <username>
+          password: <password>
+          database: <database>
+          schema: <schema>
+          stage: <stage>
+          warehouse: <warehouse>
