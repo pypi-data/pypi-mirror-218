@@ -1,0 +1,8 @@
+setup.py
+pkgfileutils.egg-info/PKG-INFO
+pkgfileutils.egg-info/SOURCES.txt
+pkgfileutils.egg-info/dependency_links.txt
+pkgfileutils.egg-info/top_level.txt
+src/__init__.py
+src/bath_operations.py
+src/operations.py
