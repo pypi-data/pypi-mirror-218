@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+TreasuryPy/__init__.py
+TreasuryPy/tp.py
+TreasuryPy.egg-info/PKG-INFO
+TreasuryPy.egg-info/SOURCES.txt
+TreasuryPy.egg-info/dependency_links.txt
+TreasuryPy.egg-info/top_level.txt
