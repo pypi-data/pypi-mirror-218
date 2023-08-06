@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Shortlib
+Version: 0.0.0
+Summary: python short cut
+Home-page: https://github.com/PR0FESS0R-99/ShortLib
+Author: Pr0fess0r-99
+License: GNU General Public License v3.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: requests (==2.28.2)
+
+### ShortLib 🐉
+Easy Python Tool
+
+### Installing
+```pip install shortlib```
