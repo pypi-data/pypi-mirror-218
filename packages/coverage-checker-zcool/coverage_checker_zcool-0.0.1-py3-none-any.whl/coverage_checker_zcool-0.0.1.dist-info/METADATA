@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: coverage-checker-zcool
+Version: 0.0.1
+Summary: Package to check the code coverage
+Author-email: Omar Diaz <zcool2005@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Coverage checker
+
