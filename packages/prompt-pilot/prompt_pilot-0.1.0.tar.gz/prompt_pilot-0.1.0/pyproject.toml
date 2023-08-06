@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "prompt-pilot"
+version = "0.1.0"
+description = "Library for prompt engineering"
+authors = ["Amar <amar439412@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prompt_pilot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+replicate = "^0.8.4"
+openai = "^0.27.8"
+python-decouple = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
