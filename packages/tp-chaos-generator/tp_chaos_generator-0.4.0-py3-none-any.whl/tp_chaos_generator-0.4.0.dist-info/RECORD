@@ -1,0 +1,12 @@
+tp_chaos_generator/__init__.py,sha256=fNXQe_4v9Bt8kCq3-abIghex6z_Y2ZJQBUm1FzCFDfs,88
+tp_chaos_generator/chaos_generator.py,sha256=i133uflvt9mwcD3u6kb4qej2FVgA74RROuW59UKb28A,5192
+tp_chaos_generator/ode_func.py,sha256=tTXoiyB-d2cRUi2JJaWe7Y82T39McJnnSJMmf1ZHFAU,16713
+tp_chaos_generator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tp_chaos_generator/triple_pendulum_ode.py,sha256=gGrhIsEC2U8ep-G7XUsQEclJXDpbUtfhQXQuC982wDU,1418
+tp_chaos_generator/utils.py,sha256=GO5U2Y3eDko7v4q9d8rbJM-BM4zILrTcLhg7JXg0lKY,4625
+tp_chaos_generator/version.py,sha256=HHy9lQsN2KpItn6WLJ4Jhjx7MLzgCSlvR1g2yuSaDXs,393
+tp_chaos_generator-0.4.0.dist-info/LICENSE,sha256=COzX8AhN9fHu9ctStvucl4fpNFN3VRuBWgweJ-p1dl4,1069
+tp_chaos_generator-0.4.0.dist-info/METADATA,sha256=gKxql7HkjBSUFxswFJQtMpx84AENCeJmpj7nmyi0uMY,2858
+tp_chaos_generator-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tp_chaos_generator-0.4.0.dist-info/top_level.txt,sha256=wT0bi8NT_AfEPCsGY4yQeOLUEKNT3lTuLdavmDWOT5w,19
+tp_chaos_generator-0.4.0.dist-info/RECORD,,
