@@ -1,0 +1,3 @@
+signe
+nicegui
+typing_extensions
