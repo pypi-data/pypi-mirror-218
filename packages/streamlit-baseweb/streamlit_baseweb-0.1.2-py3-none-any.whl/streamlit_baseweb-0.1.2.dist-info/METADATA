@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: streamlit-baseweb
+Version: 0.1.2
+Summary: A Streamlit implementation of the Base Web library.
+Home-page: https://github.com/thomasbs17/streamlit-contributions/baseweb_components
+Author: Thomas Bouamoud
+Author-email: Thomas Bouamoud <thomas.bouamoud@gmail.com>
+License: Copyright (c) 2023 Thomas Bouamoud
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/thomasbs17/streamlit-contributions/tree/master/baseweb_components
+Keywords: python,streamlit baseweb,streamlit,baseweb,base-web,base_web,front end
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit (>=0.63)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Streamlit Baseweb
+
+Streamlit Baseweb is a Python package that provides custom components from the Baseweb framework, allowing you to enhance your Streamlit applications with beautiful and interactive UI elements.
+
+## Installation
+
+You can install Streamlit Baseweb using pip:
+
+```shell
+pip install streamlit-baseweb
+```
+
+## Usage
+
+To use the Baseweb components in your Streamlit application, you need to import the necessary components from the '**streamlit_baseweb**' module and utilize them in your code. Here's an example:
+
+```python
+import streamlit as st
+from streamlit_baseweb import base_web_modal, base_web_button
+
+st.title("Testing Streamlit Baseweb")
+if base_web_button(size="large", shape="pill", kind="secondary"):
+    base_web_modal(
+        title="This is a test modal",
+        body="""
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae 
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+    """,
+        key="modal",
+    )
+if st.session_state.get("modal"):
+    st.success("Confirmation received from modal")
+
+```
+
+For more details on available components and their usage, refer to the package documentation.
+
+## Roadmap
+Elements will be integrated as per the below priority ranking:
+1. modal
+2. buttons
+3. button groups
+4. navbar
+5. tooltip
+6. alerts
+7. pop-over cards
+
+Additional elements have not yet been prioritized 
+
+## Contributing
+Contributions to Streamlit Baseweb are welcome! If you find any issues or have suggestions for improvements, please open an issue on the [GitHub repository](https://github.com/thomasbs17/streamlit-contributions/tree/master/baseweb_components). If you'd like to contribute code, you can fork the repository, make your changes, and submit a pull request.
+
+Before contributing, please review the [Contributing Guidelines](https://github.com/thomasbs17/streamlit-contributions/blob/master/baseweb_components/README.md) for more information.
+
+## License
+This package is licensed under the MIT License. See the [LICENSE file](https://github.com/thomasbs17/streamlit-contributions/blob/master/baseweb_components/LICENSE) for more information.
+
+## Credits
+Streamlit Baseweb is created and maintained by Thomas Bouamoud. 
+It utilizes the Baseweb framework by [Uber](https://baseweb.design/).
+
+## Contact
+If you have any questions or inquiries, feel free to reach out to thomas.bouamoud@gmail.com.
+
+## 👩‍💻 Happy Streamlit Baseweb coding! 👨‍💻
