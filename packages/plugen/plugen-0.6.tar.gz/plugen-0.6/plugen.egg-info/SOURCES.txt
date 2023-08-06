@@ -1,0 +1,11 @@
+README.md
+setup.py
+./lib/__init__.py
+./lib/build.py
+./lib/plugin.py
+./lib/serve.py
+./lib/utils.py
+./plugen.egg-info/PKG-INFO
+./plugen.egg-info/SOURCES.txt
+./plugen.egg-info/dependency_links.txt
+./plugen.egg-info/top_level.txt
