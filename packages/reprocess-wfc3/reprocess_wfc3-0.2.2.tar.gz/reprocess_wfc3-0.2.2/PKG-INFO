@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: reprocess_wfc3
+Version: 0.2.2
+Summary: Reprocessing scripts for WFC3/IR
+Home-page: https://github.com/gbrammer/reprocess_wfc3/
+Author: Gabriel Brammer
+Author-email: gabriel.brammer@nbi.ku.edu
+License-File: LICENSE
