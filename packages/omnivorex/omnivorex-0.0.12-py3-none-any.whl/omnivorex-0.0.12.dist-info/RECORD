@@ -1,0 +1,12 @@
+omnivorex/__init__.py,sha256=0VGfbKHh1YMV4tg9NTMq8X6Rl8U4o175G_cA8IWMpf8,25
+omnivorex/omnivorex.py,sha256=zFRIScYidziZvL1BXwbRnC3CgS72Xi4Kcnkn8flM2-Y,4545
+omnivorex/utils.py,sha256=ueF8iGffAVjGH6qMR2StC2J-dWp4EGGdP5aaoI4FAg0,1825
+omnivorex/components/__init__.py,sha256=3rDas5toK5s0EY5mYBOiKa1lCflD-KS_DQChZwxDYmE,76
+omnivorex/components/article_item.py,sha256=ClpHb9JMXlcHa8It7KpZuWknWKfIyqZxBqyi9_eluJY,1550
+omnivorex/components/login_screen.py,sha256=G2vhXqm01CYIcnfmcBdP3U3OXgsbBNfkndRG4oclUFc,1418
+omnivorex-0.0.12.dist-info/LICENSE,sha256=pPWe8Gord61PmdyBbCLoqBmbWncoKFFd_6k4qpQ4Tvw,1065
+omnivorex-0.0.12.dist-info/METADATA,sha256=CFU6jG4DyAzqbREONuj0Wy37Y0aB7sbxCimQZlqt3Kg,1735
+omnivorex-0.0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+omnivorex-0.0.12.dist-info/entry_points.txt,sha256=UgQwE1lDnmBZvkjCHYU3he-e8pKV6nG5rsL-AURLVJs,55
+omnivorex-0.0.12.dist-info/top_level.txt,sha256=mAvR4AMocJduIqplqepHNwrFS-SunYKbhYSE435TTUI,10
+omnivorex-0.0.12.dist-info/RECORD,,
