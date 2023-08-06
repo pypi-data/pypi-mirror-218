@@ -1,0 +1,15 @@
+tux/__init__.py,sha256=WN244uL0pMJIHXFH247lb5ZO-Lv8oqRC2xWioAfod4o,1446
+tux/checkpoint.py,sha256=59hoXpPc1yRY_HSLVofGdXnt2OZ6UoWQMJbbcPOyS9Q,8310
+tux/config.py,sha256=cz5ZZHYhQxX9NVfVY_8Y61BDGjmuu3NQD-2CTZPejkg,3330
+tux/distributed.py,sha256=_05BJ6TiugbfdYe3AID0YCD9Qbx_Lqd87Dngs1DGnpY,6662
+tux/jax_utils.py,sha256=JOso3i9HzjmN-bEBue0GjGhNvU-H50V0pMJW1W_In1o,4500
+tux/loss.py,sha256=oDAgCPAXpOI148MxAV31kiCyq4LFY7rLkfzP-Qr3oyA,1643
+tux/misc.py,sha256=rlZVsQ-JJExo7FwF2QBYvGvB_7eiCfKRMOWA8K_fikg,1257
+tux/optimizers.py,sha256=IX4h4cbUIT5JexlXbH-0nD6U1UeCNWUDw2Smcfh1f8E,7677
+tux/stats.py,sha256=oLslt9sVuCT-LYLSEJ6Kk-iCXkb8-j3GTTje5sqLA6w,415
+tux/utils.py,sha256=zi8KqXIARljVykOgceDQIzVEspeWpxL6KsESQ_ShXf4,1262
+tux/wandb.py,sha256=TkInkti_7UhhGX1KdOaeaPpwwC04Ki5_SbZ0kjtoOys,4645
+tux-0.0.1.dist-info/METADATA,sha256=rAxR7dCZPFruWFfMP2ejmTWNSQ6i_DhQtaCZuy3lTO4,717
+tux-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tux-0.0.1.dist-info/top_level.txt,sha256=qktYZlMCk6AZ0ZkqnQi5ycEo83MlAEuOy6QCdP7PHH0,4
+tux-0.0.1.dist-info/RECORD,,
