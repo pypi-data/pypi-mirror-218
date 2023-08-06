@@ -1,0 +1,12 @@
+perte/__init__.py,sha256=feOdQesMNPgVvEABl_9D16GIZRvaCYUdwNIKV9Fqjrg,171
+perte/angular_losses.py,sha256=zU33VtA0jeSRo3qNLAvXik1F39t0dtTa2eC7S3f7oQo,4442
+perte/focal_losses.py,sha256=2MOD0NaUBc78pcxIV7FzAl63miXZWeSUkFesCX6RmFk,1801
+perte/ldam_loss.py,sha256=2_Nz2NZi0Ql0cBXPl2_Qcr8u8PYu6kX0hw_euppVrDE,1139
+perte/poly_loss.py,sha256=H4907xZTWKLMIidPJLm3kdEq9OC8aVBDP-JvarULMKE,4925
+perte/recall_loss.py,sha256=480pUoh6CYtGepi2bP7ZyKbbDZvRusuyRYhzcwJ3mfU,2241
+perte/triplet_losses.py,sha256=HvddbHhwMJE_W4CTn5r7SnSsKk1GMe7jfd2el2H7CXY,9773
+perte-0.1.2.dist-info/LICENSE.txt,sha256=Vz-4utnY424pqrw5PdhOB0LjImkdcFJiEmc2da5x1fs,1079
+perte-0.1.2.dist-info/METADATA,sha256=etisemUXdUliO1heVgiMt0zAoFbJsjyAjY-C0PHI_Iw,1035
+perte-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+perte-0.1.2.dist-info/top_level.txt,sha256=TdHwjZ6Evj1XwzObr84te44pxDobj5LkIxsO_249h10,6
+perte-0.1.2.dist-info/RECORD,,
