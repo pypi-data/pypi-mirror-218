@@ -1,0 +1,345 @@
+image: gitlab.kwant-project.org:5005/kwant/kwant
+
+stages:
+  - build-env
+  - build
+  - test
+  - deploy
+  - release
+
+variables:
+  # rsync is used to send documentation to our web servers: we never send any
+  # secret information, and using 'ssh-keyscan' causes the CI server's IP to be blacklisted
+  SSH_COMMAND: "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+
+## Building Docker environments
+## Only runs when docker specifications change
+
+.build-env: &build-env
+  stage: build-env
+  when: manual
+  image:
+    name: gcr.io/kaniko-project/executor:debug-v0.16.0
+    entrypoint: [""]
+  before_script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+
+build-env:ubuntu:
+  <<: *build-env
+  script:
+    - /kaniko/executor
+      --context $CI_PROJECT_DIR/docker
+      --dockerfile $CI_PROJECT_DIR/docker/Dockerfile.ubuntu
+      --destination $CI_REGISTRY_IMAGE/ubuntu
+
+build-env:debian:
+  <<: *build-env
+  script:
+    - /kaniko/executor
+      --context $CI_PROJECT_DIR/docker
+      --dockerfile $CI_PROJECT_DIR/docker/Dockerfile.debian
+      --destination $CI_REGISTRY_IMAGE/debian
+
+build-env:conda:
+  <<: *build-env
+  script:
+    - /kaniko/executor
+      --context $CI_PROJECT_DIR/docker
+      --dockerfile $CI_PROJECT_DIR/docker/Dockerfile.conda
+      --destination $CI_REGISTRY_IMAGE/conda
+
+build-env:default:
+  <<: *build-env
+  script:
+    - /kaniko/executor
+      --context $CI_PROJECT_DIR/docker
+      --dockerfile $CI_PROJECT_DIR/docker/Dockerfile.conda
+      --destination $CI_REGISTRY_IMAGE
+
+
+## Build environment specifications
+
+.build: &build
+  stage: build
+  script:
+    - echo -e "[DEFAULT]\ndefine_macros = CYTHON_TRACE=1" >build.conf
+    - ./setup.py build
+    - ./setup.py build_ext -i
+  artifacts:
+    untracked: true
+    expire_in: 2 hour
+
+
+.stable-env: &stable_env
+  before_script:
+    - source deactivate
+    - source activate kwant-stable
+
+.no-extras-env: &no_extras_env
+  before_script:
+    - source deactivate
+    - source activate kwant-stable-no-extras
+
+# Note that this is 'latest' as of when the image was last built
+.latest-env: &latest_env
+  before_script:
+    - source deactivate
+    - source activate kwant-latest
+
+.bleeding-edge-env: &bleeding_edge_env
+  before_script:
+    - source deactivate
+    - conda env update -f /kwant-latest.yml
+    - source activate kwant-latest
+
+.ubuntu-env: &ubuntu_env
+  image: gitlab.kwant-project.org:5005/kwant/kwant/ubuntu
+
+.debian-env: &debian_env
+  image: gitlab.kwant-project.org:5005/kwant/kwant/debian
+
+## Build Jobs
+
+build:ubuntu:
+  <<: *build
+  <<: *ubuntu_env
+
+build:debian:
+  <<: *build
+  <<: *debian_env
+
+build:stable:
+  <<: *build
+  <<: *stable_env
+
+build:no-extras:
+  <<: *build
+  <<: *no_extras_env
+
+build:latest:
+  <<: *build
+  <<: *latest_env
+
+build:bleeding-edge:
+  <<: *build
+  <<: *bleeding_edge_env
+  only:
+    - schedules
+  allow_failure: true
+
+## Test Jobs
+
+check whitespace style:
+  stage: test
+  script: ./check_whitespace
+  allow_failure: true
+
+check for dependencies installed:
+  stage: test
+  script:
+    - if [ -d .eggs ]; then echo "$(ls -d .eggs/*/) downloaded by build, update build environment" >&2; fi
+  allow_failure: true
+
+
+.test: &test
+  stage: test
+  script:
+    - py.test -r w --flakes kwant --junitxml=tests.xml --durations=10
+  artifacts:
+    reports:
+      junit: tests.xml
+
+.coverage: &coverage
+  stage: test
+  script:
+    - py.test -r w --cov=kwant --cov-report term --cov-report html --flakes kwant --junitxml=tests.xml --durations=10
+  artifacts:
+    paths:
+      - htmlcov
+    reports:
+      junit: tests.xml
+
+
+test:stable:
+  <<: *test
+  <<: *stable_env
+  dependencies:
+    - build:stable
+
+test:no-extras:
+  <<: *test
+  <<: *no_extras_env
+  dependencies:
+    - build:no-extras
+
+test:ubuntu:
+  <<: *test
+  <<: *ubuntu_env
+  dependencies:
+    - build:ubuntu
+
+test:debian:
+  <<: *test
+  <<: *debian_env
+  dependencies:
+    - build:debian
+
+test:latest:
+  <<: *test
+  <<: *latest_env
+  dependencies:
+    - build:latest
+
+test:bleeding-edge:
+  <<: *test
+  <<: *bleeding_edge_env
+  dependencies:
+    - build:bleeding-edge
+  only:
+    - schedules
+  allow_failure: true
+
+coverage:latest:
+  <<: *coverage
+  <<: *latest_env
+  dependencies:
+    - build:latest
+  only:
+    - schedules
+
+## Documentation building
+
+build documentation:
+  <<: *latest_env
+  dependencies:
+    - build:latest
+  stage: test
+  script:
+    - python -c 'from matplotlib import pyplot'  # Pre-generate font cache
+    - make -C doc clean; make -C doc html SPHINXOPTS='-A website_deploy=True -n -D jupyter_execute_default_kernel=kwant-latest' SOURCE_LINK_TEMPLATE="$CI_PROJECT_URL"/blob/\$\$r/\$\$f
+  artifacts:
+    paths:
+      - doc/build/html/
+    expire_in: 1 month
+
+build PDF documentation:
+  <<: *latest_env
+  dependencies:
+    - build:latest
+  stage: test
+  script:
+    - python -c 'from matplotlib import pyplot'  # Pre-generate font cache
+    - make -C doc latex SPHINXOPTS='-n -D jupyter_execute_default_kernel=kwant-latest'
+    - cd doc/build/latex
+    - make all-pdf
+  artifacts:
+    paths:
+      - doc/build/latex/kwant.pdf
+    expire_in: 1 month
+
+check for broken links in doc:
+  <<: *latest_env
+  dependencies:
+    - build:latest
+  stage: test
+  script:
+    - make -C doc linkcheck
+  allow_failure: true
+
+
+## Upload coverage reports and dev documentation
+
+upload coverage:
+  stage: deploy
+  only:
+    - schedules
+  dependencies:
+    - coverage:latest
+  environment:
+    name: coverage/$CI_BUILD_REF_NAME
+    url: https://kwant-project.org/coverage/$CI_BUILD_REF_SLUG
+    on_stop: remove_coverage
+  script:
+    - eval $(ssh-agent -s)
+    - echo $MASTER_WEBSITE_KEY | base64 -d | ssh-add -
+    - mv htmlcov $CI_BUILD_REF_SLUG
+    - rsync -rlv -e "$SSH_COMMAND" --delete --relative $CI_BUILD_REF_SLUG kwant@kwant-project.org:coverage/
+
+
+remove_coverage:
+  stage: deploy
+  only:
+    - branches@kwant/kwant
+  when: manual
+  environment:
+    name: coverage/$CI_BUILD_REF_NAME
+    action: stop
+  script:
+    - eval $(ssh-agent -s)
+    - echo $MASTER_WEBSITE_KEY | base64 -d | ssh-add -
+    - mkdir empty/
+    - rsync -rlv -e "$SSH_COMMAND" --delete empty/ kwant@kwant-project.org:coverage/$CI_BUILD_REF_SLUG
+
+
+upload documentation to the test server:
+  stage: deploy
+  environment:
+    name: docs review/$CI_BUILD_REF_NAME
+    url: https://test.kwant-project.org/doc/$CI_BUILD_REF_SLUG
+    on_stop: remove_docs
+  only:
+    - branches@kwant/kwant
+  script:
+    - eval $(ssh-agent -s)
+    - echo $TEST_WEBSITE_KEY | base64 -d | ssh-add -
+    - rsync -rlv -e "$SSH_COMMAND" --delete doc/build/html/* kwant2@test.kwant-project.org:doc/$CI_BUILD_REF_SLUG
+
+
+remove_docs:
+  stage: deploy
+  when: manual
+  only:
+    - branches@kwant/kwant
+  environment:
+    name: docs review/$CI_BUILD_REF_NAME
+    action: stop
+  script:
+    - eval $(ssh-agent -s)
+    - echo $TEST_WEBSITE_KEY | base64 -d | ssh-add -
+    - mkdir empty
+    - rsync -arv -e "$SSH_COMMAND" --delete empty/ kwant2@test.kwant-project.org:doc/$CI_BUILD_REF_SLUG/
+
+
+upload dev version docs:
+  stage: deploy
+  environment:
+    name: production
+    url: https://kwant-project.org/doc/dev
+  only:
+    - master@kwant/kwant
+  script:
+    - eval $(ssh-agent -s)
+    - echo $MASTER_WEBSITE_KEY | base64 -d | ssh-add -
+    - rsync -rlv -e "$SSH_COMMAND" --delete doc/build/html/* kwant@kwant-project.org:doc/dev
+
+
+## Build documentation for tagged releases
+
+.tagged-version: &tagged_version
+    only:
+       - /^v[0-9]+\.[0-9]+.[0-9]+$/@kwant/kwant
+
+gather release artifacts:
+  <<: *tagged_version
+  stage: release
+  script:
+    - ./setup.py sdist
+    - mkdir docs
+    - mv doc/build/latex/kwant.pdf docs/kwant-doc-${CI_COMMIT_TAG//v}.pdf
+    - mv doc/build/html docs/html
+    - zip -r docs/kwant-doc-${CI_COMMIT_TAG//v}.zip docs/html
+  artifacts:
+    paths:
+      - docs
+      - dist
