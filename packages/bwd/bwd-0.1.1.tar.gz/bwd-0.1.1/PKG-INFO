@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bwd
+Version: 0.1.1
+Summary: A clean implementation of the Balancing Walk Design for online experimental design from Arbour, Dimmery, Mai and Rao (2022)
+License: Apache-2.0
+Author: Drew Dimmery
+Author-email: drew.dimmery@gmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy (>=1.22.3,<2.0.0)
