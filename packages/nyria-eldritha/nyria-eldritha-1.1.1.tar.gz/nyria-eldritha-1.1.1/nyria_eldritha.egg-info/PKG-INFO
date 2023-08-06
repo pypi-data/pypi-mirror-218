@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nyria-eldritha
+Version: 1.1.1
+Summary: A database handling library for python
+Home-page: https://gitlab.nyria.net/libs/eldritha
+Author: Redtronics, Seri
+License: All rights reserved.
+Keywords: python,databasemanagement,tool,eldritha,nyria
+Requires: sqlalchemy
+Requires: redis
+License-File: LICENSE
+
+A database handling library for python
