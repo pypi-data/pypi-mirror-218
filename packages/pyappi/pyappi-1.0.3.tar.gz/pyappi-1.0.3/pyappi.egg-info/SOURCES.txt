@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pyappi/__init__.py
+pyappi/api_base.py
+pyappi/client.py
+pyappi/endpoints.py
+pyappi/main.py
+pyappi.egg-info/PKG-INFO
+pyappi.egg-info/SOURCES.txt
+pyappi.egg-info/dependency_links.txt
+pyappi.egg-info/entry_points.txt
+pyappi.egg-info/requires.txt
+pyappi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
+tests/test_log.py
