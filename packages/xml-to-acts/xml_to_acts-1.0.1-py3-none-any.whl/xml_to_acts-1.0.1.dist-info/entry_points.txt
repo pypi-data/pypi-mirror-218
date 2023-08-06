@@ -1,0 +1,2 @@
+[console_scripts]
+xml-to-acts = xml_to_acts.cli:main_cli
