@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: addfunctions
+Version: 0.0.101
+Summary: Additional functions for python scripts
+Home-page: https://gitlab.fysik.su.se/lucas.borges/addfunctions
+Author: Lucas Borges
+Author-email: Lucas Borges <lucas.borges@fysik.su.se>
+License: MIT
+Project-URL: Homepage, https://gitlab.fysik.su.se/lucas.borges/addfunctions
+Keywords: qdng
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Python package with additional functions
+
+### Module:
+- `addfunctions.py` 
+python functions
+
