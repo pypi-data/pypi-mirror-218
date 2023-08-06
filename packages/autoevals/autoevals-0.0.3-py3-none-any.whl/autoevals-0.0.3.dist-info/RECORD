@@ -1,0 +1,13 @@
+autoevals/__init__.py,sha256=tqF4KSkc-Okvyzi7WIpnvOhxKjWcZevnFkYu8AZ0kKY,61
+autoevals/base.py,sha256=3I7caXg5xhm2RkiFoGIn-lAv6s8ubd1tZ1Tr3YoW1c8,1561
+autoevals/llm.py,sha256=fb3S-l76YkF-SJN6b2exBBwifOgrsuTSyiTKKUkEOSE,6102
+autoevals/string.py,sha256=zvJh5acMaVFWVdQ2EImnUOn4DO85O6GRVTjq4XTm_mQ,568
+autoevals/test_llm.py,sha256=DwsHeu6Bc-lbU_yQ3SXOocPycEPIIK5GRS-65wWT_p0,4780
+autoevals/test_string.py,sha256=DN1qjyjr5M_GGG7GYnGJBk0SqHB-Mg_qNC9ntiCpTe8,546
+autoevals/util.py,sha256=0DJfvCq2Ics6Wl8xiNV9-1zv3SlO7aS532qPYP66SJo,307
+autoevals/version.py,sha256=QqMXHVJs6Mh0abjyoct_OcIt77Rz1dSmEAy-kWDxGc8,18
+autoevals-0.0.3.dist-info/LICENSE,sha256=Y6zBoivwzUFxMa704WumP3HEOzxXiWnHJVvFRFeuhmE,1072
+autoevals-0.0.3.dist-info/METADATA,sha256=gMNi_rKo2BQR7fQ9UwS2rhiT5ohAHb3Hc6HZcT9K6u8,6607
+autoevals-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autoevals-0.0.3.dist-info/top_level.txt,sha256=MZQSi2eRJo7TGRE7szLkiED5EwWSQgL6xGguGetpzyA,10
+autoevals-0.0.3.dist-info/RECORD,,
