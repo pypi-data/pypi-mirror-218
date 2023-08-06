@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+codetell/__init__.py
+codetell.egg-info/PKG-INFO
+codetell.egg-info/SOURCES.txt
+codetell.egg-info/dependency_links.txt
+codetell.egg-info/entry_points.txt
+codetell.egg-info/requires.txt
+codetell.egg-info/top_level.txt

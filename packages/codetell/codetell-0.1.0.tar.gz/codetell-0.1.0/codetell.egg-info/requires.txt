@@ -1,0 +1,9 @@
+openai
+tenacity
+
+[dev]
+black
+mypy
+pylint
+build
+twine
