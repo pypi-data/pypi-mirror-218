@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: LolzteamApi
+Version: 1.0.11
+Summary: A library that contains all the methods of the Lolzteam API (Market/Forum)
+Home-page: https://github.com/AS7RIDENIED/Lolzteam_Python_Api
+Author: AS7RID
+Author-email: as7ridwork@gmail.com
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Lolzteam_Python_Api
+РћР±С‹С‡РЅР°СЏ Р»РёР±Р° РґР»СЏ Р·РµР»РµРЅРєРё
+Р•СЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ С‚РІРёРєРѕРІ (РєРѕСЃС‚С‹Р»Рё), РєРѕС‚РѕСЂС‹Рµ С„РёРєСЃСЏС‚ РЅРµРєРѕС‚РѕСЂС‹Рµ РЅРµРїСЂРёСЏС‚РЅС‹Рµ РјРѕРјРµРЅС‚С‹ РёР· С‚РµРјС‹ РЅРёР¶Рµ
+
+https://zelenka.guru/threads/5447086/ Р“СЂРёС€Р° РЅСѓР¶РЅРѕ С‡РёРЅРёС‚СЊ
+
+Р’ С‚РµС‡РµРЅРёРµ РїР°СЂС‹ РґРЅРµР№ РґРѕР±Р°РІР»СЋ СЃСЋРґР° РјР°СЂРєРµС‚, СЃРµР№С‡Р°СЃ РІРѕСЂРєР°РµС‚ С‚РѕР»СЊРєРѕ С„РѕСЂСѓРјРЅР°СЏ С‡Р°СЃС‚СЊ
+
+РџСЂРёРјРµСЂ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ Р»РёР±С‹ РЅР°С…РѕРґРёС‚СЃСЏ [Р·РґРµСЃСЊ](Examples/example.py)
+
+РџСЂРёРјРµСЂ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ Р»РёР±С‹ РјР°СЂРєРµС‚Р° РЅР°С…РѕРґРёС‚СЃСЏ [Р·РґРµСЃСЊ](Examples/example_market.py)
