@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: selenium-simulate-ui
+Version: 0.1.5
+Summary: The method to provide a simulated UI for taking screenshots with Selenium.
+Home-page: https://github.com/Des1r3/selenium_simulate_ui
+Author: Des1r3
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: selenium
+Requires-Dist: pathlib
+Requires-Dist: attrs
+Requires-Dist: pillow
+Requires-Dist: datetime
+
+UNKNOWN
+
