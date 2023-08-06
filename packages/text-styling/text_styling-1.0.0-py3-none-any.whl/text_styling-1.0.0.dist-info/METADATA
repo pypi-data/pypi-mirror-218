@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: text-styling
+Version: 1.0.0
+Summary: Esse pacote contém módulo com cores e estilos para texto. Ele é útil, pois se toda hora tivessemos que escrever `\033[<Código de cor>m`, nosso código ficaria muito poluído. Por isso esse pacote facilita a estilização dos textos em Python.
+Author-email: Vinicius Marcelino Silva <viniciusmarcelinosilva1983@gmail.com>
+License: MIT License
+        
+        Direitos Autorais (c) 2023 Vinicius Marcelino Silva
+        
+        A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia deste software e dos arquivos de documentação associados (o "Software"), para negociar no Software sem restrições, incluindo, sem limitação, os direitos de uso, cópia, modificação, fusão, publicação, distribuição, sublicenciamento e/ou venda de cópias do Software, e permitir que as pessoas a quem o Software é fornecido o façam, sujeitas às seguintes condições:
+        
+        O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as cópias ou partes substanciais do Software.
+        
+        O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUM CASO, OS AUTORES OU PROPRIETÁRIOS DE DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRAS RESPONSABILIDADES, QUER EM AÇÃO DE CONTRATO, DELITO OU DE OUTRA FORMA, DECORRENTES DE, OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO SOFTWARE.
+        
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Módulo "text_styling"
+Esse pacote contém módulo com cores e estilos para texto.<br>
+Ele é útil, pois se toda hora tivessemos que escrever `\033[<Código de cor>m`, nosso código ficaria muito poluído.<br>
+Por isso esse pacote facilita a estilização dos textos em Python.<br>
+
+## Índice
+- [Módulo "text\_styling"](#módulo-text_styling)
+  - [Índice](#índice)
+  - [módulo "colors"](#módulo-colors)
+    - [Variáveis disponíveis](#variáveis-disponíveis)
+    - [Exemplo](#exemplo)
+  - [módulo "background"](#módulo-background)
+- [](#)
+    - [Exemplo](#exemplo-1)
+  - [módulo "styles"](#módulo-styles)
+- [](#-1)
+    - [Exemplo](#exemplo-2)
+  - [Contate-me](#contate-me)
+
+## módulo "colors"
+Esse módulo do pacote contém variáveis para cor do texto.<br>
+
+### Variáveis disponíveis
+As variáveis disponíveis no módulo são:
+<ul>
+    <li>reset</li>
+    <li>black</li>
+    <li>red</li>
+    <li>green</li>
+    <li>yellow</li>
+    <li>blue</li>
+    <li>magenta</li>
+    <li>cyan</li>
+    <li>white</li>
+    <li>inversion</li>
+</ul>
+
+### Exemplo
+``` python
+# Forma padrão
+print("\033[31mEste texto está em vermelho\033[m")
+```
+
+``` python
+# Usando o módulo "colors"
+from text_styling.colors import red, reset
+
+print(f"{red}Este texto está em vermelho{reset}")
+```
+
+Saída:
+
+<font color="red"><pre>Este texto está em vermelho</pre></font>
+
+## módulo "background"
+Esse módulo do pacote contém variáveis para cor do fundo do texto.<br>
+
+#
+As variáveis disponíveis no módulo são:
+<ul>
+    <li>bg_reset</li>
+    <li>bg_black</li>
+    <li>bg_red</li>
+    <li>bg_green</li>
+    <li>bg_yellow</li>
+    <li>bg_blue</li>
+    <li>bg_magenta</li>
+    <li>bg_cyan</li>
+    <li>bgwhite</li>
+</ul>
+
+### Exemplo
+``` python
+# Forma padrão
+print("\033[41mEste texto está em vermelho\033[m")
+```
+
+``` python
+# Usando o módulo "background"
+from text_styling.background import bg_red, reset
+
+print(f"{bg_red}Este texto está com o fundo vermelho{reset}")
+```
+
+Saída:
+
+<pre style="background-color: red">Este é um texto com fundo vermelho</pre>
+
+## módulo "styles"
+Esse módulo do pacote contém variáveis para estilo de texto.<br>
+
+#
+<ul>
+    <li>reset</li>
+    <li>bold</li>
+    <li>small</li>
+    <li>italic</li>
+    <li>underlined</li>
+</ul>
+
+### Exemplo
+``` python
+# Forma padrão
+print("\033[3mEste texto está em itálico\033[m")
+```
+
+``` python
+# Usando o módulo "styles"
+from text_styling.styles import italic, reset
+
+print(f"{italic}Este texto está em itálico{reset}")
+```
+
+Saída:
+
+<pre style="font-style: italic">Este texto está em itálico</pre>
+
+## Contate-me
+Para relatar problemas ou me contatar, mande um e-mail para **_viniciusmarcelinosilva1983@ gmail.com_**, sempre respondo.
