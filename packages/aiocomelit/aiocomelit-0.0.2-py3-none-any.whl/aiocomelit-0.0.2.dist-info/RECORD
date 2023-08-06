@@ -1,0 +1,9 @@
+aiocomelit/__init__.py,sha256=5MY7KLxKA5rESjqqV4pv0ObgUbNOzseE2iwRRRcSvzY,420
+aiocomelit/api.py,sha256=g9_shBHf61k1UeFtKq5dCLF62A-erzbwr1c7vaFmYhQ,7833
+aiocomelit/const.py,sha256=WHN0NxCENFrdd8rIXN68DBUByaQ_k6D2Wvvp6z72ihk,319
+aiocomelit/exceptions.py,sha256=8hkq1KUr1qXQEnIFCLXFw_j-tlm5qp7UvClFGsiyypw,441
+aiocomelit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiocomelit-0.0.2.dist-info/LICENSE,sha256=WJPMDaQTNP_NqNfjdHduBPrq8aPNgavqmvZHTDl6njQ,11346
+aiocomelit-0.0.2.dist-info/METADATA,sha256=IG04WfvcfZ8kOeSb6qHLPC_Y5IC0_osXYoLRUwcmJRQ,4322
+aiocomelit-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+aiocomelit-0.0.2.dist-info/RECORD,,
