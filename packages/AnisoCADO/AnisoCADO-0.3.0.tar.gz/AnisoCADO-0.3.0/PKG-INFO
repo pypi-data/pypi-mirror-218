@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: AnisoCADO
+Version: 0.3.0
+Summary: Generate off-axis SCAO PSFs for the ELT
+Author: Eric Gendron
+Author-email: Kieran Leschinski <kieran.leschinski@unive.ac.at>
+Maintainer-email: Kieran Leschinski <kieran.leschinski@unive.ac.at>, Hugo Buddelmeijer <hugo@buddelmeijer.nl>
+License: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Project-URL: Homepage, https://anisocado.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/AstarVienna/AnisoCADO/
+Project-URL: Bug Reports, https://github.com/AstarVienna/AnisoCADO/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE
+
+# AnisoCADO
+
+[![Tests](https://github.com/AstarVienna/AnisoCADO/actions/workflows/tests.yml/badge.svg)](https://github.com/AstarVienna/AnisoCADO/actions/workflows/tests.yml)
+[![Documentation Status](https://readthedocs.org/projects/anisocado/badge/?version=latest)](https://anisocado.readthedocs.io/en/latest/?badge=latest)
+
+[![Build Status](http://github-actions.40ants.com/AstarVienna/AnisoCADO/matrix.svg)](https://github.com/AstarVienna/AnisoCADO)
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+
+A python package to generate off-axis PSFs for the SCAO mode for the ELT
+
+Please note: this package is not yet finished yet! The code is fine, but the 
+documentation is lacking.
+
+## Documentation
+
+Apropos documentation. It can be found here:
+[https://anisocado.readthedocs.io/en/latest/index.html](https://anisocado.readthedocs.io/en/latest/index.html)
