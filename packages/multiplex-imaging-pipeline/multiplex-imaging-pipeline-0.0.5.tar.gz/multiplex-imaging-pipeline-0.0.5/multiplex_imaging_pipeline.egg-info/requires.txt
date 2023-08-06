@@ -1,0 +1,17 @@
+pyyaml
+numpy
+pandas
+einops
+matplotlib
+scanpy
+seaborn
+tifffile
+ome-types
+scikit-image
+scikit-learn
+imagecodecs>=2022.7.27
+torch
+torchvision
+
+[segmentation]
+deepcell
