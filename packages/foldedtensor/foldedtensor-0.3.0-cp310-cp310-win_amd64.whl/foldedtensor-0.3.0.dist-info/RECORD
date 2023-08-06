@@ -1,0 +1,9 @@
+foldedtensor/_C.cp310-win_amd64.pyd,sha256=LHHUUImn-so-9KGnPzmpi7wiz3drHDA4hk5ZUDexWkM,126976
+foldedtensor/__init__.py,sha256=v3ofWBw-XmpxITgvOZCEDckUFYS01meiS3mZ-xsNvGk,10564
+foldedtensor/functions.cpp,sha256=DKXjZgLQJc8ujJEZaUly6Y5XwTKWfzyLtsmzCJSgGlk,11364
+tests/test_folded_tensor.py,sha256=U9chy2vqfkX6P9gRIy_P91jKwXuYU0XNnU3aC6jtXiI,8597
+foldedtensor-0.3.0.dist-info/LICENSE,sha256=xZ9Nc7dM4WrxGP1Of1DoJ0JpG-UzmjhEOe3ieM8YuA8,1496
+foldedtensor-0.3.0.dist-info/METADATA,sha256=B1zNA8XXw5M38m7bVnOS2gPwsHjtYfLWp0cxBhSyItA,6471
+foldedtensor-0.3.0.dist-info/WHEEL,sha256=jrOhEbqKwvzRFSJcbYXlJCyVkgVdHg4_7__YHrdTUfw,102
+foldedtensor-0.3.0.dist-info/top_level.txt,sha256=ODzup8any9F023nWTAEVTHGAVFJAxM9MD9RTeFfaYW0,36
+foldedtensor-0.3.0.dist-info/RECORD,,
