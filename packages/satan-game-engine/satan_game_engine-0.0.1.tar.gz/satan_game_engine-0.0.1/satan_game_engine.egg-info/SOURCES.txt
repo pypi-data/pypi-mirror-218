@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+SatanGameEngine/Colors.py
+SatanGameEngine/Editor.py
+SatanGameEngine/Engine.py
+SatanGameEngine/GameObjects.py
+SatanGameEngine/__init__.py
+satan_game_engine.egg-info/PKG-INFO
+satan_game_engine.egg-info/SOURCES.txt
+satan_game_engine.egg-info/dependency_links.txt
+satan_game_engine.egg-info/requires.txt
+satan_game_engine.egg-info/top_level.txt
