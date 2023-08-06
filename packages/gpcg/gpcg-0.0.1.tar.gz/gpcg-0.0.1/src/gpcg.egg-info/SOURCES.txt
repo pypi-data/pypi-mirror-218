@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gpcg/__init__.py
+src/gpcg/examples.py
+src/gpcg/gpcg.py
+src/gpcg/util.py
+src/gpcg.egg-info/PKG-INFO
+src/gpcg.egg-info/SOURCES.txt
+src/gpcg.egg-info/dependency_links.txt
+src/gpcg.egg-info/top_level.txt
