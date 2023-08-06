@@ -1,0 +1,13 @@
+kuda_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kuda_cli/accounts.py,sha256=CFimR58tQqPmuFzvkJ_zLz6oVYbENP8Fh44Qx3LTzus,3337
+kuda_cli/billing_and_betting.py,sha256=jfEU9RQpatn5Coo876h1xwuh9tqmgmxg1BCwJcf7YZc,3630
+kuda_cli/card.py,sha256=47t1oUn7WvvFZHK4kiDsJ7WVyJntSxgVhBBo5XAP9uM,4761
+kuda_cli/gift_card.py,sha256=PMgRJj0tUVIAxku2PdsLo-14pYHK_edes-aHAO00MJM,2540
+kuda_cli/main.py,sha256=7o6OIWPHEX5Cc6jM_L-iiEa8jrSPhU0K3N2ZKnuk6Go,2219
+kuda_cli/savings.py,sha256=kx2Mxrd8p3K61ChMSC2Yhho-h82pjarI3HeSDK4nmDI,8569
+kuda_cli/transaction.py,sha256=XdYxp4DRP0Sh7DYybddBSt09Y7nadX1jhRGAvMARMt0,8587
+kuda_cli/utils.py,sha256=ESun_waY_hyNAsy1715V__kckDB8Di9TyqXMIQkuL4c,3347
+kuda_cli-0.1.0.dist-info/METADATA,sha256=dnAegdo3ioDepiO8JMHHjVwGYyc4pgYAhRkjmNonUyU,1176
+kuda_cli-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+kuda_cli-0.1.0.dist-info/entry_points.txt,sha256=MuqkPYXhCtLSn8SY1WkjOX1Z7DuJ1wql15oQiCz_4co,42
+kuda_cli-0.1.0.dist-info/RECORD,,

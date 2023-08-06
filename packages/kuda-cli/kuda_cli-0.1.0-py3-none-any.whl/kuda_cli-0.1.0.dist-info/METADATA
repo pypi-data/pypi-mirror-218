@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: kuda-cli
+Version: 0.1.0
+Summary: 
+Author: Gbenga Adeyi
+Author-email: adeyigbenga005@gmail.com
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pykuda2 (>=0.1.2,<0.2.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Kuda cli
+A command line app for interacting with kuda open API.
+
+![utility in use](./kuda-cli.gif)
+
+## Installation
+Binaries of kuda cli be found [here](https://github.com/gray-adeyi/kuda-cli/releases/tag/0.1.0). Alternatively, Kuda cli can be installed from pypi
+with pip as shown below.
+```bash
+pip install kuda-cli
+```
+
+## First time configurations
+You're required to add your kuda credentials on first use as shown below
+```bash
+kuda config EMAIL API_KEY
+```
+This sets up your kuda cli for use in development mode you
+can add an optional `--mode production` to use this utility in production mode. These credentials can be
+removed with `kuda reset`. Run `kuda --help` to see available commands
