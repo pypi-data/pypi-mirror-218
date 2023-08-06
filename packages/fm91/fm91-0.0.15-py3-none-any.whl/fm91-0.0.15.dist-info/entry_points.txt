@@ -1,0 +1,3 @@
+[console_scripts]
+abir=fm91.main:app
+
