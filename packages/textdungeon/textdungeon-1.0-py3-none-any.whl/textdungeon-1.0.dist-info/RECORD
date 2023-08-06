@@ -1,0 +1,11 @@
+textdungeon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textdungeon/color.py,sha256=oTno29xc-JkUIUNEylVrIfVHT0np4bZekhp8u4dwio4,2289
+textdungeon/dungeon.py,sha256=VOAbCIyFe2WS22QWL1qtoS4HZ_wFVgg1k7JZUQ0AiU0,52294
+textdungeon/entities.py,sha256=oAdMyLRterMhEghHHAjI_dgYeaM8KksLLBcNn3Gpadk,47828
+textdungeon/extra.py,sha256=kDJXvomczh_lYDzOF_EleXVnt39RQqw3xxybbCYzdMY,3151
+textdungeon/items.py,sha256=7XMZyAsADI864aNqq2skxmVFhYjkku9oBaxHhQ0DjHY,53849
+textdungeon/main.py,sha256=rCZe_H1KOQ3I8KZzlVzZaRzSrr401xzSmagbv_8718g,8763
+textdungeon-1.0.dist-info/METADATA,sha256=nX_nqec9Wvfy93H50jTyhjea2MRiYnoz4KuYBYLq3-I,1318
+textdungeon-1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+textdungeon-1.0.dist-info/entry_points.txt,sha256=QXuJj3n7kutMoiE1dF4i-qXqOwRr9zzmHDaV3BIZxNY,48
+textdungeon-1.0.dist-info/RECORD,,
