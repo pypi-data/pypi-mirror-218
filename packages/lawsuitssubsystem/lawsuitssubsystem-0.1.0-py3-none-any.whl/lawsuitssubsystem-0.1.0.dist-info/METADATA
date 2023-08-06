@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: lawsuitssubsystem
+Version: 0.1.0
+Summary: 
+Author: DieNice
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: pypdf (>=3.12.0,<4.0.0)
+Requires-Dist: selenium (>=4.10.0,<5.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Requires-Dist: undetected-chromedriver (>=3.5.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# scraping lawsuits
+Subsystem for parsing lawsuits
+## Project structure
+
+## How to dev
+```
+poetry shell
+poetry install
+```
+
+***
+```
+├── debug.py
+├── parsing_lawsuits
+│   └── python_callables.py - core functions for Airflow
+├── poetry.lock
+├── pyproject.toml
+└── README.md
+
+```
+
+## How to public to Pypi
+First you need create api on pypi
+
+```bash
+poetry config pypi-token.pypi $(cat .token)
+poetry publish --build
+```
+
