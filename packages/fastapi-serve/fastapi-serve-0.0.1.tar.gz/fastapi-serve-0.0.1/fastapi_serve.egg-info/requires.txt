@@ -1,0 +1,6 @@
+jina
+
+[test]
+pytest
+pytest-asyncio
+psutil
