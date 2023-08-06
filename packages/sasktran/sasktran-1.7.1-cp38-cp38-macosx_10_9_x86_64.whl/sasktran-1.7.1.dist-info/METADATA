@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sasktran
+Version: 1.7.1
+Home-page: https://arg.usask.ca/docs/sasktran/
+Author: Daniel Zawada
+Author-email: daniel.zawada@usask.ca
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: urllib3
+Requires-Dist: appdirs
+Requires-Dist: packaging
+
