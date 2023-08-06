@@ -1,0 +1,2 @@
+orjson~=3.9.2
+cryptography~=39.0
