@@ -1,0 +1,12 @@
+kort_client/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+kort_client/api.py,sha256=0xdJMEdZMQYWbVahzN330cCifPWVC0L0qwU1q45cHOQ,3511
+kort_client/card_detectors.py,sha256=6HP-93sQx-j9otcrRDWGL5ggiczcdJY_22zH3eQyOCY,4181
+kort_client/cli.py,sha256=az2MisT7A9iHrw_7aXlAPhbKVZsSWWOZfm19_OJlz9k,1479
+kort_client/config.py,sha256=x5nADDh8UdXixFWZZSLg-6h9gp7WmDhZoH69obidIac,267
+kort_client/run.py,sha256=Kws06nGdEnDtCHtBRnT51sktSsH18c6fU_KiR5NU05A,6506
+kort_client/usb_barcode_scanner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kort_client/usb_barcode_scanner/scanner.py,sha256=pr9QTA5Gy9Eg-W2kDpAlGhO1ckjp-sCBCVR1Ghr8j3s,3742
+kort_client-0.1.0.dist-info/METADATA,sha256=HSQV72pzWWw5Vwhd7zZx_umrCfLq9rOcGeAR-xpbMnI,604
+kort_client-0.1.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+kort_client-0.1.0.dist-info/entry_points.txt,sha256=fYnN4JljJBQe55Re61BaxZyIukT-ARnTF8xdW81VW8M,51
+kort_client-0.1.0.dist-info/RECORD,,

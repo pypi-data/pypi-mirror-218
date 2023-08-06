@@ -1,0 +1,3 @@
+[console_scripts]
+kort-client=kort_client.cli:cli
+
