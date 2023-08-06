@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: notros2
+Version: 23.7.11.11106
+Summary: notROS2 utilities.
+Maintainer: Murilo M. Marinho
+Maintainer-email: murilomarinho@ieee.org
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+
+# (Murilo's) NOT ros2 Utilities 
+
+These are utilities NOT for ros2.
