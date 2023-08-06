@@ -1,0 +1,2 @@
+[console_scripts]
+u2p = u2p.cli:run
