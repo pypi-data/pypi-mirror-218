@@ -1,0 +1,5 @@
+decorator>=4.0.0
+stevedore>=3.0.0
+
+[:python_version < "3.11"]
+typing_extensions>=4.0.1
