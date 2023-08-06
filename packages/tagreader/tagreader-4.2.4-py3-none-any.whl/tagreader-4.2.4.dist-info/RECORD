@@ -1,0 +1,12 @@
+tagreader/__init__.py,sha256=JWhNR_GzZtUjEPbkz2YYkz075vXjnRmqO_1p-ZmoGgA,409
+tagreader/__version__.py,sha256=Oj_ApPSBMyoKmsqHJE6PZHcW1UMZn2gzoNMtjTcyxlE,282
+tagreader/cache.py,sha256=XzkslXB0MoTRPhhqQIQnjHrqkJ2Yhazw22JwRWS-vJM,11699
+tagreader/clients.py,sha256=HhOOXf2PRpsr1ro1sKyDk9qDEHpTd656b4eTDqSGQ4w,22878
+tagreader/logger.py,sha256=v_47o0Ee7cjc8i0BBtv_zn5239jrt29Xd8x7wZ1L5h8,198
+tagreader/odbc_handlers.py,sha256=2_r-kf7yaINS742tntAR6jf7ygWZlf4bwF89RbWfcsM,24973
+tagreader/utils.py,sha256=GzdznL4KIXH6BPvdadDhlhbz_u_CXWgzxYZEgyqBgFE,8193
+tagreader/web_handlers.py,sha256=EQYRYvVFP4-VIqqOxfzhxcnkGmQswvWdsWOF8_JZA7c,32781
+tagreader-4.2.4.dist-info/LICENSE,sha256=aRSvJ7Onw9WGZGUhgZy7hT7dS4BiOGvz_V6v9ZlJBY4,1064
+tagreader-4.2.4.dist-info/METADATA,sha256=yw16vQ7YLTY6yr848eObGvH4ijv9no0lB4TKHFmsFSM,4404
+tagreader-4.2.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+tagreader-4.2.4.dist-info/RECORD,,
