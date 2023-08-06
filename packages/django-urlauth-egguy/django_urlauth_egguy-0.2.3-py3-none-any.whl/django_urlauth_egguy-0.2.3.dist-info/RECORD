@@ -1,0 +1,17 @@
+urlauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+urlauth/admin.py,sha256=Z-5r5Yhvs0Zohi_gnnIWQ24OoW1tZDd_ovUZGslT4O0,198
+urlauth/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+urlauth/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+urlauth/management/commands/urlauth_cleanup.py,sha256=zxZ8cMhgMsdkq-5LDM0is7TtPs2defN5W_GnT9wmOpE,587
+urlauth/middleware.py,sha256=2cJK4iIifbhBCQmYaC9wSjM_XKiOsmfqhl_BypR8Oek,1359
+urlauth/migrations/0001_initial.py,sha256=Jbqo1rntFJRTBWB6Sr5JH5K3qDqjcUTJfLM48XYspA8,821
+urlauth/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+urlauth/models.py,sha256=DGg5zC1uy5b22pFT_ZQcH34EwzkQCJbf97BuGR3ykrY,3144
+urlauth/settings.py,sha256=NFm84dztE6ljbK3X7nUFFibc71w3YzVkXyp_EqH1Q68,76
+urlauth/signals.py,sha256=WhHkgWJxu1ZFcNcku-1SIfVIKdA6X1fE_sEPP0WXZkY,106
+urlauth/tests.py,sha256=fy02KzxqdVvcdmiBQuiBnAWhvERBriN56VNZRp07uSM,6029
+urlauth/util.py,sha256=Jd5lkEz5vN0abQ1tU_b6N-w9SNcgrJd1RPW0KrBju78,705
+django_urlauth_egguy-0.2.3.dist-info/LICENSE,sha256=0Weh3s7y9fi7n7ZXVe_jUdxxysmiguBzg-GgTLp54G8,1484
+django_urlauth_egguy-0.2.3.dist-info/METADATA,sha256=XGxzgV_gB3hWAwuIQ1a3GirdxHwYW14itSRao5R7X0c,1352
+django_urlauth_egguy-0.2.3.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+django_urlauth_egguy-0.2.3.dist-info/RECORD,,
