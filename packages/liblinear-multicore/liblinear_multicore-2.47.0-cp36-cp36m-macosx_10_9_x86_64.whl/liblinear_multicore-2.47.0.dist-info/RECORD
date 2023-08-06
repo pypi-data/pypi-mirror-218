@@ -1,0 +1,11 @@
+liblinear/liblinear.py,sha256=nFjdzoFVG4Yn9rU5BpLN_9j8tSShXj92zXOZfhPwuGc,17859
+liblinear/commonutil.py,sha256=2nfU9tolP4kvSZb1LfmwJTIYLD9DZsCWUeCYgH83yNM,6206
+liblinear/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liblinear/clib.cpython-36m-darwin.so,sha256=JiVUyQOT1JPbGWWRynqRWR01gYWNId2Q_8fJV9SnMco,169408
+liblinear/liblinearutil.py,sha256=pyM9aiSjWGdql_eEug9HLaIVvq9twRAqagKXVQt5hpE,11390
+liblinear/.dylibs/libgomp.1.dylib,sha256=SzeoBi-nfhRmACCZR9Vicvj2BVSTnOwmSs2WqdAKMew,477424
+liblinear_multicore-2.47.0.dist-info/RECORD,,
+liblinear_multicore-2.47.0.dist-info/LICENSE,sha256=aE529WWjGrBXeQxhK9rMLuVC-KkLafkiN3qSM0dxSIw,1486
+liblinear_multicore-2.47.0.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+liblinear_multicore-2.47.0.dist-info/top_level.txt,sha256=r9sQicNbgojwMNhAsO1yT4di0OOriI0J5QiLD5rCwGc,10
+liblinear_multicore-2.47.0.dist-info/METADATA,sha256=vbs5spIqGwyLEzad3E6UVPFJ07hrtdaU28p_A1zkLXw,17749
