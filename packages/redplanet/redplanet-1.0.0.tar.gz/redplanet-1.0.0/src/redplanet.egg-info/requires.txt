@@ -1,0 +1,11 @@
+pooch
+gdown
+pyshtools
+numpy
+matplotlib
+
+[jupyter]
+jupyter
+
+[jupyterlab]
+jupyterlab

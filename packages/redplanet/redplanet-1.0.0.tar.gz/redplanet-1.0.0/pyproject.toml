@@ -1,0 +1,123 @@
+# This project has minimal configuration contained entirely within a sigle `pyproject.toml`. We lose out on some richer features, but it works.
+
+# Writing good config files (pyproject.toml, setup.py, setup.cfg) is difficult. There are a few different standards, and understanding the details of differences/advantages/disadvantages is more trouble than it's worth. If you'd like to do your own research, see the resources below, but prepare to reread documentation many times as you eventually figure out the not-so-well-communicated intricacies.
+# Helpful resources:
+#   - PyPA (Python Packaging Authority)
+#     - Python Packaging User Guide: https://packaging.python.org/en/latest/
+#     - Template: https://github.com/pypa/sampleproject/blob/main/pyproject.toml
+#       - See this file for more details on the various fields which have been removed from this file.
+#   - SetupTools documentation: https://setuptools.pypa.io/en/latest/index.html
+
+
+
+
+#######################################################################
+[build-system]
+# backend tool to create distribution package
+
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+
+
+
+
+#######################################################################
+[project]
+
+name = "redplanet" 
+version = "1.0.0" 
+
+description = "User-friendly access (i.e. APIs) for various Mars datasets and derived geophysics quantities. Create publication-ready plots on the fly or access the underlying data for more involved calculations." 
+readme = "README.md"
+
+authors = [{name = "Zain Eris Kamal", email = "zain.eris.kamal@rutgers.edu" }]
+
+requires-python = ">=3.7"
+license = {file = "LICENSE.txt"}
+
+
+
+
+
+
+
+# For an analysis of this field vs pip's requirements files see:
+# https://packaging.python.org/discussions/install-requires-vs-requirements/
+dependencies = [ # Optional
+  "pooch",
+  "gdown",
+  "pyshtools",
+  "numpy",
+  "matplotlib",
+  # "scipy",
+  # "pandas",
+]
+
+
+
+
+
+
+
+keywords = ["mars", "geophysics", "grs", "crust", "heat flow"] 
+
+
+# For a list of valid classifiers, see https://pypi.org/classifiers/
+classifiers = [ 
+  "Development Status :: 5 - Production/Stable",
+
+  "Operating System :: OS Independent",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  'Topic :: Scientific/Engineering',
+  'Topic :: Scientific/Engineering :: Physics',
+  'Topic :: Scientific/Engineering :: GIS',
+
+  "Natural Language :: English",
+
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+
+
+
+
+
+
+#######################################################################
+[project.urls] 
+
+"Homepage" = "https://github.com/Humboldt-Penguin/redplanet"
+"Author" = "https://github.com/Humboldt-Penguin"
+
+
+
+
+#######################################################################
+[project.optional-dependencies]
+jupyter = ["jupyter"]
+jupyterlab = ["jupyterlab"]
+
+
+
+
+
+
+
+
+#######################################################################
+# [project.scripts]  # Optional
+# The following would provide a command line executable called `sample`
+# which executes the function `main` from this package when invoked.
+# sample = "sample:main"
+
+
+
+
+
