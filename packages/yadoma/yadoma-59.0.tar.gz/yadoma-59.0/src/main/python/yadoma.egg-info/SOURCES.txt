@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/main/python/yadoma/__init__.py
+src/main/python/yadoma/main.py
+src/main/python/yadoma.egg-info/PKG-INFO
+src/main/python/yadoma.egg-info/SOURCES.txt
+src/main/python/yadoma.egg-info/dependency_links.txt
+src/main/python/yadoma.egg-info/entry_points.txt
+src/main/python/yadoma.egg-info/requires.txt
+src/main/python/yadoma.egg-info/top_level.txt
