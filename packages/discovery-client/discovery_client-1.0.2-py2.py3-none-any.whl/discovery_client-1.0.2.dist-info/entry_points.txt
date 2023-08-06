@@ -1,0 +1,2 @@
+[console_scripts]
+discovery = discovery.__main__:cli
