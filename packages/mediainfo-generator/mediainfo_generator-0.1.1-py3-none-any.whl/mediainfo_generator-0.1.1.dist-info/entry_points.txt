@@ -1,0 +1,3 @@
+[console_scripts]
+mediainfo-generator=mediainfo_generator:cli
+
