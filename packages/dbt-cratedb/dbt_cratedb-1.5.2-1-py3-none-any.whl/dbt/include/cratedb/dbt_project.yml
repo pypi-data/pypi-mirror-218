@@ -1,0 +1,6 @@
+
+name: dbt_cratedb
+version: 1.5.2
+config-version: 2
+
+macro-paths: ["macros"]
