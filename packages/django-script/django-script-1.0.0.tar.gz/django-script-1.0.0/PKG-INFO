@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: django-script
+Version: 1.0.0
+Summary: Django-Genius is a Python package that automates the setup and configuration of Django and React applications. This streamlines the development process, allowing developers to focus on building application features.
+Author: Santhosh Parthiban
+Author-email: santhoshparthiban2002@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
