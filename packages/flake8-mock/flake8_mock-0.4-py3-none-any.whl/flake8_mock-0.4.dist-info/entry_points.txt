@@ -1,0 +1,2 @@
+[flake8.extension]
+M = flake8_mock:MockChecker
