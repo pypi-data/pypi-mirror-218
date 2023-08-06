@@ -1,0 +1,7 @@
+setup.py
+JMatuszczakL/__init__.py
+JMatuszczakL.egg-info/PKG-INFO
+JMatuszczakL.egg-info/SOURCES.txt
+JMatuszczakL.egg-info/dependency_links.txt
+JMatuszczakL.egg-info/requires.txt
+JMatuszczakL.egg-info/top_level.txt
