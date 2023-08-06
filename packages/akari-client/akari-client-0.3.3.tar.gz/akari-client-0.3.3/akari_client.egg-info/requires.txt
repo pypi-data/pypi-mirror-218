@@ -1,0 +1,13 @@
+dynamixel_sdk
+pydantic<2.0,>=1.5
+
+[depthai]
+matplotlib
+depthai
+opencv-python
+blobconverter
+
+[grpc]
+akari-proto<0.4.0,>=0.3.0
+grpcio==1.44.0
+protobuf==3.19.3
