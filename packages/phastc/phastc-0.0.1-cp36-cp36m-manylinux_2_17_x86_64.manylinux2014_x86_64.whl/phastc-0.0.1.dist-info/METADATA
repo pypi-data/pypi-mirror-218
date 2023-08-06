@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: phastc
+Version: 0.0.1
+Summary: Phenomological Adaptive STochastic auditory nerve fiber model
+Home-page: UNKNOWN
+Author: Jacob de Nobel
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: scipy (>=1.5.2)
+
+# Phenomological Adaptive STochastic auditory nerve fiber model
+
+[![test-python](https://github.com/jacobdenobel/PHAST/actions/workflows/test.yml/badge.svg)](https://github.com/jacobdenobel/PHAST/actions/workflows/test.yml)
+
+
+
