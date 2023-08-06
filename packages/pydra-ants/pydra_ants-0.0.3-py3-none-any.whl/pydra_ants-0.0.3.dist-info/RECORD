@@ -1,0 +1,8 @@
+pydra/tasks/ants/__init__.py,sha256=F3D532NdPTkiXldS7cURzG6bxq1mUVyxMbyMapFCzRI,197
+pydra/tasks/ants/apply_transforms.py,sha256=gsYEawnUAF-VR_yF6VF0jcaFP6kdmQ2_pkTh4i8pBS8,6839
+pydra/tasks/ants/bias_correction.py,sha256=csDOtjQDiyAr6d3C_8GF6qTTJbViHsK0j5Ytldf_JCA,4454
+pydra/tasks/ants/registration.py,sha256=fK54KrOLyTK_A386Jr2rzZFL_e1jkXfj91gzGqfceFs,7137
+pydra_ants-0.0.3.dist-info/METADATA,sha256=pBL891VAazd8aietOuy-lL5jAoGRiXMT2Cz4vAxF0J0,2933
+pydra_ants-0.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+pydra_ants-0.0.3.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pydra_ants-0.0.3.dist-info/RECORD,,
