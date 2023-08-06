@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: smplkit
+Version: 0.0.0
+Summary: SMPL-KIT: Use SMPL models more easily.
+Home-page: https://github.com/Silverster98/smpl-kit
+Author: Zan Wang
+Author-email: zanwang98@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# smpl-kit
+Use SMPL more easily!
+
+## Installation
+
+To install the `smplkit` package, you can either install it from PyPI or install it from source.
+
+- To install from PyPI by using `pip`:
+
+```bash
+pip install smplkit
+```
+
+- Or, clone this repository and install it from source:
+
+```bash
+git clone git@github.com:Silverster98/smpl-kit.git
+cd smpl-kit
+pip install . --use-feature=in-tree-build
+```
+
+## Documentation
+
+### Tutorial
+
+### API Reference
+
+## License
+
+This project is licensed under the terms of the [MIT](LICENSE) license.
+
+## Acknowledgement
