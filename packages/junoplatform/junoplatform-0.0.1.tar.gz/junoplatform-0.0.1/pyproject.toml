@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core>=3.4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "junoplatform"
+version = "0.0.1"
+authors = [
+  { name="Bruce.Lu", email="lzbgt@icloud.com" },
+]
+description = "juno AI platform lib"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/lzbgt/sampleproject"
+"Bug Tracker" = "https://github.com/lzbgt/sampleproject/issues"
