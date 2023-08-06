@@ -1,0 +1,11 @@
+## Include
+include README.md LICENSE NOTICE requirements.txt
+recursive-include compiler *.py *.tl *.tsv *.txt
+recursive-include tests *.py
+
+## Exclude
+prune meta/errors/exceptions
+prune meta/raw/functions
+prune meta/raw/types
+prune meta/raw/base
+exclude meta/raw/all.py
