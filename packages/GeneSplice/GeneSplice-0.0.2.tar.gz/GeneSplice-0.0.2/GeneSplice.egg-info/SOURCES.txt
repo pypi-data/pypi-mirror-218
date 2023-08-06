@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+GeneSplice.egg-info/PKG-INFO
+GeneSplice.egg-info/SOURCES.txt
+GeneSplice.egg-info/dependency_links.txt
+GeneSplice.egg-info/requires.txt
+GeneSplice.egg-info/top_level.txt

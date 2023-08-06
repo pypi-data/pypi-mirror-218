@@ -1,0 +1,7 @@
+torch
+einops
+transformers
+accelerate
+fairscale
+timm
+flash-attn
