@@ -1,0 +1,14 @@
+setup_client.py
+async_chat_client_kd.egg-info/PKG-INFO
+async_chat_client_kd.egg-info/SOURCES.txt
+async_chat_client_kd.egg-info/dependency_links.txt
+async_chat_client_kd.egg-info/requires.txt
+async_chat_client_kd.egg-info/top_level.txt
+client/__init__.py
+client/add_contact.py
+client/database.py
+client/del_contact.py
+client/main_window.py
+client/main_window_conv.py
+client/start_dialog.py
+client/transport.py
