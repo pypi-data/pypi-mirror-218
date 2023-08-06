@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/zeloscloud/__init__.py
+src/zeloscloud.egg-info/PKG-INFO
+src/zeloscloud.egg-info/SOURCES.txt
+src/zeloscloud.egg-info/dependency_links.txt
+src/zeloscloud.egg-info/top_level.txt
