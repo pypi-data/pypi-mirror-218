@@ -1,0 +1,13 @@
+mailpit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailpit/config.py,sha256=aG4UCSGshEie28XdYHeD6R7wnSv3Ohil4Z-X3oCbcDY,129
+mailpit/client/__init__.py,sha256=lxL-WXdfNDvNhM3q_QzqD1T5zFbwaMXUgCiYnFzzvNs,81
+mailpit/client/api.py,sha256=EgvWYPOEOM6WV0ConiS_AB3ne2hKY7dBJ-Khx02ma4s,4308
+mailpit/client/models.py,sha256=hPunJJ28ntutuC4QfL7-5lJqz0L60Xv4iKhvkQwILPE,12160
+mailpit/testing/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mailpit/testing/pytest.py,sha256=Uc9VDkXyVxHc-_VjRB3xLGW7v8xQgJDMrmJbz0SEsbE,1564
+mailpit/testing/unittest.py,sha256=6sNBdXvtIDENLngoqjiFEWo5YyPwsMkZlz9aeXm3QQQ,3078
+mailpit_api_client-0.12.1.dist-info/LICENSE,sha256=ZVetxLwdWSMuJ1Z6GF3XDPLsyjFUAYsL5h6inPnoFOI,7633
+mailpit_api_client-0.12.1.dist-info/METADATA,sha256=H9qvpSVlYYqfijl9cAnVJL8i12MqC3cCX3pGWEx8BnY,13743
+mailpit_api_client-0.12.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mailpit_api_client-0.12.1.dist-info/top_level.txt,sha256=CVWAW-Pr2nArCCgYLNtRWJZswzSfzOmiu2N3KXJZrBc,8
+mailpit_api_client-0.12.1.dist-info/RECORD,,
