@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: meteplanet-room-chat
+Version: 0.0.2
+Summary: metaplanet room chat client
+Author-email: Charles Meow <chishijie85@gmail.com>
+Requires-Dist: websocket-client (>=1.6.0)
+
