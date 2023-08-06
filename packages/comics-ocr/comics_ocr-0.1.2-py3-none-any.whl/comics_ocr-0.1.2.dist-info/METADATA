@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: comics-ocr
+Version: 0.1.2
+Summary: ComicsOCR is a Python package created for easily distributing OCR models trained for golden age of comics.
+Home-page: https://github.com/gsoykan/comics_ocr
+Author: Gürkan Soykan
+Author-email: grkansoykan@gmail.com
+License: MIT
+Keywords: comics_ocr,mmocr_comics
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: imgaug (==0.4.0)
+Requires-Dist: lanms (==1.0.2)
+Requires-Dist: lanms-neo (==1.0.2)
+Requires-Dist: lmdb (==1.2.1)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: mmcv-full (==1.5.0)
+Requires-Dist: mmdet (==2.21.0)
+Requires-Dist: nlpretext (==1.2.1)
+Requires-Dist: pydantic (==1.10.11)
+Requires-Dist: spacy (==3.6.0)
+Requires-Dist: nltk (==3.5)
+Requires-Dist: numpy (<1.22.3,>=1.21.6)
+Requires-Dist: onnxruntime (==1.15.1)
+Requires-Dist: opencv-contrib-python (==4.5.4.60)
+Requires-Dist: opencv-python (==4.6.0.66)
+Requires-Dist: opencv-python-headless (==4.5.4.60)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: Pillow (==10.0.0)
+Requires-Dist: pyclipper (==1.3.0)
+Requires-Dist: rapidfuzz (==1.8.3)
+Requires-Dist: scikit-image (==0.18.3)
+Requires-Dist: Shapely (==1.8.0)
+Provides-Extra: cpu
+Requires-Dist: torchvision (==0.10.0) ; extra == 'cpu'
+Requires-Dist: torch (==1.9.0) ; extra == 'cpu'
+Provides-Extra: cuda
+Requires-Dist: torchvision (==0.10.0+cu102) ; extra == 'cuda'
+Requires-Dist: torch (==1.9.0+cu102) ; extra == 'cuda'
+
+to build locally after cloning
+
+```shell
+pip install comics-ocr[cuda] -f https://download.pytorch.org/whl/torch_stable.html
+
+or 
+
+pip install comics-ocr[cpu]
+```
+
+You can get the necessary model checkpoints and configs from
+[COMICS TEXT+](https://github.com/gsoykan/comics_text_plus) repository.
+
+## Usage
+
+```python
+# Import library
+from comics_ocr import ComicsOCR
+
+# initalize the model
+e2e_ocr_model = ComicsOCR(
+    ocr_detector_config="fcenet_r50dcnv2_fpn_1500e_ctw1500_custom/fcenet_r50dcnv2_fpn_1500e_ctw1500_custom.py",
+    ocr_detector_checkpoint='fcenet_r50dcnv2_fpn_1500e_ctw1500_custom/best_0_hmean-iou:hmean_epoch_5.pth',
+    recog_config='master_custom_dataset.py',
+    ocr_recognition_checkpoint='best_0_1-N.E.D_epoch_4.pth',
+    det='FCE_CTW_DCNv2',
+    recog='MASTER')
+
+# Run the model
+img_path = "speech_bubble/0/3/9.jpg"
+text, preprocessed_text, sanitized_text = e2e_ocr_model.extract_text(img_path)
+```
