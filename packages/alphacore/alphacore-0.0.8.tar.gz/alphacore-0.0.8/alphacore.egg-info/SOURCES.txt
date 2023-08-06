@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+alphacore/__init__.py
+alphacore/distributions.py
+alphacore/fit_distribution.py
+alphacore/fit_linear.py
+alphacore/utils.py
+alphacore.egg-info/PKG-INFO
+alphacore.egg-info/SOURCES.txt
+alphacore.egg-info/dependency_links.txt
+alphacore.egg-info/requires.txt
+alphacore.egg-info/top_level.txt
