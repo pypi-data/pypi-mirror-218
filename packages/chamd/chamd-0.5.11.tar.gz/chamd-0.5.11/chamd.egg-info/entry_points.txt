@@ -1,0 +1,2 @@
+[console_scripts]
+chamd = chamd.__main__:main
