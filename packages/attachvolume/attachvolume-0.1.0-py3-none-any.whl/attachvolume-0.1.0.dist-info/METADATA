@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: attachvolume
+Version: 0.1.0
+Summary: Attach Volume
+Home-page: https://github.com/tmb28054/attach-volume
+Author: Topaz Bott
+Author-email: topaz@topazhome.net
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: boto3
+Requires-Dist: requests
+
+# Attach Volume
+
+This is a utility which can be used by an EC2 in a durable compute workload to ensure the stateful data volume is attached to the active compute member.
+
+## Usage Patterns
+
+`attach-volume -v vol-1234123123`
+
