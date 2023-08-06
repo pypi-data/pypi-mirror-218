@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: CardStacks
+Version: 0.1.2
+Summary: A simple library for creating and manipulating stacks of cards.
+Home-page: https://github.com/SpeedyGo55/CardStacks
+Author: SpeedyGo55
+Author-email: SpeedyGo55@outlook.com
+License: GPLv3
+Project-URL: Bug Reports, https://github.com/SpeedyGo55/CardStacks/issues
+Project-URL: Source, https://github.com/SpeedyGo55/CardStacks
+Keywords: cards cardstacks cardstack cardstackslib cardstackslibrary cardstackslibrarypython
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# PythonCardStacks
+
+---
+
+## Description
+
+PythonCards is a Python library for creating playing cards and playing card stacks. It is designed to be extensible and easy to use.
+
+## Installation
+
+```bash
+pip install CardStacks
+```
+
+## Usage
+
+This is an Example showing how to create a deck of cards and draw a hand of 5 cards.
+```python
+from CardStacks import CardStack
+
+Stack = CardStack()
+hand = Stack.draw(5)
+print(hand)
+```
+All the functions are documented in the [Documentation](https://github.com/SpeedyGo55/CardStacks/blob/master/Documentation.md).
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
