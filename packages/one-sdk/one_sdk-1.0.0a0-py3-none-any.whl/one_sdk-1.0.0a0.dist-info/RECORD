@@ -1,0 +1,12 @@
+one_sdk/__init__.py,sha256=uE-h-OYpUr-5jvpPPPIjwqlR5Hm168aZSPtEXMe-Zdo,79
+one_sdk/app.py,sha256=pxkS9PDsJ-RVabvirb2-nrxpmGuKRK11wt9UQFMsTNs,10452
+one_sdk/client.py,sha256=-JUG6Vb93IY5NFinECN6wy6u47-HtAFsLfsHnHo0bl4,3912
+one_sdk/error.py,sha256=qoFFCW-yHomEiiHeSlcG9HB3J9dGIVhD-n1xhiAVKMs,2239
+one_sdk/handle_map.py,sha256=dn39CUb4c4xv7oJuwFMFiMJSG2zYkdZG2Ud22YdWAUo,488
+one_sdk/platforrm.py,sha256=ooR7EVT7WSw6NPqSL4fGi5KkWubEN1BWUskBRR4bNYY,5873
+one_sdk/sf_host.py,sha256=PeIFPpQQPenQmXuA4Ft_Ql8BQGUDsDakcc9-3iwEU4o,3642
+one_sdk/assets/core.wasm,sha256=5jSJM2LRASO1hgfIZW8VDbtSlecRskffK18aThvolPY,2347534
+one_sdk-1.0.0a0.dist-info/METADATA,sha256=kE7vUGFTJXwg91geWgW3EfkPYFJcHi_asV1ghFXdULI,5538
+one_sdk-1.0.0a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+one_sdk-1.0.0a0.dist-info/top_level.txt,sha256=xrHzUwXULjnTNjXw0RmJ78tbMQK7t5SFsR-L9PzJJX0,8
+one_sdk-1.0.0a0.dist-info/RECORD,,
