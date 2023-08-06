@@ -1,0 +1,3 @@
+[console_scripts]
+work_yapi = work_yapi.cli:main
+
