@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ruspy
+Version: 0.1.0
+Summary: Data analysis powered by Rust.
+Home-page: https://github.com/manas-verma/ruspy
+Author: Manas Verma
+Author-email: manas.verma@gmail.com
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Data analysis powered by Rust.
