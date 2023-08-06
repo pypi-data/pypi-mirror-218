@@ -1,0 +1,5 @@
+setup.py
+pd_data_store.egg-info/PKG-INFO
+pd_data_store.egg-info/SOURCES.txt
+pd_data_store.egg-info/dependency_links.txt
+pd_data_store.egg-info/top_level.txt
