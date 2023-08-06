@@ -1,0 +1,6 @@
+wcc_timetable_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wcc_timetable_generator/algo.py,sha256=IGR2x9s5ia1Yx1ifEJnmOAi8CMeGs4jcbiLrGWMgDUE,1705
+wcc_timetable_generator/subject_model.py,sha256=hSUzdEsBUqiZa2y8FwMPnhRmmA_F3OvnyYf0ZxxtSPA,97
+wcc_timetable_generator-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+wcc_timetable_generator-0.1.0.dist-info/METADATA,sha256=qqqLYv0sjVFz26dnhjSB1RKR6FSqMsjpH9NqVCZ4r94,1090
+wcc_timetable_generator-0.1.0.dist-info/RECORD,,
