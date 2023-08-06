@@ -1,0 +1,34 @@
+meals:
+  - breakfast
+  - lunch
+  - snack
+  - dinner
+
+ui:
+  daily:
+    # title on top of the report table, substitutes "{dt}" with the date of the report
+    title: Nutrition report on {dt}
+    columns:
+      # the ingredient name to show in the column
+      - data: title
+        # title to show in the table header
+        title: Title
+        # styling, as supported by rich - https://rich.readthedocs.io/en/stable/style.html
+        style: cyan
+        # justification, 'right' be default
+        justify: left
+      - data: amount
+        title: Amount
+        style: green
+      - data: kcal
+        title: Kcal
+        style: blue
+      - data: prot
+        title: Protein
+        style: white
+      - data: carb
+        title: Carbs
+        style: yellow
+      - data: fat
+        title: Fat
+        style: red
