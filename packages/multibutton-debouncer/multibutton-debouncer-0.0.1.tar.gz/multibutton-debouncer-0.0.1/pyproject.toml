@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multibutton-debouncer"
+version = "0.0.1"
+authors = [
+  { name="David Hand", email="davidhand@davidhand.com" },
+]
+description = "Debouncer supporting multi-button and multi-press gestures."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "adafruit-circuitpython-debouncer",
+  "Adafruit-Blinka",
+]
+keywords = [
+    "adafruit",
+    "blinka",
+    "circuitpython",
+    "micropython",
+    "debouncer",
+    "debounce",
+    "multi",
+    "multibutton",
+]
+license = { text = "MIT" }
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ptolemarch/multibutton-debouncer"
+"Bug Tracker" = "https://github.com/ptolemarch/multibutton-debouncer/issues"
