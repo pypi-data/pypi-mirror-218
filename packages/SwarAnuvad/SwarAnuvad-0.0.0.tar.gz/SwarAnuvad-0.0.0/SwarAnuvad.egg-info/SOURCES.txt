@@ -1,0 +1,8 @@
+README.md
+setup.py
+SwarAnuvad/__init__.py
+SwarAnuvad.egg-info/PKG-INFO
+SwarAnuvad.egg-info/SOURCES.txt
+SwarAnuvad.egg-info/dependency_links.txt
+SwarAnuvad.egg-info/requires.txt
+SwarAnuvad.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+PyAudio
+SpeechRecognition
+googletrans
+pyttsx3
+translate
