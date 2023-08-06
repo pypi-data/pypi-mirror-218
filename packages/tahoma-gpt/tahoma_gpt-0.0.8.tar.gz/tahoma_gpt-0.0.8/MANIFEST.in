@@ -1,0 +1,7 @@
+include requirements.txt
+include LICENSE
+include PYPI_README.md
+include tahoma_gpt/*.py
+include tahoma_gpt/test/
+include tahoma_gpt/*
+include lib/*

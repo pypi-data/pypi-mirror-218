@@ -1,0 +1,38 @@
+[build-system]
+    requires = [ "setuptools>=61.2",]
+    build-backend = "setuptools.build_meta"
+
+[project]
+    name = "tahoma_gpt"
+    authors = [
+      { name="Pzim-devdata", email="contact@pzim.fr" },
+    ]
+    description = "This is a very easy API for controlling Somfy Tahoma's devices written in Python3, thanks to the pyoverkiz API. You just need a three-word input to control a device"
+    readme = "PYPI_README.md"
+    requires-python = ">=3.7"
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ]
+    dynamic = ["version", "dependencies"]
+    keywords=['tahoma_gpt', 'somfy', 'api']
+
+[project.urls]
+    "Homepage" = "https://github.com/pzim-devdata/tahoma-gpt"
+    "Bug Tracker" = "https://github.com/pzim-devdata/tahoma-gpt/issues"
+
+[project.scripts]
+    tahoma_gpt = "tahoma_gpt.tahoma_gpt:main"
+
+[tool.setuptools]
+    include-package-data = true
+    packages = ['tahoma_gpt','tahoma_gpt.test']
+    license-files = ['LICENSE']
+
+[tool.setuptools.dynamic.version]
+    attr = "tahoma_gpt.__version__.__version__"
+
+[tool.setuptools.dynamic.dependencies]
+    file = ["requirements.txt"]
+
