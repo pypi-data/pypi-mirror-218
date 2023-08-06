@@ -1,0 +1,14 @@
+rockset_sqlalchemy/__init__.py,sha256=FC_tLkIH-iNPEQE9SSoVkzFgqm6stk0MVU2uxhS0Dac,355
+rockset_sqlalchemy/connection.py,sha256=Xoxenx3Hr3OGLXsb7rNbFLRW0V7lSh4cf6Sijjihglw,956
+rockset_sqlalchemy/cursor.py,sha256=VOattyoqxMxwnlRLyzSxjYlOaI1wBZyY7OiOQ0zSUwk,6203
+rockset_sqlalchemy/exceptions.py,sha256=cHbjBm9U98qzZd68uKPwk39D1LifaGV58m6cRIfZP_4,1623
+rockset_sqlalchemy/sqlalchemy/__init__.py,sha256=OYsKkUru3VoafqTug5ii2O2Vh00ime0UObemcjhcX2E,66
+rockset_sqlalchemy/sqlalchemy/compiler.py,sha256=UOR2rOlDE7brcAUDhSiPTBAii3wbqiRC0aumg_U9DIM,2184
+rockset_sqlalchemy/sqlalchemy/dialect.py,sha256=fo-AcqTIe9A8BaCNxXH6GbqEurRXZNZ5hnk9efFpE4o,4976
+rockset_sqlalchemy/sqlalchemy/types.py,sha256=xr9UEJfOQSa6iS9k04heomEdAlE1v1pUXpV23DnJLE0,2188
+rockset_sqlalchemy-0.0.1.dist-info/LICENSE,sha256=APodl-jdwlQXNX4cbyYB5YHRD3yLJ0dXuBr3sNT2sts,11336
+rockset_sqlalchemy-0.0.1.dist-info/METADATA,sha256=PqG1rYVDYa3dwtbbIFaKUJ58kzMcafvHjVJXYPjuiX8,1827
+rockset_sqlalchemy-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rockset_sqlalchemy-0.0.1.dist-info/entry_points.txt,sha256=38DxtamqSxiAdgLBv56woPq2TGRiRzd_EkLpvesLc1A,143
+rockset_sqlalchemy-0.0.1.dist-info/top_level.txt,sha256=9w2R4PcWxWhXN1xVb-_-Tsjs9KqRXS1box7cUz1NesQ,19
+rockset_sqlalchemy-0.0.1.dist-info/RECORD,,
