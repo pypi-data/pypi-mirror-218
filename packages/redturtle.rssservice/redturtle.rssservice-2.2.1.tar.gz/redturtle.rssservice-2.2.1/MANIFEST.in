@@ -1,0 +1,9 @@
+graft src/redturtle
+graft docs
+include *.rst
+include *.GPL
+include *.txt
+include *.yml
+global-exclude *.pyc
+exclude .flake8
+exclude tox.ini
