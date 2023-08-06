@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: clickhouse-query
+Version: 0.0.2
+Summary: clickhouse query
+Home-page: https://github.com/mehrh8/clickhouse-query
+Author: Mehrshad Hosseini
+Author-email: mehrh8@gmail.com
+Project-URL: Bug Tracker, https://github.com/mehrh8/clickhouse-query/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ClickHouse Query
+
+Simple example:
+
+```python
+from clickhouse_query import models
+
+
+class TableTest(models.Table):
+    class Meta:
+        table_name = "table_temp"
+
+
+q = TableTest().queryset.select("a", "b").where(a__lt=10)
+
+q.get_sql()
+#  "SELECT a, b FROM table_temp AS __U_1 WHERE less(a, 10);"
+```
