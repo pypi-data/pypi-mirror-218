@@ -1,0 +1,10 @@
+README.md
+setup.py
+pywinauto_supporter/__init__.py
+pywinauto_supporter/utils.py
+pywinauto_supporter.egg-info/PKG-INFO
+pywinauto_supporter.egg-info/SOURCES.txt
+pywinauto_supporter.egg-info/dependency_links.txt
+pywinauto_supporter.egg-info/not-zip-safe
+pywinauto_supporter.egg-info/requires.txt
+pywinauto_supporter.egg-info/top_level.txt
