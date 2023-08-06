@@ -1,0 +1,2 @@
+[console_scripts]
+diz = diz.main:main
