@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["content", "layout", "script", "static", "test"]
+
+[project]
+name = "django-markwhat-next"
+version = "1.7.0"
+description = "An update to the `django-markwhat` python package"
+readme = "README.rst"
+authors = [{ name = "CryoTechnic", email = "rfriedman@lanets.ca" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: BSD-3-Clause",
+    "Framework :: Django",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = ['Django', ]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/CryoTechnic/django-markwhat-next"
