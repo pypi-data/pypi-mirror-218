@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: punch-clock
+Version: 0.1.2
+Summary: to track working hours directly in git
+Author: Debora Oliveira
+Author-email: deb.olibeira@protonmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.4,<9.0.0)
+Requires-Dist: gitpython (>=3.1.31,<4.0.0)
+Requires-Dist: pydantic (>=2.0.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# ⏰ Punch clock
+
+ Python script to keep track of your working hours. Automatically pushes in local .git repo.
+
+### 🏗️ Requirements
+
+```bash
+pip install punch-clock click
+git config --global user.name "Your Name"
+git config --global user.email "youremail@email.com"
+git config --global credential.helper store
+```
+
+### ⚔️ Usage
+
+- Copy `punch.py` to your repo
+- Run `python3 punch.py -in` or `python3 punch.py -out`
+
+### 🔍 Example
+
+See [example.md](/example/example.md) file.
+
+
