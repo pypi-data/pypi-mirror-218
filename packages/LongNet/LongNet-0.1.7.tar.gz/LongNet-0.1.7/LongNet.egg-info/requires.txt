@@ -1,0 +1,8 @@
+torch
+einops
+torchscale
+accelerate
+bitsandbytes
+fairscale
+timm
+dataclasses
