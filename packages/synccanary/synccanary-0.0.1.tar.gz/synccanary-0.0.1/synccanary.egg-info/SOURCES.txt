@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+synccanary/__init__.py
+synccanary/cli.py
+synccanary/synccanary.py
+synccanary.egg-info/PKG-INFO
+synccanary.egg-info/SOURCES.txt
+synccanary.egg-info/dependency_links.txt
+synccanary.egg-info/entry_points.txt
+synccanary.egg-info/top_level.txt
