@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/text_styling/__init__.py
+src/text_styling/background.py
+src/text_styling/colors.py
+src/text_styling/styles.py
+src/text_styling.egg-info/PKG-INFO
+src/text_styling.egg-info/SOURCES.txt
+src/text_styling.egg-info/dependency_links.txt
+src/text_styling.egg-info/top_level.txt

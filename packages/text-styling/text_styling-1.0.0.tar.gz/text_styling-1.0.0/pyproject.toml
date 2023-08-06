@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text_styling"
+version = "1.0.0"
+description = "Esse pacote contém módulo com cores e estilos para texto. Ele é útil, pois se toda hora tivessemos que escrever `\\033[<Código de cor>m`, nosso código ficaria muito poluído. Por isso esse pacote facilita a estilização dos textos em Python."
+authors = [
+  { name="Vinicius Marcelino Silva", email="viniciusmarcelinosilva1983@gmail.com" },
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
