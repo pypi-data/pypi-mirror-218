@@ -1,0 +1,13 @@
+zein/__init__.py,sha256=_-BFZkCCO5qamHet9LxBvKHg2WQmQ3BT4bhxvRe5ASI,72
+zein/images/__init__.py,sha256=I8h5y5_rogR7XdbQJZaWMHe7POmi04c9n8-QI4R4XUc,39
+zein/images/_utils.py,sha256=pJkk4GhwAexYhA_mkJ8h6llHlt003Va8LZ1lHoypV0Y,2094
+zein/images/images_module.py,sha256=UEajPh23q-JpF2PoZ7fhvCgVAz53iW3oPcyFZcNO844,4148
+zein/text/__init__.py,sha256=e7Xu8y9wxyOOmoivLsCFqpc4nzDHEpn4kE1qX1r1rOg,35
+zein/text/_utils.py,sha256=3rgIcwE2qDZaVtDDmK4F0UGHsPnD5CCXlbMksFVH9UM,1650
+zein/text/ar.py,sha256=tu6u7jkEwqCakQYACzRwObi-EClPtcznmk9UrBalPUU,3271
+zein/text/text_module.py,sha256=9JYCzy4wsCqUVzCeBGM3ETA2ssZmOlgC0AcNN-Gty_c,583
+zein-0.0.9.dist-info/LICENSE.txt,sha256=akXI8WkKu_iYTgC_-4CCIfwuyxQ523yIMW_Pp256JVM,1070
+zein-0.0.9.dist-info/METADATA,sha256=-YcArKhs4nSHDaCKGQxA8_tfuEFvnoH23e2ntwmh_mM,980
+zein-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+zein-0.0.9.dist-info/top_level.txt,sha256=9mQVA5YHGPBJAHrQoHVOIKKGCuWKLZ0TJiyRUAbL86k,5
+zein-0.0.9.dist-info/RECORD,,
