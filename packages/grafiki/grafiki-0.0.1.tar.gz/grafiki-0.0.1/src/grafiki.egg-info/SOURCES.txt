@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+src/__init__.py
+src/grafiki.egg-info/PKG-INFO
+src/grafiki.egg-info/SOURCES.txt
+src/grafiki.egg-info/dependency_links.txt
+src/grafiki.egg-info/top_level.txt
