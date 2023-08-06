@@ -1,0 +1,11 @@
+parameters:
+  - report.id
+fields:
+  -
+limit:
+  -
+sort:
+  -
+offset:
+  -
+url: /api/v1/report/{report.id}/delete
