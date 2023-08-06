@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/pytickertick.egg-info/PKG-INFO
+src/pytickertick.egg-info/SOURCES.txt
+src/pytickertick.egg-info/dependency_links.txt
+src/pytickertick.egg-info/top_level.txt
+src/tickertick/__init__.py
+src/tickertick/query.py
