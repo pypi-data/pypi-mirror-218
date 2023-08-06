@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+flet_timer/__init__.py
+flet_timer/flet_timer.py
+flet_timer.egg-info/PKG-INFO
+flet_timer.egg-info/SOURCES.txt
+flet_timer.egg-info/dependency_links.txt
+flet_timer.egg-info/not-zip-safe
+flet_timer.egg-info/requires.txt
+flet_timer.egg-info/top_level.txt
