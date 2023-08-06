@@ -1,0 +1,11 @@
+CHANGES
+=======
+
+0.10.11
+-------
+
+* update chunk size in order to make tidevice push faster
+* fix perf command, update socket.shutdown
+* fix: linux中长时间反复启动获取性能数据sokcet累增没有释放导致一段时间后ConnectionRefused无法再获取的现象
+* little update
+* hotfix for unexpected keyword argument chunked
