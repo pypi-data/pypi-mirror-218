@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/apifoncier.py
+src/apifoncier.egg-info/PKG-INFO
+src/apifoncier.egg-info/SOURCES.txt
+src/apifoncier.egg-info/dependency_links.txt
+src/apifoncier.egg-info/requires.txt
+src/apifoncier.egg-info/top_level.txt
