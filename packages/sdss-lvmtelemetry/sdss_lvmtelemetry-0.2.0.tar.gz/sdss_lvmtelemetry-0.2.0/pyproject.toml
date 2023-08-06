@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "sdss-lvmtelemetry"
+version = "0.2.0"
+description = "The package for lvmtelemetry"
+authors = ["Florian Briegel <briegel@mpia.de>"]
+maintainers = ["José Sánchez-Gallego <gallegoj@uw.edu>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://github.com/sdss/lvmtelemetry"
+repository = "https://github.com/sdss/lvmtelemetry"
+keywords = ["astronomy", "software"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+packages = [
+    { include = "lvmtelemetry", from = "python" }
+]
+include = ["python/lvmtelemetry/etc/*"]
+
+[tool.poetry.scripts]
+lvmtelemetry = "lvmtelemetry.__main__:main"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+sdss-clu = "^2.1.0"
+requests = "^2.31.0"
+httpx = "^0.24.1"
+
+[tool.poetry.dev-dependencies]
+ipython = ">=7.11.0"
+flake8 = ">=3.7.9"
+isort = ">=4.3.21"
+coverage = {version = ">=5.0", extras = ["toml"]}
+ipdb = ">=0.12.3"
+black = ">=23.1.0"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+fast = true
+
+[tool.isort]
+profile = "black"
+sections = ["FUTURE", "STDLIB", "TYPING", "THIRDPARTY", "SDSS", "FIRSTPARTY", "LOCALFOLDER"]
+default_section = "THIRDPARTY"
+known_first_party = "lvmtelemetry"
+known_typing = ["typing"]
+known_sdss = ["sdsstools", "clu"]
+lines_after_imports = 2
+
+[tool.pytest.ini_options]
+addopts = "--cov lvmtelemetry --cov-report xml --cov-report html --cov-report term"
+
+[tool.coverage.run]
+branch = true
+include = ["python/lvmtelemetry/*"]
+omit = [
+    "*/__init__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
