@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fastapi-storage
+Version: 1.0.0
+Summary: A small example package
+Home-page: https://mp.weixin.qq.com/s/9FQ-Tun5FbpBepBAsdY62w
+Author: xjaqil
+Author-email: 1203227985@qq.com
+License: BSD License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+# Fastapi Storage Package
+This is a simple example package. You can use
+
+[联系作者](https://mp.weixin.qq.com/s/9FQ-Tun5FbpBepBAsdY62w)
