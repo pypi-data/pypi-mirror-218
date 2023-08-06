@@ -1,0 +1,15 @@
+LICENSE,sha256=gHRtpjO9azMn2X3ENpKHIBNCwTltJ6L9LSjpIA3D35g,11346
+pycommons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycommons/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycommons/tests/__init__.py,sha256=g4r1XnoiYCZrWnMiiRpIQUYygkBzaan4tq4takWq4Fo,432
+pycommons/tests/case.py,sha256=q1hck_luMzwbXEvsao48KgfUuwX7fPGrv0apuQkyC3s,584
+pycommons/tests/condition.py,sha256=dx6ft9McN0pEjCxQotmnrPxW0T4WjqPU5uB4jhqZtbk,172
+pycommons/tests/exception.py,sha256=Bqh2wJocyLwCQlRD9kTVhd7VyPd3Ir47iw2smFIUyeg,385
+pycommons/tests/matcher/__init__.py,sha256=jh6b5Oy_w83-2GYymkxMKJMum0ygpniYiSbGL21tlFk,52
+pycommons/tests/matcher/matcher.py,sha256=qackP0MNyQcebsUzKsc_iYCmu3IuAnz5NcT09jNqoGQ,753
+pycommons/tests/parametrized.py,sha256=-P1MZ3JegI5mYiEwReiYWkOha-qtUZHZ_IEYsd2qVew,763
+pycommons/tests/utils.py,sha256=2zo_XHbl5L3uVio3Vub6G8wxhViibRdwU8fWk4cyRVs,234
+pycommons_tests-0.0.2.dist-info/LICENSE,sha256=gHRtpjO9azMn2X3ENpKHIBNCwTltJ6L9LSjpIA3D35g,11346
+pycommons_tests-0.0.2.dist-info/METADATA,sha256=iXA9Bw8ITpZbxB9o0TuOHpHTGdFOqyKzzkwL8baAzeE,1880
+pycommons_tests-0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pycommons_tests-0.0.2.dist-info/RECORD,,
