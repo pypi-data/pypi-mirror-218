@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: elf_inspector
+Version: 0.0.1
+Summary: A utility to inspect ELF binary files. Designed as a ScanCode plugin.
+Home-page: https://github.com/nexB/elf-inspector
+Author: nexB. Inc. and others
+Author-email: info@aboutcode.org
+License: Apache-2.0
+Keywords: utilities,elf,dwarf,debug-symbols,scancode
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: full
+Provides-Extra: testing
+Provides-Extra: docs
+License-File: apache-2.0.LICENSE
+License-File: NOTICE
+License-File: AUTHORS.rst
+License-File: CHANGELOG.rst
+License-File: CODE_OF_CONDUCT.rst
+
+elf-inspector
+=============
+
+elf-inspector is a set of utilities to inspect binary ELF files and collect
+interesting data from them. This is also a ScanCode-toolkit plugin.
