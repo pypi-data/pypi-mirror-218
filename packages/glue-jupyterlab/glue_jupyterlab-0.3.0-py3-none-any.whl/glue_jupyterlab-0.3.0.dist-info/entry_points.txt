@@ -1,0 +1,2 @@
+[jupyter_ydoc]
+glu = glue_jupyterlab.glue_ydoc:YGlue
