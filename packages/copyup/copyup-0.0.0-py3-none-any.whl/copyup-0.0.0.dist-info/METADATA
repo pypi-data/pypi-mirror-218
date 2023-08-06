@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: copyup
+Version: 0.0.0
+Summary: Copy project tooling changes back up to its associated Copier template
+Author-email: Blake Naccarato <blake.naccarato@gmail.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Changes, https://blakeNaccarato.github.io/copyup/changelog.html
+Project-URL: Docs, https://blakeNaccarato.github.io/copyup
+Project-URL: Home, https://github.com/blakeNaccarato/copyup
+Project-URL: Tracker, https://github.com/blakeNaccarato/copyup/issues
+
+# copyup
+
+Copy project tooling changes back up to its associated Copier template
+
