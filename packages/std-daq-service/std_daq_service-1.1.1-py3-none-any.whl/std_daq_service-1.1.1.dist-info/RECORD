@@ -1,0 +1,16 @@
+std_daq_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+std_daq_service/protocol.py,sha256=XD7WEMxnoO8QD3hILQqbdsqMNoKLZmMLFPqajSSTgto,843
+std_daq_service/start_utils.py,sha256=J4jQmAaUyab1QkmZ6xPot8dB0CKAXjXgrn9UXo4QzzA,1123
+std_daq_service/rest_v2/static/asset-manifest.json,sha256=MOUCRZ-6S7Ys41xvBwA2xPaROyFFWQMhVilhwjNtw1E,366
+std_daq_service/rest_v2/static/index.html,sha256=TFKlQRlfCvlvn5XFC2l0FYc9kJRws-PrGYEKrKZWNu8,452
+std_daq_service/rest_v2/static/manifest.json,sha256=EOHIL0DynLsPuFkm23Q9CBxdzJfJKY_l6O3fvZmZ5Pg,177
+std_daq_service/rest_v2/static/js/787.6a20824f.chunk.js,sha256=vYtfm43LQhaJk-F0-PEc2dzADjtT59EGcVsRzBlmO_Q,4615
+std_daq_service/rest_v2/static/js/787.6a20824f.chunk.js.map,sha256=7S5vIvVtwjy9lNics9k-7hND7abBmtP3_egh3uwqDs4,10592
+std_daq_service/rest_v2/static/js/main.9c6e0ea6.js,sha256=lUbt0tSAdrLZzvya1eVr6-bek9W4hgDkdgVt3tnRDJs,583555
+std_daq_service/rest_v2/static/js/main.9c6e0ea6.js.LICENSE.txt,sha256=vbE1vsni5T8NZH9Xm9qWOZuFXAsi9Kqv0RTq0jbIpG8,1960
+std_daq_service/rest_v2/static/js/main.9c6e0ea6.js.map,sha256=hHKs_PMcoS53dJqOuzpCvuIGi78CduX2q3QiRbkVZbE,2414085
+std_daq_service-1.1.1.dist-info/METADATA,sha256=rDuLurJW7eLjZ5eQrbjS7VvZvNVjiVlEpN_EHCPdpME,11423
+std_daq_service-1.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+std_daq_service-1.1.1.dist-info/entry_points.txt,sha256=pbJ9m4xxTZGljKvBnpVSHk4G79E_g-wrjJoZqVTyGwk,953
+std_daq_service-1.1.1.dist-info/top_level.txt,sha256=a5pmNSFa5dNuuQoEp3FbY8t_LvsbKseckb5_R-4i5dQ,16
+std_daq_service-1.1.1.dist-info/RECORD,,
