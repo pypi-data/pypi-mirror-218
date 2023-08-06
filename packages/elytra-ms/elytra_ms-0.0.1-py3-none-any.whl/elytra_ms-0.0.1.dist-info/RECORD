@@ -1,0 +1,10 @@
+elytra/__init__.py,sha256=Sx8KJY33xaB4gSferZcJhxQI0uhSAgq1H5OnNFbc7DQ,139
+elytra/const.py,sha256=hbMk8lPJD8zkcoZQ6PsOuHS047UbNBi1RG5lOFk8s1s,248
+elytra/core.py,sha256=nLH85-E1EWlSJG7lc255ETLuY9s9VaZ5nuE57YN5NBI,14263
+elytra/protocols.py,sha256=XBIr63lqmL5MxaUhHQvdCmaCSBcOghK8-X0yMl0L6OM,1449
+elytra_ms-0.0.1.dist-info/LICENSE,sha256=HHtKN24bPM2K7lTif1L445E9ivZNcY1pNF23WmU_hHk,1063
+elytra_ms-0.0.1.dist-info/METADATA,sha256=Z9KxcnYZnFVw59JDtmaw8qUG7fH_ueOdP1cU1fcgfss,2403
+elytra_ms-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+elytra_ms-0.0.1.dist-info/entry_points.txt,sha256=nGmzZylt4HRpEzvtIu2xo3UljhvwdGnT-grnoqhSDX0,73
+elytra_ms-0.0.1.dist-info/top_level.txt,sha256=0jqReu_sF9_g_Zzj5WNUjLbM_CmBLUDR2wYSA1b7s_U,7
+elytra_ms-0.0.1.dist-info/RECORD,,
