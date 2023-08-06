@@ -1,0 +1,14 @@
+winnie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winnie/byteops.py,sha256=WysUKMGSYECQNUdeMtOKa0-vi0Z7q3Jse3B1DNtL3rE,594
+winnie/connection.py,sha256=WEAtRgubydtFV15bG8gQ2IOqt6Q0_ty34xye9z7lmP0,6490
+winnie/constants.py,sha256=DTCMGd-4-Xy7WvbUw_7j1PYbk4S1UlE7pLZpDRAu2Sk,1131
+winnie/formatting.py,sha256=KbAQrx55vj9wqgvvXSAwpM0NGNeeDjg8PK5roi3e5kM,238
+winnie/listops.py,sha256=gLLQMl8CI177jSqeMGj87ar-wu8ATblyhvXAALgf9Es,650
+winnie/resourceMask.py,sha256=XzmhPy5Lfm211uK5mZ0MJvIt5zo5EIfHK3ZECB30XnE,630
+winnie/sessionStatus.py,sha256=GCzE80sXqMC9_pja7Pa0CWn_lKixQMMHHiWB6dleai8,708
+winnie/verification.py,sha256=t80DJlYyx1NocuoxhJaCnxdPKDnfg-cddjUn3RTF7cc,1514
+winnie-0.0.6.dist-info/LICENSE,sha256=5jYUx7DXsKMTN8oC8ldJbkcxUGiel0e9VFszOaBxmGs,1065
+winnie-0.0.6.dist-info/METADATA,sha256=x7SbJ30Qqp-d-655Z3JcKvhAXCK4Cko5N78Kb7tNG_M,1062
+winnie-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+winnie-0.0.6.dist-info/top_level.txt,sha256=XC9sK95ug8yMcBO4DeXXudZIrT8132SkHEdlBIecfUg,7
+winnie-0.0.6.dist-info/RECORD,,
