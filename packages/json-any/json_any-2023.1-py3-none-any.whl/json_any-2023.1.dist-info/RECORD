@@ -1,0 +1,13 @@
+json_any/__init__.py,sha256=Jd7pM3Okd5UQef7iPrBaap-BHuL4P8hxb2ieYNBKgfs,1744
+json_any/constant.py,sha256=KAhRc0T0UScMtPJTKpPlPMjfibpqi4-7p814t9Go5x0,2882
+json_any/json_to_object.py,sha256=0iqX-60mk4gteVGZIu1zua5xOM7ZJobweFtg8JTTL04,9304
+json_any/numpy.py,sha256=ZEtLPuj-lNEtoiH7uPneH3gYq6cRp7f6LmnTqPC98sc,6528
+json_any/object_to_json.py,sha256=ULx8sWBIi4ViKcevEB5YBP_YrHGGpqnvLZCv5o5j8i0,14277
+json_any/type.py,sha256=0BA63FWX45syJM_LMnhvyqL5tuBhp2OpYWBFaZzkhM8,3666
+json_any/version.py,sha256=b0x4MKYWqBCud7NjOhKgwaptp_MkV1TyG6ve0zdxq6s,1575
+json_any/catalog/module.py,sha256=BsMn5OszJ-ZrtegtxNbJDFpBrajqelXZQ-pA307s3mM,2192
+json_any/catalog/type.py,sha256=b3aP1qOxqDx8OiFyykJQFv462VwvTmwRN-yCBpdIBXA,2848
+json_any-2023.1.dist-info/METADATA,sha256=saF1idzT1NiQlrFH4ntT_OKVFGfuO1JOWTI0p0V_J-A,4220
+json_any-2023.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+json_any-2023.1.dist-info/top_level.txt,sha256=73iJcxIv_S7PfF2R-TtGSymeBhyzQGKt2ZdtdOBfGzU,9
+json_any-2023.1.dist-info/RECORD,,
