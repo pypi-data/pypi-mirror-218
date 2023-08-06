@@ -1,0 +1,49 @@
+fastparquet
+google-auth
+google-auth-oauthlib
+google-api-python-client
+googleapis-common-protos
+numpy
+oauthlib
+pandas
+Pillow
+pytz
+Shapely
+simplekml
+s3fs
+xmltodict
+requests
+pdoc
+Cython
+opencv-python
+imageio
+scipy
+jplephem
+pyephem
+gitpython
+astropy
+basemap
+basemap-data-hires
+
+[:platform_machine != "aarch64"]
+pyqt5
+
+[:python_version <= "3.8"]
+matplotlib==3.3.2
+
+[:python_version <= "3.8" and platform_machine != "armv7"]
+pyproj==2.6.1.post1
+
+[:python_version <= "3.8" and platform_machine == "armv7"]
+pyproj==1.9.6
+
+[:python_version > "3.8"]
+matplotlib
+pyproj
+
+[dev]
+bumpver
+gitpython
+behave
+pytest
+pip-tools
