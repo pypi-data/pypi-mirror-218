@@ -1,0 +1,2 @@
+# snowflake-utilities
+A package designed to make working with Snowflake easier. It uses the [snowflake connector](https://docs.snowflake.com/en/developer-guide/python-connector/python-connector) for python in order to setup up and maintain databases and tables in snowflake.

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: snowflake-utilities
+Version: 0.0.1
+Summary: A package designed to make working with Snowflake easier.
+Home-page: https://github.com/jameshtwose/learning-snowflake
+Author: James Twose
+Author-email: contact@jamestwose.com
+License: BSD (3-clause)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# snowflake-utilities
+A package designed to make working with Snowflake easier. It uses the [snowflake connector](https://docs.snowflake.com/en/developer-guide/python-connector/python-connector) for python in order to setup up and maintain databases and tables in snowflake.

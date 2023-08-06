@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+snowflake_utilities/__init__.py
+snowflake_utilities/create.py
+snowflake_utilities/upload.py
+snowflake_utilities/utils.py
+snowflake_utilities.egg-info/PKG-INFO
+snowflake_utilities.egg-info/SOURCES.txt
+snowflake_utilities.egg-info/dependency_links.txt
+snowflake_utilities.egg-info/requires.txt
+snowflake_utilities.egg-info/top_level.txt
+tests/__init__.py
+tests/utils/__init__.py
+tests/utils/test_check_resource_viable.py
