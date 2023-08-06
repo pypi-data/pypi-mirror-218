@@ -1,0 +1,3 @@
+[console_scripts]
+karaoke-generator=karaoke_generator.utils.cli:main
+
