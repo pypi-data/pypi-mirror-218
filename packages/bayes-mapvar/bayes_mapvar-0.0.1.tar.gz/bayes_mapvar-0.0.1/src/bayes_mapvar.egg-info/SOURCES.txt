@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/bayes_mapvar/__init__.py
+src/bayes_mapvar/exceptions.py
+src/bayes_mapvar/map_utils.py
+src/bayes_mapvar/mapvar.py
+src/bayes_mapvar/var_utils.py
+src/bayes_mapvar.egg-info/PKG-INFO
+src/bayes_mapvar.egg-info/SOURCES.txt
+src/bayes_mapvar.egg-info/dependency_links.txt
+src/bayes_mapvar.egg-info/requires.txt
+src/bayes_mapvar.egg-info/top_level.txt
+tests/test_utils.py
