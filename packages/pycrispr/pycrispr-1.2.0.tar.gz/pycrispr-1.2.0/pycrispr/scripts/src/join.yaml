@@ -1,0 +1,6 @@
+name: join
+channels:
+  - annaconda
+  - conda-forge
+dependencies:
+  - python=3.10
