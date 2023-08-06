@@ -1,0 +1,4 @@
+hspylib
+retry
+PyMySQL
+redis
