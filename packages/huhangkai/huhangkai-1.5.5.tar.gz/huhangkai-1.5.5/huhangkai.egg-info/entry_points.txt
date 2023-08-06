@@ -1,0 +1,4 @@
+[console_scripts]
+hhk = commen.init_project:main
+init = commen.init_project:main
+
