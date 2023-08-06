@@ -1,0 +1,14 @@
+pytest_examples/__init__.py,sha256=gTv0h55ELzz2O39bRkKd2F8cPyF_9XE62eXq8PLJRnU,1867
+pytest_examples/config.py,sha256=O-uFWmWZDo5seXoWmGwUbH-QVlCgm9ABEVzUt6m8Y8U,3113
+pytest_examples/eval_example.py,sha256=-SFAR2fsyNwv1Qm2z3oDI5Cgatvx04IufpZKa9zkvUU,9145
+pytest_examples/find_examples.py,sha256=kedk_PPmrwd0MDFUh8p4Vry-1e2WELKe0cKRn-WN3YE,6212
+pytest_examples/lint.py,sha256=HUeuDBQzu1zz0VsrnWovgwdWAs5eu5dY_3EeJFulzcA,3224
+pytest_examples/modify_files.py,sha256=-S6wdBDnNl5RbBozWpZ8fVGSRbjFCPXMaY2N2IxTqp0,1899
+pytest_examples/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_examples/run_code.py,sha256=VPafnjpnkzydVdShrjAcmYzIPOFQbyL8Lazr5Ce-MCE,11645
+pytest_examples/traceback.py,sha256=8cKa4TCMqj2cJWCW-p0b_frYPy8C_zKN1_uEzq86otA,3672
+pytest_examples-0.0.10.dist-info/METADATA,sha256=zIoC7y0jX59JdhKGXRZccSNYTtS-88papxSr4MDxpic,4363
+pytest_examples-0.0.10.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+pytest_examples-0.0.10.dist-info/entry_points.txt,sha256=juRo605UZuEMwRDKOZC8OmpowCiC3EFsC8HB1GIWLpY,38
+pytest_examples-0.0.10.dist-info/licenses/LICENSE,sha256=dPSZ0krnk8h6WEpGhhSkKhw5iLXgEJ6sEJqV3Vk11b0,1105
+pytest_examples-0.0.10.dist-info/RECORD,,
