@@ -1,0 +1,12 @@
+phi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phi/base.py,sha256=b-I-2te2EygkaPnEyKw2zBOivwAk1Tjtggu_r0KwTZc,5696
+phi/constants.py,sha256=UhnvOf-GfUPb8lhgwcdxh4JKVlLfNum6oTSe4KpMlRw,696
+phidata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phidata/base.py,sha256=Ga3ROnzVed1bjW1bHfFnvsmx9wPHV0wbvQ8YKCCqGJE,1305
+phidata/constants.py,sha256=FtHwz90hYtGdBB3F6uUhC7ET3AX7qa6AqUcdq8wZsNU,1178
+phidata-2.0.0.dev2.dist-info/LICENSE,sha256=BokhNka0tb5O9e-JeTQOyhIh6KtkxQMJA9xjm8sP8bo,16759
+phidata-2.0.0.dev2.dist-info/METADATA,sha256=MV8l557xuk8tXXwxBIa68mTxwWDvtFXMSUxWFV_YI4g,3678
+phidata-2.0.0.dev2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+phidata-2.0.0.dev2.dist-info/entry_points.txt,sha256=dW-e_LDFGQ8nZ9oj5vdqKnZ1y-jz4_VrtXfNXjlXYWw,51
+phidata-2.0.0.dev2.dist-info/top_level.txt,sha256=x-YH2RohB2S9O2MrYdPpJf3i8rxaIlHtkBNUL3ySz1o,12
+phidata-2.0.0.dev2.dist-info/RECORD,,
