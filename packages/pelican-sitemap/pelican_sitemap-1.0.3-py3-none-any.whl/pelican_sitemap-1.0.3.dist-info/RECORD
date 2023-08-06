@@ -1,0 +1,7 @@
+pelican/plugins/sitemap/__init__.py,sha256=0H4tJoEkjgPCOhn0kT9luQh5WdGWCV7w10TPaIZq0vw,37
+pelican/plugins/sitemap/sitemap.py,sha256=33jt9ZwdL_w2XCEYFbw3ycEiHoxDpK5ZJ8OqT8Rbt5M,9896
+pelican/plugins/sitemap/test_data/article1.md,sha256=IoS5DiGbFokAyPqwJgXxxp4WXk8P3ZfM9539tGRxQsI,157
+pelican/plugins/sitemap/test_sitemap.py,sha256=y3pBOBjgLC5pyxgeYxlqCxxg4qAAR7h8tL1MBGrl26Y,636
+pelican_sitemap-1.0.3.dist-info/METADATA,sha256=MNqbJuieaw826Miou9nsP4OSlcrmpTfOm2D8d-B_0h8,4801
+pelican_sitemap-1.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pelican_sitemap-1.0.3.dist-info/RECORD,,
