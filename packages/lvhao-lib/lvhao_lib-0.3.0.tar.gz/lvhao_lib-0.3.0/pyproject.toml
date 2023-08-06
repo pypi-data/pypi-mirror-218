@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lvhao_lib"
+version = "0.3.0"
+description = ""
+authors = ["lvhao <clvhao@foxmail.com>"]
+readme = "README.md"
+packages = [{include = "my_lib"}]
+include = [{path = "lib"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.25.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
