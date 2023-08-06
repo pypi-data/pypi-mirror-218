@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: ctlog
+Version: 0.6.0
+Summary: SAT-Based Combinatorial Testing in Python
+Home-page: http://ulog.udl.cat/software/
+Author: Logic and Optimization Group
+Author-email: 
+License: UNKNOWN
+Keywords: combinatorial-testing sat maxsat constraint
+Platform: Linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: optilog (>=0.5.0)
+Requires-Dist: nimporter (==1.1.0)
+Requires-Dist: psutil
+Requires-Dist: pyzlic
+Requires-Dist: sly (==0.4)
+
+CTLog: SAT-Based Combinatorial Testing in Python
+================================================
+
+*Full documentation available [online](http://hardlog.udl.cat/static/doc/ctlog/html/index.html)*.
+
+**CTLog** is a complete framework for Combinatorial Testing of Constrained Systems Under Test developed by the [Logic & Optimization Group (LOG)](http://ulog.udl.cat/) at the University of Lleida.
+It uses Satisfiability (SAT) technology through the [OptiLog](http://hardlog.udl.cat/static/doc/optilog/html/index.html) Python framework, also developed and mantained by the same research group.
+
+CTLog implements all the algorithms that we developed in our research, such as ``MaxSAT MCAC`` and ``maxsat-its`` and all the family of the ``BOT-its`` algorithms.
+It also implements several state-of-the-art algorithms for generating Mixed Covering Arrays with Constraints, such as ``IPOG`` or ``CALOT``.
+
+Additionally, we provide the ``SUT-G`` generator, which can be used to generate new Constrained Systems Under Tests where all these MCAC algorithms can be applied.
+
+Installation
+------------
+
+CTLog currently supports Python versions 3.6, 3.7, 3.8, 3.9 and 3.10 for Linux.
+Wheels are provided through PyPI, you can install CTLog directly with pip:
+
+```
+pip3 install ctlog
+```
+
+CTLog also requires a software license, which must be placed in your ``${HOME}`` directory under the name ``.ctlog.lic``.
+You can download a valid license for academic uses [here](http://ulog.udl.cat/static/doc/ctlog/html/_downloads/4b128e63e5ed9cb255d977360be6b873/ctlog.lic) , which is valid until **September 27, 2023**.
+
+Before using CTLog please read our [license](http://ulog.udl.cat/static/doc/ctlog/html/ctlog/license.html) carefully.
+If you need CTLog for industrial scenarios please contact us.
+
+If you use CTLog in your research please cite our work:
+    
+    @article{DBLP:journals/corr/abs-2105-12552,
+        title    = {Incomplete {MaxSAT} approaches for combinatorial testing},
+        volume   = {28},
+        issn     = {1572-9397},
+        url      = {https://doi.org/10.1007/s10732-022-09495-3},
+        doi      = {10.1007/s10732-022-09495-3},
+        language = {en},
+        number   = {4},
+        urldate  = {2022-09-02},
+        journal  = {Journal of Heuristics},
+        author   = {Ansótegui, Carlos and Manyà, Felip and Ojeda, Jesus and Salvia, Josep M. and Torres, Eduard},
+        month    = aug,
+        year     = {2022},
+        keywords = {Combinatorial testing, Constraint programming, Maximum satisfiability},
+        pages    = {377--431}
+    }
+
