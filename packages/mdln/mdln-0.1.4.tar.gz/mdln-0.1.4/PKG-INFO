@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mdln
+Version: 0.1.4
+Summary: A lightweight, high performance, and object-focused 2D game framework in Python
+Home-page: https://github.com/qwertyquerty/MDLN
+Author: Madeline
+License: MIT
+Project-URL: Documentation, https://github.com/qwertyquerty/MDLN
+Keywords: mdln game engine pygame entity component framework
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MDLN
+
+> Madeline Doesn't Like Naming
+
+A lightweight, high performance, and object-focused 2D game framework in Python
+
+### General Structure Plan
+
+- [x] Game
+    - [x] Screen
+    - [x] Window
+    - [x] Clock
+    - [x] Scene
+        - [x] Stages [ ... ]
+            - [x] Entites [ ... ]
+                - [x] Icon
+                    - [x] sprite map
+                    - [x] icon states
+                - [x] Layer
+                - [x] Rect
+                - [ ] Components [ ... ]
+        - [ ] Mixer
+    - [ ] Systems [ ... ]
+    - [x] Event Handlers [ ... ]
+
+*Documentation coming soon..*
