@@ -1,0 +1,3 @@
+Jinja2>=3.0.3
+mysqlx>=1.3.7
+mysql-connector-python>=8.0.20
