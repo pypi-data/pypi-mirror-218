@@ -1,0 +1,69 @@
+[project]
+name = "ttr.aws.utils.s3"
+dynamic = []
+authors = [
+    { name = "Jan Vlcinsky" },
+    { email = "jan.vlcinsky@tamtamresearch.com" },
+]
+description = "CLI to list and fetch objects from versioned S3 buckets. Plus get tmp url."
+readme = "README.rst"
+keywords = [
+    "aws",
+    "s3",
+]
+classifier = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Communications :: File Sharing",
+    "Topic :: System :: Archiving",
+    "Topic :: System :: Archiving :: Backup",
+    "Topic :: System :: Recovery Tools",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "PyYAML==6.0",
+    "boto3==1.26.165",
+    "plac==1.3.5",
+    "python-dateutil==2.8.2",
+    "pytz",
+]
+requires-python = ">=3.8"
+version = "0.6.1"
+
+[project.license]
+text = "BSD"
+
+[project.optional-dependencies]
+test = [
+    "pendulum==2.1.2",
+    "pytest==7.4.0",
+]
+
+[project.urls]
+homepage = "https://gitlab.com/tamtamresearch-public/pypi/ttr.aws.utils.s3"
+
+[project.scripts]
+s3lsvers = "ttr.aws.utils.s3.cli.lsvers:placer"
+s3getvers = "ttr.aws.utils.s3.cli.getvers:placer"
+s3tmpgen = "ttr.aws.utils.s3.cli.tmpgen:placer"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.build]
+includes = [
+    "ttr",
+]
+
+[tool.pdm.version]
+source = "scm"
