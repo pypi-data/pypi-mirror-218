@@ -1,0 +1,236 @@
+Metadata-Version: 2.1
+Name: svc-reg
+Version: 0.1.dev1
+Summary: A universal service registry.
+Project-URL: Documentation, https://svc-reg.hynek.me
+Project-URL: Source, https://github.com/hynek/svc-reg
+Project-URL: Changelog, https://github.com/hynek/svc-reg/blob/main/CHANGELOG.md
+Project-URL: Funding, https://github.com/sponsors/hynek
+Author-email: Hynek Schlawack <hs@ox.cx>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: dependency injection
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: attrs
+Provides-Extra: dev
+Requires-Dist: flask; extra == 'dev'
+Requires-Dist: svc-reg[tests,typing]; extra == 'dev'
+Requires-Dist: tox>4; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Provides-Extra: typing
+Requires-Dist: flask; extra == 'typing'
+Requires-Dist: mypy>=1.4; extra == 'typing'
+Description-Content-Type: text/markdown
+
+# A Service Registry for Dependency Injection
+
+> **Warning**
+> ☠️ Not ready yet! ☠️
+
+*svc-reg* is a service registry for Python that lets you register factories for certain types and then create instances of those types.
+
+This allows you to store resources and their factories in one central place and access them in a consistent way.
+This enables dependency injection, simplifies testing, unifies cleanups, and allows for easy health checks across all resources.
+
+It's up to you whether you want to use thread-local global variable magic like Flask has popularized or not.
+
+---
+
+*svc-reg* has two core concepts:
+
+A **Registry** allows to register factories for certain types.
+It lives as long as you application lives.
+
+It is possible to register either factories or values:
+
+```python
+import svc_reg
+from datetime import datetime
+
+reg = svc_reg.Registry()
+
+# Will call `datetime.now()` when asked for a `datetime`` instance.
+reg.register_factory(datetime, datetime.now)
+# Will return "Hello World" when asked for a `str`` instance.
+reg.register_value(str, "Hello World")
+```
+
+The values and return values of the factories don't have to be actually instances of the type they're registered for.
+But the types must be *hashable*.
+
+A **Container** belongs to a Registry and allows to create instances of the registered types:
+
+```python
+container = svc_reg.Container(reg)
+
+container.get(datetime)  # Returns a new datetime instance.
+container.get(datetime)  # Returns the SAME datetime instance!
+container.get(str)       # Returns "Hello World".
+```
+
+It lives as long as you want the instances to live -- e.g. as long as a request lives.
+At the end the you run `container.cleanup()` to cleanup all instances that the container has created.
+You can use this to close database connections, et cetera.
+
+Additionally, each registered service may have a `ping` callable that can be used in a health check.
+You can ask for all pingable registered services with `container.get_pings()`.
+This returns a list of `ServicePing` objects that currently have a name property to identify the ping and a `ping` method that instantiates the service, adds it to the cleanup list, and runs the ping.
+
+Importantly: It is possible to overwrite registered service factories later -- e.g. for testing.
+
+---
+
+Generally speaking, the `Registry` object should live on an application-scoped object like Flask's `app.config` object.
+On the other hand, the `Container` object should live on a request-scoped object like Flask's `g` object or Pyramid's `request` object.
+
+
+## Flask Example
+
+*svc-reg* has grown from my frustration of the repetitiveness of using the `get_x` that creates an `x` and then stores it on the `g` object.
+
+Therefore it comes with Flask support out of the box in the form of the `svc_reg.flask` module.
+
+You can add support for *svc-reg* by calling `svc_reg.flask.init_app(app)` in your [*application factory*](https://flask.palletsprojects.com/en/latest/patterns/appfactories/).
+For instance to create a factory that uses an SQLAlchemy Engine to create Connections, you could do this:
+
+```python
+from flask import Flask
+from sqlalchemy import Connection
+from sqlalchemy.sql import text
+
+import svc_reg
+
+
+def create_app(config_filename):
+    app = Flask(__name__)
+    app.config.from_pyfile(config_filename)
+
+    # Set up the registry using Flask integration.
+    reg = svc_reg.Registry()
+    app = svc_reg.flask.init_app(app, reg)
+
+    # The registry lives in app.config["svc_registry"] now. If you don't pass it
+    # explicitly, init_app creates one for you.
+
+    # Now, register a factory that calls `engine.connect()` if you ask for a
+    # Connections and `connection.close()` on cleanup.
+    # If you ask for a ping, it will run `SELECT 1` on a new connection and
+    # cleanup the connection behind itself.
+    engine = create_engine("postgresql://localhost")
+    ping = text("SELECT 1")
+    reg.register_factory(
+        Connection,
+        engine.connect,
+        cleanup=lambda conn: conn.close(),
+        ping=ping
+    )
+
+    from yourapplication.views.admin import admin
+    from yourapplication.views.frontend import frontend
+    app.register_blueprint(admin)
+    app.register_blueprint(frontend)
+
+    return app
+```
+
+Now you can request the `Connection` object in your views:
+
+```python
+@app.route("/")
+def index():
+    conn: Connection = svc_reg.flask.get(Connection)
+```
+
+If you have an health endpoint, it could look like this:
+
+```python
+@bp.get("healthy")
+def healthy() -> flask.ResponseValue:
+    """
+    Ping all external services.
+    """
+    ok: list[str] = []
+    failing: list[dict[str, str]] = []
+    code = 200
+
+    for svc in services.get_pings():
+        try:
+            svc.ping()
+            ok.append(svc.name)
+        except Exception as e:
+            failing.append({svc.name: repr(e)})
+            code = 500
+
+    return {"ok": ok, "failing": failing}, code
+```
+
+### Testing
+
+Now if you want the database to return a Mocked Connection, you can do this:
+
+```python
+from unittest.mock import Mock
+
+def test_handles_db_failure():
+    """
+    If the database raises an exception, the endpoint should return a 500.
+    """
+    app = create_app("test.cfg")
+    with app.app_context():
+        conn = Mock(spec=Connection)
+        conn.execute.side_effect = Exception("Database is down!")
+
+        # Overwrite the Connection factory with the Mock.
+        # This is all it takes to mock the database.
+        reg_svc.flask.register_value(Connection, conn)
+
+        # Now, the endpoint should return a 500.
+        response = app.test_client().get("/")
+        assert response.status_code == 500
+```
+
+
+### Quality of Life
+
+In practice, you can simplify / beautify the code within your views by creating a `services` module that re-exports those Flask helpers.
+
+Say this is `app/services.py`:
+
+```python
+from svc_reg.flask import get, get_pings
+
+__all__ = ["get", "get_pings"]
+```
+
+Now you can write in your views:
+
+```python
+from app import services
+
+@app.route("/")
+def index():
+    conn: Connection = services.get(Connection)
+```
+
+🧑‍🍳💋
+
+
+## Caveats
+
+One would expect the the `Container.get()` method would have a type signature like `get(type: type[T]) -> T`.
+Unfortunately, that's currently impossible, because it [precludes the usage of `Protocols` as service types](https://github.com/python/mypy/issues/4717) which would make the package pointless.
+
+Therefore it returns `Any` and until Mypy changes its stance, you have to use it like this:
+
+```python
+conn: Connection = container.get(Connection)
+```
