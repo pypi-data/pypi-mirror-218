@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lbvh
+Version: 0.0.12
+Summary: A small bounding volume hierarchy implementation
+Author-Email: Sam Mish <samuelpmish@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/samuelpmish/LBVH
+Project-URL: Bug tracker, https://github.com/samuelpmish/LBVH/issues
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# LBVH
+
+An implementation of the LBVH algorithm described in these blog posts:
+
+https://developer.nvidia.com/blog/thinking-parallel-part-i-collision-detection-gpu/
+https://developer.nvidia.com/blog/thinking-parallel-part-ii-tree-traversal-gpu/
+https://developer.nvidia.com/blog/thinking-parallel-part-iii-tree-construction-gpu/
+
+For now, it's CPU only, but it does include python and Mathematica bindings
