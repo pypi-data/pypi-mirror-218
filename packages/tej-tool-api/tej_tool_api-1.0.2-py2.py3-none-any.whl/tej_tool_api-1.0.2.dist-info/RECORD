@@ -1,0 +1,12 @@
+TejToolAPI/Error.py,sha256=FJIEpLxuKlDdHL9sbAmizuK1bcJGgNrHbkTd1OZwcRo,197
+TejToolAPI/Map_Dask_API.py,sha256=rTaR0Xr3PD2CrvM1UAqmXRliV2bnjzd-6gDkOUZi_MI,17148
+TejToolAPI/TejToolAPI.py,sha256=AMnGPASMMbz6Bez_lf88rYr2vMVgLSjnyp0GQzmfcAs,11098
+TejToolAPI/__init__.py,sha256=-ATo4-xOvn-1ay3pKcE8NqscDJrcWftGD-Q2Xyr1mqY,582
+TejToolAPI/exchange_calendar.py,sha256=P0qbnPp_OHQiDfD3ONRI7OR5v60gOoka7T0Ekn1ROOk,2329
+TejToolAPI/parameters.py,sha256=2vcNzt2z5IBiTsaM0PplQ9qx664fs_VumK1Jz_8CAzY,1381
+TejToolAPI/tables/columns_group.xlsx,sha256=f5F8kRJoSyJeVDVCCS7nuUYVPWMrJIrKODkHCod3Bkc,38860
+TejToolAPI/tables/mktboard.csv,sha256=6zdQTKXRMziB864wdkAIMWUdCN8IpaGw2HCXNddD6fg,137941
+tej_tool_api-1.0.2.dist-info/METADATA,sha256=Svuyo3E0LAHPqkeR4Fd4bR5TgVe0SRBxj4-nIyeXKjk,5589
+tej_tool_api-1.0.2.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tej_tool_api-1.0.2.dist-info/top_level.txt,sha256=dW2x_WwBVlKi0xv_ogQ8cxd8-71igtrC6GmqOF2o6WI,22
+tej_tool_api-1.0.2.dist-info/RECORD,,
