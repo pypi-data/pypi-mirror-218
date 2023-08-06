@@ -1,0 +1,4 @@
+numpy~=1.22.0
+python-igraph
+pulp~=2.3
+bioconsertinc>=1.0.0
