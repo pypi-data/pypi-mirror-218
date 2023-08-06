@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: thiggle
+Version: 0.0.2
+Summary: A Python library for interacting with the Thiggle API.
+License: Apache-2.0
+Keywords: llm,ai,prompt,large language models,gpt-3,chatgpt
+Author: Matt Rickard
+Author-email: pypi@matt-rickard.com
+Maintainer: Matt Rickard
+Maintainer-email: pypi@matt-rickard.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: requests (>=2,<3)
+Project-URL: repository, https://github.com/thiggle/api
+Description-Content-Type: text/markdown
+
+# Thiggle Python
+
