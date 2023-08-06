@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "artGridDownloader"
+version = "0.1.0"
+description = "Ferramenta para baixar vídeos do artGrid sem registro"
+authors = ["RaphaP3 <rapha.pego@gmail.com>"]
+license = "Proprietary"
+keywords = ["artgrid", "download", "ffmpeg", "poetry", "downloader"]
+readme = 'README.md'
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.scripts]
+artgrid = 'src.main:run'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.10.0"
+python-ffmpeg = "^2.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
