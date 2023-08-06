@@ -1,0 +1,6 @@
+[report]
+include =
+    src/imio/dashboard/*
+omit =
+    */test*
+    */__init__.py
