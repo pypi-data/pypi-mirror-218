@@ -1,0 +1,10 @@
+qvsed/__init__.py,sha256=1-BT2UDdqC93JzNsznGCqQ2IFBsFkx7FRDvWef59z0k,50
+qvsed/config_default.py,sha256=DZlpna4uvR5A_plAnjfkKcOPhSX-96fmFlo8Vioy7PQ,383
+qvsed/qvsed.py,sha256=5crkxWpxpuPZuVBOfuCkXVQEJ7Uh34NW_CzRVhz5bxw,14233
+qvsed/qvsed.ui,sha256=lIRUJv3MxsXMZpUlVz_QpangP7eshSY39RF61EAMUwg,9193
+qvsed-1.3.5.dist-info/LICENSE.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+qvsed-1.3.5.dist-info/METADATA,sha256=w4vzZylJjasNOLvY_GOHj0fvZm6mw6pNbcBTGaAQ03I,1285
+qvsed-1.3.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+qvsed-1.3.5.dist-info/entry_points.txt,sha256=ph7JeepNAJ8OxqTizV5uKR9YquSxsVh6OCi_YRa-zAQ,39
+qvsed-1.3.5.dist-info/top_level.txt,sha256=zzXggBQOicFv9r2ctMNJx63xUYNwYiaFx8JIHR2Pz9g,6
+qvsed-1.3.5.dist-info/RECORD,,
