@@ -1,0 +1,20 @@
+promptrix
+accelerate
+aiounittest
+cerberus
+openai
+nltk
+pyyaml
+pyee
+selenium
+termcolor
+requests
+tiktoken
+toml
+wordfreq
+tenacity
+transformers
+torch
+
+[:python_version < "3.9"]
+importlib-metadata
