@@ -1,0 +1,11 @@
+drb/drivers/swift/__init__.py,sha256=MTiki0VF8YhRcMe54Z7d5LiZhBjyf1Akzbx1Bc4pOo0,285
+drb/drivers/swift/_version.py,sha256=CZiHyKe3mTHwWPs7wtcSliAJ7WQtq0SZ5ZsNFftfkyM,497
+drb/drivers/swift/swift.py,sha256=YAzNUCR4vSXOFLyNd0TZTfNtgqDy106wV6zlaIyNpGc,14507
+drb/topics/swift/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drb/topics/swift/cortex.yml,sha256=bdwJ1pXvmWhtWGcI948sCurxSYQP28c9LRyNKs64338,164
+drb_driver_swift-1.2.0.dist-info/LICENCE.txt,sha256=RzxtV7MG0zbF6dDvQsaZ1OKsHZ7CRyeILenjUIol5rs,7651
+drb_driver_swift-1.2.0.dist-info/METADATA,sha256=c76QiTP86aLgK6h3HlxiQ_J0Ztj6GvVYK8DbOetuch4,2776
+drb_driver_swift-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+drb_driver_swift-1.2.0.dist-info/entry_points.txt,sha256=Dai3NeJr1KuUwANpIzU72ILAKwcIf41YEOpoKlQxpEs,94
+drb_driver_swift-1.2.0.dist-info/top_level.txt,sha256=tp7x0jo6KHy7P4LzX36tRyB2qZR7OiCZCAQGzrq25E0,4
+drb_driver_swift-1.2.0.dist-info/RECORD,,
