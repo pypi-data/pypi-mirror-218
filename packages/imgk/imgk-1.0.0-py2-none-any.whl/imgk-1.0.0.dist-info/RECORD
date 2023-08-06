@@ -1,0 +1,12 @@
+imgk/__init__.py,sha256=UJ-jGqFZEaWWYbFXdWjmqFt4ANA5haDBoEdIuuxWGGI,566
+imgk/utils.py,sha256=EwODOgLB7xh26q9oC7avbmvilrZjN3884RAi1I-oLWA,145
+imgk/commands/__init__.py,sha256=kRvuhOTMwPt-59eGXsB_rhJHoMo_VrjhhVG3AqT3mhI,32
+imgk/commands/convert.py,sha256=wKI3NiNwlMNpr9ncwM6MNG6UVcfGwn01oXKrQ-IiYsU,632
+imgk/commands/crop.py,sha256=M32gAvOR-XXPIYVIM9Jn8_ktOGSLWFWHlb_Om0qiuLg,933
+imgk/commands/filter.py,sha256=1sHH784uqAGIYbsqlfjmJlf_PffTbwSCN9Ba37fAqW0,693
+imgk/commands/metadata.py,sha256=T0v7H2FD2WFhagQdFiqk6LWWi1marH2XT7xEPX2eIew,436
+imgk/commands/resize.py,sha256=06ZHOjsOQUqeuVOe2ZF1ulsALzXivEFypA9zS9eZhxg,765
+imgk-1.0.0.dist-info/METADATA,sha256=IfOuyw0rKDDwVWXEuvw8TWKtcDQmWg-hBAIbSUtmVMY,215
+imgk-1.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+imgk-1.0.0.dist-info/top_level.txt,sha256=bCbeU7pVsJPjT3O5I2cSAq6kLbJtQn4Ec3KqBBnUxIc,5
+imgk-1.0.0.dist-info/RECORD,,
