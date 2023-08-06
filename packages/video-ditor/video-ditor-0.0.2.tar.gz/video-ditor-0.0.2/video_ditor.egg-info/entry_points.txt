@@ -1,0 +1,7 @@
+[console_scripts]
+background = background.main:cli
+concat = concat.main:cli
+slice = cut.main:cli
+watermark = watermark.main:cli
+ytube = download.main:cli
+
