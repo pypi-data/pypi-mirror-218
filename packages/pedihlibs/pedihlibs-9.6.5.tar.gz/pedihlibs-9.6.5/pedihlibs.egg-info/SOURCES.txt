@@ -1,0 +1,7 @@
+README.md
+setup.py
+pedihlibs.egg-info/PKG-INFO
+pedihlibs.egg-info/SOURCES.txt
+pedihlibs.egg-info/dependency_links.txt
+pedihlibs.egg-info/requires.txt
+pedihlibs.egg-info/top_level.txt
