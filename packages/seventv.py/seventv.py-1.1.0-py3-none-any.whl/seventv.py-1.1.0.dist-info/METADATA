@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: seventv.py
+Version: 1.1.0
+Summary: An asynchronous API-wrapper for 7tv.app
+Author: Jässin Aouani
+Author-email: jassin@aouani.de
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: json
+Requires-Dist: aiohttp
+
