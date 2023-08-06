@@ -1,0 +1,16 @@
+docker_shaper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_shaper/cli.py,sha256=W-agmrl70Twnk5OcS-tk09dYHZG52Vy_5gvg59wxJnI,1459
+docker_shaper/dynamic.py,sha256=YtRzlrml6mUqYv-ooEwHe6hVrcKoyTVMDxUaaMX4IQA,31566
+docker_shaper/server.py,sha256=syrr7RTbXM0nVqtXKVE6F9kdma4gqMFOCmjj41gKrlU,8739
+docker_shaper/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_shaper/static/bootstrap.css,sha256=l21QuLLr3dA1FQcuQSERpYlQwuMrp5cxY55Gmw1prTA,155631
+docker_shaper/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_shaper/templates/base.html,sha256=NXwRnFg_lXDSsmLhxIQpOTW1EVXhUPR5fLhUkIRau3U,1333
+docker_shaper/templates/containers.html,sha256=Y101c_HFzVe72eLMoCST6jhFqLTL0uX843flpMn1fEs,321
+docker_shaper/templates/dashboard.html,sha256=S8VNQTB2OS5SyespQ8gEsJ-NjClGgNcYwrTkBGkwk3s,956
+docker_shaper/templates/images.html,sha256=AlxeZzSplicuNSpYSqBjDSw5EQMmDwAqNTbsUYCVmyA,309
+docker_shaper/utils.py,sha256=RsKe-BvPqISZK0Ked5hmhCfDS3p-GRzsCv42PGeflCw,5474
+docker_shaper-0.1.8.dist-info/METADATA,sha256=isyOd6KQt5KJxWVbFvxjDGwKorNMnJQ7OCYAuNsKLJ4,3810
+docker_shaper-0.1.8.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+docker_shaper-0.1.8.dist-info/entry_points.txt,sha256=E6jzhHs9YMDtNb4Xf9-KApdsIIeK45A9SNOK7lgtyLo,56
+docker_shaper-0.1.8.dist-info/RECORD,,

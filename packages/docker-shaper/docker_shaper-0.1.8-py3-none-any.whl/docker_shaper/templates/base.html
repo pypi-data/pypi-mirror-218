@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <!--
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <meta http-equiv="refresh" content="{{ meta.refresh_interval }}" />
+  </head>
+
+  <body>
+     <table class="table table-striped"><tr>
+      <td>Host: <b>{{meta.hostname}}</b></td>
+      <td></td>
+      {% for link in meta.extra_links %}
+          <td><a href="{{ meta.extra_links[link] }}">{{link}}</a></td>
+          <td></td>
+      {% endfor %}
+    </tr><tr>
+
+      <td>configuration at <tt><b>~/.docker_shaper/config.py</b></tt></td>
+      <td>backtrace: <tt>`<b>kill -USR2 {{meta.self_pid}}</b>`</tt></td>
+
+    </tr><tr>
+      <td>intervals:</td>
+
+      {% for interval in meta.intervals %}
+          <td>{{interval}} = <b>{{meta.intervals[interval]}}s</b>  </td><td></td>
+      {% endfor %}
+
+    </tr><tr>
+
+      <td><a href="/">Dashboard</a></td>
+      <td></td>
+      <td><a href="/containers">Containers</a></td>
+      <td></td>
+      <td><a href="/images">Images</a></td>
+
+    </tr></table>
+
+    <div class="dashboard">
+      {% block content %}{% endblock %}
+    </div>
+
+  </body>
+</html>
