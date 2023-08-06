@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssh_negotiate_term"
+version = "0.0.2"
+authors = [
+  { name="Tom Ryder", email="tom@sanctum.geek.nz" },
+]
+description = "Downgrade TERM strings when connecting to selected SSH servers"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+ssh-negotiate-term = "ssh_negotiate_term:main"
+
+[project.urls]
+"Homepage" = "https://sanctum.geek.nz/"
+"Source" = "https://dev.sanctum.geek.nz/cgit/ssh_negotiate_term.git/"

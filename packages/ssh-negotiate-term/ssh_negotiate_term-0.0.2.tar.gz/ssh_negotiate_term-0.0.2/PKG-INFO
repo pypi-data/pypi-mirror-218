@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ssh_negotiate_term
+Version: 0.0.2
+Summary: Downgrade TERM strings when connecting to selected SSH servers
+Author-email: Tom Ryder <tom@sanctum.geek.nz>
+Project-URL: Homepage, https://sanctum.geek.nz/
+Project-URL: Source, https://dev.sanctum.geek.nz/cgit/ssh_negotiate_term.git/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ssh\_negotiate\_term
+====================
+
+Wrap ssh(1) commands, parse the options, and check whether the hostname
+argument is either an IPv4/IPv6 address or matches any of a set of configured
+hostname patterns.  If so, and we're using a TERM type that's not
+well-supported on network gear, set a more broadly-compatible TERM type.

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/ssh_negotiate_term.py
+src/ssh_negotiate_term.egg-info/PKG-INFO
+src/ssh_negotiate_term.egg-info/SOURCES.txt
+src/ssh_negotiate_term.egg-info/dependency_links.txt
+src/ssh_negotiate_term.egg-info/entry_points.txt
+src/ssh_negotiate_term.egg-info/top_level.txt
+tests/test_ssh_negotiate_term.py
