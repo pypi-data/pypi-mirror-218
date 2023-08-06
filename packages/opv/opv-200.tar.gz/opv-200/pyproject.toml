@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[options]
+zip_safe = true
+include_package_data = true
+script_files = ["bin/opv",]
+
+[project]
+name = "opv"
+description = "clean namespace"
+version = "200"
+authors = [
+    {name = "Bart Thate", email = "programmingobject@gmail.com" },
+]
+readme = "README.rst"
+license = { text="Public Domain"}
+classifiers = [ 
+               'Development Status :: 3 - Alpha',
+               'License :: Public Domain',
+               'Operating System :: Unix',
+               'Programming Language :: Python',
+               'Topic :: Utilities'
+              ]
+
+
+
+[project.urls]
+"home" = "https://pypi.org/project/opv"
+"bugs" = "https://github.com/programmingobject/opv/issues"
+"source" = "https://github.com/programmingobject/opv"
+
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools]
+script-files = ["bin/opv"]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["opv*"]
+exclude = ["tests*",]
+namespaces = false
+
+
+[tool.setuptools.package-data]
+"*" = ["bin/opv*"]
