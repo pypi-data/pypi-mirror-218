@@ -1,0 +1,10 @@
+mcxpy/__init__.py,sha256=ZJjz7rcHyaH0Ya9nWaQf02q4egsSpTRU6d5tNCUSFp0,405
+mcxpy/__init__.pyi,sha256=JNGUQmeCI7AFM1DcZQJdstpzdQx87P6DVIHEs186pU4,393
+mcxpy/mcx.py,sha256=ml5RmHQSALJGosaBD_pC-YgPJTdPyG7KBULt9ILgq9g,13363
+mcxpy/mcx.pyi,sha256=zFcIPA-Qn9wmo5GaJdTIIVJdFdwprH6Zr0jzu2ogUSs,1240
+mcxpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcxpy-0.0.1.dist-info/LICENSE,sha256=TZGAmSlH2j1dfzIu-aX3ll5ZS59Ys-vMlH47zhms3O0,1091
+mcxpy-0.0.1.dist-info/METADATA,sha256=R9dzr6FJ6eGvXL0FYU3tofQ7K-f3eG2pSaJilvCyBRk,2911
+mcxpy-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mcxpy-0.0.1.dist-info/top_level.txt,sha256=XQTL_vMnTL-kQrsEq9HhJkRBqzc9wsDcJMNhYZJUTPc,6
+mcxpy-0.0.1.dist-info/RECORD,,
