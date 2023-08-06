@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include spreadsheet_serializer *
+recursive-exclude * *.pyc __pycache__ .DS_Store

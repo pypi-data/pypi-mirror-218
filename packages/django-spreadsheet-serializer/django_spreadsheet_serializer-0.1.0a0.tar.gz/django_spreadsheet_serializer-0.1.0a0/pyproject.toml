@@ -1,0 +1,105 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-spreadsheet-serializer"
+version = "0.1.0-alpha"
+description = "Manage Django models using spreadsheets!"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">= 3.8"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Kamil Paduszyński", email = "paduszyk@gmail.com"},
+]
+maintainers = [
+  {name = "Kamil Paduszyński", email = "paduszyk@gmail.com"},
+]
+keywords = ["python", "django", "spreadsheet", "Excel", "xlsx", "ods"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Environment :: Console",
+  "Framework :: Django",
+  "Framework :: Django :: 3.2",
+  "Framework :: Django :: 4.0",
+  "Framework :: Django :: 4.1",
+  "Framework :: Django :: 4.2",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Database",
+  "Topic :: File Formats",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = [
+  "odfpy",
+  "openpyxl",
+  "pandas",
+]
+
+[project.urls]
+Homepage = "https://github.com/paduszyk/django-spreadsheet-serializer"
+Documentation = "https://github.com/paduszyk/django-spreadsheet-serializer#readme"
+Repository = "https://github.com/paduszyk/django-spreadsheet-serializer"
+
+[tool.setuptools.packages.find]
+include = ["spreadsheet_serializer*"]
+
+[tool.black]
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.flake8]
+extend-exclude = [".venv"]
+per-file-ignores = [
+  "__init__.py:F401,F403",
+]
+max-line-length = 88
+extend-ignore = ["E203"]
+
+[tool.isort]
+profile = "black"
+sections =[
+  "FUTURE",
+  "STDLIB",
+  "THIRDPARTY",
+  "DJANGO",
+  "FIRSTPARTY",
+  "TESTS",
+  "LOCALFOLDER",
+]
+known_django = ["django"]
+known_first_party = ["spreadsheet_serializer"]
+known_tests = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["spreadsheet_serializer"]
+
+[tool.coverage.report]
+exclude_also = [
+  "raise NotImplemented",
+  "if settings.DEBUG:",
+]
+skip_covered = true
+skip_empty = true
+show_missing = true
+
+[tool.coverage.xml]
+output = "coverage.xml"
+
+[tool.pytest.ini_options]
+addopts = [
+  "--ds=tests.settings",
+  "--doctest-modules",
+  "--reuse-db",
+  "--cov",
+  "--cov-report=xml",
+  "--suppress-no-test-exit-code",
+]
+pythonpath = ["."]
