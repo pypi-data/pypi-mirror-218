@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+roblox_pyc.egg-info/PKG-INFO
+roblox_pyc.egg-info/SOURCES.txt
+roblox_pyc.egg-info/dependency_links.txt
+roblox_pyc.egg-info/entry_points.txt
+roblox_pyc.egg-info/requires.txt
+roblox_pyc.egg-info/top_level.txt
+src/robloxpy.py
