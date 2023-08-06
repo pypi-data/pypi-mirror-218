@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: fcs-ql-parser
+Version: 1.0.0
+Summary: "FCS-QL (CLARIN-FCS Core 2.0 Query Language) Grammar and Parser"
+Author: Erik Körner
+Author-email: "Erik Körner" <koerner@saw-leipzig.de>
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: antlr4-python3-runtime (>=4.11.1)
+Provides-Extra: antlr
+Requires-Dist: antlr4-tools (>=0.1) ; extra == 'antlr'
+Provides-Extra: build
+Requires-Dist: build (>=0.10.0) ; extra == 'build'
+Requires-Dist: twine (>=4.0.2) ; extra == 'build'
+Provides-Extra: docs
+Requires-Dist: sphinx (>=5.3.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=0.5.1) ; extra == 'docs'
+Requires-Dist: myst-parser (>=0.18.1) ; extra == 'docs'
+Provides-Extra: style
+Requires-Dist: black (>=23.1.0) ; extra == 'style'
+Requires-Dist: flake8 (>=6.0.0) ; extra == 'style'
+Requires-Dist: isort (>=5.11.4) ; extra == 'style'
+Requires-Dist: mypy (>=0.991) ; extra == 'style'
+Requires-Dist: darglint (>=1.8.1) ; extra == 'style'
+Requires-Dist: docformatter (>=1.5.1) ; extra == 'style'
+Provides-Extra: test
+Requires-Dist: pytest (>=7.2.1) ; extra == 'test'
+Requires-Dist: pytest-cov (>=4.0.0) ; extra == 'test'
+Requires-Dist: pytest-clarity (>=1.0.1) ; extra == 'test'
+Requires-Dist: pytest-randomly (>=3.12.0) ; extra == 'test'
+
+# FCS-QL for Python
+
+<!-- START: BADGES -->
+[![](https://img.shields.io/badge/%20code%20style-black-000000)](https://github.com/psf/black)
+[![](https://img.shields.io/badge/%20imports-isort-%231674b1)](https://pycqa.github.io/isort/)
+[![](https://img.shields.io/badge/linting-flake8-yellowgreen)](https://github.com/PyCQA/flake8)  
+[![](https://img.shields.io/badge/%20formatter-docformatter-fedcba.svg)](https://github.com/PyCQA/docformatter)
+[![](https://img.shields.io/badge/%20doc%20style-sphinx-0a507a.svg)](https://www.sphinx-doc.org/en/master/usage/index.html)
+[![](https://img.shields.io/badge/%20doc%20style-google-3666d6.svg)](https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-docstrings)  
+[![fcs-ql-parser @ PyPI](https://img.shields.io/pypi/v/fcs-ql-parser)](https://pypi.python.org/pypi/fcs-ql-parser)
+[![CI: Python package](https://github.com/Querela/fcs-ql-python/actions/workflows/python-package.yml/badge.svg)](https://github.com/Querela/fcs-ql-python/actions/workflows/python-package.yml)
+[![](https://img.shields.io/github/last-commit/Querela/fcs-ql-python)](https://github.com/Querela/fcs-ql-python/commits/main)
+[![Documentation Status](https://readthedocs.org/projects/fcs-ql-python/badge/?version=latest)](https://fcs-ql-python.readthedocs.io/en/latest/?badge=latest)
+<!-- END: BADGES -->
+
+- CLARIN-FCS Core 2.0 query language grammar and parser
+- based on [Github: clarin-eric/fcs-ql](https://github.com/clarin-eric/fcs-ql)
+  and [Github: clarin-eric/fcs-simple-endpoint](https://github.com/clarin-eric/fcs-simple-endpoint)
+- for more details visit: [CLARIN FCS Technical Details](https://www.clarin.eu/content/federated-content-search-clarin-fcs-technical-details)
+
+
+## Installation
+
+```bash
+# built package
+python3 -m pip install dist/fcs_ql_parser-<version>-py2.py3-none-any.whl
+# or
+python3 -m pip install dist/fcs-ql-parser-<version>.tar.gz
+
+# for local development
+python3 -m pip install -e .
+```
+
+
+## Building
+
+Fetch (or update) grammar files:
+```bash
+git clone https://github.com/clarin-eric/fcs-ql.git
+cp fcs-ql/src/main/antlr4/eu/clarin/sru/fcs/qlparser/*.g4 src/fcsql/
+```
+
+(Re-)Generate python parser code:
+```bash
+# create virtual env
+python3 -m venv venv
+source venv/bin/activate
+pip install -U pip setuptools wheel
+
+# install antler tool
+python3 -m pip install antlr4-tools
+# pip install -e .[antlr]
+
+cd src/fcsql
+antlr4 -Dlanguage=Python3 *.g4
+```
+
+Build package:
+```bash
+# pip install -e .[build]
+python3 -m build
+```
+
+
+## Development
+
+* Uses `pytest` (with coverage, clarity and randomly plugins).
+
+```bash
+python3 -m pip install -e .[test]
+
+pytest
+```
+
+Run style checks:
+```bash
+# general style checks
+python3 -m pip install -e .[style]
+
+black --check .
+flake8 . --show-source --statistics
+isort --check --diff .
+mypy src
+
+# building the package and check metadata
+python3 -m pip install -e .[build]
+
+python3 -m build
+twine check --strict dist/*
+
+# build documentation and check links ...
+python3 -m pip install -e .[docs]
+
+sphinx-build -b html docs dist/docs
+sphinx-build -b linkcheck docs dist/docs
+```
+
+
+## Build documentation
+
+```bash
+python3 -m pip install -r ./docs/requirements.txt
+# or 
+python3 -m pip install -e .[docs]
+
+sphinx-build -b html docs dist/docs
+sphinx-build -b linkcheck docs dist/docs
+```
+
+
+## See also
+
+- [clarin-eric/fcq-ql](https://github.com/clarin-eric/fcs-ql)
+- [clarin-eric/fcs-simple-endpoint](https://github.com/clarin-eric/fcs-simple-endpoint)
+- [Specification on CLARIN FCS 2.0](https://www.clarin.eu/content/federated-content-search-clarin-fcs-technical-details)

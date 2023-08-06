@@ -1,0 +1,17 @@
+fcsql/FCSLexer.g4,sha256=PdxB8v-WX9Na0KRt_uUeB7wnCBchX4DYN52QqdMMkf0,2597
+fcsql/FCSLexer.interp,sha256=RFpVqO9ScZUs10HNHKvwGw-g4lIYehryjnDyJ-AIbAU,8881
+fcsql/FCSLexer.py,sha256=Sp7euln1-BxUf5bUNJID2QJT7NLBoKF_-3-Rr1D-1ls,9195
+fcsql/FCSLexer.tokens,sha256=QiQ2N-BXkJzDkhXNBQaZNrUU-99coNimPxGauHQGF-E,459
+fcsql/FCSParser.g4,sha256=1j1FZCN_IZFhaSCSHfBMmEiUzf1tCVc_Cv5tjavEY5I,2234
+fcsql/FCSParser.interp,sha256=sbXKrJ7-A8Xu5vk_87r60Ru0u14OyrZyN1iCJMaPyXc,7523
+fcsql/FCSParser.py,sha256=Gmb3ub1OmHACZybViTcZ_PLiRj1XyRgtAP0DmbWGqJk,60870
+fcsql/FCSParser.tokens,sha256=QiQ2N-BXkJzDkhXNBQaZNrUU-99coNimPxGauHQGF-E,459
+fcsql/FCSParserListener.py,sha256=1eTR1O0GdWzjj7aoJZw4WosZqn4YiyQ749Cl5bgkr5w,6893
+fcsql/__init__.py,sha256=vk0NmOahIUI9IX3Y6HvdZH-NelP2BDy8GNeYfcg4rGc,1547
+fcsql/parser.py,sha256=__ctGR1X2qFIKYCGI-BMxP9JQCIxt49KjNup8evPkKw,52040
+fcsql/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcs_ql_parser-1.0.0.dist-info/METADATA,sha256=GwK1kFkHWvjQOJM2v8y6ZyY7VSAZfIY-5BEeoOmLA4Q,5487
+fcs_ql_parser-1.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+fcs_ql_parser-1.0.0.dist-info/top_level.txt,sha256=dlA6l0O2rtlS_VCnZwMcK0Hm2iiA1PmPBW3Bboh3cQU,6
+fcs_ql_parser-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fcs_ql_parser-1.0.0.dist-info/RECORD,,
