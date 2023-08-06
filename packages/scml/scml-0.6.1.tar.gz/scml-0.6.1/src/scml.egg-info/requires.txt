@@ -1,0 +1,20 @@
+click
+pytest
+hypothesis
+prettytable
+pulp
+python-constraint
+negmas>=0.10.0
+tqdm
+joblib
+jupyter
+gif
+mip
+gymnasium[extra]
+stable-baselines3
+
+[:python_version < "3.7"]
+dataclasses
+
+[gui]
+pyqt5
