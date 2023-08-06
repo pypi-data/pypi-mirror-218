@@ -1,0 +1,15 @@
+AUTHORS.txt
+CHANGES.md
+CLASSIFIERS.txt
+MANIFEST.in
+README.md
+REQUIREMENTS.txt
+setup.py
+flask_sqlalchemy_api/__init__.py
+flask_sqlalchemy_api/main.py
+flask_sqlalchemy_api.egg-info/PKG-INFO
+flask_sqlalchemy_api.egg-info/SOURCES.txt
+flask_sqlalchemy_api.egg-info/dependency_links.txt
+flask_sqlalchemy_api.egg-info/not-zip-safe
+flask_sqlalchemy_api.egg-info/requires.txt
+flask_sqlalchemy_api.egg-info/top_level.txt
