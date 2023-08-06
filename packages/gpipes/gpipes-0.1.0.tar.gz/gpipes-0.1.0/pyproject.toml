@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "gpipes"
+version = "0.1.0"
+description = ""
+authors = ["Przemysław Krzysztof Rekucki <przemyslaw.rekucki@golem.network>"]
+license = "LGPL-2.1-only"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
