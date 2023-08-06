@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: dup-utils
+Version: 0.0.2
+Summary: The utility objects for the data engine package
+Author-email: korawica <korawich.anu@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/korawica/dup_utils/
+Project-URL: Source Code, https://github.com/korawica/dup_utils/
+Keywords: data,utility
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ujson (<6.0.0,==5.8.0)
+Requires-Dist: tzdata (>=2023.3)
+Requires-Dist: backports.zoneinfo (>=0.2.1) ; python_version == "3.8"
+Provides-Extra: cli
+Requires-Dist: click (>=8.1.3) ; extra == 'cli'
+Provides-Extra: dev
+Requires-Dist: dup-utils[test] ; extra == 'dev'
+Requires-Dist: ruff (>=0.0.138) ; extra == 'dev'
+Requires-Dist: pre-commit (>=3.3.3) ; extra == 'dev'
+Requires-Dist: bump2version (>=1.0.1) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (>=7.3.2) ; extra == 'test'
+Requires-Dist: coverage[toml] (>=7.0.0) ; extra == 'test'
+Requires-Dist: mypy (>=0.982) ; extra == 'test'
+Requires-Dist: types-python-dateutil ; extra == 'test'
+Requires-Dist: memory-profiler (>=0.61.0) ; extra == 'test'
+Requires-Dist: perfplot (>=0.10.2) ; extra == 'test'
+
+# Data Utility Packages: _Core_
+
+[![test](https://github.com/korawica/dup-utils/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/korawica/dup-utils/actions/workflows/tests.yml)
+[![size](https://img.shields.io/github/languages/code-size/korawica/dup-utils)](https://github.com/korawica/dup-utils)
+
+**Type**: `DUP` | **Tag**: `Data` `Utility` `Core`
+
+**Table of Contents:**:
+
+- [Overviews](#overviews)
+- [Features](#features)
+- [CLI](#cli)
+
+The **Data Utility Core** package with the utility objects that was created with
+sub-package namespace, `dup_utils`, for independent installation.
+
+**Install from PyPI**:
+
+```shell
+pip install dup-utils
+```
+
+In the future, this package can scale out the coding with folder structure. You
+can add any features that you want to install and import by
+`import dup_utils.{extension}`.
+
+## Overviews
+
+This package implement with _src-layout_ structure and use `setuptools` for package
+building to **PyPI**.
+
+## Features
+
+## CLI
+
+This Utility package provide some CLI for development process handler.
+
+### Git
+
+### Version
+
+## License
+
+This project was licensed under the terms of the [MIT license](LICENSE).
