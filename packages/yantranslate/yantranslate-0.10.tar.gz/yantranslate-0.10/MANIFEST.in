@@ -1,0 +1,3 @@
+include yantranslate/requirements.txt
+include yantranslate/thirdparty.json
+include yantranslate/README.MD

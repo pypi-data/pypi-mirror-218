@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+yantranslate/README.MD
+yantranslate/__init__.py
+yantranslate/requirements.txt
+yantranslate/thirdparty.json
+yantranslate.egg-info/PKG-INFO
+yantranslate.egg-info/SOURCES.txt
+yantranslate.egg-info/dependency_links.txt
+yantranslate.egg-info/requires.txt
+yantranslate.egg-info/top_level.txt
