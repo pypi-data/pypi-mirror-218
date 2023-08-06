@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mehrlist/README.MD
+mehrlist/__init__.py
+mehrlist/requirements.txt
+mehrlist/thirdparty.json
+mehrlist.egg-info/PKG-INFO
+mehrlist.egg-info/SOURCES.txt
+mehrlist.egg-info/dependency_links.txt
+mehrlist.egg-info/requires.txt
+mehrlist.egg-info/top_level.txt

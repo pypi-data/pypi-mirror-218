@@ -1,0 +1,11 @@
+bisectsearch
+catmapper
+flatten_any_dict_iterable_or_whatsoever
+flatten_everything
+intersection_grouper
+isiter
+levelflatten
+list2tree
+nested2nested
+screwhashesset
+tolerant_isinstance

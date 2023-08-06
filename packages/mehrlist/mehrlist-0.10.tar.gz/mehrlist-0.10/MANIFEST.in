@@ -1,0 +1,3 @@
+include mehrlist/requirements.txt
+include mehrlist/thirdparty.json
+include mehrlist/README.MD
