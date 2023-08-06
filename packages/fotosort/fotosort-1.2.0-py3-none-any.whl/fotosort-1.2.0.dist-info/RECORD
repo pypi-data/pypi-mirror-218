@@ -1,0 +1,12 @@
+fotosort/__init__.py,sha256=CmL5cmcPC8bIkzNzXGTHMXSetHv5MNpOdkkl6mr-Q-g,1038
+fotosort/controller.py,sha256=OLfJ7JQWPn3Wj-wJY_n77oeco3qOi1VpnRnItghrPiQ,3702
+fotosort/imgutils.py,sha256=IlUT8EaFr_a59iaAVpq_29N2TnqAtpQTQBVaK2kosVw,1064
+fotosort/ui.py,sha256=3o0gvTHzuapZlKC-pHBXAsDaPE5UhTOBacSBl4G85GY,6195
+fotosort/images/noimage.png,sha256=VS4SycBpmX6D9pj6zuVXubXecPZQ0xJAYe3xTT5Togg,6121
+fotosort/qml/main.qml,sha256=B-tNUHpqtqLLde1vxKPl4FMcgGPSZNnwE3YQVrHSdI0,8737
+fotosort-1.2.0.data/scripts/fotosort,sha256=h88OVbpM4qpnl_RUYS1pLUXmndGNSQf7bquxzEdaQYk,40
+fotosort-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fotosort-1.2.0.dist-info/METADATA,sha256=0bf-ycz2MbsKmFkSdThjfIhb1q1twbJhi39j9uPRQAY,8866
+fotosort-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fotosort-1.2.0.dist-info/top_level.txt,sha256=cq2wXg6U38bTuEr0ptmcqEp-0YWCsjrRptVeHb30RTg,9
+fotosort-1.2.0.dist-info/RECORD,,
