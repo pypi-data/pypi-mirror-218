@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pydeezer_asy
+Version: 1.2.0
+Summary: Asynchronous version of the `py-deezer` module
+Author: drhspfn
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
