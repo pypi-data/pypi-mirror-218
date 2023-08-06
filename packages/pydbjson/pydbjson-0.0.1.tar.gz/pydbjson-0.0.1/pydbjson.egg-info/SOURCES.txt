@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pydbjson.egg-info/PKG-INFO
+pydbjson.egg-info/SOURCES.txt
+pydbjson.egg-info/dependency_links.txt
+pydbjson.egg-info/top_level.txt
+pyjsondb/__init__.py
+pyjsondb/pyjsondb.py
