@@ -1,0 +1,1 @@
+from intentify.main import Intentify

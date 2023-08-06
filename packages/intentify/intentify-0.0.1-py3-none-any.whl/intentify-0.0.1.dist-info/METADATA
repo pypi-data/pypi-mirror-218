@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: intentify
+Version: 0.0.1
+Summary: An intent classification library for AI Models.
+Author: Ice (Rishan Pancham)
+Author-email: <rishanpan@hotmail.com>
+Keywords: python,intent,intents,ai,intent classification
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pickle
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: nltk
+Requires-Dist: keras
+
+A library for training and testing small to large scale intent classification models.
