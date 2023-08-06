@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pileoffeather
+Version: 0.2.0
+Summary: Lightweight and easy to use ml library for small projects, create a neural network in minutes.
+Home-page: https://github.com/usedToBeTomas/pile-of-feather
+Author: Daniele Tomaselli
+License: MIT
+Keywords: neural network,ml,ai,machine learning,simple,nn
+License-File: LICENSE
