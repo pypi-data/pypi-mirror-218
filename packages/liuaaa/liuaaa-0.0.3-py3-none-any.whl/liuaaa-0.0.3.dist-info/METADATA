@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: liuaaa
+Version: 0.0.3
+Summary: example package
+Author: soundless
+Author-email: soundless2023@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 测试在线导入自己的模块
