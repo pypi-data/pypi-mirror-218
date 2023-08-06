@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "typed-zmanim"
+version = "0.1.0"
+description = "A Typed Zmanim library for Python. Forked from pinnymz/python-zmanim"
+authors = ["Moshe Dicker <dickermoshe@gmail.com>"]
+license = "LGPL-2.1-or-later"
+readme = "README.md"
+packages = [{include = "zmanim"}]
+keywords = ["zmanim"]
+repository = "https://github.com/dickermoshe/typed-zmanim"
+classifiers=[
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4"
+types-python-dateutil = "^2.8.19.13"
+python-dateutil = "^2.8.2"
+julian = "^0.14"
+memoization = "^0.4.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+python_version = "3.7"
+
+[[tool.mypy.overrides]]
+module = 'zmanim'
+
+[[tool.mypy.overrides]]
+module = 'test'
