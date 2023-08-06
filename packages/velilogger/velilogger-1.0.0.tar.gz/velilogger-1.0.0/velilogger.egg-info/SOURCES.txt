@@ -1,0 +1,8 @@
+MANIFEST.in
+readme.md
+setup.py
+velilogger.py
+velilogger.egg-info/PKG-INFO
+velilogger.egg-info/SOURCES.txt
+velilogger.egg-info/dependency_links.txt
+velilogger.egg-info/top_level.txt
