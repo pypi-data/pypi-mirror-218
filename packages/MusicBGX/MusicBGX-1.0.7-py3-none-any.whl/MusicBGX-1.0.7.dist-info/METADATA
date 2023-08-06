@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: MusicBGX
+Version: 1.0.7
+Summary: A light and simple library for playing offline and online music in the background (:
+Home-page: https://github.com/aminrngbr1122
+Author: Amin Rngbr
+Author-email: rngbramin@gmail.com
+Keywords: music
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pygame
+
+## Installation
+
+```sh
+pip install MusicBGX
+```
+
+## Useage
+
+```python
+from MusicBGX import *
+app = BackGround(paths=['ads1.mp3', 'ads2.mp3])
+app.play_background_music()
+```
+
+## Project status
+
+- Alpha
+
+## Author
+
+- language programming : Python
+- Author  : Amin Rngbr
