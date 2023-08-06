@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hyprshade
+Version: 0.1.2
+Summary: 
+License: MIT
+Author: John Bernard
+Author-email: loqusion@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: more-itertools (>=9.1.0,<10.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# hyprshade
+
+Swap screen shaders on the fly
+
