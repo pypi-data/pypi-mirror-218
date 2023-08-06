@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+hotfunc.py
+pyproject.toml
+hotfunc.egg-info/PKG-INFO
+hotfunc.egg-info/SOURCES.txt
+hotfunc.egg-info/dependency_links.txt
+hotfunc.egg-info/top_level.txt
