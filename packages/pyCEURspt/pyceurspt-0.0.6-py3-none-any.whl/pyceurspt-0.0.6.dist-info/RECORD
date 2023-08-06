@@ -1,0 +1,16 @@
+ceurspt/__init__.py,sha256=ZBXzmqiTOJXmy8ydRYWdGWZxBEmmRCCDu-z_h5374fw,19
+ceurspt/bibtex.py,sha256=0FBo3mr9MIn4a-Ki2rsMyYK27ZaUstO6xjdRmI6JqYk,8578
+ceurspt/ceurws.py,sha256=CD2W_TlXPTmDjo37JREGTkWgj1lguq0wjjTVBrkVS-g,43361
+ceurspt/ceurws_base.py,sha256=1m4CR527_EzT7AR1wdpqOPtSMYlEiEX-8Bwb6pNOgPQ,16059
+ceurspt/dataclass_util.py,sha256=dkiWWe-1bvjLTgGdw-hNa8in6NC-B5pGEM2PaD_y4cw,523
+ceurspt/profiler.py,sha256=2_YjZAy7bIo2eygo1PVhzqzIfo8yAJ3jpLLfabornSI,825
+ceurspt/spt_cmd.py,sha256=U34jH_RwNqrizihFUL8d3GrOUGtNE5H8QdklSw9Ijww,5475
+ceurspt/version.py,sha256=XYA_-nYsy4T0QLGkEvO_P4y9Qk_kBnCD3UL6lUcA7zI,908
+ceurspt/webserver.py,sha256=OQS-31WdULcfER4OFLoOlY0b_-9HPClGwvgsAQEOpYk,10414
+ceurspt/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ceurspt/models/dblp.py,sha256=3Bvgvxqysk9DpmKi4z0PCNAUItJdpqMDBOQprwxNVVU,1345
+pyceurspt-0.0.6.dist-info/METADATA,sha256=3wSoY2z1k5U8OLs90lucbIfTjzR1X2ielk5qUqSj6oA,2842
+pyceurspt-0.0.6.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+pyceurspt-0.0.6.dist-info/entry_points.txt,sha256=AUcUj1t_bfIuqrC9O50Z1IuwoxQ-UzSFFCKW260gn4Y,50
+pyceurspt-0.0.6.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyceurspt-0.0.6.dist-info/RECORD,,
