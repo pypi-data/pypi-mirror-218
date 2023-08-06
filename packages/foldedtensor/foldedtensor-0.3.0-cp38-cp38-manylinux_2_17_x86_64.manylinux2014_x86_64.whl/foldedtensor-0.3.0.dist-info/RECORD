@@ -1,0 +1,9 @@
+tests/test_folded_tensor.py,sha256=uPQLrPAQ7Kzkb5QDxyMCor-dzzWyF5_-vAecAL3DY5k,8286
+foldedtensor/__init__.py,sha256=ZEWggU1PJzsDYDk-jWAIwYTFUYPpm4mqPrMnxOnaUbg,10264
+foldedtensor/_C.cpython-38-x86_64-linux-gnu.so,sha256=9QdLLTRzjLZwPWWolnowi2wS5SZgISak7t0tgQ4rg5o,271336
+foldedtensor/functions.cpp,sha256=K2w3JlZhqwjY58FWZ5XYH9EbkWqk_T5LzXxNhpRQf-4,11061
+foldedtensor-0.3.0.dist-info/top_level.txt,sha256=ODzup8any9F023nWTAEVTHGAVFJAxM9MD9RTeFfaYW0,36
+foldedtensor-0.3.0.dist-info/WHEEL,sha256=5DQRW5VdkIxH8e7ylwa-YBCXLhSZeqHiz1ZmuOscrlo,148
+foldedtensor-0.3.0.dist-info/RECORD,,
+foldedtensor-0.3.0.dist-info/METADATA,sha256=5mI7FvmIO1hYt90BsWO5Zfm-ppin0BnBuCDyhwXYOtU,6347
+foldedtensor-0.3.0.dist-info/LICENSE,sha256=X_IjjaJC1EaHgD7qLLabFb91xhyzY7-Xkq_N6-mpU1c,1485
