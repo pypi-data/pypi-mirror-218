@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+torchnmf/__init__.py
+torchnmf/constants.py
+torchnmf/metrics.py
+torchnmf/nmf.py
+torchnmf/plca.py
+torchnmf/trainer.py
+torchnmf/utils.py
+torchnmf.egg-info/PKG-INFO
+torchnmf.egg-info/SOURCES.txt
+torchnmf.egg-info/dependency_links.txt
+torchnmf.egg-info/requires.txt
+torchnmf.egg-info/top_level.txt
