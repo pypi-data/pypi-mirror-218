@@ -1,0 +1,8 @@
+LICENSE
+README.txt
+setup.py
+lktbotfb.egg-info/PKG-INFO
+lktbotfb.egg-info/SOURCES.txt
+lktbotfb.egg-info/dependency_links.txt
+lktbotfb.egg-info/requires.txt
+lktbotfb.egg-info/top_level.txt
