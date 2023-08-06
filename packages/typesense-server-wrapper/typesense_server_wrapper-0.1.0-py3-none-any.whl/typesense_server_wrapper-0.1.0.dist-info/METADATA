@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: typesense-server-wrapper
+Version: 0.1.0
+Summary: Python wrapper for Typesense Server
+Author-email: Grant Jenks <contact@grantjenks.com>
+License: Apache 2.0
+Project-URL: Documentation, https://grantjenks.com/docs/python-typesense-server-wrapper/
+Project-URL: Funding, https://gum.co/python-typesense-server-wrapper
+Project-URL: Source, https://github.com/grantjenks/python-typesense-server-wrapper
+Project-URL: Tracker, https://github.com/grantjenks/python-typesense-server-wrapper/issues
+Keywords: search,typesense
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+===============================
+Python Typesense Server Wrapper
+===============================
+
+Python wrapper for Typesense Server.
+
+
+TODO
+====
+
+1. Upload Python sdist with binaries
+
+1. Apply knightswhosayni
