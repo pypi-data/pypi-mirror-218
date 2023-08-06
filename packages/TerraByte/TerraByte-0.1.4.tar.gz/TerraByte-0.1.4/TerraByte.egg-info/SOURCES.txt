@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+TerraByte/__init__.py
+TerraByte.egg-info/PKG-INFO
+TerraByte.egg-info/SOURCES.txt
+TerraByte.egg-info/dependency_links.txt
+TerraByte.egg-info/requires.txt
+TerraByte.egg-info/top_level.txt
