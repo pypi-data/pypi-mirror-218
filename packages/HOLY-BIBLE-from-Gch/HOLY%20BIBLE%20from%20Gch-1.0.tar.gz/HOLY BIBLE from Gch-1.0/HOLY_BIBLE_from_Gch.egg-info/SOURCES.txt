@@ -1,0 +1,7 @@
+LICENSE.py
+setup.py
+HOLY_BIBLE_from_Gch.egg-info/PKG-INFO
+HOLY_BIBLE_from_Gch.egg-info/SOURCES.txt
+HOLY_BIBLE_from_Gch.egg-info/dependency_links.txt
+HOLY_BIBLE_from_Gch.egg-info/requires.txt
+HOLY_BIBLE_from_Gch.egg-info/top_level.txt

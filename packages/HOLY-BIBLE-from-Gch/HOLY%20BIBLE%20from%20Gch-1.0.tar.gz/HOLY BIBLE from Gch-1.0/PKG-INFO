@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: HOLY BIBLE from Gch
+Version: 1.0
+Summary: HOLY BIBLE
+Author: C. Praiseline Christina
+Keywords: HOLY BIBLE
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+License-File: LICENSE.py
+
+HOLY BIBLE designed where the package loads the entire bible and displays ultiple related references with the input keyword and selected verses displays
