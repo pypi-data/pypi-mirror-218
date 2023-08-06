@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: SempCode
+Version: 0.3.7.5
+Summary: Simplified the Python Code
+Author: 是真的Win12Home
+Author-email: mcdhj-work@outlook.com
+License: Mozilla Public License Version 2.0
+Classifier: Development Status :: 3 - Alpha
+Requires: requests
+Requires: pillow
+Requires: pathlib
+Requires: subprocess
+Requires: datetime
+Requires: ctypes
+Description-Content-Type: text/markdown
+
+---
+Hello Semp!
+---
+Semp is can simplified some code in Python.\
+**1.Codes**\
+*(1)Semp:*\
+PhotoTk(file:str)\
+fromsnumber(b_from:int,to:int,passnum:int)\
+request_simplifies()\
+power_operation(num1:int,num2:int)\
+fibonacci_sequence(to:int)\
+Requester(website:str) Only use variable.\
+*(2)Semp.about*\
+SempAbout()\
+*(3)Semp.Command*\
+Commander() Only use variable.\
+*(4)Semp.SempWrite*\
+SempWrite(filename,encoding)\
+**2.Updates**\
+*v0.3.7.5(Fix)*\
+Fix v0.3.7.2 bugs\
+*v0.3.7.2(Broken)*\
+Simplified the Python Code.\nUpdate 0.3.7.2(July 8th,2023)\
+Add NumberError,BoolError and ModeError\
+Add Command.Commander(Simplified pathlib,subprocess)\
+**3.Author**
+TrueWin12Home(Win12_Home)
