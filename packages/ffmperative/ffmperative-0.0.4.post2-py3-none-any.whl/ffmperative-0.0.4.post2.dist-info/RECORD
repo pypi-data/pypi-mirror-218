@@ -1,0 +1,11 @@
+ffmperative/__init__.py,sha256=AXShixp1GHDzduK8D3dKtxz4dNzb0d_UzksCZ-RGpuA,1532
+ffmperative/cli.py,sha256=zWNAPc4C2PDh1bsiXS8EdaZTB3FXFLLPUudupJ7lWos,824
+ffmperative/extras.py,sha256=RGQpXqyCiab0b36-jduc46ovL_0Cte_yeCB36iAQKio,17288
+ffmperative/tools.py,sha256=6dcBXQDWIeGIZTmHoG7GwBocLdC1DgcsXh5XmnKl09E,15123
+ffmperative/utils.py,sha256=3gQgMH5r_lAMHd1RL27zVuH9zFHt_sgQda-beLGTZ3k,871
+ffmperative-0.0.4.post2.dist-info/LICENSE,sha256=08y6UINXSwNc7rrPXbxA230VfE0-lkbr8zGvSqanfmk,1065
+ffmperative-0.0.4.post2.dist-info/METADATA,sha256=l8yV6MNUpP4YRK_X2K2yruKqyNw58fDKhR-CzynDpv0,4253
+ffmperative-0.0.4.post2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ffmperative-0.0.4.post2.dist-info/entry_points.txt,sha256=5VG0BRql3f4fUVawJbLCMCqR_miu4qBwdD1xHXRTkXA,46
+ffmperative-0.0.4.post2.dist-info/top_level.txt,sha256=phfS7dNhucv5MTBeH67o-vzt6OSYjgxuFVEA6-mbTxY,12
+ffmperative-0.0.4.post2.dist-info/RECORD,,
