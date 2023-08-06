@@ -1,0 +1,12 @@
+std-buffer
+pyzmq
+pcaspy
+opencv-python
+tifffile
+protobuf
+flask
+flask-cors
+numpy
+redis
+fastapi
+uvicorn
