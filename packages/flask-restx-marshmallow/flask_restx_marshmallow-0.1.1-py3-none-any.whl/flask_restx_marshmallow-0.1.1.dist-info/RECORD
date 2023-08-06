@@ -1,0 +1,17 @@
+flask_restx_marshmallow/__init__.py,sha256=_16bu353v6rCrAUhQ5X32Cp-cxfToCrODcYta-n2I5o,726
+flask_restx_marshmallow/api.py,sha256=1V8h-ZYCmChnn5zlyAmtrJVqjAAlNMcjn751egZPKxk,5946
+flask_restx_marshmallow/namespace.py,sha256=jr7-T5_eViDh5k7LxMZlGSRoulhkyrYpaFMwhmaTXDQ,10079
+flask_restx_marshmallow/parameter.py,sha256=DAKiuRUY19bfmW4VPxwztwBjwpALvH4iUxpc0XUuWEQ,2881
+flask_restx_marshmallow/schema.py,sha256=uLlaMvsuPSVMdRricICEqHCiTFfDjLIf2_BqAuNF0QA,8281
+flask_restx_marshmallow/sqlalchemy.py,sha256=NL01vQFWivNP15sILTJvf5Q5eIdGFaB1Sq2evnqhUhY,5375
+flask_restx_marshmallow/static/swagger-ui-bundle.min.js,sha256=rAZSRvfReMX4gnMerLUuzCoznOlIa-FGeFKdbMRr8Do,1024792
+flask_restx_marshmallow/static/swagger-ui-standalone-preset.min.js,sha256=jhgioIk6G2dLn9OE7Xd7gDNlVaTMWloErtO8sF4FXRc,316731
+flask_restx_marshmallow/static/swagger-ui.min.css,sha256=Lbh6K5Ai8XlVtA_hAVvFuXr6xydEO1bPof83n6e5hRs,144893
+flask_restx_marshmallow/static/swagger_fav.png,sha256=l0E5Rkd2s1iFwgkcOfSXHW-pmKBLJvYEETk15EJ6tNk,1643
+flask_restx_marshmallow/swagger.py,sha256=oOSEAApMeLVKAauKZwQVfVlbgj_S-oAS7pZuJZON080,5861
+flask_restx_marshmallow/templates/index.html,sha256=lxGnF-j5gx83JzdGp9ibNaBOx9oXiZ6mJaQ4E4KEwGw,1708
+flask_restx_marshmallow/templates/local.html,sha256=XH3jjgfhdOXh_PCDB0mLWtRVa6xs1-4nAQ6oW5GRuus,1702
+flask_restx_marshmallow/util.py,sha256=U-lDpr56InrLRVywGe0fkUucBwq1_gl-8mOpdXEgfGw,18986
+flask_restx_marshmallow-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+flask_restx_marshmallow-0.1.1.dist-info/METADATA,sha256=Z75skMFeALA-h2eVTS2Fday3DxZh1CiR6Pgz3bUc_7Q,5757
+flask_restx_marshmallow-0.1.1.dist-info/RECORD,,
