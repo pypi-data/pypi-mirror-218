@@ -1,0 +1,2 @@
+[anyconfig_backends]
+json5 = anyconfig_json5_backend:Parser
