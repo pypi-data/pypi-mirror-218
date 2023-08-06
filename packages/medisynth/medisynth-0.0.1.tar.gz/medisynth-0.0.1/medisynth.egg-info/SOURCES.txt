@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+medisynth.egg-info/PKG-INFO
+medisynth.egg-info/SOURCES.txt
+medisynth.egg-info/dependency_links.txt
+medisynth.egg-info/requires.txt
+medisynth.egg-info/top_level.txt
