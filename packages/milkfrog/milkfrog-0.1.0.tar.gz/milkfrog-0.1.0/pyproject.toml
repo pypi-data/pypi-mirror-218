@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "milkfrog"
+version = "0.1.0"
+description = "Prototyping a Quality Assessment Tool with Parameterized Quality Models"
+authors = ["Christoffer Gram <chkg@itu.dk>", "Caspar Marschall <cafm@itu.dk>", "Frederik Rothe <frot@itu.dk>", "Jakob Hjalgrim <jlhj@itu.dk>"]
+readme = "README.md"
+packages = [
+    { include = "core" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bokeh = "^3.0.3"
+tree-sitter = "^0.20.1"
+defusedxml = "^0.7.1"
+click = "^8.1.3"
+chardet = "^5.1.0"
+
+[tool.poetry.scripts]
+modu="core.main:load"
+test="run_tests:run"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
