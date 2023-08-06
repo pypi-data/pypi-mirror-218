@@ -1,0 +1,17 @@
+draughts/__init__.py,sha256=E87owMyMHmtPCbCtP97FE9AZmFquULMK7Z1uPRD_Bm8,947
+draughts/american.py,sha256=VgoVn9kf7qSD-V1PniAH4PP7UUDPjT29WrWOSX-Gahk,3838
+draughts/base.py,sha256=fYsolhRbYVcePbr4ZY3-lK--nSEB4h6LglvVf0KwXRQ,7825
+draughts/models.py,sha256=kANUEChsNopePizusXxf0NHBCgo6e_m7lWOxIUOTEB0,674
+draughts/move.py,sha256=ntpmzClEvbdPwDR84Orksca-2hRHFx6EageHkdgMcnU,4120
+draughts/server.py,sha256=CGgDYn_qD86q3tiw4XD8jcKCu7kQn42JijawaR5A4PI,6086
+draughts/standard.py,sha256=Ix_k37pQ850Duovf5XXto3b_xW6CucfMKdl7Gbjzgeg,5632
+draughts/utils.py,sha256=j8svvwPnbmBZ9MttQATvmO9PX8Xj9entQ5o8X5Sg8Ls,1973
+draughts/static/css/style.css,sha256=doMV809OUBqz6U_hqsWvxK7ax7DCWj16ZodRNZJIa48,2814
+draughts/static/js/script.js,sha256=qlqxYPSYYEzOj0fNBFHxJo9pSuGFlBb4NT0Rgl7v_MA,5824
+draughts/templates/base.html,sha256=4yxGrYsMJC8lIDT8obH8T4pMv93x8wvElJFHFFH9GgU,1857
+draughts/templates/index.html,sha256=0e3EfWoG3-QbhR__TC2jD5Zjw1LCPdlFSCUFTpMJmNw,2500
+py_draughts-0.3.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+py_draughts-0.3.1.dist-info/METADATA,sha256=gpPIpWN4Tp8kLOJ-dNr9saudaaWllifmHI2Vp1KFk0s,5747
+py_draughts-0.3.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py_draughts-0.3.1.dist-info/top_level.txt,sha256=5loL7QGIeHGTHRrdYLghS98s--iSeM-BHD0dQ_7KJo8,9
+py_draughts-0.3.1.dist-info/RECORD,,
