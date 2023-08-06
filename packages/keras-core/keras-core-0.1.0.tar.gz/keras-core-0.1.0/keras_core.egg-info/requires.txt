@@ -1,0 +1,6 @@
+tensorflow
+absl-py
+numpy
+rich
+namex
+h5py
