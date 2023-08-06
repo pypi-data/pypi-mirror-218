@@ -1,0 +1,262 @@
+# PyGSSearch
+
+This python module implements the OData protocol access
+following the Copernicus Space Component schema to allow the user to:
+ - search certain product with different filter.
+ - download the filtered product.
+
+This module can be used in python code, or it can also be used in a terminal with the command pygssearch.
+
+# Usage
+
+## Create your environment
+
+Installation of a virtual environment is not mandatory but greatly recommended in order 
+to avoid any confusion between system or other projects libraries. 
+Linux package python3-venv shall be installed (```sudo apt install python3-venv``` on ubuntu)
+
+The command line to prepare the virtual environment:
+```commandline
+python3 -m venv venv
+source venv/bin/activate
+```
+After that you can download this library by running:
+````commandline
+pip install pygssearch
+````
+
+## Connect to the service
+
+To connect to the service with python code you can do as it follow:
+
+- Basic Authentication
+```python
+from pygssearch import OdataSource
+from requests.auth import HTTPBasicAuth
+
+service = 'http://my.service.com'
+auth = HTTPBasicAuth('username', 'password')
+
+source = OdataSource(service=service, auth=auth)
+
+source = OdataSource(service=service)
+
+print(source.request())
+```
+- OAuth2.0
+```python
+from pygssearch import OdataSource
+from drb.drivers.http import HTTPOAuth2
+
+service = 'http://my.service.com'
+token_svc = 'https://auth.com/token'
+user = 'user'
+password = 'pass'
+service_id = 'service'
+secret = 'secret'
+
+auth = HTTPOAuth2(username=user, password=password, token_url=token_svc,
+                  client_id=service_id, client_secret=secret)
+
+
+source = OdataSource(service=service, auth=auth)
+
+source = OdataSource(service=service)
+
+print(source.request())
+```
+
+Here on how to connect to the OdataSource corresponding to the service url given in argument.
+
+```commandline
+pygssearch --service http://my.service.com --username username --password password
+pygssearch --service http://my.service.com --username username --password password --token_url https://auth.com/token --client_id service --client_secret secret
+pygssearch --service http://my.service.com
+```
+And here to do the same with the command line
+To the store the configuration of connection you can create a configuration file at the .ini format.
+Here and example of file:
+- Basic Auth
+```ini
+[pygssearch]
+service=http://my.service.com
+username=username
+password=password
+```
+- OAuth2.0
+```ini
+[pygssearch]
+service=http://my.service.com
+username=username
+password=password
+token_url = https://auth.com/token
+client_id = service
+client_secret = secret
+```
+
+
+You can put the path of this file in argument of the command line or put it in your home folder and call it .pygssearch.ini,
+you can also use environment variable like 'GSS_SERVICE', 'GSS_USERNAME', 'GSS_PASSWORD'
+
+To query the information of some product you can use the request method of the OdataSource class.
+```python
+def request(
+        self, query=None, query_order=None, limit=10,
+        skip=0, format=('Name', 'Id')):
+    """
+    Request the odata services en retrieve the matching data.
+
+    :param query: (Expression) The filter to apply in the query
+                   by default None
+    :param query_order: (tuple[Expression, Expression]) to order
+                         the result of the query
+    :param limit: (int) Limit the number of result by default 10.
+    :param skip: (int) Skip a number of matching product by default 0.
+    :param format: (tuple[str]) Format the return result of the query,
+                   or put _ to print all available information,
+                   by default ('Name', 'Id').
+
+    :return: A list of dict containing all the data asked
+             if no matching product return an empty list.
+    """
+```
+
+You can use the parameter format to retrieve certain data from each product, 
+here the list of possible data to be retrieved: 
+
+'ModificationDate', 'EvictionDate', 'Footprint', 'Id', 'OriginDate', 'ContentLength', 'Online', 'Name', 'Checksum',
+'ContentDate', 'PublicationDate', 'ContentType'
+
+You can also use these field to order you query.
+
+
+## Apply a filter to your request
+
+To create the filter to be used in your query, you can use the query_builder methode.
+```python
+def query_builder(
+        filters: str = None,
+        date: tuple = (None, None),
+        geometry: Union[tuple, str] = (),
+        id: Union[tuple, str, uuid.UUID] = (),
+        name: Union[tuple, str] = (), mission: int = None,
+        instrument: str = None, product_type: str = None,
+        cloud: str = None, order: str = None) -> tuple:
+    """
+    Help to build the odata query corresponding to a series of
+    filter given in argument,
+    the user can give a filter already wrote and this builder
+    will append it with a logical
+    and to the query built.
+
+    :param filters: (str) an already wrote Odata query to apply.
+                    by default None.
+    :param date: (tuple[str, str]) A tuple of date the first one corresponding
+                 to the ContentDate/Start and the second one for the End
+                 (by default (None, None)
+    :param geometry: Can be a path to the geojson file containing a footprint
+                     or a series of coordinate containing in a tuple separated
+                     by a coma. default ()
+    :param id: A series of uuid matching a series of product by default ()
+    :param name: A series of complete name or part on the name of a product
+                 this will call the contains method on the field name.
+                 by default ()
+    :param mission: Filter on the sentinel mission can be 1, 2, 3 or 5.
+                    by default None
+    :param instrument: Filter on the instrument.
+                       by default None by default None
+    :param product_type: Filter on the product type you want ot retrieve.
+                         by default None
+    :param cloud: Maximum cloud cover in percent by default None
+    :param order: Specify the keyword to order the result.
+                  Prefix ‘-’ for descending order. by default None
+
+    :return: A tuple the first entry corresponding to the filter
+             and the second to the order.
+    """
+```
+### Example
+
+```python
+from pygssearch import OdataSource, query_builder
+
+service = 'http://my.service.com'
+source = OdataSource(service=service)
+
+query, order = query_builder(mission=2, order='ContentLength')
+
+print(source.request(query=query, query_order=order))
+```
+Here how to filter some sentinel product corresponding to the mission here S2 nad order by the size. 
+
+```commandline
+pygssearch --service http://my.service.com -m 2 -O ContentLength
+```
+
+## Download product
+
+```python
+from pygssearch import OdataSource, query_builder
+
+
+service = 'http://my.service.com'
+query, query_order = query_builder(
+    mission=1,
+    order= 'ContentLength'
+)
+
+# Connect to the service
+source = OdataSource(service=service)
+
+# To download ?
+source.download(limit=1, query_order=query_order, query=query)
+```
+Here how to download the smaller sentinel 1 product of the service. 
+
+```commandline
+pygssearch --service http://my.service.com -m 1 -O ContentLength --limit 1 -d
+```
+
+To start a download in python script you can use the download methode of the OdataSource class
+
+```python
+def download(self, query=None, query_order=None,
+             limit=10, skip=0,
+             output='.', threads=2,
+             chunk_size=4194304, verify=False,
+             fail_fast=False, quiet=False) -> None:
+    """
+    Download the product matching the query given in arguments.
+
+    :param query: (Expression) The filter to apply in the query
+                   by default None
+    :param query_order: (tuple[Expression, Expression]) to order
+                         the result of the query
+    :param limit: (int) Limit the number of result by default 10.
+    :param skip: (int) Skip a number of matching product by default 0.
+    :param output: (str) Path to a folder to put the downloaded product,
+                   by default the running directory
+    :param threads: (int) Number of threads running by default 2.
+    :param chunk_size: (int) the size of chunk to be downloaded
+                        by default 4194304
+    :param verify: (bool) check at the end of download if the hash of
+                   the downloaded product match the one of the service.
+                   (by default False)
+    :param fail_fast: (bool) stop all the download when an error append
+                      (by default False)
+    :param quiet: (bool) put the quit mode.
+    :return: None
+    """
+```
+
+### Run Test
+
+The test configuration are describe in the file .coveragerc, before launching the test
+beware if you have an already prepared configuration environment (env var or conf file)
+because the test will not pass.
+To run the test you can launch
+
+````commandline
+pip install -r requirements.txt -r requirements-dev.txt
+coverage run
+````
