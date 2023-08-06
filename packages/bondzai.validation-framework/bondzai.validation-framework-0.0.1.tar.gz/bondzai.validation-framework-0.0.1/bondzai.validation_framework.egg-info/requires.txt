@@ -1,0 +1,9 @@
+asciiplot==1.0.0
+bondzai.gateway-sdk==0.0.8
+numpy==1.25.0
+PyYAML==6.0
+texttable==1.6.7
+typing_extensions==4.7.1
+
+[dev]
+pylint==2.15.9
