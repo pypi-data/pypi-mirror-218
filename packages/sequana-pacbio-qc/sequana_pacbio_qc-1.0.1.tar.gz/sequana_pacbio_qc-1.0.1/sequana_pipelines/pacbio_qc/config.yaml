@@ -1,0 +1,54 @@
+# ============================================================================
+# Config file for Quality Control
+# ==========================================[ Sections for the users ]========
+#
+# One of input_directory, input_pattern and input_samples must be provided
+# If input_directory provided, use it otherwise if input_pattern provided,
+# use it, otherwise use input_samples.
+# ============================================================================
+input_directory: /home/cokelaer/Data/Pacbio/pacbio_qc/data
+input_readtag: ''
+input_pattern: '*.bam'
+
+# if you have some samples starting with prefix to bed removed,
+# uncomment this line and fill the list ,
+# extra_prefixes_to_strip: ["lima_output"]
+
+
+apptainers:
+    graphviz: "https://zenodo.org/record/7928262/files/graphviz_7.0.5.img"
+    sequana: "https://zenodo.org/record/7341710/files/sequana_tools_0.14.5.img"
+
+
+
+bam_to_fasta:
+    thread: 4
+
+
+######################################################
+# Taxonomic analysis
+#
+# Provide as many databases as you want. They will be 
+# used sequentially.
+kraken:
+    do: false
+    thread: 4
+    databases:
+        - ~/.config/sequana/kraken2_dbs/viruses_masking/
+
+
+##############################################################################
+# MultiQC section
+#
+# :Parameters:
+#
+# - options: string with any valid MultiQC options
+
+multiqc:
+    input_directory: .
+    options: -p -f
+    modules: sequana_pacbio_qc
+    config_file: ''
+
+
+

@@ -1,0 +1,9 @@
+sequana>=0.12
+sequana_pipetools>=0.7.5
+multiqc
+
+[testing]
+pytest
+pytest-cov
+pytest-xdist
+coveralls
