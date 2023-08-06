@@ -1,0 +1,2 @@
+[console_scripts]
+omnivorex = omnivorex.omnivorex:main
