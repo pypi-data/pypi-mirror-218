@@ -1,0 +1,17 @@
+diz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diz/main.py,sha256=8qG_xh-7vNz6zx3c8fxgt6uEjBIh1VacJLAa3oEOyK4,1572
+diz/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diz/commands/install.py,sha256=rVdLgNIUay-zH4o6GP7sD72UdplmZfydcQ6-27-RVrs,480
+diz/commands/setup.py,sha256=318F06pjUtvOgLXXbVeMtOO0BPssfpv4hWZ7aiYC9iY,2108
+diz/commands/shell.py,sha256=3tctnMEgS222QpWIuCHB_2Mx9h3aVtTe5Zyfs8TiHx4,870
+diz/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diz/utils/dir.py,sha256=pwL1q-unLpwngempVgCuu0OZ1nDwq0Na_A_m5OiLEEM,237
+diz/utils/download.py,sha256=ZVPbH3VQSxUg05g18MAkhEW7H8EpvMcK0T8fwqajwrY,161
+diz/utils/pip.py,sha256=29lCEOisYc_z7kf6NHqzgorMsYPNptENb1Lf65KyQ6A,762
+diz/utils/validators.py,sha256=XphEQl4F6cCrLpLYP6ILM9hIzVpODsSwCK11Ebl6nmo,144
+diz/utils/yaml.py,sha256=Y1jNqO-RyyRulCcmn9qGlGjATVVFR07EbcER3Z1uCGk,308
+diz-0.0.8.dist-info/METADATA,sha256=gyNp0OYqnCXdLa5_Yg01hB2ZmtaUuKDXbZ7dx4Z6Mqk,1641
+diz-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+diz-0.0.8.dist-info/entry_points.txt,sha256=WM8xxRAwFKnNe6SZ_wuHSkuDMnx5-kvXRUwEC2WY4PY,38
+diz-0.0.8.dist-info/top_level.txt,sha256=AtIWJfaYaNyZQFNrK_ED416k--T7ajnEA4dA3urMB0Y,4
+diz-0.0.8.dist-info/RECORD,,
