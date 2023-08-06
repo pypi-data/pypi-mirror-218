@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xml-to-acts
+Version: 1.0.0
+Requires-Python: >=3.9
+Requires-Dist: pydrawio (~=1.1.0)
+Requires-Dist: click
+Provides-Extra: test
+Requires-Dist: pytest (~=7.4.0) ; extra == 'test'
+
