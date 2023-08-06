@@ -1,0 +1,9 @@
+datatransform/__init__.py,sha256=IJnQqv7Zyf6D_rFcU7gqNpy9mczcOlFM-SbL_gcwX98,80
+datatransform/datatransform.py,sha256=6pG1g_reD7IzNyRjGnkEYq1wo_BN6eWpXcchaDyv4KI,1369
+datatransform/leave_one_out.py,sha256=NpH87s_NDpfjcZtWRTP0nDeNvRz3WDfKTOZo6PDRpko,769
+datatransform/mca.py,sha256=Ig5MdH4PsieWyeVWdTsgkvZh_319JIuY0_hZryuO6RU,1540
+datatransform/pca.py,sha256=MDTNFOEDNocSmm5FVqEHlBHlSNfUEsoywkMG4F4thfE,996
+datatransform-1.6.dist-info/METADATA,sha256=-g8tWhxFqVH4_Sjo8xFhPZC1MU3EineHiSGy89WVFaw,56
+datatransform-1.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+datatransform-1.6.dist-info/top_level.txt,sha256=ESnYLX_EwzGFJ5avA0xDnUa9xuPt8cWZ2qdc6xNtIdA,14
+datatransform-1.6.dist-info/RECORD,,
