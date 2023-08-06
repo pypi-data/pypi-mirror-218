@@ -1,0 +1,4 @@
+torch
+safetensors
+diffusers[torch]==0.10.2
+transformers
