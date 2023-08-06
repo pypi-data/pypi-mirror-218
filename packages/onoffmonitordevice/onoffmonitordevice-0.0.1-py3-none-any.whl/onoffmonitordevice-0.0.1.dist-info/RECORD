@@ -1,0 +1,11 @@
+onoffmonitordevice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onoffmonitordevice/__main__.py,sha256=G8w6R3qlAMyO3rNruaKd804Wt2m5eTGkIcAXyodUGa0,705
+onoffmonitordevice/device.py,sha256=dtEyNO04PeshZwpIXuH-4ay3ZqmZgQUavYxujby0jZI,1060
+onoffmonitordevice/exceptions.py,sha256=ifvhlxVWqvNDv8EGYdTGuvYwVV-s0K_mbbwL7vBZiHk,43
+onoffmonitordevice/monitor.py,sha256=tBGDIQIeeA55n83yxMc98p30npF6ruMEKTbHhhbWXTc,3244
+onoffmonitordevice-0.0.1.dist-info/LICENSE,sha256=EauXk7lwd6z-a8bJgvo3A7hc81tjj_NBScbdp-ON9mA,1687
+onoffmonitordevice-0.0.1.dist-info/METADATA,sha256=y-dmIeeV06S31VwBJTad5S8bFQ5fkcet3H_XMxtk5Ts,914
+onoffmonitordevice-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+onoffmonitordevice-0.0.1.dist-info/entry_points.txt,sha256=bHUy4t3W6x822izmj0ZlnD7pslK3Mpm58vdcFv9LsMU,66
+onoffmonitordevice-0.0.1.dist-info/top_level.txt,sha256=y1P0gLW_WugW-4aoqMBNPYlXJl6DEsrWSgwUONzFjH0,19
+onoffmonitordevice-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+onoffmonitor = onoffmonitordevice.__main__:main

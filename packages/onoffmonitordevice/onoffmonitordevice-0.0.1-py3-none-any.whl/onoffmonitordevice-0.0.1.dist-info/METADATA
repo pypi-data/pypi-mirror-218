@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: onoffmonitordevice
+Version: 0.0.1
+Summary: Monitor the on/off status of devices and report to the server
+Author: Joe Greaves
+Project-URL: Homepage, https://github.com/Grvs44/onoffmonitordevice
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: keyring (>=24.2.0)
+Requires-Dist: RPi.GPIO (>=0.7.1)
+Requires-Dist: keyrings.alt (>=4.2.0)
+
+# On/Off Monitor Device
+## Installation
+### Cryptography
+On Linux you might need to install Rust to compile the Cryptography library. See their [installation instructions](https://cryptography.io/en/latest/installation/)  
+For installing Rust on Raspberry Pi see https://forums.raspberrypi.com/viewtopic.php?t=289963
