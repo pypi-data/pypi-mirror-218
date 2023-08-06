@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from os import execlp
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+from local.docker import dockerClient
+from local.commandline import arg
+from local.logging import debug
+
+
+def print_help():
+    print(
+        'Show environment stats (cpu, memory, io, ...)\n'
+        '\n'
+        'stats - show environment stats')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+containers = [
+    _.id
+    for _ in dockerClient.containers(
+        all=True, ignore_removed=True,
+        filters={'label': f'bssenv.environment.id={local.env.id()}'})
+    if _.labels.get('bssenv.container.type', None) == 'service'
+]
+
+if containers:
+    # pty.spawn could be also used here
+    execlp('docker', arg(0), 'stats', *containers)

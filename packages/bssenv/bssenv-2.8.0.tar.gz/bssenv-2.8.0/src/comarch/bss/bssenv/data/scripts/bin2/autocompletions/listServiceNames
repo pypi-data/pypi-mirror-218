@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.install
+from local.commandline import arg
+
+
+service_names = set()
+already_autocompleted = set(arg[2:])
+
+for service in local.install.get_installed_services().values():
+    service_names |= {service.name}
+
+service_names -= already_autocompleted
+
+for service_name in service_names:
+    print(service_name)

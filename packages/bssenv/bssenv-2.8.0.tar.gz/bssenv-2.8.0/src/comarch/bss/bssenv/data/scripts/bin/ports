@@ -1,0 +1,310 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+import os
+from typing import Dict, Union, List, Set
+from pathlib import Path
+from itertools import chain
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.env
+import local.install
+import local.services
+import local.ports
+import local.composefile
+import local.ports
+from local.docker import dockerClient
+from local.commandline import arg
+from local.services import keep_running_daemons
+from local.entities import SERVICE_TYPES, Service
+from local.logging import debug, info
+from pick import pick
+from prompt_toolkit import prompt
+from prompt_toolkit.validation import Validator
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+
+
+Docker_port = int
+Host_port = int
+Port_name = str
+
+
+def print_help():
+    print(
+        'Configure or describe environment ports\n'
+        '\n'
+        'ports [service_name] describe - describe ports for all services or the given one\n'
+        'ports [service_name] configure - configure ports for all services or the given one\n'
+        'ports [service_name] generate - generate ports for all services or the given one\n'
+        'ports [service_name] set defaults - set default ports for all services or the given one\n'
+        'ports service_name set port_name_1=value_1 port_name_2=value_2 ... - '
+        'set given ports mappings for given service\n'
+        'ports [service_name] remove all mappings - remove all port mapppings for all services or the given one')
+
+
+def _is_digit_or_empty(text: str):
+    return text is None or text == '' or text.isdigit()
+
+
+def _get_already_mapped_host_ports() -> Set[int]:
+    return set(chain.from_iterable(
+        [__['host'] for __ in _.ports.values() if __['host'] is not None]
+        for _ in local.install.get_installed_services().values()))
+
+
+def _get_excluded_ports() -> Set[int]:
+    return _get_already_mapped_host_ports() | dockerClient.all_containers_external_ports()
+
+
+def _transform_service_ports(
+        service: Service) -> Dict[
+            Docker_port, Dict[str, Union[Host_port, List[Port_name]]]]:
+    ports = {
+        _['docker']: {
+            'host': _['host'],
+            'docker': _['docker'],
+            'default': _['default'],
+            'names': _['names']}
+        for _ in service.ports.values()}
+    return ports
+
+
+def _update_service_composefile_ports(service: Service) -> None:
+    # TODO: przeniesc do local.ports
+    # po przeniesieniu wykorzystac tez w komendzie debug on/off
+    ports = _transform_service_ports(service)
+    service.composefile_entry['ports'] = \
+        [f'{_["host"]}:{_["docker"]}' for _ in ports.values() if _['host'] is not None]
+    info(f'Update composefile of service: {service.key}')
+    local.composefile.update_service_composefile(service)
+    if service.main_type == SERVICE_TYPES.DAEMON.value:
+        info(f'Recreate container of service: {service.key}')
+        local.services.recreate_service_container(service)
+    else:
+        # only daemons should have containers
+        info(f'Remove container of service: {service.key}')
+        dockerClient.rm_container(service.container_name)
+
+
+def _update_ports_for_services_changed(services: List[Service]) -> None:
+    if len(services) > 0:
+        with keep_running_daemons(log=info):
+            service_keys = sorted([_.key for _ in services])
+            info(f'Stop services: {service_keys}')
+            local.services.stop(*service_keys)
+            for service in services:
+                _update_service_composefile_ports(service)
+
+
+def _print_service_ports(*services: Service) -> None:
+    table = {
+        '_METADATA_':
+            {
+                'title': 'Ports:',
+                'headers': [
+                    {'name': 'Service', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Port name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Host', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Docker', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Host default value', 'overflow': 'fold', 'no_wrap': True}
+                ],
+                'show_header': True,
+                'type': 'table'},
+        '_ROWS_': []
+    }
+    services = {_.key: _ for _ in services}
+    for service_key in sorted(services.keys()):
+        service = services[service_key]
+        for port_name, port in service.ports.items():
+            table['_ROWS_'].append({
+                'Service': service.key,
+                'Port name': port_name,
+                'Host': str(port['host'] or ''),
+                'Docker': str(port['docker']),
+                'Host default value': str(port['default'])
+            })
+    screen.update({'ports': table}, False, False)
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+arg1 = arg(1)
+arg2 = arg(2)
+arg3 = arg(3)
+arg4 = arg(4)
+
+try:
+    term = blessed.Terminal()
+    screen = Screen(
+            term,
+            DictDataUpdater(),
+            DictTabularDataPrinter(),
+            use_secondary_screen_buffer=False)
+
+    validator = Validator.from_callable(
+        _is_digit_or_empty,
+        error_message='This input contains non-numeric characters',
+        move_cursor_to_end=True)
+
+    installed_services_names = local.install.get_installed_services_names()
+    installed_services = local.install.get_installed_services().values()
+    services = []
+
+    user_has_chosen_service = False
+    if arg1 in installed_services_names:
+        # only given service
+        services.append(*(_ for _ in installed_services if _.name == arg1))
+        user_has_chosen_service = True
+        # shift args
+        arg1, arg2, arg3, arg4 = [arg2, arg3, arg4, None]
+    else:
+        # all services
+        services = installed_services
+
+    if arg1 == 'describe':
+        _print_service_ports(*services)
+    elif arg1 == 'configure':
+        os.environ['BSSENV_STDOUT_TYPE'] = 'None'
+        if not user_has_chosen_service:
+            selected = pick(
+                sorted(installed_services_names),
+                'Choose services to configure:',
+                multi_select=True,
+                min_selection_count=1)
+            selected = set([selection[0] for selection in selected])
+            services = [_ for _ in installed_services if _.name in selected]
+        services_changed = []
+        changed_port_mappings = dict()
+        for service in services:
+            service_ports = _transform_service_ports(service).values()
+            with term.fullscreen(), term.cbreak():
+                print(term.home + term.normal)
+                print(term.clear)
+                print(f'Service: {service.key}')
+                for port in service_ports:
+                    prev_port_host = port['host']
+                    print(f'\nPort: {", ".join(port["names"])}')
+                    print(f'\tCurrent value: {prev_port_host or ""}')
+                    print(f'\tDefault value: {port["default"]}')
+                    prompt_val = prompt(
+                        'New value: ',
+                        default=str(prev_port_host or ""),
+                        validator=validator)
+                    port['host'] = int(prompt_val) if prompt_val is not None and len(prompt_val) > 0 else None
+                    if prev_port_host != port['host']:
+                        for port_name in port['names']:
+                            service.ports[port_name]['host'] = port['host']
+                            changed_port_mappings[service.key] = {
+                                **changed_port_mappings.get(service.key, {}), port_name: port['host']}
+            if service.key in changed_port_mappings.keys():
+                services_changed.append(service)
+        _update_ports_for_services_changed(services_changed)
+        local.ports.add_changed_port_mappings(changed_port_mappings)
+        _print_service_ports(*services)
+    elif arg1 == 'generate':
+        services_changed = []
+        changed_port_mappings = dict()
+        # exclude all currently mapped host ports from all installed services
+        exclude_ports = _get_excluded_ports()
+        for service in services:
+            service_ports = _transform_service_ports(service).values()
+            for port in service_ports:
+                if port['host'] is not None:
+                    # generate only for already mapped ports
+                    prev_port_host = port['host']
+                    port['host'] = local.ports.get_free_port(port['default'], exclude_ports)
+                    if port['host'] != prev_port_host:
+                        for port_name in port['names']:
+                            service.ports[port_name]['host'] = port['host']
+                            changed_port_mappings[service.key] = {
+                                **changed_port_mappings.get(service.key, {}), port_name: port['host']}
+                        # exclude also generated ports
+                        exclude_ports.add(port['host'])
+            if service.key in changed_port_mappings.keys():
+                services_changed.append(service)
+        _update_ports_for_services_changed(services_changed)
+        local.ports.add_changed_port_mappings(changed_port_mappings)
+        _print_service_ports(*services)
+    elif arg1 == 'set':
+        if arg2 == 'defaults':
+            services_changed = []
+            changed_port_mappings = dict()
+            for service in services:
+                service_ports = _transform_service_ports(service).values()
+                for port in service_ports:
+                    if port['host'] is not None and port['host'] != port['default']:
+                        port['host'] = port['default']
+                        for port_name in port['names']:
+                            service.ports[port_name]['host'] = port['host']
+                            changed_port_mappings[service.key] = {
+                                **changed_port_mappings.get(service.key, {}), port_name: port['host']}
+                if service.key in changed_port_mappings.keys():
+                    services_changed.append(service)
+            _update_ports_for_services_changed(services_changed)
+            local.ports.add_changed_port_mappings(changed_port_mappings)
+            _print_service_ports(*services)
+        elif user_has_chosen_service:
+            ports_to_set = {_: __ for _, __ in map(lambda _: _.split('='), [_ for _ in arg[3:] if '=' in _])}
+            if len(ports_to_set.keys()) < 1:
+                print_help()
+                exit('\nWrong parameters provided')
+            services_changed = []
+            changed_port_mappings = dict()
+            for service in services:
+                service_ports = _transform_service_ports(service).values()
+                for port in service_ports:
+                    for port_name_to_set, port_value_to_set in ports_to_set.items():
+                        if port_name_to_set in port['names']:
+                            if port['host'] != port_value_to_set:
+                                port['host'] = port_value_to_set
+                                for port_name in port['names']:
+                                    service.ports[port_name]['host'] = port['host']
+                                    changed_port_mappings[service.key] = {
+                                        **changed_port_mappings.get(service.key, {}), port_name: port['host']}
+                if service.key in changed_port_mappings.keys():
+                    services_changed.append(service)
+            _update_ports_for_services_changed(services_changed)
+            local.ports.add_changed_port_mappings(changed_port_mappings)
+            _print_service_ports(*services)
+        else:
+            print_help()
+            exit('\nWrong parameters provided')
+    elif arg1 == 'remove' and arg2 == 'all' and arg3 == 'mappings':
+        services_changed = []
+        changed_port_mappings = dict()
+        for service in services:
+            service_ports = _transform_service_ports(service).values()
+            for port in service_ports:
+                if port['host'] is not None:
+                    port['host'] = None
+                    for port_name in port['names']:
+                        service.ports[port_name]['host'] = port['host']
+                        changed_port_mappings[service.key] = {
+                            **changed_port_mappings.get(service.key, {}), port_name: port['host']}
+            if service.key in changed_port_mappings.keys():
+                services_changed.append(service)
+        _update_ports_for_services_changed(services_changed)
+        local.ports.add_changed_port_mappings(changed_port_mappings)
+        _print_service_ports(*services)
+    else:
+        print_help()
+        exit('\nWrong parameters provided')
+finally:
+    if screen is not None:
+        screen.destroy()

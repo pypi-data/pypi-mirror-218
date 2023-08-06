@@ -1,0 +1,522 @@
+#!/usr/bin/env bash
+
+
+# deactivate bssenv session if something already activated
+if [[ "$BSSENV_NAME" ]] && { type -t deactivate | grep 'function' &> /dev/null ; }; then
+  deactivate
+fi
+
+
+# ------------------------------------------------------------------------------
+# init
+
+# script scoped variables must have prefix: act_
+# bssenv session scoped variables must have prexix: BSSENV_
+
+# script scoped variables must be unset at the end of this script
+
+act_current_path="$(pwd -P)"
+act_script_dir="$(cd "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+cd "$act_script_dir"
+
+# ------------------------------------------------------------------------------
+# parameters
+
+act_bssenv_dir="$(cd "${act_script_dir}/../../" && pwd -P)"
+act_bssenv_name="$(basename -- "$act_bssenv_dir")"
+
+
+# ------------------------------------------------------------------------------
+# session environment variables registries
+## restore registry: variables which values should be restored during deactivation to their initial values just before activation
+## unset registry: variables which must be simply unset at the deactivation
+## cm registry: values from config maps. These should be simple unset at the deactivation
+
+declare -g -A BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL
+declare -g -A BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL
+declare -g -A BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY
+declare -g -A BSSENV_ENV_VAR_SESSION_CM_REGISTRY
+
+function export_to_bssenv_session_restore_registry() {
+  # these variables should have their values set back to initial values just before activation
+  # unless value of such a variable has changed somehow during this bssenv session. In that case we should
+  # respect this new value
+  local -r env_var_name="$1"
+  local -r env_var_val="$2"
+  # check if environment variable name is not already in registry:
+  if [[ ! "${BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[$env_var_name]+x}" ]]; then
+    # if variable has not been added to registry before:
+    if [[ "${!env_var_name+x}" ]]; then
+      # if variable is set/declared (is declared and has some empty or non-empty value):
+      # then set this value to registry as initial value to which we should restore back after deactivation
+      BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL[$env_var_name]="${!env_var_name}"
+    fi
+  fi
+  # check if this new value overwrites something in unset registry
+  if [[ "${BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY[$env_var_name]+x}" ]]; then
+    unset BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY[$env_var_name]
+  fi
+  # check if this new value overwrites something in cm registry
+  if [[ "${BSSENV_ENV_VAR_SESSION_CM_REGISTRY[$env_var_name]+x}" ]]; then
+    unset BSSENV_ENV_VAR_SESSION_CM_REGISTRY[$env_var_name]
+  fi
+  # and also set to registry the most recent value for this environment variable
+  BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[$env_var_name]="$env_var_val"
+  export $env_var_name="$env_var_val"
+}
+
+function export_to_bssenv_session_unset_registry() {
+  # these variables should be simple unset during deactivation
+  local -r env_var_name="$1"
+  local -r env_var_val="$2"
+  # check if this new value overwrites something in restore registry
+  if [[ "${BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[$env_var_name]+x}" ]]; then
+    unset BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[$env_var_name]
+    if [[ "${BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL[$env_var_name]+x}" ]]; then
+      unset BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL[$env_var_name]
+    fi
+  fi
+  # check if this new value overwrites something in cm registry
+  if [[ "${BSSENV_ENV_VAR_SESSION_CM_REGISTRY[$env_var_name]+x}" ]]; then
+    unset BSSENV_ENV_VAR_SESSION_CM_REGISTRY[$env_var_name]
+  fi
+  # and also set to registry the most recent value for this environment variable
+  BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY+=([$env_var_name]="$env_var_val")
+  export $env_var_name="$env_var_val"
+}
+
+function export_to_bssenv_session_cm_registry() {
+  # these variables should be simple unset during deactivation
+  local -r env_var_name="$1"
+  local -r env_var_val="$2"
+  # check if this new value overwrites something in restore registry
+  if [[ "${BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[$env_var_name]+x}" ]]; then
+    unset BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[$env_var_name]
+    if [[ "${BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL[$env_var_name]+x}" ]]; then
+      unset BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL[$env_var_name]
+    fi
+  fi
+  # check if this new value overwrites something in unset registry
+  if [[ "${BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY[$env_var_name]+x}" ]]; then
+    unset BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY[$env_var_name]
+  fi
+  # and also set to registry the most recent value for this environment variable
+  BSSENV_ENV_VAR_SESSION_CM_REGISTRY+=([$env_var_name]="$env_var_val")
+  export $env_var_name="$env_var_val"
+}
+
+function deactivate_bssenv_session_restore_registry() {
+  local key
+  for key in "${!BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[@]}"; do
+    if [[ "${BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[$key]}" == "${!key}" ]]; then
+      # value of this variable is unchanged since set during bssenv session. So nothing has changed it in the meantime
+      # and therefore we are free to restore it or unset
+      if [[ "${BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL[$key]+x}" ]]; then
+        # restore if there is an initial value
+        eval "$key=\"\${BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL[$key]}\""
+        unset BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL[$key]
+      else
+        # unset
+        unset $key
+      fi
+    fi
+    unset BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL[$key]
+  done
+}
+
+function deactivate_bssenv_session_unset_registry() {
+  local key
+  for key in "${!BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY[@]}"; do
+    unset "$key"
+    unset BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY[$key]
+  done
+}
+
+function deactivate_bssenv_session_cm_registry() {
+  local key
+  for key in "${!BSSENV_ENV_VAR_SESSION_CM_REGISTRY[@]}"; do
+    unset "$key"
+    unset BSSENV_ENV_VAR_SESSION_CM_REGISTRY[$key]
+  done
+}
+
+function export_env_config_maps() {
+  local -r installed_config_maps_file="${1}"
+
+  if [[ -f "${installed_config_maps_file}" ]]; then
+    while IFS= read -r act_config_map_file || [ "$act_config_map_file" ];
+    do
+      act_env_var_prefix="$act_config_map_file"
+      act_config_map_file="${BSSENV_CONFIG_MAPS_DIR}/${act_config_map_file}"
+      if [[ -f "$act_config_map_file" ]]; then
+        act_env_var_prefix="${act_env_var_prefix//-/_}"
+        act_env_var_prefix="${act_env_var_prefix//./_}"
+        act_env_var_prefix="${act_env_var_prefix^^}"
+        while IFS='=' read -r act_key act_value; do
+          export_to_bssenv_session_cm_registry "BSSENV_CM_${act_env_var_prefix}_${act_key}" "$act_value"
+        done < <(cat "$act_config_map_file" | grep -v -e '^#' |  grep '=')
+      fi
+    done < <(cat "$installed_config_maps_file" | grep ' | env' | cut -d '|' -f1 | rev | cut -c2- | rev)
+  fi
+}
+
+function refresh_env_config_maps() {
+  deactivate_bssenv_session_cm_registry
+  export_env_config_maps "${BSSENV_INSTALLED_CONFIG_MAPS_FILE}"
+}
+
+# ------------------------------------------------------------------------------
+# main
+
+export_to_bssenv_session_unset_registry 'BSSENV_CURRENT_USER_UID' "$(id -u)"
+export_to_bssenv_session_unset_registry 'BSSENV_CURRENT_USER_GID' "$(id -g)"
+if [[ ! "$BSSENV_HOSTNAME" ]]; then
+  export_to_bssenv_session_restore_registry 'BSSENV_HOSTNAME' "$(hostname 2> /dev/null || echo 'UNKNOWN')"
+fi
+if [[ ! "$BSSENV_IP" ]]; then
+  export_to_bssenv_session_restore_registry 'BSSENV_IP' "$(ip route get 1 | xargs echo -n | awk '{split($0, a, " src "); split(a[2], b, " "); $1=b[1]; print $1}' | xargs echo -n)"
+fi
+export_to_bssenv_session_unset_registry 'BSSENV_DNSDOMAINNAME' "$(dnsdomainname 2> /dev/null || echo 'UNKNOWN')"
+export_to_bssenv_session_unset_registry 'BSSENV_SSH_CONNECTION' "$SSH_CONNECTION"
+export_to_bssenv_session_unset_registry 'BSSENV_SSH_CLIENT' "$SSH_CLIENT"
+export_to_bssenv_session_unset_registry 'BSSENV_WHO_AM_I' "$(who am i)"
+export_to_bssenv_session_unset_registry 'BSSENV_WHOAMI' "$(whoami)"
+
+export_to_bssenv_session_unset_registry 'BSSENV_DIR' "$act_bssenv_dir"
+export_to_bssenv_session_unset_registry 'BSSENV_NAME' "$act_bssenv_name"
+export_to_bssenv_session_unset_registry 'BSSENV_NETWORK' "${BSSENV_NAME}_network"
+
+export_to_bssenv_session_unset_registry 'BSSENV_DOCKER_DIR' "${BSSENV_DIR}/docker"
+export_to_bssenv_session_unset_registry 'BSSENV_CONFIG_DIR' "${BSSENV_DIR}/config"
+export_to_bssenv_session_unset_registry 'BSSENV_LOGS_DIR' "${BSSENV_DIR}/logs"
+export_to_bssenv_session_unset_registry 'BSSENV_PML_DIR' "${BSSENV_DIR}/PML"
+export_to_bssenv_session_unset_registry 'BSSENV_CONFIG_MAPS_DIR' "${BSSENV_DIR}/config_maps"
+export_to_bssenv_session_unset_registry 'BSSENV_TMP_DIR' "${BSSENV_DIR}/.tmp"
+export_to_bssenv_session_unset_registry 'BSSENV_ENV_FILE' "${BSSENV_DIR}/.env"
+export_to_bssenv_session_unset_registry 'BSSENV_VENV_DIR' "${BSSENV_DIR}/.venv"
+
+export_to_bssenv_session_unset_registry 'BSSENV_MAIN_LOG_FILE' "${BSSENV_LOGS_DIR}/bssenv.log"
+
+export_to_bssenv_session_unset_registry 'BSSENV_VAR_DIR' "${BSSENV_VENV_DIR}/var"
+export_to_bssenv_session_unset_registry 'BSSENV_LIB_DIR' "${BSSENV_VENV_DIR}/lib"
+export_to_bssenv_session_unset_registry 'BSSENV_BIN_DIR' "${BSSENV_VENV_DIR}/bin"
+export_to_bssenv_session_unset_registry 'BSSENV_BIN2_DIR' "${BSSENV_VENV_DIR}/bin2"
+export_to_bssenv_session_unset_registry 'BSSENV_AUTOCOMPLETION_DIR' "${BSSENV_VENV_DIR}/autocompletion"
+export_to_bssenv_session_unset_registry 'BSSENV_TEMPLATES_DIR' "${BSSENV_VENV_DIR}/templates"
+
+export_to_bssenv_session_unset_registry 'BSSENV_CONFIG_VOLUME' "${BSSENV_DOCKER_DIR}/volumes/bss_config"
+export_to_bssenv_session_unset_registry 'BSSENV_DATA_VOLUME' "${BSSENV_DOCKER_DIR}/volumes/bss_data"
+export_to_bssenv_session_unset_registry 'BSSENV_LOGS_VOLUME' "${BSSENV_DOCKER_DIR}/volumes/bss_logs"
+export_to_bssenv_session_unset_registry 'BSSENV_COMPOSEFILES_DIR' "${BSSENV_DOCKER_DIR}/composefiles"
+export_to_bssenv_session_unset_registry 'BSSENV_COMPOSEFILES_COMMANDS_DIR' "${BSSENV_COMPOSEFILES_DIR}/commands"
+export_to_bssenv_session_unset_registry 'BSSENV_COMPOSEFILES_DATA_PROVIDERS_DIR' "${BSSENV_COMPOSEFILES_DIR}/data_providers"
+export_to_bssenv_session_unset_registry 'BSSENV_MAIN_COMPOSEFILE_FILE' "${BSSENV_COMPOSEFILES_DIR}/daemons.yml"
+
+export_to_bssenv_session_unset_registry 'BSSENV_TEMPLATE_COMPOSEFILE_FILE' "${BSSENV_TEMPLATES_DIR}/composefiles/template.yml"
+
+export_to_bssenv_session_unset_registry 'BSSENV_ID' "$(<"${BSSENV_DIR}/.bssenv")"
+export_to_bssenv_session_unset_registry 'BSSENV_INSTALL_TYPE' "$(<"${BSSENV_CONFIG_DIR}/install_type")"
+export_to_bssenv_session_unset_registry 'BSSENV_ENVIRONMENTS_FILE' "$(<"${BSSENV_CONFIG_DIR}/bssenv_environments")"
+
+# todo: poprawic eksport zmiennych dotyczacych configow
+# ??? nie pamietam o co chodzilo ;-(
+export_to_bssenv_session_unset_registry 'BSSENV_GLOBAL_CONFIG_DIR' "$(dirname "$BSSENV_ENVIRONMENTS_FILE")"
+export_to_bssenv_session_unset_registry 'BSSENV_GLOBAL_ENV_DIR' "${BSSENV_GLOBAL_CONFIG_DIR}/env"
+export_to_bssenv_session_unset_registry 'BSSENV_GLOBAL_ENV_FILE' "${BSSENV_GLOBAL_ENV_DIR}/${BSSENV_NAME}.env"
+
+export_to_bssenv_session_unset_registry 'BSSENV_INSTALLED_CONFIG_MAPS_FILE' "${BSSENV_VAR_DIR}/installed_config_maps"
+export_to_bssenv_session_unset_registry 'BSSENV_UNINSTALLED_CONFIG_MAPS_FILE' "${BSSENV_VAR_DIR}/uninstalled_config_maps"
+
+export_to_bssenv_session_unset_registry 'BSSENV_INSTALLED_SERVICES_FILE' "${BSSENV_VAR_DIR}/installed"
+export_to_bssenv_session_unset_registry 'BSSENV_UNINSTALLED_SERVICES_FILE' "${BSSENV_VAR_DIR}/uninstalled"
+
+export_to_bssenv_session_unset_registry 'COMPOSE_PROJECT_NAME' "$BSSENV_NAME"
+export_to_bssenv_session_unset_registry 'COMPOSE_FILE' "$BSSENV_MAIN_COMPOSEFILE_FILE"
+export_to_bssenv_session_unset_registry 'COMPOSE_IGNORE_ORPHANS' 'True'
+
+# install environment config maps
+export_env_config_maps "${BSSENV_INSTALLED_CONFIG_MAPS_FILE}"
+
+# export global environment variables
+if [[ -f "$BSSENV_GLOBAL_ENV_FILE" ]]; then
+  while IFS='=' read -r act_key act_value; do
+    export_to_bssenv_session_unset_registry "$act_key" "$act_value"
+  done < <(cat "$BSSENV_GLOBAL_ENV_FILE" | grep -v -e '^#' |  grep '=')
+fi
+
+# PATH
+if [[ ! "$PREV_PATH" ]]; then
+  export PREV_PATH="$PATH"
+fi
+export PATH="${BSSENV_BIN_DIR}:${PATH}"
+
+# PS1
+if [[ ! "$PREV_PS1" ]]; then
+  export PREV_PS1="$PS1"
+fi
+export PS1="($BSSENV_NAME) $PS1"
+
+# PROMPT_COMMAND
+if [[ ! "$PREV_PROMPT_COMMAND" ]]; then
+  export PREV_PROMPT_COMMAND="$PROMPT_COMMAND"
+fi
+# remove trailing whitespace characters
+PROMPT_COMMAND="${PROMPT_COMMAND%"${PROMPT_COMMAND##*[![:space:]]}"}"
+# remove last ';' character
+PROMPT_COMMAND="${PROMPT_COMMAND%;}"
+if [[ "$PROMPT_COMMAND" ]]; then
+  # there is already something in PROMPT_COMMAND so append
+  export PROMPT_COMMAND="${PROMPT_COMMAND}; bssenv_update_prompt;"
+else
+  # there is nothing in PROMPT_COMMAND so set
+  export PROMPT_COMMAND="bssenv_update_prompt;"
+fi
+
+# install autocompletions
+if [[ -d "$BSSENV_AUTOCOMPLETION_DIR" ]]; then
+  # TODO not working on findutils < 4.7.0
+  #while IFS= read -r -d $'\0' act_install_autocompletion_file;
+  #do
+  #  source "$act_install_autocompletion_file"
+  #done < <(find "$BSSENV_AUTOCOMPLETION_DIR" -maxdepth 1 -type f,l -name "*.install" -print0)
+  # load from file
+  while IFS= read -r -d $'\0' act_install_autocompletion_file;
+  do
+    source "$act_install_autocompletion_file"
+  done < <(find "$BSSENV_AUTOCOMPLETION_DIR" -maxdepth 1 -type f -name "*.install" -print0)
+  # load from link
+  while IFS= read -r -d $'\0' act_install_autocompletion_file;
+  do
+    source "$act_install_autocompletion_file"
+  done < <(find "$BSSENV_AUTOCOMPLETION_DIR" -maxdepth 1 -type l -name "*.install" -print0)
+fi
+
+if [[ ! "$OSTYPE" == "darwin"* ]]; then
+  # check disc space
+  act_docker_root="$(docker info 2> /dev/null | grep 'Docker Root Dir' | cut -d':' -f2 | cut -c2-)"
+  if [[ (-d "$act_docker_root") && (-d "$BSSENV_DIR") ]]; then
+    act_docker_root_used_space="$(df -h --output=pcent "$act_docker_root" | tail -1 | cut -c2- | sed 's/%//')"
+    act_bssenv_dir_used_space="$(df -h --output=pcent "$BSSENV_DIR" | tail -1 | cut -c2- | sed 's/%//')"
+    # act_docker_root_used_space="$(df -h "$act_docker_root" | sed 's/.*[^0-9]\+\([0-9]\+%\).*/\1/' | tail -1 | sed 's/%//')"
+    # act_bssenv_dir_used_space="$(df -h "$BSSENV_DIR" | sed 's/.*[^0-9]\+\([0-9]\+%\).*/\1/' | tail -1 | sed 's/%//')"
+    if [[ "$act_docker_root_used_space" && "$act_bssenv_dir_used_space" ]]; then
+      if (( $act_docker_root_used_space >= 97 )) || (( $act_bssenv_dir_used_space >= 97 )); then
+        act_warning=''
+        act_line=''
+        act_length=0
+        if (( $act_docker_root_used_space >= 97 )); then
+          act_line="WARNING: You are running out of disc space on '$act_docker_root' (${act_docker_root_used_space}%%)"
+          act_length=${#act_line}
+          act_warning="$act_line\n"
+        fi
+        if (( $act_bssenv_dir_used_space >= 97 )); then
+          act_line="WARNING: You are running out of disc space on '$BSSENV_DIR' (${act_bssenv_dir_used_space}%%)"
+          act_length=$(( ${#act_line} > $act_length ? ${#act_line} : $act_length ))
+          act_warning="${act_warning}${act_line}"
+        fi
+        printf "%${act_length}s\n" | tr ' ' '='
+        printf "$act_warning\n"
+        printf "%${act_length}s\n" | tr ' ' '='
+      fi
+    fi
+  fi
+fi
+
+# ------------------------------------------------------------------------------
+# functions
+
+function bssenv_update_prompt() {
+  if [[ "$BSSENV_NAME" && ! "$PS1" =~ "($BSSENV_NAME)" ]]; then
+    export PS1="($BSSENV_NAME) $PS1"
+  fi
+}
+
+function cdin(){
+  local -r subdir="$1"
+  if [[ ! "$PREV_PWD" ]]; then
+    export PREV_PWD="$(pwd -P)"
+  fi
+  case "$subdir" in
+    'bss_logs'|'bss_data'|'bss_config')
+      cd "${BSSENV_DOCKER_DIR}/volumes/${subdir}"
+      ;;
+    'logs')
+      cd "$BSSENV_LOGS_DIR"
+      ;;
+    'pml')
+      cd "$BSSENV_PML_DIR"
+      ;;
+    'composefiles')
+      cd "$BSSENV_COMPOSEFILES_DIR"
+      ;;
+    'config_maps')
+      cd "$BSSENV_CONFIG_MAPS_DIR"
+      ;;
+    'templates')
+      cd "$BSSENV_TEMPLATES_DIR"
+      ;;
+    *)
+      cd "$BSSENV_DIR"
+  esac
+}
+
+function cdout(){
+  # local -r prev_pwd="$PREV_PWD"
+  # [[ "${PREV_PWD+x}" ]] && unset PREV_PWD
+  # [[ "$prev_pwd" ]] && cd "$prev_pwd"
+  [[ "$PREV_PWD" ]] && cd "$PREV_PWD"
+  [[ "${PREV_PWD+x}" ]] && unset PREV_PWD
+}
+
+function uninstall_bssenv_autocompletions() {
+  if [[ "$BSSENV_DIR" && -d "$BSSENV_AUTOCOMPLETION_DIR" ]]; then
+    local act_uninstall_autocompletion_file
+    # TODO: not working on findutils < 4.7.0
+    #while IFS= read -r -d $'\0' act_uninstall_autocompletion_file;
+    #do
+    #  source "$act_uninstall_autocompletion_file" &> /dev/null
+    #done < <(find "$BSSENV_AUTOCOMPLETION_DIR" -maxdepth 1 -type f,l -name "*.uninstall" -print0)
+    # load from file
+    while IFS= read -r -d $'\0' act_uninstall_autocompletion_file;
+    do
+      source "$act_uninstall_autocompletion_file" &> /dev/null
+    done < <(find "$BSSENV_AUTOCOMPLETION_DIR" -maxdepth 1 -type f -name "*.uninstall" -print0)
+    # load from link
+    while IFS= read -r -d $'\0' act_uninstall_autocompletion_file;
+    do
+      source "$act_uninstall_autocompletion_file" &> /dev/null
+    done < <(find "$BSSENV_AUTOCOMPLETION_DIR" -maxdepth 1 -type l -name "*.uninstall" -print0)
+  fi
+}
+
+function install(){
+  local exit_code=0
+  "${BSSENV_BIN_DIR}"/install "$@" || exit_code=${?}
+  refresh_env_config_maps
+  return ${exit_code}
+}
+
+function uninstall(){
+  local exit_code=0
+  "${BSSENV_BIN_DIR}"/uninstall "$@" || exit_code=${?}
+  refresh_env_config_maps
+  return ${exit_code}
+}
+
+function fullInstall() {
+  local exit_code=0
+  "${BSSENV_BIN_DIR}"/fullInstall "$@" || exit_code=${?}
+  refresh_env_config_maps
+  return ${exit_code}
+}
+
+function update() {
+  local exit_code=0
+  "${BSSENV_BIN_DIR}"/update "$@" || exit_code=${?}
+  refresh_env_config_maps
+  return ${exit_code}
+}
+
+function fullUpdate() {
+  local exit_code=0
+  "${BSSENV_BIN_DIR}"/fullUpdate "$@" || exit_code=${?}
+  refresh_env_config_maps
+  return ${exit_code}
+}
+
+
+function deactivate() {
+  uninstall_bssenv_autocompletions
+  deactivate_bssenv_session_unset_registry
+  deactivate_bssenv_session_cm_registry
+  deactivate_bssenv_session_restore_registry
+  # if [[ "${BSSENV_HOSTNAME+x}" && ("$BSSENV_HOSTNAME_UNSET" == "$BSSENV_HOSTNAME") ]]; then
+  #   unset BSSENV_HOSTNAME
+  # fi
+  # unset BSSENV_HOSTNAME_UNSET
+  # if [[ "${BSSENV_IP+x}" && ("$BSSENV_IP_UNSET" == "$BSSENV_IP") ]]; then
+  #   unset BSSENV_IP
+  # fi
+  # unset BSSENV_IP_UNSET
+  # unset global environment variables
+  # if [[ -f "$BSSENV_GLOBAL_ENV_FILE" ]]; then
+  #   while IFS='=' read -r key value; do
+  #     # TODO: dopisac w dokumentacji ze modyfikacja wpisow w globalnym pliku zmiennych srodowiskowych
+  #     # dla srodowiska powinien odbywac sie tylko wtedy gdy to srodowisko jest aktualnie nieaktywne w
+  #     # zadnej sesji. Inaczej ta aktywna sesja nie zauwazy tych zmian i co gorsza po deaktywacji w
+  #     # zmiennych srodowiskowych tej sesji moga zostac jakies smieci (bo unsetowane sa tylko te zmienne
+  #     # ktore sa aktualnie w pliku BSSENV_GLOBAL_ENV_FILE)
+  #     unset "$key"
+  #   done < <(cat "$BSSENV_GLOBAL_ENV_FILE" | grep -v -e '^#' | grep '=')
+  # fi
+  # while IFS='=' read -r key value; do
+  #   if [[ \
+  #       "$key" != "BSSENV_DOCKER_NETWORK_MTU" && \
+  #       "$key" != "BSSENV_LOG_LEVEL" && \
+  #       "$key" != "BSSENV_HOSTNAME" && \
+  #       "$key" != "BSSENV_IP" && \
+  #       "$key" != "BSSENV_STDOUT_MODE" && \
+  #       "$key" != "BSSENV_VERBOSE_MODE" && \
+  #       "$key" != "BSSENV_GLOBAL_TMP_DIR" ]]; then
+  #     unset "$key"
+  #   fi
+  # done < <(env | grep -e '^BSSENV_')
+  # [[ "${COMPOSE_PROJECT_NAME+x}" ]] && unset COMPOSE_PROJECT_NAME
+  # [[ "${COMPOSE_FILE+x}" ]] && unset COMPOSE_FILE
+  # [[ "${COMPOSE_IGNORE_ORPHANS+x}" ]] && unset COMPOSE_IGNORE_ORPHANS
+  # [[ "${PREV_PWD+x}" ]] && unset PREV_PWD
+  if [[ "${PREV_PATH+x}" ]]; then
+    export PATH="$PREV_PATH"
+    unset PREV_PATH
+  fi
+  if [[ "${PREV_PS1+x}" ]]; then
+    export PS1="$PREV_PS1"
+    unset PREV_PS1
+  fi
+  if [[ "${PREV_PROMPT_COMMAND+x}" ]]; then
+    export PROMPT_COMMAND="$PREV_PROMPT_COMMAND"
+    unset PREV_PROMPT_COMMAND
+  fi
+  unset deactivate_bssenv_session_unset_registry
+  unset deactivate_bssenv_session_restore_registry
+  unset deactivate_bssenv_session_cm_registry
+  unset export_to_bssenv_session_cm_registry
+  unset bssenv_update_prompt
+  unset cdin
+  unset cdout
+  unset export_env_config_maps
+  unset refresh_env_config_maps
+  unset install
+  unset uninstall
+  unset fullInstall
+  unset update
+  unset fullUpdate
+  unset uninstall_bssenv_autocompletions
+  unset BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_OLD_VAL
+  unset BSSENV_ENV_VAR_SESSION_RESTORE_REGISTRY_NEW_VAL
+  unset BSSENV_ENV_VAR_SESSION_UNSET_REGISTRY
+  unset BSSENV_ENV_VAR_SESSION_CM_REGISTRY
+  unset deactivate
+}
+
+function destroy() {
+  uninstall_bssenv_autocompletions
+  "${BSSENV_BIN2_DIR}/destroy"
+  deactivate
+  unset destroy
+}
+
+# ------------------------------------------------------------------------------
+# finalize
+
+cd "$act_current_path"
+
+# unset script scoped variables and functions. These should not be visible in this bssenv session anymore
+unset act_current_path act_script_dir act_bssenv_name act_bssenv_dir \
+  act_docker_root act_docker_root_used_space act_bssenv_dir_used_space \
+  act_warning act_line act_length act_install_autocompletion_file \
+  act_uninstall_autocompletion_file act_config_map_file act_env_var_prefix \
+  act_key act_value \
+  export_to_bssenv_session_restore_registry export_to_bssenv_session_unset_registry \
+
+# ------------------------------------------------------------------------------

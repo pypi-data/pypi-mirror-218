@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+import time
+from pathlib import Path
+from typing import Set
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env  # noqa: E402
+import local.install  # noqa: E402
+from local.docker import dockerClient
+from local.commandline import arg  # noqa: E402
+from local.logging import debug, info  # noqa: E402
+
+
+def print_help():
+    print(
+        'Wait untill given services and service commands are stopped/running/healthy\n'  # noqa: E501
+        '\n'
+        'waiton - wait untill all daemons are healthy\n'
+        'waiton stopped - wait untill all daemons are stopped\n'
+        'waiton running - wait untill all daemons are running\n'
+        'waiton healthy - wait untill all daemons are healthy\n'
+        'waiton stopped service_name service_key.command_key ... - wait untill given services and service commands are stopped\n'  # noqa: E501
+        'waiton running service_name service_key.command_key ... - wait untill given services and service commands are running\n'  # noqa: E501
+        'waiton healthy service_name service_key.command_key ... - wait untill given services and service commands are healthy\n'  # noqa: E501
+        '\n'
+        'Examples:\n'
+        '\twaiton healthy backend frontend dps\n'
+        '\twaiton running pml nyx dps:startRecurringEvents')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+wait_state = (arg(1) or 'healthy').lower()
+entities_to_wait_on: Set[str] = set(arg[2:])
+
+if len(entities_to_wait_on) < 1:
+    info(f'Wait for all daemons having state: {wait_state}')
+    entities_to_wait_on = set(
+        _.name for _ in local.install.get_installed_services().values()
+        if _.is_daemon and _.container_name is not None)
+
+debug(f'entities_to_wait_on: {entities_to_wait_on}')
+
+if len(entities_to_wait_on) > 0:
+    while True:
+        for entity in entities_to_wait_on:
+            debug(f'Checking entity: {entity}')
+
+            if ':' in entity:
+                entity_type = 'command_service'
+                arg_service_key, arg_command_key = \
+                    (entity.split(':') + [None])[0:2]
+            else:
+                entity_type = 'service'
+                arg_service_name = entity
+
+            containers_to_check: Set[str] = set()
+
+            if entity_type == 'service':
+                arg_services = [
+                    _ for _ in
+                    local.install.get_installed_services().values()
+                    if _.name == arg_service_name
+                    and _.container_name is not None]
+                if len(arg_services) < 1:
+                    raise Exception(
+                        f'Service "{arg_service_name}" is not installed"')
+                for arg_service in arg_services:
+                    containers_to_check.add(arg_service.container_name)
+            else:
+                for container in dockerClient.containers(
+                    all=True, ignore_removed=True,
+                    filters={
+                        'label': f'bssenv.environment.id={local.env.id()}'}
+                ):
+                    if \
+                        container.labels.get(
+                            'bssenv.container.type', None) != 'service':
+                        continue
+
+                    service_key = container.labels['bssenv.service.key']
+                    service_name = container.labels['bssenv.service.name']
+                    command_key = container.labels.get(
+                        'bssenv.service.command.key', None)
+
+                    if \
+                            command_key \
+                            and arg_service_key == service_key \
+                            and arg_command_key == command_key:
+                        containers_to_check.add(container)
+
+            if len(containers_to_check) < 1:
+                if wait_state == 'stopped':
+                    continue
+                elif wait_state == 'running':
+                    break
+                elif wait_state == 'healthy':
+                    break
+            else:
+                for container in containers_to_check:
+                    if isinstance(container, str):
+                        container_name = container
+                        container_id = container
+                    else:
+                        container_name = container.name
+                        container_id = container.id
+                    debug(
+                        f'Checking container state: {container_name}')
+                    if wait_state == 'stopped':
+                        if not dockerClient.is_stopped_container(container_id):
+                            debug('not stopped')
+                            break
+                    elif wait_state == 'running':
+                        if not dockerClient.is_running_container(container_id):
+                            debug('not running')
+                            break
+                    elif wait_state == 'healthy':
+                        if not dockerClient.is_healthy_container(container_id):
+                            debug('not healthy')
+                            break
+                else:
+                    continue
+                break
+        else:
+            break
+        time.sleep(2)

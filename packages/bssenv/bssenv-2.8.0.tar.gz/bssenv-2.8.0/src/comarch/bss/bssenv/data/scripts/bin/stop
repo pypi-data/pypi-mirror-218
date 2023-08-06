@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+from typing import Set
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+import local.services
+import local.install
+from local.commandline import arg
+from local.entities import SERVICE_TYPES
+from local.logging import debug, info
+
+
+def print_help():
+    print(
+        'Stop whole environment or given services and service commands\n'
+        '\n'
+        'stop - stop whole environment\n'
+        'stop service_name_1 service_name_2 service_key_3:command_key_3 ... '
+        '- stop given services and service commands\n'
+        '\n'
+        'Examples:\n'
+        '\tstop\n'
+        '\tstop elasticsearch backend:pml')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+entity_names: Set[str] = set(arg[1:])
+
+debug(f'entity_names: {entity_names}')
+
+if len(entity_names) < 1:
+    info('Stop all services and service commands')
+    local.services.stop(wait=False)
+else:
+    entities_to_stop: Set[str] = set()
+    for entity_name in entity_names:
+        if ':' in entity_name:
+            entities_to_stop.add(entity_name)
+        else:
+            service_name = entity_name
+            is_found = False
+            for service in local.install.get_installed_services().values():
+                if service.name == service_name:
+                    if service.main_type in [
+                            SERVICE_TYPES.DAEMON.value,
+                            SERVICE_TYPES.COMMAND.value
+                       ] \
+                       or (
+                            service.main_type
+                            == SERVICE_TYPES.DATA_PROVIDER.value
+                            and SERVICE_TYPES.DATA_PROVIDER_RESTORE.value
+                            in service.types
+                       ):
+                        entities_to_stop.add(service.key)
+                    is_found = True
+            if not is_found:
+                raise Exception(f'Service "{service_name}" not found')
+    if len(entities_to_stop) > 0:
+        info(f'Stop entities: {entities_to_stop}')
+        local.services.stop(*entities_to_stop, wait=False)

@@ -1,0 +1,457 @@
+# >---- BUILT IN COMMANDS ---->
+complete_deactivate() {
+  return 0
+}
+complete -F complete_deactivate deactivate
+
+complete_destroy() {
+  return 0
+}
+complete -F complete_destroy destroy
+
+complete_cdin() {
+  local commands curr_word
+  curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    commands="$( \
+      printf "%s " \
+        'bss_logs' \
+        'bss_config' \
+        'bss_data' \
+        'logs' \
+        'pml' \
+        'composefiles' \
+        'templates' \
+    )"
+    COMPREPLY=( $(compgen -W "$commands" -- "${curr_word}") )
+  fi
+  return 0
+}
+complete -F complete_cdin cdin
+
+complete_serviceNamesAndCommands() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -gt 0 ]]; then
+    COMPREPLY=( $("${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesAndCommands" "$cur" "${words[@]:1}") )
+  fi
+}
+complete -F complete_serviceNamesAndCommands start
+
+complete_stop() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -gt 0 ]]; then
+    COMPREPLY=( $("${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesAndCommandsWithRunningContainers" "$cur" "${words[@]:1}") )
+  fi
+}
+complete -F complete_stop stop
+
+complete_debug_on_off() {
+  local curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    COMPREPLY=( $(compgen -W "on off" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -gt 2 && ("${COMP_WORDS[1]}" == 'on' || "${COMP_WORDS[1]}" == 'off') ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesToDebug" "${COMP_WORDS[@]}" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    COMPREPLY=( $(compgen -W "$completions" -- "${curr_word}") )
+  fi
+}
+complete -F complete_debug_on_off debug
+
+complete_status() {
+  return 0
+}
+complete -F complete_status status
+
+complete_stats() {
+  return 0
+}
+complete -F complete_stats stats
+
+complete_install() {
+  return 0
+}
+complete -F complete_install install
+
+complete_fullInstall() {
+  return 0
+}
+complete -F complete_fullInstall fullInstall
+
+complete_images() {
+  return 0
+}
+complete -F complete_images images
+
+complete_update() {
+  return 0
+}
+complete -F complete_update update
+
+complete_fullUpdate() {
+  return 0
+}
+complete -F complete_fullUpdate fullUpdate
+
+complete_services() {
+  local curr_word
+  curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    COMPREPLY=( $(compgen -W "daemon command data_provider data_provider.restore data_provider.build data_provider.compress" -- "${curr_word}") )
+  fi
+  return 0
+}
+complete -F complete_services services
+
+complete_versions() {
+  local curr_word
+  curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    COMPREPLY=( $(compgen -W "-a" -- "${curr_word}") )
+  fi
+  return 0
+}
+complete -F complete_versions versions
+
+complete_uninstall() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -ge 1 ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listEntityNames" "${words[@]:1}" )
+    COMPREPLY=( "${completions[@]}" )
+    __ltrim_colon_completions "$cur"
+  fi
+}
+complete -F complete_uninstall uninstall
+
+complete_describe() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -ge 1 ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listEntityNames" "${words[@]:1}" )
+    COMPREPLY=( "${completions[@]}" )
+    __ltrim_colon_completions "$cur"
+  fi
+}
+complete -F complete_describe describe
+
+complete_existingContainers() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -eq 1 ]]; then
+    COMPREPLY=( $("${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesAndCommandsWithExistingContainers" "$cur" "${words[@]:1}") )
+  fi
+}
+complete -F complete_existingContainers logs
+
+complete_runningContainers() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -eq 1 ]]; then
+    COMPREPLY=( $("${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesAndCommandsWithRunningContainers" "$cur" "${words[@]:1}") )
+  fi
+}
+complete -F complete_runningContainers enter
+complete -F complete_runningContainers top
+complete -F complete_runningContainers pause
+
+complete_pausedContainers() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -eq 1 ]]; then
+    COMPREPLY=( $("${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesAndCommandsWithPausedContainers" "$cur" "${words[@]:1}") )
+  fi
+}
+complete -F complete_pausedContainers unpause
+
+complete_availableCommands() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -eq 1 ]]; then
+    COMPREPLY=( $(compgen -W "list run" -- "${cur}") )
+  elif [[ "$cword" -eq 2 && "$prev" == 'run' ]]; then
+    COMPREPLY=( $("${BSSENV_DIR}/.venv/bin2/autocompletions/listAvailableCommands" "$cur" "${words[@]:2}") )
+  fi
+}
+complete -F complete_availableCommands cmd
+
+complete_dns() {
+  local curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    COMPREPLY=( $(compgen -W "list add remove" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -gt 2 && "${#COMP_WORDS[@]}" -lt 4 && "${COMP_WORDS[1]}" == 'remove' ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listDnsMappings" "${COMP_WORDS[@]}" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    COMPREPLY=( $(compgen -W "$completions" -- "${curr_word}") )
+  fi
+}
+complete -F complete_dns dns
+
+complete_exp() {
+  local curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -lt 5 ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/completeExp" "${COMP_WORDS[@]}" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    COMPREPLY=( $(compgen -W "$completions" -- "${curr_word}") )
+  fi
+}
+complete -F complete_exp exp
+
+complete_init() {
+  local curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesToInit" "${COMP_WORDS[@]}" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    COMPREPLY=( $(compgen -W "$completions" -- "${curr_word}") )
+  fi
+}
+complete -F complete_init init
+
+complete_clean() {
+  local curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    COMPREPLY=( $(compgen -W "data conf logs init" -- "${curr_word}") )
+  elif [[ \
+          "${#COMP_WORDS[@]}" -eq 3 && \
+          ( \
+            "${COMP_WORDS[1]}" == 'data' || \
+            "${COMP_WORDS[1]}" == 'conf' || \
+            "${COMP_WORDS[1]}" == 'logs' || \
+            "${COMP_WORDS[1]}" == 'init' \
+          ) \
+  ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesToClean" "${COMP_WORDS[@]}" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    COMPREPLY=( $(compgen -W "$completions" -- "${curr_word}") )
+  fi
+}
+complete -F complete_clean clean
+
+complete_ports() {
+  local curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesWithPorts" "${COMP_WORDS[@]}" )
+    completions="$( IFS=' ' ; echo \
+        "describe" \
+        "configure" \
+        "generate" \
+        "set" \
+        "remove" \
+        "${completions[@]}" \
+    )"
+    COMPREPLY=( $(compgen -W "$completions" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -eq 3 && "${COMP_WORDS[1]}" == 'set' ]]; then
+    COMPREPLY=( $(compgen -W "defaults" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -eq 3 && "${COMP_WORDS[1]}" == 'remove' ]]; then
+    COMPREPLY=( $(compgen -W "all" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -eq 4 && "${COMP_WORDS[1]}" == 'remove'  && "${COMP_WORDS[2]}" == 'all' ]]; then
+    COMPREPLY=( $(compgen -W "mappings" -- "${curr_word}") )
+  elif [[ \
+          "${#COMP_WORDS[@]}" -eq 3 && \
+          ( \
+            "${COMP_WORDS[1]}" != "describe" && \
+            "${COMP_WORDS[1]}" != "configure" && \
+            "${COMP_WORDS[1]}" != "generate" && \
+            "${COMP_WORDS[1]}" != "set" && \
+            "${COMP_WORDS[1]}" != "remove" \
+          ) \
+  ]]; then
+    COMPREPLY=( $(compgen -W "describe configure generate set remove" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -eq 4 && "${COMP_WORDS[2]}" == 'set' ]]; then
+    COMPREPLY=( $(compgen -W "defaults" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -eq 4 && "${COMP_WORDS[2]}" == 'remove' ]]; then
+    COMPREPLY=( $(compgen -W "all" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -eq 5 && "${COMP_WORDS[2]}" == 'remove'  && "${COMP_WORDS[3]}" == 'all' ]]; then
+    COMPREPLY=( $(compgen -W "mappings" -- "${curr_word}") )
+  fi
+}
+complete -F complete_ports ports
+
+complete_snapshot() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -eq 1 ]]; then
+    local completions1 completions2
+    completions1="$( IFS=' ' ; echo \
+        "list" \
+        "details" \
+        "images" \
+        "create" \
+        "rm" \
+        "push" \
+    )"
+    mapfile -t completions1 < <( IFS=" " ; compgen -W "$completions1" -- "${cur}")
+    mapfile -t completions2 < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listEntityNames" "${words[@]:1}" )
+    COMPREPLY=( "${completions1[@]}" "${completions2[@]}" )
+    __ltrim_colon_completions "$cur"
+  elif [[ "$cword" -eq 2 && "${words[1]}" == 'list' ]]; then
+    COMPREPLY=( $(compgen -W "remote" -- "${cur}") )
+  elif [[ "$cword" -eq 2 && "${words[1]}" == 'push' ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listLocalSnapshots" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ "$cword" -eq 2 && "${words[1]}" == 'details' ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listLocalSnapshots" )
+    completions="$( IFS=' ' ; echo \
+        "remote" \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ "$cword" -eq 3 && "${words[1]}" == 'details' && "${words[2]}" == 'remote' ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listRemoteSnapshots" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ "$cword" -eq 2 && "${words[1]}" == 'images' ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listLocalSnapshots" )
+    completions="$( IFS=' ' ; echo \
+        "remote" \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ "$cword" -eq 3 && "${words[1]}" == 'images' && "${words[2]}" == 'remote' ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listRemoteSnapshots" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ "$cword" -eq 2 && "${words[1]}" == 'rm' ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listLocalSnapshots" )
+    completions="$( IFS=' ' ; echo \
+        "all" \
+        "remote" \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ "$cword" -eq 3 && "${words[1]}" == 'rm' && "${words[2]}" == 'remote' ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listRemoteSnapshots" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ \
+          "$cword" -eq 2 && \
+          ( \
+            "${words[1]}" != "list" && \
+            "${words[1]}" != "create" && \
+            "${words[1]}" != "rm" && \
+            "${words[1]}" != "push" && \
+            "${words[1]}" != "images" && \
+            "${words[1]}" != "details" \
+          ) \
+  ]]; then
+    local completions
+    mapfile -t completions < <( IFS=" " ; compgen -W "create restore" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ "$cword" -eq 3 && "${words[2]}" == 'restore' ]]; then
+    local entity entity_type completions
+    entity="${words[1]}"
+    if [[ "${entity:0:1}" == ':' ]]; then
+      entity_type='c'  # config map
+    else
+      entity_type='s'  # service
+    fi
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listLocalSnapshots" $entity_type )
+    completions="$( IFS=' ' ; echo \
+        "remote" \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  elif [[ "$cword" -eq 4 && "${words[2]}" == 'restore'  && "${words[3]}" == 'remote' ]]; then
+    local entity entity_type completions
+    entity="${words[1]}"
+    if [[ "${entity:0:1}" == ':' ]]; then
+      entity_type='c'  # config map
+    else
+      entity_type='s'  # service
+    fi
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listRemoteSnapshots" $entity_type )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    mapfile -t completions < <( IFS=" " ; compgen -W "$completions" -- "${cur}")
+    COMPREPLY=( "${completions[@]}" )
+  fi
+}
+complete -F complete_snapshot snapshot
+
+complete_switch() {
+  local curr_word="${COMP_WORDS[COMP_CWORD]}"
+  if [[ "${#COMP_WORDS[@]}" -eq 2 ]]; then
+    COMPREPLY=( $(compgen -W "on off list rm" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -eq 3 && ("${COMP_WORDS[1]}" == 'on' || "${COMP_WORDS[1]}" == 'off' || "${COMP_WORDS[1]}" == 'list' || "${COMP_WORDS[1]}" == 'rm') ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNames" "${COMP_WORDS[@]}" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    COMPREPLY=( $(compgen -W "$completions" -- "${curr_word}") )
+  elif [[ "${#COMP_WORDS[@]}" -eq 4 && ("${COMP_WORDS[1]}" == 'on' || "${COMP_WORDS[1]}" == 'off' || "${COMP_WORDS[1]}" == 'rm') ]]; then
+    local completions
+    mapfile -t completions < <( "${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceSwitches" "${COMP_WORDS[@]}" )
+    completions="$( IFS=' ' ; echo \
+        "${completions[@]}" \
+    )"
+    COMPREPLY=( $(compgen -W "$completions" -- "${curr_word}") )
+  fi
+}
+complete -F complete_switch switch
+
+complete_waiton() {
+  local cur prev words cword
+  _get_comp_words_by_ref -n : cur prev words cword
+  if [[ "$cword" -eq 1 ]]; then
+    COMPREPLY=( $(compgen -W "stopped running healthy" -- "${cur}") )
+  elif [[ "$cword" -gt 1 && ("${words[1]}" == 'stopped' || "${words[1]}" == 'running' || "${words[1]}" == 'healthy' ) ]]; then
+    COMPREPLY=( $("${BSSENV_DIR}/.venv/bin2/autocompletions/listServiceNamesAndCommands" "$cur" "${words[@]:2}") )
+  fi
+}
+complete -F complete_waiton waiton
+
+complete_retagStableDescriptorForImage() {
+  return 0
+}
+complete -F complete_retagStableDescriptorForImage retagStableDescriptorForImage
+
+complete_configMaps() {
+  return 0
+}
+complete -F complete_configMaps configMaps
+# # <---- BUILT IN COMMANDS ----<

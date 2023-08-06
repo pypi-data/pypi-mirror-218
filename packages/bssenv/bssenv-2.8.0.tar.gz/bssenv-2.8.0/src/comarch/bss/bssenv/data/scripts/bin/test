@@ -1,0 +1,254 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PKG_DIR = Path(BSSENV_PKG.__file__).resolve().parent
+BSSENV_PKG_PYT_SITE_PKGS = BSSENV_PKG_DIR / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PKG_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+from typing import Any
+
+def printdoc(obj: Any) -> None:
+    def printdoc():
+        print(obj.__doc__)
+    return printdoc
+
+# import from custom site packages
+# import local.docker
+# from local.docker import dockerRegistry
+# from local.services import get_daemons_with_outdated_containers
+# from local.docker import dockerRegistry
+# from local.docker import dockerClient
+# from pytictoc import TicToc
+# t = TicToc()
+
+
+
+
+@printdoc
+def help():
+    """
+    List, create or restore environment snapshots
+
+    snapshot list - list all local snapshots
+    snapshot list remote - list all remote snapshots
+    snapshot details snapshot_name - show details about local snapshot "snapshot_name"
+    snapshot details remote snapshot_name - show details about remote snapshot "snapshot_name"
+    snapshot images snapshot_name - list images in local snapshot "snapshot_name"
+    snapshot images remote snapshot_name - list images in remote snapshot "snapshot_name"
+    snapshot create - create local snapshot of environment
+    snapshot create snapshot_name - create local snapshot of environment with given name
+    snapshot service_1 create - create local snapshot of "service_1"
+    snapshot service_1 create snapshot_name - create local snapshot of "service_1" with given name
+    snapshot :config_map_1 create - create local snapshot of "config_map_1"
+    snapshot :config_map_1 create snapshot_name - create local snapshot of "config_map_1" with given name
+    snapshot rm all - remove all local snapshots
+    snapshot rm snapshot_name - remove local snapshot "snapshot_name"
+    snapshot rm remote snapshot_name - remove remote snapshot "snapshot_name"
+    snapshot push snapshot_name - push local snapshot "snapshot_name" to docker registry
+    snapshot service_1 restore - restore service "service_1" from local snapshot "env_name-service_name-latest"
+    snapshot service_1 restore snapshot_name - restore service "service_1" from local snapshot "snapshot_name"
+    snapshot service_1 restore remote snapshot_name - restore service "service_1" from remote snapshot "snapshot_name"
+    snapshot :config_map_1 restore - restore config map "config_map_1" from local snapshot "env_name-cm-config_map_name-latest"
+    snapshot :config_map_1 restore snapshot_name - restore config map "config_map_1" from local snapshot "snapshot_name"
+    snapshot :config_map_1 restore remote snapshot_name - restore config map "config_map_1" from remote snapshot "snapshot_name"
+    """
+
+
+help()
+
+
+# credentials = local.docker.get_registry_credentials('nexus.czk.comarch')
+# print(f'credentials: {credentials}')
+
+# data = dockerRegistry._get_all_request_data_for_registry('nexus.czk.comarch')
+# print(f'data: {data}')
+
+# for daemon in get_daemons_with_outdated_containers():
+#     print(str(daemon))
+
+
+# print('--------------')
+
+# from local.config import config
+# # print(str(local.config.config.as_dict()))
+# # print(str(config.repositories.docker.registries['nexus.czk.comarch']))
+# # print(str(config.repositories.docker.registries.as_dict()))
+# print('-------------')
+# print(dockerRegistry.get_registry_data('dominik.krakow.comarch'))
+# print('\n')
+# # print(dockerRegistry.get_api_url_for_registry())
+# # print(dockerRegistry.get_api_url_for_registry('dominik.krakow.comarch'))
+# # print(dockerRegistry.get_api_url_for_registry('nexus.czk.comarch'))
+# print('---------------')
+
+# print(str(dockerRegistry.image_exists(sys.argv[1])))
+
+# -------------------
+# t.tic()
+# registry = 'nexus.czk.comarch'
+# a = dockerRegistry.repositories(registry)
+# print(f'Number of repositories ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+
+# t.tic()
+# registry = 'dominik.krakow.comarch'
+# a = dockerRegistry.repositories(registry)
+# print(f'\nNumber of repositories ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+# -------------------
+# t.tic()
+# registry = 'nexus.czk.comarch'
+# a = dockerRegistry.repository_tags('backend', registry)
+# print(f'Number of tags ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+
+# t.tic()
+# registry = 'dominik.krakow.comarch'
+# a = dockerRegistry.repository_tags('backend', registry)
+# print(f'\nNumber of tags ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+# -------------------
+# Number of results (nexus.czk.comarch): 41
+
+# Elapsed:  1.166696 seconds.
+
+# Number of results (dominik.krakow.comarch): 64
+
+# Elapsed:  1582.959954 seconds.
+
+# Number of results (nexus.czk.comarch): 41
+
+# Elapsed:  1.029359 seconds.
+
+# Number of results (dominik.krakow.comarch): 64
+
+# Elapsed:  49.668927 seconds.
+
+# t.tic()
+# registry = 'nexus.czk.comarch'
+# a = dockerRegistry.search_by_tag('7.6.2.0-orm', registry)
+# print(f'Number of results ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+
+# t.tic()
+# registry = 'dominik.krakow.comarch'
+# a = dockerRegistry.search_by_tag('7.6.2.0-orm', registry)
+# print(f'\nNumber of results ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+# -------------------
+# error: 10000 limit
+
+# t.tic()
+# registry = 'nexus.czk.comarch'
+# a = dockerRegistry.search_by_repository('*/backend', registry)
+# print(f'Number of results ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+
+# Number of results (dominik.krakow.comarch): 8342
+
+# Elapsed:  9.730532 seconds.
+
+# t.tic()
+# registry = 'dominik.krakow.comarch'
+# a = dockerRegistry.search_by_repository('*/backend', registry)
+# print(f'\nNumber of results ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+
+# -------------------
+# # Elapsed:  1.288457 seconds.
+# # Elapsed:  0.973566 seconds.
+# # Elapsed:  0.696781 seconds.
+# # Elapsed:  0.780017 seconds.
+# t.tic()
+# registry = 'nexus.czk.comarch'
+# a = dockerRegistry.search_by_repository_and_tag(
+#         '*bssenv/composefile/*', '7.6.2.0-orm', registry)
+# print(f'Number of results ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+
+# # Elapsed:  9.215590 seconds.
+# # Elapsed:  8.935216 seconds.
+# # Elapsed:  7.712395 seconds.
+# # Elapsed:  315.936400 seconds.
+# # Elapsed:  7.050772 seconds.
+# t.tic()
+# registry = 'dominik.krakow.comarch'
+# a = dockerRegistry.search_by_repository_and_tag(
+#         '*bssenv/composefile/*', '7.6.2.0-orm', registry)
+# print(f'\nNumber of results ({registry}): {len(a)}')
+# t.toc(f'\nElapsed: ')
+# -------------------
+# t.tic()
+# registry = 'nexus.czk.comarch'
+# a = dockerRegistry.get_services_for_image(
+#         f'{registry}/repository/telco-bss-docker/backend:7.6.2.0-orm')
+# print(f'\nServices for image ({registry}): {a}')
+# t.toc(f'\nElapsed: ')
+
+# t.tic()
+# registry = 'dominik.krakow.comarch'
+# a = dockerRegistry.get_services_for_image(
+#         f'{registry}:5000/backend:7.6.2.0-orm')
+# print(f'\nServices for image ({registry}): {a}')
+# t.toc(f'\nElapsed: ')
+# -------------------
+# # Elapsed:  4.842435 seconds.
+# # Elapsed:  4.567521 seconds.
+# t.tic()
+# registry = 'nexus.czk.comarch'
+# a = dockerRegistry.get_services_for_tag('7.6.2.0-orm', registry=registry)
+# print(f'\nServices for tag ({registry}): {a}')
+# t.toc(f'\nElapsed: ')
+
+# # Elapsed:  8.039925 seconds.
+# # Elapsed:  8.003406 seconds.
+# t.tic()
+# registry = 'dominik.krakow.comarch'
+# a = dockerRegistry.get_services_for_tag('7.6.2.0-orm', registry=registry)
+# print(f'\nServices for tag ({registry}): {a}')
+# t.toc(f'\nElapsed: ')
+# -------------------
+# # Elapsed:  104.811464 seconds.
+# # Elapsed:  102.832992 seconds.
+# # Elapsed:  122.930529 seconds.
+# t.tic()
+# registry = 'nexus.czk.comarch'
+# a = dockerRegistry.get_all_bssenv_descriptors_tags(registry=registry)
+# print(f'\nAll descriptor tags ({registry}): {a}')
+# t.toc(f'\nElapsed: ')
+
+# # Elapsed:  44.375709 seconds.
+# # Elapsed:  43.193888 seconds.
+# # Elapsed:  43.899026 seconds.
+# # Elapsed:  41.280238 seconds.
+# # Elapsed:  45.119784 seconds.
+# # Elapsed:  51.173379 seconds.
+# # Elapsed:  44.788719 seconds.
+# # Elapsed:  48.046493 seconds.
+# # Elapsed:  77.134028 seconds.
+# t.tic()
+# registry = 'dominik.krakow.comarch'
+# a = dockerRegistry.get_all_bssenv_descriptors_tags(registry=registry)
+# print(f'\nAll descriptor tags ({registry}): {a}')
+# t.toc(f'\nElapsed: ')
+# -------------------
+# tag = sys.argv[1]
+# namespace, = sys.argv[2:3] or [None]
+# print(str(dockerClient.get_services_for_tag(tag, namespace)))
+# -------------------
+# print(str(dockerClient.get_all_bssenv_descriptors_tags()))
+# -------------------
+# print(str(dockerRegistry.get_services_for_tag(sys.argv[1])))
+
+# def get_services_for_tag(
+#         tag: str,
+#         namespace: Union[None, str] = None)
+
+# print(str(dockerRegistry.get_all_bssenv_descriptors_tags()))

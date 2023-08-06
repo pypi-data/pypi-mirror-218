@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+readonly uid=$1
+readonly gid=$2
+
+while IFS= read -r -d $'\0' file; do
+    if [[ "$file" =~ '/env/docker/volumes/'.* ]]; then
+        if [[ ! -L "$file" ]]; then
+            chmod go=u "$file"
+        fi
+    else
+        chown -h $uid:$gid "$file"
+    fi
+done < <(find /env -print0)

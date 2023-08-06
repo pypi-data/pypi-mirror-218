@@ -1,0 +1,250 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+from typing import Set
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PKG_DIR = Path(BSSENV_PKG.__file__).resolve().parent
+BSSENV_PKG_PYT_SITE_PKGS = BSSENV_PKG_DIR / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PKG_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+import local.install
+from local.docker import dockerClient
+from local.commandline import arg
+from local.logging import debug, info
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+import blessed
+
+
+def print_help():
+    print(
+        'Describe environment (images, ports, urls, ...)\n'
+        '\n'
+        'describe - describe whole environment\n'
+        'describe service_1 service_2 :config_map_3 :config_map_4 ... - describe given services and config maps')
+
+
+if any(_ in {'?', '--help', '-h'} for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+try:
+    term = blessed.Terminal()
+    screen = Screen(
+        term,
+        DictDataUpdater(),
+        DictTabularDataPrinter(),
+        use_secondary_screen_buffer=False)
+    SERVICE_NAMES: Set[str] = set()
+    CONFIG_MAP_NAMES: Set[str] = set()
+    stdout = {}
+
+    # process command line arguments
+    # which services and config maps to describe? All or selected?
+    for entity_name in arg[1:]:
+        if entity_name[0] == ':':
+            CONFIG_MAP_NAMES.add(entity_name[1:])
+        else:
+            SERVICE_NAMES.add(entity_name)
+
+    debug(f'SERVICE_NAMES: {SERVICE_NAMES}')
+    debug(f'CONFIG_MAP_NAMES: {CONFIG_MAP_NAMES}')
+
+    for service_name in SERVICE_NAMES:
+        if service_name not in local.install.get_installed_services_names():
+            raise Exception(f'Service "{service_name}" is not installed"')
+
+    for config_map_name in CONFIG_MAP_NAMES:
+        if config_map_name not in local.install.get_installed_config_maps_names():
+            raise Exception(f'Config map "{config_map_name}" is not installed"')
+
+    installed_services = local.install.get_installed_services()
+    installed_config_maps = local.install.get_installed_config_maps_entries()
+    services_to_describe = dict()
+    config_maps_to_describe = dict()
+
+    if len(SERVICE_NAMES) < 1 and len(CONFIG_MAP_NAMES) < 1:
+        info('Describe all services and config maps')
+        services_to_describe = installed_services
+        config_maps_to_describe = installed_config_maps
+    else:
+        info('Describe selected services and config maps')
+        services_to_describe = {_: __ for _, __ in installed_services.items() if __.name in SERVICE_NAMES}
+        config_maps_to_describe = {_: __ for _, __ in installed_config_maps.items() if __.key in CONFIG_MAP_NAMES}
+
+    services_to_describe_keys = sorted(services_to_describe.keys())
+    debug(f'services_to_describe_keys: {services_to_describe_keys}')
+
+    config_maps_to_describe_keys = sorted(config_maps_to_describe.keys())
+    debug(f'config_maps_to_describe_keys: {config_maps_to_describe_keys}')
+
+    # describe bssenv
+    debug('describe bssenv')
+    stdout['bssenv'] = {
+        '_METADATA_': {
+                'title': 'bssenv:',
+                'headers': [
+                    {'name': 'key', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'value', 'overflow': 'fold', 'no_wrap': True}
+                ],
+                'show_header': False,
+                'type': 'table'
+            },
+        '_ROWS_': [{'key': 'environment id', 'value': local.env.id()},
+                   {'key': 'installation type', 'value': local.env.install_type()},
+                   {'key': 'version', 'value': local.env.version()}]
+    }
+
+    if len(services_to_describe) > 0:
+        # describe services
+        debug('describe services')
+        table = {
+            '_METADATA_': {
+                'title': 'Services:',
+                'headers': [
+                    {'name': 'Name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Main type', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Image', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Container name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Version', 'overflow': 'fold', 'no_wrap': True}],
+                'show_header': True,
+                'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for service_key in services_to_describe_keys:
+            _ = services_to_describe[service_key]
+            if _.container_name is not None and dockerClient.container_exists(_.container_name):
+                version = (dockerClient.container_labels(_.container_name) or {}).get('VERSION', '')
+            else:
+                version = (dockerClient.get_image_labels(_.image_sha) or {}).get('VERSION', '')
+            table['_ROWS_'].append({
+                'Name': _.key,
+                'Main type': _.main_type,
+                'Image': _.image_name,
+                'Container name': _.container_name,
+                'Version': version
+            })
+        stdout['Services'] = table
+
+    if len(config_maps_to_describe) > 0:
+        # describe config maps
+        debug('describe config maps')
+        table = {
+            '_METADATA_': {
+                'title': 'Config maps:',
+                'headers': [
+                    {'name': 'Name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Image', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Version', 'overflow': 'fold', 'no_wrap': True}],
+                'show_header': True,
+                'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for config_map_key in config_maps_to_describe_keys:
+            _ = config_maps_to_describe[config_map_key]
+            version = (dockerClient.get_image_labels(_.image_sha) or {}).get('VERSION', '')
+            table['_ROWS_'].append({
+                'Name': _.key,
+                'Image': _.image_name,
+                'Version': version
+            })
+        stdout['Config maps'] = table
+
+    if len(services_to_describe) > 0:
+        # describe urls
+        debug('describe urls')
+        table = {
+            '_METADATA_': {
+                'title': 'URLs:',
+                'headers': [
+                    {'name': 'Service', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Url name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Url', 'overflow': 'fold', 'no_wrap': True}],
+                'show_header': True,
+                'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for service_key in services_to_describe_keys:
+            service = services_to_describe[service_key]
+            for url_name, url in service.urls.items():
+                table['_ROWS_'].append({
+                    'Service': service.key,
+                    'Url name': url_name,
+                    'Url': url
+                })
+        stdout['URLs'] = table
+
+    if len(services_to_describe) > 0:
+        table = {
+            '_METADATA_': {
+                    'title': 'Ports:',
+                    'headers': [
+                        {'name': 'Service', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Port name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Host', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Docker', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Host default value', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for service_key in services_to_describe_keys:
+            service = services_to_describe[service_key]
+            for port_name, port in service.ports.items():
+                table['_ROWS_'].append({
+                    'Service': service.key,
+                    'Port name': port_name,
+                    'Host': str(port['host'] or ''),
+                    'Docker': str(port['docker']),
+                    'Host default value': str(port['default'])
+                })
+        stdout['Ports'] = table
+
+    if len(services_to_describe) > 0:
+        # describe DNS mappings
+        debug('describe DNS mappings')
+        table = {
+            '_METADATA_': {
+                    'title': 'DNS mappings:',
+                    'headers': [
+                        {'name': 'DNS name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'IP address', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        dns_mappings = set()
+        for service_key in services_to_describe_keys:
+            service = services_to_describe[service_key]
+            dns_mappings |= set(_ for _ in service.composefile_entry.get("extra_hosts", []))
+        dns_mappings = {_: __ for _, __ in (_.split(':') for _ in dns_mappings)}
+        for dns_name in sorted(dns_mappings.keys()):
+            ip_address = dns_mappings[dns_name]
+            table['_ROWS_'].append({
+                'DNS name': dns_name,
+                'IP address': ip_address
+            })
+        stdout['DNS mappings'] = table
+
+    screen.update(stdout, False, False)
+
+finally:
+    if screen is not None:
+        screen.destroy()

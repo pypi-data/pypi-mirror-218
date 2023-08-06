@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from os import execlp
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+import local.install
+from local.commandline import arg
+from local.logging import debug
+
+
+def print_help():
+    print(
+        'Update suite to the newest images of already installed version\n'
+        '\n'
+        'update - update suite to the newest images of already installed '
+        'version\n'
+        'update -service_1 -service_2 ... - update suite to the newest images '
+        'of already installed version. Do not update services "service_1" and '
+        '"service_2"\n'
+        'update +command_1 +command_2 ... - update suite to the newest images '
+        'of already installed version. After all run commands "command_1" and '
+        '"command_2"\n'
+        'update --clean-data=service_1;service_2 --clean-conf=service_3 '
+        '--clean-logs=service_4 --clean-init=service_5 ... - clean data for '
+        'services "service_1" and "service_2". Clean configs for service '
+        '"service_3". Clean logs for service "service_4". Clean ini state for '
+        'service "service_5". After all update suite to the newest images '
+        'of already installed version')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+# install once again the same image for all already installed services
+args = [
+    *(_ for _ in arg[1:]
+        if _.startswith('--clean-') or _.startswith('+') or _.startswith('-')),
+    *(f'{_.name}=image://{_.image_name}'
+      for _ in local.install.get_installed_services_entries().values())]
+
+debug(f'update.args: {args}')
+
+# run install command
+execlp(f'{SCRIPT_DIR_PATH / "install"}', arg(0), *args)

@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.install
+from local.commandline import arg
+
+
+# logFile = Path('1.log')
+
+
+words = arg[1:]
+cur = words[-1]
+prev_words = set(words[0:-1])
+
+# logFile.write_text(f"words: {words} | cur: {cur} | prev_words: {prev_words}")
+
+entity_names = \
+    (
+        local.install.get_installed_services_names()
+        | set(f':{_}' for _ in local.install.get_installed_config_maps_names())
+    ) \
+    - prev_words
+
+for entity_name in entity_names:
+    if cur:
+        if entity_name.startswith(cur):
+            print(entity_name)
+    else:
+        print(entity_name)

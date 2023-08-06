@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+from typing import List
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.env
+import local.install
+import local.composefile
+import local.services
+import local.dns
+from local.docker import dockerClient
+from local.commandline import arg
+from local.services import keep_running_daemons
+from local.entities import SERVICE_TYPES
+from local.logging import debug, info
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+
+
+def print_help():
+    print(
+        'List, add or remove DNS mappings\n'
+        '\n'
+        'dns list - list all DNS mappings\n'
+        'dns add dns_name ip_address - add DNS mapping "dns_name" for "ip_address"\n'
+        'dns remove dns_name - remove DNS mapping "dns_name"')
+
+
+def _remove_extra_hosts_entry(extra_hosts, dns_name) -> List[str]:
+    return [_ for _ in extra_hosts if not _.startswith(f'{dns_name}:')]
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+installed_services = local.install.get_installed_services().values()
+
+if arg(1) == 'add':
+    dns_name = arg(2)
+    ip_address = arg(3)
+    dns_mapping = f'{dns_name}:{ip_address}'
+    debug(f'dns_name: {dns_name}')
+    debug(f'ip_address: {ip_address}')
+    debug(f'dns_mapping: {dns_mapping}')
+    with keep_running_daemons(log=info):
+        local.dns.remove_dns_mappings(dns_name)
+        local.dns.add_dns_mappings(dns_mapping)
+        info('Stop all services')
+        local.services.stop()
+        for service in installed_services:
+            extra_hosts = service.composefile_entry.get("extra_hosts", [])
+            extra_hosts = _remove_extra_hosts_entry(extra_hosts, dns_name)
+            extra_hosts.append(dns_mapping)
+            service.composefile_entry['extra_hosts'] = extra_hosts
+            info('Update composefile')
+            local.composefile.update_service_composefile(service)
+            if service.main_type == SERVICE_TYPES.DAEMON.value:
+                info(f'Recreate container of service: {service.key}')
+                local.services.recreate_service_container(service)
+            else:
+                # only daemons should have containers
+                if service.container_name is not None and dockerClient.container_exists(service.container_name):
+                    dockerClient.rm_container(service.container_name)
+elif arg(1) == 'remove':
+    dns_name = arg(2)
+    debug(f'dns_name: {dns_name}')
+    with keep_running_daemons(log=info):
+        local.dns.remove_dns_mappings(dns_name)
+        info('Stop all services')
+        local.services.stop()
+        for service in installed_services:
+            extra_hosts = service.composefile_entry.get("extra_hosts", [])
+            extra_hosts = _remove_extra_hosts_entry(extra_hosts, dns_name)
+            service.composefile_entry['extra_hosts'] = extra_hosts
+            info('Update composefile')
+            local.composefile.update_service_composefile(service)
+            if service.main_type == SERVICE_TYPES.DAEMON.value:
+                info(f'Recreate container of service: {service.key}')
+                local.services.recreate_service_container(service)
+            else:
+                # only daemons should have containers
+                if service.container_name is not None and dockerClient.container_exists(service.container_name):
+                    dockerClient.rm_container(service.container_name)
+elif arg(1) == 'list':
+    try:
+        dns_mappings = set()
+        for service in installed_services:
+            dns_mappings |= set(_ for _ in service.composefile_entry.get("extra_hosts", []))
+        dns_mappings |= local.dns.get_added_dns_mappings()
+        dns_mappings = {_: __ for _, __ in (_.split(':') for _ in dns_mappings)}
+        term = blessed.Terminal()
+        screen = Screen(term,
+                        DictDataUpdater(),
+                        DictTabularDataPrinter(),
+                        use_secondary_screen_buffer=False)
+        table = {
+            '_METADATA_':
+                {
+                    'title': 'DNS mappings:',
+                    'headers': [
+                        {'name': 'DNS name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'IP address', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for dns_name in sorted(dns_mappings.keys()):
+            ip_address = dns_mappings[dns_name]
+            table['_ROWS_'].append({
+                'DNS name': dns_name,
+                'IP address': ip_address
+            })
+        screen.update({'dns': table}, False, False)
+    finally:
+        if screen is not None:
+            screen.destroy()
+else:
+    print_help()
+    print('\n')
+    exit('Wrong parameters provided')

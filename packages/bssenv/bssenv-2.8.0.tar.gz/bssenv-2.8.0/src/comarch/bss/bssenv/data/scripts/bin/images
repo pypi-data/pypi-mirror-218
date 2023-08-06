@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+import local.install
+import blessed
+from local.docker import entity_image_to_bssenv_descriptor_image
+from local.commandline import arg
+from local.logging import debug
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+
+
+def print_help():
+    print(
+        'show a list of docker images used by all installed config maps and services\n'  # noqa: E501
+        '\n'
+        'images - show docker images for all config maps and services')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+
+try:
+    term = blessed.Terminal()
+    screen = Screen(
+        term,
+        DictDataUpdater(),
+        DictTabularDataPrinter(),
+        use_secondary_screen_buffer=False)
+    stdout = {}
+
+    # services
+    table = {
+        '_METADATA_':
+            {
+                'title': 'Docker images for services:',
+                'headers': [
+                    {'name': 'Service name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Image name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Image sha', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Descriptor image name', 'overflow': 'fold', 'no_wrap': True}],
+                'show_header': True,
+                'type': 'table'
+            }
+    }
+    rows = []
+    for _ in local.install.get_installed_services().values():
+        rows.append({
+            'Service name': _.name, 'Image name': _.image_name, 'Image sha': _.image_sha,
+            'Descriptor image name': entity_image_to_bssenv_descriptor_image(_.image_name)})
+    table['_ROWS_'] = sorted(rows, key=lambda _: _['Service name'])
+    stdout['Services'] = table
+
+    # config maps
+    table = {
+        '_METADATA_':
+            {
+                'title': 'Docker images for config maps:',
+                'headers': [
+                    {'name': 'Config map name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Image name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Image sha', 'overflow': 'fold', 'no_wrap': True}],
+                'show_header': True,
+                'type': 'table'
+            }
+    }
+    rows = []
+    for _ in local.install.get_installed_config_maps_entries().values():
+        rows.append({'Config map name': _.key, 'Image name': _.image_name, 'Image sha': _.image_sha})
+    table['_ROWS_'] = sorted(rows, key=lambda _: _['Config map name'])
+    stdout['Config maps'] = table
+
+    screen.update(stdout, False, False)
+finally:
+    if screen is not None:
+        screen.destroy()

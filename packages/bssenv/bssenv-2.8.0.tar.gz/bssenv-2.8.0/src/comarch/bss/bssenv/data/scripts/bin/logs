@@ -1,0 +1,93 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+from os import execlp
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+from local.docker import dockerClient
+from local.logging import debug
+from local.commandline import arg
+from local.paths import ENV_MAIN_LOG_FILE
+
+
+def print_help():
+    print(
+        'Tail bssenv environment or services logs\n'
+        '\n'
+        'logs - tail bssenv environment main log file\n'
+        'logs service_name - tail logs of given service container\n'
+        'logs service_key:command_key - tail logs of given service command container\n'  # noqa: E501
+        '\n'
+        'Examples:\n'
+        '\tlogs\n'
+        '\tlogs backend\n'
+        '\tlogs backend:dataUpgrade')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+entity_name = arg(1)
+
+if entity_name is None:
+    execlp('less', arg(0), '+F', str(ENV_MAIN_LOG_FILE))
+else:
+    debug(f'entity_name: {entity_name}')
+
+    if ':' in entity_name:
+        entity_type = 'service_command'
+        arg_service_key, arg_command_key = \
+            (entity_name.split(':') + [None])[0:2]
+    else:
+        entity_type = 'service'
+        arg_service_name = entity_name
+
+    container_found = None
+
+    for container in dockerClient.containers(
+        all=True, ignore_removed=True,
+        filters={'label': f'bssenv.environment.id={local.env.id()}'}
+    ):
+        if \
+            container.labels.get(
+                'bssenv.container.type', None) != 'service':
+            continue
+
+        service_key = container.labels['bssenv.service.key']
+        service_name = container.labels['bssenv.service.name']
+        command_key = container.labels.get(
+            'bssenv.service.command.key', None)
+
+        if entity_type == 'service':
+            if command_key is None and service_name == arg_service_name:
+                container_found = container
+                break
+        else:
+            if \
+                    command_key \
+                    and arg_service_key == service_key \
+                    and arg_command_key == command_key:
+                container_found = container
+                break
+
+    if container_found is None:
+        exit(f'Existing container for "{entity_name}" not found')
+
+    execlp('docker', arg(0), 'logs', '-f', container_found.id)

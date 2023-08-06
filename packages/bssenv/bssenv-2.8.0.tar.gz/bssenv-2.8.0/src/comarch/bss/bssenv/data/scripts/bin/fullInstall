@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from os import execlp
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+from local.commandline import arg
+from local.logging import debug
+
+
+def print_help():
+    print(
+        'Install version into environment\n'
+        '\n'
+        'fullInstall ... - this command is exactly the same as "install" '
+        'beside the fact that following parameters are forced to be used: '
+        '+reindexES +start')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+args = [*arg[1:], '+reindexES', '+start']
+
+debug(f'fullInstall.args: {args}')
+
+# run install command
+execlp(f'{SCRIPT_DIR_PATH / "install"}', arg(0), *args)

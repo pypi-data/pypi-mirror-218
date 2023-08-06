@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.env
+import local.install
+import local.init
+from local.commandline import arg
+from local.logging import debug, info
+from rich import print as rprint
+from local.terminal import DictDataUpdater, Screen, DictTabularDataPrinter
+from local.os import use_raw_output
+
+
+def print_help():
+    rprint(
+        'Initialize services\n'
+        '\n'
+        'init service_1 service_2 ... - initialize given services')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+installed_services = local.install.get_installed_services()
+
+services_to_initialize = set(arg[1:])
+
+for service_name in services_to_initialize:
+    if service_name not in local.install.get_installed_services_names():
+        raise Exception(f'Service "{service_name}" is not installed"')
+
+if len(services_to_initialize) > 0:
+    services_to_initialize = set(
+        _ for _, __ in installed_services.items() if __.has_init_command and __.name in services_to_initialize)
+    debug(f'services_to_initialize: {services_to_initialize}')
+    if len(services_to_initialize) > 0:
+        info('\nInitialize services')
+        try:
+            screen = Screen(
+                blessed.Terminal(),
+                DictDataUpdater(),
+                DictTabularDataPrinter())
+            rows = [{'Service': _, 'Initialize': None} for _ in services_to_initialize]
+            progress = {
+                '_METADATA_':
+                    {
+                        'title': 'Services initialization',
+                        'headers': ['Service', 'Initialize'],
+                        'show_header': True,
+                        'type': 'table'
+                    },
+                '_ROWS_': sorted(rows, key=lambda _: _['Service'])}
+            if use_raw_output() is False:
+                screen.update({'progress': progress})
+            for service_key, service in installed_services.items():
+                if service.key in services_to_initialize:
+                    info(f'Init service: {service_key}')
+                    local.init.initialize(service, force=True)
+                    row = next(_ for _ in progress['_ROWS_'] if _['Service'] == service.key)
+                    row['Initialize'] = 'done'
+                    if use_raw_output() is False:
+                        screen.update({'progress': progress}, clear_screen=False)
+        finally:
+            if screen is not None:
+                screen.destroy()

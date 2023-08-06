@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.env
+import local.install
+import local.export
+from local.commandline import arg
+from local.entities import SERVICE_TYPES
+from local.logging import debug
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+from local.os import use_raw_output
+
+
+def print_help():
+    print(
+        'Export files from service containers\n'
+        '\n'
+        'exp list - list exportable files from all services\n'
+        'exp service_name file_name - export "file_name" from service "service_name" container to stdout\n'
+        'exp service_name file_name out_path - export "file_name" from service "service_name" container to host file "out_path"\n'
+        'exp src_path - export host file "src_path" to stdout\n'
+        'exp src_path out_path - export host file "src_path" to host file "out_path"')  # noqa: E501
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+service_name, file_name, src_path, out_path, export_str = [None] * 5
+
+if arg(1) == 'list':
+    try:
+        term = blessed.Terminal()
+        screen = Screen(
+            term,
+            DictDataUpdater(),
+            DictTabularDataPrinter(),
+            use_secondary_screen_buffer=False)
+        table = {
+            '_METADATA_':
+                {
+                    'title': 'Exportable files:',
+                    'headers': [
+                        {'name': 'Service name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Files', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for _ in local.install.get_installed_services().values():
+            if not(_.main_type == SERVICE_TYPES.DATA_PROVIDER.value
+                   and SERVICE_TYPES.DATA_PROVIDER_BUILD.value in _.types) and len(_.export_files) > 0:
+                if use_raw_output():
+                    table['_ROWS_'].append({
+                        'Service name': _.name,
+                        'Files': [{file: path} for file, path in _.export_files.items()]
+                    })
+                else:
+                    table['_ROWS_'].append({
+                        'Service name': _.name,
+                        'Files': '\n'.join(f'{file}: {path}' for file, path in _.export_files.items())
+                    })
+        screen.update({'exp': table}, False, False)
+    finally:
+        if screen is not None:
+            screen.destroy()
+    exit()
+elif arg(1) in local.install.get_installed_services_names():
+    service_name = arg(1)
+    file_name = arg(2)
+    if file_name is None:
+        print_help()
+        exit('\nPlease provide file name to export from service container')
+    out_path = Path(arg(3)) if arg(3) is not None else None
+else:
+    src_path = Path(arg(1)) if arg(1) is not None else None
+    if src_path is not None and src_path.exists() and src_path.is_file():
+        out_path = Path(arg(2)) if arg(2) is not None else None
+    else:
+        print_help()
+        print('\n')
+        exit('\nWrong parameters provided')
+
+host_ip = local.os.ip_address()
+
+debug(f'service_name: {service_name}')
+debug(f'file_name: {file_name}')
+debug(f'src_path: {src_path}')
+debug(f'out_path: {out_path}')
+debug(f'host_ip: {host_ip}')
+
+if service_name is not None and file_name is not None:
+    for service in local.install.get_installed_services().values():
+        if service.name == service_name \
+                and not(
+                    service.main_type == SERVICE_TYPES.DATA_PROVIDER.value
+                    and SERVICE_TYPES.DATA_PROVIDER_BUILD.value in service.types) \
+                and file_name in service.export_files.keys():
+            export_str = local.export.export_text_file(service, file_name)
+            if export_str is not None:
+                break
+else:
+    export_str = src_path.read_text()
+
+debug(f'export_str: {export_str}')
+
+# replace
+for service in local.install.get_installed_services().values():
+    for port in service.ports.values():
+        if port['host'] is not None:
+            for alias in service.network_aliases:
+                debug(f'replacing "{alias}:{port["docker"]}" to "{host_ip}:{port["host"]}"')
+                export_str = export_str.replace(f'{alias}:{port["docker"]}', f'{host_ip}:{port["host"]}')
+
+# return
+if out_path is not None:
+    out_path.write_text(export_str)
+else:
+    print(export_str)

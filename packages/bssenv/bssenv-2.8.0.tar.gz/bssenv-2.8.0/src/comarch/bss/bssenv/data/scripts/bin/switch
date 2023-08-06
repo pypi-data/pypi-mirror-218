@@ -1,0 +1,162 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.env
+import local.services
+import local.install
+import local.ports
+from local.docker import dockerClient
+from local.services import keep_running_daemons
+from local.commandline import arg
+from local.entities import SERVICE_TYPES, Service
+from local.logging import debug, info
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+
+
+def print_help():
+    print(
+        'Turn on/off switches for given service\n'
+        '\n'
+        'switch on service_name switch_name - turn on switch "switch_name" for service "service_name"\n'
+        'switch off service_name switch_name - turn off switch "switch_name" for service "service_name"\n'
+        'switch list service_name - list available switches for service "service_name"\n'
+        'switch rm service_name switch_name - remove switch "switch_name" from service "service_name"')
+
+
+def _set_switch(service: Service, switch_name: str, value: bool) -> None:
+    if switch_name in service.switches.keys():
+        switch_env_name = service.switches[switch_name]['env_name']
+        info(f'Stop service: {service.key}')
+        local.services.stop(service.key, wait=True)
+        service.env[switch_env_name] = str(value or False).lower()
+        service.composefile_entry['environment'] = [f'{_}={__}' for _, __ in service.env.items()]
+        info(f'Update composefile of service: {service.key}')
+        local.composefile.update_service_composefile(service)
+        if service.main_type == SERVICE_TYPES.DAEMON.value:
+            info(f'Recreate container of service: {service.key}')
+            local.services.recreate_service_container(service)
+        else:
+            # only daemons should have containers
+            info(f'Remove container of service: {service.key}')
+            dockerClient.rm_container(service.container_name)
+
+
+def _rm_switch(service: Service, switch_name: str) -> None:
+    if switch_name in service.switches.keys():
+        switch_env_name = service.switches[switch_name]['env_name']
+        info(f'Stop service: {service.key}')
+        local.services.stop(service.key, wait=True)
+        if switch_env_name in service.env.keys():
+            del service.env[switch_env_name]
+        service.composefile_entry['environment'] = [f'{_}={__}' for _, __ in service.env.items()]
+        local.switches.remove_switch_configuration(service.key, switch_name)
+        info(f'Update composefile of service: {service.key}')
+        local.composefile.update_service_composefile(service)
+        if service.main_type == SERVICE_TYPES.DAEMON.value:
+            info(f'Recreate container of service: {service.key}')
+            local.services.recreate_service_container(service)
+        else:
+            # only daemons should have containers
+            info(f'Remove container of service: {service.key}')
+            dockerClient.rm_container(service.container_name)
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+try:
+    term = blessed.Terminal()
+    screen = Screen(
+            term,
+            DictDataUpdater(),
+            DictTabularDataPrinter(),
+            use_secondary_screen_buffer=False)
+
+    installed_services = local.install.get_installed_services().values()
+
+    if arg(1) == 'on' and arg(2) and arg(3):
+        service_name = arg(2)
+        switch_name = arg(3)
+        debug(f'service_name: {service_name}')
+        debug(f'switch_name: {switch_name}')
+        if service_name not in local.install.get_installed_services_names():
+            raise Exception(f'Service "{service_name}" is not installed"')
+        with keep_running_daemons():
+            for service in installed_services:
+                if service.name == service_name:
+                    _set_switch(service, switch_name, True)
+    elif arg(1) == 'off' and arg(2) and arg(3):
+        service_name = arg(2)
+        switch_name = arg(3)
+        debug(f'service_name: {service_name}')
+        debug(f'switch_name: {switch_name}')
+        if service_name not in local.install.get_installed_services_names():
+            raise Exception(f'Service "{service_name}" is not installed"')
+        with keep_running_daemons():
+            for service in installed_services:
+                if service.name == service_name:
+                    _set_switch(service, switch_name, False)
+    elif arg(1) == 'rm' and arg(2) and arg(3):
+        service_name = arg(2)
+        switch_name = arg(3)
+        debug(f'service_name: {service_name}')
+        debug(f'switch_name: {switch_name}')
+        if service_name not in local.install.get_installed_services_names():
+            raise Exception(f'Service "{service_name}" is not installed"')
+        with keep_running_daemons():
+            for service in installed_services:
+                if service.name == service_name:
+                    _rm_switch(service, switch_name)
+    elif arg(1) == 'list' and arg(2):
+        service_name = arg(2)
+        if service_name not in local.install.get_installed_services_names():
+            raise Exception(f'Service "{service_name}" is not installed"')
+        table = {
+            '_METADATA_':
+                {
+                    'title': 'Service switches:',
+                    'headers': [
+                        {'name': 'Switch name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Current value', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Description', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'
+                }
+        }
+        rows = []
+        for service in installed_services:
+            for _, __ in service.switches.items():
+                if service.name == service_name:
+                    rows.append({
+                        'Switch name': _,
+                        'Current value': (dockerClient.container_env(service.container_name, __['env_name']))
+                        if service.container_name is not None else None,
+                        'Description': __['description']
+                    })
+        table['_ROWS_'] = sorted(rows, key=lambda _: _['Switch name'])
+        screen.update({'switch_list': table}, False, False)
+    else:
+        print_help()
+        print('\n')
+        exit('Wrong parameters provided')
+finally:
+    if screen is not None:
+        screen.destroy()

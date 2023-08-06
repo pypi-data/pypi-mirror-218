@@ -1,0 +1,709 @@
+#!/usr/bin/env python3
+# imports from normal python site packages
+import sys
+import os
+import traceback
+from concurrent.futures import ThreadPoolExecutor, TimeoutError
+from pathlib import Path
+from typing import Dict, List, Set, Union, Tuple
+from inspect import cleandoc as format
+import comarch.bss.bssenv as BSSENV_PKG
+
+# configure modes
+os.environ['BSSENV_STDOUT_MODE'] = 'false'  # force saving services output to bssenv log file not to stdout
+os.environ['BSSENV_VERBOSE_MODE'] = 'false'  # force silent mode
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.paths
+import local.services
+import local.install
+import local.uninstall
+import local.init
+import local.daemons
+import local.env
+import local.clean
+import local.dns
+from local.docker import dockerClient, dockerRegistry, get_remote_name_for_local_image_name
+from local.commandline import arg as args
+from local.os import fexec, use_raw_output
+from local.paths import ENV_BIN_DIR, ENV_MAIN_LOG_FILE
+from local.entities import ENTITY_TYPES, SERVICE_TYPES, SimpleService, SimpleConfigMap, Service
+from local.logging import debug, info, speak, error
+from local.terminal import DictDataUpdater, Screen, DictTabularDataPrinter
+
+
+def print_help():
+    print(format("""
+        Install services and config maps from given version into an active environment
+
+        install version - install services and config maps from given 'version' (e.g. 7.5.7.0-ngena) into an active environment
+        install service_1=version_1 service_2=version_2 :config_map_3=version_3 ...
+                - install service 'service_1' from version 'version_1', service 'service_2' from version 'version_2' and config map 'config_map_3' from version 'version_3'
+        install service_1=namespace/version :config_map_2=namespace/version - install service 'service_1' and config map 'config_map_2' from version 'version' and namespace 'namespace''
+        install service_1=image://dominik.krakow.comarch:5000/service_1:tag_1 :config_map_2=image://cm_2:tag_2 - install service 'service_1' and config map 'config_map_2' from given docker images
+        install version --all - install all available services (including optional ones) and config maps from given 'version' into an active environment.
+        install version -service_1 -service_2 -:config_map_3 ... - install bss suite from version 'version'. Do not install/change services 'service_1', 'service_2' and config map 'config_map_3'
+        install version +command_1 +command_2 ... - install bss suite from version 'version'. After all run commands 'command_1' and 'command_2'
+        install version --clean-data=service_1;service_2 --clean-conf=service_3 --clean-logs=service_4 --clean-init=service_5 ...
+                - clean data for services 'service_1' and 'service_2'. Clean configs for service 'service_3'. Clean logs for service 'service_4'. Clean ini state for service 'service_5'.
+                  After all install bss suite from version 'version'
+    """))  # noqa: E501
+
+
+if any(_ in ['?', '--help', '-h'] for _ in args[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+Image_name = str
+Entity_key = str
+Service_key = str
+
+VERSIONS = {
+    'GLOBAL': None,
+    'SERVICES': dict(),
+    'CONFIG_MAPS': dict()
+}
+COMMANDS: List[str] = []  # list because the order is important
+SKIP_SERVICES: Set[str] = set()
+SKIP_CONFIG_MAPS: Set[str] = set()
+CLEAN: Dict[str, Set[str]] = dict()
+all_install = os.environ.get('BSSENV_ALL_INSTALL', '').lower() == 'true'
+
+
+def _namespace_tag_from_version(version: str) -> Tuple[Union[None, str], str]:
+    *namespace, tag = version.split('/')
+    if len(namespace) < 1:
+        namespace = None
+    else:
+        namespace = '/'.join(namespace)
+    return (namespace, tag)
+
+
+try:
+
+    screen = Screen(
+        blessed.Terminal(),
+        DictDataUpdater(),
+        DictTabularDataPrinter())
+
+    # process command line arguments
+    for arg in args[1:]:
+        if arg.startswith('--clean-'):
+            arg, value = arg.split('=')
+            type = arg.split('-')[-1]
+            CLEAN[type] = CLEAN.get(type, []) | set(value.split(';'))
+        elif arg == '--all':
+            # install all available services (default + optional)
+            all_install = True
+        elif arg.find('=') > -1:
+            # service or config map with version or image to install
+            entity_name, value = arg.split('=')
+            if entity_name.startswith(':'):
+                entity_name = entity_name[1:]
+                if value.startswith('image://'):
+                    value = 'cimage://' + value[8:]
+                VERSIONS['CONFIG_MAPS'][entity_name] = value
+            else:
+                if value.startswith('image://'):
+                    value = 'simage://' + value[8:]
+                VERSIONS['SERVICES'][entity_name] = value
+        elif arg.startswith('+'):
+            # command to run after install
+            arg = arg[1:]
+            COMMANDS.append(arg)
+        elif arg.startswith('-'):
+            # do not install skipped services or config maps
+            arg = arg[1:]
+            if arg.startswith(':'):
+                SKIP_CONFIG_MAPS.add(arg[1:])
+            else:
+                SKIP_SERVICES.add(arg)
+        else:
+            # global version for rest of services and config maps
+            VERSIONS['GLOBAL'] = arg
+
+    debug(f'VERSIONS: {VERSIONS}')
+    debug(f'COMMANDS: {COMMANDS}')
+    debug(f'SKIP_SERVICES: {SKIP_SERVICES}')
+    debug(f'SKIP_CONFIG_MAPS: {SKIP_CONFIG_MAPS}')
+    debug(f'CLEAN: {CLEAN}')
+
+    # group versions in a unique set
+    versions_set = \
+        ({VERSIONS['GLOBAL']} if VERSIONS['GLOBAL'] else set()) | \
+        {_ for _ in VERSIONS.get('SERVICES', {}).values()} | \
+        {_ for _ in VERSIONS.get('CONFIG_MAPS', {}).values()}
+    debug(f'versions_set: {versions_set}')
+
+    # get available services and config maps for versions
+    entities_for_versions: Dict[str, Dict[Entity_key, Union[SimpleService, SimpleConfigMap]]] = dict()
+    for version in versions_set:
+        if version.startswith('cimage://'):
+            # config maps by image
+            image = version[9:]
+            debug(f'local.install.get_config_maps_for_image: {image}')
+            entities: Dict[Entity_key, SimpleConfigMap] = local.install.get_config_maps_for_image(image)
+        elif version.startswith('simage://'):
+            # services by image
+            image = version[9:]
+            debug(f'local.install.get_services_for_image: {image}')
+            entities: Dict[Entity_key, SimpleService] = local.install.get_services_for_image(image)
+        else:
+            # config maps and services by tag
+            debug(f'local.install.get_entities_for_tag: {version}')
+            namespace, tag = _namespace_tag_from_version(version)
+            entities: Dict[Entity_key, Union[SimpleService, SimpleConfigMap]] = \
+                local.install.get_entities_for_tag(tag, namespace)
+        entities_for_versions[version] = entities
+    debug(f'entities_for_versions: {entities_for_versions}')
+
+    # final entities to install
+    entities_to_install: Dict[Entity_key, Union[SimpleService, SimpleConfigMap]] = dict()
+    # entities installed during this installation process
+    entities_installed: Dict[Entity_key, Union[SimpleService, SimpleConfigMap]] = dict()
+
+    if VERSIONS['GLOBAL'] is not None:
+        # check available entities for global version provided
+        debug(f'VERSIONS["GLOBAL"]: {VERSIONS["GLOBAL"]}')
+        entities: Dict[Entity_key, Union[SimpleService, SimpleConfigMap]] = entities_for_versions[VERSIONS['GLOBAL']]
+        for entity_key, entity in entities.items():
+            if entity.type == ENTITY_TYPES.SERVICE.value:
+                if \
+                        not local.uninstall.is_uninstalled_service(entity.name) \
+                        and (
+                            all_install
+                            or entity.is_default
+                            or entity.name in local.install.get_installed_services_names()
+                        ):
+                    # try to install already installed services or default services or all available services if "--all"
+                    # option is choosen that were not uninstalled on that env directly by user
+                    entities_to_install[entity_key] = entity
+            elif entity.type == ENTITY_TYPES.CONFIGMAP.value:
+                # be careful! for config maps entity_key here has ':' character prefix appended
+                if \
+                        not local.uninstall.is_uninstalled_config_map(entity.name) \
+                        and (
+                            all_install
+                            or entity.is_default
+                            or entity.name in local.install.get_installed_config_maps_names()
+                        ):
+                    # try to install already installed config maps or default ones or all available config maps
+                    # if "--all" option is choosen that were not uninstalled on that env directly by user
+                    entities_to_install[entity_key] = entity
+    debug(f'entities_to_install after global version: {list(entities_to_install.keys())}')
+
+    if len(VERSIONS['CONFIG_MAPS'].keys()) > 0:
+        for cm_name, cm_version in VERSIONS['CONFIG_MAPS'].items():
+            entities: Dict[Entity_key, Union[SimpleService, SimpleConfigMap]] = entities_for_versions[cm_version]
+            cm_key = f":{cm_name}"
+            if cm_key not in entities.keys():
+                if cm_version.startswith('cimage://'):
+                    cm_version = cm_version[1:]
+                exit_info = f'Config map "{cm_name}" not available for given precondition: {cm_version}'
+                exit(exit_info)
+            else:
+                entities_to_install[cm_key] = entities[cm_key]
+    debug(f'entities_to_install after config map version: {list(entities_to_install.keys())}')
+
+    if len(VERSIONS['SERVICES'].keys()) > 0:
+        for service_name, service_version in VERSIONS['SERVICES'].items():
+            entities: Dict[Entity_key, Union[SimpleService, SimpleConfigMap]] = entities_for_versions[service_version]
+            if service_name not in (_.name for _ in entities.values() if _.type == ENTITY_TYPES.SERVICE.value):
+                if service_version.startswith('simage://'):
+                    image_name = service_version[9:]
+                else:
+                    namespace, service_version = _namespace_tag_from_version(service_version)
+                    if namespace is not None:
+                        image_name = f'{namespace}/{service_name}:{service_version}'
+                    else:
+                        image_name = f'{service_name}:{service_version}'
+                    image_name = get_remote_name_for_local_image_name(image_name)
+                if dockerClient.image_exists(image_name) or dockerRegistry.image_exists(image_name):
+                    exit_info = \
+                        f'Image "{image_name}" exists but not found descriptor\n' \
+                        f'Try to retag stable descriptor using:\n' \
+                        f'\tretagStableDescriptorForImage {image_name} version [solution]'
+                else:
+                    if service_version.startswith('simage://'):
+                        service_version = service_version[1:]
+                    exit_info = f'Service "{service_name}" not available for given precondition: {service_version}'
+                exit(exit_info)
+            else:
+                for service_key, service in entities.items():
+                    if service.name == service_name:
+                        entities_to_install[service_key] = service
+    debug(f'entities_to_install after service version: {list(entities_to_install.keys())}')
+
+    if len(SKIP_CONFIG_MAPS) > 0:
+        # do not install config maps from skip list
+        entities_to_install = {
+            _: __ for _, __ in entities_to_install.items()
+            if not (__.name in SKIP_CONFIG_MAPS and __.type == ENTITY_TYPES.CONFIGMAP.value)}
+    debug(f'entities_to_install after skip config maps list: {list(entities_to_install.keys())}')
+
+    if len(SKIP_SERVICES) > 0:
+        # do not install services from skip list
+        entities_to_install = {
+            _: __ for _, __ in entities_to_install.items()
+            if not (__.name in SKIP_SERVICES and __.type == ENTITY_TYPES.SERVICE.value)}
+    debug(f'entities_to_install after skip list: {list(entities_to_install.keys())}')
+
+    if len(entities_to_install.keys()) > 0:
+        info(f'Entities to install: {list(entities_to_install.keys())}')
+    else:
+        speak('Nothing to install. Exit')
+        exit(1)
+
+    if VERSIONS['GLOBAL'] is not None:
+        # check if some already installed config maps are absent in global version that is going to be installed
+        # do not count skipped config maps
+        not_found_config_maps = []
+        for cm_name in local.install.get_installed_config_maps_names():
+            if cm_name not in (_.name for _ in entities_to_install.values() if _.type == ENTITY_TYPES.CONFIGMAP.value) \
+                    and cm_name not in SKIP_CONFIG_MAPS:
+                not_found_config_maps.append(cm_name)
+        if len(not_found_config_maps) > 0:
+            info('WARNING: Some config maps that are already installed are not found in versions that are going to be '
+                 'installed. Will uninstall such config maps:')
+            info(str(not_found_config_maps))
+        # check if some already installed services are absent in global version that is going to be installed
+        # do not count skipped services
+        not_found_services = []
+        for service_name in local.install.get_installed_services_names():
+            if \
+                service_name not in (
+                    _.name for _ in entities_to_install.values() if _.type == ENTITY_TYPES.SERVICE.value) \
+                    and service_name not in SKIP_SERVICES:
+                not_found_services.append(service_name)
+        if len(not_found_services) > 0:
+            info('WARNING: Some services that are already installed are not found in versions that are going to be '
+                 'installed. Will uninstall such services:')
+            info(str(not_found_services))
+
+    if len(COMMANDS) > 0:
+        info('Commands to run after installation process:')
+        info(str(COMMANDS))
+
+    # save list of daemons that were running before installation
+    running_daemons = [
+        _.key for _ in local.install.get_installed_services().values()
+        if _.is_daemon and dockerClient.is_running_container(_.container_name)
+    ]
+    if len(running_daemons) > 0:
+        info(f'Daemon services running before installation process: {running_daemons}')
+
+    # Uninstall current config maps
+    config_maps_to_uninstall: Set[str] = set()
+    if VERSIONS['GLOBAL'] is not None:
+        debug('Uninstall all config maps')
+        config_maps_to_uninstall = local.install.get_installed_config_maps_names()
+    else:
+        debug('Uninstall selected config maps')
+        config_maps_to_uninstall = set(
+            _.name for _ in entities_to_install.values() if _.type == ENTITY_TYPES.CONFIGMAP.value)
+    config_maps_to_uninstall = config_maps_to_uninstall - SKIP_CONFIG_MAPS
+    if len(config_maps_to_uninstall) > 0:
+        info(f'Uninstall current config maps: {config_maps_to_uninstall}')
+        rows = [{'Config map': _, 'Uninstall': None} for _ in config_maps_to_uninstall]
+        progress = {
+            '_METADATA_':
+                {
+                    'title': 'Uninstallation progress',
+                    'headers': ['Config map', 'Uninstall'],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': sorted(rows, key=lambda _: _['Config map'])}
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for cm_name in config_maps_to_uninstall:
+            info(f'Uninstall config map: {cm_name}')
+            local.uninstall.uninstall_config_map(cm_name)
+            row = next(_ for _ in progress['_ROWS_'] if _['Config map'] == cm_name)
+            row['Uninstall'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+
+    # Uninstall current services
+    services_to_uninstall: Set[str] = set()
+    if VERSIONS['GLOBAL'] is not None:
+        debug('Uninstall all services')
+        services_to_uninstall = local.install.get_installed_services_names()
+    else:
+        debug('Uninstall selected services')
+        services_to_uninstall = set(
+            _.name for _ in entities_to_install.values() if _.type == ENTITY_TYPES.SERVICE.value)
+    services_to_uninstall = services_to_uninstall - SKIP_SERVICES
+    if len(services_to_uninstall) > 0:
+        info(f'Uninstall current services: {services_to_uninstall}')
+        rows = [{'Service': _, 'Uninstall': None} for _ in services_to_uninstall]
+        progress = {
+            '_METADATA_':
+                {
+                    'title': 'Uninstallation progress',
+                    'headers': ['Service', 'Uninstall'],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': sorted(rows, key=lambda _: _['Service'])}
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for service_name in sorted(services_to_uninstall):
+            info(f'Uninstall: {service_name}')
+            local.uninstall.uninstall_service(service_name)
+            row = next(_ for _ in progress['_ROWS_'] if _['Service'] == service_name)
+            row['Uninstall'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+
+    info("Pull images")
+    images_to_pull = set()
+    for entity in entities_to_install.values():
+        if entity.type == ENTITY_TYPES.CONFIGMAP.value:
+            images_to_pull.add(entity.descriptor_image)
+        elif entity.type == ENTITY_TYPES.SERVICE.value:
+            images_to_pull.add(entity.image)
+            images_to_pull.add(entity.descriptor_image)
+    debug(f'images_to_pull: {images_to_pull}')
+    progress = {
+        '_METADATA_':
+            {
+                'title': 'Pull images',
+                'show_header': False,
+                'type': 'table'
+            },
+        '_ROWS_': []}
+    if use_raw_output() is False:
+        # TODO: to dziwne troche. Tzn w zasadzie to nie jest tabela tylko sam naglowek (???), tak samo wyświetlanie
+        # jest w pull_images
+        screen.update({'progress': progress})
+    local.install.pull_images(*images_to_pull)
+
+    info('Install config maps')
+    rows = [{'Config map': _[1:],
+             'Image': __.descriptor_image,
+             'Install': None
+             } for _, __ in entities_to_install.items() if __.type == ENTITY_TYPES.CONFIGMAP.value]
+    progress = {
+        '_METADATA_':
+            {
+                'title': 'Installation progress',
+                'headers': ['Config map', 'Image', 'Install'],
+                'show_header': True,
+                'type': 'table'
+            },
+        '_ROWS_': sorted(rows, key=lambda _: _['Config map'])}
+    if use_raw_output() is False:
+        screen.update({'progress': progress})
+    images_to_install: Dict[Image_name, Set[SimpleConfigMap]] = dict()
+    for entity_key, entity in entities_to_install.items():
+        if entity.type != ENTITY_TYPES.CONFIGMAP.value:
+            continue
+        # group config maps per docker image
+        images_to_install[entity.descriptor_image] = images_to_install.get(entity.descriptor_image, set()) | {entity}
+    debug(f'images_to_install: {images_to_install.keys()}')
+    config_maps_installed: Set[str] = set()
+    for image_name, entities in images_to_install.items():
+        config_maps_installed.update(
+            local.install.install_config_maps_from_image(image_name, entities, screen, progress))
+    debug(f'config_maps_installed:\n{config_maps_installed}')
+
+    info('Install services')
+    rows = [{'Service': _,
+             'Image': __.image,
+             'Install': None
+             } for _, __ in entities_to_install.items() if __.type == ENTITY_TYPES.SERVICE.value]
+    progress = {
+        '_METADATA_':
+            {
+                'title': 'Installation progress',
+                'headers': ['Service', 'Image', 'Install'],
+                'show_header': True,
+                'type': 'table'
+            },
+        '_ROWS_': sorted(rows, key=lambda _: _['Service'])}
+    if use_raw_output() is False:
+        screen.update({'progress': progress})
+    images_to_install: Dict[Image_name, Set[Service_key]] = dict()
+    for entity_key, entity in entities_to_install.items():
+        if entity.type != ENTITY_TYPES.SERVICE.value:
+            continue
+        # group services per docker image
+        images_to_install[entity.image] = (images_to_install.get(entity.image, None) or set()) | {entity_key}
+    debug(f'images_to_install: {images_to_install}')
+    services_installed: Dict[Service_key, Service] = dict()
+    for image_name, service_keys in images_to_install.items():
+        debug(f'Install services "{service_keys}" from image: {image_name}')
+        services_installed = {
+            **services_installed,
+            **local.install.install_services_from_image(image_name, service_keys, screen, progress)}
+    debug(f'services_installed:\n{services_installed.keys()}')
+
+    # remove outdated containers for daemons
+    info("Remove outdated containers for daemons")
+    outdated_daemons = local.services.get_daemons_with_outdated_containers()
+    if len(outdated_daemons) > 0:
+        local.services.stop(*(_.name for _ in outdated_daemons))
+        for daemon in outdated_daemons:
+            debug(f'outdated daemon: {daemon.name}')
+            dockerClient.rm_container(daemon.container_name)
+
+    # create missing containers for daemons
+    if any((_.is_daemon for _ in local.install.get_installed_services().values())):
+        info('Create daemon missing containers')
+        local.daemons.create_containers()
+
+    commands_to_run = set(
+        _ for _, __ in services_installed.items() if __.is_command and __.command_run_phase == 'before_data_providers')
+    if len(commands_to_run) > 0:
+        info('Run commands from run phase: before_data_providers')
+        rows = [{'Command': _, 'Run': None} for _ in commands_to_run]
+        progress = {
+            '_METADATA_':
+                {
+                    'title': 'Run commands from run phase: before_data_providers',
+                    'headers': ['Command', 'Run'],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': sorted(rows, key=lambda _: _['Command'])}
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for service_key in commands_to_run:
+            info(f'Run command: {service_key}')
+            row = next(_ for _ in progress['_ROWS_'] if _['Command'] == service_key)
+            row['Run'] = 'running'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+            local.services.start(service_key)
+            row['Run'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+
+    if len(CLEAN.keys()) > 0:
+        for type, service_names in CLEAN.items():
+            info(f'Cleaning "{type}" for services: {service_names}')
+            rows = [{'Service': _, 'Clean': None} for _ in service_names]
+            progress = {
+                '_METADATA_':
+                    {
+                        'title': f'Clean "{type}" for services: {service_names}',
+                        'headers': ['Service', 'Clean'],
+                        'show_header': True,
+                        'type': 'table'
+                    },
+                '_ROWS_': sorted(rows, key=lambda _: _['Service'])}
+            if use_raw_output() is False:
+                screen.update({'progress': progress})
+            for service_name in service_names:
+                info(f'Clean "{type}" for service: {service_name}')
+                row = next(_ for _ in progress['_ROWS_'] if _['Service'] == service_name)
+                row['Clean'] = 'running'
+                if use_raw_output() is False:
+                    screen.update({'progress': progress}, clear_screen=False)
+                # TODO: zatrzymywanie serwisu przed cleanem
+                getattr(local.clean, type)(service_name)
+                row['Clean'] = 'done'
+                if use_raw_output() is False:
+                    screen.update({'progress': progress}, clear_screen=False)
+
+    data_providers_to_restore = set(
+        _ for _, __ in services_installed.items()
+        if __.is_data_provider and SERVICE_TYPES.DATA_PROVIDER_RESTORE.value in __.types)
+    if len(data_providers_to_restore) > 0:
+        info('Restore data providers')
+        progress = {
+            '_METADATA_':
+                {
+                    'title': 'Restore data providers',
+                    'headers': ['Data provider', 'Restore'],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': sorted([{'Data provider': _, 'Restore': None} for _ in data_providers_to_restore],
+                             key=lambda _: _['Data provider'])}
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for service_key in data_providers_to_restore:
+            info(f'Restore data provider: {service_key}')
+            row = next(_ for _ in progress['_ROWS_'] if _['Data provider'] == service_key)
+            row['Restore'] = 'running'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+            local.services.start(service_key)
+            row['Restore'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+
+    commands_to_run = set(
+        _ for _, __ in services_installed.items() if __.is_command and __.command_run_phase == 'before_initialization')
+    if len(commands_to_run) > 0:
+        info('Run commands from run phase: before_initialization')
+        progress = {
+            '_METADATA_':
+                {
+                    'title': 'Run commands from run phase: before_initialization',
+                    'headers': ['Command', 'Run'],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': sorted([{'Command': _, 'Run': None} for _ in commands_to_run], key=lambda _: _['Command'])}
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for service_key in commands_to_run:
+            info(f'Run command: {service_key}')
+            row = next(_ for _ in progress['_ROWS_'] if _['Command'] == service_key)
+            row['Run'] = 'running'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+            local.services.start(service_key)
+            row['Run'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+
+    services_to_initialize = set(
+        _ for _, __ in services_installed.items()
+        if __.has_init_command
+        and (
+            __.init_command_type == local.init.INIT_TYPES.ALWAYS.value
+            or (
+                __.init_command_type == local.init.INIT_TYPES.ONETIME.value and not local.init.is_initialized(__.key))))
+    if len(services_to_initialize) > 0:
+        info('\nInitialize services')
+        progress = {
+            '_METADATA_':
+                {
+                    'title': 'Services initialization',
+                    'headers': ['Service', 'Initialize'],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': sorted([{'Service': _, 'Initialize': None} for _ in services_to_initialize],
+                             key=lambda _: _['Service'])}
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        # TODO: in parallel?
+        for service_key, service in services_installed.items():
+            if service.key in services_to_initialize:
+                info(f'Init service: {service_key}')
+                row = next(_ for _ in progress['_ROWS_'] if _['Service'] == service.key)
+                row['Initialize'] = 'running'
+                if use_raw_output() is False:
+                    screen.update({'progress': progress}, clear_screen=False)
+                local.init.initialize(service)
+                row['Initialize'] = 'done'
+                if use_raw_output() is False:
+                    screen.update({'progress': progress}, clear_screen=False)
+
+    commands_to_run = set(
+        _ for _, __ in services_installed.items()
+        if __.is_command and __.command_run_phase == 'after_initialization')
+    if len(commands_to_run) > 0:
+        info('Run commands from run phase: after_initialization')
+        progress = {
+            '_METADATA_':
+                {
+                    'title': 'Run commands from run phase: after_initialization',
+                    'headers': ['Command', 'Run'],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': sorted([{'Command': _, 'Run': None} for _ in commands_to_run], key=lambda _: _['Command'])}
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for service_key in commands_to_run:
+            info(f'Run command: {service_key}')
+            row = next(_ for _ in progress['_ROWS_'] if _['Command'] == service_key)
+            row['Run'] = 'running'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+            local.services.start(service_key)
+            row['Run'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+
+    if len(COMMANDS) > 0:
+        info('Run commands passed into install command')
+        progress = {
+            '_METADATA_':
+                {
+                    'title': 'Run commands passed into install command',
+                    'headers': ['Command', 'Run'],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': sorted([{'Command': _, 'Run': None} for _ in COMMANDS], key=lambda _: _['Command'])}
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for command in COMMANDS:
+            info(f'Run command: {command}')
+            row = next(_ for _ in progress['_ROWS_'] if _['Command'] == command)
+            row['Run'] = 'running'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+            cmd_path = ENV_BIN_DIR / command
+            if cmd_path.exists():
+                fexec([cmd_path]) >> ENV_MAIN_LOG_FILE
+            else:
+                # for services of type COMMAND service_key = service_name
+                local.services.start(command)
+            row['Run'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+
+    if len(running_daemons) > 0:
+        running_daemons = [
+            local.services.get_service(_) for _ in running_daemons if local.install.is_installed_service(_)]
+        running_daemons = [
+            _ for _ in running_daemons if not dockerClient.is_running_container(_.container_name)]
+        if len(running_daemons) > 0:
+            running_daemons_keys = [_.key for _ in running_daemons]
+            info(f'Start up daemons that were running before installation '
+                 f'process and are still installed and stopped: {running_daemons_keys}')
+            progress = {
+                '_METADATA_':
+                    {
+                        'title': 'Start up daemons that were running before installation process',
+                        'headers': ['Daemon', 'Start up'],
+                        'show_header': True,
+                        'type': 'table'
+                    },
+                '_ROWS_': sorted([{'Daemon': _, 'Start up': None} for _ in running_daemons_keys],
+                                 key=lambda _: _['Daemon'])}
+            if use_raw_output() is False:
+                screen.update({'progress': progress})
+            # try to run startup in separate thread
+            executor = ThreadPoolExecutor(max_workers=1)
+            future = executor.submit(lambda *_: local.services.start(*_, wait=False), *running_daemons_keys)
+            while True:
+                for service in running_daemons:
+                    if dockerClient.is_running_container(service.container_name):
+                        row = next(_ for _ in progress['_ROWS_'] if _['Daemon'] == service.key)
+                        row['Start up'] = 'done'
+                        if use_raw_output() is False:
+                            screen.update({'progress': progress}, clear_screen=False)
+                try:
+                    future.result(timeout=2)
+                    break
+                except TimeoutError:
+                    pass
+
+except Exception as exc:
+    error(f'\nInstallation failed with exception: {exc}')
+    error(f'\n{traceback.format_exc()}')
+    exit(1)
+finally:
+    if screen is not None:
+        screen.destroy()

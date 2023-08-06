@@ -1,0 +1,13 @@
+
+{env_name} created succesfully
+
+What next?
+ activate {env_name}
+ start
+
+Do you need more help?
+ bssenv info
+ bssenv info2
+ https://wiki.comarch/display/BSSRND/bssenv
+
+Good luck!

@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+from local.docker import dockerClient
+from local.commandline import arg
+
+
+cur = arg(1)
+prev_words = set(arg[2:][0:-1])  # drop last word because it is "cur"
+
+autocompletions = set()
+
+for container in dockerClient.containers(
+    all=True, ignore_removed=True,
+    filters={'label': f'bssenv.environment.id={local.env.id()}'}
+):
+    if \
+        container.labels.get(
+            'bssenv.container.type', None) != 'service':
+        continue
+
+    if not dockerClient.is_paused_container(container.id):
+        continue
+
+    service_key = container.labels['bssenv.service.key']
+    service_name = container.labels['bssenv.service.name']
+    command_key = container.labels.get(
+        'bssenv.service.command.key', None)
+
+    if command_key:
+        autocompletion = f'{service_key}:{command_key}'
+    else:
+        autocompletion = service_name
+    if cur:
+        if autocompletion.startswith(cur):
+            if ':' in cur:
+                autocompletions.add(command_key)
+            else:
+                autocompletions.add(autocompletion)
+    else:
+        autocompletions.add(autocompletion)
+
+autocompletions -= prev_words
+
+for autocompletion in autocompletions:
+    print(autocompletion)

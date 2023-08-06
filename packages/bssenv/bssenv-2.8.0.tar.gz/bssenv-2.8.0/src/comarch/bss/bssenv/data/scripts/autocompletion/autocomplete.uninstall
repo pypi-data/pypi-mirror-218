@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# >---- BUILT IN COMMANDS ---->
+complete -p deactivate &> /dev/null && complete -r deactivate
+complete -p destroy &> /dev/null && complete -r destroy
+complete -p cdin &> /dev/null && complete -r cdin
+complete -p start &> /dev/null && complete -r start
+complete -p stop &> /dev/null && complete -r stop
+complete -p debug &> /dev/null && complete -r debug
+complete -p status &> /dev/null && complete -r status
+complete -p stats &> /dev/null && complete -r stats
+complete -p install &> /dev/null && complete -r install
+complete -p fullInstall &> /dev/null && complete -r fullInstall
+complete -p update &> /dev/null && complete -r update
+complete -p fullUpdate &> /dev/null && complete -r fullUpdate
+complete -p services &> /dev/null && complete -r services
+complete -p versions &> /dev/null && complete -r versions
+complete -p uninstall &> /dev/null && complete -r uninstall
+complete -p describe &> /dev/null && complete -r describe
+complete -p logs &> /dev/null && complete -r logs
+complete -p enter &> /dev/null && complete -r enter
+complete -p pause &> /dev/null && complete -r pause
+complete -p top &> /dev/null && complete -r top
+complete -p unpause &> /dev/null && complete -r unpause
+complete -p cmd &> /dev/null && complete -r cmd
+complete -p dns &> /dev/null && complete -r dns
+complete -p exp &> /dev/null && complete -r exp
+complete -p init &> /dev/null && complete -r init
+complete -p clean &> /dev/null && complete -r clean
+complete -p ports &> /dev/null && complete -r ports
+complete -p snapshot &> /dev/null && complete -r snapshot
+complete -p switch &> /dev/null && complete -r switch
+complete -p waiton &> /dev/null && complete -r waiton
+complete -p images &> /dev/null && complete -r images
+complete -p configMaps &> /dev/null && complete -r configMaps
+# <---- BUILT IN COMMANDS ----<

@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.env
+from local.docker import dockerClient
+from local.commandline import arg
+from local.logging import debug
+from rich import print as rprint
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+
+
+def print_help():
+    rprint(
+        'Display the running processes of the container\n'
+        '\n'
+        'top service_name [ps_args] - display the running processes for given service container\n'
+        'top service_key:command_key [ps_args] - display the running processes for given service command container\n'
+        '\n'
+        'Examples:\n'
+        '\ttop backend aux\n'
+        '\ttop backend:dataUpgrade\n'
+        '\ttop backend:dataUpgrade aux')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+entity_name = arg(1)
+ps_args = arg[2:]
+
+if entity_name is None:
+    print_help()
+    print('\n')
+    exit('Please provide service or command name')
+
+debug(f'entity_name: {entity_name}')
+debug(f'ps_args: {ps_args}')
+
+if ':' in entity_name:
+    entity_type = 'command_service'
+    arg_service_key, arg_command_key = (entity_name.split(':') + [None])[0:2]
+else:
+    entity_type = 'service'
+    arg_service_name = entity_name
+
+container_found = None
+
+for container in dockerClient.containers(
+    ignore_removed=True,
+    filters={'label': f'bssenv.environment.id={local.env.id()}'}
+):
+    if container.labels.get('bssenv.container.type', None) != 'service':
+        continue
+
+    service_key = container.labels['bssenv.service.key']
+    service_name = container.labels['bssenv.service.name']
+    command_key = container.labels.get('bssenv.service.command.key', None)
+
+    if entity_type == 'service':
+        if command_key is None and service_name == arg_service_name:
+            container_found = container
+            break
+    else:
+        if command_key and arg_service_key == service_key and arg_command_key == command_key:
+            container_found = container
+            break
+
+if container_found is None:
+    exit(f'Running container for "{entity_name}" not found')
+
+top_stats = dockerClient.top_container(container_found.id, *ps_args)
+
+debug(str(top_stats))
+
+try:
+    term = blessed.Terminal()
+    screen = Screen(
+            term,
+            DictDataUpdater(),
+            DictTabularDataPrinter(),
+            use_secondary_screen_buffer=False)
+    headers = top_stats['Titles']
+
+    table = {
+        '_METADATA_':
+            {
+                'title': 'Top stats:',
+                'headers': headers,
+                'show_header': True,
+                'type': 'table'
+            },
+        '_ROWS_': []
+    }
+    for process in (top_stats.get('Processes', []) or []):
+        table['_ROWS_'].append(dict(zip(headers, process)))
+    screen.update({'top': table}, False, False)
+finally:
+    if screen is not None:
+        screen.destroy()

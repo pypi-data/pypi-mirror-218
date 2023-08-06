@@ -1,0 +1,142 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+import traceback
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+import local.services
+import local.install
+import local.uninstall
+import local.clean
+import local.init
+import local.tmp
+import local.os
+import local.dns
+import local.ports
+import local.switches
+import blessed
+from local.commandline import arg
+from local.services import keep_running_daemons
+from local.paths import ENV_PML_DIR, ENV_LOGS_DIR
+from local.logging import debug, info, error
+from local.terminal import DictDataUpdater, Screen, DictTabularDataPrinter
+from local.os import use_raw_output
+from rich import print as rprint
+
+
+def print_help():
+    rprint(
+        'Clean: environment / data / conf / logs / init\n'
+        '\n'
+        'clean - clean whole environment\n'
+        'clean data service_1 service_2 ... - clean data volumes for services: service_1, service_2, ...\n'
+        'clean conf service_1 service_2 ... - clean config volumes for services: service_1, service_2, ...\n'
+        'clean logs service_1 service_2 ... - clean logs volumes for services: service_1, service_2, ...\n'
+        'clean init service_1 service_2 ... - clean init states for services: service_1, service_2, ...')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+installed_services = local.install.get_installed_services().values()
+installed_services_names = local.install.get_installed_services_names()
+
+if arg(1) is None:
+    # clean whole env
+    for service in installed_services:
+        if not service.is_data_provider_builder:
+            info(f'Stop service: {service.key}')
+            local.services.stop(service.key, wait=True)
+    for service_name in installed_services_names:
+        info(f'Uninstall service: {service_name}')
+        local.uninstall.uninstall_service(service_name)
+    info(f'Clean whole docker data volume')
+    local.clean.data_volume()
+    info(f'Clean whole docker config volume')
+    local.clean.conf_volume()
+    info(f'Clean whole docker logs volume')
+    local.clean.logs_volume()
+    info(f'Clean all initialized services states')
+    local.init.remove_initialized()
+    info(f'Clean all uninstalled services')
+    local.uninstall.remove_uninstalled_services()
+    info(f'Clean added dns mappings')
+    local.dns.remove_dns_mappings()
+    info(f'Clean changed port mappings')
+    local.ports.remove_changed_port_mappings()
+    info('Remove switch configurations')
+    local.switches.remove_switch_configurations()
+    info(f'Clean environment temporary directory')
+    local.tmp.clean_env_tmp_dir()
+    info(f'Clean PML directory')
+    local.os.remove_path(ENV_PML_DIR)
+    local.os.create_dir(ENV_PML_DIR)
+    info(f'Clean logs directory')
+    local.os.remove_path(ENV_LOGS_DIR)
+    local.os.create_dir(ENV_LOGS_DIR)
+elif arg(1) in ['data', 'conf', 'logs', 'init']:
+    type = arg(1)
+    service_names = set(arg[2:])
+    for service_name in service_names:
+        if service_name not in local.install.get_installed_services_names():
+            raise Exception(f'Service "{service_name}" is not installed"')
+    debug(f'service_names: {service_names}')
+    screen = Screen(
+        blessed.Terminal(),
+        DictDataUpdater(),
+        DictTabularDataPrinter())
+    try:
+        info(f'Cleaning "{type}" for services: {service_names}')
+        rows = [{'Service': _, 'Clean': None} for _ in service_names]
+        rows.sort(key=lambda _: _['Service'])
+        progress = {
+            '_METADATA_': {
+                    'title': f'Clean "{type}" for services: {service_names}',
+                    'headers': ['Service', 'Clean'],
+                    'show_header': True,
+                    'type': 'table'
+            },
+            '_ROWS_': rows
+        }
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        with keep_running_daemons():
+            for service_name in service_names:
+                info(f'Stop service: {service_name}')
+                for service in local.install.get_installed_services().values():
+                    if service.name == service_name:
+                        local.services.stop(service.key, wait=True)
+                info(f'Clean "{type}" for service: {service_name}')
+                row = next(_ for _ in progress['_ROWS_'] if _['Service'] == service_name)
+                row['Clean'] = 'running'
+                getattr(local.clean, type)(service_name)
+                row['Clean'] = 'done'
+                if use_raw_output() is False:
+                    screen.update({'progress': progress}, clear_screen=False)
+    except Exception as exc:
+        screen.destroy()
+        error(f'\nCleaning failed with exception: {exc}')
+        error(f'\n{traceback.format_exc()}')
+        exit(1)
+    if screen is not None:
+        screen.destroy()
+else:
+    print_help()
+    print('\n')
+    exit('Wrong parameters provided')

@@ -1,0 +1,2 @@
+thread.pool.max.workers: 50
+docker.max.pull.workers: 10

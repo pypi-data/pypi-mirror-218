@@ -1,0 +1,2 @@
+[console_scripts]
+bssenv = comarch.bss.bssenv.bssenv:run

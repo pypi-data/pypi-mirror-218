@@ -1,0 +1,109 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+import os
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(os.path.dirname(os.path.abspath(__file__)))
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.regex
+import blessed
+from local.config import config
+from local.docker import dockerClient, dockerRegistry
+from local.commandline import arg
+from local.logging import debug
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen 
+
+
+def print_help():
+    print(
+        'Print versions available to install\n'
+        '\n'
+        'versions - print all available release versions\n'
+        'versions -a - print all available versions')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+try:
+    VERSION_SOLUTION_REGEX = r'^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+-[a-zA-Z]+[^-]*(-initial)?$'
+    term = blessed.Terminal()
+    screen = Screen(term,
+                    DictDataUpdater(),
+                    DictTabularDataPrinter(),
+                    use_secondary_screen_buffer=False)
+
+    debug(f'Start script {Path(__file__).resolve()}')
+
+    extended_listing = True if arg(1) == '-a' else False
+
+    with ThreadPoolExecutor(max_workers=config.thread.pool.max.workers) as e:
+        remote_tags = e.submit(dockerRegistry.get_all_bssenv_descriptors_tags)
+        local_tags = e.submit(dockerClient.get_all_bssenv_descriptors_tags)
+
+
+    remote_tags = remote_tags.result()
+    local_tags = local_tags.result()
+
+    release_tags = set()
+    other_tags = set()
+
+    registry_data = dockerRegistry.get_registry_data()
+    namespace_prefix = registry_data.get('docker.image.name.namespace_prefix', None)
+
+    for current_tags in [remote_tags, local_tags]:
+        for repository, tags in current_tags.items():
+            namespace = repository \
+                .rpartition('/')[0] \
+                .rpartition('/')[0] \
+                .rpartition('/')[0]  # just drop last 3 parts: bssenv/.../...
+            if (not namespace and not namespace_prefix) or (namespace == namespace_prefix):
+                for tag in tags:
+                    if local.regex.is_like(tag, VERSION_SOLUTION_REGEX) and not tag.endswith('SNAPSHOT'):
+                        release_tags.add(tag)
+                    else:
+                        if extended_listing:
+                            other_tags.add(tag)
+            else:
+                if extended_listing:
+                    for tag in tags:
+                        other_tags |= {f'{namespace}/{tag}'}
+
+    release_tags = list(release_tags)
+    release_tags.sort()
+
+    table = {
+        '_METADATA_': {
+            'title': 'Versions:',
+            'headers': ['Version'],
+            'show_header': True,
+            'type': 'table'},
+        '_ROWS_': []
+    }
+
+    # add release tags
+    for tag in reversed(release_tags):
+        debug(f'tag in release_tags: {tag}')
+        table['_ROWS_'].append({'Version': tag})
+
+    if extended_listing:
+        # add other tags
+        other_tags = list(other_tags)
+        other_tags.sort()
+        for tag in other_tags:
+            table['_ROWS_'].append({'Version': tag})
+
+    screen.update({'versions': table}, False, False)
+finally:
+    if screen is not None:
+        screen.destroy()

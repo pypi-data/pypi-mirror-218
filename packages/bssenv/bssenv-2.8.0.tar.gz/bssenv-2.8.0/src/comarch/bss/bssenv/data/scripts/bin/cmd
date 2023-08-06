@@ -1,0 +1,132 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+import local.install
+import local.services
+import local.commands
+import blessed
+from local.commandline import arg, raise_arg_is_required
+from local.logging import debug
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+
+
+def print_help():
+    print(
+        'List or run commands\n'
+        '\n'
+        'cmd list - list all installed commands\n'
+        'cmd run command_id [command_args] - run command "command_id" with optional arguments "command_args"\n'
+        '\n'
+        'Examples:\n'
+        'cmd run pml main.pml\n'
+        'cmd run backend:dataUpgrade')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+
+if arg(1) == 'list':
+    try:
+        term = blessed.Terminal()
+        screen = Screen(
+            term,
+            DictDataUpdater(),
+            DictTabularDataPrinter(),
+            use_secondary_screen_buffer=False)
+        table = {
+            '_METADATA_': {
+                'title': 'Commands:',
+                'headers': [
+                    {'name': 'Command id', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Command shell name', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Command type', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Service key', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Command key', 'overflow': 'fold', 'no_wrap': True},
+                    {'name': 'Description', 'overflow': 'fold', 'no_wrap': True}],
+                'show_header': True,
+                'type': 'table'
+            }
+        }
+        rows = []
+        command_registry = local.commands.get_command_registry() or {}
+        commands = command_registry.get('commands', {})
+        shell_scripts = command_registry.get('shell_scripts', {})
+        for command_key, entries in commands.items():
+            for entry in entries:
+                service = \
+                    local.services.get_service(command_key if entry['type'] == 'service' else entry['service_key'])
+                command_id = service.key if entry['type'] == 'service' else f"{service.key}:{command_key}"
+                shell_script_name = service.command_shell_name \
+                    if entry['type'] == 'service' else service.commands[command_key].get('generate_script', None)
+                is_shell_script_generated = False
+                if shell_script_name:
+                    script_entries = shell_scripts.get(shell_script_name, [])
+                    last_script_entry = script_entries[-1] if len(script_entries) > 0 else None
+                    if last_script_entry:
+                        if (
+                            last_script_entry['service_key'] == service.key
+                            and (
+                                    (last_script_entry['command_key'] is None and entry['type'] == 'service')
+                                    or last_script_entry['command_key'] == command_key
+                            )
+                        ):
+                            is_shell_script_generated = True
+                command_type = 'run' if entry['type'] == 'service' else service.commands[command_key].get('type', '')
+                description = service.description \
+                    if entry['type'] == 'service' else service.commands[command_key].get('description', '')
+                rows.append({
+                    'Command id': command_id,
+                    'Command shell name': shell_script_name if is_shell_script_generated else '',
+                    'Command type': command_type,
+                    'Service key': service.key,
+                    'Command key': '' if entry['type'] == 'service' else command_key,
+                    'Description': description
+                    })
+        table['_ROWS_'] = sorted(rows, key=lambda _: _['Command id'])
+        screen.update({'cmd_list': table}, False, False)
+    finally:
+        if screen is not None:
+            screen.destroy()
+elif arg(1) == 'run':
+    command_id = arg(2)
+    cmd_args = arg[3:]
+    if not command_id:
+        print_help()
+        print()
+        raise_arg_is_required('command_id')
+    service_key, command_key = (command_id.split(':') + [None])[0:2]
+    if not local.install.is_installed_service(service_key):
+        raise Exception(f'Service "{service_key}" is not installed"')
+    service = local.services.get_service(service_key)
+    if command_key:
+        command = (service.commands or {}).get(command_key, None)
+        if not command:
+            raise Exception(f'Command "{command_key}" not defined for service "{service_key}"')
+        local.services.start(f'{service_key}:{command_key}', wait=False, cmd_args=cmd_args)
+    else:
+        if not service.is_command:
+            raise Exception(f'Service "{service_key}" is not of type command')
+        local.services.start(service_key, wait=False, cmd_args=cmd_args)
+else:
+    print_help()
+    print()
+    exit('Wrong parameters provided')

@@ -1,0 +1,335 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+import os
+from os import execlp
+from pathlib import Path
+from timeit import default_timer as timer
+import comarch.bss.bssenv as BSSENV_PKG
+
+# configure modes
+os.environ['BSSENV_STDOUT_MODE'] = 'false'  # force saving services output to bssenv log file not to stdout
+os.environ['BSSENV_VERBOSE_MODE'] = 'false'  # force silent mode
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import humanize
+import blessed
+import local.env
+import local.install
+import local.services
+import local.ports
+import local.composefile
+import local.snapshots
+from local.docker import dockerClient, dockerRegistry
+from local.commandline import arg, raise_arg_is_required
+from local.logging import debug, speak
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+
+
+ENV_NAME = local.env.name()
+
+
+def print_help():
+    print(
+        'List, create or restore environment snapshots\n'
+        '\n'
+        'snapshot list - list all local snapshots\n'
+        'snapshot list remote - list all remote snapshots\n'
+        'snapshot details snapshot_name - show details about local snapshot "snapshot_name"\n'
+        'snapshot details remote snapshot_name - show details about remote snapshot "snapshot_name"\n'
+        'snapshot images snapshot_name - list images in local snapshot "snapshot_name"\n'
+        'snapshot images remote snapshot_name - list images in remote snapshot "snapshot_name"\n'
+        'snapshot create - create local snapshot of environment\n'
+        'snapshot create snapshot_name - create local snapshot of environment with given name\n'
+        'snapshot service_1 create - create local snapshot of "service_1"\n'
+        'snapshot service_1 create snapshot_name - create local snapshot of "service_1" with given name\n'
+        'snapshot :config_map_1 create - create local snapshot of "config_map_1"\n'
+        'snapshot :config_map_1 create snapshot_name - create local snapshot of "config_map_1" with given name\n'
+        'snapshot rm all - remove all local snapshots\n'
+        'snapshot rm snapshot_name - remove local snapshot "snapshot_name"\n'
+        'snapshot rm remote snapshot_name - remove remote snapshot "snapshot_name"\n'
+        'snapshot push snapshot_name - push local snapshot "snapshot_name" to docker registry\n'
+        'snapshot service_1 restore - restore service "service_1" from local snapshot "env_name-service_name-latest"\n'
+        'snapshot service_1 restore snapshot_name - restore service "service_1" from local snapshot "snapshot_name"\n'
+        'snapshot service_1 restore remote snapshot_name - restore service "service_1" from remote snapshot '
+        '"snapshot_name"\n'
+        'snapshot :config_map_1 restore - restore config map "config_map_1" from local snapshot '
+        '"env_name-cm-config_map_name-latest"\n'
+        'snapshot :config_map_1 restore snapshot_name - restore config map "config_map_1" from local snapshot '
+        '"snapshot_name"\n'
+        'snapshot :config_map_1 restore remote snapshot_name - restore config map "config_map_1" from remote snapshot '
+        '"snapshot_name"')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+try:
+    term = blessed.Terminal()
+    screen = Screen(
+        term,
+        DictDataUpdater(),
+        DictTabularDataPrinter(),
+        use_secondary_screen_buffer=False)
+
+    if arg(1) == 'list':
+        local_or_remote = None
+        if arg(2) == 'remote':
+            local_or_remote = 'Remote'
+            snapshots = local.snapshots.get_remote_snapshots()
+        else:
+            local_or_remote = 'Local'
+            snapshots = local.snapshots.get_local_snapshots()
+        table = {
+            '_METADATA_':
+                {
+                    'title': f'{local_or_remote} snapshots',
+                    'headers': [
+                        {'name': 'Name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Type', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Date', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Config map name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Service name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Environment name', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for metadata in sorted(snapshots, key=lambda _: _.snapshot_name):
+            table['_ROWS_'].append({
+                'Name': metadata.snapshot_name,
+                'Type': metadata.type,
+                'Date': metadata.date,
+                'Config map name': metadata.config_map_name,
+                'Service name': metadata.service_name,
+                'Environment name': metadata.environment_name
+            })
+        screen.update({'snapshot_list': table}, False, False)
+    elif arg(1) == 'details':
+        local_or_remote = None
+        if arg(2) == 'remote':
+            local_or_remote = 'Remote'
+            snapshot_name = arg(3)
+            if snapshot_name is None:
+                print_help()
+                print()
+                raise_arg_is_required('snapshot_name')
+            snapshot_metadata = local.snapshots.get_snapshot_metadata(snapshot_name, True)
+        else:
+            local_or_remote = 'Local'
+            snapshot_name = arg(2)
+            if snapshot_name is None:
+                print_help()
+                print()
+                raise_arg_is_required('snapshot_name')
+            snapshot_metadata = local.snapshots.get_snapshot_metadata(snapshot_name)
+        # describe snapshot
+        table = {
+            '_METADATA_':
+                {
+                    'title': 'Snapshot:',
+                    'headers': [
+                        {'name': 'key', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'value', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': False,
+                    'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        table['_ROWS_'].append(
+            {
+                'id': {'key': 'id', 'value': snapshot_metadata.id},
+                'name': {'key': 'name', 'value': snapshot_metadata.snapshot_name},
+                'type': {'key': 'type', 'value': snapshot_metadata.type},
+                'date': {'key': 'date', 'value': snapshot_metadata.date},
+                'metadata image': {'key': 'metadata image', 'value': snapshot_metadata.meta_image}
+            }
+        )
+        if snapshot_metadata.service_name:
+            table['service name'] = {'key': 'service name', 'value': snapshot_metadata.service_name}
+        elif snapshot_metadata.environment_name:
+            table['environment name'] = {'key': 'environment name', 'value': snapshot_metadata.environment_name}
+        elif snapshot_metadata.config_map_name:
+            table['config map name'] = {'key': 'config map name', 'value': snapshot_metadata.config_map_name}
+        stdout = {snapshot_name: table}
+        # describe images
+        table = {
+            '_METADATA_':
+                {
+                    'title': 'Snapshot images:',
+                    'headers': [
+                        {'name': 'Name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Size', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for image in sorted(snapshot_metadata.images):
+            size = \
+                dockerClient.get_image_virtual_size(image) if local_or_remote == 'Local' else \
+                dockerRegistry.get_image_virtual_size(image)
+            table['_ROWS_'].append({
+                'Name': image,
+                'Size': humanize.naturalsize(size) if size else '???'
+            })
+        stdout['Snapshot images'] = table
+        screen.update(stdout, False, False)
+    elif arg(1) == 'images':
+        local_or_remote = None
+        if arg(2) == 'remote':
+            local_or_remote = 'Remote'
+            snapshot_name = arg(3)
+            if snapshot_name is None:
+                print_help()
+                print()
+                raise_arg_is_required('snapshot_name')
+            snapshot_metadata = local.snapshots.get_snapshot_metadata(snapshot_name, True)
+        else:
+            local_or_remote = 'Local'
+            snapshot_name = arg(2)
+            if snapshot_name is None:
+                print_help()
+                print()
+                raise_arg_is_required('snapshot_name')
+            snapshot_metadata = local.snapshots.get_snapshot_metadata(snapshot_name)
+        # describe images
+        table = {
+            '_METADATA_':
+                {
+                    'title': 'Snapshot images:',
+                    'headers': [
+                        {'name': 'Name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Size', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'
+                },
+            '_ROWS_': []
+        }
+        for image in sorted(snapshot_metadata.images):
+            table['_ROWS_'].append({
+                'Name': image,
+                'Size': humanize.naturalsize(
+                    dockerClient.get_image_virtual_size(image) if local_or_remote == 'Local' else
+                    dockerRegistry.get_image_virtual_size(image)
+                )
+            })
+        screen.update({'snapshot_images': table}, False, False)
+    elif arg(1) == 'create':
+        snapshot_name = arg(2) if arg(2) is not None else f'{ENV_NAME}-latest'
+        local.snapshots.validate_snapshot_name(snapshot_name)
+        speak('Stop whole environment')
+        local.services.stop()
+        speak(f'\nCreate environment snapshot: {snapshot_name}')
+        start = timer()
+        local.snapshots.rm_local_snapshots(snapshot_name)
+        local.snapshots.create_environment_snapshot(snapshot_name)
+        end = timer()
+        speak(f'\nElapsed time: {humanize.naturaldelta(end - start)}')
+    elif arg(1) == 'rm':
+        snapshot_names = []
+        if arg(2) != 'all':
+            if arg(2) == 'remote':
+                snapshot_names = arg[3:]
+            else:
+                snapshot_names = arg[2:]
+            if len(snapshot_names) < 1:
+                print_help()
+                print()
+                exit('Please provide snapshot names to remove')
+        if arg(2) == 'remote':
+            local.snapshots.rm_remote_snapshots(*snapshot_names)
+        else:
+            local.snapshots.rm_local_snapshots(*snapshot_names)
+    elif arg(1) == 'push':
+        snapshot_name = arg(2)
+        if snapshot_name is None:
+            print_help()
+            print()
+            raise_arg_is_required('snapshot_name')
+        local.snapshots.rm_remote_snapshots(snapshot_name)
+        local.snapshots.push_snapshot(snapshot_name)
+    elif arg(1) and arg(2) in {'create', 'restore'}:
+        entity_name = arg(1)
+        if entity_name[0] == ':':
+            entity_name = entity_name[1:]
+            if arg(2) == 'create':
+                if entity_name not in local.install.get_installed_config_maps_names():
+                    print_help()
+                    print()
+                    exit('Config map name not found in installed config maps')
+                snapshot_name = arg(3) if arg(3) is not None else f'{ENV_NAME}-cm-{entity_name}-latest'
+                local.snapshots.validate_snapshot_name(snapshot_name)
+                speak(f'\nCreate config map snapshot: {snapshot_name}')
+                start = timer()
+                local.snapshots.rm_local_snapshots(snapshot_name)
+                local.snapshots.create_config_map_snapshot(entity_name, snapshot_name)
+                end = timer()
+                speak(f'\nElapsed time: {humanize.naturaldelta(end - start)}')
+            elif arg(2) == 'restore':
+                remote = True if arg(3) == 'remote' else False
+                snapshot_name = arg(4) if remote else arg(3)
+                if snapshot_name is None:
+                    snapshot_name = f'{ENV_NAME}-cm-{entity_name}-latest'
+                snapshot_metadata = local.snapshots.get_snapshot_metadata(snapshot_name, remote)
+                config_map_image = \
+                    next((_ for _ in snapshot_metadata.images if f'/configmap/{entity_name.lower()}:' in _), None)
+                if not config_map_image:
+                    exit(f'Config map image for config map "{entity_name}" not found in snapshot "{snapshot_name}"')
+                execlp('install', arg[0], f':{entity_name}=image://{config_map_image}')
+        else:
+            if arg(2) == 'create':
+                if entity_name not in local.install.get_installed_services_names():
+                    print_help()
+                    print()
+                    exit('Service name not found in installed services')
+                snapshot_name = arg(3) if arg(3) is not None else f'{ENV_NAME}-{entity_name}-latest'
+                local.snapshots.validate_snapshot_name(snapshot_name)
+                speak(f'Stop service: {entity_name}')
+                local.services.stop(*local.services.get_service_name_keys(entity_name))
+                speak(f'\nCreate service snapshot: {snapshot_name}')
+                start = timer()
+                local.snapshots.rm_local_snapshots(snapshot_name)
+                local.snapshots.create_service_snapshot(entity_name, snapshot_name)
+                end = timer()
+                speak(f'\nElapsed time: {humanize.naturaldelta(end - start)}')
+            elif arg(2) == 'restore':
+                remote = True if arg(3) == 'remote' else False
+                snapshot_name = arg(4) if remote else arg(3)
+                if snapshot_name is None:
+                    snapshot_name = f'{ENV_NAME}-{entity_name}-latest'
+                snapshot_metadata = local.snapshots.get_snapshot_metadata(snapshot_name, remote)
+                service_image = \
+                    next((
+                        _ for _ in snapshot_metadata.images
+                        if f'/service/{entity_name.lower()}:' in _), None)
+                descriptor_image = \
+                    next((
+                        _ for _ in snapshot_metadata.images
+                        if f'/service/bssenv/composefile/{entity_name.lower()}:' in _), None)
+                if not service_image or not descriptor_image:
+                    exit(f'Service image or service descriptor for service "{entity_name}" not found in snapshot '
+                         f'"{snapshot_name}"')
+                execlp('install', arg[0], f'{entity_name}=image://{service_image}')
+    else:
+        print_help()
+        print()
+        exit('Wrong parameters provided')
+
+finally:
+    if screen is not None:
+        screen.destroy()

@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.install
+from local.commandline import arg
+from local.entities import SERVICE_TYPES
+
+
+autocompletions = set()
+already_autocompleted = arg[2:]
+service_names_with_exportable_files = set()
+
+for service in local.install.get_installed_services().values():
+    if not (
+            service.main_type == SERVICE_TYPES.DATA_PROVIDER.value
+            and SERVICE_TYPES.DATA_PROVIDER_BUILD.value in service.types) \
+            and len(service.export_files.keys()) > 0:
+        service_names_with_exportable_files |= {service.name}
+
+if len(already_autocompleted) == 1:
+    autocompletions |= {'list'} | service_names_with_exportable_files
+elif (1 < len(already_autocompleted) < 3) \
+        and already_autocompleted[0] != 'list' \
+        and already_autocompleted[0] in service_names_with_exportable_files:
+    service_name = already_autocompleted[0]
+    for service in local.install.get_installed_services().values():
+        if service.name == service_name:
+            autocompletions |= {*service.export_files.keys()}
+
+for autocompletion in autocompletions:
+    print(autocompletion)

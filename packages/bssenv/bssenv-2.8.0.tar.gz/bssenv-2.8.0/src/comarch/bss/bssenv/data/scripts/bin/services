@@ -1,0 +1,108 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.env
+import local.install
+import local.uninstall
+from local.commandline import arg
+from local.logging import debug
+from local.terminal import DictDataUpdater, DictTabularDataPrinter, Screen
+
+
+def print_help():
+    print(
+        'Show list of installed and uninstalled services\n'
+        '\n'
+        'services - show list of all installed and uninstalled services\n'
+        'services service_type - show service keys of installed services with given service type')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+service_type = (arg(1) or '').lower()
+
+try:
+    term = blessed.Terminal()
+    screen = Screen(
+        term,
+        DictDataUpdater(),
+        DictTabularDataPrinter(),
+        use_secondary_screen_buffer=False)
+
+    if service_type:
+        if service_type not in {
+            'daemon', 'command', 'data_provider', 'data_provider.restore', 'data_provider.build',
+                'data_provider.compress'}:
+            exit(f'Service type "{service_type}" unknown')
+        else:
+            table = {
+                '_METADATA_': {
+                        'headers': [{'name': 'Service name', 'overflow': 'fold', 'no_wrap': True}],
+                        'show_header': True,
+                        'type': 'table'}}
+            rows = []
+            for service in local.install.get_installed_services().values():
+                if service_type in service.types:
+                    rows.append({'Service name': service.key})
+            table['_ROWS_'] = sorted(rows, key=lambda _: _['Service name'])
+            screen.update({service_type: table}, False, False)
+    else:
+        # installed services
+        table = {
+            '_METADATA_': {
+                    'title': 'Installed services:',
+                    'headers': [
+                        {'name': 'Service name', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Service type', 'overflow': 'fold', 'no_wrap': True},
+                        {'name': 'Description', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'}}
+        rows = {}
+        for _ in local.install.get_installed_services().values():
+            rows[_.name] = rows.get(_.name, {'type': _.main_type})
+            rows[_.name]['descriptions'] = rows[_.name].get(
+                'descriptions', set()) | {_.description}
+        rows = [
+            {
+                'Service name': _,
+                'Service type': __['type'],
+                'Description': '\n'.join(_ for _ in __['descriptions'] if len(_) > 0)
+            }
+            for _, __ in rows.items()]
+        table['_ROWS_'] = sorted(rows, key=lambda _: _['Service name'])
+        stdout = {'Installed services': table}
+
+        # uninstalled services
+        table = {
+            '_METADATA_': {
+                    'title': 'Uninstalled services:',
+                    'headers': [{'name': 'Service name', 'overflow': 'fold', 'no_wrap': True}],
+                    'show_header': True,
+                    'type': 'table'},
+            '_ROWS_': []}
+        for _ in sorted(local.uninstall.get_uninstalled_services()):
+            table['_ROWS_'].append({'Service name': _})
+        stdout['Uninstalled services'] = table
+        screen.update(stdout, False, False)
+finally:
+    if screen is not None:
+        screen.destroy()

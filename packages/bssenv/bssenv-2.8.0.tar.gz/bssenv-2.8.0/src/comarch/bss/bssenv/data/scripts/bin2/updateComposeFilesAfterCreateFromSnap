@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.yaml
+import local.env
+from local.commandline import arg
+from local.paths import ENV_COMPOSEFILES_DIR, ENV_DOT_BSSENV_FILE
+
+
+def print_help():
+    print(
+        'Update composefiles after create env from snapshot\n'
+        '\n'
+        'updateComposeFilesAfterCreateFromSnap  - update some fields in composefiles')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+else:
+    env_id = ENV_DOT_BSSENV_FILE.read_text().strip()
+    for path in ENV_COMPOSEFILES_DIR.rglob('*.yml'):
+        composefile = local.yaml.file_to_dict(path)
+        if 'services' not in composefile.keys():
+            break
+        for service_key, service in composefile['services'].items():
+            service['labels'] = [_ for _ in service['labels'] if not _.startswith('bssenv.environment.id=')]
+            service['labels'].append(f'bssenv.environment.id={env_id}')
+        local.yaml.dict_to_file(composefile, path)

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bssenv
+Version: 2.8.0
+Summary: A project for managing bss local, dockerized environments
+Author-email: Hubert Tarnacki <hubert.tarnacki@comarch.com>
+Maintainer-email: Hubert Tarnacki <hubert.tarnacki@comarch.com>
+License: Other/Proprietary License
+Project-URL: documentation, https://wiki.comarch/display/BSSRND/bssenv
+Project-URL: repository, http://r7.krakow.comarch:8000/Aurel/bssenv
+Project-URL: bug-reports, https://tapir.krakow.comarch/jira/projects/BSSREL
+Project-URL: Home-Page, https://wiki.comarch/display/BSSRND/bssenv
+Keywords: bss,environment,docker,devops,bssenv
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Desktop Environment
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Unix Shell
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+
+=====================================================
+A project for managing bss local virtual environments
+=====================================================
+
+Summary
+===============
+This project contains packages and scripts responsible for managing bss local virtual environments
+

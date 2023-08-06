@@ -1,0 +1,88 @@
+#!/usr/bin/env python3
+
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.install
+import local.yaml
+import local.snapshots
+from local.docker import dockerClient
+from local.commandline import arg
+from local.paths import ENV_COMPOSEFILES_DIR
+from local.entities import InstalledServicesEntry, SERVICE_TYPES
+
+
+def print_help():
+    print(
+        'Update installed images to snapshot images\n'
+        '\n'
+        'updateSnapshotImages snapshot_name - update installed images to images from given local snapshot\n'
+        'updateSnapshotImages snapshot_name true - update installed images to images from given remote snapshot')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in sys.argv[1:]):
+    print_help()
+    exit()
+elif arg(1) is not None:
+    snapshot_name = arg(1)
+    remote = True if (arg(2) or 'false').lower() == 'true' else False
+    snapshot_metadata = local.snapshots.get_snapshot_metadata(snapshot_name, remote)
+    snapshot_id = snapshot_metadata.id
+    # update installed config maps registry
+    installed_config_maps_entries = local.install.get_installed_config_maps_entries()
+    for config_map in installed_config_maps_entries.values():
+        snapshot_image_name =  \
+            next((_ for _ in snapshot_metadata.images if f'/configmap/{config_map.key.lower()}:' in _))
+        if remote:
+            dockerClient.pull_image(snapshot_image_name)
+        snapshot_image = dockerClient.get_image(snapshot_image_name)
+        config_map.image_sha = snapshot_image.id
+        config_map.image_name = snapshot_image_name
+    local.install.set_installed_config_maps_entries(installed_config_maps_entries)
+    # update installed services registry
+    installed_services_entries = local.install.get_installed_services_entries()
+    for service in installed_services_entries.values():
+        snapshot_image_name =  \
+            next((
+                _ for _ in snapshot_metadata.images
+                if f'/service/{service.name.lower()}:' in _ and '/bssenv/composefile/' not in _))
+        if remote:
+            dockerClient.pull_image(snapshot_image_name)
+        snapshot_image = dockerClient.get_image(snapshot_image_name)
+        service.image_sha = snapshot_image.id
+        service.image_name = snapshot_image_name
+    local.install.set_installed_services_entries(installed_services_entries)
+    # update all composefiles
+    installed_services_entries = local.install.get_installed_services_entries()
+    for path in ENV_COMPOSEFILES_DIR.rglob('*.yml'):
+        composefile = local.yaml.file_to_dict(path)
+        if 'services' not in composefile.keys():
+            break
+        for service_key, service in composefile['services'].items():
+            service_entry: InstalledServicesEntry = installed_services_entries[service_key]
+            service['x-bssenv'] = service.get('x-bssenv', dict())
+            bssenv = service['x-bssenv']
+            bssenv['image'] = bssenv.get('image', {'guard_container': None, 'name': None, 'sha': None})
+            bssenv['image']['name'] = service_entry.image_name
+            bssenv['image']['sha'] = service_entry.image_sha
+            if not (service_entry.type == SERVICE_TYPES.DATA_PROVIDER.value and service_key.endswith('_build')):
+                service['image'] = service_entry.image_sha
+            if 'x-image_name' in service.keys():
+                del service['x-image_name']
+            if 'x-image_sha' in service.keys():
+                del service['x-image_sha']
+        local.yaml.dict_to_file(composefile, path)
+else:
+    print_help()
+    print()
+    exit('Wrong parameters provided')

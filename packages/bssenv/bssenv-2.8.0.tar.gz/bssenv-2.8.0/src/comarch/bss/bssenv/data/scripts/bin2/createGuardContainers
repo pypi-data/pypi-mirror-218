@@ -1,0 +1,85 @@
+#!/usr/bin/env python3
+
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.install
+import local.yaml
+import local.env
+from local.docker import dockerClient
+from local.paths import ENV_COMPOSEFILES_DIR
+
+
+def print_help():
+    print(
+        'Create guard containers for images\n'
+        '\n'
+        'createGuardContainers - create guard containers for images')
+
+
+def _create_image_guard_container(image_sha: str) -> str:
+    env_id = local.env.id()
+    sha256 = 'sha256:'
+    image_guard_container_name = f'GUARD_{env_id}_{image_sha[len(sha256):]}'
+    if not dockerClient.container_exists(image_guard_container_name):
+        # overwrite docker-compose labels from image
+        # especially: "com.docker.compose.project"
+        image = dockerClient.get_image(image_sha)
+        image_guard_container_sha = \
+            dockerClient.create_container(
+                image_sha,
+                name=image_guard_container_name,
+                labels={
+                    'bssenv.environment.id': env_id,
+                    'bssenv.container.type': 'guard',
+                    'bssenv.guarded.image.sha': image_sha,
+                    **{_: None for _ in image.labels.keys()
+                        if _.startswith('com.docker.compose.')}
+                })
+    else:
+        image_guard_container_sha = \
+            dockerClient.get_container(image_guard_container_name).id
+    return image_guard_container_sha
+
+
+if any(_ in ['?', '--help', '-h'] for _ in sys.argv[1:]):
+    print_help()
+    exit()
+else:
+    installed_services_entries = \
+        local.install.get_installed_services_entries()
+    # create guard containers
+    for service in installed_services_entries.values():
+        image_guard_container_sha = \
+            _create_image_guard_container(service.image_sha)
+        service.image_guard_container = image_guard_container_sha
+    local.install.set_installed_services_entries(installed_services_entries)
+    # update all composefiles
+    for path in ENV_COMPOSEFILES_DIR.rglob('*.yml'):
+        composefile = local.yaml.file_to_dict(path)
+        if 'services' not in composefile.keys():
+            break
+        for service_key, service in composefile['services'].items():
+            service_entry = \
+                local.install.get_installed_services_entries()[service_key]
+            service['x-bssenv'] = service.get('x-bssenv', dict())
+            bssenv = service['x-bssenv']
+            bssenv['image'] = bssenv.get(
+                'image',
+                {'guard_container': None, 'name': None, 'sha': None})
+            bssenv['image']['guard_container'] = \
+                service_entry.image_guard_container
+            if 'x-image_guard_container' in service.keys():
+                del service['x-image_guard_container']
+        local.yaml.dict_to_file(composefile, path)

@@ -1,0 +1,134 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+import os
+import traceback
+from typing import Set
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# configure modes
+os.environ['BSSENV_STDOUT_MODE'] = 'false'  # force saving services output to bssenv log file not to stdout
+os.environ['BSSENV_VERBOSE_MODE'] = 'false'  # force silent mode
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / 'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import blessed
+import local.services
+import local.install
+import local.uninstall
+import local.env
+from local.commandline import arg
+from local.logging import debug, info, error
+from local.terminal import DictDataUpdater, Screen, DictTabularDataPrinter
+from local.os import use_raw_output
+
+
+def print_help():
+    print(
+        'Uninstall services and config maps\n'
+        '\n'
+        'uninstall service_1 service_2 :config_map_3 ... - uninstall given services and config maps. '
+        'After uninstalling such services and config maps will not be automatically installed until user '
+        'decides to install them again')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+SERVICE_NAMES: Set[str] = set()
+CONFIG_MAP_NAMES: Set[str] = set()
+
+for entity_name in arg[1:]:
+    if entity_name[0] == ':':
+        CONFIG_MAP_NAMES.add(entity_name[1:])
+    else:
+        SERVICE_NAMES.add(entity_name)
+
+for service_name in SERVICE_NAMES:
+    if service_name not in local.install.get_installed_services_names():
+        raise Exception(f'Service "{service_name}" is not installed"')
+
+for config_map_name in CONFIG_MAP_NAMES:
+    if config_map_name not in local.install.get_installed_config_maps_names():
+        raise Exception(f'Config map "{config_map_name}" is not installed"')
+
+try:
+
+    screen: Screen = None
+
+    if len(SERVICE_NAMES) > 0:
+        info(f'Uninstall services: {SERVICE_NAMES}')
+        screen = Screen(
+            blessed.Terminal(),
+            DictDataUpdater(),
+            DictTabularDataPrinter())
+        progress = {
+            '_METADATA_': {
+                    'title': 'Uninstallation progress',
+                    'headers': ['Service', 'Uninstall'],
+                    'show_header': True,
+                    'type': 'table'
+            },
+            '_ROWS_': [{'Service': _, 'Uninstall': None} for _ in SERVICE_NAMES]
+        }
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for service_name in sorted(SERVICE_NAMES):
+            info(f'Uninstall service: {service_name}')
+            local.uninstall.uninstall_service(service_name, intentional=True)
+            row = next(_ for _ in progress['_ROWS_'] if _['Service'] == service_name)
+            row['Uninstall'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+        screen.destroy()
+
+    if len(CONFIG_MAP_NAMES) > 0:
+        info(f'Uninstall config maps: {CONFIG_MAP_NAMES}')
+        screen = Screen(
+            blessed.Terminal(),
+            DictDataUpdater(),
+            DictTabularDataPrinter())
+        progress = {
+            '_METADATA_': {
+                    'title': 'Uninstallation progress',
+                    'headers': ['Config map', 'Uninstall'],
+                    'show_header': True,
+                    'type': 'table'
+            },
+            '_ROWS_': [{'Config map': _, 'Uninstall': None} for _ in CONFIG_MAP_NAMES]
+        }
+        if use_raw_output() is False:
+            screen.update({'progress': progress})
+        for config_map_name in sorted(CONFIG_MAP_NAMES):
+            info(f'Uninstall config map: {config_map_name}')
+            local.uninstall.uninstall_config_map(config_map_name, intentional=True)
+            row = next(_ for _ in progress['_ROWS_'] if _['Config map'] == config_map_name)
+            row['Uninstall'] = 'done'
+            if use_raw_output() is False:
+                screen.update({'progress': progress}, clear_screen=False)
+        screen.destroy()
+
+        # recreate outdated containers if necessary
+        for daemon in local.services.get_daemons_with_outdated_containers():
+            local.services.recreate_service_container(daemon)
+
+except Exception as exc:
+    error(f'\nUninstallation failed with exception: {exc}')
+    error(f'\n{traceback.format_exc()}')
+    exit(1)
+finally:
+    if screen is not None:
+        screen.destroy()

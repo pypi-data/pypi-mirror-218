@@ -1,0 +1,62 @@
+[project]
+name = "bssenv"
+version = "2.8.0"
+description = "A project for managing bss local, dockerized environments"
+
+authors = [
+  { name = "Hubert Tarnacki", email = "hubert.tarnacki@comarch.com" }
+]
+maintainers = [
+  { name = "Hubert Tarnacki", email = "hubert.tarnacki@comarch.com" }
+]
+
+readme = "README.rst"
+license = {text = "Other/Proprietary License"}
+
+keywords = ["bss", "environment", "docker", "devops", "bssenv"]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Topic :: Desktop Environment',
+    'License :: Other/Proprietary License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Unix Shell'
+]
+
+requires-python = ">=3.8"
+
+[project.urls]
+documentation = "https://wiki.comarch/display/BSSRND/bssenv"
+repository = "http://r7.krakow.comarch:8000/Aurel/bssenv"
+bug-reports = "https://tapir.krakow.comarch/jira/projects/BSSREL"
+Home-Page = "https://wiki.comarch/display/BSSRND/bssenv"
+
+[project.scripts]
+bssenv = "comarch.bss.bssenv.bssenv:run"
+
+[build-system]
+requires = ["setuptools", "pip"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["comarch.bss.bssenv"]
+
+[tool.setuptools.package-dir]
+comarch = "src/comarch"
+
+[tool.setuptools.package-data]
+"comarch.bss.bssenv" = ["data/**/*", "internal/**/*", "data/**/.*", "internal/**/.*"]
+
+[tool.black]
+line-length = 120
+
+[tool.autopep8]
+max_line_length = 120
+
+[tool.yapf]
+max-line-length = 120
+column_limit = 120
+
+[tool.flake8]
+max-line-length = 120

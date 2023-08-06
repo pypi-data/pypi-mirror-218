@@ -1,0 +1,209 @@
+[GENERAL]
+ first contact person: Hubert Tarnacki
+ version: {local.bssenv.version}
+ home page: https://wiki.comarch/display/BSSRND/bssenv
+ repository: git@r7.krakow.comarch:Aurel/bssenv.git
+
+[BASIC_COMMANDS]
+ bssenv info - show short listing of available commands
+ bssenv info2 - show extended listing of available commands
+ bssenv list - list created bss environments
+ cdin - cd into environment root directory
+ cdout - cd from the current directory to the directory just before cdin command
+ cdin logs - cd into bssenv directory logs
+ cdin pml - cd into pml directory
+ cdin composefiles - cd into docker composefiles directory
+ cdin bss_logs - cd into docker logs volumes
+ cdin bss_config - cd into docker config volumes
+ cdin bss_data - cd into docker data volumes
+ cdin config_maps - cd into config maps directory
+
+[CREATE_ENVIRONMENT]
+ bssenv create env_name - create bss environment with name 'env_name'
+ bssenv create env_name from snapshot snap_name - create bss environment with name 'env_name' from local snapshot 'snap_name'
+ bssenv create env_name from remote snapshot snap_name - create bss environment with name 'env_name' from remote snapshot 'snap_name'
+
+[DESTROY_ENVIRONMENT]
+  destroy - deactivate and remove current environment (environment must be activated)
+  bssenv rm env_name - remove environment "env_name" (environment must not be activated)
+
+[ACTIVATE]
+ activate env_name - activate selected environment
+ bssenv activate env_name - activate selected environment (this creates subshell)
+
+[DEACTIVATE]
+ deactivate - deactivate current environment
+
+[INSTALL]
+ install version - install services and config maps from given 'version' (e.g. 7.5.7.0-ngena) into an active environment
+ install service_1=version_1 service_2=version_2 :config_map_3=version_3 ...
+        - install service 'service_1' from version 'version_1', service 'service_2' from version 'version_2' and config map 'config_map_3' from version 'version_3'
+ install service_1=namespace/version :config_map_2=namespace/version - install service 'service_1' and config map 'config_map_2' from version 'version' and namespace 'namespace''
+ install service_1=image://dominik.krakow.comarch:5000/service_1:tag_1 :config_map_2=image://cm_2:tag_2 - install service 'service_1' and config map 'config_map_2' from given docker images
+ install version --all - install all available services (including optional ones) and config maps from given 'version' into an active environment
+ install version -service_1 -service_2 -:config_map_3 ... - install bss suite from version 'version'. Do not install/change services 'service_1', 'service_2' and config map 'config_map_3'
+ install version +command_1 +command_2 ... - install bss suite from version 'version'. After all run commands 'command_1' and 'command_2'
+ install version --clean-data=service_1;service_2 --clean-conf=service_3 --clean-logs=service_4 --clean-init=service_5 ...
+        - clean data for services 'service_1' and 'service_2'. Clean configs for service 'service_3'. Clean logs for service 'service_4'. Clean ini state for service 'service_5'.
+          After all install bss suite from version 'version'
+
+[FULL_INSTALL]
+ fullInstall ... - this command is exactly the same as 'install' beside the fact that following parameters are forced to be used: +reindexES +start
+
+[UPDATE]
+ update - update suite to the newest images of already installed version
+ update -service_1 -service_2 ... - update suite to the newest images of already installed version. Do not update services 'service_1' and 'service_2'
+ update +command_1 +command_2 ... - update suite to the newest images of already installed version. After all run commands 'command_1' and 'command_2'
+ update --clean-data=service_1;service_2 --clean-conf=service_3 --clean-logs=service_4 --clean-init=service_5 ...
+        - clean data for services 'service_1' and 'service_2'. Clean configs for service 'service_3'. Clean logs for service 'service_4'. Clean ini state for service 'service_5'.
+          After all update suite to the newest images of already installed version
+
+[FULL_UPDATE]
+ fullUpdate ... - this command is exactly the same as 'update' beside the fact that following parameters are forced to be used: +reindexES +start
+
+[UNINSTALL]
+ uninstall service_1 service_2 :config_map_3 ... - uninstall given services and config maps. After uninstalling such services and config maps will not be automatically installed until user decides to install them again
+
+[START]
+ start - start whole environment
+ start service_name_1 service_name_2 service_key_3:command_key_3 ... - start given services and service commands
+
+[STOP]
+ stop - stop whole environment
+ stop service_name_1 service_name_2 service_key_3:command_key_3 ... - stop given services and service commands
+
+[ENVIRONMENT_INFO]
+ describe - describe whole environment (images, ports, urls, ...)
+ describe service_1 service_2 :config_map_3 :config_map_4 ... - describe given services and config maps
+ status - show environment status (realtime states and healthchecks)
+ stats - show environment stats (cpu, memory, io, ...)
+ top service_name [ps_args] - display the running processes for given service container
+ top service_key:command_key [ps_args] - display the running processes for given service command container
+
+[INIT]
+ init service_1 service_2 ... - initialize given services
+
+[LOGS]
+ logs - tail bssenv environment main log file
+ logs service_name - tail logs of given service container
+ logs service_key:command_key - tail logs of given service command container
+
+[PAUSE]
+ pause service_name - pauses all processes within given service container
+ pause service_key:command_key - pauses all processes within given service command container
+
+[UNPAUSE]
+ unpause service_name - unpauses all processes within given service container
+ unpause service_key:command_key - unpauses all processes within given service command container
+
+[PORTS]
+ ports [service_name] describe - describe ports for all services or the given one
+ ports [service_name] configure - configure ports for all services or the given one
+ ports [service_name] generate - generate ports for all services or the given one
+ ports [service_name] set defaults - set default ports for all services or the given one
+ ports [service_name] remove all mappings - remove all port mapppings for all services or the given one
+ ports service_name set port_name_1=value_1 port_name_2=value_2 ... - set given ports mappings for given service
+
+[SERVICES]
+ services - show a list of installed and uninstalled services
+ services service_type - show service keys of installed services with given service type
+
+[IMAGES]
+ images - show a list of docker images used by all installed config maps and services
+
+[CONFIG MAPS]
+ configMaps - show list of all installed and uninstalled config maps
+
+[COMMANDS]
+ cmd list - list all installed commands
+ cmd run command_id [command_args] - run command 'command_id' with optional arguments 'command_args'
+
+[SNAPSHOT]
+ bssenv snapshot list - list all environment local snapshots
+ bssenv snapshot list remote - list all environment remote snapshots
+ bssenv snapshot details snapshot_name - show details about local snapshot 'snapshot_name'
+ bssenv snapshot details remote snapshot_name - show details about remote snapshot 'snapshot_name'
+ snapshot list - list all local snapshots
+ snapshot list remote - list all remote snapshots
+ snapshot details snapshot_name - show details about local snapshot 'snapshot_name'
+ snapshot details remote snapshot_name - show details about remote snapshot 'snapshot_name'
+ snapshot images snapshot_name - list images in local snapshot 'snapshot_name'
+ snapshot images remote snapshot_name - list images in remote snapshot 'snapshot_name'
+ snapshot create - create local snapshot of environment (it will use snapshot name: 'env_name-latest')
+ snapshot create snapshot_name - create local snapshot of environment with given name
+ snapshot service_1 create - create local snapshot of 'service_1' (it will use snapshot name: 'env_name-service_name-latest')
+ snapshot service_1 create snapshot_name - create local snapshot of 'service_1' with given name
+ snapshot :config_map_1 create - create local snapshot of "config_map_1"
+ snapshot :config_map_1 create snapshot_name - create local snapshot of "config_map_1" with given name
+ snapshot rm all - remove all local snapshots
+ snapshot rm snapshot_name - remove lsocal snapshot 'snapshot_name'
+ snapshot push snapshot_name - push local snapshot 'snapshot_name' to docker registry
+ snapshot service_1 restore - restore service 'service_1' from local snapshot 'env_name-service_name-latest'
+ snapshot service_1 restore snapshot_name - restore service 'service_1' from local snapshot 'snapshot_name'
+ snapshot service_1 restore remote snapshot_name - restore service 'service_1' from remote snapshot 'snapshot_name'
+ snapshot :config_map_1 restore - restore config map "config_map_1" ' from local snapshot 'env_name-cm-config_map_name-latest'
+ snapshot :config_map_1 restore snapshot_name - restore config map "config_map_1" from local snapshot "snapshot_name"
+ snapshot :config_map_1 restore remote snapshot_name - restore config map "config_map_1" from remote snapshot "snapshot_name"
+
+[VERSIONS]
+ versions - print all available release versions
+ versions -a - print all available versions
+
+[CLEAN]
+ clean - clean environment and all it's data
+ clean data service_1 service_2 ... - clean data volumes for services: 'service_1', 'service_2', ..."
+ clean conf service_1 service_2 ... - clean config volumes for services: 'service_1', 'service_2', ..."
+ clean logs service_1 service_2 ... - clean logs volumes for services: 'service_1', 'service_2', ..."
+ clean init service_1 service_2 ... - clean init states for services: 'service_1', 'service_2', ..."
+
+[DEBUG]
+ debug on service_1 service_2 ... - turn on debugging for given services
+ debug off service_1 service_2 ... - turn off debugging for given services
+
+[DNS]
+ dns list - list all DNS mappings
+ dns add dns_name ip_address - add DNS mapping 'dns_name' for 'ip_address'
+ dns remove dns_name - remove DNS mapping 'dns_name'
+
+[ENTER]
+ enter service_name - enter bash in given service container
+ enter service_key:command_key - enter bash in given service command container
+
+[EXPORT]
+ exp list - list exportable files from all services
+ exp service_name file_name - export 'file_name' from service 'service_name' container to stdout
+ exp service_name file_name out_path - export 'file_name' from service 'service_name' container to host file 'out_path'
+ exp src_path - export host file 'src_path' to stdout
+ exp src_path out_path - export host file 'src_path' to host file 'out_path'
+
+[SWITCHES]
+ switch on service_name switch_name - turn on switch 'switch_name' for service 'service_name'
+ switch off service_name switch_name - turn off switch 'switch_name' for service 'service_name'
+ switch list service_name - list available switches for service 'service_name'
+ switch rm service_name switch_name - remove switch 'switch_name' from service 'service_name'
+
+[WAIT]
+ waiton - wait untill all daemons are healthy
+ waiton stopped - wait untill all daemons are stopped
+ waiton running - wait untill all daemons are running
+ waiton healthy - wait untill all daemons are healthy
+ waiton stopped service_name service_key.command_key ... - wait untill given services and service commands are stopped
+ waiton running service_name service_key.command_key ... - wait untill given services and service commands are running
+ waiton healthy service_name service_key.command_key ... - wait untill given services and service commands are healthy
+
+[RETAG]
+ retagStableDescriptorForImage service_image version [solution] - this command will retag descriptor for 'service_image' using stable descriptor from 'version' and 'solution'
+
+[DIRECTORIES/FILES]
+ bssenv logs directory:
+  - cdin logs
+ directory to keep PML files in:
+  - cdin pml
+ docker composefiles:
+  - cdin composefiles
+ docker volumes:
+  - logs: cdin bss_logs
+  - config: cdin bss_config
+  - data: cdin bss_data
+ config maps directory:
+  - cdin config_maps

@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.snapshots
+from local.commandline import arg
+from local.entities import SNAPSHOT_TYPES
+
+
+# a: all, e: environment, s: service, c: config map
+entity_type = arg(1) or 'a'
+
+
+for snapshot in local.snapshots.get_remote_snapshots():
+    if \
+            entity_type == 'e' \
+            and snapshot.type != SNAPSHOT_TYPES.ENVIRONMENT.value:
+        continue
+    if \
+            entity_type == 's' \
+            and snapshot.type != SNAPSHOT_TYPES.SERVICE.value:
+        continue
+    if \
+            entity_type == 'c' \
+            and snapshot.type != SNAPSHOT_TYPES.CONFIG_MAP.value:
+        continue
+    print(snapshot.snapshot_name)

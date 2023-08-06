@@ -1,0 +1,62 @@
+[GENERAL]
+ first contact person: Hubert Tarnacki
+ version: {local.bssenv.version}
+ home page: https://wiki.comarch/display/BSSRND/bssenv
+ repository: git@r7.krakow.comarch:Aurel/bssenv.git
+
+[BASIC_COMMANDS]
+ bssenv info2 - show extended listing of available commands
+ bssenv list - list created bss environments
+ bssenv create env_name - create bss environment with name 'env_name'
+ bssenv create env_name from snapshot snap_name - create bss environment with name 'env_name' from local snapshot 'snap_name'
+ destroy - deactivate and remove current environment (environment must be activated)
+ activate env_name - activate selected environment
+ deactivate - deactivate current environment
+ cdin - cd into environment root directory
+ cdout - cd from the current directory to the directory just before cdin command
+ install version - Install services and config maps from given 'version' (e.g. 7.5.7.0-ngena) into an active environment
+ fullInstall ... - this command is exactly the same as 'install' beside the fact that following parameters are forced to be used: +reindexES +start
+ update - update suite to the newest images of already installed version
+ fullUpdate ... - this command is exactly the same as 'update' beside the fact that following parameters are forced to be used: +reindexES +start
+ uninstall service_1 service_2 :config_map_3 ... - uninstall given services and config maps. After uninstalling such services and config maps will not be automatically installed until user decides to install them again
+ start - start whole environment
+ start service_name_1 service_name_2 service_key_3:command_key_3 ... - start given services and service commands
+ stop - stop whole environment
+ stop service_name_1 service_name_2 service_key_3:command_key_3 ... - stop given services and service commands
+ describe - describe environment (images, ports, urls, ...)
+ status - show environment status (realtime states and healthchecks)
+ logs - tail bssenv environment main log file
+ logs service_name - tail logs of given service container
+ ports [service_name] configure - configure ports for all services or the given one
+ ports [service_name] generate - generate ports for all services or the given one
+ services - show list of installed and uninstalled services
+ configMaps - show list of installed and uninstalled configMaps
+ cmd list - list all installed commands
+ snapshot list - list all local snapshots
+ snapshot create - create local snapshot of environment (it will use snapshot name: 'env_name-latest')
+ versions - print all available release versions
+ clean - clean environment and all it's data
+ debug on service_1 service_2 ... - turn on debugging for given services
+ debug off service_1 service_2 ... - turn off debugging for given services
+ dns add dns_name ip_address - add DNS mapping 'dns_name' for 'ip_address'
+ dns remove dns_name - remove DNS mapping 'dns_name'
+ enter service_name - enter bash in given service container
+ exp list - list exportable files from all services
+ exp service_name file_name - export 'file_name' from service 'service_name' container to stdout
+ switch on service_name switch_name - turn on switch 'switch_name' for service 'service_name'
+ switch off service_name switch_name - turn off switch 'switch_name' for service 'service_name'
+ retagStableDescriptorForImage service_image version [solution] - this command will retag descriptor for 'service_image' using stable descriptor from 'version' and 'solution'
+
+[DIRECTORIES/FILES]
+ bssenv logs directory:
+  - cdin logs
+ directory to keep PML files in:
+  - cdin pml
+ docker composefiles:
+  - cdin composefiles
+ docker volumes:
+  - logs: cdin bss_logs
+  - config: cdin bss_config
+  - data: cdin bss_data
+ config maps directory:
+  - cdin config_maps

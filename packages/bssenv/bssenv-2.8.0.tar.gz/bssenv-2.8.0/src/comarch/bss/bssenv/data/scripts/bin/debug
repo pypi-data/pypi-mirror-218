@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+
+# imports from normal python site packages
+import sys
+from pathlib import Path
+import comarch.bss.bssenv as BSSENV_PKG
+
+# add custom paths to python site packages
+SCRIPT_DIR_PATH = Path(__file__).resolve().parent
+LIBS_DIR = SCRIPT_DIR_PATH / '..' / 'lib' / 'python'
+BSSENV_PYT_SITE_PKGS = Path(BSSENV_PKG.__file__).resolve().parent / \
+    'data' / 'python_site_packages'
+sys.path = [str(BSSENV_PYT_SITE_PKGS), str(LIBS_DIR)] + sys.path
+
+# import from custom site packages
+import local.env
+import local.services
+import local.install
+import local.ports
+from local.docker import dockerClient
+from local.commandline import arg
+from local.services import keep_running_daemons
+from local.entities import SERVICE_TYPES
+from local.logging import debug, info, speak
+
+
+def print_help():
+    print(
+        'Turn on/off debugging for services\n'
+        '\n'
+        'debug on service_1 service_2 ... - turn on debugging for services: '
+        'service_1, service_2, ...\n'
+        'debug off service_1 service_2 ... - turn off debugging for services: '
+        'service_1, service_2, ...')
+
+
+if any(_ in ['?', '--help', '-h'] for _ in arg[1:]):
+    print_help()
+    exit()
+
+debug(f'Start script {Path(__file__).resolve()}')
+
+if not local.env.is_activated():
+    exit('Environment is not activated. Exit\n')
+
+service_names = set(arg[2:])
+
+for service_name in service_names:
+    if service_name not in local.install.get_installed_services_names():
+        raise Exception(f'Service "{service_name}" is not installed"')
+
+installed_services = local.install.get_installed_services().values()
+
+if arg(1) == 'on':
+    debug(f'service_names: {service_names}')
+    with keep_running_daemons(log=info):
+        for service in installed_services:
+            if service.name in service_names \
+                    and 'debug' in service.ports.keys():
+                debug_port = service.ports['debug']
+                if debug_port['host'] is not None \
+                    and service.env.get('DEBUG_PORT', '') == \
+                        str(debug_port['docker']):
+                    speak(
+                        f'Debugging already enabled for service '
+                        f'"{service.name}". '
+                        f'Enabled port is: {debug_port["host"]}')
+                    continue
+                if debug_port['host'] is None:
+                    # debug_port['host'] = debug_port['docker']
+                    debug_port['host'] = local.ports.get_free_port(
+                        debug_port['docker'])
+                    service.composefile_entry['ports'] = \
+                        service.composefile_entry.get('ports', []) \
+                        + [f'{debug_port["host"]}:{debug_port["docker"]}']
+                service.env['DEBUG_PORT'] = debug_port['docker']
+                service.composefile_entry['environment'] = \
+                    [f'{_}={__}' for _, __ in service.env.items()]
+                info(f'Stop service "{service.key}"')
+                local.services.stop(service.key, wait=True)
+                info('Update composefile')
+                local.composefile.update_service_composefile(service)
+                if service.main_type == SERVICE_TYPES.DAEMON.value:
+                    info(f'Recreate container of service: {service.key}')
+                    local.services.recreate_service_container(service)
+                else:
+                    # only daemons should have containers
+                    dockerClient.rm_container(service.container_name)
+                speak(f'{service.key}: {service.ports["debug"]["host"]}')
+elif arg(1) == 'off':
+    debug(f'service_names: {service_names}')
+    with keep_running_daemons(log=info):
+        for service in installed_services:
+            if service.name in service_names:
+                if 'debug' in service.ports.keys():
+                    debug_port = service.ports['debug']
+                else:
+                    debug_port = None
+                if (debug_port is None or debug_port['host'] is None) \
+                        and 'DEBUG_PORT' not in service.env.keys():
+                    speak(
+                        f'Debugging already disabled for service '
+                        f'"{service.name}"')
+                    continue
+                if debug_port is not None and debug_port['host'] is not None:
+                    service.composefile_entry['ports'] = \
+                        [_ for _ in service.composefile_entry.get('ports', [])
+                         if not _.startswith(f'{debug_port["host"]}:')]
+                if 'DEBUG_PORT' in service.env.keys():
+                    del service.env['DEBUG_PORT']
+                service.composefile_entry['environment'] = \
+                    [f'{_}={__}' for _, __ in service.env.items()]
+                info(f'Stop service "{service.key}"')
+                local.services.stop(service.key, wait=True)
+                info('Update composefile')
+                local.composefile.update_service_composefile(service)
+                if service.main_type == SERVICE_TYPES.DAEMON.value:
+                    info(f'Recreate container of service: {service.key}')
+                    local.services.recreate_service_container(service)
+                else:
+                    # only daemons should have containers
+                    dockerClient.rm_container(service.container_name)
+else:
+    print_help()
+    print('\n')
+    exit('Wrong parameters provided')

@@ -1,0 +1,21 @@
+repositories.docker:
+  default.registry: nexus.czk.comarch
+  registries:
+    nexus.czk.comarch:
+      type: nexus
+      port:
+      secured: true
+      url.scheme: https
+      docker.api.v1: true
+      docker.api.v2: true
+      docker.api.url.path_prefix: 'repository/telco-bss-docker'
+      docker.image.name.namespace_prefix: 'repository/telco-bss-docker'
+      nexus.api.v1: true
+      nexus.repository: 'telco-bss-docker'
+    dominik.krakow.comarch:
+      type: docker
+      port: 5000
+      secured: false
+      url.scheme: http
+      docker.api.v1: false
+      docker.api.v2: true
