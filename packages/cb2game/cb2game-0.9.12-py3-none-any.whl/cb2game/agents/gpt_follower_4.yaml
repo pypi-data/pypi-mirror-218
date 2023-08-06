@@ -1,0 +1,7 @@
+name: "GPT 4 Follower"
+comment: "An agent which describes the game map using text, and then asks GPT what to do."
+agent_type: "GPT_FOLLOWER"
+gpt_follower_config:
+  queueing_enabled: true
+  gpt_api_key: "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"
+  model: "gpt-4"
