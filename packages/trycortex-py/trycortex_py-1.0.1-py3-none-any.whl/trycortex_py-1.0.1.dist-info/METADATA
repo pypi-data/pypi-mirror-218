@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: trycortex-py
+Version: 1.0.1
+Summary: A short description of your package
+Home-page: https://github.com/kinesysai/cortex-py
+Author: Charles Pun
+Author-email: charlespun6@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Requires-Dist: json
+
