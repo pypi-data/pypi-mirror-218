@@ -1,0 +1,3 @@
+[console_scripts]
+duckyshell = duckyshell.ducky:main
+
