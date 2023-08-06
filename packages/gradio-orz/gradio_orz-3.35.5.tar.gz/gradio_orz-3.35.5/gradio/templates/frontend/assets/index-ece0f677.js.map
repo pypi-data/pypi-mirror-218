@@ -1,0 +1,1 @@
+{"version":3,"file":"index-ece0f677.js","sources":["../../../../js/app/src/components/Column/index.ts"],"sourcesContent":["export { default as Component } from \"./Column.svelte\";\r\nexport const modes = [\"static\"];\r\n"],"names":["modes"],"mappings":"gIACa,MAAAA,EAAQ,CAAC,QAAQ"}
