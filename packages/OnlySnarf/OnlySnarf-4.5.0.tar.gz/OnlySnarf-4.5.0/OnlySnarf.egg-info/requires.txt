@@ -1,0 +1,8 @@
+ffmpeg
+inquirer
+wget
+selenium
+webdriver_manager
+
+[dev]
+pytest
