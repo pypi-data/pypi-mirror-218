@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: momositemaps
+Version: 0.0.2
+Summary: Sitemap Builder
+Author: Momo Sitemaps
+Author-email: <momo@cleardex.io>
+Keywords: python,sitemap builder,seo,sitemaps,link indexer
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+A free sitemap builder to handle millions of links.
