@@ -1,0 +1,3 @@
+include mymulti_key_dict/requirements.txt
+include mymulti_key_dict/thirdparty.json
+include mymulti_key_dict/README.MD
