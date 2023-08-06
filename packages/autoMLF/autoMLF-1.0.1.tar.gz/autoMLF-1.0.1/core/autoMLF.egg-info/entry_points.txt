@@ -1,0 +1,2 @@
+[console_scripts]
+auto_mls = autoML.CLI.automltoolkit:start_terminal_loop
