@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "wordle-helper-uc"
+version = "0.2.0"
+description = ""
+authors = ["Pedro Juan Royo <pedro.juan.royo@gmail.com>"]
+readme = "README.md"
+#packages = [{include = "wordle_helper_uc"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+wordle-helper = "wordle_helper_uc.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
