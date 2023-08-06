@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+c_src/gfit.c
+c_src/lm_mle.c
+gauss_lm_mle/__init__.py
+gauss_lm_mle/fitters.py
+gauss_lm_mle/liblm_mle_de.py
+gauss_lm_mle/utils.py
+gauss_lm_mle.egg-info/PKG-INFO
+gauss_lm_mle.egg-info/SOURCES.txt
+gauss_lm_mle.egg-info/dependency_links.txt
+gauss_lm_mle.egg-info/requires.txt
+gauss_lm_mle.egg-info/top_level.txt
+tests/test_mle_rotated_gaussian.py
