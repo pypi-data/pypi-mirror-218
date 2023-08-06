@@ -1,0 +1,14 @@
+seito-0.2.6.dist-info/METADATA,sha256=MIrDldi1B-v8RfjhD-UCr5GHyHrGcaihaJ-6rJ0PDU8,6465
+seito-0.2.6.dist-info/WHEEL,sha256=g58cvAsF5_9d0VXJuk7F0rhl6nAjUc5P9vx880WkZtI,90
+seito/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seito/http.py,sha256=f0pUvnoaiM-cDWiy2UrYjKTu7r-nysvqkQQ0mNNATZg,2744
+seito/json.py,sha256=r0SgUwZRO5oPV4rBNOI4lO0UAYZA7KZH8hn5YYOW_d0,2049
+seito/monad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seito/monad/async_result.py,sha256=YlALj5zV-Bm9h3uu0lQ2qStiSePz_SYpYo9sSUzXr3k,9796
+seito/monad/container.py,sha256=UjSmPkF4OjoGzwQqG8IXXedRDo-Dwl4W3MNisBQdFzY,1580
+seito/monad/effect.py,sha256=0ALsHf4kOrYJqLXociVWChNwAtqkqO21jXGsDEsXa8c,795
+seito/monad/func.py,sha256=wAlGEsu2TI1N7lqaNeIacR4GwxaTpSxAtHpjmMV3q7s,6110
+seito/monad/option.py,sha256=qjOkWEHh8nFfRI1tJLzG-1UIV7sLPF8ZQLVb93XxH9k,7792
+seito/monad/result.py,sha256=fsbeydmMHuGb_P9JGJ9WX4p7SXTGk2KhyVo6c6pnhCA,7095
+seito/py.typed.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seito-0.2.6.dist-info/RECORD,,
