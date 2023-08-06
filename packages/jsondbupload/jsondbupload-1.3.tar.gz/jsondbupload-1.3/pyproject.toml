@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "jsondbupload"
+version = "1.3"
+description = "Insert records to relational database from json file"
+authors = ["pub12 <pubudu79@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/pub12/jsondbupload"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jstyleson = "^0.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
