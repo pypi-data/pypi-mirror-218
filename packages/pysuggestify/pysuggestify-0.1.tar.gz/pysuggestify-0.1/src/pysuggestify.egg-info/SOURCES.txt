@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/pysuggestify/PMF.py
+src/pysuggestify/__init__.py
+src/pysuggestify/version.py
+src/pysuggestify.egg-info/PKG-INFO
+src/pysuggestify.egg-info/SOURCES.txt
+src/pysuggestify.egg-info/dependency_links.txt
+src/pysuggestify.egg-info/requires.txt
+src/pysuggestify.egg-info/top_level.txt
