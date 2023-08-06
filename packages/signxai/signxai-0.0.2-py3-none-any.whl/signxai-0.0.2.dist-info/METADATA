@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: signxai
+Version: 0.0.2
+Summary: SIGNed explanations: Unveiling relevant features by reducing bias
+Home-page: https://github.com/nilsgumpfer/SIGN-XAI
+Author: Nils Gumpfer
+Author-email: nils.gumpfer@kite.thm.de
+Maintainer: Nils Gumpfer
+Maintainer-email: nils.gumpfer@kite.thm.de
+License: BSD 2-Clause License
+Keywords: XAI,SIGN,LRP
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow (>=2.2.0)
+Requires-Dist: matplotlib (>=3.3.4)
+
+# SIGNed explanations: Unveiling relevant features by reducing bias
+
+This repository and python package has been published alongside the following journal article:
+https://doi.org/10.1016/j.inffus.2023.101883
+
+If you use the code from this repository in your work, please cite:
+```bibtex
+ @article{Gumpfer2023SIGN,
+    title = {SIGNed explanations: Unveiling relevant features by reducing bias},
+    author = {Nils Gumpfer and Joshua Prim and Till Keller and Bernhard Seeger and Michael Guckert and Jennifer Hannig},
+    journal = {Information Fusion},
+    pages = {101883},
+    year = {2023},
+    issn = {1566-2535},
+    doi = {https://doi.org/10.1016/j.inffus.2023.101883},
+    url = {https://www.sciencedirect.com/science/article/pii/S1566253523001999}
+}
+```
+
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1566253523001999-ga1_lrg.jpg" title="Graphical Abstract" width="900px"/>
+
+## Setup
+
+To install the package in your environment, run:
+
+```shell
+ pip3 install SIGN-XAI
+```
+
+
+## Usage
+
+```python
+ 
+```
+
+## Experiments
+
+To reproduce the experiments from our paper, please find a detailed description on https://github.com/nilsgumpfer/SIGN.
+
+
