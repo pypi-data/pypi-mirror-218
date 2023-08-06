@@ -1,0 +1,24 @@
+[project]
+name = "discord-ansi"
+version = "1.2"
+authors = [
+  { name="GEOEGII555", email="geoegii2001555@gmail.com" },
+  { name="GEOEGII555 (Alternative email)", email="webmaster@geoegii555.eu.org" },
+]
+description = "Discord messages with ANSI (message builder + ANSI Art)"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["setuptools", "numpy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# [project.urls]
+# "Homepage" = "https://github.com/pypa/sampleproject"
+# "Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+discord_ansi/__init__.py
+discord_ansi.egg-info/PKG-INFO
+discord_ansi.egg-info/SOURCES.txt
+discord_ansi.egg-info/dependency_links.txt
+discord_ansi.egg-info/requires.txt
+discord_ansi.egg-info/top_level.txt
+tests/test1.py
