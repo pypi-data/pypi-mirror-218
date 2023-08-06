@@ -1,0 +1,9 @@
+README.md
+setup.py
+calculator/__init__.py
+calculator/calculator.py
+calculator/test_calculator.py
+ds_2023_calc_pack.egg-info/PKG-INFO
+ds_2023_calc_pack.egg-info/SOURCES.txt
+ds_2023_calc_pack.egg-info/dependency_links.txt
+ds_2023_calc_pack.egg-info/top_level.txt
