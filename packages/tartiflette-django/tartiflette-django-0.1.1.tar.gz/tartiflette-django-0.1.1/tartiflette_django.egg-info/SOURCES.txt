@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+tartiflette_django/__init__.py
+tartiflette_django/apps.py
+tartiflette_django/checks.py
+tartiflette_django/engine.py
+tartiflette_django/resolvers.py
+tartiflette_django/settings.py
+tartiflette_django/utils.py
+tartiflette_django/views.py
+tartiflette_django.egg-info/PKG-INFO
+tartiflette_django.egg-info/SOURCES.txt
+tartiflette_django.egg-info/dependency_links.txt
+tartiflette_django.egg-info/requires.txt
+tartiflette_django.egg-info/top_level.txt
+tartiflette_django/templates/tartiflette/graphiql.html
