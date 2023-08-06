@@ -1,0 +1,10 @@
+tscratchapiget/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tscratchapiget/all.py,sha256=lSJpEzxA30gdoSX-oJiHSS6_77UnhlByXwDllzpMOs0,102
+tscratchapiget/project.py,sha256=vfQ2QpmSy867PAlAOi3Bd4L6ylUQrO4O3vMFaYuT_vU,2633
+tscratchapiget/studio.py,sha256=8MoiUI4YKvy8DM5JXAW7g2td7tvTQQw5V5tsYeAFqio,614
+tscratchapiget/user.py,sha256=sJSozwZuEZkOElUAMyvjjYm37Zqb3OLii5o-X9hq0ig,3920
+tscratchapiget-0.4.0.dist-info/LICENSE,sha256=3lZYTSo9NZ5bfueQwZpTz79O1ysYwbdzDxYcH4r2C4w,1075
+tscratchapiget-0.4.0.dist-info/METADATA,sha256=sMKYHMmEBD5SBiGY_I5lbqstlkZHPolmJaR2ziwR7Ho,5323
+tscratchapiget-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tscratchapiget-0.4.0.dist-info/top_level.txt,sha256=ogG_s2Bjt9OgDqwpCzdP2QQOtWglnvnLOvExQq__SP8,15
+tscratchapiget-0.4.0.dist-info/RECORD,,
