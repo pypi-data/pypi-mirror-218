@@ -1,0 +1,5 @@
+setup.py
+_distutils_hack/dpackage.egg-info/PKG-INFO
+_distutils_hack/dpackage.egg-info/SOURCES.txt
+_distutils_hack/dpackage.egg-info/dependency_links.txt
+_distutils_hack/dpackage.egg-info/top_level.txt
