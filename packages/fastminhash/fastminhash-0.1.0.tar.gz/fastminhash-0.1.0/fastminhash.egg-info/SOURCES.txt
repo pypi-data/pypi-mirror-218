@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+fastminhash.egg-info/PKG-INFO
+fastminhash.egg-info/SOURCES.txt
+fastminhash.egg-info/dependency_links.txt
+fastminhash.egg-info/requires.txt
+fastminhash.egg-info/top_level.txt
+minhash/__init__.py
+minhash/minhash.c
+minhash/minhash_build.py

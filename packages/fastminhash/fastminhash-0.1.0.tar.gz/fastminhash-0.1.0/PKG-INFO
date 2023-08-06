@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: fastminhash
+Version: 0.1.0
+Summary: N-gram MinHash implementation in C
+Home-page: https://github.com/starcatmeow/fastminhash
+Author: starcatmeow
+Author-email: dongruixuan@hotmail.com
+License: MIT
+License-File: LICENSE.txt
