@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: physipy
+Version: 0.2.6
+Summary: Manipulate physical quantities in Python
+Home-page: https://github.com/mocquin/physipy
+Author: mocquin
+Author-email: mocquin@me.com
+License: MIT
+Keywords: physics physical unit units dimension quantity quantities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: matplotlib
+
