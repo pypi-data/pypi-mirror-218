@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+optical_dispersion_relations/__init__.py
+optical_dispersion_relations/dielectric_waveguides.py
+optical_dispersion_relations/drude_lorentz.py
+optical_dispersion_relations/plasmon.py
+optical_dispersion_relations/utilities.py
+optical_dispersion_relations.egg-info/PKG-INFO
+optical_dispersion_relations.egg-info/SOURCES.txt
+optical_dispersion_relations.egg-info/dependency_links.txt
+optical_dispersion_relations.egg-info/requires.txt
+optical_dispersion_relations.egg-info/top_level.txt
+test/test_dielectric_waveguide.py
+test/test_drude_lorentz.py
+test/test_plasmon.py
+test/test_utilities.py
