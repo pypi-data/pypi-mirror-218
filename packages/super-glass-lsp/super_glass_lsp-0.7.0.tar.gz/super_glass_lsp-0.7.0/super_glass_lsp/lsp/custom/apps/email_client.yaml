@@ -1,0 +1,212 @@
+version: 2
+
+# NOTE: Gmail needs this config in order to send emails without erroring:
+# ~/.config/himalaya/config.toml
+# ```
+# [gmail.folder-aliases]
+# sent = "[Gmail]/Sent Mail"
+# ````
+
+defaults: &defaults
+  timeout: 15
+  # The "on" switch. This is the key requirement for making the editor/LSP client turn on
+  # these features.
+  root_markers: ["inbox.md"]
+
+configs:
+  inbox:
+    <<: *defaults
+    lsp_feature: workspace_edit
+    # Period is optional. If it is set then Super Glass calls it every `period` amount of time.
+    period: 60
+    use_lsp_progress: true
+    command: |
+      width=18
+      json="$(himalaya --output json list)"
+      count="$(echo $json | jq length)"
+      head1=" ID  |   Subject          |       From         |          Actions         "
+      head2="-----|--------------------|--------------------|--------------------------"
+      output="$head1\n$head2"
+      for i in `seq 0 "$((count - 1))"`
+      do
+        id=$(echo "$json" | jq --raw-output ".[$i].id")
+        subject=$(echo "$json" | jq --raw-output ".[$i].subject" | head -c $width)
+        sender=$(echo "$json" | jq --raw-output ".[$i].sender" | head -c $width)
+        buttons="{View} {Archive} {Delete}"
+        id=$(printf '%-2s' "$id")
+        subject=$(printf '%-'$width's' "$subject")
+        sender=$(printf '%-'$width's' "$sender")
+        line=" $id  | $sender | $sender | $buttons"
+        output="$output\n$line"
+      done
+      echo "TextDocumentEdit {workspace_root}/inbox.md 0:0,-1:-1"
+      echo "{New} {Refresh}"
+      echo "$output"
+
+  buttons:
+    <<: *defaults
+    lsp_feature: goto_definition
+    command:
+      - |
+        id=$(echo "{line}" | sed 's@^[^0-9]*\([0-9]\+\).*@\1@')
+
+        [ "{word}" == "{Refresh}" ] && echo "call inbox"
+        [ "{word}" == "{View}" ] && echo "call read_email $id"
+        [ "{word}" == "{Reply}" ] && echo "call reply_email"
+        [ "{word}" == "{Archive}" ] && echo "call archive_email $id"
+        [ "{word}" == "{Delete}" ] && echo "call delete_email $id"
+        [ "{word}" == "{New}" ] && echo "call new_email"
+        [ "{word}" == "{Send}" ] && echo "call send_email"
+        exit 0 # TODO: Why are these `exit`s needed?
+
+      - |
+        id=$(echo "{line}" | sed 's@^[^0-9]*\([0-9]\+\).*@\1@')
+
+        [ "{word}" == "{View}" ] && echo "{workspace_root}/$id.mime 0:0,0:0"
+        [ "{word}" == "{Archive}" ] && echo "{workspace_root}/inbox.md 0:0,0:0"
+        [ "{word}" == "{Delete}" ] && echo "{workspace_root}/inbox.md 0:0,0:0"
+        [ "{word}" == "{New}" ] && echo "{workspace_root}/new.mime 0:0,0:0"
+        [ "{word}" == "{Send}" ] && echo "{workspace_root}/inbox.md 0:0,0:0"
+        exit 0
+
+  # TODO: Custom WorkDoneProgress behaviour
+  # DESIGN:
+  #   The "file" for progress should be defined as the file from where the progress is first
+  #   called. And should remain that file until the progress finishes.
+  #
+  # spinner:
+  #   <<: *defaults
+  #   lsp_feature: work_done_progress
+  #   pre_commands:
+  #     - |
+  #       {stage} # begin | report | end
+  #       {auto_increment} # 0,1,2...etc
+  #       # `end` will get rid of whatever spinner is in the doc
+  #       frames=(⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏)
+  #       range="0:79,0:80"
+  #       echo "TextDocumentEdit {file} $range"
+  #       echo "$frame"
+  #
+  #   command: |
+  #     echo "{stage}"
+
+
+  # TODO: Add diagnostics for missing or incorrect fields
+  new_email:
+    <<: *defaults
+    lsp_feature: workspace_edit
+    command: |
+      touch {workspace_root}/new.mime
+      echo "TextDocumentEdit {workspace_root}/new.mime 0:0,-1:-1"
+      echo "{Send}"
+      echo ""
+      echo "From: "
+      echo "To: "
+      echo "Subject: "
+      echo ": Write the email after this line"
+
+  # : Error: cannot append message to mailbox Sent
+  # Caused by:
+  #   No Response: Folder doesn't exist. (Failure)
+  send_email:
+    <<: *defaults
+    lsp_feature: workspace_edit
+    use_lsp_progress: true
+    command: |
+      cat - \
+        | sed -e 's/: Write the email after this line//' \
+        | tail -n +3 \
+        | himalaya send || exit 1
+      echo "DeleteFile {file} 0:0,0:0"
+
+  # TODO: Add diagnostics for missing or incorrect fields
+  reply_email:
+    <<: *defaults
+    lsp_feature: workspace_edit
+    # TODO: Move cursor to start of new email body
+    command: |
+      text=$(cat -)
+      head=$(echo "$text" | head -n6)
+      recipient=$(echo "$head" | grep "^To:" | sed -e 's/To: //')
+      sender=$(echo "$head"  | grep "^From:" | sed -e 's/From: //')
+      subject=$(echo "$head" | grep "Subject" | sed -e 's/Subject: //')
+      history=$(
+        echo "$text" \
+          | tail -n +7 \
+          | while read line; do
+              echo "> $line";
+            done
+      )
+      echo "TextDocumentEdit {file} 0:0,-1:-1"
+      echo "{Send}"
+      echo ""
+      echo "From: $recipient"
+      echo "To: $sender"
+      echo "Subject: Re: $subject"
+      echo ": Write the email after this line"
+      echo ""
+      echo "$history"
+
+  read_email:
+    <<: *defaults
+    lsp_feature: workspace_edit
+    use_lsp_progress: true
+    # progress_config: spinner
+    command: |
+      touch {workspace_root}/{args}.mime
+      text="$(
+        himalaya read {args} \
+          --header Date \
+          --header To \
+          --header From \
+          --header Subject
+        )"
+      text_plain=$(echo "$text" | sed -e 's/<[^>]*>//g')
+      echo "TextDocumentEdit {workspace_root}/{args}.mime 0:0,-1:-1"
+      echo "{Reply}"
+      echo ""
+      echo "$text_plain"
+
+  archive_email:
+    <<: *defaults
+    lsp_feature: workspace_edit
+    use_lsp_progress: true
+    command:
+      - |
+        himalaya move {args} Archive >&2
+        echo "call inbox"
+      - |
+        echo "DeleteFile {workspace_root}/{args}.mime 0:0,0:0"
+
+  # TODO: Confirmation. Edit the button to be a warning "⚠️", with a diagnostic that says "Are you sure?"
+  delete_email:
+    <<: *defaults
+    lsp_feature: workspace_edit
+    use_lsp_progress: true
+    command:
+      - |
+        himalaya delete {args} >&2
+        echo "call inbox"
+      - |
+        echo "DeleteFile {workspace_root}/{args}.mime 0:0,0:0"
+
+# TODO: Code Action
+#   inbox_actions:
+#     <<: *defaults
+#     lsp_feature: code_actions
+#     # `file`
+#     # `range`
+#     # `context`
+#     # https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#codeActionParams
+#     command: |
+#       id=$(cat {file} | get line from {range} | grep [:num:]) # pseudo code!
+#       # If server can't send unsolicited `Location`, then maybe make a "button" to trigger the opening of the
+#       # new email?
+#       echo "New himalaya/new_email"
+#       if [[ $id ]]; then
+#         echo "Read himalaya/read_email $id"
+#         echo "Archive himalaya/archive_email $id"
+#       fi
+#     parsing:
+#       formats:
+#         - "{title} {command} {args}" # that's the default so not necessarily needed
