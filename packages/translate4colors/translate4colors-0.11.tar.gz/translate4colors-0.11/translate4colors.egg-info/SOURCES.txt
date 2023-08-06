@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+translate4colors/README.MD
+translate4colors/__init__.py
+translate4colors/requirements.txt
+translate4colors/thirdparty.json
+translate4colors.egg-info/PKG-INFO
+translate4colors.egg-info/SOURCES.txt
+translate4colors.egg-info/dependency_links.txt
+translate4colors.egg-info/requires.txt
+translate4colors.egg-info/top_level.txt
