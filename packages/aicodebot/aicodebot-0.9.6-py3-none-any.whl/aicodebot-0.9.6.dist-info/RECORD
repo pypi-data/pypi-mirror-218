@@ -1,0 +1,12 @@
+aicodebot/__init__.py,sha256=ESdGsKuDEP4gliqvVPpCmymu8UxmXfWF3ooNgz8mNVA,18
+aicodebot/cli.py,sha256=xKwzeBqDYojbzFlZFF6fO_yyyachaIWy-S8mffM_UMA,17452
+aicodebot/coder.py,sha256=pD4otZkyRPeIvmyq1-RCAqvhZ2Mx6DsCjPWq6w1gskY,7024
+aicodebot/config.py,sha256=jRqTbwwhsahJUscKchF9CsFj5DRHBp8FVlVisAz250I,786
+aicodebot/helpers.py,sha256=VlyCN0IgB8TpyNOn7k2WgtsDCblBacTBNSxtj_p-rII,2011
+aicodebot/prompts.py,sha256=YHQIPRmAOuBxTC-PLWILFxXJflB4HCOMhSDqhVMzicQ,12009
+aicodebot-0.9.6.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+aicodebot-0.9.6.dist-info/METADATA,sha256=_J6V2KMiuyAvcipZpJRw0_NXmCnVzV2tcqGFXfrn5wI,12912
+aicodebot-0.9.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aicodebot-0.9.6.dist-info/entry_points.txt,sha256=tpMRSyq_j-gOc7VOPImCnLdrbp8rJeYfhBbkvomhTnM,48
+aicodebot-0.9.6.dist-info/top_level.txt,sha256=7cCIgwqJaGkr8JzvTvtEsJGqIEepBHEYWx5aG6D09jQ,10
+aicodebot-0.9.6.dist-info/RECORD,,
