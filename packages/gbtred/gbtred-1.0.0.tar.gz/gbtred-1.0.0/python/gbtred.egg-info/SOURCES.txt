@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+python/gbtred/__init__.py
+python/gbtred/baseline.py
+python/gbtred.egg-info/PKG-INFO
+python/gbtred.egg-info/SOURCES.txt
+python/gbtred.egg-info/dependency_links.txt
+python/gbtred.egg-info/not-zip-safe
+python/gbtred.egg-info/requires.txt
+python/gbtred.egg-info/top_level.txt
