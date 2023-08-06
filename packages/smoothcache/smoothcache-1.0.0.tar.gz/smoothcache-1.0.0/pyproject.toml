@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smoothcache"
+version = "1.0.0"
+authors = [
+  { name="Mason Weaver", email="mason@swingproxy.com" },
+]
+description = "Simple, in-memory, thread-safe caching system for python programs."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["cache"]
+
+[project.urls]
+Homepage = "https://github.com/Otach/smoothcache"
