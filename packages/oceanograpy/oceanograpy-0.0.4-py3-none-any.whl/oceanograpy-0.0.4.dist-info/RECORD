@@ -1,0 +1,13 @@
+oceanograpy/__init__.py,sha256=XGodBnFxzs03iW3m2OAldR_9oKf2cnBlWHQjramuTco,215
+oceanograpy/adcp_plot_tools.py,sha256=u64dpY5QnyijKsca4rL1kT3EBA3bw-uiDDpnMr6_Xfk,24745
+oceanograpy/example.py,sha256=XoA6BIVsaz-0TTjNyJuBXL0LUUMoWcNZjMvpROGP7vw,2166
+oceanograpy/frma.py,sha256=eG1TdcN46Brv9idaCZ9TGO0mJf6mTfn788hk_38--0M,2797
+oceanograpy/matplotlib_dhi.py,sha256=yNoilQeiaMeqxUIFI5Pm5eFna43V_62l6znzYtfhLwY,5339
+oceanograpy/processing_tools.py,sha256=8Oom9PgPHdN6KneOddA6Jy0y7GF7bwVEluUWnJZhxZc,4375
+oceanograpy/seabird_ctd.py,sha256=LVD3z49PTM4E7vEPO0TOndY6178doAoMyFXlFXOrVGA,24857
+oceanograpy/workhorse_adcp.py,sha256=xuKURK_UrML_JpKMU-43Dpq52FCCF3BeVkGi4RkEdCA,67612
+oceanograpy-0.0.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+oceanograpy-0.0.4.dist-info/METADATA,sha256=28bc4W1tdlzWC_VrFCdXajMEld8Zcz5alTRmELZW7uw,781
+oceanograpy-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+oceanograpy-0.0.4.dist-info/top_level.txt,sha256=VnnqbPP8gq_A7zCn_FiQSXE4NrNZWqE2arfLx7zo1vk,12
+oceanograpy-0.0.4.dist-info/RECORD,,
