@@ -1,0 +1,11 @@
+swiftly_unix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swiftly_unix/gitignore.py,sha256=McHc4ZubRu6RlvQDSOJHB5QLjVSuBoZKsh0tqb1qtsk,3097
+swiftly_unix/init.py,sha256=CyBtLH5WjW-jUJ-ZZJ7VXWanreamxXQmZSfjIm74MaE,2291
+swiftly_unix/makeapp.py,sha256=l9ytY-xLXSVw9JHaKAsZ7Ttv53xo9aiT61uS5G-hJCc,1765
+swiftly_unix/runapp.py,sha256=oF5LSomtRe21iYAfTgNrCFpKQIAQWjmui4xTCpZcVKY,183
+swiftly_unix-0.0.10.data/scripts/swiftly,sha256=rvEzBHSKeafaHtkdi6bcIGAN-27bDt3xIAcpU0amaw0,2727
+swiftly_unix-0.0.10.dist-info/LICENSE,sha256=l5nyoK52MsA-gAF6p-tRlnbjFDASatQ-QZvJ3_D-6qg,1500
+swiftly_unix-0.0.10.dist-info/METADATA,sha256=48PYCsXZZIN6-_HU-cxKPYetXVvwmR5vl_sFk3NE5wY,80
+swiftly_unix-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+swiftly_unix-0.0.10.dist-info/top_level.txt,sha256=OIAXm24UWJOZdt93rG-5egy3fvGrcZPHu5E45doGk8I,13
+swiftly_unix-0.0.10.dist-info/RECORD,,
