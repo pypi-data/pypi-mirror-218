@@ -1,0 +1,16 @@
+napari_live_recording/__init__.py,sha256=S4uthYu0jn97zh7TJhV9aRRobKokExkL1du9a8YB5xE,676
+napari_live_recording/napari.yaml,sha256=sYR72JjmJ3fVa_FcJ4jY_f3TovcHuy8LiW4hePkmM8c,299
+napari_live_recording/common/__init__.py,sha256=KArBTnmw1-HVS1k7TAhP3KyTyKD0n07Mxm9ZA45t7as,2167
+napari_live_recording/control/__init__.py,sha256=D6gys0ag4Scn1npGgBXpa9WRuVZecQSssQMaNbRPHA8,8998
+napari_live_recording/control/devices/__init__.py,sha256=yh434LnVxOJkDOAmgAGbG7ycivoniyZFju8TRVK3I5s,1605
+napari_live_recording/control/devices/interface.py,sha256=34p6H8pH0AvyCO3QeCkBQMJgFFMo9lq_OMgFiYMlu9I,3916
+napari_live_recording/control/devices/micro_manager.py,sha256=J_Nm7Kbmo99aOlF4-VyAbndn3wTVrwKAwP0TelIpArI,2655
+napari_live_recording/control/devices/opencv.py,sha256=0mAh0QqHHYTamPAuM_2ypiZBOUG_rUw_T_DHkA7cfdQ,4061
+napari_live_recording/ui/__init__.py,sha256=q9mJksYxK4m6rYNgzL-7r-I4DwZ9uOKYZu5hVmUFxpc,7754
+napari_live_recording/ui/widgets.py,sha256=or1x6TumrmhdMkZCh0g2nI6-M4PBm-ysN8b5B-BympY,24878
+napari_live_recording-0.3.2.dist-info/LICENSE,sha256=HplCGBinIQ4Ezg_Ta2E59liOOetSj2Famz8Vpw2zGfE,1101
+napari_live_recording-0.3.2.dist-info/METADATA,sha256=2vRAXLgFenYg_DZMzobXLEh8LkG3P-lTA9L5oPv6kx4,4836
+napari_live_recording-0.3.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_live_recording-0.3.2.dist-info/entry_points.txt,sha256=n6Z2cjUzBoKK1aDYaFyW5N9Sll76HQeOFjPITsZN0oY,76
+napari_live_recording-0.3.2.dist-info/top_level.txt,sha256=lFxiqw6Z3ZG1QMz_AMFWsIZPxCv6YEY7I_FfjlAaqJg,22
+napari_live_recording-0.3.2.dist-info/RECORD,,
