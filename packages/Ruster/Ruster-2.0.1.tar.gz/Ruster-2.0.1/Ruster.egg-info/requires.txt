@@ -1,0 +1,8 @@
+cryptography
+itsdangerous
+jinja2
+nexusdb
+pyjwt
+rustadmin
+uuid
+werkzueg
