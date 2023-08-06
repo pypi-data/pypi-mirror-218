@@ -1,0 +1,9 @@
+networkx
+pandas
+matplotlib
+numpy
+pyvis
+scikit-learn
+statsmodels
+jinja2
+seaborn
