@@ -1,0 +1,15 @@
+pyckett/__init__.py,sha256=g2bIlz_-WQ8nL1TMXQKS2PlCtY2BjriXPLl8t0go9eU,23
+pyckett/pyckett.py,sha256=LwZqds9OHM6T2Csmo-bxF0lpFfwIzy5I00KRSSXIdMI,31151
+pyckett/clitools/__init__.py,sha256=LDL6w0KXczanxVnLSQtOvKnMuhbuIO-Y0ajAjlbf01Q,176
+pyckett/clitools/addparameters.py,sha256=25OPBy8WRhQfpx5bHt8sV2zRvFGzZf7aONZUgYwWLiY,7752
+pyckett/clitools/automaticfit.py,sha256=9RiNVYTpuTMl744fbS_cz6qKH1Km6WuILagZfZPCC3g,7722
+pyckett/clitools/omitparameters.py,sha256=8N9k2ERTMW7uWKwIMWrzhlXoPsnuIfWvG0omtJDziNs,2625
+pyckett/clitools/partitionfunction.py,sha256=gm2CoYGEP7l0xHSrSTjWe4P0oJOwEDo0W4CuAfO0paM,2892
+pyckett/clitools/separatefits.py,sha256=qQhetRYJ0_Ne1osymaLzjwMJtKNAkS2k2LxrMFiTRqE,4630
+pyckett/clitools/uncertainties.py,sha256=PdZ0kEnJWYtYpFLO8tqPfu4pmogFLYOCH89bmakWJdM,2388
+pyckett-0.1.9.dist-info/LICENSE,sha256=HmA-W_VO3GNnzicFFt5fCuw3EwvIAjhVUxrsgVlUeTU,1055
+pyckett-0.1.9.dist-info/METADATA,sha256=dIB0zHXlE0O-NcmpeR34j_OHZASw8aiBoDnppKLqHtQ,3293
+pyckett-0.1.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyckett-0.1.9.dist-info/entry_points.txt,sha256=3cXVdRJBWhp5ePYJdfaE3WRb6k6Ntmxxwyj5Jzxu8C0,326
+pyckett-0.1.9.dist-info/top_level.txt,sha256=0htO9en0IOeFJOLgef2HYqxVh0NM7cWLtlkybGa0kAA,8
+pyckett-0.1.9.dist-info/RECORD,,
