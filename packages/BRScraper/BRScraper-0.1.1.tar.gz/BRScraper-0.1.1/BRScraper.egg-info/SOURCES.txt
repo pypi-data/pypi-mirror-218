@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+BRScraper.egg-info/PKG-INFO
+BRScraper.egg-info/SOURCES.txt
+BRScraper.egg-info/dependency_links.txt
+BRScraper.egg-info/requires.txt
+BRScraper.egg-info/top_level.txt
