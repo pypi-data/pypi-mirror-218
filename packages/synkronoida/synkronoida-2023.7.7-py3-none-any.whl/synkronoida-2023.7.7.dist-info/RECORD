@@ -1,0 +1,10 @@
+synkronoida/__init__.py,sha256=MVRuEdX0I2mKr0AWnkLL3G4kQX9-Obkekh9b2anaGDo,942
+synkronoida/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synkronoida/api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synkronoida/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synkronoida-2023.7.7.dist-info/LICENSE,sha256=a9GBBsUGDvTGs1rmHMujUJiPhEY6vtKCdGlW6XmWoTw,1069
+synkronoida-2023.7.7.dist-info/METADATA,sha256=qOb6Xu7_IZiRj2Mcq5xdWGYIVmED3mi1Cdg2xcL-FJ4,3847
+synkronoida-2023.7.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+synkronoida-2023.7.7.dist-info/entry_points.txt,sha256=vm45Sd0LQepVQXZVFXqCivXGGsfO1RANiOUWEhdY_Q8,52
+synkronoida-2023.7.7.dist-info/top_level.txt,sha256=v4x9GXrKlo5O82ZcyqW6MGCNIlwqRcahGAE69FmrgQM,12
+synkronoida-2023.7.7.dist-info/RECORD,,
