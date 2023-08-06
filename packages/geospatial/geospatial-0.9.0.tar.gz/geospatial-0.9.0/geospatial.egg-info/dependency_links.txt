@@ -1,0 +1,85 @@
+# --find-links https://girder.github.io/large_image_wheels GDAL
+# cartopy; platform_platform != "Windows"
+bokeh
+cenpy
+contextily
+cubo
+dask-geopandas
+datashader
+earthengine-api
+earthpy
+easystac
+eemont
+# eomaps
+eoreader
+fiona
+folium>=0.12.1
+geemap>=0.24.0
+# gemgis
+geoalchemy2
+geocube
+geopandas
+geotiff
+# geosnap
+# geoviews
+h3
+hvplot
+ipygany
+ipyleaflet
+ipyvtklink
+keplergl
+laspy
+leafmap>=0.22.0
+# lidar
+localtileserver>=0.6.1
+mapboxgl
+mapclassify
+mapwidget
+# movingpandas
+mss
+netcdf4
+networkx
+odc-stac
+osmnx
+owslib
+panel
+palettable
+planetary-computer
+plotly
+proplot
+psycopg2
+pydeck
+pygis>=0.6.0
+pyntcloud
+pyproj
+pysal
+pyshp
+pystac-client
+# pyvista
+radiant-mlhub
+rasterio
+rasterstats
+rio-cogeo
+rioxarray
+s2cloudless
+sarpy
+satpy
+sentinelsat
+shapely
+simplekml
+sliderule
+spyndex
+sqlalchemy
+stackstac
+# tropycal
+usgs
+whitebox
+whiteboxgui
+wxee
+xarray
+xarray_leaflet
+xarray-spatial
+# xcube; python_version >= '3.9'
+# xmovie
+xyzservices
+
