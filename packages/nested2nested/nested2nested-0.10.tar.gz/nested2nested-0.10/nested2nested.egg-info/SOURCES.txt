@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nested2nested/README.MD
+nested2nested/__init__.py
+nested2nested/requirements.txt
+nested2nested/thirdparty.json
+nested2nested.egg-info/PKG-INFO
+nested2nested.egg-info/SOURCES.txt
+nested2nested.egg-info/dependency_links.txt
+nested2nested.egg-info/requires.txt
+nested2nested.egg-info/top_level.txt

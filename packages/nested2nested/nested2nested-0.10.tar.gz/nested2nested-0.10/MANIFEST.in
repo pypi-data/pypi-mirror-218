@@ -1,0 +1,3 @@
+include nested2nested/requirements.txt
+include nested2nested/thirdparty.json
+include nested2nested/README.MD
