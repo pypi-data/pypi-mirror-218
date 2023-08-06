@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: midnight-engine
+Version: 0.1.1
+Summary: python terminal game engine with a simple yet powerful 🚀 codebase
+Author: TVRework
+License: MIT
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyfiglet (>=0.8)
+
+# 🌃 midnight
+python terminal game engine with a simple yet powerful 🚀 codebase for development of terminal applications and games.
+
+# installation
+we offer 🌃 midnight (production release) and we also offer a unstable, untested, and experimental release called 🌅 daylight (predev, betas, and release candidates) or also known as canary or pre-release.
+
+## 🌃 midnight (recommended)
+```bash
+pip install midnight-engine
+```
+
+## 🌅 daylight (unstable)
+check github releases for the latest daylight version.
+
+# documentation
+learn more about more about the internals api of midnight and the specific documentation for all functions of midnight at our [website]()
+
+# communuity
+join our discussions and the community at our [discord server.](https://discord.gg/7Z8wFnR8Ke)
