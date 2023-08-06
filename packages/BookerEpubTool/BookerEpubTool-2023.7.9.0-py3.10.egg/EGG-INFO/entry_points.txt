@@ -1,0 +1,3 @@
+[console_scripts]
+BookerEpubTool = BookerEpubTool.__main__:main
+epub-tool = BookerEpubTool.__main__:main
