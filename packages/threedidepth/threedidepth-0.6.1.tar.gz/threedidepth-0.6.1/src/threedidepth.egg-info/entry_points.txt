@@ -1,0 +1,2 @@
+[console_scripts]
+threedidepth = threedidepth.commands:threedidepth
