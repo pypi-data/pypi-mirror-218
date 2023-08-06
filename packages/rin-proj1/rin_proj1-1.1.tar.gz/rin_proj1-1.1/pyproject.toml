@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rin-proj1"
+version = "1.1"
+description ="CLI tool to convert .csv files to .db files and vice-versa"
+authors = ["Harine <haariinee@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0"
+typer = "^0.9.0"
+
+[tool.poetry.scripts]
+rin_proj1 = "rin_proj1.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
