@@ -1,0 +1,10 @@
+aicodebot/__init__.py,sha256=jkfHnzVa10IQSpZ2pxKpDSuupshtLJQ67ljFL5JgvKQ,18
+aicodebot/cli.py,sha256=sSSWts0gjC7lCsru_dIS2Gv6JpdUhwgWsbvHlCCXlAE,18153
+aicodebot/helpers.py,sha256=oKRPpWX3sZMhdK9rWN3bZ2tj_FKp3kc-C1U4_axeWQ0,7476
+aicodebot/prompts.py,sha256=JoVqk0X2e5nQvXUqd4HESIjD9SpjLRRW4QRlB0jnoOw,9423
+aicodebot-0.9.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+aicodebot-0.9.0.dist-info/METADATA,sha256=FAsYmzPtavLwFsB2DktKpkapa3oQCxptSf_E5tXjDfk,12357
+aicodebot-0.9.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aicodebot-0.9.0.dist-info/entry_points.txt,sha256=tpMRSyq_j-gOc7VOPImCnLdrbp8rJeYfhBbkvomhTnM,48
+aicodebot-0.9.0.dist-info/top_level.txt,sha256=7cCIgwqJaGkr8JzvTvtEsJGqIEepBHEYWx5aG6D09jQ,10
+aicodebot-0.9.0.dist-info/RECORD,,
