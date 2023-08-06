@@ -1,0 +1,3 @@
+[console_scripts]
+bui-monitor = burpui_monitor.__main__:monitor
+
