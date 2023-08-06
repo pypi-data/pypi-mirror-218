@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: specgenerator
+Version: 0.0.3
+Summary: A wrapper around PyTorch for doing my own downstream tasks
+Home-page: https://github.com/yourusername/specgenerator
+Author: harsha.v
+Author-email: vasamsettiharsha@gmail.com

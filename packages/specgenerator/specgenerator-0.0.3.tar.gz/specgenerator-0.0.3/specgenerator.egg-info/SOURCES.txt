@@ -1,0 +1,12 @@
+ LICENCE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+specgenerator/__init__.py
+specgenerator/math.py
+specgenerator.egg-info/PKG-INFO
+specgenerator.egg-info/SOURCES.txt
+specgenerator.egg-info/dependency_links.txt
+specgenerator.egg-info/requires.txt
+specgenerator.egg-info/top_level.txt
