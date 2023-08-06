@@ -1,0 +1,16 @@
+smtpdfix/__init__.py,sha256=0okmmkqrFrGIcHT8BSqgsENDXHhv9F55w0jIiJPwthY,342
+smtpdfix/authenticator.py,sha256=6VNwkd1KGTrBqr9oUJqx0AE8a7Rytdd5naEn2ww8Tm0,1041
+smtpdfix/certs.py,sha256=6CN1z1SrYqEWXhVfOu9gPu1_PI0d7_h31HOEYsePsBE,3063
+smtpdfix/configuration.py,sha256=q0rs4UEmP9Si5Js2hAWewNsLlsu7iBbYI_GwkuLMRtQ,5034
+smtpdfix/controller.py,sha256=SuA3ENsM6mXpe7g3i1mgDxSYzs0el8HgCdMNaEt4f3g,8078
+smtpdfix/event_handler.py,sha256=xc2VAJne6VjUCPN-xbDhaMwBhQLWM__wMynAD3OnumQ,688
+smtpdfix/fixture.py,sha256=FHpBhLBeuns7bWY2BQgoJ05fMkNAR1eB_UVSaXHVWHM,2577
+smtpdfix/handlers.py,sha256=zzvxVSklGwmDCNtF1PlExoUzZK4SKKcAJFk8a3yPBiY,3400
+smtpdfix/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smtpdfix/smtp.py,sha256=PTRdCBYf9NFA_7Es-vHF0PflEiLWwfL-j_FoC_yuU5U,1660
+smtpdfix-0.5.1.dist-info/LICENSE,sha256=wm6ds8C2Hldt9I9NuUDzLHRwGwjF-36lofcJLHzbqvQ,1089
+smtpdfix-0.5.1.dist-info/METADATA,sha256=NSVeABpg8tDlbUJdgCCtj_TNKns-pAE5q-VoQ_9mTDQ,11105
+smtpdfix-0.5.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+smtpdfix-0.5.1.dist-info/entry_points.txt,sha256=gkgyyO1xu-36w8fwW2Sogpiq4YNfe4cQUrtd3w7PH1I,36
+smtpdfix-0.5.1.dist-info/top_level.txt,sha256=LZiVq0geWcUA51L3sTR9fLCtq1xTZ4rXymOO5GSm1LE,9
+smtpdfix-0.5.1.dist-info/RECORD,,
