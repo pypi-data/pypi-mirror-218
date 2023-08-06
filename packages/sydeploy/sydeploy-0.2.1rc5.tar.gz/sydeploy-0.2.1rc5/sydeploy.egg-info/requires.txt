@@ -1,0 +1,5 @@
+impose-cli==0.3.2
+twine
+awscli
+PyYAML
+wheel
