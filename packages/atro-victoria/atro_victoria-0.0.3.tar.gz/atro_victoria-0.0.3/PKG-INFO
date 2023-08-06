@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: atro-victoria
+Version: 0.0.3
+Summary: A way to push data to victoria metrics.
+Author: atropos
+Author-email: sv7n@pm.me
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=2.0.2,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.0.1,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "atro-victoria"
+version = "0.0.3"
+description = "A way to push data to victoria metrics."
+authors = ["atropos <sv7n@pm.me>"]
+readme = "README.md"
+packages = [{include = "atro_victoria"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.0.2"
+pydantic-settings = "^2.0.1"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
