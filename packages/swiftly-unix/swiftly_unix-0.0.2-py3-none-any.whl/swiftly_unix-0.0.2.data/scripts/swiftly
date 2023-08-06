@@ -1,0 +1,7 @@
+#!/bin/bash
+
+function call_python_func() {
+    python3 -c "from swiftly_unix.script import hello; hello('$1')"
+}
+
+call_python_func $1
