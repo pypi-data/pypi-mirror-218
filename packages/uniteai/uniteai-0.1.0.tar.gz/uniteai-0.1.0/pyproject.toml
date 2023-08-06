@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uniteai"
+version = "0.1.0"
+description = "AI, Inside your Editor."
+readme = "README.md"
+license = "Apache-2.0"
+authors = [{ name = "Josh Freckleton"}]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+requires-python = ">=3.7"
+
+dependencies = [
+  "pygls",
+  "Thespian",
+]
+
+[project.optional-dependencies]
+local_llm = [
+  "accelerate",
+  "bitsandbytes",
+  "einops",
+  "fastapi",
+  "scipy",
+  "transformers",
+  "uvicorn",
+  "sentencepiece",
+]
+openai = ["openai"]
+transcription = [
+  "PyAudion",
+  "SpeechRecognition",
+  "openai-whisper",
+  "soundfile",
+]
+
+[tool.hatch.build.targets.sdist]
+include = ["/uniteai"]
+
+[project.scripts]
+uniteai_lsp = "lsp_server:main"
+uniteai_llm = "llm_server:main"
+
+[project.urls]
+"Homepage" = "https://github.com/freckletonj/uniteai"
+"Bug Tracker" = "https://github.com/freckletonj/uniteai/issues"
+
+[tool.pip]
+extra-index-url = "..."
