@@ -1,0 +1,14 @@
+protomodel/__init__.py,sha256=oCmyb5l7WsjjFaWxuTpVdpzx3aoKSs9nj2iQ9VqMG2M,107
+protomodel/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protomodel/example/data.py,sha256=SgJjMYF5CzKtdeuJjguMRWaLYh30tNqlheLO87pEo0E,348
+protomodel/example/run.py,sha256=vIhXhM62K-5oXQRFl8XRVQ4dEJ8_PF4th_jcgt4Et3I,584
+protomodel/message.py,sha256=4qfEf-_MXvC5pKrQJiCiS-anyaNeECxRzgmNwF7MpK0,1306
+protomodel/protomodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protomodel/rpc.py,sha256=5cx4pZS6zHE1UH06S7pgBZlHP9CdYB7EZYpKVLx_KtI,22
+protomodel/service.py,sha256=UvEsZOPxUApuP_RPep4u0tYx87ZY_1sMR6ci-ALXn74,25
+protomodel/types/__init__.py,sha256=QjGqhOn5pWp52pGbkK6QLA7XC4Tzn4mOJLF3H2f9Rss,45
+protomodel/types/get_types.py,sha256=ZlzBq6-TH6xIk-F13hQksayA5DW2qPY8mdpQ1dLVQV8,247
+protomodel/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protomodel-0.0.3.dist-info/METADATA,sha256=UpmMbitqEfeV0C4ac6BPhFLfgBwvP9grOXedblINgzs,452
+protomodel-0.0.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+protomodel-0.0.3.dist-info/RECORD,,
