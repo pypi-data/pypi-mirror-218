@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "dataclasses-struct"
+version = "0.5.0"
+description = "Converting dataclasses to and from fixed-length binary data using struct"
+authors = ["Harry Mander <harrymander96@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/harrymander/dataclasses-struct"
+repository = "https://github.com/harrymander/dataclasses-struct"
+documentation = "https://github.com/harrymander/dataclasses-struct/blob/main/README.md#usage"
+packages = [{include = "dataclasses_struct"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+typing-extensions = "^4.5.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+mypy = "^1.1.1"
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+pytest-mypy-plugins = "^1.10.1"
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+markers = [
+	"cc: marks a test as requiring a C compiler"
+]
+
+[tool.coverage.run]
+source = ["dataclasses_struct/"]
+omit = ["dataclasses_struct/ext/**/*.py", "dataclasses_struct/sizes.py"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
