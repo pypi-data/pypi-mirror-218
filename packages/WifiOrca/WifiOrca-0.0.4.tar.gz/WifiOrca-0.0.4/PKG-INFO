@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: WifiOrca
+Version: 0.0.4
+Summary: Wifi Orca contains free and open source tools similar to hak5! Please see github for more info!
+Author-email: Michael Mueller <michael.j.mueller.pro@gmail.com>
+Project-URL: Homepage, https://github.com/Invizabel/Wifi-Orca
+Project-URL: Bug Tracker, https://github.com/Invizabel/Wifi-Orca/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Wifi Orca contains free and open source tools similar to hak5!
+# requirements:
+# * nmap
+# * sqlmap
+# * TheSilent
