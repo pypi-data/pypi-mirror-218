@@ -1,0 +1,7 @@
+"""anyconfig backend to support CBOR files.
+"""
+from __future__ import absolute_import
+from .cbor2_ import Parser
+
+__version__ = "0.2.0"
+__all__ = ["Parser"]

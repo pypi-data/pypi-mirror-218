@@ -1,0 +1,18 @@
+diff -up cbor2-4.1.0/setup.py.ver cbor2-4.1.0/setup.py
+--- cbor2-4.1.0/setup.py.ver	2018-07-03 00:47:44.964976498 +0900
++++ cbor2-4.1.0/setup.py	2018-07-03 01:10:40.529520026 +0900
+@@ -1,12 +1,8 @@
+ from setuptools import setup
+ 
+ setup(
+-    use_scm_version={
+-        'version_scheme': 'post-release',
+-        'local_scheme': 'dirty-tag'
+-    },
++    version='4.1.0',
+     setup_requires=[
+-        'setuptools >= 36.2.7',
+-        'setuptools_scm >= 1.7.0'
++        'setuptools',
+     ]
+ )

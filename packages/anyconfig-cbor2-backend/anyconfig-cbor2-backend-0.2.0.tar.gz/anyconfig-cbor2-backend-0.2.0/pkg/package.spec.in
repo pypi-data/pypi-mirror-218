@@ -1,0 +1,65 @@
+%global bename cbor2
+%global pkgname anyconfig-%{bename}-backend
+
+%global desctxt \
+This is a CBOR backend module for python-anyconfig with using cbor2.\
+\
+python-anyconfig is a python library to provide common APIs to load dump\
+various configuration files like INI, JSON and YAML.
+
+Name:           python-%{pkgname}
+Version:        @VERSION@
+Release:        @RELEASE@%{?dist}
+Summary:        Backend module for python-anyconfig to load and dump CBOR data
+License:        MIT
+URL:            https://github.com/ssato/python-anyconfig-cbor2-backend
+Source0:        %{url}/archive/RELEASE_%{version}.tar.gz
+BuildArch:      noarch
+
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
+
+%description    %{desctxt}
+
+%package     -n python3-%{pkgname}
+Summary:        %{sumtxt}
+Requires:       python3-anyconfig
+Requires:       python3-cbor2
+%{?python_provide:%python_provide python3-%{pkgname}}
+
+%description -n python3-%{pkgname} %{desctxt}
+
+%prep
+%autosetup -n %{pkgname}-%{version}
+
+%build
+%py3_build
+
+%install
+%py3_install
+
+%files -n python3-%{pkgname}
+%doc README.rst NEWS
+%{python3_sitelib}/*
+
+%changelog
+* Tue May 18 2021 Satoru SATOH <satoru.satoh@gmail.com> - 0.2.0-1
+- new upstream release
+
+* Mon Sep 23 2019 Satoru SATOH <satoru.satoh@gmail.com> - 0.1.0-1
+- new upstream release
+
+* Thu Jan  3 2019 Satoru SATOH <ssato@redhat.com> - 0.0.4-1
+- new upstream release
+
+* Mon Jul  2 2018 Satoru SATOH <ssato@redhat.com> - 0.0.3-1
+- new upstream release
+
+* Sun Jan 14 2018 Satoru SATOH <ssato@redhat.com> - 0.0.2-2
+- new upstream release
+
+* Sun Jan 14 2018 Satoru SATOH <ssato@redhat.com> - 0.0.2-1
+- new upstream release
+
+* Thu Jan 11 2018 Satoru SATOH <ssato@redhat.com> - 0.0.1-1
+- Initial packaging forked from python-anyconfig-cbor-backend
