@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "init-maths-equation"
+version = "0.1.0"
+description = "A CLI tool for formating maths equation chapterwise using tex."
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+packages = [{include = "init_maths_equation"}]
+
+
+[tool.poetry.scripts]
+init-maths-equation = "init_maths_equation.main:main"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
