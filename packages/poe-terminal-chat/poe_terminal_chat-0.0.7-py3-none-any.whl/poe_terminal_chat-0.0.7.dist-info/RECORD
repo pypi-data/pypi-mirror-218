@@ -1,0 +1,10 @@
+poe_terminal_chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poe_terminal_chat/command_line.py,sha256=pXZ7ui0gY3a6QlsX9gsqMbttWQa2N1kxSR0f4jqDFGI,1886
+poe_terminal_chat/poeterminal.py,sha256=gfcXWDMyqNLr79QYJLGqch2-3RlwlCiZh_kvRFlc7UU,1322
+poe_terminal_chat/utils.py,sha256=KxCQRoHAzkxkuFOoWz3uJ07FxsiAvz4ZWZcrdDhfaBM,2119
+poe_terminal_chat-0.0.7.dist-info/LICENSE,sha256=4dMzR0e50ufRyjnjvzu52pZHtbYDl3tKeEdrQgMKpG0,1087
+poe_terminal_chat-0.0.7.dist-info/METADATA,sha256=fuHTWIHCuoMhj6c_THrWC2C_QNh1E7x2FW_5M7tA7-w,407
+poe_terminal_chat-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+poe_terminal_chat-0.0.7.dist-info/entry_points.txt,sha256=pz4MJSsFZYxCtXnp99t8_hOYURXMaw9U6V8bKjY8v3U,64
+poe_terminal_chat-0.0.7.dist-info/top_level.txt,sha256=Hf3xVJyoJy8Yf4IJzUL0KBHFCKZWAN_EU9l6Th-99Oo,18
+poe_terminal_chat-0.0.7.dist-info/RECORD,,

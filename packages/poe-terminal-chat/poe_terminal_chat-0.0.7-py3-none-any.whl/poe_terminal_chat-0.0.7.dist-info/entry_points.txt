@@ -1,0 +1,2 @@
+[console_scripts]
+poechat = poe_terminal_chat.command_line:main
