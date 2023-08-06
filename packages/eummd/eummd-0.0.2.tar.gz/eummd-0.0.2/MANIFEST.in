@@ -1,0 +1,5 @@
+recursive-include eummd/cppsrc *.pyx
+recursive-include eummd/cppsrc *.cpp
+recursive-include eummd/cppsrc *.h
+recursive-include eummd/cppsrc *.so
+

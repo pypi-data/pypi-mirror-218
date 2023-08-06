@@ -1,0 +1,69 @@
+# eummd
+
+## Description 
+
+Computes maximum mean discrepancy two-sample test for univariate data using the Laplacian kernel. It is also possible to compute the p-value using permutations. Also includes implementation for computing the robust median difference statistic 'Q\_n' from Croux and Rousseeuw (1992) <doi:10.1007/978-3-662-26811-7_58> based on Johnson and Mizoguchi (1978) <doi:10.1137/0207013>.
+
+
+## Installation instructions
+
+Install using `pip`:
+
+```
+python3 -m pip install eummd
+```
+
+Methods are implemented in C++, and then called using Cython.
+
+
+## Functions 
+
+There are various functions for computing the maximum mean discrepancy (MMD).
+
+  - `eummd`: efficient univariate MMD with the Laplacian kernel, O(n log n) 
+  for a total of n samples.
+  - `mmd`: MMD (univariate/multivariate).
+  - `meammd`: multivariate efficient approximate MMD, using either random 
+  projections or interpoint distances.
+  - `mediandiff`: computes the median difference. If univariate, can 
+  be computed in O(n log n), otherwise is O(n^2).
+  - `medianheuristic`: the inverse of the median difference.
+
+`eummd` and `mmd` return a dictionary with the items `pval` for 
+p-value (if specified), `stat` for the statistic and `beta` for the
+kernel parameter value that was used. If `beta` is specified as a 
+non-positive number, then the median heuristic will be calculated.
+
+
+## Examples:
+
+```
+from eummd import eummd
+from eummd import mediandiff
+
+X = np.array([7.1, 1.2, 4.3, 0.4]).astype(np.float64)
+Y = np.array([5.5, 2.6, 8.7]).astype(np.float64)
+beta = 0.1
+
+# only computes statistic, 
+d = eummd(X, Y, beta, pval=False)
+print(d['stat'])
+
+# computes statistic and p-value, and used median heuristic for beta
+d = eummd(X, Y, beta=-0.1, pval=True)
+print("p-value for univariate data: ", d['pval'])
+print("statistic for univariate data: ", d['stat'])
+print("beta for univariate data: ", d['beta'])
+
+# show median heuristic was used
+print(1.0 / mediandiff(X, Y, fast=True))
+
+# a multivariate example, using median heuristic for beta
+X = np.array([[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12]]).reshape((6, 2))
+Y = np.array([[13, 14, 15, 16], [17, 18, 19, 20]]).reshape((4, 2))
+
+d = mmd(X=X, Y=Y, beta=-0.5, pval=True, kernel="Laplacian")
+print("p-value for multivariate data: ", d['pval'])
+print("statistic for multivariate data: ", d['stat'])
+print("beta for multivariate data: ", d['beta'])
+```
