@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+PATRICKPDF/__init__.py
+PATRICKPDF/pdf2image.py
+PATRICKPDF/pdf2text.py
+patrickpdf.egg-info/PKG-INFO
+patrickpdf.egg-info/SOURCES.txt
+patrickpdf.egg-info/dependency_links.txt
+patrickpdf.egg-info/top_level.txt
