@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: SpinFinder
+Version: 0.0.2
+Summary: Calculate the spin multiplicity of your PAH fast using Ovchinnikov's rule.
+Author-email: Stiv Llenga <stiv.llenga@h-its.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Spin-finder
+Are you working with aromatic polycyclic hydrocarbons and concerned about their ground state spin? This repository demonstrates how to calculate the [spin multiplicity](https://en.wikipedia.org/wiki/Multiplicity_(chemistry)) (2S+1) of large PAH using our own algorithm based on [Ovchinnikov's rule](https://link.springer.com/article/10.1007/bf00549259).
+
+Spin finder requires the installation of the following libraries:
+
+*  [`pandas`](https://pandas.pydata.org/)
+*  [`rdkit`](https://www.rdkit.org/docs/Install.html)
+*  [`openbabel`](https://openbabel.org/docs/dev/UseTheLibrary/PythonInstall.html)
