@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+python_swiftly.egg-info/PKG-INFO
+python_swiftly.egg-info/SOURCES.txt
+python_swiftly.egg-info/dependency_links.txt
+python_swiftly.egg-info/top_level.txt
+scripts/swiftly
+swiftly/__init__.py
+swiftly/main.py
