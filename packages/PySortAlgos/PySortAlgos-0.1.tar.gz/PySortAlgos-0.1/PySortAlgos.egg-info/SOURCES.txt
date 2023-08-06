@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PySortAlgos/PySortAlgos.py
+PySortAlgos/__init__.py
+PySortAlgos.egg-info/PKG-INFO
+PySortAlgos.egg-info/SOURCES.txt
+PySortAlgos.egg-info/dependency_links.txt
+PySortAlgos.egg-info/top_level.txt

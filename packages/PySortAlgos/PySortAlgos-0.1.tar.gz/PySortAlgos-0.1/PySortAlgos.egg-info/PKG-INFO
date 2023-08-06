@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PySortAlgos
+Version: 0.1
+Summary: A simple repo that contains some commonly used sorting functions
+Home-page: https://github.com/bahirhakimy/PySortAlgos
+Download-URL: https://github.com/BahirHakimy/PySortAlgos/archive/refs/tags/0.1.tar.gz
+Author: Bahir Hakimi
+Author-email: bahirhakimy2020@gmail.com
+License: MIT
+Keywords: sorting,algorithm,quicksort,array
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
