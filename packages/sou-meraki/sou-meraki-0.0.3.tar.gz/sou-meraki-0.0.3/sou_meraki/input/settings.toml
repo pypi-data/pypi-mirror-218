@@ -1,0 +1,47 @@
+# settings.toml
+
+DEFAULT_ORG_ID = ''
+
+# Section 3.1 settings
+[WIRELESS_NETWORKS]
+output_file = 'input/wireless.txt'
+
+# Section 3.2 settings
+[WIRELESS_SSID]
+input_file = 'input/wireless.txt'
+output_file = 'output/myssid.txt'
+
+# Section 3.3 settings
+[RADIUS]
+input_file = 'input/mylist.txt'
+
+[RADIUSSERVERS]
+servers = [
+"radius1.company.com",
+"radius2.company.com",
+"radius3.company.com"]
+port = 1812
+secret = "mySecret"
+
+[RADIUSACCOUNTING]
+servers = [
+"radius1.company.com",
+"radius2.company.com",
+"radius3.company.com"]
+port = 1813
+secret = "mySecret"
+
+# Overall settings
+[LOGGING]
+log_level = 'info'
+log_path = 'output/logs/logs.log'
+
+
+[MERAKI]
+API_KEY = false
+API_KEY_ENVIRONMENT_VARIABLE = 'MERAKI_DASHBOARD_API_KEY'
+SUPPRESS_LOGGING = true
+PRINT_TO_CONSOLE = false
+OUTPUT_LOG = true
+LOG_FILE_PREFIX = 'meraki_api_'
+LOG_PATH = 'sou_meraki/output/logs'
