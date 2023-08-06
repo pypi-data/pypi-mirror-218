@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mcxpy
+Version: 0.0.1
+Summary: For fetching mcx data
+Author: Tapan Hazarika
+License: MIT License
+        
+        Copyright (c)  2023 Tapan Hazarika
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/Tapanhaz/mcxpy
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+***Experimental code/package to fetch data from mcx. Do not use this code/package to programmatically get data from mcx exchange. This code/package is given here only for educational purpose.  The coder/ distrinutor is not liable for any type of damage caused by or arising from the use of this code.***
+
+Functions:
+
+Below Functions will return data in pandas dataframe.. Any of the functions accepts date/expiry as %d-%m-%Y / 
+datetime.datetime / datetime.date
+
+mcx_bhavcopy(bhavdate) -> Returns bhacopy for the given bhavdate.
+mcx_marketwatch() -> Returns marketwatch.
+mcx_circulars(from_date, to_date) -> By default returns circulars within 4 days.
+mcx_topgainers() -> Returns top gainers.
+mcx_toploosers() -> Returns top loosers.
+mcx_mostactiveoptions() -> Returns most active options.
+mcx_mostactivecontracts() -> Returns most active contracts.
+mcx_optionchain(commodity, expiry) -> Returns option chain of the given commodity of the given expiry.
+mcx_pcr(expirywise) -> Returns commoditywise pcr if expirywise is False. If not, returns pcr expiry wise.
+mcx_expiry(commodity, expirytype) -> By default returns current expiry date of Crudeoil.
+mcx_heatmap() -> Returns heatmap dataframe.
