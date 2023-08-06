@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/septem-circumstantiae/__init__.py
+src/septem-circumstantiae/human_events.py
+src/septem-circumstantiae/natural_events.py
+src/septem_circumstantiae.egg-info/PKG-INFO
+src/septem_circumstantiae.egg-info/SOURCES.txt
+src/septem_circumstantiae.egg-info/dependency_links.txt
+src/septem_circumstantiae.egg-info/top_level.txt
