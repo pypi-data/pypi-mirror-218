@@ -1,0 +1,15 @@
+minimus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimus/__main__.py,sha256=MKDiAyH-ci1E15uMjJiGG9YFJ8X6MBz2YEbVXhOQt0Q,2625
+minimus/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimus/src/constants.py,sha256=PJ1Cx9BMSN_pDqA_u1CXozTQNpqvqmhohXEtmaDA6GY,4062
+minimus/src/markup.py,sha256=U7csmANOZovOUXYcyEgGIyDtJc2GbPCRYy-AXPsUBks,4727
+minimus/src/objects.py,sha256=gQ49tX9G__W8mYFkZyo4X8LONwf2nmc44WRasmRFPq0,5218
+minimus/src/output.py,sha256=xsqYIt2QoYezNASfWsNhpFCSF_aHigejnS6fvR6tyw4,1007
+minimus/src/storage.py,sha256=zEhZk_Z6nd1pCalF4HpaU3AC3lGAKDsa6lOmJ2VyLGA,2893
+minimus/src/utils.py,sha256=gFemOMUcTZaRQDubH6XKP5cZn6B6J5wUCSOESrXMUS8,1347
+minimus-2.0.0.dist-info/LICENSE.txt,sha256=ySwYKfCKanFjwOor-2QRhGuHVTTem5aVY_baNrsyDx4,1089
+minimus-2.0.0.dist-info/METADATA,sha256=XaWnry5aka9H86LUthIWyfMypjpY3SjqGE0kV7x6ddo,4926
+minimus-2.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+minimus-2.0.0.dist-info/entry_points.txt,sha256=ip8tfdqRi8MgTqu0IP-g7XT5ErLBLeB9b0EbR1XOsMM,78
+minimus-2.0.0.dist-info/top_level.txt,sha256=owjSCOr2kgwBfuFFwp7iJkiO5VXNOLtwRF6J8DrQPiw,8
+minimus-2.0.0.dist-info/RECORD,,

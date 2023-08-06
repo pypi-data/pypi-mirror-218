@@ -1,0 +1,3 @@
+[console_scripts]
+min = minimus.__main__:main
+minimus = minimus.__main__:main
