@@ -1,0 +1,6 @@
+frida==16.0.19
+openai==0.27.8
+fastapi==0.97.0
+uvicorn==0.22.0
+pywin32==306
+pefile==2023.2.7
