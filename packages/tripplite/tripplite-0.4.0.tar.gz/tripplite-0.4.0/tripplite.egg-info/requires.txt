@@ -1,0 +1,7 @@
+hidapi
+
+[exporter]
+prometheus_client
+
+[test]
+ruff
