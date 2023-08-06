@@ -1,0 +1,7 @@
+README.md
+setup.py
+tholol.egg-info/PKG-INFO
+tholol.egg-info/SOURCES.txt
+tholol.egg-info/dependency_links.txt
+tholol.egg-info/requires.txt
+tholol.egg-info/top_level.txt
