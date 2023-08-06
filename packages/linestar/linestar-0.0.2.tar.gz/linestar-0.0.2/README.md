@@ -1,0 +1,106 @@
+# Linestar Python Client Library
+
+This is the Linestar Python client library, which provides functionality for controlling the PLC Magnet Mover. The library allows you to connect to the PLC, wake up the system, move to the home position, go to a specific position, and retrieve location and error margin information.
+
+## Installation
+
+To use the Linestar Python client library, follow the steps below to install it using pip:
+
+Create a new directory for your project:
+```
+mkdir my-project
+cd my-project
+```
+
+Create a new Python virtual environment:
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Create a requirements.txt file and add the following line to it:
+```
+linestar
+```
+
+Install the required dependencies using pip:
+```
+pip install -r requirements.txt
+```
+
+You're now ready to use the Linestar library!
+
+## Example Usage
+
+Here's an example of how to use the Linestar library within a Python program:
+
+```python
+from linestar import PLCMagnetMover
+
+def main():
+
+    plc = PLCMagnetMover("192.168.1.100") # Replace with your PLC IP address
+
+    # Connect to the PLC
+    plc.connect()
+
+    # Wake up the system
+    plc.wake()
+    print("System woke up successfully")
+
+    # Move to the home position
+    plc.move_to_home()
+    print("Moved to home position successfully")
+
+    # Go to a specific position
+    plc.go_to_position(1.0, 2.5)
+    print("Moved to position (1.0, 2.5) successfully")
+
+    # Retrieve location information
+    location = plc.report_location()
+    print("Current location:", location)
+
+    # Retrieve error margin information
+    error_margin = plc.report_error_margin()
+    print("Error margin:", error_margin)
+
+    # Disconnect from the PLC
+    plc.disconnect()
+
+if name == "main":
+
+    main()
+
+
+```
+
+Replace the IP address "192.168.1.100" with the actual IP address of your PLC.
+
+
+## Updating & Distribution
+
+Build the distribution package:
+
+```
+python setup.py sdist bdist_wheel
+```
+
+Test the distribution package by installing it in a new virtual environment:
+
+```
+python -m venv test_env
+
+source test_env/bin/activate  # For Linux/macOS
+
+test_env\Scripts\activate  # For Windows
+
+pip install dist/linestar-0.0.2.tar.gz
+```
+
+Upload your package to PyPI using Twine:
+
+```
+pip install twine
+
+twine upload dist/*
+```

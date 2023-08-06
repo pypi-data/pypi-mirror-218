@@ -1,0 +1,5 @@
+pycomm3
+python-dotenv
+click
+flask
+flask-restplus

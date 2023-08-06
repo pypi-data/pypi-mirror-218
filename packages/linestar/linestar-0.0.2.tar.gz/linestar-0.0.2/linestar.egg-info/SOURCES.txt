@@ -1,0 +1,7 @@
+README.md
+setup.py
+linestar.egg-info/PKG-INFO
+linestar.egg-info/SOURCES.txt
+linestar.egg-info/dependency_links.txt
+linestar.egg-info/requires.txt
+linestar.egg-info/top_level.txt
