@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: thiggle
+Version: 0.0.1
+Summary: Thiggle API
+Home-page: https://thiggle.com
+Author: Matt Rickard
+Author-email: pypi@matt-rickard.com
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,Thiggle API
+Platform: UNKNOWN
+Requires-Python: >=3.7
+
+    API for categorizing data with LLMs  # noqa: E501
+    
+
