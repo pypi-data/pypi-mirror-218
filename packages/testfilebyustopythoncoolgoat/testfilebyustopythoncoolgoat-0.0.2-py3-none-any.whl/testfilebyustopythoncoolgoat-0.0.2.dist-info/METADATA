@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: testfilebyustopythoncoolgoat
+Version: 0.0.2
+Summary: TestFile
+Home-page: https://github.com/Kshitij-200/Leetcode_DSA
+Author: Ok Kumar
+Author-email: <OkOk@ok.com>
+License: BSD
+Project-URL: Homepage, https://example.com
+Project-URL: Documentation, https://example.com/docs
+Project-URL: Source Code, https://github.com/your-username/your-repo
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: numpy (>=1.22.3)
+Requires-Dist: pandas (>=2.0.0)
+Requires-Dist: scikit-learn (>=1.0.0)
+Requires-Dist: scipy (>=1.10.0)
+Requires-Dist: matplotlib (>=3.5.0)
+Requires-Dist: seaborn (>=0.11)
+Requires-Dist: python-dateutil (>=2.8.0)
+
+OkOkOk
