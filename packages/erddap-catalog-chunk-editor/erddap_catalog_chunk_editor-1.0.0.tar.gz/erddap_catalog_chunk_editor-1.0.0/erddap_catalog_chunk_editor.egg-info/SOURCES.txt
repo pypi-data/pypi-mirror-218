@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.py
+erddap_catalog_chunk_editor/__init__.py
+erddap_catalog_chunk_editor/dataset_xml_editor.py
+erddap_catalog_chunk_editor/dataset_xml_editor_base.py
+erddap_catalog_chunk_editor/erddap_dataset_configure_parser.py
+erddap_catalog_chunk_editor.egg-info/PKG-INFO
+erddap_catalog_chunk_editor.egg-info/SOURCES.txt
+erddap_catalog_chunk_editor.egg-info/dependency_links.txt
+erddap_catalog_chunk_editor.egg-info/requires.txt
+erddap_catalog_chunk_editor.egg-info/top_level.txt
+erddap_catalog_chunk_editor.egg-info/zip-safe
