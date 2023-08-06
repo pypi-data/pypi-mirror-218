@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: KuiToi
+Version: 0.0.1
+Summary: Library for highlighting of KuiToi Server API.
+Home-page: https://github.com/KuiToi/KuiToi-PyLib
+Author: SantaSpeen
+Author-email: admin@kuitoi.su
+License: MIT
+Project-URL: Source, https://github.com/KuiToi/KuiToi-PyLib
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# KuiToi-PyLib
+Library for highlighting of KuiToi Server API
+
+(Not ready)
