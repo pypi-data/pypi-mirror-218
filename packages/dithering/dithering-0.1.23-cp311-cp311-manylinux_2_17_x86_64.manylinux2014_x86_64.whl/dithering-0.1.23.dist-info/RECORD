@@ -1,0 +1,8 @@
+dithering-0.1.23.dist-info/METADATA,sha256=K25dqltEcSXTmW3Ax6hid6wG2hsoQ8StaYRoS8FK_zQ,1385
+dithering-0.1.23.dist-info/WHEEL,sha256=EGwnJaDVliupqV4tCw_n9lfn0Y9yC4y2oZ2kFjJrbjQ,129
+dithering-0.1.23.dist-info/license_files/LICENSE,sha256=ecluLbiIyKtCQQlYzgquxZNxr5Y-CWxilQlOzSsWaW8,1067
+dithering/__init__.py,sha256=QL5D16hHYxqAS8wrLC89ZaoNXR44KlFFdVL1HN3ftyk,119
+dithering/__init__.pyi,sha256=EAlE8zIHgDV6_yoYVHgyLdPgUHy9GhXeLEprUCnrWBI,103
+dithering/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dithering/dithering.cpython-311-x86_64-linux-gnu.so,sha256=3I0KmzP4T4V3bxZYkh_b595OGeDmUkbR6HOFXB0EdLY,4461024
+dithering-0.1.23.dist-info/RECORD,,
