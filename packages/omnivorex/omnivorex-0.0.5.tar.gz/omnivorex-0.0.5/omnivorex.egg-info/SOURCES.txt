@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+docs/Publish.md
+docs/textual.md
+docs/screenshots/omnivorex.png
+omnivorex/__init__.py
+omnivorex/omnivorex.py
+omnivorex.egg-info/PKG-INFO
+omnivorex.egg-info/SOURCES.txt
+omnivorex.egg-info/dependency_links.txt
+omnivorex.egg-info/entry_points.txt
+omnivorex.egg-info/requires.txt
+omnivorex.egg-info/top_level.txt
