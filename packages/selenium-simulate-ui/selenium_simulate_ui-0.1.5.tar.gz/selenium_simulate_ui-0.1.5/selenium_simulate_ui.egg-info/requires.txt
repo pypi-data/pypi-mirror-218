@@ -1,0 +1,5 @@
+selenium
+pathlib
+attrs
+pillow
+datetime

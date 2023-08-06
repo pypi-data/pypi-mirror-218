@@ -1,0 +1,8 @@
+setup.py
+selenium_simulate_ui/__init__.py
+selenium_simulate_ui/template.py
+selenium_simulate_ui.egg-info/PKG-INFO
+selenium_simulate_ui.egg-info/SOURCES.txt
+selenium_simulate_ui.egg-info/dependency_links.txt
+selenium_simulate_ui.egg-info/requires.txt
+selenium_simulate_ui.egg-info/top_level.txt
