@@ -1,0 +1,9 @@
+thaixtransformers/__init__.py,sha256=QLLRNxiHbGJz1Tu8dUT46etKpbWg_8hTGDJTyJY4kS4,756
+thaixtransformers/core.py,sha256=uI3dJ88ESIfYCtFkVytnMWmu0A1XEqGnWuSV-DHSSas,19509
+thaixtransformers/preprocess.py,sha256=qFg4I1OSxBpcvmFHY4os8_xhH1SjnymiswiNA8yDlMg,7357
+thaixtransformers/roberta.py,sha256=Dl1sJ8TIFPDWm6uCBX2ZAwnYSf4gFQcB2rVae3tnkws,27118
+thaixtransformers-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+thaixtransformers-0.1.0.dist-info/METADATA,sha256=xMuWts9iG6ycOmmdKSPw-1iROicNAJLyK7Jvg3xn5w4,3884
+thaixtransformers-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+thaixtransformers-0.1.0.dist-info/top_level.txt,sha256=5XUY73RZAdkwtG5amj-uQL-7E7Iw5HBaRKj4O2m60mI,18
+thaixtransformers-0.1.0.dist-info/RECORD,,
