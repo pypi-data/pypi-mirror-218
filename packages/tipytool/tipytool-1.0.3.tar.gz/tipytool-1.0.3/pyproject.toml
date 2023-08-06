@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tipytool"
+version = "1.0.3"
+authors = [{ name = "Mauly dotDev", email = "mauly.dev@gmail.com" }]
+description = "A tool for generating boilerplate for creating command-line tools"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = [
+    "command-line interface",
+    "development tools",
+    "Python library",
+    "CLI utilities",
+    "project scaffolding",
+    "automation",
+    "code generation",
+    "tooling",
+    "software development",
+    "command-line applications"
+]
+license = { text = "BSD-3-Clause" }
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Operating System :: OS Independent',
+]
+dependencies = ["fire"]
+# dynamic = ["version"]
+
+[project.scripts]
+tipy = "tipytools.tipytools:main"
