@@ -1,0 +1,17 @@
+GustavSelfBot/__bot__.py,sha256=KrEBwMXo7y9_xDmd-akyQcdqqo9g_zXJiWO8hYX2C84,654
+GustavSelfBot/__config__.py,sha256=Wi4_ZISacTz37Mz0n1usjmUI_z53XEmY08CQDFK_zxI,265
+GustavSelfBot/__init__.py,sha256=SfCh2Kv6wCPk6w1OQHwfuPuk-h8BQVy-uJ0PvIZdlog,305
+GustavSelfBot/__logging__.py,sha256=8kS4g3zo6_owLOMEC0Y6YGJBGSC7Jn9t47nDjeh4m0U,1489
+GustavSelfBot/Commands/__commands__.py,sha256=Jvm8zXxwq8sn-hlhXtrUfpUHGTuzH2D4enQPbWqRErA,1018
+GustavSelfBot/Commands/__init__.py,sha256=oZy9SxLbP6pywb4Nuzjx_1sawWhgosrlukSMm9WMRWw,126
+GustavSelfBot/Commands/Functions/__init__.py,sha256=-MYZla5yiUbGBkDWLbAmRWixS9d_pBK19WU4oisnnI4,205
+GustavSelfBot/Commands/Functions/__ping__.py,sha256=egL8HHnqkk4j1WDU60JppkzejDeOcUc97_2RcyBZyhE,1997
+GustavSelfBot/Commands/Functions/__quote__.py,sha256=WCIDJJjgKgD3qGth9kRdsc9gNtOz73KtNBpTBkvzraE,3980
+GustavSelfBot/Events/__init__.py,sha256=sSkrpB1wITYZ0JY4No6HlbZLFWYfhSRIFjs6vyKPxZ0,276
+GustavSelfBot/Events/__on_message__.py,sha256=9fIDAtM7u52cmEarP-kxZn0jImScmTLiB0ZO-Pa-NrQ,1715
+GustavSelfBot/Events/__on_ready__.py,sha256=Py1vupLbNYlKhF3bdFlTdZdutj_4kXLs13-YT1GLxW0,184
+GustavSelfBot/Events/__on_voice_state_update__.py,sha256=4R3pJrZrFuwEQABQRJJvCmkMSzRflOt3ojMKUhBGn74,4232
+gustavselfbot-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gustavselfbot-0.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+gustavselfbot-0.0.1.dist-info/METADATA,sha256=w8pOX2wl86VtLDCRiQEwsU6VobPe-OHi1iokyGg_kdM,397
+gustavselfbot-0.0.1.dist-info/RECORD,,
