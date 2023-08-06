@@ -1,0 +1,31 @@
+[package]
+name = "common"
+version = "0.0.10"
+edition = "2021"
+build = "src/build.rs"
+
+[lib]
+name = "common"
+path = "src/lib.rs"
+
+[target.'cfg(not(target_env = "msvc"))'.dependencies]
+tikv-jemallocator= { version = "0.5", features = ["background_threads", "disable_initial_exec_tls"]}
+
+[dependencies]
+anyhow= "1.0.71"
+chrono= "0.4.26"
+configparser= "3.0.2"
+shadow-rs= "0.23.0"
+hashbrown= { version = "0.14", features = ["serde"] }
+serde= { version = "1.0.167", features = ["derive"] }
+postcard= { version = "1.0.4", features = ["use-std"] }
+uuid= { version = "1.4.0", features = ["v4", "fast-rng", "macro-diagnostics", "serde"] }
+ndarray= { version = "0.15.6", features = ["serde"] }
+nalgebra= "0.32.2"
+tokio= { version = "1.29.1", features = ["full"] }
+tracing= "0.1.37"
+blake3= "1.4.1"
+tobj= "4.0.0"
+
+[build-dependencies]
+shadow-rs= "0.23.0"
