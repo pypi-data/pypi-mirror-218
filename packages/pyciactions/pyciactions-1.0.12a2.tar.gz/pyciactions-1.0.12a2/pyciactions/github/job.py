@@ -1,0 +1,67 @@
+from dataclasses import dataclass, field
+from typing import List, Dict, Optional, Union, Any
+
+
+def format_run(s):
+    if isinstance(s, list):
+        return "\n".join(s)
+    return s
+
+@dataclass
+class Step:
+    name: str
+    uses: Optional[str] = None
+    run: Optional[Union[str, List[str]]] = None
+    working_directory: Optional[str] = None
+    shell: Optional[str] = None
+    with_: Optional[Dict[str, Any]] = None
+    if_: Optional[str] = None
+    id: Optional[str] = None
+    env: Optional[Dict[str, Any]] = None
+
+    def to_dict(self):
+        result = {"name": self.name}
+        for attr, value in vars(self).items():
+            if value is not None:
+                if attr == "with_":
+                    result["with"] = value
+                elif attr == "if_":
+                    result["if"] = value
+                elif attr == "working_directory":
+                    result["working-directory"] = value
+                elif attr == "run":
+                    result["run"] = format_run(value)
+                elif attr == "id":
+                    continue
+                else:
+                    result[attr] = value
+        return result
+
+    def __getstate__(self):
+        return self.to_dict()
+
+
+@dataclass
+class Job:
+    id: str
+    runs_on: str
+    steps: List[Step] = field(default_factory=list)
+    needs: Optional[List[str]] = None
+    permissions: Optional[Dict[str, str]] = None
+    if_: Optional[str] = None
+
+    def to_dict(self):
+        result = {"steps": [step.to_dict() for step in self.steps]}
+        for attr, value in vars(self).items():
+            if attr in ["steps"]:
+                continue
+
+            if value is not None:
+                if attr == "if_":
+                    result["if"] = value
+                else:
+                    result[attr] = value
+        return result
+
+    def __getstate__(self):
+        return self.to_dict()
