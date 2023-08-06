@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: physical-propagation
+Version: 0.5.1
+Summary: A collection of code to determine how the acoustic levels propagating through the air will be altered
+Home-page: https://gitlab.rdte.afrl.dren.mil/noise-and-cognition-team/physical_propagation
+Author: Frank Mobley
+Author-email: frank.mobley.1@afrl.af.mil
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: PythonCoordinates (>=0.5.1)
+Requires-Dist: PyTimbre (>=0.6.1)
+
+# ![Image](./Ghosteye.png "GhostEye") 
+# Physical Propagation
+
+For simplistic geometric acoustics we can use the information regarding the atmosphere and ground to determine nominal 
+acoustic losses that a spherical wave would experience as the signal moves through the atmosphere. This code originated
+in the calculation of equivalent sources that were created as part of the Acoustic Repropagation Technique [ART](https://pubs.aip.org/asa/jasa/article/127/3_Supplement/1834/683047/Acoustic-repropagation-technique-and-practical) that 
+was developed as part of the Rotorcraft Noise Model. The same de-propagation methods were employed by the Swiss Federal 
+Laboratories when they created a series of sources using [spherical harmonics](https://www.ingentaconnect.com/content/dav/aaua/2003/00000089/00000002/art00010).
+
+The author of this package took these elements, originating with a variety of ANSI standards and Acoustical Society of 
+America papers, and created a series of C++, Matlab, and C# codes to determine the nominal losses. These culminated in 
+the author's [dissertation](https://www.proquest.com/openview/710a6e22398b280d3f900fbdf9b965e3/1?pq-origsite=gscholar&cbl=18750) regarding the de-propagation of measurements on a UH-1J (Huey).
+
+This package contains acoustic losses for:
+- Spherical spreading (divergence) of spherical waves
+- [Atmospheric absorption](https://pubs.aip.org/asa/jasa/article-abstract/97/1/680/835919/Atmospheric-absorption-of-sound-Further?redirectedFrom=PDF)
+- [Ground reflection](https://pubs.aip.org/asa/jasa/article-abstract/62/4/825/988530/Propagation-of-noise-along-a-finite-impedance)
+
+An additional code is available to trace the [acoustic ray](https://www.sciencedirect.com/science/article/abs/pii/0022460X75902801#preview-section-cited-by) through a media defined by a series of horizontal and vertical
+temperature & wind speed gradients.
+
+This code is part of a series of packages that were developed from the C# codes for the purpose of providing a code 
+base for continued creation of acoustic propagation and perception.
+
+This code requires [PythonCoordinates](https://pypi.org/project/pythoncoordinates), a package with measurable objects to assist in the calculation of the physical 
+losses and the location within the world and relative coordinates of the various objects.
+
+
+
+# Physical Acoustic Propagation
+
+## 2023
+
+### April
+
++ Initial creation of the package and establishment of the repository on ELSZ.
+
+### July
+
++ Began the process of updating the package to be converted to a public repository. Public Affairs clearance will be required prior to posting.
+
+MIT License
+
+Copyright (c) 2021 Frank Mobley, Gregory Bowers
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
