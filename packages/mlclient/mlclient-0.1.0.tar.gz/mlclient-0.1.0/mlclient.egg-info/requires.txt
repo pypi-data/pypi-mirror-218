@@ -1,0 +1,15 @@
+requests
+python-dateutil
+
+[dev]
+bumpver
+build
+twine
+ruff
+isort
+pytest
+pytest-cov
+
+[test]
+pytest
+pytest-cov
