@@ -1,0 +1,7 @@
+CHANGELOG.md,sha256=XkuA1HekQcNMIyWoWpwdr-UcZ4aN2ZMUv8gGQ-qrhjw,532
+cmem_plugin_kaggle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmem_plugin_kaggle/kaggle_import.py,sha256=iSnpK7wBYCRQGEiRwZ3tT4JnYoGpLEjeqWsnUaukSz8,12669
+cmem_plugin_kaggle-2.0.0.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_kaggle-2.0.0.dist-info/METADATA,sha256=FW1x8p5sxgiJluvF5KuRVNFo1joRCOeyLKwSdennFwg,1208
+cmem_plugin_kaggle-2.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cmem_plugin_kaggle-2.0.0.dist-info/RECORD,,
