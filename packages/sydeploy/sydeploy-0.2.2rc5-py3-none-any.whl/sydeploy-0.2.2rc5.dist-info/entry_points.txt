@@ -1,0 +1,3 @@
+[console_scripts]
+sydeploy = sydeploy.run:run
+
