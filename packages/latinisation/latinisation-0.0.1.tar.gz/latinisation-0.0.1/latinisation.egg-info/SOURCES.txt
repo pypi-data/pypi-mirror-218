@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+latinisation/__init__.py
+latinisation/armenian.py
+latinisation.egg-info/PKG-INFO
+latinisation.egg-info/SOURCES.txt
+latinisation.egg-info/dependency_links.txt
+latinisation.egg-info/top_level.txt
